@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "directus-explorer"
+version = "0.1.0"
+description = "Fetch and summarize data from a Directus instance."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11,<3.14"
+authors = [
+  { name = "DBGI" },
+]
+dependencies = [
+  "click>=8.1.8,<9",
+  "python-dotenv>=1.0.1,<2",
+  "requests>=2.32.3,<3",
+]
+
+[project.scripts]
+directus-explorer = "directus_explorer.cli:cli"
+
+[dependency-groups]
+dev = [
+  "mypy>=1.15.0,<2",
+  "pytest>=8.3.5,<9",
+  "pytest-cov>=6.1.1,<7",
+  "ruff>=0.11.3,<0.12",
+  "types-requests>=2.32.0.20250328,<3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+  "B",
+  "E",
+  "F",
+  "I",
+  "SIM",
+  "UP",
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src", "tests"]

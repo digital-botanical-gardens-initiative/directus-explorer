@@ -18,6 +18,7 @@ def test_cli_help() -> None:
     result = runner.invoke(cli_module.cli, ["--help"])
 
     assert result.exit_code == 0
+    assert "ms" in result.output
     assert "samples" in result.output
     assert "utils" in result.output
 
@@ -96,6 +97,45 @@ def test_count_samples_reports_missing_env(monkeypatch: pytest.MonkeyPatch) -> N
 
     assert result.exit_code != 0
     assert "DIRECTUS_PASSWORD" in result.output
+
+
+def test_export_ms_metadata_writes_status_line(monkeypatch: pytest.MonkeyPatch) -> None:
+    """The MS metadata export command should report the output path and row count."""
+
+    runner = CliRunner()
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def export_ms_metadata_csv(
+            self,
+            output_path: str,
+            project: str | None = None,
+        ) -> int:
+            assert str(output_path) == "metadata.csv"
+            assert project == "jbuf"
+            return 42
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(
+        cli_module.cli,
+        ["ms", "export-metadata", "--output", "metadata.csv", "--project", "jbuf"],
+    )
+
+    assert result.exit_code == 0
+    assert result.output.strip() == "Wrote 42 MS metadata rows for project jbuf to metadata.csv"
 
 
 def test_list_projects_text_output(monkeypatch: pytest.MonkeyPatch) -> None:

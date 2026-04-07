@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
 import requests
@@ -9,6 +10,16 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from .config import Settings
+from .ms_metadata import (
+    ALIQUOTING_DATA_FIELDS,
+    DRIED_SAMPLES_DATA_FIELDS,
+    EXTRACTION_DATA_FIELDS,
+    MS_DATA_FIELDS,
+    MsMetadataTable,
+    build_ms_metadata_row,
+    flatten_row_fieldnames,
+    write_ms_metadata_csv,
+)
 from .samples import (
     ProfiledSample,
     ProjectSampleSummary,
@@ -61,6 +72,100 @@ class DirectusClient:
 
         self._authenticate()
         return sorted(self._get_field_sample_counts_by_project())
+
+    def build_ms_metadata_table(self, project: str | None = None) -> MsMetadataTable:
+        """Return a flattened metadata table with one row per MS_Data record."""
+
+        self._authenticate()
+
+        ms_rows = self._get_items(collection="MS_Data", fields=MS_DATA_FIELDS)
+        aliquot_rows = self._get_items(
+            collection="Aliquoting_Data",
+            fields=ALIQUOTING_DATA_FIELDS,
+        )
+        extraction_rows = self._get_items(
+            collection="Extraction_Data",
+            fields=EXTRACTION_DATA_FIELDS,
+        )
+        dried_rows = self._get_items(
+            collection="Dried_Samples_Data",
+            fields=DRIED_SAMPLES_DATA_FIELDS,
+        )
+
+        aliquot_by_container_id = self._index_rows_by_nested_string(
+            collection="Aliquoting_Data",
+            rows=aliquot_rows,
+            path=("sample_container", "container_id"),
+        )
+        extraction_by_container_id = self._index_rows_by_nested_string(
+            collection="Extraction_Data",
+            rows=extraction_rows,
+            path=("sample_container", "container_id"),
+        )
+        dried_by_container_id = self._index_rows_by_nested_string(
+            collection="Dried_Samples_Data",
+            rows=dried_rows,
+            path=("sample_container", "container_id"),
+        )
+
+        rows: list[dict[str, Any]] = []
+        for ms_row in ms_rows:
+            aliquot_container_id = self._read_nested_string(
+                ms_row,
+                "parent_sample_container",
+                "container_id",
+            )
+            aliquot_row = (
+                aliquot_by_container_id.get(aliquot_container_id)
+                if aliquot_container_id is not None
+                else None
+            )
+            extraction_container_id = self._read_nested_string(
+                aliquot_row,
+                "parent_sample_container",
+                "container_id",
+            )
+            extraction_row = (
+                extraction_by_container_id.get(extraction_container_id)
+                if extraction_container_id is not None
+                else None
+            )
+            dried_container_id = self._read_nested_string(
+                extraction_row,
+                "parent_sample_container",
+                "container_id",
+            )
+            dried_row = (
+                dried_by_container_id.get(dried_container_id)
+                if dried_container_id is not None
+                else None
+            )
+
+            row = build_ms_metadata_row(
+                ms_row,
+                aliquot_row=aliquot_row,
+                extraction_row=extraction_row,
+                dried_row=dried_row,
+            )
+            if project is not None and row.get("qfield_project") != project:
+                continue
+            rows.append(row)
+
+        return MsMetadataTable(
+            fieldnames=flatten_row_fieldnames(rows),
+            rows=tuple(rows),
+        )
+
+    def export_ms_metadata_csv(
+        self,
+        output_path: str | Path,
+        project: str | None = None,
+    ) -> int:
+        """Write a flattened MS metadata CSV and return the number of rows written."""
+
+        table = self.build_ms_metadata_table(project=project)
+        write_ms_metadata_csv(table, output_path)
+        return len(table.rows)
 
     def list_profiled_samples(
         self,
@@ -308,6 +413,28 @@ class DirectusClient:
 
         return counts_by_project
 
+    def _index_rows_by_nested_string(
+        self,
+        *,
+        collection: str,
+        rows: list[dict[str, Any]],
+        path: tuple[str, ...],
+    ) -> dict[str, dict[str, Any]]:
+        """Index rows by a nested string field and reject duplicates."""
+
+        mapping: dict[str, dict[str, Any]] = {}
+        for row in rows:
+            key = self._read_nested_string(row, *path)
+            if key is None:
+                continue
+            if key in mapping:
+                dotted_path = ".".join(path)
+                raise DirectusResponseError(
+                    f"Directus {collection} returned duplicate rows for {dotted_path}={key!r}"
+                )
+            mapping[key] = row
+        return mapping
+
     @staticmethod
     def _build_relation_map(
         *,
@@ -348,7 +475,7 @@ class DirectusClient:
         return mapping
 
     @staticmethod
-    def _read_nested_string(row: dict[str, Any], *path: str) -> str | None:
+    def _read_nested_string(row: dict[str, Any] | None, *path: str) -> str | None:
         """Read a nested string from a Directus row payload."""
 
         current: Any = row

@@ -79,3 +79,15 @@ Summarize collected and profiled samples per qfield project:
 ```bash
 uv run directus-explorer samples summary --group-by project
 ```
+
+Export one wide CSV row per `MS_Data` record, including resolved lineage metadata across the linked Directus tables:
+
+```bash
+uv run directus-explorer ms export-metadata --output ms_metadata.csv
+```
+
+Restrict the MS metadata export to a single qfield project:
+
+```bash
+uv run directus-explorer ms export-metadata --output ms_metadata_jbuf.csv --project jbuf
+```

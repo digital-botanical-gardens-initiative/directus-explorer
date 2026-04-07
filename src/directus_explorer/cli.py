@@ -19,6 +19,11 @@ def cli() -> None:
 
 
 @cli.group()
+def ms() -> None:
+    """Work with mass-spectrometry-related Directus queries."""
+
+
+@cli.group()
 def utils() -> None:
     """Utility commands for discovering Directus content."""
 
@@ -201,6 +206,48 @@ def summarize_samples(group_by: str, output_format: str, env_file: Path | None) 
     click.echo("qfield_project\tcollected\tprofiled\tpositive\tnegative\tboth")
     for summary in summaries:
         click.echo(_render_project_summary(summary))
+
+
+@ms.command("export-metadata")
+@click.option(
+    "--output",
+    "output_path",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+    required=True,
+    help="Write the flattened metadata table to this CSV path.",
+)
+@click.option(
+    "--project",
+    "qfield_project",
+    default=None,
+    help="Restrict the export to one qfield project.",
+)
+@click.option(
+    "--env-file",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+    default=None,
+    help="Override the default local .env file.",
+)
+def export_ms_metadata(
+    output_path: Path,
+    qfield_project: str | None,
+    env_file: Path | None,
+) -> None:
+    """Export one wide CSV row per MS_Data record."""
+
+    try:
+        settings = load_settings(env_file=env_file)
+        client = DirectusClient(settings)
+        row_count = client.export_ms_metadata_csv(output_path=output_path, project=qfield_project)
+    except (SettingsError, DirectusAuthError, DirectusError, DirectusResponseError) as exc:
+        raise click.ClickException(str(exc)) from exc
+
+    if qfield_project is None:
+        click.echo(f"Wrote {row_count} MS metadata rows to {output_path}")
+    else:
+        click.echo(
+            f"Wrote {row_count} MS metadata rows for project {qfield_project} to {output_path}"
+        )
 
 
 @utils.command("projects")

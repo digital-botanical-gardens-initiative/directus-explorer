@@ -2,6 +2,7 @@
 
 from .config import Settings, SettingsError, load_settings
 from .directus import DirectusAuthError, DirectusClient, DirectusError, DirectusResponseError
+from .ms_metadata import MsMetadataTable
 from .samples import ProfiledSample, ProjectSampleSummary
 
 __all__ = [
@@ -9,6 +10,7 @@ __all__ = [
     "DirectusClient",
     "DirectusError",
     "DirectusResponseError",
+    "MsMetadataTable",
     "ProfiledSample",
     "ProjectSampleSummary",
     "Settings",

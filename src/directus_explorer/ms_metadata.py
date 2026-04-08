@@ -1,4 +1,4 @@
-"""Helpers for flattening MS lineage metadata into CSV-ready rows."""
+"""Helpers for flattening sample and MS lineage metadata into tabular rows."""
 
 from __future__ import annotations
 
@@ -28,6 +28,7 @@ MS_DATA_FIELDS = ",".join(
         "batch.batch_type.*",
         "parent_sample_container.*",
         "parent_sample_container.container_model.*",
+        "parent_sample_container.container_model.container_type.*",
     )
 )
 
@@ -37,10 +38,13 @@ ALIQUOTING_DATA_FIELDS = ",".join(
         "aliquot_volume_unit.symbol",
         "sample_container.*",
         "sample_container.container_model.*",
+        "sample_container.container_model.container_type.*",
         "parent_sample_container.*",
         "parent_sample_container.container_model.*",
+        "parent_sample_container.container_model.container_type.*",
         "parent_container.*",
         "parent_container.container_model.*",
+        "parent_container.container_model.container_type.*",
     )
 )
 
@@ -54,10 +58,13 @@ EXTRACTION_DATA_FIELDS = ",".join(
         "batch.batch_type.*",
         "sample_container.*",
         "sample_container.container_model.*",
+        "sample_container.container_model.container_type.*",
         "parent_sample_container.*",
         "parent_sample_container.container_model.*",
+        "parent_sample_container.container_model.container_type.*",
         "parent_container.*",
         "parent_container.container_model.*",
+        "parent_container.container_model.container_type.*",
         "extraction_container.*",
         "extraction_container.volume_unit.symbol",
     )
@@ -68,8 +75,10 @@ DRIED_SAMPLES_DATA_FIELDS = ",".join(
         "*",
         "sample_container.*",
         "sample_container.container_model.*",
+        "sample_container.container_model.container_type.*",
         "parent_container.*",
         "parent_container.container_model.*",
+        "parent_container.container_model.container_type.*",
         "batch.*",
         "batch.batch_type.*",
         "field_data.*",
@@ -85,17 +94,99 @@ class MsMetadataTable:
     rows: tuple[CsvRow, ...]
 
 
-def build_ms_metadata_row(
-    ms_row: dict[str, Any],
+COLUMN_PREFIX_ORDER = (
+    "field_data_id",
+    "original_sample_id",
+    "ms_container_id",
+    "ms_container_type",
+    "ms_storage_level_",
+    "extraction_container_id",
+    "extraction_container_type",
+    "extraction_storage_level_",
+    "original_sample_container_id",
+    "original_sample_container_type",
+    "original_storage_level_",
+    "qfield_project",
+    "profile_mode",
+    "field_",
+    "dried_samples_data_id",
+    "dried_",
+    "extraction_data_id",
+    "extraction_",
+    "aliquoting_data_id",
+    "aliquot_",
+    "ms_data_id",
+    "ms_",
+    "watcher_exact_filename_match",
+    "watcher_",
+)
+
+COMPACT_FIELD_PREFIXES = (
+    "ms_storage_level_",
+    "extraction_storage_level_",
+    "original_storage_level_",
+)
+
+COMPACT_FIELDNAMES = (
+    "original_sample_id",
+    "ms_container_id",
+    "extraction_container_id",
+    "original_sample_container_id",
+    "qfield_project",
+    "profile_mode",
+    "field_sample_name",
+    "field_taxon_name",
+    "field_date",
+    "field_latitude",
+    "field_longitude",
+    "field_geometry_coordinates",
+    "field_collector_fullname",
+    "field_weather",
+    "field_comment_eco",
+    "extraction_dried_weight",
+    "extraction_dried_weight_unit_symbol",
+    "extraction_solvent_volume",
+    "extraction_solvent_volume_unit_symbol",
+    "extraction_method_method_name",
+    "aliquot_aliquot_volume",
+    "aliquot_volume_unit_symbol",
+    "ms_filename",
+    "ms_injection_volume",
+    "ms_injection_volume_unit_symbol",
+    "ms_injection_method_method_name",
+    "ms_instrument_instrument_id",
+    "ms_instrument_model_instrument_model",
+    "ms_instrument_location_room_name",
+    "watcher_exact_filename_match",
+    "watcher_file_name",
+    "watcher_file_path",
+    "watcher_converted_file_sha1",
+    "watcher_polarity",
+    "watcher_acquisition_date",
+    "watcher_raw_file_sha1",
+    "watcher_instrument_model",
+    "watcher_ionization_source",
+    "watcher_analyzer",
+    "watcher_detector",
+    "watcher_spectrum_count",
+    "watcher_chromatogram_count",
+    "watcher_source_file_names",
+)
+
+
+def build_sample_metadata_row(
     *,
+    field_row: dict[str, Any] | None,
+    ms_row: dict[str, Any] | None,
     aliquot_row: dict[str, Any] | None,
     extraction_row: dict[str, Any] | None,
     dried_row: dict[str, Any] | None,
 ) -> CsvRow:
-    """Build one flattened metadata row for a single MS analysis."""
+    """Build one flattened metadata row for a collected sample lineage."""
 
     row: CsvRow = {
-        "ms_data_id": _to_scalar(ms_row.get("id")),
+        "field_data_id": _to_nested_scalar(field_row, "id"),
+        "ms_data_id": _to_nested_scalar(ms_row, "id"),
         "profile_mode": classify_profile_mode(
             _read_nested_string(ms_row, "injection_method", "method_name") or ""
         ),
@@ -117,13 +208,13 @@ def build_ms_metadata_row(
     _flatten_mapping(
         row,
         prefix="ms_injection_volume_unit",
-        mapping=ms_row.get("injection_volume_unit"),
+        mapping=_read_mapping(ms_row, "injection_volume_unit"),
     )
-    _flatten_mapping(row, prefix="ms_injection_method", mapping=ms_row.get("injection_method"))
+    _flatten_mapping(row, prefix="ms_injection_method", mapping=_read_mapping(ms_row, "injection_method"))
     _flatten_mapping(
         row,
         prefix="ms_instrument",
-        mapping=_as_mapping(ms_row.get("instrument_used")),
+        mapping=_read_mapping(ms_row, "instrument_used"),
         exclude={"instrument_model", "instrument_location"},
     )
     _flatten_mapping(
@@ -136,11 +227,11 @@ def build_ms_metadata_row(
         prefix="ms_instrument_location",
         mapping=_read_nested_mapping(ms_row, "instrument_used", "instrument_location"),
     )
-    _flatten_batch(row, prefix="ms_batch", batch_row=ms_row.get("batch"))
+    _flatten_batch(row, prefix="ms_batch", batch_row=_read_mapping(ms_row, "batch"))
     _flatten_container(
         row,
         prefix="ms_parent_sample_container",
-        container_row=ms_row.get("parent_sample_container"),
+        container_row=_read_mapping(ms_row, "parent_sample_container"),
     )
 
     row["aliquoting_data_id"] = _to_nested_scalar(aliquot_row, "id")
@@ -259,23 +350,50 @@ def build_ms_metadata_row(
         mapping=_as_mapping(_read_mapping(dried_row, "field_data")),
     )
 
+    field_data = field_row if field_row is not None else _read_mapping(dried_row, "field_data")
+    _flatten_mapping(row, prefix="field", mapping=field_data)
+
     row["original_sample_container_id"] = _read_nested_string(
         dried_row,
         "sample_container",
         "container_id",
     )
-    row["original_sample_id"] = _read_nested_string(dried_row, "field_data", "sample_id")
-    row["qfield_project"] = _read_nested_string(dried_row, "field_data", "qfield_project")
+    row["ms_container_id"] = _read_nested_string(
+        ms_row,
+        "parent_sample_container",
+        "container_id",
+    )
+    row["ms_container_type"] = _read_container_type(
+        _read_nested_mapping(ms_row, "parent_sample_container", "container_model")
+    )
+    row["extraction_container_id"] = _read_nested_string(
+        extraction_row,
+        "sample_container",
+        "container_id",
+    )
+    row["extraction_container_type"] = _read_container_type(
+        _read_nested_mapping(extraction_row, "sample_container", "container_model")
+    )
+    row["original_sample_container_type"] = _read_container_type(
+        _read_nested_mapping(dried_row, "sample_container", "container_model")
+    )
+    row["original_sample_id"] = _read_nested_string(field_data, "sample_id")
+    row["qfield_project"] = _read_nested_string(field_data, "qfield_project")
 
     return row
 
 
-def write_ms_metadata_csv(table: MsMetadataTable, output_path: str | Path) -> None:
-    """Write a metadata table to a CSV file."""
+def write_ms_metadata_csv(
+    table: MsMetadataTable,
+    output_path: str | Path,
+    *,
+    delimiter: str = ",",
+) -> None:
+    """Write a metadata table to a delimited text file."""
 
     path = Path(output_path)
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(table.fieldnames))
+        writer = csv.DictWriter(handle, fieldnames=list(table.fieldnames), delimiter=delimiter)
         writer.writeheader()
         for row in table.rows:
             writer.writerow(row)
@@ -293,6 +411,62 @@ def flatten_row_fieldnames(rows: list[CsvRow]) -> tuple[str, ...]:
             seen.add(fieldname)
             fieldnames.append(fieldname)
     return tuple(fieldnames)
+
+
+def compact_table(table: MsMetadataTable) -> MsMetadataTable:
+    """Drop columns that are empty across the whole table and reorder them."""
+
+    populated_fieldnames = [
+        fieldname
+        for fieldname in table.fieldnames
+        if any(row.get(fieldname) not in (None, "") for row in table.rows)
+    ]
+    ordered_fieldnames = order_fieldnames(tuple(populated_fieldnames))
+    compact_rows = tuple(
+        {fieldname: row.get(fieldname) for fieldname in ordered_fieldnames}
+        for row in table.rows
+    )
+    return MsMetadataTable(fieldnames=ordered_fieldnames, rows=compact_rows)
+
+
+
+
+def select_table_view(table: MsMetadataTable, *, view: str) -> MsMetadataTable:
+    """Return a cleaned table in the requested export view."""
+
+    cleaned = compact_table(table)
+    if view == "full":
+        return cleaned
+    if view != "compact":
+        raise ValueError(f"Unsupported metadata export view: {view}")
+
+    fieldnames = tuple(
+        fieldname
+        for fieldname in cleaned.fieldnames
+        if fieldname in COMPACT_FIELDNAMES
+        or any(fieldname.startswith(prefix) for prefix in COMPACT_FIELD_PREFIXES)
+    )
+    rows = tuple({fieldname: row.get(fieldname) for fieldname in fieldnames} for row in cleaned.rows)
+    return MsMetadataTable(fieldnames=fieldnames, rows=rows)
+
+
+def order_fieldnames(fieldnames: tuple[str, ...]) -> tuple[str, ...]:
+    """Return fieldnames in a stable, human-oriented export order."""
+
+    seen = set(fieldnames)
+    ordered: list[str] = []
+    for prefix in COLUMN_PREFIX_ORDER:
+        for fieldname in fieldnames:
+            if fieldname not in seen or fieldname in ordered:
+                continue
+            if fieldname == prefix or fieldname.startswith(prefix):
+                ordered.append(fieldname)
+
+    for fieldname in fieldnames:
+        if fieldname not in ordered:
+            ordered.append(fieldname)
+
+    return tuple(ordered)
 
 
 def _flatten_batch(row: CsvRow, *, prefix: str, batch_row: Any) -> None:
@@ -343,7 +517,7 @@ def _flatten_mapping(
         if key in exclude:
             continue
 
-        column_name = _sanitize_column_name(f"{prefix}_{key}")
+        column_name = sanitize_column_name(f"{prefix}_{key}")
         if value is None:
             row[column_name] = None
         elif isinstance(value, str | int | float | bool):
@@ -356,7 +530,7 @@ def _flatten_mapping(
             row[column_name] = json.dumps(value, ensure_ascii=False, sort_keys=True)
 
 
-def _sanitize_column_name(name: str) -> str:
+def sanitize_column_name(name: str) -> str:
     """Convert arbitrary Directus field paths into stable ASCII CSV headers."""
 
     normalized = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii")
@@ -421,4 +595,19 @@ def _read_nested_string(mapping: dict[str, Any] | None, *path: str) -> str | Non
         current = current.get(part)
     if isinstance(current, str):
         return current
+    return None
+
+
+def _read_container_type(container_model: dict[str, Any] | None) -> str | None:
+    """Read a container type from either a scalar or expanded relation payload."""
+
+    if not isinstance(container_model, dict):
+        return None
+    value = container_model.get("container_type")
+    if isinstance(value, str):
+        return value
+    if isinstance(value, dict):
+        nested = value.get("container_type")
+        if isinstance(nested, str):
+            return nested
     return None

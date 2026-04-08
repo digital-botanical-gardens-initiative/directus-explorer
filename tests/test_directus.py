@@ -130,7 +130,7 @@ def test_list_projects_returns_sorted_project_keys(monkeypatch: pytest.MonkeyPat
 def test_build_ms_metadata_table_flattens_linked_records(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """MS metadata export should flatten the resolved lineage into one row."""
+    """Metadata export should flatten lineage rows and retain field-rooted metadata."""
 
     settings = Settings(
         directus_instance="https://example.test/directus",
@@ -143,6 +143,55 @@ def test_build_ms_metadata_table_flattens_linked_records(
         return FakeResponse(200, {"data": {"access_token": "token"}})
 
     responses = {
+        "Containers": {
+            "data": [
+                {
+                    "id": 6001,
+                    "container_id": "box_001",
+                    "label": "Box 001",
+                    "container_model": {"container_type": "vial box"},
+                    "parent_container": {"id": 7001, "container_id": "shelf_01"},
+                },
+                {
+                    "id": 7001,
+                    "container_id": "shelf_01",
+                    "label": "Shelf 01",
+                    "container_model": {"container_type": "shelf"},
+                    "parent_container": {"id": 8001, "container_id": "fridge_a"},
+                },
+                {
+                    "id": 8001,
+                    "container_id": "fridge_a",
+                    "label": "Fridge A",
+                    "container_model": {"container_type": "fridge"},
+                },
+                {
+                    "id": 1,
+                    "container_id": "rack_001",
+                    "label": "Rack 001",
+                    "container_model": {"container_type": "rack"},
+                    "parent_container": {"id": 7001, "container_id": "shelf_01"},
+                },
+                {
+                    "id": 7,
+                    "container_id": "room_101",
+                    "label": "Room 101",
+                    "container_model": {"container_type": "room"},
+                },
+            ]
+        },
+        "Field_Data": {
+            "data": [
+                {
+                    "id": 40,
+                    "sample_id": "dbgi_001195",
+                    "qfield_project": "jbuf",
+                    "sample_name": "Sample Name",
+                    "temperature_°C": 20.5,
+                    "geometry": {"type": "Point", "coordinates": [7.1, 46.7]},
+                }
+            ]
+        },
         "MS_Data": {
             "data": [
                 {
@@ -168,7 +217,11 @@ def test_build_ms_metadata_table_flattens_linked_records(
                     "parent_sample_container": {
                         "id": 7310,
                         "container_id": "dbgi_001195_01_01",
-                        "container_model": {"volume": 1.5, "is_sample_container": True},
+                        "container_model": {
+                            "volume": 1.5,
+                            "is_sample_container": True,
+                            "container_type": "Vial",
+                        },
                     },
                 }
             ]
@@ -182,10 +235,11 @@ def test_build_ms_metadata_table_flattens_linked_records(
                     "aliquot_volume": 120,
                     "aliquot_volume_unit": {"symbol": "uL"},
                     "sample_container": {"id": 7310, "container_id": "dbgi_001195_01_01"},
-                    "parent_sample_container": {
-                        "id": 6365,
-                        "container_id": "dbgi_001195_01",
-                    },
+                        "parent_sample_container": {
+                            "id": 6365,
+                            "container_id": "dbgi_001195_01",
+                            "container_model": {"container_type": "Falcon"},
+                        },
                     "parent_container": {"id": 6001, "container_id": "container_000184"},
                 }
             ]
@@ -201,6 +255,11 @@ def test_build_ms_metadata_table_flattens_linked_records(
                     "solvent_volume": 1700,
                     "solvent_volume_unit": {"symbol": "uL"},
                     "sample_container": {"id": 6365, "container_id": "dbgi_001195_01"},
+                    "sample_container": {
+                        "id": 6365,
+                        "container_id": "dbgi_001195_01",
+                        "container_model": {"container_type": "Vial"},
+                    },
                     "parent_sample_container": {"id": 1225, "container_id": "dbgi_001195"},
                     "parent_container": {"id": 1, "container_id": "container_000001"},
                     "extraction_method": {"method_name": "MeOH/H2O"},
@@ -218,16 +277,17 @@ def test_build_ms_metadata_table_flattens_linked_records(
                     "id": 30,
                     "status": "OK",
                     "uuid_dried_sample": "dried-uuid",
-                    "sample_container": {"id": 1225, "container_id": "dbgi_001195"},
+                    "sample_container": {
+                        "id": 1225,
+                        "container_id": "dbgi_001195",
+                        "container_model": {"container_type": "Falcon"},
+                    },
                     "parent_container": {"id": 7, "container_id": "container_000007"},
                     "batch": {"batch_id": "batch_dried_001"},
                     "field_data": {
                         "id": 40,
                         "sample_id": "dbgi_001195",
                         "qfield_project": "jbuf",
-                        "sample_name": "Sample Name",
-                        "temperature_°C": 20.5,
-                        "geometry": {"type": "Point", "coordinates": [7.1, 46.7]},
                     },
                 }
             ]
@@ -247,6 +307,15 @@ def test_build_ms_metadata_table_flattens_linked_records(
 
     assert len(table.rows) == 1
     row = table.rows[0]
+    assert table.fieldnames[:3] == (
+        "field_data_id",
+        "original_sample_id",
+        "ms_container_id",
+    )
+    assert "extraction_container_id" in table.fieldnames
+    assert "original_sample_container_id" in table.fieldnames
+    assert "qfield_project" in table.fieldnames
+    assert "profile_mode" in table.fieldnames
     assert row["ms_data_id"] == 1
     assert row["profile_mode"] == "positive"
     assert row["ms_filename"] == "20240307_EB_dbgi_001195_01_01"
@@ -256,12 +325,18 @@ def test_build_ms_metadata_table_flattens_linked_records(
     assert row["aliquoting_data_id"] == 10
     assert row["extraction_data_id"] == 20
     assert row["dried_samples_data_id"] == 30
+    assert row["ms_container_id"] == "dbgi_001195_01_01"
+    assert row["ms_container_type"] == "Vial"
+    assert row["extraction_container_id"] == "dbgi_001195_01"
+    assert row["extraction_container_type"] == "Vial"
     assert row["original_sample_container_id"] == "dbgi_001195"
+    assert row["original_sample_container_type"] == "Falcon"
     assert row["original_sample_id"] == "dbgi_001195"
     assert row["qfield_project"] == "jbuf"
     assert row["field_sample_name"] == "Sample Name"
     assert row["field_temperature_c"] == 20.5
     assert row["field_geometry_coordinates"] == "[7.1, 46.7]"
+    assert "field_geometry" not in table.fieldnames
 
 
 def test_build_ms_metadata_table_filters_by_project(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -278,6 +353,13 @@ def test_build_ms_metadata_table_filters_by_project(monkeypatch: pytest.MonkeyPa
         return FakeResponse(200, {"data": {"access_token": "token"}})
 
     responses = {
+        "Containers": {"data": []},
+        "Field_Data": {
+            "data": [
+                {"id": 10, "sample_id": "dbgi_001195", "qfield_project": "jbuf"},
+                {"id": 11, "sample_id": "fibl_000001", "qfield_project": "fibl"},
+            ]
+        },
         "MS_Data": {
             "data": [
                 {
@@ -344,11 +426,133 @@ def test_build_ms_metadata_table_filters_by_project(monkeypatch: pytest.MonkeyPa
     assert [row["ms_data_id"] for row in table.rows] == [1]
 
 
+def test_build_ms_metadata_table_includes_non_profiled_samples_and_watcher_metadata(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """Export should include collected samples without MS data and enrich exact watcher matches."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+
+    def fake_post(*args: Any, **kwargs: Any) -> FakeResponse:
+        return FakeResponse(200, {"data": {"access_token": "token"}})
+
+    responses = {
+        "Containers": {
+            "data": [
+                {
+                    "id": 6001,
+                    "container_id": "box_001",
+                    "label": "Box 001",
+                    "container_model": {"container_type": "vial box"},
+                }
+            ]
+        },
+        "Field_Data": {
+            "data": [
+                {"id": 10, "sample_id": "dbgi_001195", "qfield_project": "jbuf"},
+                {"id": 11, "sample_id": "dbgi_009999", "qfield_project": "jbuf"},
+            ]
+        },
+        "MS_Data": {
+            "data": [
+                {
+                    "id": 1,
+                    "filename": "exact_hit",
+                    "injection_method": {"method_name": "method_pos"},
+                    "parent_sample_container": {
+                        "container_id": "dbgi_001195_01_01",
+                        "container_model": {"container_type": "Vial"},
+                    },
+                }
+            ]
+        },
+            "Aliquoting_Data": {
+                "data": [
+                    {
+                    "sample_container": {"container_id": "dbgi_001195_01_01"},
+                    "parent_sample_container": {
+                        "container_id": "dbgi_001195_01",
+                        "container_model": {"container_type": "Falcon"},
+                    },
+                    "parent_container": {"id": 6001, "container_id": "box_001"},
+                    }
+                ]
+            },
+        "Extraction_Data": {
+            "data": [
+                {
+                    "sample_container": {
+                        "container_id": "dbgi_001195_01",
+                        "container_model": {"container_type": "Vial"},
+                    },
+                    "parent_sample_container": {"container_id": "dbgi_001195"},
+                }
+            ]
+        },
+        "Dried_Samples_Data": {
+            "data": [
+                {
+                    "sample_container": {
+                        "container_id": "dbgi_001195",
+                        "container_model": {"container_type": "Falcon"},
+                    },
+                    "field_data": {"sample_id": "dbgi_001195", "qfield_project": "jbuf"},
+                }
+            ]
+        },
+    }
+
+    watcher_tsv = tmp_path / "watcher.tsv"
+    watcher_tsv.write_text(
+        "file_path\tfile_name\tpolarity\tinstrument\n"
+        "/converted/exact_hit.mzML\texact_hit.mzML\tMS:1000130|positive scan\tQE-HFX\n",
+        encoding="utf-8",
+    )
+
+    def fake_get(url: str, *args: Any, **kwargs: Any) -> FakeResponse:
+        for collection, payload in responses.items():
+            if f"/items/{collection}" in url:
+                return FakeResponse(200, payload)
+        raise AssertionError(f"Unexpected URL: {url}")
+
+    monkeypatch.setattr(client._session, "post", fake_post)
+    monkeypatch.setattr(client._session, "get", fake_get)
+
+    table = client.build_ms_metadata_table_with_watcher(
+        project="jbuf",
+        watcher_tsv_paths=(watcher_tsv,),
+    )
+
+    assert len(table.rows) == 2
+    profiled_row, unprofiled_row = table.rows
+    assert profiled_row["original_sample_id"] == "dbgi_001195"
+    assert profiled_row["ms_container_id"] == "dbgi_001195_01_01"
+    assert profiled_row["ms_container_type"] == "Vial"
+    assert profiled_row["extraction_container_id"] == "dbgi_001195_01"
+    assert profiled_row["extraction_container_type"] == "Vial"
+    assert profiled_row["original_sample_container_type"] == "Falcon"
+    assert profiled_row["watcher_exact_filename_match"] is True
+    assert profiled_row["watcher_file_name"] == "exact_hit.mzML"
+    assert profiled_row["watcher_instrument"] == "QE-HFX"
+
+    assert unprofiled_row["original_sample_id"] == "dbgi_009999"
+    assert unprofiled_row["ms_data_id"] is None
+    assert unprofiled_row["ms_container_id"] is None
+    assert unprofiled_row["extraction_container_id"] is None
+    assert unprofiled_row["watcher_exact_filename_match"] is None
+
+
 def test_export_ms_metadata_csv_writes_flat_csv(
     monkeypatch: pytest.MonkeyPatch,
     tmp_path: Path,
 ) -> None:
-    """The CSV export should write headers and rows to the requested path."""
+    """The export should write headers and rows to the requested TSV path."""
 
     settings = Settings(
         directus_instance="https://example.test/directus",
@@ -371,8 +575,285 @@ def test_export_ms_metadata_csv_writes_flat_csv(
 
     assert row_count == 1
     with output_path.open(newline="", encoding="utf-8") as handle:
-        rows = list(csv.DictReader(handle))
+        rows = list(csv.DictReader(handle, delimiter="\t"))
     assert rows == [{"ms_data_id": "1", "qfield_project": "jbuf"}]
+
+
+def test_export_ms_metadata_csv_compact_view_writes_curated_columns(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """Compact view should keep only the curated metadata-focused columns."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+
+    monkeypatch.setattr(
+        client,
+        "build_ms_metadata_table_with_watcher",
+        lambda project=None, watcher_tsv_paths=(): MsMetadataTable(
+            fieldnames=(
+                "original_sample_id",
+                "ms_container_id",
+                "extraction_container_id",
+                "original_sample_container_id",
+                "qfield_project",
+                "field_sample_name",
+                "ms_data_id",
+                "ms_filename",
+                "watcher_converted_file_sha1",
+                "watcher_polarity",
+                "watcher_acquisition_date",
+                "watcher_raw_file_sha1",
+                "field_user_created",
+            ),
+            rows=(
+                {
+                    "original_sample_id": "dbgi_001",
+                    "ms_container_id": "dbgi_001_01_01",
+                    "extraction_container_id": "dbgi_001_01",
+                    "original_sample_container_id": "dbgi_001",
+                    "qfield_project": "jbuf",
+                    "field_sample_name": "Sample A",
+                    "ms_data_id": "123",
+                    "ms_filename": "file_a",
+                    "watcher_converted_file_sha1": "sha1-mzml",
+                    "watcher_polarity": "positive",
+                    "watcher_acquisition_date": "2025-01-02T03:04:05Z",
+                    "watcher_raw_file_sha1": "sha1-raw",
+                    "field_user_created": "internal-user",
+                },
+            ),
+        ),
+    )
+
+    output_path = tmp_path / "compact.tsv"
+    row_count = client.export_ms_metadata_csv(
+        output_path=output_path,
+        project="jbuf",
+        view="compact",
+    )
+
+    assert row_count == 1
+    with output_path.open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle, delimiter="\t"))
+        fieldnames = tuple(rows[0].keys())
+    assert fieldnames == (
+        "original_sample_id",
+        "ms_container_id",
+        "extraction_container_id",
+        "original_sample_container_id",
+        "qfield_project",
+        "field_sample_name",
+        "ms_filename",
+        "watcher_converted_file_sha1",
+        "watcher_polarity",
+        "watcher_acquisition_date",
+        "watcher_raw_file_sha1",
+    )
+    assert rows == [
+        {
+            "original_sample_id": "dbgi_001",
+            "ms_container_id": "dbgi_001_01_01",
+            "extraction_container_id": "dbgi_001_01",
+            "original_sample_container_id": "dbgi_001",
+            "qfield_project": "jbuf",
+            "field_sample_name": "Sample A",
+            "ms_filename": "file_a",
+            "watcher_converted_file_sha1": "sha1-mzml",
+            "watcher_polarity": "positive",
+            "watcher_acquisition_date": "2025-01-02T03:04:05Z",
+            "watcher_raw_file_sha1": "sha1-raw",
+        }
+    ]
+
+
+def test_build_sample_locations_table_resolves_storage_hierarchy(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Location table should resolve sample containers and storage ancestry separately."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+
+    def fake_post(*args: Any, **kwargs: Any) -> FakeResponse:
+        return FakeResponse(200, {"data": {"access_token": "token"}})
+
+    responses = {
+        "Containers": {
+            "data": [
+                {
+                    "id": 6001,
+                    "container_id": "box_001",
+                    "container_model": {"container_type": "vial box"},
+                    "parent_container": {"id": 7001, "container_id": "shelf_01"},
+                },
+                {
+                    "id": 7001,
+                    "container_id": "shelf_01",
+                    "container_model": {"container_type": "shelf"},
+                    "parent_container": {"id": 8001, "container_id": "fridge_a"},
+                },
+                {
+                    "id": 8001,
+                    "container_id": "fridge_a",
+                    "container_model": {"container_type": "fridge"},
+                },
+                {
+                    "id": 1,
+                    "container_id": "rack_001",
+                    "container_model": {"container_type": "rack"},
+                },
+            ]
+        },
+        "Field_Data": {"data": [{"id": 40, "sample_id": "dbgi_001195", "qfield_project": "jbuf"}]},
+        "MS_Data": {
+            "data": [
+                {
+                    "parent_sample_container": {
+                        "container_id": "dbgi_001195_01_01",
+                        "container_model": {"container_type": "Vial"},
+                    }
+                }
+            ]
+        },
+        "Aliquoting_Data": {
+            "data": [
+                {
+                    "sample_container": {"container_id": "dbgi_001195_01_01"},
+                    "parent_sample_container": {"container_id": "dbgi_001195_01"},
+                    "parent_container": {"id": 6001, "container_id": "box_001"},
+                }
+            ]
+        },
+        "Extraction_Data": {
+            "data": [
+                {
+                    "sample_container": {
+                        "container_id": "dbgi_001195_01",
+                        "container_model": {"container_type": "Vial"},
+                    },
+                    "parent_sample_container": {"container_id": "dbgi_001195"},
+                    "parent_container": {"id": 1, "container_id": "rack_001"},
+                }
+            ]
+        },
+        "Dried_Samples_Data": {
+            "data": [
+                {
+                    "sample_container": {
+                        "container_id": "dbgi_001195",
+                        "container_model": {"container_type": "Falcon"},
+                    },
+                    "parent_container": {"id": 1, "container_id": "rack_001"},
+                    "field_data": {"sample_id": "dbgi_001195", "qfield_project": "jbuf"},
+                }
+            ]
+        },
+    }
+
+    def fake_get(url: str, *args: Any, **kwargs: Any) -> FakeResponse:
+        for collection, payload in responses.items():
+            if f"/items/{collection}" in url:
+                return FakeResponse(200, payload)
+        raise AssertionError(f"Unexpected URL: {url}")
+
+    monkeypatch.setattr(client._session, "post", fake_post)
+    monkeypatch.setattr(client._session, "get", fake_get)
+
+    table = client.build_sample_locations_table(sample_id="dbgi_001195_01_01")
+
+    assert len(table.rows) == 1
+    row = table.rows[0]
+    assert row["original_sample_id"] == "dbgi_001195"
+    assert row["ms_container_id"] == "dbgi_001195_01_01"
+    assert row["ms_container_type"] == "Vial"
+    assert row["ms_storage_level_1_container_id"] == "box_001"
+    assert row["ms_storage_level_1_type"] == "vial box"
+    assert row["ms_storage_level_2_container_id"] == "shelf_01"
+    assert row["ms_storage_level_2_type"] == "shelf"
+    assert row["extraction_container_id"] == "dbgi_001195_01"
+    assert row["original_sample_container_id"] == "dbgi_001195"
+
+
+def test_build_sample_locations_table_requires_exactly_one_filter(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Location table builder should require either one sample or one project."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+
+    with pytest.raises(ValueError, match="Exactly one of sample_id or project"):
+        client.build_sample_locations_table()
+
+
+def test_build_sample_locations_table_handles_samples_without_ms_or_extraction(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Location table should not crash when only the original sample branch exists."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+
+    def fake_post(*args: Any, **kwargs: Any) -> FakeResponse:
+        return FakeResponse(200, {"data": {"access_token": "token"}})
+
+    responses = {
+        "Containers": {"data": []},
+        "Field_Data": {"data": [{"id": 40, "sample_id": "dbgi_003187", "qfield_project": "jbuf"}]},
+        "MS_Data": {"data": []},
+        "Aliquoting_Data": {"data": []},
+        "Extraction_Data": {"data": []},
+        "Dried_Samples_Data": {
+            "data": [
+                {
+                    "sample_container": {
+                        "container_id": "dbgi_003187",
+                        "container_model": {"container_type": "Falcon"},
+                    },
+                    "field_data": {"sample_id": "dbgi_003187", "qfield_project": "jbuf"},
+                }
+            ]
+        },
+    }
+
+    def fake_get(url: str, *args: Any, **kwargs: Any) -> FakeResponse:
+        for collection, payload in responses.items():
+            if f"/items/{collection}" in url:
+                return FakeResponse(200, payload)
+        raise AssertionError(f"Unexpected URL: {url}")
+
+    monkeypatch.setattr(client._session, "post", fake_post)
+    monkeypatch.setattr(client._session, "get", fake_get)
+
+    table = client.build_sample_locations_table(sample_id="dbgi_003187")
+
+    assert len(table.rows) == 1
+    row = table.rows[0]
+    assert row["original_sample_id"] == "dbgi_003187"
+    assert "ms_container_id" not in table.fieldnames
+    assert "ms_container_type" not in table.fieldnames
+    assert "extraction_container_id" not in table.fieldnames
+    assert "extraction_container_type" not in table.fieldnames
+    assert row["original_sample_container_id"] == "dbgi_003187"
+    assert row["original_sample_container_type"] == "Falcon"
 
 
 def test_build_ms_metadata_table_rejects_duplicate_lineage_rows(
@@ -391,6 +872,8 @@ def test_build_ms_metadata_table_rejects_duplicate_lineage_rows(
         return FakeResponse(200, {"data": {"access_token": "token"}})
 
     responses = {
+        "Containers": {"data": []},
+        "Field_Data": {"data": []},
         "MS_Data": {"data": []},
         "Aliquoting_Data": {
             "data": [

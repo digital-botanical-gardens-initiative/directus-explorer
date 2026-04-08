@@ -38,6 +38,12 @@ Render the same result as JSON:
 uv run directus-explorer samples count jbuf --format json
 ```
 
+List all distinct qfield project keys:
+
+```bash
+uv run directus-explorer utils projects
+```
+
 Use a non-default env file:
 
 ```bash
@@ -80,14 +86,88 @@ Summarize collected and profiled samples per qfield project:
 uv run directus-explorer samples summary --group-by project
 ```
 
-Export one wide CSV row per `MS_Data` record, including resolved lineage metadata across the linked Directus tables:
+Export one wide TSV row per collected sample lineage. Samples without any MS records are still included; samples with MS rows are enriched with the linked lineage metadata:
 
 ```bash
-uv run directus-explorer ms export-metadata --output ms_metadata.csv
+uv run directus-explorer ms export-metadata --output sample_metadata.tsv
 ```
 
-Restrict the MS metadata export to a single qfield project:
+Export a curated compact metadata view instead of the full rich table:
 
 ```bash
-uv run directus-explorer ms export-metadata --output ms_metadata_jbuf.csv --project jbuf
+uv run directus-explorer ms export-metadata --output sample_metadata_compact.tsv --view compact
 ```
+
+The metadata export no longer includes the physical storage hierarchy. Use the dedicated
+sample locations command for container/storage lookup.
+
+Restrict the metadata export to a single qfield project and enrich exact-matching MS rows with metadata from one or more `mzmlwatcher` TSV artefacts:
+
+```bash
+uv run directus-explorer ms export-metadata \
+  --output sample_metadata_jbuf.tsv \
+  --project jbuf \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qehfx.tsv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qeplus.tsv
+```
+
+Resolve the physical sample containers and storage hierarchy for one sample or container code:
+
+```bash
+uv run directus-explorer samples locations --sample-id dbgi_003187_01_01
+```
+
+Render the same result as top-down retrieval instructions:
+
+```bash
+uv run directus-explorer samples locations --sample-id dbgi_003187_01_01 --format pretty
+```
+
+Export all physical sample locations for one qfield project:
+
+```bash
+uv run directus-explorer samples locations \
+  --project jbuf \
+  --format tsv \
+  --output sample_locations_jbuf.tsv
+```
+
+Compare an exported MS metadata CSV against the mzML watcher inventory and write per-row CSV results:
+
+```bash
+uv run directus-explorer ms check-converted \
+  --metadata-csv /tmp/ms_metadata_jbuf.csv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qehfx.tsv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qeplus.tsv \
+  --format csv \
+  --output converted_check_jbuf.csv
+```
+
+Export only analyses with an exact converted-file match:
+
+```bash
+uv run directus-explorer ms check-converted \
+  --metadata-csv /tmp/ms_metadata_jbuf.csv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qehfx.tsv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qeplus.tsv \
+  --format csv \
+  --output converted_check_matches_jbuf.csv \
+  --matches-only
+```
+
+Export only analyses missing any exact converted-file match:
+
+```bash
+uv run directus-explorer ms check-converted \
+  --metadata-csv /tmp/ms_metadata_jbuf.csv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qehfx.tsv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qeplus.tsv \
+  --format csv \
+  --output converted_check_missing_jbuf.csv \
+  --missing-only
+```
+
+The per-row report is exact-filename based. It also carries the Directus-sourced base
+`dbgi_#####` sample identifier and the more specific profiled sample/aliquot code such as
+`dbgi_001195_01_01` as contextual columns, but those identifiers are not used to create secondary
+matches. For exact matches, the report also includes the watcher-exported mzML `polarity`.

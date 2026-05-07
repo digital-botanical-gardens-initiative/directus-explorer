@@ -109,6 +109,11 @@ uv run directus-explorer ms export-metadata \
   --project jbuf \
   --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qehfx.tsv \
   --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qeplus.tsv
+
+uv run directus-explorer ms export-metadata \
+  --output sample_metadata_compact.tsv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qehfx.tsv \
+  --watcher-tsv /home/allardpm/git_repos/oolonek/mzmlwatcher/output/mzmlwatcher_qeplus.tsv
 ```
 
 Resolve the physical sample containers and storage hierarchy for one sample or container code:

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Iterable, Mapping
 from pathlib import Path
 from typing import Any
 
@@ -24,14 +25,22 @@ from .ms_metadata import (
     write_ms_metadata_csv,
 )
 from .samples import (
+    PROJECT_GROUPS,
     ProfiledSample,
     ProjectSampleSummary,
+    ProjectSpeciesSummary,
     build_sample_count_params,
     classify_profile_mode,
     collapse_profile_modes,
     filter_profiled_samples,
     parse_sample_count_response,
     resolve_original_sample_container_id,
+)
+from .taxonomy import (
+    CatalogueOfLifeTaxonResolver,
+    TaxonResolution,
+    TaxonResolutionError,
+    TaxonResolver,
 )
 
 
@@ -47,15 +56,44 @@ class DirectusResponseError(DirectusError):
     """Raised when Directus returns an error or malformed payload."""
 
 
+TAXONOMY_METADATA_FIELDNAMES = (
+    "resolved_taxon_input_name",
+    "resolved_taxon_canonical",
+    "resolved_taxon_id",
+    "resolved_taxon_scientific_name",
+    "resolved_taxon_matched_name",
+    "resolved_taxon_current_name",
+    "resolved_taxon_synonym",
+    "resolved_taxon_source_id",
+    "resolved_taxon_source_title",
+    "resolved_taxon_kind",
+    "resolved_taxon_sort_score",
+    "resolved_taxon_match_type",
+    "resolved_taxon_edit_distance",
+    "resolved_taxon_classification_path",
+    "resolved_taxon_kingdom",
+    "resolved_taxon_phylum",
+    "resolved_taxon_class",
+    "resolved_taxon_order",
+    "resolved_taxon_family",
+    "resolved_taxon_genus",
+)
+
+
 class DirectusClient:
     """Small authenticated Directus client for read-only explorer queries."""
 
-    def __init__(self, settings: Settings) -> None:
+    def __init__(
+        self,
+        settings: Settings,
+        taxon_resolver: TaxonResolver | None = None,
+    ) -> None:
         """Create a client bound to the provided Directus settings."""
 
         self._settings = settings
         self._session = self._build_session()
         self._authenticated = False
+        self._taxon_resolver = taxon_resolver or CatalogueOfLifeTaxonResolver()
 
     def count_field_samples(self, qfield_project: str) -> int:
         """Return the number of Field_Data rows for the given qfield project."""
@@ -85,10 +123,12 @@ class DirectusClient:
         self,
         *,
         project: str | None = None,
+        project_group: str | None = None,
         watcher_tsv_paths: tuple[Path, ...] = (),
     ) -> MsMetadataTable:
         """Return a flattened metadata table enriched from optional watcher TSV exports."""
 
+        project_keys = self._resolve_project_filter(project=project, project_group=project_group)
         self._authenticate()
 
         field_rows = self._get_items(collection="Field_Data", fields="*")
@@ -161,7 +201,7 @@ class DirectusClient:
         rows: list[dict[str, Any]] = []
         for field_row in field_rows:
             qfield_project = field_row.get("qfield_project")
-            if project is not None and qfield_project != project:
+            if project_keys is not None and qfield_project not in project_keys:
                 continue
 
             sample_id = field_row.get("sample_id")
@@ -227,6 +267,7 @@ class DirectusClient:
         self,
         output_path: str | Path,
         project: str | None = None,
+        project_group: str | None = None,
         watcher_tsv_paths: tuple[Path, ...] = (),
         view: str = "full",
     ) -> int:
@@ -234,11 +275,86 @@ class DirectusClient:
 
         table = self.build_ms_metadata_table_with_watcher(
             project=project,
+            project_group=project_group,
             watcher_tsv_paths=watcher_tsv_paths,
         )
-        table = select_table_view(table, view=view)
+        if view == "sample-compact":
+            table = self._build_sample_compact_metadata_table(table)
+        else:
+            table = select_table_view(table, view=view)
         write_ms_metadata_csv(table, output_path, delimiter="\t")
         return len(table.rows)
+
+    def _build_sample_compact_metadata_table(self, table: MsMetadataTable) -> MsMetadataTable:
+        """Return one compact metadata row per original collected sample."""
+
+        compact = select_table_view(table, view="compact")
+        rows_by_sample_id: dict[str, list[dict[str, Any]]] = {}
+        for row in compact.rows:
+            sample_id = row.get("original_sample_id")
+            if not isinstance(sample_id, str) or not sample_id:
+                continue
+            rows_by_sample_id.setdefault(sample_id, []).append(row)
+
+        names_by_sample_id: dict[str, tuple[str, ...]] = {}
+        for sample_id, rows in rows_by_sample_id.items():
+            names: list[str] = []
+            seen: set[str] = set()
+            for row in rows:
+                for fieldname in ("field_taxon_name", "field_sample_name"):
+                    value = row.get(fieldname)
+                    if value is None:
+                        continue
+                    name = str(value).strip()
+                    if not name or name in seen:
+                        continue
+                    seen.add(name)
+                    names.append(name)
+            names_by_sample_id[sample_id] = tuple(names)
+
+        resolution_by_name = self._resolve_taxon_names(
+            {
+                name
+                for names in names_by_sample_id.values()
+                for name in names
+            }
+        )
+
+        output_rows: list[dict[str, Any]] = []
+        for sample_id in sorted(rows_by_sample_id):
+            sample_rows = rows_by_sample_id[sample_id]
+            profile_modes = {
+                str(row.get("profile_mode"))
+                for row in sample_rows
+                if row.get("profile_mode") not in (None, "")
+            }
+            collapsed_row = {
+                fieldname: self._join_distinct_values(
+                    row.get(fieldname) for row in sample_rows
+                )
+                for fieldname in compact.fieldnames
+                if fieldname != "profile_mode"
+            }
+            has_positive = "positive" in profile_modes
+            has_negative = "negative" in profile_modes
+            collapsed_row["profile_mode"] = self._collapse_profile_mode_flags(
+                has_positive=has_positive,
+                has_negative=has_negative,
+            )
+            collapsed_row["profiled_positive"] = str(has_positive).lower()
+            collapsed_row["profiled_negative"] = str(has_negative).lower()
+            collapsed_row["profiled_any"] = str(has_positive or has_negative).lower()
+            collapsed_row["metadata_lineage_row_count"] = str(len(sample_rows))
+            collapsed_row.update(
+                self._taxonomy_metadata_for_sample(
+                    names_by_sample_id[sample_id],
+                    resolution_by_name,
+                )
+            )
+            output_rows.append(collapsed_row)
+
+        fieldnames = self._sample_compact_fieldnames(compact.fieldnames)
+        return MsMetadataTable(fieldnames=fieldnames, rows=tuple(output_rows))
 
     def build_sample_locations_table(
         self,
@@ -385,7 +501,10 @@ class DirectusClient:
         )
         dried_rows = self._get_items(
             collection="Dried_Samples_Data",
-            fields="sample_container.container_id,field_data.sample_id,field_data.qfield_project",
+            fields=(
+                "sample_container.container_id,field_data.sample_id,"
+                "field_data.qfield_project,field_data.taxon_name,field_data.sample_name"
+            ),
         )
 
         aliquot_parent_by_child = self._build_relation_map(
@@ -403,7 +522,7 @@ class DirectusClient:
         )
         original_sample_container_ids = set(dried_sample_metadata_by_container)
 
-        metadata_by_sample_id: dict[str, str] = {}
+        metadata_by_sample_id: dict[str, tuple[str, tuple[str, ...]]] = {}
         modes_by_sample_id: dict[str, set[str]] = {}
         for row in ms_rows:
             profiled_container_id = self._read_nested_string(
@@ -431,15 +550,21 @@ class DirectusClient:
             sample_metadata = dried_sample_metadata_by_container.get(original_sample_container_id)
             if sample_metadata is None:
                 continue
-            sample_id, qfield_project = sample_metadata
-            metadata_by_sample_id[sample_id] = qfield_project
+            sample_id, qfield_project, species_names = sample_metadata
+            metadata_by_sample_id[sample_id] = (qfield_project, species_names)
             modes_by_sample_id.setdefault(sample_id, set()).add(profile_mode)
 
         profiled_samples = [
             ProfiledSample(
                 sample_id=sample_id,
-                qfield_project=metadata_by_sample_id[sample_id],
+                qfield_project=metadata_by_sample_id[sample_id][0],
                 mode=collapse_profile_modes(modes),
+                species=(
+                    metadata_by_sample_id[sample_id][1][0]
+                    if metadata_by_sample_id[sample_id][1]
+                    else None
+                ),
+                species_names=metadata_by_sample_id[sample_id][1],
             )
             for sample_id, modes in sorted(modes_by_sample_id.items())
         ]
@@ -496,6 +621,148 @@ class DirectusClient:
             )
             for qfield_project, project_counts in sorted(counts_by_project.items())
         ]
+
+    def summarize_samples_by_project_group(self, group_name: str) -> list[ProjectSampleSummary]:
+        """Return collected and profiled sample counts for one configured project group."""
+
+        group_name = group_name.lower()
+        project_keys = set(PROJECT_GROUPS[group_name])
+        summary_by_project = {
+            summary.qfield_project: summary
+            for summary in self.summarize_samples_by_project()
+            if summary.qfield_project in project_keys
+        }
+        return [
+            ProjectSampleSummary(
+                qfield_project=group_name,
+                collected_count=sum(
+                    summary.collected_count for summary in summary_by_project.values()
+                ),
+                profiled_count=sum(
+                    summary.profiled_count for summary in summary_by_project.values()
+                ),
+                positive_count=sum(
+                    summary.positive_count for summary in summary_by_project.values()
+                ),
+                negative_count=sum(
+                    summary.negative_count for summary in summary_by_project.values()
+                ),
+                both_count=sum(summary.both_count for summary in summary_by_project.values()),
+            )
+        ]
+
+    def summarize_species_by_project(self) -> list[ProjectSpeciesSummary]:
+        """Return distinct collected and profiled species counts grouped by qfield project."""
+
+        return self._summarize_species_by_project_groups(project_groups=None)
+
+    def summarize_species_by_project_group(self, group_name: str) -> list[ProjectSpeciesSummary]:
+        """Return resolved species counts for one configured project group."""
+
+        group_name = group_name.lower()
+        return self._summarize_species_by_project_groups(
+            project_groups={group_name: set(PROJECT_GROUPS[group_name])}
+        )
+
+    def _summarize_species_by_project_groups(
+        self,
+        *,
+        project_groups: dict[str, set[str]] | None,
+    ) -> list[ProjectSpeciesSummary]:
+        """Return distinct resolved species counts grouped by project or project group."""
+
+        self._authenticate()
+
+        collected_species = self._get_field_species_by_project()
+        profiled_samples = self.list_profiled_samples(mode="any")
+        resolution_by_name = self._resolve_taxon_names(
+            {
+                name
+                for names in collected_species.values()
+                for name in names
+            }
+            | {
+                name
+                for sample in profiled_samples
+                for name in sample.species_names
+            }
+        )
+
+        species_by_project: dict[str, dict[str, set[str]]] = {}
+        for qfield_project, species in collected_species.items():
+            group_key = self._project_summary_group_key(qfield_project, project_groups)
+            if group_key is None:
+                continue
+            project_species = species_by_project.setdefault(
+                group_key,
+                {
+                    "collected": set(),
+                    "profiled": set(),
+                    "positive": set(),
+                    "negative": set(),
+                    "both": set(),
+                },
+            )
+            project_species["collected"].update(
+                self._resolved_taxon_keys(species, resolution_by_name)
+            )
+
+        for sample in profiled_samples:
+            group_key = self._project_summary_group_key(sample.qfield_project, project_groups)
+            if group_key is None:
+                continue
+            resolved_sample_species = self._resolved_taxon_keys(
+                sample.species_names,
+                resolution_by_name,
+            )
+            if not resolved_sample_species:
+                continue
+
+            project_species = species_by_project.setdefault(
+                group_key,
+                {
+                    "collected": set(),
+                    "profiled": set(),
+                    "positive": set(),
+                    "negative": set(),
+                    "both": set(),
+                },
+            )
+            project_species["profiled"].update(resolved_sample_species)
+            if sample.mode == "positive":
+                project_species["positive"].update(resolved_sample_species)
+            elif sample.mode == "negative":
+                project_species["negative"].update(resolved_sample_species)
+            elif sample.mode == "both":
+                project_species["both"].update(resolved_sample_species)
+            else:
+                raise DirectusResponseError(f"Unexpected profiled sample mode: {sample.mode}")
+
+        return [
+            ProjectSpeciesSummary(
+                qfield_project=qfield_project,
+                collected_count=len(project_species["collected"]),
+                profiled_count=len(project_species["profiled"]),
+                positive_count=len(project_species["positive"]),
+                negative_count=len(project_species["negative"]),
+                both_count=len(project_species["both"]),
+            )
+            for qfield_project, project_species in sorted(species_by_project.items())
+        ]
+
+    @staticmethod
+    def _project_summary_group_key(
+        qfield_project: str,
+        project_groups: dict[str, set[str]] | None,
+    ) -> str | None:
+        """Return the output grouping key for a qfield project."""
+
+        if project_groups is None:
+            return qfield_project
+        for group_name, project_keys in project_groups.items():
+            if qfield_project in project_keys:
+                return group_name
+        return None
 
     def _authenticate(self) -> None:
         """Authenticate once and cache the bearer token on the session."""
@@ -608,6 +875,190 @@ class DirectusClient:
 
         return counts_by_project
 
+    def _get_field_species_by_project(self) -> dict[str, set[str]]:
+        """Return distinct collected species grouped by qfield project."""
+
+        field_rows = self._get_items(
+            collection="Field_Data",
+            fields="qfield_project,taxon_name,sample_name",
+        )
+
+        species_by_project: dict[str, set[str]] = {}
+        for row in field_rows:
+            qfield_project = self._read_nested_string(row, "qfield_project")
+            if qfield_project is None:
+                continue
+
+            species_by_project.setdefault(qfield_project, set())
+            species_by_project[qfield_project].update(
+                self._read_species_names(row, field_data_prefix=False)
+            )
+
+        return species_by_project
+
+    @staticmethod
+    def _resolve_project_filter(
+        *,
+        project: str | None,
+        project_group: str | None,
+    ) -> set[str] | None:
+        """Return the accepted qfield project keys for an optional export filter."""
+
+        if project is not None and project_group is not None:
+            raise DirectusResponseError("Use either --project or --project-group, not both")
+        if project is not None:
+            return {project}
+        if project_group is None:
+            return None
+        group_key = project_group.lower()
+        try:
+            return set(PROJECT_GROUPS[group_key])
+        except KeyError as exc:
+            raise DirectusResponseError(f"Unknown project group: {project_group}") from exc
+
+    def _resolve_taxon_names(
+        self,
+        names: set[str],
+    ) -> Mapping[str, TaxonResolution]:
+        """Resolve raw taxon names against Catalogue of Life."""
+
+        try:
+            return self._taxon_resolver.resolve_names(names)
+        except TaxonResolutionError as exc:
+            raise DirectusResponseError(str(exc)) from exc
+
+    @staticmethod
+    def _resolved_taxon_keys(
+        names: Iterable[str],
+        resolution_by_name: Mapping[str, TaxonResolution],
+    ) -> set[str]:
+        """Return Catalogue of Life taxon keys for resolved raw names."""
+
+        keys: set[str] = set()
+        for name in names:
+            resolution = resolution_by_name.get(name)
+            if resolution is None:
+                continue
+            key = resolution.aggregation_key
+            if key is not None:
+                keys.add(key)
+        return keys
+
+    @staticmethod
+    def _join_distinct_values(values: Iterable[Any]) -> str:
+        """Join distinct non-empty row values while preserving row order."""
+
+        joined: list[str] = []
+        seen: set[str] = set()
+        for value in values:
+            if value in (None, ""):
+                continue
+            normalized = str(value).strip()
+            if not normalized or normalized in seen:
+                continue
+            seen.add(normalized)
+            joined.append(normalized)
+        return "; ".join(joined)
+
+    @staticmethod
+    def _collapse_profile_mode_flags(*, has_positive: bool, has_negative: bool) -> str:
+        """Return the compact profile-mode label for positive/negative flags."""
+
+        if has_positive and has_negative:
+            return "both"
+        if has_positive:
+            return "positive"
+        if has_negative:
+            return "negative"
+        return ""
+
+    @staticmethod
+    def _taxonomy_metadata_for_sample(
+        names: tuple[str, ...],
+        resolution_by_name: Mapping[str, TaxonResolution],
+    ) -> dict[str, str]:
+        """Return taxonomy metadata for the first resolved sample name."""
+
+        resolution = next(
+            (
+                resolution_by_name[name]
+                for name in names
+                if name in resolution_by_name
+                and resolution_by_name[name].is_catalogue_of_life_match
+            ),
+            None,
+        )
+        if resolution is None:
+            return {fieldname: "" for fieldname in TAXONOMY_METADATA_FIELDNAMES}
+
+        lineage = DirectusClient._parse_col_lineage(resolution)
+        return {
+            "resolved_taxon_input_name": resolution.input_name,
+            "resolved_taxon_canonical": resolution.canonical_name,
+            "resolved_taxon_id": resolution.taxon_id,
+            "resolved_taxon_scientific_name": resolution.scientific_name,
+            "resolved_taxon_matched_name": resolution.matched_name,
+            "resolved_taxon_current_name": resolution.current_name,
+            "resolved_taxon_synonym": resolution.synonym,
+            "resolved_taxon_source_id": resolution.data_source_id,
+            "resolved_taxon_source_title": resolution.data_source_title,
+            "resolved_taxon_kind": resolution.kind,
+            "resolved_taxon_sort_score": resolution.sort_score,
+            "resolved_taxon_match_type": resolution.match_type,
+            "resolved_taxon_edit_distance": resolution.edit_distance,
+            "resolved_taxon_classification_path": resolution.classification_path,
+            "resolved_taxon_kingdom": lineage.get("kingdom", ""),
+            "resolved_taxon_phylum": lineage.get("phylum", ""),
+            "resolved_taxon_class": lineage.get("class", ""),
+            "resolved_taxon_order": lineage.get("order", ""),
+            "resolved_taxon_family": lineage.get("family", ""),
+            "resolved_taxon_genus": lineage.get("genus", ""),
+        }
+
+    @staticmethod
+    def _parse_col_lineage(resolution: TaxonResolution) -> dict[str, str]:
+        """Extract common upper-taxonomy columns from a COL classification path."""
+
+        parts = [
+            part.strip()
+            for part in resolution.classification_path.split("|")
+            if part.strip()
+        ]
+        genus = resolution.canonical_name.split(" ", 1)[0] if resolution.canonical_name else ""
+        lineage = {
+            "kingdom": "Plantae" if "Plantae" in parts else "",
+            "phylum": "Tracheophyta" if "Tracheophyta" in parts else "",
+            "class": DirectusClient._first_lineage_part_with_suffix(parts, "opsida"),
+            "order": DirectusClient._first_lineage_part_with_suffix(parts, "ales"),
+            "family": DirectusClient._first_lineage_part_with_suffix(parts, "aceae"),
+            "genus": genus,
+        }
+        return lineage
+
+    @staticmethod
+    def _first_lineage_part_with_suffix(parts: list[str], suffix: str) -> str:
+        """Return the first COL lineage part with the requested taxonomic suffix."""
+
+        return next((part for part in parts if part.endswith(suffix)), "")
+
+    @staticmethod
+    def _sample_compact_fieldnames(compact_fieldnames: tuple[str, ...]) -> tuple[str, ...]:
+        """Return ordered fieldnames for the one-row-per-sample compact export."""
+
+        profile_fieldnames = (
+            "profile_mode",
+            "profiled_positive",
+            "profiled_negative",
+            "profiled_any",
+            "metadata_lineage_row_count",
+        )
+        base_fieldnames = tuple(
+            fieldname
+            for fieldname in compact_fieldnames
+            if fieldname != "profile_mode"
+        )
+        return base_fieldnames + profile_fieldnames + TAXONOMY_METADATA_FIELDNAMES
+
     def _index_rows_by_nested_string(
         self,
         *,
@@ -674,10 +1125,10 @@ class DirectusClient:
     def _build_sample_metadata_map(
         *,
         rows: list[dict[str, Any]],
-    ) -> dict[str, tuple[str, str]]:
+    ) -> dict[str, tuple[str, str, tuple[str, ...]]]:
         """Build a sample-container to sample metadata map from dried sample rows."""
 
-        mapping: dict[str, tuple[str, str]] = {}
+        mapping: dict[str, tuple[str, str, tuple[str, ...]]] = {}
         for row in rows:
             container_id = DirectusClient._read_nested_string(
                 row,
@@ -688,8 +1139,31 @@ class DirectusClient:
             qfield_project = DirectusClient._read_nested_string(row, "field_data", "qfield_project")
             if container_id is None or sample_id is None or qfield_project is None:
                 continue
-            mapping[container_id] = (sample_id, qfield_project)
+            species_names = DirectusClient._read_species_names(row, field_data_prefix=True)
+            mapping[container_id] = (sample_id, qfield_project, species_names)
         return mapping
+
+    @staticmethod
+    def _read_species_names(
+        row: dict[str, Any],
+        *,
+        field_data_prefix: bool,
+    ) -> tuple[str, ...]:
+        """Return distinct species/name labels from taxon_name and sample_name."""
+
+        path_prefix = ("field_data",) if field_data_prefix else ()
+        names: list[str] = []
+        seen: set[str] = set()
+        for field_name in ("taxon_name", "sample_name"):
+            value = DirectusClient._read_nested_string(row, *path_prefix, field_name)
+            if value is None:
+                continue
+            normalized = value.strip()
+            if not normalized or normalized in seen:
+                continue
+            seen.add(normalized)
+            names.append(normalized)
+        return tuple(names)
 
     @staticmethod
     def _group_rows_by_nested_string(

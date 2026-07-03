@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Any
 
@@ -17,7 +18,12 @@ from .ms_converted_check import (
     report_to_json_payload,
     write_report_csv,
 )
-from .samples import ProfiledSample, ProjectSampleSummary
+from .samples import (
+    PROJECT_GROUPS,
+    ProfiledSample,
+    ProjectSampleSummary,
+    ProjectSpeciesSummary,
+)
 
 
 @click.group()
@@ -167,6 +173,20 @@ def profiled_samples(
     show_default=True,
 )
 @click.option(
+    "--count",
+    "count_by",
+    type=click.Choice(("samples", "species"), case_sensitive=False),
+    default="samples",
+    show_default=True,
+    help="Choose whether summary counts represent samples or distinct species.",
+)
+@click.option(
+    "--project-group",
+    type=click.Choice(tuple(PROJECT_GROUPS), case_sensitive=False),
+    default=None,
+    help="Summarize one configured project group instead of individual qfield projects.",
+)
+@click.option(
     "--format",
     "output_format",
     type=click.Choice(("text", "json"), case_sensitive=False),
@@ -179,38 +199,80 @@ def profiled_samples(
     default=None,
     help="Override the default local .env file.",
 )
-def summarize_samples(group_by: str, output_format: str, env_file: Path | None) -> None:
+def summarize_samples(
+    group_by: str,
+    count_by: str,
+    project_group: str | None,
+    output_format: str,
+    env_file: Path | None,
+) -> None:
     """Summarize collected and profiled samples grouped by project."""
 
     try:
         settings = load_settings(env_file=env_file)
         client = DirectusClient(settings)
-        summaries = client.summarize_samples_by_project()
+        summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary]
+        if count_by == "species":
+            if project_group is None:
+                summaries = client.summarize_species_by_project()
+            else:
+                summaries = client.summarize_species_by_project_group(project_group)
+        elif project_group is None:
+            summaries = client.summarize_samples_by_project()
+        else:
+            summaries = client.summarize_samples_by_project_group(project_group)
     except (SettingsError, DirectusAuthError, DirectusError, DirectusResponseError) as exc:
         raise click.ClickException(str(exc)) from exc
 
     if output_format == "json":
-        click.echo(
-            json.dumps(
-                {
-                    "group_by": group_by,
-                    "projects": [
-                        {
-                            "qfield_project": summary.qfield_project,
-                            "collected_count": summary.collected_count,
-                            "profiled_count": summary.profiled_count,
-                            "positive_count": summary.positive_count,
-                            "negative_count": summary.negative_count,
-                            "both_count": summary.both_count,
-                        }
-                        for summary in summaries
-                    ],
-                }
+        count_keys = (
+            (
+                "collected_species_count",
+                "profiled_species_count",
+                "positive_species_count",
+                "negative_species_count",
+                "both_species_count",
+            )
+            if count_by == "species"
+            else (
+                "collected_count",
+                "profiled_count",
+                "positive_count",
+                "negative_count",
+                "both_count",
             )
         )
+        payload: dict[str, Any] = {
+            "group_by": "project_group" if project_group is not None else group_by,
+            "projects": [
+                {
+                    (
+                        "project_group" if project_group is not None else "qfield_project"
+                    ): summary.qfield_project,
+                    count_keys[0]: summary.collected_count,
+                    count_keys[1]: summary.profiled_count,
+                    count_keys[2]: summary.positive_count,
+                    count_keys[3]: summary.negative_count,
+                    count_keys[4]: summary.both_count,
+                }
+                for summary in summaries
+            ],
+        }
+        if count_by == "species":
+            payload["count_by"] = count_by
+        click.echo(json.dumps(payload))
         return
 
-    click.echo("qfield_project\tcollected\tprofiled\tpositive\tnegative\tboth")
+    if count_by == "species":
+        click.echo(
+            f"{_summary_label_header(project_group)}\tcollected_species\tprofiled_species\t"
+            "positive_species\tnegative_species\tboth_species"
+        )
+    else:
+        click.echo(
+            f"{_summary_label_header(project_group)}\tcollected\tprofiled\t"
+            "positive\tnegative\tboth"
+        )
     for summary in summaries:
         click.echo(_render_project_summary(summary))
 
@@ -317,6 +379,12 @@ def sample_locations(
     help="Restrict the export to one qfield project.",
 )
 @click.option(
+    "--project-group",
+    type=click.Choice(tuple(PROJECT_GROUPS), case_sensitive=False),
+    default=None,
+    help="Restrict the export to one configured project group.",
+)
+@click.option(
     "--watcher-tsv",
     type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
     default=(),
@@ -326,10 +394,10 @@ def sample_locations(
 @click.option(
     "--view",
     "export_view",
-    type=click.Choice(("full", "compact"), case_sensitive=False),
+    type=click.Choice(("full", "compact", "sample-compact"), case_sensitive=False),
     default="full",
     show_default=True,
-    help="Choose between the rich export and a curated metadata-focused subset.",
+    help="Choose between rich, compact, or one-row-per-sample compact metadata.",
 )
 @click.option(
     "--env-file",
@@ -340,6 +408,7 @@ def sample_locations(
 def export_ms_metadata(
     output_path: Path,
     qfield_project: str | None,
+    project_group: str | None,
     watcher_tsv: tuple[Path, ...],
     export_view: str,
     env_file: Path | None,
@@ -352,13 +421,18 @@ def export_ms_metadata(
         row_count = client.export_ms_metadata_csv(
             output_path=output_path,
             project=qfield_project,
+            project_group=project_group,
             watcher_tsv_paths=watcher_tsv,
             view=export_view,
         )
     except (SettingsError, DirectusAuthError, DirectusError, DirectusResponseError) as exc:
         raise click.ClickException(str(exc)) from exc
 
-    if qfield_project is None:
+    if project_group is not None:
+        click.echo(
+            f"Wrote {row_count} metadata rows for project group {project_group} to {output_path}"
+        )
+    elif qfield_project is None:
         click.echo(f"Wrote {row_count} metadata rows to {output_path}")
     else:
         click.echo(
@@ -479,13 +553,19 @@ def _render_profiled_sample(sample: ProfiledSample) -> str:
     return f"{sample.sample_id}\t{sample.qfield_project}\t{sample.mode}"
 
 
-def _render_project_summary(summary: ProjectSampleSummary) -> str:
+def _render_project_summary(summary: ProjectSampleSummary | ProjectSpeciesSummary) -> str:
     """Render a project summary in plain text."""
 
     return (
         f"{summary.qfield_project}\t{summary.collected_count}\t{summary.profiled_count}\t"
         f"{summary.positive_count}\t{summary.negative_count}\t{summary.both_count}"
     )
+
+
+def _summary_label_header(project_group: str | None) -> str:
+    """Return the label column for summary output."""
+
+    return "project_group" if project_group is not None else "qfield_project"
 
 
 def _render_converted_match_summary(summary: ConvertedMatchSummary) -> str:

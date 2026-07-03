@@ -9,7 +9,7 @@ from click.testing import CliRunner
 
 from directus_explorer import cli as cli_module
 from directus_explorer.config import Settings, SettingsError
-from directus_explorer.samples import ProfiledSample, ProjectSampleSummary
+from directus_explorer.samples import ProfiledSample, ProjectSampleSummary, ProjectSpeciesSummary
 
 
 def test_cli_help() -> None:
@@ -124,11 +124,13 @@ def test_export_ms_metadata_writes_status_line(monkeypatch: pytest.MonkeyPatch) 
             self,
             output_path: str,
             project: str | None = None,
+            project_group: str | None = None,
             watcher_tsv_paths: tuple[object, ...] = (),
             view: str = "full",
         ) -> int:
             assert str(output_path) == "metadata.csv"
             assert project == "jbuf"
+            assert project_group is None
             assert watcher_tsv_paths == ()
             assert view == "full"
             return 42
@@ -167,11 +169,13 @@ def test_export_ms_metadata_passes_compact_view(monkeypatch: pytest.MonkeyPatch)
             self,
             output_path: str,
             project: str | None = None,
+            project_group: str | None = None,
             watcher_tsv_paths: tuple[object, ...] = (),
             view: str = "full",
         ) -> int:
             assert str(output_path) == "compact.tsv"
             assert project == "jbuf"
+            assert project_group is None
             assert view == "compact"
             return 5
 
@@ -193,6 +197,62 @@ def test_export_ms_metadata_passes_compact_view(monkeypatch: pytest.MonkeyPatch)
 
     assert result.exit_code == 0
     assert result.output.strip() == "Wrote 5 metadata rows for project jbuf to compact.tsv"
+
+
+def test_export_ms_metadata_passes_project_group_sample_compact_view(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """The export command should support one-row-per-sample group metadata."""
+
+    runner = CliRunner()
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def export_ms_metadata_csv(
+            self,
+            output_path: str,
+            project: str | None = None,
+            project_group: str | None = None,
+            watcher_tsv_paths: tuple[object, ...] = (),
+            view: str = "full",
+        ) -> int:
+            assert str(output_path) == "dbgi.tsv"
+            assert project is None
+            assert project_group == "dbgi"
+            assert watcher_tsv_paths == ()
+            assert view == "sample-compact"
+            return 6644
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(
+        cli_module.cli,
+        [
+            "ms",
+            "export-metadata",
+            "--output",
+            "dbgi.tsv",
+            "--project-group",
+            "dbgi",
+            "--view",
+            "sample-compact",
+        ],
+    )
+
+    assert result.exit_code == 0
+    assert result.output.strip() == "Wrote 6644 metadata rows for project group dbgi to dbgi.tsv"
 
 
 def test_sample_locations_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -1048,4 +1108,161 @@ def test_samples_summary_json_output(monkeypatch: pytest.MonkeyPatch) -> None:
         '{"group_by": "project", "projects": '
         '[{"qfield_project": "jbuf", "collected_count": 10, "profiled_count": 4, '
         '"positive_count": 1, "negative_count": 1, "both_count": 2}]}'
+    )
+
+
+def test_samples_summary_species_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Project summary can count distinct species instead of samples."""
+
+    runner = CliRunner()
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def summarize_species_by_project(self) -> list[ProjectSpeciesSummary]:
+            return [
+                ProjectSpeciesSummary(
+                    qfield_project="jbuf",
+                    collected_count=7,
+                    profiled_count=3,
+                    positive_count=1,
+                    negative_count=1,
+                    both_count=1,
+                )
+            ]
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(
+        cli_module.cli,
+        ["samples", "summary", "--group-by", "project", "--count", "species"],
+    )
+
+    assert result.exit_code == 0
+    assert result.output.splitlines() == [
+        (
+            "qfield_project\tcollected_species\tprofiled_species\t"
+            "positive_species\tnegative_species\tboth_species"
+        ),
+        "jbuf\t7\t3\t1\t1\t1",
+    ]
+
+
+def test_samples_summary_project_group_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Project summary can render a configured project group."""
+
+    runner = CliRunner()
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def summarize_samples_by_project_group(self, group_name: str) -> list[ProjectSampleSummary]:
+            assert group_name == "dbgi"
+            return [
+                ProjectSampleSummary(
+                    qfield_project="dbgi",
+                    collected_count=6644,
+                    profiled_count=1170,
+                    positive_count=11,
+                    negative_count=0,
+                    both_count=1159,
+                )
+            ]
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(
+        cli_module.cli,
+        ["samples", "summary", "--project-group", "dbgi"],
+    )
+
+    assert result.exit_code == 0
+    assert result.output.splitlines() == [
+        "project_group\tcollected\tprofiled\tpositive\tnegative\tboth",
+        "dbgi\t6644\t1170\t11\t0\t1159",
+    ]
+
+
+def test_samples_summary_species_project_group_json_output(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Species summary JSON can render a configured project group."""
+
+    runner = CliRunner()
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def summarize_species_by_project_group(
+            self,
+            group_name: str,
+        ) -> list[ProjectSpeciesSummary]:
+            assert group_name == "dbgi"
+            return [
+                ProjectSpeciesSummary(
+                    qfield_project="dbgi",
+                    collected_count=3921,
+                    profiled_count=939,
+                    positive_count=11,
+                    negative_count=0,
+                    both_count=935,
+                )
+            ]
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(
+        cli_module.cli,
+        [
+            "samples",
+            "summary",
+            "--project-group",
+            "dbgi",
+            "--count",
+            "species",
+            "--format",
+            "json",
+        ],
+    )
+
+    assert result.exit_code == 0
+    assert result.output.strip() == (
+        '{"group_by": "project_group", "projects": '
+        '[{"project_group": "dbgi", "collected_species_count": 3921, '
+        '"profiled_species_count": 939, "positive_species_count": 11, '
+        '"negative_species_count": 0, "both_species_count": 935}], '
+        '"count_by": "species"}'
     )

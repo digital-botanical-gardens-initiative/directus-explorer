@@ -86,6 +86,36 @@ Summarize collected and profiled samples per qfield project:
 uv run directus-explorer samples summary --group-by project
 ```
 
+Count distinct species instead of samples per qfield project:
+
+```bash
+uv run directus-explorer samples summary --group-by project --count species
+```
+
+Species summaries first collect distinct non-empty values from both
+`Field_Data.taxon_name` and `Field_Data.sample_name`, resolve them with
+`gnverifier` against Catalogue of Life (`--sources 1`), and aggregate on the
+resolved Catalogue of Life taxon ids. Unresolved names are not counted in the
+species-level summary.
+
+Summarize the DBGI megaproject (`jbc`, `jbn`, `jbp`, `jbuf`, and
+`kew-botanical-gardens`) as one row:
+
+```bash
+uv run directus-explorer samples summary --project-group dbgi
+uv run directus-explorer samples summary --project-group dbgi --count species
+```
+
+Export one compact metadata row per collected DBGI sample with positive/negative
+profile flags and Catalogue of Life taxonomic resolution metadata:
+
+```bash
+uv run directus-explorer ms export-metadata \
+  --output sample_metadata_dbgi_sample_compact.tsv \
+  --project-group dbgi \
+  --view sample-compact
+```
+
 Export one wide TSV row per collected sample lineage. Samples without any MS records are still included; samples with MS rows are enriched with the linked lineage metadata:
 
 ```bash

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+from collections.abc import Iterable, Mapping
 from pathlib import Path
 from typing import Any
 
@@ -11,6 +12,8 @@ import pytest
 from directus_explorer.config import Settings
 from directus_explorer.directus import DirectusAuthError, DirectusClient, DirectusResponseError
 from directus_explorer.ms_metadata import MsMetadataTable
+from directus_explorer.samples import ProfiledSample, ProjectSampleSummary
+from directus_explorer.taxonomy import TaxonResolution
 
 
 class FakeResponse:
@@ -1084,4 +1087,397 @@ def test_summarize_samples_by_project_aggregates_collected_and_profiled(
     ] == [
         ("fibl", 5, 1, 1, 0, 0),
         ("jbuf", 10, 1, 0, 0, 1),
+    ]
+
+
+def test_summarize_samples_by_project_group_adds_member_project_counts(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Sample project groups should add counts from configured member projects."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+
+    monkeypatch.setattr(
+        client,
+        "summarize_samples_by_project",
+        lambda: [
+            ProjectSampleSummary("jbc", 10, 0, 0, 0, 0),
+            ProjectSampleSummary("jbn", 20, 2, 1, 0, 1),
+            ProjectSampleSummary("jbp", 30, 3, 0, 1, 2),
+            ProjectSampleSummary("jbuf", 40, 4, 1, 1, 2),
+            ProjectSampleSummary("kew-botanical-gardens", 50, 5, 0, 0, 5),
+            ProjectSampleSummary("sandbox", 999, 999, 999, 999, 999),
+        ],
+    )
+
+    summary = client.summarize_samples_by_project_group("dbgi")
+
+    assert [
+        (
+            item.qfield_project,
+            item.collected_count,
+            item.profiled_count,
+            item.positive_count,
+            item.negative_count,
+            item.both_count,
+        )
+        for item in summary
+    ] == [("dbgi", 150, 14, 2, 2, 10)]
+
+
+def test_sample_compact_metadata_table_collapses_rows_and_adds_taxonomy() -> None:
+    """Sample compact metadata should produce one row per collected sample."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+
+    class FakeTaxonResolver:
+        def resolve_names(self, names: Iterable[str]) -> Mapping[str, TaxonResolution]:
+            assert set(names) == {"Achillea millefolium"}
+            return {
+                "Achillea millefolium": TaxonResolution(
+                    input_name="Achillea millefolium",
+                    canonical_name="Achillea millefolium",
+                    taxon_id="97H4",
+                    scientific_name="Achillea millefolium",
+                    matched_name="Achillea millefolium L.",
+                    current_name="Achillea millefolium L.",
+                    synonym="false",
+                    data_source_id="1",
+                    data_source_title="Catalogue of Life",
+                    kind="BestMatch",
+                    sort_score="9.41215",
+                    match_type="Exact",
+                    edit_distance="0",
+                    classification_path=(
+                        "Eukaryota|Plantae|Pteridobiotina|Tracheophyta|"
+                        "Magnoliopsida|Asterales|Asteraceae|Achillea|"
+                        "Achillea millefolium"
+                    ),
+                    error="",
+                )
+            }
+
+    client = DirectusClient(settings, taxon_resolver=FakeTaxonResolver())
+    table = MsMetadataTable(
+        fieldnames=(
+            "original_sample_id",
+            "qfield_project",
+            "profile_mode",
+            "field_taxon_name",
+            "field_sample_name",
+            "ms_filename",
+        ),
+        rows=(
+            {
+                "original_sample_id": "dbgi_001",
+                "qfield_project": "jbuf",
+                "profile_mode": "positive",
+                "field_taxon_name": "Achillea millefolium",
+                "field_sample_name": "",
+                "ms_filename": "pos.raw",
+            },
+            {
+                "original_sample_id": "dbgi_001",
+                "qfield_project": "jbuf",
+                "profile_mode": "negative",
+                "field_taxon_name": "Achillea millefolium",
+                "field_sample_name": "",
+                "ms_filename": "neg.raw",
+            },
+        ),
+    )
+
+    compact = client._build_sample_compact_metadata_table(table)
+
+    assert len(compact.rows) == 1
+    row = compact.rows[0]
+    assert row["original_sample_id"] == "dbgi_001"
+    assert row["profile_mode"] == "both"
+    assert row["profiled_positive"] == "true"
+    assert row["profiled_negative"] == "true"
+    assert row["ms_filename"] == "pos.raw; neg.raw"
+    assert row["resolved_taxon_canonical"] == "Achillea millefolium"
+    assert row["resolved_taxon_id"] == "97H4"
+    assert row["resolved_taxon_family"] == "Asteraceae"
+    assert row["resolved_taxon_order"] == "Asterales"
+
+
+def test_summarize_species_by_project_group_unions_resolved_taxa(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Species project groups should count each resolved COL taxon once."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+
+    class FakeTaxonResolver:
+        def resolve_names(self, names: Iterable[str]) -> Mapping[str, TaxonResolution]:
+            taxon_ids = {
+                "Achillea millefolium": "97H4",
+                "Achillea millefolium L.": "97H4",
+                "Bellis perennis": "69W5",
+                "Taraxacum officinale": "54P3",
+            }
+            return {
+                name: TaxonResolution(
+                    input_name=name,
+                    canonical_name=name,
+                    taxon_id=taxon_ids[name],
+                    scientific_name=name,
+                    matched_name=f"{name} L.",
+                    current_name=f"{name} L.",
+                    synonym="false",
+                    data_source_id="1",
+                    data_source_title="Catalogue of Life",
+                    kind="BestMatch",
+                    sort_score="9.4",
+                    match_type="Exact",
+                    edit_distance="0",
+                    classification_path=f"Eukaryota|Plantae|Tracheophyta|Magnoliopsida|Asterales|Asteraceae|{name.split()[0]}|{name}",
+                    error="",
+                )
+                for name in names
+                if name in taxon_ids
+            }
+
+    client = DirectusClient(settings, taxon_resolver=FakeTaxonResolver())
+    client._authenticated = True
+
+    monkeypatch.setattr(
+        client,
+        "_get_field_species_by_project",
+        lambda: {
+            "jbc": {"Achillea millefolium"},
+            "jbn": {"Achillea millefolium L.", "Bellis perennis"},
+            "sandbox": {"Taraxacum officinale"},
+        },
+    )
+    monkeypatch.setattr(
+        client,
+        "list_profiled_samples",
+        lambda mode="any": [
+            ProfiledSample(
+                sample_id="dbgi_1",
+                qfield_project="jbc",
+                mode="both",
+                species_names=("Achillea millefolium",),
+            ),
+            ProfiledSample(
+                sample_id="dbgi_2",
+                qfield_project="jbn",
+                mode="positive",
+                species_names=("Bellis perennis",),
+            ),
+            ProfiledSample(
+                sample_id="sandbox_1",
+                qfield_project="sandbox",
+                mode="both",
+                species_names=("Taraxacum officinale",),
+            ),
+        ],
+    )
+
+    summary = client.summarize_species_by_project_group("dbgi")
+
+    assert [
+        (
+            item.qfield_project,
+            item.collected_count,
+            item.profiled_count,
+            item.positive_count,
+            item.negative_count,
+            item.both_count,
+        )
+        for item in summary
+    ] == [("dbgi", 2, 2, 1, 0, 1)]
+
+
+def test_summarize_species_by_project_counts_distinct_species(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Species summary should count resolved Catalogue of Life taxa."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+
+    class FakeTaxonResolver:
+        def resolve_names(self, names: Iterable[str]) -> Mapping[str, TaxonResolution]:
+            taxon_ids = {
+                "Achillea millefolium": "97H4",
+                "Achillea millefolium L.": "97H4",
+                "Artemisia vulgaris": "63CDH",
+                "Bellis perennis": "69W5",
+                "Taraxacum officinale": "54P3",
+            }
+            return {
+                name: TaxonResolution(
+                    input_name=name,
+                    canonical_name=name,
+                    taxon_id=taxon_ids.get(name, ""),
+                    scientific_name=name,
+                    matched_name=f"{name} L.",
+                    current_name=f"{name} L.",
+                    synonym="false",
+                    data_source_id="1" if name in taxon_ids else "",
+                    data_source_title="Catalogue of Life" if name in taxon_ids else "",
+                    kind="BestMatch" if name in taxon_ids else "",
+                    sort_score="9.4" if name in taxon_ids else "",
+                    match_type="Exact" if name in taxon_ids else "NoMatch",
+                    edit_distance="0" if name in taxon_ids else "",
+                    classification_path=f"Eukaryota|Plantae|Tracheophyta|Magnoliopsida|Asterales|Asteraceae|{name.split()[0]}|{name}",
+                    error="",
+                )
+                for name in names
+            }
+
+    client = DirectusClient(settings, taxon_resolver=FakeTaxonResolver())
+
+    def fake_post(*args: Any, **kwargs: Any) -> FakeResponse:
+        return FakeResponse(200, {"data": {"access_token": "token"}})
+
+    def fake_get(url: str, params: Any = None, *args: Any, **kwargs: Any) -> FakeResponse:
+        if url.endswith("/items/Field_Data") and params == {
+            "limit": "-1",
+            "fields": "qfield_project,taxon_name,sample_name",
+        }:
+            return FakeResponse(
+                200,
+                {
+                    "data": [
+                        {
+                            "qfield_project": "jbuf",
+                            "taxon_name": "Achillea millefolium",
+                            "sample_name": "Achillea millefolium L.",
+                        },
+                        {
+                            "qfield_project": "jbuf",
+                            "taxon_name": "Achillea millefolium",
+                            "sample_name": "Artemisia vulgaris",
+                        },
+                        {
+                            "qfield_project": "jbuf",
+                            "taxon_name": None,
+                            "sample_name": "Unresolved garden label",
+                        },
+                        {
+                            "qfield_project": "fibl",
+                            "taxon_name": "Taraxacum officinale",
+                            "sample_name": "",
+                        },
+                    ]
+                },
+            )
+        if "/items/MS_Data" in url:
+            return FakeResponse(
+                200,
+                {
+                    "data": [
+                        {
+                            "parent_sample_container": {"container_id": "dbgi_001195_01_01"},
+                            "injection_method": {"method_name": "method_pos"},
+                        },
+                        {
+                            "parent_sample_container": {"container_id": "dbgi_001195_01_01"},
+                            "injection_method": {"method_name": "method_neg"},
+                        },
+                        {
+                            "parent_sample_container": {"container_id": "dbgi_001196_01_01"},
+                            "injection_method": {"method_name": "method_pos"},
+                        },
+                    ]
+                },
+            )
+        if "/items/Aliquoting_Data" in url:
+            return FakeResponse(
+                200,
+                {
+                    "data": [
+                        {
+                            "sample_container": {"container_id": "dbgi_001195_01_01"},
+                            "parent_sample_container": {"container_id": "dbgi_001195_01"},
+                        },
+                        {
+                            "sample_container": {"container_id": "dbgi_001196_01_01"},
+                            "parent_sample_container": {"container_id": "dbgi_001196_01"},
+                        },
+                    ]
+                },
+            )
+        if "/items/Extraction_Data" in url:
+            return FakeResponse(
+                200,
+                {
+                    "data": [
+                        {
+                            "sample_container": {"container_id": "dbgi_001195_01"},
+                            "parent_sample_container": {"container_id": "dbgi_001195"},
+                        },
+                        {
+                            "sample_container": {"container_id": "dbgi_001196_01"},
+                            "parent_sample_container": {"container_id": "dbgi_001196"},
+                        },
+                    ]
+                },
+            )
+        if "/items/Dried_Samples_Data" in url:
+            return FakeResponse(
+                200,
+                {
+                    "data": [
+                        {
+                            "sample_container": {"container_id": "dbgi_001195"},
+                            "field_data": {
+                                "sample_id": "dbgi_001195",
+                                "qfield_project": "jbuf",
+                                "taxon_name": "Achillea millefolium",
+                                "sample_name": "Achillea millefolium L.",
+                            },
+                        },
+                        {
+                            "sample_container": {"container_id": "dbgi_001196"},
+                            "field_data": {
+                                "sample_id": "dbgi_001196",
+                                "qfield_project": "jbuf",
+                                "taxon_name": "",
+                                "sample_name": "Bellis perennis",
+                            },
+                        },
+                    ]
+                },
+            )
+        raise AssertionError(f"Unexpected URL or params: {url!r} {params!r}")
+
+    monkeypatch.setattr(client._session, "post", fake_post)
+    monkeypatch.setattr(client._session, "get", fake_get)
+
+    summary = client.summarize_species_by_project()
+
+    assert [
+        (
+            item.qfield_project,
+            item.collected_count,
+            item.profiled_count,
+            item.positive_count,
+            item.negative_count,
+            item.both_count,
+        )
+        for item in summary
+    ] == [
+        ("fibl", 1, 0, 0, 0, 0),
+        ("jbuf", 2, 2, 1, 0, 1),
     ]

@@ -7,6 +7,17 @@ from typing import Any
 
 ProfileMode = str
 
+PROJECT_GROUPS = {
+    "dbgi": (
+        "jbc",
+        "jbn",
+        "jbp",
+        "jbp-new",
+        "jbuf",
+        "kew-botanical-gardens",
+    ),
+}
+
 
 @dataclass(frozen=True, slots=True)
 class SampleCountResult:
@@ -23,11 +34,25 @@ class ProfiledSample:
     sample_id: str
     qfield_project: str
     mode: str
+    species: str | None = None
+    species_names: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)
 class ProjectSampleSummary:
     """Per-project summary of collected and profiled samples."""
+
+    qfield_project: str
+    collected_count: int
+    profiled_count: int
+    positive_count: int
+    negative_count: int
+    both_count: int
+
+
+@dataclass(frozen=True, slots=True)
+class ProjectSpeciesSummary:
+    """Per-project summary of collected and profiled species."""
 
     qfield_project: str
     collected_count: int

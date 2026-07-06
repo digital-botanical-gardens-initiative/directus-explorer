@@ -70,7 +70,12 @@ class CatalogueOfLifeTaxonResolver:
     def resolve_names(self, names: Iterable[str]) -> Mapping[str, TaxonResolution]:
         """Resolve distinct non-empty names through gnverifier."""
 
-        query_names = sorted({name.strip() for name in names if name.strip()})
+        normalized_by_input = {
+            name: normalized
+            for name in names
+            if (normalized := self._normalize_name_whitespace(name))
+        }
+        query_names = sorted(set(normalized_by_input.values()))
         if not query_names:
             return {}
 
@@ -79,7 +84,13 @@ class CatalogueOfLifeTaxonResolver:
             names_path.write_text("\n".join(query_names) + "\n", encoding="utf-8")
             result_rows = self._run_gnverifier(names_path)
 
-        return self._align_results(query_names, result_rows)
+        return self._align_results(normalized_by_input, result_rows)
+
+    @staticmethod
+    def _normalize_name_whitespace(name: str) -> str:
+        """Collapse internal whitespace so one taxon name stays one input line."""
+
+        return " ".join(name.split())
 
     @staticmethod
     def _run_gnverifier(names_path: Path) -> list[dict[str, str]]:
@@ -113,16 +124,22 @@ class CatalogueOfLifeTaxonResolver:
 
     @staticmethod
     def _align_results(
-        query_names: list[str],
+        normalized_by_input: Mapping[str, str],
         result_rows: list[dict[str, str]],
     ) -> Mapping[str, TaxonResolution]:
         results_by_name: dict[str, dict[str, str]] = {}
         for row in result_rows:
-            scientific_name = (row.get("ScientificName") or "").strip()
+            scientific_name = CatalogueOfLifeTaxonResolver._normalize_name_whitespace(
+                row.get("ScientificName") or ""
+            )
             if scientific_name:
                 results_by_name[scientific_name] = row
 
-        missing = [name for name in query_names if name not in results_by_name]
+        missing = [
+            input_name
+            for input_name, normalized_name in normalized_by_input.items()
+            if normalized_name not in results_by_name
+        ]
         if missing:
             examples = ", ".join(repr(name) for name in missing[:5])
             raise TaxonResolutionError(
@@ -131,8 +148,8 @@ class CatalogueOfLifeTaxonResolver:
             )
 
         return {
-            name: TaxonResolution(
-                input_name=name,
+            input_name: TaxonResolution(
+                input_name=input_name,
                 canonical_name=(row.get("MatchedCanonical") or "").strip(),
                 taxon_id=(row.get("TaxonId") or "").strip(),
                 scientific_name=(row.get("ScientificName") or "").strip(),
@@ -148,6 +165,6 @@ class CatalogueOfLifeTaxonResolver:
                 classification_path=(row.get("ClassificationPath") or "").strip(),
                 error=(row.get("Error") or "").strip(),
             )
-            for name in query_names
-            for row in [results_by_name[name]]
+            for input_name, normalized_name in normalized_by_input.items()
+            for row in [results_by_name[normalized_name]]
         }

@@ -11,6 +11,7 @@ PROJECT_GROUPS = {
     "dbgi": (
         "jbc",
         "jbn",
+        "jbn-new",
         "jbp",
         "jbp-new",
         "jbuf",

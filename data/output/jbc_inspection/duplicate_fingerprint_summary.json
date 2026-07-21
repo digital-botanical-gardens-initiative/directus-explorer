@@ -1,0 +1,24 @@
+{
+  "duplicate_fingerprint_group_count": 219,
+  "duplicate_fingerprint_row_count": 600,
+  "group_size_counts": {
+    "2": 97,
+    "3": 82,
+    "4": 40
+  },
+  "groups_with_nonstandard_sample_id": 219,
+  "date_created_day_combinations": [
+    [
+      "(('2025-08-12', 2),)",
+      97
+    ],
+    [
+      "(('2025-08-12', 3),)",
+      82
+    ],
+    [
+      "(('2025-08-12', 4),)",
+      40
+    ]
+  ]
+}

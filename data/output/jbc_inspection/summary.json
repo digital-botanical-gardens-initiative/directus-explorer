@@ -1,0 +1,141 @@
+{
+  "row_count": 2076,
+  "distinct_sample_id_count": 2076,
+  "duplicate_sample_id_count": 0,
+  "duplicate_sample_id_row_count": 0,
+  "exact_duplicate_fingerprint_count": 0,
+  "exact_duplicate_fingerprint_row_count": 0,
+  "missing_sample_id_count": 0,
+  "invalid_sample_id_count": 472,
+  "missing_taxon_name_count": 308,
+  "missing_sample_name_count": 2076,
+  "missing_date_count": 0,
+  "missing_coordinate_count": 0,
+  "zero_coordinate_count": 0,
+  "top_collectors": [
+    [
+      "Mazzarine Laboureau",
+      1018
+    ],
+    [
+      "Émilie Lab",
+      1018
+    ],
+    [
+      "Emilie Lab",
+      34
+    ],
+    [
+      "Alexandra Slotte",
+      4
+    ],
+    [
+      "Edouard Brülhart",
+      1
+    ],
+    [
+      "Pierre-Marie Allard",
+      1
+    ]
+  ],
+  "top_dates": [
+    [
+      "20250715093654",
+      7
+    ],
+    [
+      "20250715083825",
+      4
+    ],
+    [
+      "20250715084018",
+      4
+    ],
+    [
+      "20250715090257",
+      4
+    ],
+    [
+      "20250715090513",
+      4
+    ],
+    [
+      "20250715090643",
+      4
+    ],
+    [
+      "20250715090830",
+      4
+    ],
+    [
+      "20250715091435",
+      4
+    ],
+    [
+      "20250715091648",
+      4
+    ],
+    [
+      "20250715091919",
+      4
+    ],
+    [
+      "20250715092138",
+      4
+    ],
+    [
+      "20250715092516",
+      4
+    ],
+    [
+      "20250715092745",
+      4
+    ],
+    [
+      "20250715093106",
+      4
+    ],
+    [
+      "20250715093444",
+      4
+    ],
+    [
+      "20250715094018",
+      4
+    ],
+    [
+      "20250715094212",
+      4
+    ],
+    [
+      "20250715094350",
+      4
+    ],
+    [
+      "20250715094754",
+      4
+    ],
+    [
+      "20250715095004",
+      4
+    ]
+  ],
+  "date_created_days": [
+    [
+      "2025-08-12",
+      1312
+    ],
+    [
+      "2025-05-28",
+      386
+    ],
+    [
+      "2025-06-16",
+      323
+    ],
+    [
+      "2025-08-29",
+      55
+    ]
+  ]
+}

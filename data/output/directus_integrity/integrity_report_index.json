@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T11:25:17.764637+00:00",
+  "generated_at": "2026-07-21T12:12:40.499959+00:00",
   "collection_counts": {
     "Field_Data": 9520,
     "Dried_Samples_Data": 10468,
@@ -21,6 +21,10 @@
     "field_data_issues.tsv",
     "field_data_raw_snapshot.json",
     "field_data_unified_taxon.tsv",
+    "field_data_unified_taxon_update_backup.tsv",
+    "field_data_unified_taxon_update_manifest.tsv",
+    "field_data_unified_taxon_update_skipped.tsv",
+    "field_data_unified_taxon_update_summary.json",
     "integrity_report_index.json",
     "lineage_issues.tsv",
     "lineage_orphans.tsv",

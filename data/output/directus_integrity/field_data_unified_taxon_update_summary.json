@@ -1,0 +1,35 @@
+{
+  "target_field": "taxon_name_unified",
+  "update_count": 8812,
+  "skipped_count": 708,
+  "update_projects": {
+    "jbuf": 2472,
+    "kew-botanical-gardens": 635,
+    "bioblitz_vinesch": 257,
+    "heloise_bachelor_FiBL": 109,
+    "artemisia_absinthium": 464,
+    "sbl_20004": 37,
+    "emi": 9,
+    "jbn": 1264,
+    "chemical_ecology": 105,
+    "sandbox": 1,
+    "jbc": 1621,
+    "champex_gradient": 405,
+    "medicin_alps": 265,
+    "jbp": 281,
+    "jbb": 1,
+    "droguier_jbn": 342,
+    "jbn-new": 23,
+    "jbp-new": 521
+  },
+  "skipped_reasons": {
+    "taxon_unified_conflict": 537,
+    "missing_unified_taxon_name": 171
+  },
+  "update_sources": {
+    "sample_name": 2220,
+    "taxon_name": 5130,
+    "name_proposition": 917,
+    "taxon_name_final": 545
+  }
+}

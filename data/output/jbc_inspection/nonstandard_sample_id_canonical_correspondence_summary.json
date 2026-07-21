@@ -1,0 +1,11 @@
+{
+  "nonstandard_row_count": 472,
+  "matched_nonstandard_row_count": 381,
+  "unmatched_nonstandard_row_count": 91,
+  "matched_percent": 80.72,
+  "unmatched_missing_taxon_count": 79,
+  "unmatched_with_taxon_count": 12,
+  "canonical_match_count_distribution": {
+    "1": 381
+  }
+}

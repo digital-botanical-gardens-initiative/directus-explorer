@@ -1,0 +1,12 @@
+{
+  "duplicate_group_count_total": 219,
+  "duplicate_row_count_total": 600,
+  "canonical_only_duplicate_group_count": 0,
+  "canonical_only_duplicate_row_count": 0,
+  "mixed_or_nonstandard_duplicate_group_count": 219,
+  "mixed_or_nonstandard_duplicate_row_count": 600,
+  "duplicate_group_id_class_counts": {
+    "mixed": 219
+  },
+  "all_observation_row_count": 2076
+}

@@ -1,0 +1,18 @@
+confidence	rationale	nonstandard_field_data_id	nonstandard_sample_id	canonical_field_data_ids	canonical_sample_ids	taxon_name	date	latitude_rounded	longitude_rounded	canonical_taxon_names
+low	no canonical row found with same date/rounded location	72621	dbgi_48				20250625093007	7.113085	46.03262	
+low	no canonical row found with same date/rounded location	72719	dbgi_104				20250625093007	7.113085	46.03262	
+low	no canonical row found with same date/rounded location	72839	dbgi_180			Helictotrichon sedenense	20250707142830	7.113177	46.0326	
+low	no canonical row found with same date/rounded location	72841	dbgi_181			Rhododendron schlippenbachii	20250707143217	7.113163	46.032616	
+low	no canonical row found with same date/rounded location	72845	dbgi_182			Hieracium laticeps	20250707144526	7.113192	46.032597	
+low	no canonical row found with same date/rounded location	72846	dbgi_183			Dianthus monspessulanus	20250707144713	7.113198	46.032604	
+low	no canonical row found with same date/rounded location	72847	dbgi_184			Festuca carpatica	20250707144917	7.11321	46.032604	
+low	no canonical row found with same date/rounded location	72850	dbgi_185			Chamaecytisus purpureus	20250707145558	7.113145	46.032616	
+low	no canonical row found with same date/rounded location	72852	dbgi_186			Thymus praecox	20250707150751	7.113267	46.032665	
+low	no canonical row found with same date/rounded location	72854	dbgi_187				20250707151601	7.113362	46.032692	
+low	no canonical row found with same date/rounded location	72855	dbgi_188				20250707151948	7.113392	46.03268	
+low	no canonical row found with same date/rounded location	72859	dbgi_189				20250707153337	7.11342	46.032722	
+low	no canonical row found with same date/rounded location	72948	dbgi_190			Phlodouglasii Hook.	20250714154842	7.112868	46.03276	
+low	no canonical row found with same date/rounded location	72949	dbgi_191			Taxus cuspidata	20250714155220	7.112901	46.03278	
+low	no canonical row found with same date/rounded location	72951	dbgi_192			Saxifraga lingulata	20250714155801	7.112903	46.032787	
+low	no canonical row found with same date/rounded location	72956	dbgi_193			Androsace foliosa	20250714162049	7.113029	46.032795	
+low	no canonical row found with same date/rounded location	72962	dbgi_194			Gentiana macrophylla	20250714163621	7.113048	46.032814	

@@ -1,0 +1,473 @@
+status	nonstandard_field_data_id	nonstandard_sample_id	nonstandard_taxon_name	date	latitude_rounded	longitude_rounded	canonical_match_count	canonical_field_data_ids	canonical_sample_ids	canonical_taxon_names
+strict_taxon_date_location	72573	dbgi_7	Rhododendron violaceum	20250625090000	7.113113	46.03264	1	72532	dbgi_007037	Rhododendron violaceum
+strict_taxon_date_location	72574	dbgi_8	Oxalis valdiviensis	20250625090203	7.113112	46.032654	1	72533	dbgi_008683	Oxalis valdiviensis
+strict_taxon_date_location	72575	dbgi_9	Olearia haastii	20250625090629	7.113133	46.032642	1	72534	dbgi_008450	Olearia haastii
+strict_taxon_date_location	72576	dbgi_10	Rhododendron lepidotum	20250625091237	7.113162	46.032646	1	72535	dbgi_008460	Rhododendron lepidotum
+strict_taxon_date_location	72577	dbgi_11	Rhododendron insigne	20250625093120	7.11316	46.032627	1	72536	dbgi_008560	Rhododendron insigne
+strict_taxon_date_location	72578	dbgi_12	Rhododendron hyppophaeoides	20250625093355	7.113205	46.03265	1	72537	dbgi_008398	Rhododendron hyppophaeoides
+strict_taxon_date_location	72579	dbgi_13	Chamaecytisus aggregatus	20250625093702	7.11319	46.032642	1	72538	dbgi_008474	Chamaecytisus aggregatus
+strict_taxon_date_location	72580	dbgi_14	Rhododendron keleticum	20250625094138	7.113055	46.032673	1	72539	dbgi_008512	Rhododendron keleticum
+strict_taxon_date_location	72581	dbgi_15	Salix rotundifolia	20250625094313	7.113077	46.032677	1	72540	dbgi_008433	Salix rotundifolia
+strict_taxon_date_location	72582	dbgi_16	Wulfenia carinthiaca	20250625094543	7.113052	46.032684	1	72541	dbgi_008476	Wulfenia carinthiaca
+strict_taxon_date_location	72583	dbgi_17	Asarum europaeum	20250625094708	7.113073	46.032673	1	72542	dbgi_008415	Asarum europaeum
+strict_taxon_date_location	72584	dbgi_18	Rhodothamnus chamaecistus	20250625094830	7.113061	46.03266	1	72543	dbgi_008517	Rhodothamnus chamaecistus
+strict_taxon_date_location	72585	dbgi_19	Campanula rhomboidalis	20250625095047	7.113035	46.032677	1	72544	dbgi_008465	Campanula rhomboidalis
+strict_taxon_date_location	72586	dbgi_20	Sedum lydium	20250625095313	7.113059	46.03267	1	72545	dbgi_008399	Sedum lydium
+strict_taxon_date_location	72587	dbgi_21	Arum maculatum	20250625095625	7.11304	46.03267	1	72546	dbgi_008448	Arum maculatum
+strict_taxon_date_location	72588	dbgi_22	Bulbinella hookeri	20250625095923	7.113079	46.03268	1	72547	dbgi_008587	Bulbinella hookeri
+strict_taxon_date_location	72590	dbgi_24	Cypripedium reginae	20250625100431	7.113039	46.032684	1	72549	dbgi_008401	Cypripedium reginae
+strict_taxon_date_location	72591	dbgi_25	Rhododendron carolinianum	20250625100636	7.113057	46.032677	1	72550	dbgi_008414	Rhododendron carolinianum
+strict_taxon_date_location	72592	dbgi_26	Blechnum spicant	20250625100907	7.113082	46.03267	1	72551	dbgi_008436	Blechnum spicant
+strict_taxon_date_location	72593	dbgi_27	Ribes spicatum	20250625103340	7.113192	46.032578	1	72552	dbgi_008430	Ribes spicatum
+strict_taxon_date_location	72594	dbgi_28	Penstemon ovatus	20250625103604	7.113191	46.03257	1	72553	dbgi_008378	Penstemon ovatus
+strict_taxon_date_location	72595	dbgi_29	Tsuga canadensis	20250625103817	7.113307	46.032593	1	72554	dbgi_008489	Tsuga canadensis
+strict_taxon_date_location	72596	dbgi_30	Anthennaria canadensis	20250625104139	7.11333	46.032585	1	72555	dbgi_008408	Anthennaria canadensis
+strict_taxon_date_location	72597	dbgi_31	Taxus baccata	20250625104344	7.11334	46.032578	1	72556	dbgi_008442	Taxus baccata
+strict_taxon_date_location	72598	dbgi_32	Genista radiata	20250625104603	7.113218	46.032543	1	72557	dbgi_008650	Genista radiata
+strict_taxon_date_location	72599	dbgi_33	Asphodelus albus	20250625104735	7.113292	46.03255	1	72558	dbgi_008464	Asphodelus albus
+strict_taxon_date_location	72600	dbgi_34	Colutea arborescens	20250625105340	7.113236	46.032578	1	72559	dbgi_008423	Colutea arborescens
+strict_taxon_date_location	72601	dbgi_35	Dianthus subacaulis	20250625110513	7.113278	46.032574	1	72560	dbgi_008640	Dianthus subacaulis
+strict_taxon_date_location	72602	dbgi_36	Lithospermum intermedium	20250625110811	7.11329	46.032623	1	72561	dbgi_008754	Lithospermum intermedium
+strict_taxon_date_location	72603	dbgi_37	Dianthus plumarius	20250625111046	7.113257	46.032593	1	72562	dbgi_008647	Dianthus plumarius
+strict_taxon_date_location	72604	dbgi_38	Helichrysum graveolens	20250625111454	7.113254	46.032593	1	72563	dbgi_008637	Helichrysum graveolens
+strict_taxon_date_location	72605	dbgi_39	Eriogonum umbellatum	20250625111723	7.113238	46.032597	1	72564	dbgi_008527	Eriogonum umbellatum
+strict_taxon_date_location	72606	dbgi_40	Micromeria dalmatica	20250625111909	7.113258	46.0326	1	72565	dbgi_008646	Micromeria dalmatica
+strict_taxon_date_location	72607	dbgi_41	Globularia bisnagarica	20250625112113	7.113287	46.032608	1	72566	dbgi_008645	Globularia bisnagarica
+strict_taxon_date_location	72608	dbgi_42	Dryas octopetala	20250625112303	7.113337	46.03261	1	72567	dbgi_008486	Dryas octopetala
+strict_taxon_date_location	72609	dbgi_43	Convallaria majalis	20250625112837	7.113485	46.032635	1	72568	dbgi_008763	Convallaria majalis
+strict_taxon_date_location	72610	dbgi_44	Colchicum autumnale	20250625113005	7.113473	46.03267	1	72569	dbgi_008395	Colchicum autumnale
+strict_taxon_date_location	72612	dbgi_46	Aegopodium podagraria	20250625113405	7.113481	46.032627	1	72571	dbgi_008419	Aegopodium podagraria
+strict_taxon_date_location	72613	dbgi_47	Gentiana lutea	20250625113741	7.113484	46.032665	1	72572	dbgi_008602	Gentiana lutea
+strict_taxon_date_location	72664	dbgi_49	Paeonia mascula	20250625084138	7.11309	46.032585	1	72525	dbgi_006886	Paeonia mascula
+strict_taxon_date_location	72665	dbgi_50	Juniperus chinensis	20250625084401	7.113108	46.03258	1	72526	dbgi_006789	Juniperus chinensis
+strict_taxon_date_location	72666	dbgi_51	Centaurea montana	20250625084553	7.113162	46.03259	1	72527	dbgi_006806	Centaurea montana
+strict_taxon_date_location	72667	dbgi_52	Gymnocarpium dryopteris	20250625084828	7.113147	46.032635	1	72528	dbgi_008679	Gymnocarpium dryopteris
+strict_taxon_date_location	72668	dbgi_53	Linum flavum	20250625085005	7.113162	46.03265	1	72529	dbgi_006792	Linum flavum
+strict_taxon_date_location	72669	dbgi_54	Anthyllis montana	20250625085229	7.113125	46.032654	1	72530	dbgi_006877	Anthyllis montana
+strict_taxon_date_location	72670	dbgi_55	Dianthus subacaulis	20250625085752	7.113112	46.03263	1	72531	dbgi_006980	Dianthus subacaulis
+strict_taxon_date_location	72671	dbgi_56	Rhododendron violaceum	20250625090000	7.113113	46.03264	1	72532	dbgi_007037	Rhododendron violaceum
+strict_taxon_date_location	72672	dbgi_57	Oxalis valdiviensis	20250625090203	7.113112	46.032654	1	72533	dbgi_008683	Oxalis valdiviensis
+strict_taxon_date_location	72673	dbgi_58	Olearia haastii	20250625090629	7.113133	46.032642	1	72534	dbgi_008450	Olearia haastii
+strict_taxon_date_location	72674	dbgi_59	Rhododendron lepidotum	20250625091237	7.113162	46.032646	1	72535	dbgi_008460	Rhododendron lepidotum
+strict_taxon_date_location	72675	dbgi_60	Rhododendron insigne	20250625093120	7.11316	46.032627	1	72536	dbgi_008560	Rhododendron insigne
+strict_taxon_date_location	72676	dbgi_61	Rhododendron hyppophaeoides	20250625093355	7.113205	46.03265	1	72537	dbgi_008398	Rhododendron hyppophaeoides
+strict_taxon_date_location	72677	dbgi_62	Chamaecytisus aggregatus	20250625093702	7.11319	46.032642	1	72538	dbgi_008474	Chamaecytisus aggregatus
+strict_taxon_date_location	72678	dbgi_63	Rhododendron keleticum	20250625094138	7.113055	46.032673	1	72539	dbgi_008512	Rhododendron keleticum
+strict_taxon_date_location	72679	dbgi_64	Salix rotundifolia	20250625094313	7.113077	46.032677	1	72540	dbgi_008433	Salix rotundifolia
+strict_taxon_date_location	72680	dbgi_65	Wulfenia carinthiaca	20250625094543	7.113052	46.032684	1	72541	dbgi_008476	Wulfenia carinthiaca
+strict_taxon_date_location	72681	dbgi_66	Asarum europaeum	20250625094708	7.113073	46.032673	1	72542	dbgi_008415	Asarum europaeum
+strict_taxon_date_location	72682	dbgi_67	Rhodothamnus chamaecistus	20250625094830	7.113061	46.03266	1	72543	dbgi_008517	Rhodothamnus chamaecistus
+strict_taxon_date_location	72683	dbgi_68	Campanula rhomboidalis	20250625095047	7.113035	46.032677	1	72544	dbgi_008465	Campanula rhomboidalis
+strict_taxon_date_location	72684	dbgi_69	Sedum lydium	20250625095313	7.113059	46.03267	1	72545	dbgi_008399	Sedum lydium
+strict_taxon_date_location	72685	dbgi_70	Arum maculatum	20250625095625	7.11304	46.03267	1	72546	dbgi_008448	Arum maculatum
+strict_taxon_date_location	72686	dbgi_71	Bulbinella hookeri	20250625095923	7.113079	46.03268	1	72547	dbgi_008587	Bulbinella hookeri
+strict_taxon_date_location	72688	dbgi_73	Cypripedium reginae	20250625100431	7.113039	46.032684	1	72549	dbgi_008401	Cypripedium reginae
+strict_taxon_date_location	72689	dbgi_74	Rhododendron carolinianum	20250625100636	7.113057	46.032677	1	72550	dbgi_008414	Rhododendron carolinianum
+strict_taxon_date_location	72690	dbgi_75	Blechnum spicant	20250625100907	7.113082	46.03267	1	72551	dbgi_008436	Blechnum spicant
+strict_taxon_date_location	72691	dbgi_76	Ribes spicatum	20250625103340	7.113192	46.032578	1	72552	dbgi_008430	Ribes spicatum
+strict_taxon_date_location	72692	dbgi_77	Penstemon ovatus	20250625103604	7.113191	46.03257	1	72553	dbgi_008378	Penstemon ovatus
+strict_taxon_date_location	72693	dbgi_78	Tsuga canadensis	20250625103817	7.113307	46.032593	1	72554	dbgi_008489	Tsuga canadensis
+strict_taxon_date_location	72694	dbgi_79	Anthennaria canadensis	20250625104139	7.11333	46.032585	1	72555	dbgi_008408	Anthennaria canadensis
+strict_taxon_date_location	72695	dbgi_80	Taxus baccata	20250625104344	7.11334	46.032578	1	72556	dbgi_008442	Taxus baccata
+strict_taxon_date_location	72696	dbgi_81	Genista radiata	20250625104603	7.113218	46.032543	1	72557	dbgi_008650	Genista radiata
+strict_taxon_date_location	72697	dbgi_82	Asphodelus albus	20250625104735	7.113292	46.03255	1	72558	dbgi_008464	Asphodelus albus
+strict_taxon_date_location	72698	dbgi_83	Colutea arborescens	20250625105340	7.113236	46.032578	1	72559	dbgi_008423	Colutea arborescens
+strict_taxon_date_location	72699	dbgi_84	Dianthus subacaulis	20250625110513	7.113278	46.032574	1	72560	dbgi_008640	Dianthus subacaulis
+strict_taxon_date_location	72700	dbgi_85	Lithospermum intermedium	20250625110811	7.11329	46.032623	1	72561	dbgi_008754	Lithospermum intermedium
+strict_taxon_date_location	72701	dbgi_86	Dianthus plumarius	20250625111046	7.113257	46.032593	1	72562	dbgi_008647	Dianthus plumarius
+strict_taxon_date_location	72702	dbgi_87	Helichrysum graveolens	20250625111454	7.113254	46.032593	1	72563	dbgi_008637	Helichrysum graveolens
+strict_taxon_date_location	72703	dbgi_88	Eriogonum umbellatum	20250625111723	7.113238	46.032597	1	72564	dbgi_008527	Eriogonum umbellatum
+strict_taxon_date_location	72704	dbgi_89	Micromeria dalmatica	20250625111909	7.113258	46.0326	1	72565	dbgi_008646	Micromeria dalmatica
+strict_taxon_date_location	72705	dbgi_90	Globularia bisnagarica	20250625112113	7.113287	46.032608	1	72566	dbgi_008645	Globularia bisnagarica
+strict_taxon_date_location	72706	dbgi_91	Dryas octopetala	20250625112303	7.113337	46.03261	1	72567	dbgi_008486	Dryas octopetala
+strict_taxon_date_location	72707	dbgi_92	Convallaria majalis	20250625112837	7.113485	46.032635	1	72568	dbgi_008763	Convallaria majalis
+strict_taxon_date_location	72708	dbgi_93	Colchicum autumnale	20250625113005	7.113473	46.03267	1	72569	dbgi_008395	Colchicum autumnale
+strict_taxon_date_location	72710	dbgi_95	Aegopodium podagraria	20250625113405	7.113481	46.032627	1	72571	dbgi_008419	Aegopodium podagraria
+strict_taxon_date_location	72711	dbgi_96	Gentiana lutea	20250625113741	7.113484	46.032665	1	72572	dbgi_008602	Gentiana lutea
+strict_taxon_date_location	72712	dbgi_97	Rhododendron brachyanthum	20250625084052	7.113073	46.032623	1	72614	dbgi_008728	Rhododendron brachyanthum
+strict_taxon_date_location	72713	dbgi_98	Omphalodes verna	20250625084410	7.113065	46.032623	1	72615	dbgi_008748	Omphalodes verna
+strict_taxon_date_location	72714	dbgi_99	Androsaceae sarmentosa	20250625084610	7.11307	46.032616	1	72616	dbgi_008642	Androsaceae sarmentosa
+strict_taxon_date_location	72715	dbgi_100	Anemone sylvestris	20250625084943	7.113078	46.032627	1	72617	dbgi_008753	Anemone sylvestris
+strict_taxon_date_location	72716	dbgi_101	Euphorbia chamecyparissia	20250625085140	7.11308	46.03263	1	72618	dbgi_008738	Euphorbia chamecyparissia
+strict_taxon_date_location	72717	dbgi_102	Euphorbia dulcis	20250625090337	7.113082	46.032623	1	72619	dbgi_008736	Euphorbia dulcis
+strict_taxon_date_location	72718	dbgi_103	Anemone nemorosa	20250625092736	7.113088	46.03263	1	72620	dbgi_008516	Anemone nemorosa
+strict_taxon_date_location	72720	dbgi_105	Arenaria montana	20250625093307	7.113089	46.032623	1	72622	dbgi_008499	Arenaria montana
+strict_taxon_date_location	72723	dbgi_108	Picea abies	20250625094008	7.11306	46.03262	1	72625	dbgi_008466	Picea abies
+strict_taxon_date_location	72724	dbgi_109	Saxifraga paniculata	20250625094318	7.11305	46.03262	1	72626	dbgi_008424	Saxifraga paniculata
+strict_taxon_date_location	72725	dbgi_110	Rhododendron ferrugineum	20250625094551	7.113059	46.032627	1	72627	dbgi_008573	Rhododendron ferrugineum
+strict_taxon_date_location	72726	dbgi_111	Camassia leichtlinii	20250625094719	7.11305	46.032627	1	72628	dbgi_008551	Camassia leichtlinii
+strict_taxon_date_location	72727	dbgi_112	Saxifraga lingulata	20250625094953	7.113043	46.032627	1	72629	dbgi_008379	Saxifraga lingulata
+strict_taxon_date_location	72728	dbgi_113	Saxifraga franzii	20250625095116	7.113039	46.032627	1	72630	dbgi_008396	Saxifraga franzii
+strict_taxon_date_location	72729	dbgi_114	Rhodothamnus chamaecistus	20250625095457	7.113063	46.03264	1	72631	dbgi_008435	Rhodothamnus chamaecistus
+strict_taxon_date_location	72730	dbgi_115	Cassiope mertensiana	20250625095809	7.113053	46.03263	1	72632	dbgi_008406	Cassiope mertensiana
+strict_taxon_date_location	72731	dbgi_116	Fritillaria pyrenaica	20250625100205	7.113058	46.032642	1	72633	dbgi_008501	Fritillaria pyrenaica
+strict_taxon_date_location	72732	dbgi_117	Cypripedium calceolus	20250625100533	7.113048	46.032646	1	72634	dbgi_008612	Cypripedium calceolus
+strict_taxon_date_location	72733	dbgi_118	Saxifraga pseudo-kotschyl,	20250625100717	7.11304	46.032646	1	72635	dbgi_008504	Saxifraga pseudo-kotschyl,
+strict_taxon_date_location	72734	dbgi_119	Rhododendron radicans	20250625100949	7.113038	46.03265	1	72636	dbgi_008514	Rhododendron radicans
+strict_taxon_date_location	72735	dbgi_120	Juniperus chinensis	20250625102644	7.113101	46.032578	1	72637	dbgi_008493	Juniperus chinensis
+strict_taxon_date_location	72736	dbgi_121	Centaurea montana	20250625102812	7.113166	46.03258	1	72638	dbgi_008758	Centaurea montana
+strict_taxon_date_location	72737	dbgi_122	Berberis canadensis	20250625103130	7.113178	46.03258	1	72639	dbgi_008511	Berberis canadensis
+strict_taxon_date_location	72738	dbgi_123	Vaccinium vitis-idaea	20250625103325	7.113173	46.03259	1	72640	dbgi_008458	Vaccinium vitis-idaea
+strict_taxon_date_location	72739	dbgi_124	Sedum ellecombienum	20250625103617	7.113174	46.03257	1	72641	dbgi_008431	Sedum ellecombienum
+strict_taxon_date_location	72740	dbgi_125	Cytisus decumbens	20250625103820	7.113209	46.032574	1	72642	dbgi_008478	Cytisus decumbens
+strict_taxon_date_location	72741	dbgi_126	Gentiana marcailhuana	20250625104043	7.113217	46.03257	1	72643	dbgi_008413	Gentiana marcailhuana
+strict_taxon_date_location	72743	dbgi_128	Carlina acanthifolia	20250625105142	7.113238	46.032566	1	72645	dbgi_008393	Carlina acanthifolia
+strict_taxon_date_location	72744	dbgi_129	Scabiosa columbaria	20250625105253	7.113238	46.032566	1	72646	dbgi_008468	Scabiosa columbaria
+strict_taxon_date_location	72745	dbgi_130	Astragalus monspessulanus	20250625105709	7.113245	46.032566	1	72647	dbgi_008490	Astragalus monspessulanus
+strict_taxon_date_location	72746	dbgi_131	Sedum ochroleucum	20250625105915	7.113248	46.03257	1	72648	dbgi_008462	Sedum ochroleucum
+strict_taxon_date_location	72748	dbgi_133	Geranium nodosum	20250625110706	7.113341	46.032574	1	72650	dbgi_008385	Geranium nodosum
+strict_taxon_date_location	72750	dbgi_135	Cytisus nigricans	20250625111342	7.113455	46.03256	1	72652	dbgi_008402	Cytisus nigricans
+strict_taxon_date_location	72751	dbgi_136	Abies cephalonica	20250625111715	7.113396	46.032597	1	72653	dbgi_008382	Abies cephalonica
+strict_taxon_date_location	72752	dbgi_137	Gentiana angustifolia	20250625112329	7.11331	46.032593	1	72654	dbgi_008513	Gentiana angustifolia
+strict_taxon_date_location	72754	dbgi_139	Erinus alpinus	20250625112959	7.113341	46.032604	1	72656	dbgi_008743	Erinus alpinus
+strict_taxon_date_location	72755	dbgi_140	Potentilla peduncularis	20250625113145	7.113354	46.0326	1	72657	dbgi_008502	Potentilla peduncularis
+strict_taxon_date_location	72756	dbgi_141	Jovibarba hirta	20250625113449	7.113376	46.032593	1	72658	dbgi_008459	Jovibarba hirta
+strict_taxon_date_location	72757	dbgi_142	Polygala vayredae	20250625113742	7.113381	46.032604	1	72659	dbgi_008483	Polygala vayredae
+strict_taxon_date_location	72758	dbgi_143	Paeonia officinalis	20250625114111	7.113385	46.032616	1	72660	dbgi_008532	Paeonia officinalis
+strict_taxon_date_location	72759	dbgi_144	Primula denticulata	20250625114356	7.113413	46.032604	1	72661	dbgi_008394	Primula denticulata
+strict_taxon_date_location	72760	dbgi_145	Potentilla ambigua	20250625114522	7.113443	46.0326	1	72662	dbgi_008500	Potentilla ambigua
+strict_taxon_date_location	72761	dbgi_146	Arctostaphylus uva-ursi	20250625114650	7.113457	46.03257	1	72663	dbgi_008461	Arctostaphylus uva-ursi
+strict_taxon_date_location	72797	dbgi_147	Androsace sarmentosa	20250707140145	7.113414	46.03267	1	72764	dbgi_008389	Androsace sarmentosa
+strict_taxon_date_location	72798	dbgi_148	Festuca tatrae	20250707140415	7.113411	46.03266	1	72765	dbgi_008473	Festuca tatrae
+strict_taxon_date_location	72799	dbgi_149	Heuchera americana	20250707140812	7.113392	46.032646	1	72766	dbgi_008404	Heuchera americana
+strict_taxon_date_location	72800	dbgi_150	Thymus nitens	20250707140953	7.113376	46.032646	1	72767	dbgi_008505	Thymus nitens
+strict_taxon_date_location	72801	dbgi_151	Paeonia lutea	20250707141300	7.113393	46.03264	1	72768	dbgi_008510	Paeonia lutea
+strict_taxon_date_location	72802	dbgi_152	Linum flavum	20250707141453	7.113377	46.03264	1	72769	dbgi_008381	Linum flavum
+strict_taxon_date_location	72803	dbgi_153	Aillium hymenorrhizum,	20250707141836	7.113354	46.03264	1	72770	dbgi_008497	Aillium hymenorrhizum,
+strict_taxon_date_location	72804	dbgi_154	Astrantia major	20250707142119	7.113342	46.03264	1	72771	dbgi_008384	Astrantia major
+strict_taxon_date_location	72805	dbgi_155	Erodium manescavi	20250707142256	7.113344	46.032635	1	72772	dbgi_008494	Erodium manescavi
+strict_taxon_date_location	72806	dbgi_156	Centaurea haynaldii	20250707142439	7.113325	46.03264	1	72773	dbgi_008403	Centaurea haynaldii
+strict_taxon_date_location	72807	dbgi_157	Hemerocellis lilioasphodolus	20250707142716	7.113335	46.032642	1	72774	dbgi_008387	Hemerocellis lilioasphodolus
+strict_taxon_date_location	72809	dbgi_159	Bergenia crassifolia	20250707143443	7.113338	46.032635	1	72776	dbgi_008428	Bergenia crassifolia
+strict_taxon_date_location	72810	dbgi_160	Hieracium bombycinum	20250707143624	7.113324	46.032635	1	72777	dbgi_008603	Hieracium bombycinum
+strict_taxon_date_location	72811	dbgi_161	Paeonia daurica	20250707143754	7.11332	46.03263	1	72778	dbgi_008547	Paeonia daurica
+strict_taxon_date_location	72812	dbgi_162	Alyssum alpestre	20250707143955	7.113279	46.032616	1	72779	dbgi_008508	Alyssum alpestre
+strict_taxon_date_location	72814	dbgi_164	Potentilla rupestris	20250707144653	7.113222	46.032623	1	72781	dbgi_008463	Potentilla rupestris
+strict_taxon_date_location	72815	dbgi_165	Allium nutans	20250707144845	7.113247	46.03263	1	72782	dbgi_008420	Allium nutans
+strict_taxon_date_location	72816	dbgi_166	Vaccinium vitis-idaea	20250707150007	7.11349	46.032677	1	72783	dbgi_008432	Vaccinium vitis-idaea
+strict_taxon_date_location	72817	dbgi_167	Rhodiola rosea	20250707150204	7.113506	46.032677	1	72784	dbgi_008383	Rhodiola rosea
+strict_taxon_date_location	72818	dbgi_168	Vaccinium myrtillus	20250707150435	7.113491	46.03267	1	72785	dbgi_008485	Vaccinium myrtillus
+strict_taxon_date_location	72819	dbgi_169	Lonicera caerulea	20250707150811	7.113495	46.03268	1	72786	dbgi_008427	Lonicera caerulea
+strict_taxon_date_location	72820	dbgi_170	Digitalis grandiflora	20250707151019	7.113477	46.03268	1	72787	dbgi_008496	Digitalis grandiflora
+strict_taxon_date_location	72821	dbgi_171	Digitalis purpurea	20250707151257	7.11351	46.032696	1	72788	dbgi_008471	Digitalis purpurea
+strict_taxon_date_location	72822	dbgi_172	Arctostaphylos uva-ursi	20250707151504	7.11349	46.032703	1	72789	dbgi_008409	Arctostaphylos uva-ursi
+strict_taxon_date_location	72823	dbgi_173	Achillea millefolium	20250707151758	7.113492	46.03268	1	72790	dbgi_008391	Achillea millefolium
+strict_taxon_date_location	72824	dbgi_174	Pulsatilla vulgaris	20250707151947	7.113523	46.032707	1	72791	dbgi_008477	Pulsatilla vulgaris
+strict_taxon_date_location	72825	dbgi_175	Artemisia vulgaris	20250707152216	7.11351	46.032703	1	72792	dbgi_008418	Artemisia vulgaris
+strict_taxon_date_location	72826	dbgi_176	Hypericum perforatum	20250707152359	7.113516	46.03273	1	72793	dbgi_008429	Hypericum perforatum
+strict_taxon_date_location	72827	dbgi_177	Hyssopus officinalis	20250707152725	7.113504	46.032703	1	72794	dbgi_008498	Hyssopus officinalis
+strict_taxon_date_location	72828	dbgi_178	Thymus pulegioides	20250707153002	7.113477	46.032696	1	72795	dbgi_008411	Thymus pulegioides
+strict_taxon_date_location	72829	dbgi_179	Viola riviniana	20250707153248	7.113453	46.032703	1	72796	dbgi_008417	Viola riviniana
+strict_taxon_date_location	73041	dbgi_195	Hippophae rhamnoides	20250715083825	7.113455	46.032642	1	72986	dbgi_006943	Hippophae rhamnoides
+strict_taxon_date_location	73042	dbgi_196	Centaurea nigra	20250715084018	7.113466	46.03265	1	72987	dbgi_006729	Centaurea nigra
+strict_taxon_date_location	73044	dbgi_198	Hemerocallis multiflora	20250715090513	7.113399	46.032627	1	72989	dbgi_006600	Hemerocallis multiflora
+strict_taxon_date_location	73045	dbgi_199	Centaurea nigrescens	20250715090643	7.113388	46.032623	1	72990	dbgi_006679	Centaurea nigrescens
+strict_taxon_date_location	73046	dbgi_200	Dianthus seguieri	20250715090830	7.113366	46.03262	1	72991	dbgi_006687	Dianthus seguieri
+strict_taxon_date_location	73047	dbgi_201	Penstemon cobaea	20250715091435	7.113386	46.03275	1	72992	dbgi_006668	Penstemon cobaea
+strict_taxon_date_location	73050	dbgi_204	Hieracium bornmuelleri	20250715092138	7.113387	46.032764	1	72995	dbgi_006688	Hieracium bornmuelleri
+strict_taxon_date_location	73053	dbgi_207	Calamintha menthifolia	20250715093106	7.113357	46.032753	1	72998	dbgi_006657	Calamintha menthifolia
+strict_taxon_date_location	73054	dbgi_208	Genista germanica	20250715093444	7.113338	46.032738	1	72999	dbgi_006674	Genista germanica
+strict_taxon_date_location	73057	dbgi_211	Morina longifolia	20250715094212	7.113324	46.032722	1	73002	dbgi_006680	Morina longifolia
+strict_taxon_date_location	73059	dbgi_213	Zizia aptera	20250715094754	7.113337	46.032738	1	73004	dbgi_006664	Zizia aptera
+strict_taxon_date_location	73060	dbgi_214	Paeonia daurica	20250715095004	7.11335	46.03276	1	73005	dbgi_006676	Paeonia daurica
+strict_taxon_date_location	73061	dbgi_215	Erigeron belligifolius	20250715095224	7.11332	46.03274	1	73006	dbgi_006666	Erigeron belligifolius
+strict_taxon_date_location	73062	dbgi_216	Knautia purpurea	20250715095415	7.113327	46.032734	1	73007	dbgi_006631	Knautia purpurea
+strict_taxon_date_location	73063	dbgi_217	Potentilla repens	20250715095604	7.113323	46.03274	1	73008	dbgi_006673	Potentilla repens
+strict_taxon_date_location	73065	dbgi_219	Polygomum amplexicaule	20250715101006	7.113291	46.032757	1	73010	dbgi_006672	Polygomum amplexicaule
+strict_taxon_date_location	73066	dbgi_220	Centaurea simplicicaulis	20250715101234	7.113313	46.03273	1	73011	dbgi_006677	Centaurea simplicicaulis
+strict_taxon_date_location	73069	dbgi_223	Potentilla alba	20250715102151	7.113284	46.032753	1	73014	dbgi_006738	Potentilla alba
+strict_taxon_date_location	73072	dbgi_226	Daphne pontica	20250715102811	7.113298	46.032764	1	73017	dbgi_006768	Daphne pontica
+strict_taxon_date_location	73073	dbgi_227	Phleum phleoides	20250715103020	7.113342	46.032772	1	73018	dbgi_006763	Phleum phleoides
+strict_taxon_date_location	73074	dbgi_228	Festuca valesiaca	20250715103211	7.113316	46.032753	1	73019	dbgi_006747	Festuca valesiaca
+strict_taxon_date_location	73075	dbgi_229	Koeleria vallesiana	20250715103401	7.113348	46.032753	1	73020	dbgi_006739	Koeleria vallesiana
+strict_taxon_date_location	73076	dbgi_230	Koeleria macrantha	20250715104019	7.113301	46.03278	1	73021	dbgi_006711	Koeleria macrantha
+strict_taxon_date_location	73077	dbgi_231	Festuca curvula	20250715104204	7.113296	46.03278	1	73022	dbgi_006634	Festuca curvula
+strict_taxon_date_location	73078	dbgi_232	Euphorbia seguieriana	20250715104341	7.113301	46.03278	1	73023	dbgi_006745	Euphorbia seguieriana
+strict_taxon_date_location	73079	dbgi_233	Potentilla verna	20250715104521	7.113316	46.032784	1	73024	dbgi_006764	Potentilla verna
+strict_taxon_date_location	73081	dbgi_235	Bothriochloa ischaemum	20250715105332	7.113317	46.03279	1	73026	dbgi_006759	Bothriochloa ischaemum
+strict_taxon_date_location	73082	dbgi_236	Thymus praecox	20250715105533	7.113344	46.032784	1	73027	dbgi_006753	Thymus praecox
+strict_taxon_date_location	73083	dbgi_237	Centaurea scabiosa	20250715105932	7.113295	46.032787	1	73028	dbgi_006706	Centaurea scabiosa
+strict_taxon_date_location	73085	dbgi_239	Nepeta nuda	20250715110451	7.113305	46.03281	1	73030	dbgi_007155	Nepeta nuda
+strict_taxon_date_location	73086	dbgi_240	Artemisia campestris	20250715110618	7.113328	46.032795	1	73031	dbgi_007130	Artemisia campestris
+strict_taxon_date_location	73087	dbgi_241	Cerastium argenteum	20250715111120	7.113335	46.03281	1	73032	dbgi_006904	Cerastium argenteum
+strict_taxon_date_location	73088	dbgi_242	Artemisia vallesiaca	20250715111450	7.113306	46.03276	1	73033	dbgi_006726	Artemisia vallesiaca
+strict_taxon_date_location	73089	dbgi_243	Carex humilis	20250715113125	7.113318	46.03277	1	73034	dbgi_006856	Carex humilis
+strict_taxon_date_location	73090	dbgi_244	Onosma pseudoarenaria	20250715113409	7.113277	46.03278	1	73035	dbgi_006743	Onosma pseudoarenaria
+strict_taxon_date_location	73091	dbgi_245	Viola rupestris	20250715113614	7.113283	46.03278	1	73036	dbgi_006762	Viola rupestris
+strict_taxon_date_location	73092	dbgi_246	Molinia arundinacea	20250715113931	7.11322	46.032776	1	73037	dbgi_006707	Molinia arundinacea
+strict_taxon_date_location	73093	dbgi_247	Ephedra helvetica	20250715114901	7.11329	46.03277	1	73038	dbgi_006781	Ephedra helvetica
+strict_taxon_date_location	73094	dbgi_248	Teucrium montanum	20250715115125	7.113314	46.03277	1	73039	dbgi_006841	Teucrium montanum
+strict_taxon_date_location	73095	dbgi_249	Stipa eriocaulis	20250715115405	7.11329	46.032784	1	73040	dbgi_006842	Stipa eriocaulis
+strict_taxon_date_location	73145	dbgi_250	Hippophae rhamnoides	20250715083825	7.113455	46.032642	1	72986	dbgi_006943	Hippophae rhamnoides
+strict_taxon_date_location	73146	dbgi_251	Centaurea nigra	20250715084018	7.113466	46.03265	1	72987	dbgi_006729	Centaurea nigra
+strict_taxon_date_location	73148	dbgi_253	Hemerocallis multiflora	20250715090513	7.113399	46.032627	1	72989	dbgi_006600	Hemerocallis multiflora
+strict_taxon_date_location	73149	dbgi_254	Centaurea nigrescens	20250715090643	7.113388	46.032623	1	72990	dbgi_006679	Centaurea nigrescens
+strict_taxon_date_location	73150	dbgi_255	Dianthus seguieri	20250715090830	7.113366	46.03262	1	72991	dbgi_006687	Dianthus seguieri
+strict_taxon_date_location	73151	dbgi_256	Penstemon cobaea	20250715091435	7.113386	46.03275	1	72992	dbgi_006668	Penstemon cobaea
+strict_taxon_date_location	73154	dbgi_259	Hieracium bornmuelleri	20250715092138	7.113387	46.032764	1	72995	dbgi_006688	Hieracium bornmuelleri
+strict_taxon_date_location	73157	dbgi_262	Calamintha menthifolia	20250715093106	7.113357	46.032753	1	72998	dbgi_006657	Calamintha menthifolia
+strict_taxon_date_location	73158	dbgi_263	Genista germanica	20250715093444	7.113338	46.032738	1	72999	dbgi_006674	Genista germanica
+strict_taxon_date_location	73161	dbgi_266	Morina longifolia	20250715094212	7.113324	46.032722	1	73002	dbgi_006680	Morina longifolia
+strict_taxon_date_location	73163	dbgi_268	Zizia aptera	20250715094754	7.113337	46.032738	1	73004	dbgi_006664	Zizia aptera
+strict_taxon_date_location	73164	dbgi_269	Paeonia daurica	20250715095004	7.11335	46.03276	1	73005	dbgi_006676	Paeonia daurica
+strict_taxon_date_location	73165	dbgi_270	Erigeron belligifolius	20250715095224	7.11332	46.03274	1	73006	dbgi_006666	Erigeron belligifolius
+strict_taxon_date_location	73166	dbgi_271	Knautia purpurea	20250715095415	7.113327	46.032734	1	73007	dbgi_006631	Knautia purpurea
+strict_taxon_date_location	73167	dbgi_272	Potentilla repens	20250715095604	7.113323	46.03274	1	73008	dbgi_006673	Potentilla repens
+strict_taxon_date_location	73169	dbgi_274	Polygomum amplexicaule	20250715101006	7.113291	46.032757	1	73010	dbgi_006672	Polygomum amplexicaule
+strict_taxon_date_location	73170	dbgi_275	Centaurea simplicicaulis	20250715101234	7.113313	46.03273	1	73011	dbgi_006677	Centaurea simplicicaulis
+strict_taxon_date_location	73173	dbgi_278	Potentilla alba	20250715102151	7.113284	46.032753	1	73014	dbgi_006738	Potentilla alba
+strict_taxon_date_location	73176	dbgi_281	Daphne pontica	20250715102811	7.113298	46.032764	1	73017	dbgi_006768	Daphne pontica
+strict_taxon_date_location	73177	dbgi_282	Phleum phleoides	20250715103020	7.113342	46.032772	1	73018	dbgi_006763	Phleum phleoides
+strict_taxon_date_location	73178	dbgi_283	Festuca valesiaca	20250715103211	7.113316	46.032753	1	73019	dbgi_006747	Festuca valesiaca
+strict_taxon_date_location	73179	dbgi_284	Koeleria vallesiana	20250715103401	7.113348	46.032753	1	73020	dbgi_006739	Koeleria vallesiana
+strict_taxon_date_location	73180	dbgi_285	Koeleria macrantha	20250715104019	7.113301	46.03278	1	73021	dbgi_006711	Koeleria macrantha
+strict_taxon_date_location	73181	dbgi_286	Festuca curvula	20250715104204	7.113296	46.03278	1	73022	dbgi_006634	Festuca curvula
+strict_taxon_date_location	73182	dbgi_287	Euphorbia seguieriana	20250715104341	7.113301	46.03278	1	73023	dbgi_006745	Euphorbia seguieriana
+strict_taxon_date_location	73183	dbgi_288	Potentilla verna	20250715104521	7.113316	46.032784	1	73024	dbgi_006764	Potentilla verna
+strict_taxon_date_location	73185	dbgi_290	Bothriochloa ischaemum	20250715105332	7.113317	46.03279	1	73026	dbgi_006759	Bothriochloa ischaemum
+strict_taxon_date_location	73186	dbgi_291	Thymus praecox	20250715105533	7.113344	46.032784	1	73027	dbgi_006753	Thymus praecox
+strict_taxon_date_location	73187	dbgi_292	Centaurea scabiosa	20250715105932	7.113295	46.032787	1	73028	dbgi_006706	Centaurea scabiosa
+strict_taxon_date_location	73189	dbgi_294	Nepeta nuda	20250715110451	7.113305	46.03281	1	73030	dbgi_007155	Nepeta nuda
+strict_taxon_date_location	73190	dbgi_295	Artemisia campestris	20250715110618	7.113328	46.032795	1	73031	dbgi_007130	Artemisia campestris
+strict_taxon_date_location	73191	dbgi_296	Cerastium argenteum	20250715111120	7.113335	46.03281	1	73032	dbgi_006904	Cerastium argenteum
+strict_taxon_date_location	73192	dbgi_297	Artemisia vallesiaca	20250715111450	7.113306	46.03276	1	73033	dbgi_006726	Artemisia vallesiaca
+strict_taxon_date_location	73193	dbgi_298	Carex humilis	20250715113125	7.113318	46.03277	1	73034	dbgi_006856	Carex humilis
+strict_taxon_date_location	73194	dbgi_299	Onosma pseudoarenaria	20250715113409	7.113277	46.03278	1	73035	dbgi_006743	Onosma pseudoarenaria
+strict_taxon_date_location	73195	dbgi_300	Viola rupestris	20250715113614	7.113283	46.03278	1	73036	dbgi_006762	Viola rupestris
+strict_taxon_date_location	73196	dbgi_301	Molinia arundinacea	20250715113931	7.11322	46.032776	1	73037	dbgi_006707	Molinia arundinacea
+strict_taxon_date_location	73197	dbgi_302	Ephedra helvetica	20250715114901	7.11329	46.03277	1	73038	dbgi_006781	Ephedra helvetica
+strict_taxon_date_location	73198	dbgi_303	Teucrium montanum	20250715115125	7.113314	46.03277	1	73039	dbgi_006841	Teucrium montanum
+strict_taxon_date_location	73199	dbgi_304	Stipa eriocaulis	20250715115405	7.11329	46.032784	1	73040	dbgi_006842	Stipa eriocaulis
+strict_taxon_date_location	73200	dbgi_305	Hieracium bombycinum	20250715083931	7.113289	46.0327	1	73096	dbgi_006690	Hieracium bombycinum
+strict_taxon_date_location	73201	dbgi_306	Erica carnea	20250715090407	7.113303	46.0327	1	73097	dbgi_007136	Erica carnea
+strict_taxon_date_location	73202	dbgi_307	Eriophyllum arachnoideum	20250715090759	7.113332	46.032707	1	73098	dbgi_007167	Eriophyllum arachnoideum
+strict_taxon_date_location	73203	dbgi_308	Cotoneaster congesta	20250715091114	7.113323	46.03271	1	73099	dbgi_006719	Cotoneaster congesta
+strict_taxon_date_location	73204	dbgi_309	Genista germanica	20250715091345	7.113305	46.032707	1	73100	dbgi_007119	Genista germanica
+strict_taxon_date_location	73205	dbgi_310	Gladiolus imbricatus	20250715091812	7.113284	46.03271	1	73101	dbgi_007174	Gladiolus imbricatus
+strict_taxon_date_location	73206	dbgi_311	Armeria arenaria	20250715092118	7.113291	46.032715	1	73102	dbgi_007143	Armeria arenaria
+strict_taxon_date_location	73207	dbgi_312	Potentilla alba	20250715092339	7.113276	46.032707	1	73103	dbgi_007144	Potentilla alba
+strict_taxon_date_location	73208	dbgi_313	Cytisus nigricans	20250715092638	7.113238	46.032726	1	73104	dbgi_006970	Cytisus nigricans
+strict_taxon_date_location	73209	dbgi_314	Potentilla speciosa	20250715092946	7.113255	46.03273	1	73105	dbgi_006944	Potentilla speciosa
+strict_taxon_date_location	73210	dbgi_315	Dianthus simulans	20250715093238	7.113274	46.03273	1	73106	dbgi_007175	Dianthus simulans
+strict_taxon_date_location	73211	dbgi_316	Asclepias syriaca	20250715093654	7.113284	46.032738	1	73107	dbgi_006610	Asclepias syriaca
+strict_taxon_date_location	73212	dbgi_317	Cytisus sessilifolius	20250715093858	7.113268	46.032738	1	73108	dbgi_006609	Cytisus sessilifolius
+strict_taxon_date_location	73215	dbgi_320	Prunella hyssopifolia	20250715095025	7.113195	46.032753	1	73111	dbgi_007150	Prunella hyssopifolia
+strict_taxon_date_location	73216	dbgi_321	Alchemilla conjuncta	20250715095346	7.113198	46.032764	1	73112	dbgi_006605	Alchemilla conjuncta
+strict_taxon_date_location	73217	dbgi_322	Hebe lindsayi	20250715095613	7.11318	46.032757	1	73113	dbgi_006618	Hebe lindsayi
+strict_taxon_date_location	73218	dbgi_323	Molinia caerulea	20250715095802	7.113183	46.032745	1	73114	dbgi_006612	Molinia caerulea
+strict_taxon_date_location	73219	dbgi_324	Potentilla fruticosa	20250715100414	7.113187	46.032726	1	73115	dbgi_004139	Potentilla fruticosa
+strict_taxon_date_location	73220	dbgi_325	Festuca quadriflora	20250715100714	7.113176	46.03272	1	73116	dbgi_006608	Festuca quadriflora
+strict_taxon_date_location	73222	dbgi_327	Gentiana asclepiadea	20250715101933	7.113213	46.032722	1	73118	dbgi_007081	Gentiana asclepiadea
+strict_taxon_date_location	73223	dbgi_328	Iris missouriensis	20250715102146	7.113194	46.032734	1	73119	dbgi_007061	Iris missouriensis
+strict_taxon_date_location	73224	dbgi_329	Dryas octopetala	20250715102407	7.113222	46.032722	1	73120	dbgi_007046	Dryas octopetala
+strict_taxon_date_location	73225	dbgi_330	Dianthus gratianapolitanus	20250715102539	7.113233	46.032722	1	73121	dbgi_007060	Dianthus gratianapolitanus
+strict_taxon_date_location	73226	dbgi_331	Rosa majalis	20250715103208	7.113414	46.03275	1	73122	dbgi_007063	Rosa majalis
+strict_taxon_date_location	73227	dbgi_332	Prunella grandiflora	20250715103704	7.11341	46.032757	1	73123	dbgi_007050	Prunella grandiflora
+strict_taxon_date_location	73229	dbgi_334	Gentiana cruciata	20250715105307	7.113394	46.03275	1	73125	dbgi_007043	Gentiana cruciata
+strict_taxon_date_location	73230	dbgi_335	Rosa coriifolia	20250715105419	7.113409	46.032764	1	73126	dbgi_007139	Rosa coriifolia
+strict_taxon_date_location	73231	dbgi_336	Inula salicina	20250715105545	7.113406	46.03277	1	73127	dbgi_007039	Inula salicina
+strict_taxon_date_location	73234	dbgi_339	Quercus pubescens	20250715110317	7.113373	46.032795	1	73130	dbgi_007057	Quercus pubescens
+strict_taxon_date_location	73235	dbgi_340	Rosa micrantha	20250715110519	7.113385	46.032803	1	73131	dbgi_007142	Rosa micrantha
+strict_taxon_date_location	73236	dbgi_341	Sorbus aucuparia	20250715110700	7.113405	46.032818	1	73132	dbgi_007048	Sorbus aucuparia
+strict_taxon_date_location	73237	dbgi_342	Arnica montana	20250715110852	7.113385	46.032818	1	73133	dbgi_007054	Arnica montana
+strict_taxon_date_location	73238	dbgi_343	Rosa subcanina	20250715111049	7.113376	46.032814	1	73134	dbgi_007058	Rosa subcanina
+strict_taxon_date_location	73239	dbgi_344	Campanula barbata	20250715111357	7.11342	46.032875	1	73135	dbgi_007080	Campanula barbata
+strict_taxon_date_location	73240	dbgi_345	Luzula nivea	20250715111542	7.113406	46.03289	1	73136	dbgi_007051	Luzula nivea
+strict_taxon_date_location	73241	dbgi_346	Festuca paniculata	20250715111729	7.113317	46.0328	1	73137	dbgi_007138	Festuca paniculata
+strict_taxon_date_location	73242	dbgi_347	Vaccinium vitis-idaea	20250715111945	7.113325	46.03279	1	73138	dbgi_007053	Vaccinium vitis-idaea
+strict_taxon_date_location	73243	dbgi_348	Juniperus communis	20250715112503	7.113308	46.032784	1	73139	dbgi_007044	Juniperus communis
+strict_taxon_date_location	73244	dbgi_349	Koeleria macrantha	20250715112920	7.113279	46.032776	1	73140	dbgi_007084	Koeleria macrantha
+strict_taxon_date_location	73245	dbgi_350	Sempervivum tectorum	20250715113204	7.113264	46.032776	1	73141	dbgi_007055	Sempervivum tectorum
+strict_taxon_date_location	73246	dbgi_351	Potentilla pusilla	20250715113453	7.113251	46.032776	1	73142	dbgi_007062	Potentilla pusilla
+strict_taxon_date_location	73247	dbgi_352	Dracocephalum ruyschiana	20250715113807	7.113255	46.03278	1	73143	dbgi_007091	Dracocephalum ruyschiana
+strict_taxon_date_location	73248	dbgi_353	Ranunculus gramineus	20250715114543	7.113295	46.03278	1	73144	dbgi_006826	Ranunculus gramineus
+strict_taxon_date_location	73270	dbgi_354	Hippophae rhamnoides	20250715083825	7.113455	46.032642	1	72986	dbgi_006943	Hippophae rhamnoides
+strict_taxon_date_location	73271	dbgi_355	Centaurea nigra	20250715084018	7.113466	46.03265	1	72987	dbgi_006729	Centaurea nigra
+strict_taxon_date_location	73273	dbgi_357	Hemerocallis multiflora	20250715090513	7.113399	46.032627	1	72989	dbgi_006600	Hemerocallis multiflora
+strict_taxon_date_location	73274	dbgi_358	Centaurea nigrescens	20250715090643	7.113388	46.032623	1	72990	dbgi_006679	Centaurea nigrescens
+strict_taxon_date_location	73275	dbgi_359	Dianthus seguieri	20250715090830	7.113366	46.03262	1	72991	dbgi_006687	Dianthus seguieri
+strict_taxon_date_location	73276	dbgi_360	Penstemon cobaea	20250715091435	7.113386	46.03275	1	72992	dbgi_006668	Penstemon cobaea
+strict_taxon_date_location	73279	dbgi_363	Hieracium bornmuelleri	20250715092138	7.113387	46.032764	1	72995	dbgi_006688	Hieracium bornmuelleri
+strict_taxon_date_location	73282	dbgi_366	Calamintha menthifolia	20250715093106	7.113357	46.032753	1	72998	dbgi_006657	Calamintha menthifolia
+strict_taxon_date_location	73283	dbgi_367	Genista germanica	20250715093444	7.113338	46.032738	1	72999	dbgi_006674	Genista germanica
+strict_taxon_date_location	73286	dbgi_370	Morina longifolia	20250715094212	7.113324	46.032722	1	73002	dbgi_006680	Morina longifolia
+strict_taxon_date_location	73288	dbgi_372	Zizia aptera	20250715094754	7.113337	46.032738	1	73004	dbgi_006664	Zizia aptera
+strict_taxon_date_location	73289	dbgi_373	Paeonia daurica	20250715095004	7.11335	46.03276	1	73005	dbgi_006676	Paeonia daurica
+strict_taxon_date_location	73290	dbgi_374	Erigeron belligifolius	20250715095224	7.11332	46.03274	1	73006	dbgi_006666	Erigeron belligifolius
+strict_taxon_date_location	73291	dbgi_375	Knautia purpurea	20250715095415	7.113327	46.032734	1	73007	dbgi_006631	Knautia purpurea
+strict_taxon_date_location	73292	dbgi_376	Potentilla repens	20250715095604	7.113323	46.03274	1	73008	dbgi_006673	Potentilla repens
+strict_taxon_date_location	73294	dbgi_378	Polygomum amplexicaule	20250715101006	7.113291	46.032757	1	73010	dbgi_006672	Polygomum amplexicaule
+strict_taxon_date_location	73295	dbgi_379	Centaurea simplicicaulis	20250715101234	7.113313	46.03273	1	73011	dbgi_006677	Centaurea simplicicaulis
+strict_taxon_date_location	73298	dbgi_382	Potentilla alba	20250715102151	7.113284	46.032753	1	73014	dbgi_006738	Potentilla alba
+strict_taxon_date_location	73301	dbgi_385	Daphne pontica	20250715102811	7.113298	46.032764	1	73017	dbgi_006768	Daphne pontica
+strict_taxon_date_location	73302	dbgi_386	Phleum phleoides	20250715103020	7.113342	46.032772	1	73018	dbgi_006763	Phleum phleoides
+strict_taxon_date_location	73303	dbgi_387	Festuca valesiaca	20250715103211	7.113316	46.032753	1	73019	dbgi_006747	Festuca valesiaca
+strict_taxon_date_location	73304	dbgi_388	Koeleria vallesiana	20250715103401	7.113348	46.032753	1	73020	dbgi_006739	Koeleria vallesiana
+strict_taxon_date_location	73305	dbgi_389	Koeleria macrantha	20250715104019	7.113301	46.03278	1	73021	dbgi_006711	Koeleria macrantha
+strict_taxon_date_location	73306	dbgi_390	Festuca curvula	20250715104204	7.113296	46.03278	1	73022	dbgi_006634	Festuca curvula
+strict_taxon_date_location	73307	dbgi_391	Euphorbia seguieriana	20250715104341	7.113301	46.03278	1	73023	dbgi_006745	Euphorbia seguieriana
+strict_taxon_date_location	73308	dbgi_392	Potentilla verna	20250715104521	7.113316	46.032784	1	73024	dbgi_006764	Potentilla verna
+strict_taxon_date_location	73310	dbgi_394	Bothriochloa ischaemum	20250715105332	7.113317	46.03279	1	73026	dbgi_006759	Bothriochloa ischaemum
+strict_taxon_date_location	73311	dbgi_395	Thymus praecox	20250715105533	7.113344	46.032784	1	73027	dbgi_006753	Thymus praecox
+strict_taxon_date_location	73312	dbgi_396	Centaurea scabiosa	20250715105932	7.113295	46.032787	1	73028	dbgi_006706	Centaurea scabiosa
+strict_taxon_date_location	73314	dbgi_398	Nepeta nuda	20250715110451	7.113305	46.03281	1	73030	dbgi_007155	Nepeta nuda
+strict_taxon_date_location	73315	dbgi_399	Artemisia campestris	20250715110618	7.113328	46.032795	1	73031	dbgi_007130	Artemisia campestris
+strict_taxon_date_location	73316	dbgi_400	Cerastium argenteum	20250715111120	7.113335	46.03281	1	73032	dbgi_006904	Cerastium argenteum
+strict_taxon_date_location	73317	dbgi_401	Artemisia vallesiaca	20250715111450	7.113306	46.03276	1	73033	dbgi_006726	Artemisia vallesiaca
+strict_taxon_date_location	73318	dbgi_402	Carex humilis	20250715113125	7.113318	46.03277	1	73034	dbgi_006856	Carex humilis
+strict_taxon_date_location	73319	dbgi_403	Onosma pseudoarenaria	20250715113409	7.113277	46.03278	1	73035	dbgi_006743	Onosma pseudoarenaria
+strict_taxon_date_location	73320	dbgi_404	Viola rupestris	20250715113614	7.113283	46.03278	1	73036	dbgi_006762	Viola rupestris
+strict_taxon_date_location	73321	dbgi_405	Molinia arundinacea	20250715113931	7.11322	46.032776	1	73037	dbgi_006707	Molinia arundinacea
+strict_taxon_date_location	73322	dbgi_406	Ephedra helvetica	20250715114901	7.11329	46.03277	1	73038	dbgi_006781	Ephedra helvetica
+strict_taxon_date_location	73323	dbgi_407	Teucrium montanum	20250715115125	7.113314	46.03277	1	73039	dbgi_006841	Teucrium montanum
+strict_taxon_date_location	73324	dbgi_408	Stipa eriocaulis	20250715115405	7.11329	46.032784	1	73040	dbgi_006842	Stipa eriocaulis
+strict_taxon_date_location	73325	dbgi_409	Hieracium bombycinum	20250715083931	7.113289	46.0327	1	73096	dbgi_006690	Hieracium bombycinum
+strict_taxon_date_location	73326	dbgi_410	Erica carnea	20250715090407	7.113303	46.0327	1	73097	dbgi_007136	Erica carnea
+strict_taxon_date_location	73327	dbgi_411	Eriophyllum arachnoideum	20250715090759	7.113332	46.032707	1	73098	dbgi_007167	Eriophyllum arachnoideum
+strict_taxon_date_location	73328	dbgi_412	Cotoneaster congesta	20250715091114	7.113323	46.03271	1	73099	dbgi_006719	Cotoneaster congesta
+strict_taxon_date_location	73329	dbgi_413	Genista germanica	20250715091345	7.113305	46.032707	1	73100	dbgi_007119	Genista germanica
+strict_taxon_date_location	73330	dbgi_414	Gladiolus imbricatus	20250715091812	7.113284	46.03271	1	73101	dbgi_007174	Gladiolus imbricatus
+strict_taxon_date_location	73331	dbgi_415	Armeria arenaria	20250715092118	7.113291	46.032715	1	73102	dbgi_007143	Armeria arenaria
+strict_taxon_date_location	73332	dbgi_416	Potentilla alba	20250715092339	7.113276	46.032707	1	73103	dbgi_007144	Potentilla alba
+strict_taxon_date_location	73333	dbgi_417	Cytisus nigricans	20250715092638	7.113238	46.032726	1	73104	dbgi_006970	Cytisus nigricans
+strict_taxon_date_location	73334	dbgi_418	Potentilla speciosa	20250715092946	7.113255	46.03273	1	73105	dbgi_006944	Potentilla speciosa
+strict_taxon_date_location	73335	dbgi_419	Dianthus simulans	20250715093238	7.113274	46.03273	1	73106	dbgi_007175	Dianthus simulans
+strict_taxon_date_location	73336	dbgi_420	Asclepias syriaca	20250715093654	7.113284	46.032738	1	73107	dbgi_006610	Asclepias syriaca
+strict_taxon_date_location	73337	dbgi_421	Cytisus sessilifolius	20250715093858	7.113268	46.032738	1	73108	dbgi_006609	Cytisus sessilifolius
+strict_taxon_date_location	73340	dbgi_424	Prunella hyssopifolia	20250715095025	7.113195	46.032753	1	73111	dbgi_007150	Prunella hyssopifolia
+strict_taxon_date_location	73341	dbgi_425	Alchemilla conjuncta	20250715095346	7.113198	46.032764	1	73112	dbgi_006605	Alchemilla conjuncta
+strict_taxon_date_location	73342	dbgi_426	Hebe lindsayi	20250715095613	7.11318	46.032757	1	73113	dbgi_006618	Hebe lindsayi
+strict_taxon_date_location	73343	dbgi_427	Molinia caerulea	20250715095802	7.113183	46.032745	1	73114	dbgi_006612	Molinia caerulea
+strict_taxon_date_location	73344	dbgi_428	Potentilla fruticosa	20250715100414	7.113187	46.032726	1	73115	dbgi_004139	Potentilla fruticosa
+strict_taxon_date_location	73345	dbgi_429	Festuca quadriflora	20250715100714	7.113176	46.03272	1	73116	dbgi_006608	Festuca quadriflora
+strict_taxon_date_location	73347	dbgi_431	Gentiana asclepiadea	20250715101933	7.113213	46.032722	1	73118	dbgi_007081	Gentiana asclepiadea
+strict_taxon_date_location	73348	dbgi_432	Iris missouriensis	20250715102146	7.113194	46.032734	1	73119	dbgi_007061	Iris missouriensis
+strict_taxon_date_location	73349	dbgi_433	Dryas octopetala	20250715102407	7.113222	46.032722	1	73120	dbgi_007046	Dryas octopetala
+strict_taxon_date_location	73350	dbgi_434	Dianthus gratianapolitanus	20250715102539	7.113233	46.032722	1	73121	dbgi_007060	Dianthus gratianapolitanus
+strict_taxon_date_location	73351	dbgi_435	Rosa majalis	20250715103208	7.113414	46.03275	1	73122	dbgi_007063	Rosa majalis
+strict_taxon_date_location	73352	dbgi_436	Prunella grandiflora	20250715103704	7.11341	46.032757	1	73123	dbgi_007050	Prunella grandiflora
+strict_taxon_date_location	73354	dbgi_438	Gentiana cruciata	20250715105307	7.113394	46.03275	1	73125	dbgi_007043	Gentiana cruciata
+strict_taxon_date_location	73355	dbgi_439	Rosa coriifolia	20250715105419	7.113409	46.032764	1	73126	dbgi_007139	Rosa coriifolia
+strict_taxon_date_location	73356	dbgi_440	Inula salicina	20250715105545	7.113406	46.03277	1	73127	dbgi_007039	Inula salicina
+strict_taxon_date_location	73359	dbgi_443	Quercus pubescens	20250715110317	7.113373	46.032795	1	73130	dbgi_007057	Quercus pubescens
+strict_taxon_date_location	73360	dbgi_444	Rosa micrantha	20250715110519	7.113385	46.032803	1	73131	dbgi_007142	Rosa micrantha
+strict_taxon_date_location	73361	dbgi_445	Sorbus aucuparia	20250715110700	7.113405	46.032818	1	73132	dbgi_007048	Sorbus aucuparia
+strict_taxon_date_location	73362	dbgi_446	Arnica montana	20250715110852	7.113385	46.032818	1	73133	dbgi_007054	Arnica montana
+strict_taxon_date_location	73363	dbgi_447	Rosa subcanina	20250715111049	7.113376	46.032814	1	73134	dbgi_007058	Rosa subcanina
+strict_taxon_date_location	73364	dbgi_448	Campanula barbata	20250715111357	7.11342	46.032875	1	73135	dbgi_007080	Campanula barbata
+strict_taxon_date_location	73365	dbgi_449	Luzula nivea	20250715111542	7.113406	46.03289	1	73136	dbgi_007051	Luzula nivea
+strict_taxon_date_location	73366	dbgi_450	Festuca paniculata	20250715111729	7.113317	46.0328	1	73137	dbgi_007138	Festuca paniculata
+strict_taxon_date_location	73367	dbgi_451	Vaccinium vitis-idaea	20250715111945	7.113325	46.03279	1	73138	dbgi_007053	Vaccinium vitis-idaea
+strict_taxon_date_location	73368	dbgi_452	Juniperus communis	20250715112503	7.113308	46.032784	1	73139	dbgi_007044	Juniperus communis
+strict_taxon_date_location	73369	dbgi_453	Koeleria macrantha	20250715112920	7.113279	46.032776	1	73140	dbgi_007084	Koeleria macrantha
+strict_taxon_date_location	73370	dbgi_454	Sempervivum tectorum	20250715113204	7.113264	46.032776	1	73141	dbgi_007055	Sempervivum tectorum
+strict_taxon_date_location	73371	dbgi_455	Potentilla pusilla	20250715113453	7.113251	46.032776	1	73142	dbgi_007062	Potentilla pusilla
+strict_taxon_date_location	73372	dbgi_456	Dracocephalum ruyschiana	20250715113807	7.113255	46.03278	1	73143	dbgi_007091	Dracocephalum ruyschiana
+strict_taxon_date_location	73373	dbgi_457	Ranunculus gramineus	20250715114543	7.113295	46.03278	1	73144	dbgi_006826	Ranunculus gramineus
+strict_taxon_date_location	73374	dbgi_458	Juniperus sabina	20250715130019	7.113226	46.032776	1	73249	dbgi_006827	Juniperus sabina
+strict_taxon_date_location	73375	dbgi_459	Lonicera etrusca	20250715130401	7.113276	46.032784	1	73250	dbgi_006851	Lonicera etrusca
+strict_taxon_date_location	73377	dbgi_461	Rosa sherardii	20250715131119	7.113231	46.032757	1	73252	dbgi_006782	Rosa sherardii
+strict_taxon_date_location	73378	dbgi_462	Anemone rivularis	20250715131340	7.113207	46.03278	1	73253	dbgi_006780	Anemone rivularis
+strict_taxon_date_location	73379	dbgi_463	Catananche caerulea	20250715131546	7.113201	46.03279	1	73254	dbgi_007172	Catananche caerulea
+strict_taxon_date_location	73380	dbgi_464	Helictotrichon sempervirens	20250715131802	7.113181	46.032787	1	73255	dbgi_006840	Helictotrichon sempervirens
+strict_taxon_date_location	73381	dbgi_465	Viola suavis	20250715131959	7.113175	46.032795	1	73256	dbgi_006824	Viola suavis
+strict_taxon_date_location	73382	dbgi_466	Iris lutescens	20250715132321	7.113179	46.032803	1	73257	dbgi_006850	Iris lutescens
+strict_taxon_date_location	73384	dbgi_468	Potentilla neumanniana	20250715132837	7.113146	46.03278	1	73259	dbgi_006921	Potentilla neumanniana
+strict_taxon_date_location	73385	dbgi_469	Crepis albida	20250715133038	7.113175	46.032818	1	73260	dbgi_006839	Crepis albida
+strict_taxon_date_location	73386	dbgi_470	Sedum aizoon	20250715133449	7.113126	46.03284	1	73261	dbgi_006847	Sedum aizoon
+strict_taxon_date_location	73387	dbgi_471	Galium verum	20250715133628	7.113133	46.032856	1	73262	dbgi_006849	Galium verum
+strict_taxon_date_location	73388	dbgi_472	Genista sylvestris	20250715133918	7.113096	46.032845	1	73263	dbgi_006816	Genista sylvestris
+strict_taxon_date_location	73391	dbgi_475	Iris pseudacorus	20250715135057	7.113086	46.03287	1	73266	dbgi_006853	Iris pseudacorus
+strict_taxon_date_location	73393	dbgi_477	Cirsium eriophorum	20250715135521	7.11306	46.032898	1	73268	dbgi_006825	Cirsium eriophorum
+strict_taxon_date_location	73394	dbgi_478	Symphoricarpos albus	20250715140019	7.113022	46.032936	1	73269	dbgi_006717	Symphoricarpos albus
+date_location_only	72589	dbgi_23		20250625100221	7.113046	46.032677	1	72548	dbgi_008422	
+date_location_only	72611	dbgi_45		20250625113133	7.11348	46.03264	1	72570	dbgi_008386	
+date_location_only	72687	dbgi_72		20250625100221	7.113046	46.032677	1	72548	dbgi_008422	
+date_location_only	72709	dbgi_94		20250625113133	7.11348	46.03264	1	72570	dbgi_008386	
+date_location_only	72721	dbgi_106		20250625093423	7.113093	46.032623	1	72623	dbgi_008484	
+date_location_only	72722	dbgi_107		20250625093736	7.113092	46.03262	1	72624	dbgi_008479	
+date_location_only	72742	dbgi_127		20250625104818	7.113232	46.03257	1	72644	dbgi_008582	
+date_location_only	72747	dbgi_132		20250625110240	7.113254	46.03257	1	72649	dbgi_008515	
+date_location_only	72749	dbgi_134		20250625110952	7.113352	46.03261	1	72651	dbgi_008491	
+date_location_only	72753	dbgi_138		20250625112705	7.113324	46.0326	1	72655	dbgi_008561	
+date_location_only	72808	dbgi_158		20250707143232	7.113301	46.032642	1	72775	dbgi_008608	
+date_location_only	72813	dbgi_163		20250707144359	7.113251	46.03261	1	72780	dbgi_008469	
+date_location_only	73043	dbgi_197		20250715090257	7.113402	46.032673	1	72988	dbgi_006686	
+date_location_only	73048	dbgi_202		20250715091648	7.113373	46.032745	1	72993	dbgi_006656	
+date_location_only	73049	dbgi_203		20250715091919	7.113394	46.03276	1	72994	dbgi_006670	
+date_location_only	73051	dbgi_205		20250715092516	7.113348	46.032734	1	72996	dbgi_006681	
+date_location_only	73052	dbgi_206		20250715092745	7.113337	46.032745	1	72997	dbgi_006683	
+date_location_only	73055	dbgi_209		20250715093654	7.113338	46.03276	1	73000	dbgi_006675	
+date_location_only	73056	dbgi_210		20250715094018	7.113326	46.032734	1	73001	dbgi_006678	
+date_location_only	73058	dbgi_212		20250715094350	7.113327	46.032726	1	73003	dbgi_006682	
+date_location_only	73064	dbgi_218		20250715095827	7.113328	46.032745	1	73009	dbgi_006685	
+date_location_only	73067	dbgi_221		20250715101449	7.113327	46.03275	1	73012	dbgi_006744	
+date_location_only	73068	dbgi_222		20250715101810	7.113307	46.032757	1	73013	dbgi_006716	
+date_location_only	73070	dbgi_224		20250715102327	7.113308	46.03277	1	73015	dbgi_006758	
+date_location_only	73071	dbgi_225		20250715102612	7.113289	46.03276	1	73016	dbgi_008668	
+date_location_only	73080	dbgi_234		20250715104921	7.11331	46.032772	1	73025	dbgi_006736	
+date_location_only	73084	dbgi_238		20250715110253	7.113306	46.032787	1	73029	dbgi_006819	
+date_location_only	73147	dbgi_252		20250715090257	7.113402	46.032673	1	72988	dbgi_006686	
+date_location_only	73152	dbgi_257		20250715091648	7.113373	46.032745	1	72993	dbgi_006656	
+date_location_only	73153	dbgi_258		20250715091919	7.113394	46.03276	1	72994	dbgi_006670	
+date_location_only	73155	dbgi_260		20250715092516	7.113348	46.032734	1	72996	dbgi_006681	
+date_location_only	73156	dbgi_261		20250715092745	7.113337	46.032745	1	72997	dbgi_006683	
+date_location_only	73159	dbgi_264		20250715093654	7.113338	46.03276	1	73000	dbgi_006675	
+date_location_only	73160	dbgi_265		20250715094018	7.113326	46.032734	1	73001	dbgi_006678	
+date_location_only	73162	dbgi_267		20250715094350	7.113327	46.032726	1	73003	dbgi_006682	
+date_location_only	73168	dbgi_273		20250715095827	7.113328	46.032745	1	73009	dbgi_006685	
+date_location_only	73171	dbgi_276		20250715101449	7.113327	46.03275	1	73012	dbgi_006744	
+date_location_only	73172	dbgi_277		20250715101810	7.113307	46.032757	1	73013	dbgi_006716	
+date_location_only	73174	dbgi_279		20250715102327	7.113308	46.03277	1	73015	dbgi_006758	
+date_location_only	73175	dbgi_280		20250715102612	7.113289	46.03276	1	73016	dbgi_008668	
+date_location_only	73184	dbgi_289		20250715104921	7.11331	46.032772	1	73025	dbgi_006736	
+date_location_only	73188	dbgi_293		20250715110253	7.113306	46.032787	1	73029	dbgi_006819	
+date_location_only	73213	dbgi_318		20250715094307	7.113241	46.032734	1	73109	dbgi_006596	
+date_location_only	73214	dbgi_319		20250715094618	7.113209	46.03276	1	73110	dbgi_006740	
+date_location_only	73221	dbgi_326		20250715101416	7.113182	46.032715	1	73117	dbgi_008550	
+date_location_only	73228	dbgi_333		20250715105102	7.113421	46.03276	1	73124	dbgi_007078	
+date_location_only	73232	dbgi_337		20250715105855	7.113397	46.032772	1	73128	dbgi_007042	
+date_location_only	73233	dbgi_338		20250715110057	7.113349	46.032776	1	73129	dbgi_007045	
+date_location_only	73272	dbgi_356		20250715090257	7.113402	46.032673	1	72988	dbgi_006686	
+date_location_only	73277	dbgi_361		20250715091648	7.113373	46.032745	1	72993	dbgi_006656	
+date_location_only	73278	dbgi_362		20250715091919	7.113394	46.03276	1	72994	dbgi_006670	
+date_location_only	73280	dbgi_364		20250715092516	7.113348	46.032734	1	72996	dbgi_006681	
+date_location_only	73281	dbgi_365		20250715092745	7.113337	46.032745	1	72997	dbgi_006683	
+date_location_only	73284	dbgi_368		20250715093654	7.113338	46.03276	1	73000	dbgi_006675	
+date_location_only	73285	dbgi_369		20250715094018	7.113326	46.032734	1	73001	dbgi_006678	
+date_location_only	73287	dbgi_371		20250715094350	7.113327	46.032726	1	73003	dbgi_006682	
+date_location_only	73293	dbgi_377		20250715095827	7.113328	46.032745	1	73009	dbgi_006685	
+date_location_only	73296	dbgi_380		20250715101449	7.113327	46.03275	1	73012	dbgi_006744	
+date_location_only	73297	dbgi_381		20250715101810	7.113307	46.032757	1	73013	dbgi_006716	
+date_location_only	73299	dbgi_383		20250715102327	7.113308	46.03277	1	73015	dbgi_006758	
+date_location_only	73300	dbgi_384		20250715102612	7.113289	46.03276	1	73016	dbgi_008668	
+date_location_only	73309	dbgi_393		20250715104921	7.11331	46.032772	1	73025	dbgi_006736	
+date_location_only	73313	dbgi_397		20250715110253	7.113306	46.032787	1	73029	dbgi_006819	
+date_location_only	73338	dbgi_422		20250715094307	7.113241	46.032734	1	73109	dbgi_006596	
+date_location_only	73339	dbgi_423		20250715094618	7.113209	46.03276	1	73110	dbgi_006740	
+date_location_only	73346	dbgi_430		20250715101416	7.113182	46.032715	1	73117	dbgi_008550	
+date_location_only	73353	dbgi_437		20250715105102	7.113421	46.03276	1	73124	dbgi_007078	
+date_location_only	73357	dbgi_441		20250715105855	7.113397	46.032772	1	73128	dbgi_007042	
+date_location_only	73358	dbgi_442		20250715110057	7.113349	46.032776	1	73129	dbgi_007045	
+date_location_only	73376	dbgi_460		20250715130601	7.113209	46.032776	1	73251	dbgi_006779	
+date_location_only	73383	dbgi_467		20250715132512	7.113179	46.032795	1	73258	dbgi_006817	
+date_location_only	73389	dbgi_473		20250715134135	7.113075	46.032867	1	73264	dbgi_006752	
+date_location_only	73390	dbgi_474		20250715134517	7.113085	46.032867	1	73265	dbgi_006791	
+date_location_only	73392	dbgi_476		20250715135255	7.113135	46.032913	1	73267	dbgi_006778	
+unmatched	72621	dbgi_48		20250625093007	7.113085	46.03262	0			
+unmatched	72719	dbgi_104		20250625093007	7.113085	46.03262	0			
+unmatched	72839	dbgi_180	Helictotrichon sedenense	20250707142830	7.113177	46.0326	0			
+unmatched	72841	dbgi_181	Rhododendron schlippenbachii	20250707143217	7.113163	46.032616	0			
+unmatched	72845	dbgi_182	Hieracium laticeps	20250707144526	7.113192	46.032597	0			
+unmatched	72846	dbgi_183	Dianthus monspessulanus	20250707144713	7.113198	46.032604	0			
+unmatched	72847	dbgi_184	Festuca carpatica	20250707144917	7.11321	46.032604	0			
+unmatched	72850	dbgi_185	Chamaecytisus purpureus	20250707145558	7.113145	46.032616	0			
+unmatched	72852	dbgi_186	Thymus praecox	20250707150751	7.113267	46.032665	0			
+unmatched	72854	dbgi_187		20250707151601	7.113362	46.032692	0			
+unmatched	72855	dbgi_188		20250707151948	7.113392	46.03268	0			
+unmatched	72859	dbgi_189		20250707153337	7.11342	46.032722	0			
+unmatched	72948	dbgi_190	Phlodouglasii Hook.	20250714154842	7.112868	46.03276	0			
+unmatched	72949	dbgi_191	Taxus cuspidata	20250714155220	7.112901	46.03278	0			
+unmatched	72951	dbgi_192	Saxifraga lingulata	20250714155801	7.112903	46.032787	0			
+unmatched	72956	dbgi_193	Androsace foliosa	20250714162049	7.113029	46.032795	0			
+unmatched	72962	dbgi_194	Gentiana macrophylla	20250714163621	7.113048	46.032814	0			

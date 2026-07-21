@@ -1,0 +1,12 @@
+{
+  "nonstandard_row_count": 472,
+  "strict_taxon_date_location_matches": 381,
+  "additional_date_location_only_matches": 74,
+  "total_matched_with_loose_location": 455,
+  "unmatched_after_loose_location_count": 17,
+  "unmatched_after_loose_missing_taxon_count": 5,
+  "unmatched_after_loose_with_taxon_count": 12,
+  "location_only_match_count_distribution": {
+    "1": 74
+  }
+}

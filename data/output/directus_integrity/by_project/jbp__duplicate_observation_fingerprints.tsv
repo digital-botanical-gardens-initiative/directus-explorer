@@ -1,3 +1,0 @@
-group_id	group_size	fingerprint	project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status
-116	2	jbp|rumex aquaticus|20250814095305|14.411982|50.12162	jbp	74178	dbgi_009892 00	other_noncanonical		Rumex aquaticus			20250814095305	14.411982	50.12162	out_of_ch_range
-116	2	jbp|rumex aquaticus|20250814095305|14.411982|50.12162	jbp	74183	dbgi_009892	canonical	dbgi_009892	Rumex aquaticus			20250814095305	14.411982	50.12162	out_of_ch_range

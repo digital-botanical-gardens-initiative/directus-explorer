@@ -26,6 +26,9 @@ CANONICAL_SAMPLE_RE = re.compile(r"^[a-z][a-z0-9]*_\d{6}$")
 SHORT_PREFIX_RE = re.compile(r"^[a-z][a-z0-9]*_\d{1,5}$")
 DERIVED_CONTAINER_RE = re.compile(r"^[a-z][a-z0-9]*_\d{6}(?:_\d{2})+$")
 DBGI_ID_RE = re.compile(r"^dbgi_(\d+)$")
+PRIMARY_TAXON_FIELDS = ("taxon_name_final", "taxon_name", "sample_name")
+FALLBACK_TAXON_FIELDS = ("name_proposition", "match_name", "MatchedCanonical", "species_name")
+UNIFIED_TAXON_FIELDS = (*PRIMARY_TAXON_FIELDS, *FALLBACK_TAXON_FIELDS)
 
 
 @dataclass(frozen=True, slots=True)
@@ -40,6 +43,11 @@ class FieldRecord:
     taxon_name: str
     sample_name: str
     taxon_name_final: str
+    unified_taxon_name: str
+    unified_taxon_source: str
+    unified_taxon_status: str
+    taxon_candidate_fields_present: str
+    taxon_unified_conflict: str
     date: str
     latitude: str
     longitude: str
@@ -49,6 +57,10 @@ class FieldRecord:
     @property
     def has_taxon_name(self) -> bool:
         return bool(self.taxon_name or self.sample_name or self.taxon_name_final)
+
+    @property
+    def has_unified_taxon_name(self) -> bool:
+        return bool(self.unified_taxon_name)
 
 
 def main() -> None:
@@ -81,7 +93,9 @@ def main() -> None:
     records = [_normalize_field_record(row) for row in field_rows]
     _write_raw_snapshot(field_rows)
     _write_project_summary(records)
+    _write_unified_taxon_report(records)
     _write_field_issues(records)
+    _write_missing_taxon_metadata(field_rows, records)
     _write_coordinate_reports(records)
     _write_duplicate_sample_ids(records)
     _write_duplicate_observations(records)
@@ -102,6 +116,7 @@ def _normalize_field_record(row: dict[str, Any]) -> FieldRecord:
     taxon_name = _clean(row.get("taxon_name"))
     sample_name = _clean(row.get("sample_name"))
     taxon_name_final = _clean(row.get("taxon_name_final"))
+    unified_taxon = _unified_taxon(row)
     date = _clean(row.get("date"))
     latitude = _clean(row.get("latitude"))
     longitude = _clean(row.get("longitude"))
@@ -115,13 +130,18 @@ def _normalize_field_record(row: dict[str, Any]) -> FieldRecord:
         taxon_name=taxon_name,
         sample_name=sample_name,
         taxon_name_final=taxon_name_final,
+        unified_taxon_name=unified_taxon["name"],
+        unified_taxon_source=unified_taxon["source"],
+        unified_taxon_status=unified_taxon["status"],
+        taxon_candidate_fields_present=unified_taxon["candidate_fields_present"],
+        taxon_unified_conflict=unified_taxon["conflict"],
         date=date,
         latitude=latitude,
         longitude=longitude,
         coordinate_status=coordinate_status,
         duplicate_fingerprint=_duplicate_fingerprint(
             project=project,
-            taxon_name=taxon_name or sample_name or taxon_name_final,
+            taxon_name=unified_taxon["name"],
             date=date,
             latitude=latitude,
             longitude=longitude,
@@ -174,7 +194,19 @@ def _write_project_summary(records: list[FieldRecord]) -> None:
                 ),
                 "duplicate_sample_id_count": duplicate_sample_id_count,
                 "duplicate_sample_id_row_count": duplicate_sample_row_count,
-                "missing_taxon_rows": sum(not record.has_taxon_name for record in project_records),
+                "missing_primary_taxon_rows": sum(
+                    not record.has_taxon_name for record in project_records
+                ),
+                "missing_unified_taxon_rows": sum(
+                    not record.has_unified_taxon_name for record in project_records
+                ),
+                "taxon_recovered_from_fallback_rows": sum(
+                    record.unified_taxon_status == "resolved_from_fallback_taxon_field"
+                    for record in project_records
+                ),
+                "taxon_unified_conflict_rows": sum(
+                    bool(record.taxon_unified_conflict) for record in project_records
+                ),
                 "missing_date_rows": sum(not record.date for record in project_records),
                 "missing_coordinate_rows": coordinate_counts["missing"],
                 "coordinates_look_swapped_rows": coordinate_counts["looks_swapped_ch_lat_lon"],
@@ -196,14 +228,88 @@ def _write_field_issues(records: list[FieldRecord]) -> None:
         issues: list[str] = []
         if record.sample_id_class != "canonical":
             issues.append(f"sample_id_{record.sample_id_class}")
-        if not record.has_taxon_name:
-            issues.append("missing_taxon_name")
+        if not record.has_taxon_name and record.has_unified_taxon_name:
+            issues.append("missing_primary_taxon_name_recovered_from_fallback")
+        elif not record.has_unified_taxon_name:
+            issues.append("missing_unified_taxon_name")
+        if record.taxon_unified_conflict:
+            issues.append("taxon_unified_conflict")
         if not record.date:
             issues.append("missing_date")
         if not issues:
             continue
         rows.append(_record_row(record) | {"issues": ";".join(issues)})
     _write_tsv(OUTPUT_DIR / "field_data_issues.tsv", rows)
+
+
+def _write_unified_taxon_report(records: list[FieldRecord]) -> None:
+    rows = [
+        _record_row(record)
+        | {
+            "issue": (
+                "missing_unified_taxon_name"
+                if not record.has_unified_taxon_name
+                else "taxon_unified_conflict"
+                if record.taxon_unified_conflict
+                else ""
+            )
+        }
+        for record in records
+    ]
+    _write_tsv(OUTPUT_DIR / "field_data_unified_taxon.tsv", rows)
+
+
+def _write_missing_taxon_metadata(
+    field_rows: list[dict[str, Any]],
+    records: list[FieldRecord],
+) -> None:
+    raw_by_id = {_int_id(row): row for row in field_rows}
+    raw_fields = sorted({key for row in field_rows for key in row})
+    fieldnames = [
+        "project",
+        "field_data_id",
+        "sample_id",
+        "sample_id_class",
+        "canonical_candidate",
+        "unified_taxon_name",
+        "unified_taxon_source",
+        "unified_taxon_status",
+        "taxon_candidate_fields_present",
+        "taxon_unified_conflict",
+        "primary_taxon_fields_empty",
+        *[f"field.{field}" for field in raw_fields],
+        "directus_row_json",
+    ]
+    rows: list[dict[str, Any]] = []
+    for record in records:
+        if record.has_taxon_name:
+            continue
+        raw_row = raw_by_id[record.id]
+        rows.append(
+            {
+                "project": record.project,
+                "field_data_id": record.id,
+                "sample_id": record.sample_id,
+                "sample_id_class": record.sample_id_class,
+                "canonical_candidate": record.canonical_candidate,
+                "unified_taxon_name": record.unified_taxon_name,
+                "unified_taxon_source": record.unified_taxon_source,
+                "unified_taxon_status": record.unified_taxon_status,
+                "taxon_candidate_fields_present": record.taxon_candidate_fields_present,
+                "taxon_unified_conflict": record.taxon_unified_conflict,
+                "primary_taxon_fields_empty": "taxon_name;sample_name;taxon_name_final",
+                **{f"field.{key}": _tsv_value(value) for key, value in raw_row.items()},
+                "directus_row_json": json.dumps(raw_row, ensure_ascii=False, sort_keys=True),
+            }
+        )
+    _write_tsv_with_fieldnames(OUTPUT_DIR / "missing_taxon_full_metadata.tsv", fieldnames, rows)
+
+    missing_unified_rows = [row for row in rows if not row["unified_taxon_name"]]
+    _write_tsv_with_fieldnames(
+        OUTPUT_DIR / "missing_unified_taxon_full_metadata.tsv",
+        fieldnames,
+        missing_unified_rows,
+    )
 
 
 def _write_coordinate_reports(records: list[FieldRecord]) -> None:
@@ -558,6 +664,9 @@ def _write_per_project_splits() -> None:
         stale_path.unlink()
     for path in (
         OUTPUT_DIR / "field_data_issues.tsv",
+        OUTPUT_DIR / "field_data_unified_taxon.tsv",
+        OUTPUT_DIR / "missing_taxon_full_metadata.tsv",
+        OUTPUT_DIR / "missing_unified_taxon_full_metadata.tsv",
         OUTPUT_DIR / "coordinates_swapped_ch.tsv",
         OUTPUT_DIR / "coordinates_missing_or_invalid.tsv",
         OUTPUT_DIR / "coordinates_outside_ch_range.tsv",
@@ -594,6 +703,42 @@ def _canonical_candidate(sample_id: str) -> str:
     if match is None:
         return ""
     return f"dbgi_{int(match.group(1)):06d}"
+
+
+def _unified_taxon(row: dict[str, Any]) -> dict[str, str]:
+    candidates = [(field, _clean(row.get(field))) for field in UNIFIED_TAXON_FIELDS]
+    present = [(field, value) for field, value in candidates if value]
+    if not present:
+        return {
+            "name": "",
+            "source": "",
+            "status": "missing_all_taxon_information",
+            "candidate_fields_present": "",
+            "conflict": "",
+        }
+
+    source, name = present[0]
+    normalized_values = {_normalize_taxon_value(value) for _, value in present}
+    conflict = ""
+    if len(normalized_values) > 1:
+        conflict = ";".join(f"{field}={value}" for field, value in present)
+
+    status = (
+        "resolved_from_primary_taxon_field"
+        if source in PRIMARY_TAXON_FIELDS
+        else "resolved_from_fallback_taxon_field"
+    )
+    return {
+        "name": name,
+        "source": source,
+        "status": status,
+        "candidate_fields_present": ";".join(field for field, _ in present),
+        "conflict": conflict,
+    }
+
+
+def _normalize_taxon_value(value: str) -> str:
+    return re.sub(r"\s+", " ", value.strip().lower())
 
 
 def _coordinate_status(latitude: str, longitude: str) -> str:
@@ -669,6 +814,11 @@ def _record_row(record: FieldRecord) -> dict[str, Any]:
         "taxon_name": record.taxon_name,
         "sample_name": record.sample_name,
         "taxon_name_final": record.taxon_name_final,
+        "unified_taxon_name": record.unified_taxon_name,
+        "unified_taxon_source": record.unified_taxon_source,
+        "unified_taxon_status": record.unified_taxon_status,
+        "taxon_candidate_fields_present": record.taxon_candidate_fields_present,
+        "taxon_unified_conflict": record.taxon_unified_conflict,
         "date": record.date,
         "latitude": record.latitude,
         "longitude": record.longitude,
@@ -682,6 +832,14 @@ def _write_tsv(path: Path, rows: list[dict[str, Any]]) -> None:
     else:
         fieldnames = ("message",)
         rows = [{"message": "no_rows"}]
+    _write_tsv_with_fieldnames(path, fieldnames, rows)
+
+
+def _write_tsv_with_fieldnames(
+    path: Path,
+    fieldnames: list[str] | tuple[str, ...],
+    rows: list[dict[str, Any]],
+) -> None:
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t")
         writer.writeheader()
@@ -705,6 +863,16 @@ def _clean(value: Any) -> str:
     if value is None:
         return ""
     return str(value).strip()
+
+
+def _tsv_value(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, str):
+        return value
+    if isinstance(value, int | float | bool):
+        return str(value)
+    return json.dumps(value, ensure_ascii=False, sort_keys=True)
 
 
 def _join(values: Any) -> str:

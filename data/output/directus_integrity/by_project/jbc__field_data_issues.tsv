@@ -1,321 +1,247 @@
-project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issues
-jbc	70625	dbgi_007013	canonical	dbgi_007013				20250526185641	7.1125426	46.0327	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70629	dbgi_008694	canonical	dbgi_008694				20250526181243	7.112449	46.032627	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70631	dbgi_008807	canonical	dbgi_008807				20250526181954	7.1124654	46.03265	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70637	dbgi_008820	canonical	dbgi_008820				20250526184148	7.1125126	46.03267	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70659	dbgi_006954	canonical	dbgi_006954				20250527084837	7.11268	46.032757	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70661	dbgi_007017	canonical	dbgi_007017				20250527085713	7.1126385	46.03276	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70666	dbgi_006942	canonical	dbgi_006942				20250527091227	7.1126194	46.03273	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70673	dbgi_007168	canonical	dbgi_007168				20250527094920	7.1125455	46.032715	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70681	dbgi_007035	canonical	dbgi_007035				20250527081134	7.112685	46.03271	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70686	dbgi_007014	canonical	dbgi_007014				20250527083318	7.112692	46.032757	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70690	dbgi_006896	canonical	dbgi_006896				20250527085004	7.1125946	46.03273	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70697	dbgi_006929	canonical	dbgi_006929				20250527091303	7.1126285	46.03273	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70703	dbgi_007006	canonical	dbgi_007006				20250527093230	7.1126413	46.03274	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70706	dbgi_007110	canonical	dbgi_007110				20250527094347	7.1126423	46.032753	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70709	dbgi_008697	canonical	dbgi_008697				20250527105140	7.1126227	46.032787	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70713	dbgi_008671	canonical	dbgi_008671				20250527110359	7.11262	46.03279	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70716	dbgi_008680	canonical	dbgi_008680				20250527111841	7.1126094	46.03279	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70720	dbgi_008666	canonical	dbgi_008666				20250527112801	7.112593	46.032787	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70721	dbgi_008690	canonical	dbgi_008690				20250527113047	7.1126013	46.032784	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70724	dbgi_006976	canonical	dbgi_006976				20250527104027	7.1126194	46.032776	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70725	dbgi_006977	canonical	dbgi_006977				20250527104350	7.1126156	46.032776	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70737	dbgi_008593	canonical	dbgi_008593				20250527110434	7.112594	46.032787	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70743	dbgi_008590	canonical	dbgi_008590				20250527112127	7.1125965	46.032776	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70744	dbgi_008566	canonical	dbgi_008566				20250527112426	7.1125956	46.03278	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70745	dbgi_008659	canonical	dbgi_008659				20250527112633	7.1125875	46.03278	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70746	dbgi_008576	canonical	dbgi_008576				20250527113017	7.1125875	46.032776	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70747	dbgi_008578	canonical	dbgi_008578				20250527113239	7.1125827	46.032784	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70803	dbgi_008696	canonical	dbgi_008696				20250527134007	7.1123676	46.032646	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70806	dbgi_008714	canonical	dbgi_008714				20250527134820	7.1123796	46.03267	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70811	dbgi_008726	canonical	dbgi_008726				20250527140923	7.11243	46.032658	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70812	dbgi_008745	canonical	dbgi_008745				20250527141107	7.112413	46.032665	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70931	dbgi_006760	canonical	dbgi_006760				20250604173046	7.1125774	46.032837	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70936	dbgi_006613	canonical	dbgi_006613				20250604171928	7.112568	46.032803	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70941	dbgi_004120	canonical	dbgi_004120				20250604173629	7.1125803	46.032806	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70944	dbgi_004180	canonical	dbgi_004180				20250605084221	7.112555	46.03285	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70962	dbgi_006621	canonical	dbgi_006621				20250605095115	7.112528	46.03288	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70973	dbgi_006949	canonical	dbgi_006949				20250605085313	7.11259	46.03281	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70974	dbgi_004175	canonical	dbgi_004175				20250605085621	7.112599	46.032803	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70985	dbgi_004289	canonical	dbgi_004289				20250605093404	7.1125073	46.03289	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70988	dbgi_004157	canonical	dbgi_004157				20250605094336	7.1124887	46.03289	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	70998	dbgi_006627	canonical	dbgi_006627				20250605101337	7.1124578	46.032883	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71017	dbgi_006661	canonical	dbgi_006661				20250605125354	7.1125517	46.032894	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71024	dbgi_007154	canonical	dbgi_007154				20250605131357	7.112644	46.0329	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71034	dbgi_006774	canonical	dbgi_006774				20250605135103	7.1125536	46.03294	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71048	dbgi_006727	canonical	dbgi_006727				20250605150243	7.1124	46.032967	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71050	dbgi_006623	canonical	dbgi_006623				20250605125313	7.112464	46.032936	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71051	dbgi_006629	canonical	dbgi_006629				20250605125502	7.112472	46.03293	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71057	dbgi_006625	canonical	dbgi_006625				20250605130737	7.1125116	46.0329	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71059	dbgi_006646	canonical	dbgi_006646				20250605131051	7.1125107	46.03291	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71063	dbgi_004150	canonical	dbgi_004150				20250605135343	7.1125126	46.03292	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71073	dbgi_006614	canonical	dbgi_006614				20250605142641	7.112361	46.032967	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71076	dbgi_006749	canonical	dbgi_006749				20250605144005	7.112368	46.03297	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71077	dbgi_006786	canonical	dbgi_006786				20250605144306	7.112385	46.03296	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71086	dbgi_006959	canonical	dbgi_006959				20250605150525	7.1124005	46.032967	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71087	dbgi_007002	canonical	dbgi_007002				20250611082055	7.112593	46.03295	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71093	dbgi_006808	canonical	dbgi_006808				20250611083640	7.112607	46.032932	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71097	dbgi_006880	canonical	dbgi_006880				20250611085520	7.1126266	46.03294	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71106	dbgi_006700	canonical	dbgi_006700				20250611082210	7.1124167	46.032967	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71115	dbgi_006914	canonical	dbgi_006914				20250611085712	7.1125054	46.032963	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71128	dbgi_006892	canonical	dbgi_006892				20250611102624	7.1124477	46.032963	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71129	dbgi_006869	canonical	dbgi_006869				20250611102857	7.112446	46.032967	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71132	dbgi_006809	canonical	dbgi_006809				20250611103524	7.1124225	46.03297	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71133	dbgi_006812	canonical	dbgi_006812				20250611104018	7.112419	46.032974	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71135	dbgi_006832	canonical	dbgi_006832				20250611104825	7.1124015	46.032974	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71137	dbgi_006784	canonical	dbgi_006784				20250611105434	7.1123843	46.032978	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71148	dbgi_004164	canonical	dbgi_004164				20250611112522	7.1124997	46.032974	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71149	dbgi_006594	canonical	dbgi_006594				20250611112714	7.112503	46.032986	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71152	dbgi_004124	canonical	dbgi_004124				20250611113407	7.1125293	46.032974	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71158	dbgi_004153	canonical	dbgi_004153				20250611114527	7.112554	46.03297	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71167	dbgi_006919	canonical	dbgi_006919				20250611102335	7.1126037	46.032944	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71168	dbgi_006906	canonical	dbgi_006906				20250611102537	7.1126337	46.03293	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71177	dbgi_006649	canonical	dbgi_006649				20250611105110	7.1126294	46.03294	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71178	dbgi_006771	canonical	dbgi_006771				20250611105346	7.112642	46.03295	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71181	dbgi_006720	canonical	dbgi_006720				20250611111004	7.1126585	46.03294	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71195	dbgi_006915	canonical	dbgi_006915				20250611125734	7.11272	46.032967	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71209	dbgi_006822	canonical	dbgi_006822				20250611133657	7.1128097	46.032925	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71216	dbgi_007007	canonical	dbgi_007007				20250611124551	7.1126013	46.032978	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71226	dbgi_006730	canonical	dbgi_006730				20250611131346	7.1126704	46.03297	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71229	dbgi_004182	canonical	dbgi_004182				20250611131912	7.112718	46.032967	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	71236	dbgi_006883	canonical	dbgi_006883				20250611133629	7.1127386	46.032978	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72548	dbgi_008422	canonical	dbgi_008422				20250625100221	7.1130457	46.032677	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72570	dbgi_008386	canonical	dbgi_008386				20250625113133	7.11348	46.03264	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72589	dbgi_23	short_numeric_suffix	dbgi_000023				20250625100221	7.1130457	46.032677	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72611	dbgi_45	short_numeric_suffix	dbgi_000045				20250625113133	7.11348	46.03264	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72621	dbgi_48	short_numeric_suffix	dbgi_000048				20250625093007	7.1130853	46.03262	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72623	dbgi_008484	canonical	dbgi_008484				20250625093423	7.1130934	46.032623	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72624	dbgi_008479	canonical	dbgi_008479				20250625093736	7.1130924	46.03262	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72644	dbgi_008582	canonical	dbgi_008582				20250625104818	7.1132317	46.03257	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72649	dbgi_008515	canonical	dbgi_008515				20250625110240	7.113254	46.03257	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72651	dbgi_008491	canonical	dbgi_008491				20250625110952	7.1133523	46.03261	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72655	dbgi_008561	canonical	dbgi_008561				20250625112705	7.113324	46.0326	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72687	dbgi_72	short_numeric_suffix	dbgi_000072				20250625100221	7.1130457	46.032677	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72709	dbgi_94	short_numeric_suffix	dbgi_000094				20250625113133	7.11348	46.03264	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72719	dbgi_104	short_numeric_suffix	dbgi_000104				20250625093007	7.1130853	46.03262	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72721	dbgi_106	short_numeric_suffix	dbgi_000106				20250625093423	7.1130934	46.032623	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72722	dbgi_107	short_numeric_suffix	dbgi_000107				20250625093736	7.1130924	46.03262	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72742	dbgi_127	short_numeric_suffix	dbgi_000127				20250625104818	7.1132317	46.03257	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72747	dbgi_132	short_numeric_suffix	dbgi_000132				20250625110240	7.113254	46.03257	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72749	dbgi_134	short_numeric_suffix	dbgi_000134				20250625110952	7.1133523	46.03261	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72753	dbgi_138	short_numeric_suffix	dbgi_000138				20250625112705	7.113324	46.0326	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72775	dbgi_008608	canonical	dbgi_008608				20250707143232	7.1133013	46.032642	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72780	dbgi_008469	canonical	dbgi_008469				20250707144359	7.1132507	46.03261	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72808	dbgi_158	short_numeric_suffix	dbgi_000158				20250707143232	7.1133013	46.032642	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72813	dbgi_163	short_numeric_suffix	dbgi_000163				20250707144359	7.1132507	46.03261	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72833	dbgi_008568	canonical	dbgi_008568				20250707141234	7.1131525	46.032597	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72834	dbgi_008592	canonical	dbgi_008592				20250707141652	7.11315	46.0326	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72839	dbgi_180	short_numeric_suffix	dbgi_000180	Helictotrichon sedenense			20250707142830	7.113177	46.0326	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72841	dbgi_181	short_numeric_suffix	dbgi_000181	Rhododendron schlippenbachii			20250707143217	7.113163	46.032616	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72845	dbgi_182	short_numeric_suffix	dbgi_000182	Hieracium laticeps			20250707144526	7.1131916	46.032597	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72846	dbgi_183	short_numeric_suffix	dbgi_000183	Dianthus monspessulanus			20250707144713	7.113198	46.032604	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72847	dbgi_184	short_numeric_suffix	dbgi_000184	Festuca carpatica			20250707144917	7.11321	46.032604	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72850	dbgi_185	short_numeric_suffix	dbgi_000185	Chamaecytisus purpureus			20250707145558	7.113145	46.032616	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72852	dbgi_186	short_numeric_suffix	dbgi_000186	Thymus praecox			20250707150751	7.113267	46.032665	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72854	dbgi_187	short_numeric_suffix	dbgi_000187				20250707151601	7.113362	46.032692	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72855	dbgi_188	short_numeric_suffix	dbgi_000188				20250707151948	7.113392	46.03268	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72859	dbgi_189	short_numeric_suffix	dbgi_000189				20250707153337	7.11342	46.032722	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	72860	dbgi_008625	canonical	dbgi_008625				20250707153639	7.11342	46.032722	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72861	dbgi_008482	canonical	dbgi_008482				20250707153946	7.113408	46.03271	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72862	dbgi_008425	canonical	dbgi_008425				20250707154132	7.1134267	46.0327	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72871	dbgi_009089	canonical	dbgi_009089				20250714143228	7.1128764	46.03273	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72873	dbgi_009056	canonical	dbgi_009056				20250714143726	7.1129036	46.032722	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72879	dbgi_008545	canonical	dbgi_008545				20250714145146	7.1129885	46.03274	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72894	dbgi_006985	canonical	dbgi_006985				20250714153716	7.113079	46.03278	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72907	dbgi_006997	canonical	dbgi_006997				20250714161600	7.1130996	46.0328	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72911	dbgi_006862	canonical	dbgi_006862				20250714163108	7.1130533	46.032845	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72912	dbgi_006982	canonical	dbgi_006982				20250714163338	7.113044	46.03284	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72913	dbgi_006928	canonical	dbgi_006928				20250714163610	7.1130505	46.032845	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72916	dbgi_008710	canonical	dbgi_008710				20250714165929	7.11303	46.032818	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72919	dbgi_006713	canonical	dbgi_006713				20250714170710	7.1131697	46.032734	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72936	dbgi_009076	canonical	dbgi_009076				20250714145356	7.1130133	46.03276	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72948	dbgi_190	short_numeric_suffix	dbgi_000190	Phlodouglasii Hook.			20250714154842	7.1128683	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72949	dbgi_191	short_numeric_suffix	dbgi_000191	Taxus cuspidata			20250714155220	7.112901	46.03278	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72950	dbgi_008400	canonical	dbgi_008400				20250714155420	7.112928	46.032784	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72951	dbgi_192	short_numeric_suffix	dbgi_000192	Saxifraga lingulata			20250714155801	7.112903	46.032787	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72956	dbgi_193	short_numeric_suffix	dbgi_000193	Androsace foliosa			20250714162049	7.1130285	46.032795	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72961	dbgi_006873	canonical	dbgi_006873				20250714163436	7.1130204	46.03282	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72962	dbgi_194	short_numeric_suffix	dbgi_000194	Gentiana macrophylla			20250714163621	7.1130476	46.032814	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
-jbc	72973	dbgi_006604	canonical	dbgi_006604				20250714172803	7.1128325	46.032776	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72977	dbgi_006709	canonical	dbgi_006709				20250714173531	7.112815	46.0328	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72978	dbgi_006650	canonical	dbgi_006650				20250714172426	7.112818	46.032764	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72981	dbgi_006955	canonical	dbgi_006955				20250714172554	7.112877	46.03281	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72983	dbgi_006901	canonical	dbgi_006901				20250714173158	7.1128488	46.032814	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72988	dbgi_006686	canonical	dbgi_006686				20250715090257	7.113402	46.032673	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72993	dbgi_006656	canonical	dbgi_006656				20250715091648	7.113373	46.032745	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72994	dbgi_006670	canonical	dbgi_006670				20250715091919	7.1133943	46.03276	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72996	dbgi_006681	canonical	dbgi_006681				20250715092516	7.113348	46.032734	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	72997	dbgi_006683	canonical	dbgi_006683				20250715092745	7.113337	46.032745	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73000	dbgi_006675	canonical	dbgi_006675				20250715093654	7.113338	46.03276	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73001	dbgi_006678	canonical	dbgi_006678				20250715094018	7.113326	46.032734	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73003	dbgi_006682	canonical	dbgi_006682				20250715094350	7.1133275	46.032726	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73009	dbgi_006685	canonical	dbgi_006685				20250715095827	7.113328	46.032745	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73012	dbgi_006744	canonical	dbgi_006744				20250715101449	7.1133265	46.03275	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73013	dbgi_006716	canonical	dbgi_006716				20250715101810	7.113307	46.032757	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73015	dbgi_006758	canonical	dbgi_006758				20250715102327	7.1133075	46.03277	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73016	dbgi_008668	canonical	dbgi_008668				20250715102612	7.113289	46.03276	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73025	dbgi_006736	canonical	dbgi_006736				20250715104921	7.1133103	46.032772	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73029	dbgi_006819	canonical	dbgi_006819				20250715110253	7.1133056	46.032787	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73043	dbgi_197	short_numeric_suffix	dbgi_000197				20250715090257	7.113402	46.032673	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73048	dbgi_202	short_numeric_suffix	dbgi_000202				20250715091648	7.113373	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73049	dbgi_203	short_numeric_suffix	dbgi_000203				20250715091919	7.1133943	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73051	dbgi_205	short_numeric_suffix	dbgi_000205				20250715092516	7.113348	46.032734	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73052	dbgi_206	short_numeric_suffix	dbgi_000206				20250715092745	7.113337	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73055	dbgi_209	short_numeric_suffix	dbgi_000209				20250715093654	7.113338	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73056	dbgi_210	short_numeric_suffix	dbgi_000210				20250715094018	7.113326	46.032734	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73058	dbgi_212	short_numeric_suffix	dbgi_000212				20250715094350	7.1133275	46.032726	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73064	dbgi_218	short_numeric_suffix	dbgi_000218				20250715095827	7.113328	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73067	dbgi_221	short_numeric_suffix	dbgi_000221				20250715101449	7.1133265	46.03275	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73068	dbgi_222	short_numeric_suffix	dbgi_000222				20250715101810	7.113307	46.032757	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73070	dbgi_224	short_numeric_suffix	dbgi_000224				20250715102327	7.1133075	46.03277	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73071	dbgi_225	short_numeric_suffix	dbgi_000225				20250715102612	7.113289	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73080	dbgi_234	short_numeric_suffix	dbgi_000234				20250715104921	7.1133103	46.032772	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73084	dbgi_238	short_numeric_suffix	dbgi_000238				20250715110253	7.1133056	46.032787	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73109	dbgi_006596	canonical	dbgi_006596				20250715094307	7.1132407	46.032734	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73110	dbgi_006740	canonical	dbgi_006740				20250715094618	7.1132092	46.03276	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73117	dbgi_008550	canonical	dbgi_008550				20250715101416	7.1131816	46.032715	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73124	dbgi_007078	canonical	dbgi_007078				20250715105102	7.1134205	46.03276	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73128	dbgi_007042	canonical	dbgi_007042				20250715105855	7.1133966	46.032772	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73129	dbgi_007045	canonical	dbgi_007045				20250715110057	7.1133494	46.032776	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73147	dbgi_252	short_numeric_suffix	dbgi_000252				20250715090257	7.113402	46.032673	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73152	dbgi_257	short_numeric_suffix	dbgi_000257				20250715091648	7.113373	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73153	dbgi_258	short_numeric_suffix	dbgi_000258				20250715091919	7.1133943	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73155	dbgi_260	short_numeric_suffix	dbgi_000260				20250715092516	7.113348	46.032734	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73156	dbgi_261	short_numeric_suffix	dbgi_000261				20250715092745	7.113337	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73159	dbgi_264	short_numeric_suffix	dbgi_000264				20250715093654	7.113338	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73160	dbgi_265	short_numeric_suffix	dbgi_000265				20250715094018	7.113326	46.032734	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73162	dbgi_267	short_numeric_suffix	dbgi_000267				20250715094350	7.1133275	46.032726	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73168	dbgi_273	short_numeric_suffix	dbgi_000273				20250715095827	7.113328	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73171	dbgi_276	short_numeric_suffix	dbgi_000276				20250715101449	7.1133265	46.03275	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73172	dbgi_277	short_numeric_suffix	dbgi_000277				20250715101810	7.113307	46.032757	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73174	dbgi_279	short_numeric_suffix	dbgi_000279				20250715102327	7.1133075	46.03277	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73175	dbgi_280	short_numeric_suffix	dbgi_000280				20250715102612	7.113289	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73184	dbgi_289	short_numeric_suffix	dbgi_000289				20250715104921	7.1133103	46.032772	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73188	dbgi_293	short_numeric_suffix	dbgi_000293				20250715110253	7.1133056	46.032787	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73213	dbgi_318	short_numeric_suffix	dbgi_000318				20250715094307	7.1132407	46.032734	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73214	dbgi_319	short_numeric_suffix	dbgi_000319				20250715094618	7.1132092	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73221	dbgi_326	short_numeric_suffix	dbgi_000326				20250715101416	7.1131816	46.032715	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73228	dbgi_333	short_numeric_suffix	dbgi_000333				20250715105102	7.1134205	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73232	dbgi_337	short_numeric_suffix	dbgi_000337				20250715105855	7.1133966	46.032772	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73233	dbgi_338	short_numeric_suffix	dbgi_000338				20250715110057	7.1133494	46.032776	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73251	dbgi_006779	canonical	dbgi_006779				20250715130601	7.1132092	46.032776	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73258	dbgi_006817	canonical	dbgi_006817				20250715132512	7.113179	46.032795	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73264	dbgi_006752	canonical	dbgi_006752				20250715134135	7.1130753	46.032867	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73265	dbgi_006791	canonical	dbgi_006791				20250715134517	7.1130853	46.032867	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73267	dbgi_006778	canonical	dbgi_006778				20250715135255	7.113135	46.032913	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73272	dbgi_356	short_numeric_suffix	dbgi_000356				20250715090257	7.113402	46.032673	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73277	dbgi_361	short_numeric_suffix	dbgi_000361				20250715091648	7.113373	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73278	dbgi_362	short_numeric_suffix	dbgi_000362				20250715091919	7.1133943	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73280	dbgi_364	short_numeric_suffix	dbgi_000364				20250715092516	7.113348	46.032734	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73281	dbgi_365	short_numeric_suffix	dbgi_000365				20250715092745	7.113337	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73284	dbgi_368	short_numeric_suffix	dbgi_000368				20250715093654	7.113338	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73285	dbgi_369	short_numeric_suffix	dbgi_000369				20250715094018	7.113326	46.032734	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73287	dbgi_371	short_numeric_suffix	dbgi_000371				20250715094350	7.1133275	46.032726	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73293	dbgi_377	short_numeric_suffix	dbgi_000377				20250715095827	7.113328	46.032745	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73296	dbgi_380	short_numeric_suffix	dbgi_000380				20250715101449	7.1133265	46.03275	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73297	dbgi_381	short_numeric_suffix	dbgi_000381				20250715101810	7.113307	46.032757	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73299	dbgi_383	short_numeric_suffix	dbgi_000383				20250715102327	7.1133075	46.03277	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73300	dbgi_384	short_numeric_suffix	dbgi_000384				20250715102612	7.113289	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73309	dbgi_393	short_numeric_suffix	dbgi_000393				20250715104921	7.1133103	46.032772	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73313	dbgi_397	short_numeric_suffix	dbgi_000397				20250715110253	7.1133056	46.032787	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73338	dbgi_422	short_numeric_suffix	dbgi_000422				20250715094307	7.1132407	46.032734	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73339	dbgi_423	short_numeric_suffix	dbgi_000423				20250715094618	7.1132092	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73346	dbgi_430	short_numeric_suffix	dbgi_000430				20250715101416	7.1131816	46.032715	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73353	dbgi_437	short_numeric_suffix	dbgi_000437				20250715105102	7.1134205	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73357	dbgi_441	short_numeric_suffix	dbgi_000441				20250715105855	7.1133966	46.032772	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73358	dbgi_442	short_numeric_suffix	dbgi_000442				20250715110057	7.1133494	46.032776	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73376	dbgi_460	short_numeric_suffix	dbgi_000460				20250715130601	7.1132092	46.032776	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73383	dbgi_467	short_numeric_suffix	dbgi_000467				20250715132512	7.113179	46.032795	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73389	dbgi_473	short_numeric_suffix	dbgi_000473				20250715134135	7.1130753	46.032867	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73390	dbgi_474	short_numeric_suffix	dbgi_000474				20250715134517	7.1130853	46.032867	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73392	dbgi_476	short_numeric_suffix	dbgi_000476				20250715135255	7.113135	46.032913	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_taxon_name
-jbc	73400	dbgi_007115	canonical	dbgi_007115				20250715131148	7.113128	46.032833	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73403	dbgi_007146	canonical	dbgi_007146				20250715131802	7.113151	46.03282	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73419	dbgi_006732	canonical	dbgi_006732				20250715140022	7.113083	46.032887	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73420	dbgi_006722	canonical	dbgi_006722				20250715140320	7.1130133	46.032936	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73423	dbgi_009045	canonical	dbgi_009045				20250718134845	7.113028	46.032913	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73449	dbgi_001581	canonical	dbgi_001581				20250729105124	7.1132693	46.03281	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73452	dbgi_001525	canonical	dbgi_001525				20250729105941	7.1131787	46.03286	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73453	dbgi_001388	canonical	dbgi_001388				20250729110225	7.113206	46.032856	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73455	dbgi_001428	canonical	dbgi_001428				20250729110653	7.113217	46.032864	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73458	dbgi_001540	canonical	dbgi_001540				20250729111221	7.113229	46.03286	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73464	dbgi_001531	canonical	dbgi_001531				20250729112924	7.113327	46.03286	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73467	dbgi_001371	canonical	dbgi_001371				20250729113801	7.113309	46.032825	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73469	dbgi_001516	canonical	dbgi_001516				20250729114315	7.1132946	46.032833	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73473	dbgi_001387	canonical	dbgi_001387				20250729104627	7.1130133	46.032875	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73480	dbgi_001382	canonical	dbgi_001382				20250729110722	7.1130185	46.032894	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73483	dbgi_001418	canonical	dbgi_001418				20250729111547	7.113057	46.032944	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73487	dbgi_001550	canonical	dbgi_001550				20250729113010	7.1130443	46.03295	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73496	dbgi_009379	canonical	dbgi_009379				20250729130108	7.1129813	46.032993	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73543	dbgi_001397	canonical	dbgi_001397				20250729131610	7.1131706	46.032867	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73545	dbgi_001392	canonical	dbgi_001392				20250729132433	7.113004	46.03296	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73547	dbgi_001391	canonical	dbgi_001391				20250729133021	7.1131415	46.03295	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73550	dbgi_001396	canonical	dbgi_001396				20250729133542	7.1131682	46.032925	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73551	dbgi_001580	canonical	dbgi_001580				20250729134130	7.1132107	46.03292	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73555	dbgi_009326	canonical	dbgi_009326				20250729135429	7.1131654	46.032974	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73557	dbgi_009305	canonical	dbgi_009305				20250729135842	7.11316	46.03299	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73561	dbgi_009182	canonical	dbgi_009182				20250729140847	7.1129646	46.032978	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73565	dbgi_009244	canonical	dbgi_009244				20250729142041	7.112945	46.032997	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73569	dbgi_009270	canonical	dbgi_009270				20250729142958	7.1129384	46.03299	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73582	dbgi_009277	canonical	dbgi_009277				20250729153614	7.1130123	46.03309	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73603	dbgi_009143	canonical	dbgi_009143				20250729163051	7.112786	46.033	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73620	dbgi_009388	canonical	dbgi_009388				20250729171644	7.1129527	46.03305	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73658	dbgi_009170	canonical	dbgi_009170				20250729164733	7.112779	46.03299	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73680	dbgi_009469	canonical	dbgi_009469				20250805103913	7.1128044	46.03272	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73681	dbgi_009470	canonical	dbgi_009470				20250805104100	7.1128016	46.032722	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73684	dbgi_009477	canonical	dbgi_009477				20250805104511	7.112779	46.032726	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73692	dbgi_009429	canonical	dbgi_009429				20250805110908	7.112713	46.03271	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73699	dbgi_009455	canonical	dbgi_009455				20250805112426	7.112775	46.03286	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73700	dbgi_009435	canonical	dbgi_009435				20250805112717	7.112793	46.032852	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73704	dbgi_009468	canonical	dbgi_009468				20250805113930	7.1127973	46.03287	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73706	dbgi_009165	canonical	dbgi_009165				20250805114518	7.112783	46.03287	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73707	dbgi_009131	canonical	dbgi_009131				20250805114718	7.112793	46.032875	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73711	dbgi_009387	canonical	dbgi_009387				20250805120006	7.112898	46.03291	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73716	dbgi_009485	canonical	dbgi_009485				20250805121014	7.112886	46.032925	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73722	dbgi_009116	canonical	dbgi_009116				20250805122606	7.112764	46.032883	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73730	dbgi_009490	canonical	dbgi_009490				20250805103938	7.112683	46.032677	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73735	dbgi_009464	canonical	dbgi_009464				20250805105652	7.1127224	46.032646	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73741	dbgi_009479	canonical	dbgi_009479				20250805111911	7.1126084	46.03306	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73742	dbgi_009476	canonical	dbgi_009476				20250805112125	7.112633	46.033062	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73744	dbgi_009446	canonical	dbgi_009446				20250805112908	7.112551	46.032734	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73750	dbgi_009562	canonical	dbgi_009562				20250805115040	7.112476	46.032784	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73761	dbgi_009390	canonical	dbgi_009390				20250805123512	7.112611	46.032852	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73762	dbgi_009378	canonical	dbgi_009378				20250805130948	7.1130652	46.032722	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73763	dbgi_009149	canonical	dbgi_009149				20250805131215	7.113082	46.032715	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73766	dbgi_009155	canonical	dbgi_009155				20250805132123	7.1131644	46.032673	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73767	dbgi_009212	canonical	dbgi_009212				20250805132328	7.113175	46.032684	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73768	dbgi_009248	canonical	dbgi_009248				20250805132508	7.113175	46.032684	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73779	dbgi_009164	canonical	dbgi_009164				20250805140220	7.112722	46.032925	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73784	dbgi_009206	canonical	dbgi_009206				20250805141010	7.112704	46.032913	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73793	dbgi_009406	canonical	dbgi_009406				20250805143522	7.1127515	46.032906	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73794	dbgi_009392	canonical	dbgi_009392				20250805143801	7.112745	46.032906	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73796	dbgi_009157	canonical	dbgi_009157				20250805144319	7.1127753	46.0329	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73799	dbgi_009125	canonical	dbgi_009125				20250805144854	7.112766	46.032898	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73802	dbgi_009377	canonical	dbgi_009377				20250805130839	7.1131077	46.03269	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73803	dbgi_009366	canonical	dbgi_009366				20250805131417	7.113186	46.03268	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73804	dbgi_009238	canonical	dbgi_009238				20250805131709	7.113257	46.03268	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73805	dbgi_009243	canonical	dbgi_009243				20250805132013	7.113236	46.03267	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73807	dbgi_009382	canonical	dbgi_009382				20250805133401	7.113132	46.03311	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73815	dbgi_009195	canonical	dbgi_009195				20250805140059	7.1127276	46.0329	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73818	dbgi_009163	canonical	dbgi_009163				20250805140740	7.112739	46.032894	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73820	dbgi_009106	canonical	dbgi_009106				20250805141102	7.112749	46.03289	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73829	dbgi_009134	canonical	dbgi_009134				20250805143510	7.1127257	46.03291	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73834	dbgi_009117	canonical	dbgi_009117				20250805144732	7.1127143	46.0329	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	73835	dbgi_009181	canonical	dbgi_009181				20250805145721	7.112181	46.03275	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74274	dbgi_009362	canonical	dbgi_009362				20250819095715	7.1123266	46.0326	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74279	dbgi_009346	canonical	dbgi_009346				20250819100854	7.1124744	46.032623	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74282	dbgi_009347	canonical	dbgi_009347				20250819101500	7.1127734	46.032524	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74284	dbgi_009119	canonical	dbgi_009119				20250819101922	7.1128454	46.032528	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74287	dbgi_009109	canonical	dbgi_009109				20250819102343	7.113252	46.03254	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74295	dbgi_009555	canonical	dbgi_009555				20250819105135	7.113042	46.032654	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74298	dbgi_009492	canonical	dbgi_009492				20250819110535	7.1131215	46.032665	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74306	dbgi_009813	canonical	dbgi_009813				20250819112343	7.1131206	46.032845	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74308	dbgi_009561	canonical	dbgi_009561				20250819112724	7.113108	46.03281	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74311	dbgi_009493	canonical	dbgi_009493				20250819113524	7.1130204	46.032925	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74312	dbgi_009566	canonical	dbgi_009566				20250819113847	7.1129637	46.032825	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74313	dbgi_009423	canonical	dbgi_009423				20250819114401	7.1129427	46.032963	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74316	dbgi_009573	canonical	dbgi_009573				20250819115501	7.112457	46.032936	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74318	dbgi_009418	canonical	dbgi_009418				20250819120308	7.1126127	46.032818	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74319	dbgi_009570	canonical	dbgi_009570				20250819120653	7.112734	46.032635	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74324	dbgi_009283	canonical	dbgi_009283				20250819122514	7.1126833	46.032673	looks_swapped_ch_lat_lon	missing_taxon_name
-jbc	74325	dbgi_009307	canonical	dbgi_009307				20250819122647	7.1127086	46.032608	looks_swapped_ch_lat_lon	missing_taxon_name
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	unified_taxon_name	unified_taxon_source	unified_taxon_status	taxon_candidate_fields_present	taxon_unified_conflict	date	latitude	longitude	coordinate_status	issues
+jbc	70625	dbgi_007013	canonical	dbgi_007013				Potentilla eriocatpa	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250526185641	7.1125426	46.0327	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70629	dbgi_008694	canonical	dbgi_008694				Descurainia tanacetifolia	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250526181243	7.112449	46.032627	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70631	dbgi_008807	canonical	dbgi_008807				Veratrum album	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250526181954	7.1124654	46.03265	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70637	dbgi_008820	canonical	dbgi_008820				sempervivum kindingeri	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250526184148	7.1125126	46.03267	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70659	dbgi_006954	canonical	dbgi_006954				Alchemilla gorcensis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527084837	7.11268	46.032757	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70661	dbgi_007017	canonical	dbgi_007017				Erodium cheilanthis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527085713	7.1126385	46.03276	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70666	dbgi_006942	canonical	dbgi_006942				Cardamine rivularis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527091227	7.1126194	46.03273	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70673	dbgi_007168	canonical	dbgi_007168				Melandrium zawadskii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527094920	7.1125455	46.032715	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70681	dbgi_007035	canonical	dbgi_007035				Alyssoides urticulatum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527081134	7.112685	46.03271	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70686	dbgi_007014	canonical	dbgi_007014				Picea abies cv. Inversa	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527083318	7.112692	46.032757	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70690	dbgi_006896	canonical	dbgi_006896				Moltkia doerfleri	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527085004	7.1125946	46.03273	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70697	dbgi_006929	canonical	dbgi_006929				Dianthus lumnitzeri	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527091303	7.1126285	46.03273	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70703	dbgi_007006	canonical	dbgi_007006				"Helenium hybride ""maerheim"""	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527093230	7.1126413	46.03274	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70706	dbgi_007110	canonical	dbgi_007110				Centaurea dealbata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527094347	7.1126423	46.032753	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70709	dbgi_008697	canonical	dbgi_008697				Sempervivum montanum x carpaticum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527105140	7.1126227	46.032787	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70713	dbgi_008671	canonical	dbgi_008671				Sempervivum florealpe	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527110359	7.11262	46.03279	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70716	dbgi_008680	canonical	dbgi_008680				Sempervivum montanum x stiriacum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527111841	7.1126094	46.03279	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70720	dbgi_008666	canonical	dbgi_008666				Sempervivum odenotrichum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527112801	7.112593	46.032787	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70721	dbgi_008690	canonical	dbgi_008690				Sempervivum italicum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527113047	7.1126013	46.032784	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70724	dbgi_006976	canonical	dbgi_006976				Sempervirum juvanii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527104027	7.1126194	46.032776	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70725	dbgi_006977	canonical	dbgi_006977				Jaribarba lutea	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527104350	7.1126156	46.032776	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70737	dbgi_008593	canonical	dbgi_008593				Sempervivum tectorum violascens	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527110434	7.112594	46.032787	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70743	dbgi_008590	canonical	dbgi_008590				Sempervivum montanum burnatii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527112127	7.1125965	46.032776	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70744	dbgi_008566	canonical	dbgi_008566				Sempervivum tectorum glaucum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527112426	7.1125956	46.03278	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70745	dbgi_008659	canonical	dbgi_008659				Sempervivum allionii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527112633	7.1125875	46.03278	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70746	dbgi_008576	canonical	dbgi_008576				Sempervivum tectorum arvernense	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527113017	7.1125875	46.032776	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70747	dbgi_008578	canonical	dbgi_008578				Sempervivum vicentei	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527113239	7.1125827	46.032784	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70803	dbgi_008696	canonical	dbgi_008696				Salix myrtilloides	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527134007	7.1123676	46.032646	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70806	dbgi_008714	canonical	dbgi_008714				Carex punctata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527134820	7.1123796	46.03267	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70811	dbgi_008726	canonical	dbgi_008726				Satureja vulgaris	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527140923	7.11243	46.032658	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70812	dbgi_008745	canonical	dbgi_008745				Buphthalmum salicifolium	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250527141107	7.112413	46.032665	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70931	dbgi_006760	canonical	dbgi_006760				Trifolium rubens	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250604173046	7.1125774	46.032837	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70936	dbgi_006613	canonical	dbgi_006613				Salix arminali x eleagos	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250604171928	7.112568	46.032803	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70941	dbgi_004120	canonical	dbgi_004120				Erodium x lindavicum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250604173629	7.1125803	46.032806	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70944	dbgi_004180	canonical	dbgi_004180				Pulsatilla ambigua	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605084221	7.112555	46.03285	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70962	dbgi_006621	canonical	dbgi_006621				Plantago maritima	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605095115	7.112528	46.03288	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70973	dbgi_006949	canonical	dbgi_006949				Sedum apathulifolium	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605085313	7.11259	46.03281	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70974	dbgi_004175	canonical	dbgi_004175				carduncellus rhaponticoides	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605085621	7.112599	46.032803	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70985	dbgi_004289	canonical	dbgi_004289				Festuca melanopsis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605093404	7.1125073	46.03289	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70988	dbgi_004157	canonical	dbgi_004157				Koelaria cenisia	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605094336	7.1124887	46.03289	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	70998	dbgi_006627	canonical	dbgi_006627				Helictotrichon montanum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605101337	7.1124578	46.032883	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71017	dbgi_006661	canonical	dbgi_006661				Salix myrtilloides	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605125354	7.1125517	46.032894	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71024	dbgi_007154	canonical	dbgi_007154				Anthyllis vulneraria subsp valesiaca	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605131357	7.112644	46.0329	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71034	dbgi_006774	canonical	dbgi_006774				Thymus serpyllum vallesiacum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605135103	7.1125536	46.03294	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71048	dbgi_006727	canonical	dbgi_006727				Rhododendron sichuan	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605150243	7.1124	46.032967	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71050	dbgi_006623	canonical	dbgi_006623				Aposeris foetida	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605125313	7.112464	46.032936	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71051	dbgi_006629	canonical	dbgi_006629				Taraxacum aureoculatum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605125502	7.112472	46.03293	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71057	dbgi_006625	canonical	dbgi_006625				Taraxacum officinale	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605130737	7.1125116	46.0329	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71059	dbgi_006646	canonical	dbgi_006646				Taraxacum perfissum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605131051	7.1125107	46.03291	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71063	dbgi_004150	canonical	dbgi_004150				Satureja alpina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605135343	7.1125126	46.03292	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71073	dbgi_006614	canonical	dbgi_006614				Rhododendron sichuan	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605142641	7.112361	46.032967	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71076	dbgi_006749	canonical	dbgi_006749				Festuca altissima	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605144005	7.112368	46.03297	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71077	dbgi_006786	canonical	dbgi_006786				Cincaea alpina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605144306	7.112385	46.03296	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71086	dbgi_006959	canonical	dbgi_006959				Abies rubrum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250605150525	7.1124005	46.032967	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71087	dbgi_007002	canonical	dbgi_007002				Saxifraga mutata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611082055	7.112593	46.03295	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71093	dbgi_006808	canonical	dbgi_006808				Androsace villosa arachnoidea	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611083640	7.112607	46.032932	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71097	dbgi_006880	canonical	dbgi_006880				Hormatophylla halimifolia	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611085520	7.1126266	46.03294	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71106	dbgi_006700	canonical	dbgi_006700				Alysum spinosum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611082210	7.1124167	46.032967	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71115	dbgi_006914	canonical	dbgi_006914				Tulipa saxatilis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611085712	7.1125054	46.032963	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71128	dbgi_006892	canonical	dbgi_006892				Malus domestica	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611102624	7.1124477	46.032963	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71129	dbgi_006869	canonical	dbgi_006869				Dianthus superbus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611102857	7.112446	46.032967	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71132	dbgi_006809	canonical	dbgi_006809				Stachys alpina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611103524	7.1124225	46.03297	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71133	dbgi_006812	canonical	dbgi_006812				Festuca gigantea	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611104018	7.112419	46.032974	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71135	dbgi_006832	canonical	dbgi_006832				Ulmus glabra	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611104825	7.1124015	46.032974	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71137	dbgi_006784	canonical	dbgi_006784				Pulsatilla helvetica	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611105434	7.1123843	46.032978	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71148	dbgi_004164	canonical	dbgi_004164				Epilobium tetragonium	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611112522	7.1124997	46.032974	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71149	dbgi_006594	canonical	dbgi_006594				Plobularia nudicaulis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611112714	7.112503	46.032986	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71152	dbgi_004124	canonical	dbgi_004124				hippophae rhamnoides	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611113407	7.1125293	46.032974	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71158	dbgi_004153	canonical	dbgi_004153				Ligustrum ferulaceum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611114527	7.112554	46.03297	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71167	dbgi_006919	canonical	dbgi_006919				Juniperus communis alpina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611102335	7.1126037	46.032944	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71168	dbgi_006906	canonical	dbgi_006906				Saxifraga cf. bronchialis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611102537	7.1126337	46.03293	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71177	dbgi_006649	canonical	dbgi_006649				Cyananthus microphyllus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611105110	7.1126294	46.03294	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71178	dbgi_006771	canonical	dbgi_006771				Arrhenatherum elatior subsp. sardoum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611105346	7.112642	46.03295	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71181	dbgi_006720	canonical	dbgi_006720				Festuca varia	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611111004	7.1126585	46.03294	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71195	dbgi_006915	canonical	dbgi_006915				Asplenium bilotii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611125734	7.11272	46.032967	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71209	dbgi_006822	canonical	dbgi_006822				Satureja grandiflora	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611133657	7.1128097	46.032925	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71216	dbgi_007007	canonical	dbgi_007007				Santolina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611124551	7.1126013	46.032978	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71226	dbgi_006730	canonical	dbgi_006730				Epilobium lanceolata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611131346	7.1126704	46.03297	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71229	dbgi_004182	canonical	dbgi_004182				Asplenium bilotii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611131912	7.112718	46.032967	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	71236	dbgi_006883	canonical	dbgi_006883				Euphorbia verracosa	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250611133629	7.1127386	46.032978	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72548	dbgi_008422	canonical	dbgi_008422				Polystichium aculeatum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625100221	7.1130457	46.032677	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72570	dbgi_008386	canonical	dbgi_008386				Veratrum album	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625113133	7.11348	46.03264	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72621	dbgi_48	short_numeric_suffix	dbgi_000048				Carex montana	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625093007	7.1130853	46.03262	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_primary_taxon_name_recovered_from_fallback
+jbc	72623	dbgi_008484	canonical	dbgi_008484				Luzula campestris	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625093423	7.1130934	46.032623	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72624	dbgi_008479	canonical	dbgi_008479				Serratula tinctoria	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625093736	7.1130924	46.03262	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72644	dbgi_008582	canonical	dbgi_008582				Inula spiraeifolia	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625104818	7.1132317	46.03257	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72649	dbgi_008515	canonical	dbgi_008515				Helianthemum pyrenaicum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625110240	7.113254	46.03257	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72651	dbgi_008491	canonical	dbgi_008491				Orthilia secunda	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625110952	7.1133523	46.03261	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72655	dbgi_008561	canonical	dbgi_008561				Heuchera chlorantha	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625112705	7.113324	46.0326	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72719	dbgi_104	short_numeric_suffix	dbgi_000104				Carex montana	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250625093007	7.1130853	46.03262	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_primary_taxon_name_recovered_from_fallback
+jbc	72775	dbgi_008608	canonical	dbgi_008608				Rhamnus alpinus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707143232	7.1133013	46.032642	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72780	dbgi_008469	canonical	dbgi_008469				Hieracium peleteranum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707144359	7.1132507	46.03261	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72833	dbgi_008568	canonical	dbgi_008568				Eringium bourgatii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707141234	7.1131525	46.032597	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72834	dbgi_008592	canonical	dbgi_008592				Eringium zabelii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707141652	7.11315	46.0326	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72839	dbgi_180	short_numeric_suffix	dbgi_000180	Helictotrichon sedenense			Helictotrichon sedenense	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250707142830	7.113177	46.0326	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72841	dbgi_181	short_numeric_suffix	dbgi_000181	Rhododendron schlippenbachii			Rhododendron schlippenbachii	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250707143217	7.113163	46.032616	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72845	dbgi_182	short_numeric_suffix	dbgi_000182	Hieracium laticeps			Hieracium laticeps	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250707144526	7.1131916	46.032597	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72846	dbgi_183	short_numeric_suffix	dbgi_000183	Dianthus monspessulanus			Dianthus monspessulanus	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250707144713	7.113198	46.032604	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72847	dbgi_184	short_numeric_suffix	dbgi_000184	Festuca carpatica			Festuca carpatica	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250707144917	7.11321	46.032604	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72850	dbgi_185	short_numeric_suffix	dbgi_000185	Chamaecytisus purpureus			Chamaecytisus purpureus	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250707145558	7.113145	46.032616	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72852	dbgi_186	short_numeric_suffix	dbgi_000186	Thymus praecox			Thymus praecox	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250707150751	7.113267	46.032665	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72854	dbgi_187	short_numeric_suffix	dbgi_000187				Endymion hispanicus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707151601	7.113362	46.032692	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_primary_taxon_name_recovered_from_fallback
+jbc	72855	dbgi_188	short_numeric_suffix	dbgi_000188				Iris acutiloba	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707151948	7.113392	46.03268	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_primary_taxon_name_recovered_from_fallback
+jbc	72859	dbgi_189	short_numeric_suffix	dbgi_000189				Triticum aevistum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707153337	7.11342	46.032722	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix;missing_primary_taxon_name_recovered_from_fallback
+jbc	72860	dbgi_008625	canonical	dbgi_008625				Horreur vulgare	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707153639	7.11342	46.032722	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72861	dbgi_008482	canonical	dbgi_008482				Solanum tuberosum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707153946	7.113408	46.03271	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72862	dbgi_008425	canonical	dbgi_008425				Secale cereale	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250707154132	7.1134267	46.0327	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72871	dbgi_009089	canonical	dbgi_009089				Aruncus aethusifolius	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714143228	7.1128764	46.03273	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72873	dbgi_009056	canonical	dbgi_009056				Heliosperma alpestre	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714143726	7.1129036	46.032722	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72879	dbgi_008545	canonical	dbgi_008545				Acaena glauca	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714145146	7.1129885	46.03274	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72894	dbgi_006985	canonical	dbgi_006985				Euphrasia christii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714153716	7.113079	46.03278	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72907	dbgi_006997	canonical	dbgi_006997				Ranunculus gormanii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714161600	7.1130996	46.0328	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72911	dbgi_006862	canonical	dbgi_006862				Allium tuberosum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714163108	7.1130533	46.032845	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72912	dbgi_006982	canonical	dbgi_006982				Gentiana straminea	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714163338	7.113044	46.03284	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72913	dbgi_006928	canonical	dbgi_006928				Acanthopanax leucorrhizus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714163610	7.1130505	46.032845	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72916	dbgi_008710	canonical	dbgi_008710				Potentilla parviflora	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714165929	7.11303	46.032818	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72919	dbgi_006713	canonical	dbgi_006713				Lithospermum purpurocaeruleum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714170710	7.1131697	46.032734	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72936	dbgi_009076	canonical	dbgi_009076				Lathyrus heterophyllus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714145356	7.1130133	46.03276	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72948	dbgi_190	short_numeric_suffix	dbgi_000190	Phlodouglasii Hook.			Phlodouglasii Hook.	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250714154842	7.1128683	46.03276	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72949	dbgi_191	short_numeric_suffix	dbgi_000191	Taxus cuspidata			Taxus cuspidata	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250714155220	7.112901	46.03278	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72950	dbgi_008400	canonical	dbgi_008400				Allysum spinosum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714155420	7.112928	46.032784	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72951	dbgi_192	short_numeric_suffix	dbgi_000192	Saxifraga lingulata			Saxifraga lingulata	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250714155801	7.112903	46.032787	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72956	dbgi_193	short_numeric_suffix	dbgi_000193	Androsace foliosa			Androsace foliosa	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250714162049	7.1130285	46.032795	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72961	dbgi_006873	canonical	dbgi_006873				Aster	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714163436	7.1130204	46.03282	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72962	dbgi_194	short_numeric_suffix	dbgi_000194	Gentiana macrophylla			Gentiana macrophylla	taxon_name	resolved_from_primary_taxon_field	taxon_name		20250714163621	7.1130476	46.032814	looks_swapped_ch_lat_lon	sample_id_short_numeric_suffix
+jbc	72973	dbgi_006604	canonical	dbgi_006604				Gladiolus illyricus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714172803	7.1128325	46.032776	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72977	dbgi_006709	canonical	dbgi_006709				Paeonia veitchii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714173531	7.112815	46.0328	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72978	dbgi_006650	canonical	dbgi_006650				Geranium rivulare	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714172426	7.112818	46.032764	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72981	dbgi_006955	canonical	dbgi_006955				Saxifraga pancta	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714172554	7.112877	46.03281	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72983	dbgi_006901	canonical	dbgi_006901				Scutellaria altissima	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250714173158	7.1128488	46.032814	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72988	dbgi_006686	canonical	dbgi_006686				Bergena ciliata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715090257	7.113402	46.032673	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72993	dbgi_006656	canonical	dbgi_006656				Sesleria uliginosa	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715091648	7.113373	46.032745	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72994	dbgi_006670	canonical	dbgi_006670				Genista anglica	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715091919	7.1133943	46.03276	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72996	dbgi_006681	canonical	dbgi_006681				Festuca scabriculmis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715092516	7.113348	46.032734	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	72997	dbgi_006683	canonical	dbgi_006683				Antennaria munda	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715092745	7.113337	46.032745	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73000	dbgi_006675	canonical	dbgi_006675				Calamintha nepetorides	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715093654	7.113338	46.03276	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73001	dbgi_006678	canonical	dbgi_006678				Pulsatilla hybride	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715094018	7.113326	46.032734	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73003	dbgi_006682	canonical	dbgi_006682				Hieracium pamphili	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715094350	7.1133275	46.032726	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73009	dbgi_006685	canonical	dbgi_006685				Trinia glauca	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715095827	7.113328	46.032745	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73012	dbgi_006744	canonical	dbgi_006744				Carlina vulgaris	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715101449	7.1133265	46.03275	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73013	dbgi_006716	canonical	dbgi_006716				Helianthemum alpestre	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715101810	7.113307	46.032757	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73015	dbgi_006758	canonical	dbgi_006758				Hieracium tardans	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715102327	7.1133075	46.03277	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73016	dbgi_008668	canonical	dbgi_008668				Stachys reinertii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715102612	7.113289	46.03276	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73025	dbgi_006736	canonical	dbgi_006736				Koeleria valleriana	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715104921	7.1133103	46.032772	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73029	dbgi_006819	canonical	dbgi_006819				Peucedanum cervaria	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715110253	7.1133056	46.032787	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73109	dbgi_006596	canonical	dbgi_006596				Solidago lapponica	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715094307	7.1132407	46.032734	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73110	dbgi_006740	canonical	dbgi_006740				Ononis spinosa	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715094618	7.1132092	46.03276	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73117	dbgi_008550	canonical	dbgi_008550				Astragalus leontinus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715101416	7.1131816	46.032715	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73124	dbgi_007078	canonical	dbgi_007078				Securigera varia	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715105102	7.1134205	46.03276	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73128	dbgi_007042	canonical	dbgi_007042				Lonicera pileata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715105855	7.1133966	46.032772	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73129	dbgi_007045	canonical	dbgi_007045				Epidemium grandiflorum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715110057	7.1133494	46.032776	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73251	dbgi_006779	canonical	dbgi_006779				Rubus canescens	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715130601	7.1132092	46.032776	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73258	dbgi_006817	canonical	dbgi_006817				Thymus polytrichus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715132512	7.113179	46.032795	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73264	dbgi_006752	canonical	dbgi_006752				Santolina sp.	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715134135	7.1130753	46.032867	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73265	dbgi_006791	canonical	dbgi_006791				Chamaecytisus supinus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715134517	7.1130853	46.032867	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73267	dbgi_006778	canonical	dbgi_006778				Vicia cracca	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715135255	7.113135	46.032913	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73400	dbgi_007115	canonical	dbgi_007115				Verbascum lychnitis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715131148	7.113128	46.032833	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73403	dbgi_007146	canonical	dbgi_007146				Anthemis montana	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715131802	7.113151	46.03282	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73419	dbgi_006732	canonical	dbgi_006732				Angelica archangelica	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715140022	7.113083	46.032887	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73420	dbgi_006722	canonical	dbgi_006722				Pulmonaria australis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250715140320	7.1130133	46.032936	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73423	dbgi_009045	canonical	dbgi_009045				Salix appendiculata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250718134845	7.113028	46.032913	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73449	dbgi_001581	canonical	dbgi_001581				Carex punctata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729105124	7.1132693	46.03281	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73452	dbgi_001525	canonical	dbgi_001525				Anthriscus nitida	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729105941	7.1131787	46.03286	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73453	dbgi_001388	canonical	dbgi_001388				Sorbus xerubescens	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729110225	7.113206	46.032856	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73455	dbgi_001428	canonical	dbgi_001428				Pulmonaria molis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729110653	7.113217	46.032864	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73458	dbgi_001540	canonical	dbgi_001540				Rubus saxatalis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729111221	7.113229	46.03286	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73464	dbgi_001531	canonical	dbgi_001531				Solidago vigaurea	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729112924	7.113327	46.03286	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73467	dbgi_001371	canonical	dbgi_001371				Eriophorum lanatum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729113801	7.113309	46.032825	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73469	dbgi_001516	canonical	dbgi_001516				Brachypodium sylvaticum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729114315	7.1132946	46.032833	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73473	dbgi_001387	canonical	dbgi_001387				Santolina hybrida	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729104627	7.1130133	46.032875	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73480	dbgi_001382	canonical	dbgi_001382				Iris variegata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729110722	7.1130185	46.032894	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73483	dbgi_001418	canonical	dbgi_001418				Angelica archangelia	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729111547	7.113057	46.032944	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73487	dbgi_001550	canonical	dbgi_001550				Pulmonaria australis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729113010	7.1130443	46.03295	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73496	dbgi_009379	canonical	dbgi_009379				Platycodon grandiflorum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729130108	7.1129813	46.032993	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73543	dbgi_001397	canonical	dbgi_001397				Vicia craca	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729131610	7.1131706	46.032867	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73545	dbgi_001392	canonical	dbgi_001392				Calamintha sylvatica	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729132433	7.113004	46.03296	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73547	dbgi_001391	canonical	dbgi_001391				Salix appendiculata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729133021	7.1131415	46.03295	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73550	dbgi_001396	canonical	dbgi_001396				Poa pratensis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729133542	7.1131682	46.032925	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73551	dbgi_001580	canonical	dbgi_001580				Polypodium interjectum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729134130	7.1132107	46.03292	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73555	dbgi_009326	canonical	dbgi_009326				Rosa moschata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729135429	7.1131654	46.032974	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73557	dbgi_009305	canonical	dbgi_009305				Hippophae rhamnoides	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729135842	7.11316	46.03299	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73561	dbgi_009182	canonical	dbgi_009182				Minuartia striata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729140847	7.1129646	46.032978	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73565	dbgi_009244	canonical	dbgi_009244				Sempervivum rubicundum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729142041	7.112945	46.032997	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73569	dbgi_009270	canonical	dbgi_009270				Thymus drucei	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729142958	7.1129384	46.03299	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73582	dbgi_009277	canonical	dbgi_009277				Dryopteris carthusiana	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729153614	7.1130123	46.03309	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73603	dbgi_009143	canonical	dbgi_009143				Erodium amanum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729163051	7.112786	46.033	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73620	dbgi_009388	canonical	dbgi_009388				Adenostyles glabra	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729171644	7.1129527	46.03305	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73658	dbgi_009170	canonical	dbgi_009170				Globularia fuxeensis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250729164733	7.112779	46.03299	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73680	dbgi_009469	canonical	dbgi_009469				Pinguicala vulgaris	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805103913	7.1128044	46.03272	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73681	dbgi_009470	canonical	dbgi_009470				Saxifraga gaudinii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805104100	7.1128016	46.032722	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73684	dbgi_009477	canonical	dbgi_009477				Agapanthus lilliput	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805104511	7.112779	46.032726	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73692	dbgi_009429	canonical	dbgi_009429				Vaccinium oxycocos	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805110908	7.112713	46.03271	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73699	dbgi_009455	canonical	dbgi_009455				Schrophuleria canina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805112426	7.112775	46.03286	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73700	dbgi_009435	canonical	dbgi_009435				Silene uniflora	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805112717	7.112793	46.032852	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73704	dbgi_009468	canonical	dbgi_009468				Verbascum blattaria	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805113930	7.1127973	46.03287	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73706	dbgi_009165	canonical	dbgi_009165				Cynodon dactylon	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805114518	7.112783	46.03287	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73707	dbgi_009131	canonical	dbgi_009131				Scutellaria peregrina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805114718	7.112793	46.032875	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73711	dbgi_009387	canonical	dbgi_009387				Acorus calamus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805120006	7.112898	46.03291	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73716	dbgi_009485	canonical	dbgi_009485				Cottoneaster adpressa	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805121014	7.112886	46.032925	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73722	dbgi_009116	canonical	dbgi_009116				Satureja repeta	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805122606	7.112764	46.032883	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73730	dbgi_009490	canonical	dbgi_009490				Stachys byzantina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805103938	7.112683	46.032677	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73735	dbgi_009464	canonical	dbgi_009464				Erica tetralix	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805105652	7.1127224	46.032646	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73741	dbgi_009479	canonical	dbgi_009479				Acacia dealbata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805111911	7.1126084	46.03306	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73742	dbgi_009476	canonical	dbgi_009476				Rosmarinus officinalis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805112125	7.112633	46.033062	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73744	dbgi_009446	canonical	dbgi_009446				Phlox douglasii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805112908	7.112551	46.032734	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73750	dbgi_009562	canonical	dbgi_009562				Helleborus orientalis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805115040	7.112476	46.032784	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73761	dbgi_009390	canonical	dbgi_009390				Gentiana campestris	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805123512	7.112611	46.032852	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73762	dbgi_009378	canonical	dbgi_009378				Salix cinerea	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805130948	7.1130652	46.032722	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73763	dbgi_009149	canonical	dbgi_009149				Salix tiandra	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805131215	7.113082	46.032715	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73766	dbgi_009155	canonical	dbgi_009155				Gypsophila muralis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805132123	7.1131644	46.032673	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73767	dbgi_009212	canonical	dbgi_009212				Salix phylicifolia	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805132328	7.113175	46.032684	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73768	dbgi_009248	canonical	dbgi_009248				Salix elegans	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805132508	7.113175	46.032684	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73779	dbgi_009164	canonical	dbgi_009164				Edelweiss saastal	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805140220	7.112722	46.032925	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73784	dbgi_009206	canonical	dbgi_009206				Saxifraga jarreri	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805141010	7.112704	46.032913	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73793	dbgi_009406	canonical	dbgi_009406				Leucanthemum graminifolium	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805143522	7.1127515	46.032906	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73794	dbgi_009392	canonical	dbgi_009392				Convolvulus cantabrians	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805143801	7.112745	46.032906	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73796	dbgi_009157	canonical	dbgi_009157				Centaurea pechtinata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805144319	7.1127753	46.0329	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73799	dbgi_009125	canonical	dbgi_009125				Bromus erectus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805144854	7.112766	46.032898	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73802	dbgi_009377	canonical	dbgi_009377				Epipactis palustris	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805130839	7.1131077	46.03269	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73803	dbgi_009366	canonical	dbgi_009366				Agrostis canina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805131417	7.113186	46.03268	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73804	dbgi_009238	canonical	dbgi_009238				Salix repens	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805131709	7.113257	46.03268	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73805	dbgi_009243	canonical	dbgi_009243				Chamaecytisus lindemenii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805132013	7.113236	46.03267	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73807	dbgi_009382	canonical	dbgi_009382				Oxalis acetosella	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805133401	7.113132	46.03311	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73815	dbgi_009195	canonical	dbgi_009195				Carex mucronata	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805140059	7.1127276	46.0329	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73818	dbgi_009163	canonical	dbgi_009163				Sempervivum reginae-amaliae	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805140740	7.112739	46.032894	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73820	dbgi_009106	canonical	dbgi_009106				Dianthus noeanus	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805141102	7.112749	46.03289	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73829	dbgi_009134	canonical	dbgi_009134				Genista pulchella	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805143510	7.1127257	46.03291	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73834	dbgi_009117	canonical	dbgi_009117				Trinta glauca	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805144732	7.1127143	46.0329	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	73835	dbgi_009181	canonical	dbgi_009181				Bromus benekii	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250805145721	7.112181	46.03275	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74274	dbgi_009362	canonical	dbgi_009362				Verbascum nigrum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819095715	7.1123266	46.0326	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74279	dbgi_009346	canonical	dbgi_009346				Artemisia verlotiorum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819100854	7.1124744	46.032623	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74282	dbgi_009347	canonical	dbgi_009347				Echinops fontqueri	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819101500	7.1127734	46.032524	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74284	dbgi_009119	canonical	dbgi_009119				Radiola artica	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819101922	7.1128454	46.032528	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74287	dbgi_009109	canonical	dbgi_009109				Actea alba	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819102343	7.113252	46.03254	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74295	dbgi_009555	canonical	dbgi_009555				Calamintha grandiflora	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819105135	7.113042	46.032654	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74298	dbgi_009492	canonical	dbgi_009492				Epipactis palustris	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819110535	7.1131215	46.032665	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74306	dbgi_009813	canonical	dbgi_009813				Verbascum lychnitis	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819112343	7.1131206	46.032845	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74308	dbgi_009561	canonical	dbgi_009561				Ononis natrix	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819112724	7.113108	46.03281	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74311	dbgi_009493	canonical	dbgi_009493				Angelica archangelica	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819113524	7.1130204	46.032925	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74312	dbgi_009566	canonical	dbgi_009566				Ligustrum lucidum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819113847	7.1129637	46.032825	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74313	dbgi_009423	canonical	dbgi_009423				Placytodon grandiflora	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819114401	7.1129427	46.032963	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74316	dbgi_009573	canonical	dbgi_009573				Adenostyle glabra	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819115501	7.112457	46.032936	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74318	dbgi_009418	canonical	dbgi_009418				Pilostemon afer	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819120308	7.1126127	46.032818	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74319	dbgi_009570	canonical	dbgi_009570				Vaccinium oxycoccos	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819120653	7.112734	46.032635	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74324	dbgi_009283	canonical	dbgi_009283				Stachys byzantina	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819122514	7.1126833	46.032673	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback
+jbc	74325	dbgi_009307	canonical	dbgi_009307				Trichophorum cespitosum	name_proposition	resolved_from_fallback_taxon_field	name_proposition		20250819122647	7.1127086	46.032608	looks_swapped_ch_lat_lon	missing_primary_taxon_name_recovered_from_fallback

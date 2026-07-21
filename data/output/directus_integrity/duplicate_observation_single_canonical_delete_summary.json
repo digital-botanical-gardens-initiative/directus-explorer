@@ -1,0 +1,26 @@
+{
+  "candidate_count": 968,
+  "safe_delete_count": 968,
+  "blocked_downstream_count": 0,
+  "candidate_projects": {
+    "champex_gradient": 74,
+    "chemical_ecology": 78,
+    "jbc": 74,
+    "jbp": 1,
+    "jbuf": 7,
+    "medicin_alps": 734
+  },
+  "safe_delete_projects": {
+    "champex_gradient": 74,
+    "chemical_ecology": 78,
+    "jbc": 74,
+    "jbp": 1,
+    "jbuf": 7,
+    "medicin_alps": 734
+  },
+  "blocked_downstream_projects": {},
+  "candidate_sample_id_classes": {
+    "short_numeric_suffix": 961,
+    "other_noncanonical": 7
+  }
+}

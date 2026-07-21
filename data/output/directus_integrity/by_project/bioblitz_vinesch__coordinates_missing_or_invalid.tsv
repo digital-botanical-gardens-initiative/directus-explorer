@@ -1,3 +1,3 @@
-project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issue
-bioblitz_vinesch	69775	vine_000485	canonical		Geranium			20240608121409			missing	coordinates_missing
-bioblitz_vinesch	69776	vine_000482	canonical		Papaver			20240608122002			missing	coordinates_missing
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	unified_taxon_name	unified_taxon_source	unified_taxon_status	taxon_candidate_fields_present	taxon_unified_conflict	date	latitude	longitude	coordinate_status	issue
+bioblitz_vinesch	69775	vine_000485	canonical		Geranium			Geranium	taxon_name	resolved_from_primary_taxon_field	taxon_name		20240608121409			missing	coordinates_missing
+bioblitz_vinesch	69776	vine_000482	canonical		Papaver			Papaver	taxon_name	resolved_from_primary_taxon_field	taxon_name		20240608122002			missing	coordinates_missing

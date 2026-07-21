@@ -1,13 +1,13 @@
-project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issues
-sbl_20004	68455	tp24_000007	canonical			Erythroxylum australe			7.1551256	46.793304	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68456	tp24_000016	canonical			Plutella xylostella			7.155673	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68457	tp24_000017	canonical			Biscutella laevigata			7.1556735	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68458	tp24_000019	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68459	tp24_000018	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68460	tp24_000020	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68461	tp24_000012	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68462	tp24_000015	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68463	tp24_000011	canonical			Biscutella laevigata			7.1556735	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68464	tp24_000013	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68465	tp24_000014	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
-sbl_20004	68466	tp24_000006	canonical			Plutella xylostella			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	unified_taxon_name	unified_taxon_source	unified_taxon_status	taxon_candidate_fields_present	taxon_unified_conflict	date	latitude	longitude	coordinate_status	issues
+sbl_20004	68455	tp24_000007	canonical			Erythroxylum australe		Erythroxylum australe	sample_name	resolved_from_primary_taxon_field	sample_name			7.1551256	46.793304	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68456	tp24_000016	canonical			Plutella xylostella		Plutella xylostella	sample_name	resolved_from_primary_taxon_field	sample_name			7.155673	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68457	tp24_000017	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556735	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68458	tp24_000019	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68459	tp24_000018	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68460	tp24_000020	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68461	tp24_000012	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68462	tp24_000015	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68463	tp24_000011	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556735	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68464	tp24_000013	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68465	tp24_000014	canonical			Biscutella laevigata		Biscutella laevigata	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68466	tp24_000006	canonical			Plutella xylostella		Plutella xylostella	sample_name	resolved_from_primary_taxon_field	sample_name			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date

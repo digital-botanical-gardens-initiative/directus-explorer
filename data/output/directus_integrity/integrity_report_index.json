@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-21T10:47:21.587403+00:00",
+  "generated_at": "2026-07-21T11:25:17.764637+00:00",
   "collection_counts": {
-    "Field_Data": 10488,
+    "Field_Data": 9520,
     "Dried_Samples_Data": 10468,
     "Extraction_Data": 7486,
     "Aliquoting_Data": 2811,
@@ -12,17 +12,25 @@
     "coordinates_outside_ch_range.tsv",
     "coordinates_swapped_ch.tsv",
     "duplicate_observation_fingerprints.tsv",
+    "duplicate_observation_single_canonical_blocked_downstream.tsv",
+    "duplicate_observation_single_canonical_delete_backup.tsv",
+    "duplicate_observation_single_canonical_delete_summary.json",
+    "duplicate_observation_single_canonical_safe_delete_manifest.tsv",
     "duplicate_sample_ids_across_projects.tsv",
     "duplicate_sample_ids_within_project.tsv",
     "field_data_issues.tsv",
     "field_data_raw_snapshot.json",
+    "field_data_unified_taxon.tsv",
     "integrity_report_index.json",
     "lineage_issues.tsv",
     "lineage_orphans.tsv",
     "lineage_status_by_sample.tsv",
     "lineage_summary_by_project.tsv",
+    "missing_taxon_full_metadata.tsv",
+    "missing_unified_taxon_full_metadata.tsv",
     "project_summary.json",
-    "project_summary.tsv"
+    "project_summary.tsv",
+    "project_summary_legacy.tsv"
   ],
   "per_project_report_dir": "data/output/directus_integrity/by_project"
 }

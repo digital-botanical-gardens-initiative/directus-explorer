@@ -1,0 +1,2 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	unified_taxon_name	unified_taxon_source	unified_taxon_status	taxon_candidate_fields_present	taxon_unified_conflict	date	latitude	longitude	coordinate_status	issue
+sandbox	69942	dbgi_007553	canonical	dbgi_007553	Abies georgei		Abies georgei	Abies georgei	taxon_name_final	resolved_from_primary_taxon_field	taxon_name_final;taxon_name;MatchedCanonical		20260314210934	14.420024	50.124043	out_of_ch_range	

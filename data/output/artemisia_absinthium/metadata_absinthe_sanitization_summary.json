@@ -1,0 +1,25 @@
+{
+  "raw_path": "data/working/artemisia_absinthium/metadata_absinthe.csv",
+  "original_copy_path": "data/output/artemisia_absinthium/original/metadata_absinthe.csv",
+  "sanitized_path": "data/output/artemisia_absinthium/metadata_absinthe_sanitized.csv",
+  "import_path": "data/output/artemisia_absinthium/metadata_absinthe_injection_import.csv",
+  "issues_path": "data/output/artemisia_absinthium/metadata_absinthe_sanitization_issues.tsv",
+  "row_count": 521,
+  "file_type_counts": {
+    "sample": 521
+  },
+  "sample_id_count": 521,
+  "duplicate_sample_id_count": 0,
+  "ionization_mode_counts": {
+    "positive": 521
+  },
+  "run_date_parse_status_counts": {
+    "valid": 520,
+    "corrected_seconds_rollover": 1
+  },
+  "observation_date_parse_status_counts": {
+    "valid": 517,
+    "missing": 4
+  },
+  "issue_counts": {}
+}

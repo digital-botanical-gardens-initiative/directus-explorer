@@ -685,6 +685,10 @@ class DirectusClient:
             collection="MS_Data",
             fields="parent_sample_container.container_id,injection_method.method_name",
         )
+        field_rows = self._get_items(
+            collection="Field_Data",
+            fields="sample_id,qfield_project,taxon_name,sample_name,taxon_name_unified",
+        )
         aliquot_rows = self._get_items(
             collection="Aliquoting_Data",
             fields="sample_container.container_id,parent_sample_container.container_id",
@@ -697,7 +701,8 @@ class DirectusClient:
             collection="Dried_Samples_Data",
             fields=(
                 "sample_container.container_id,field_data.sample_id,"
-                "field_data.qfield_project,field_data.taxon_name,field_data.sample_name"
+                "field_data.qfield_project,field_data.taxon_name_unified,"
+                "field_data.taxon_name,field_data.sample_name"
             ),
         )
 
@@ -714,6 +719,7 @@ class DirectusClient:
         dried_sample_metadata_by_container = self._build_sample_metadata_map(
             rows=dried_rows,
         )
+        field_metadata_by_sample_id = self._build_field_metadata_map(rows=field_rows)
         original_sample_container_ids = set(dried_sample_metadata_by_container)
 
         metadata_by_sample_id: dict[str, tuple[str, tuple[str, ...]]] = {}
@@ -738,10 +744,19 @@ class DirectusClient:
                 extraction_parent_by_child=extraction_parent_by_child,
                 original_sample_container_ids=original_sample_container_ids,
             )
-            if original_sample_container_id is None:
-                continue
-
-            sample_metadata = dried_sample_metadata_by_container.get(original_sample_container_id)
+            sample_metadata = (
+                dried_sample_metadata_by_container.get(original_sample_container_id)
+                if original_sample_container_id is not None
+                else None
+            )
+            if sample_metadata is None:
+                extraction_container_id = aliquot_parent_by_child.get(
+                    profiled_container_id,
+                    profiled_container_id,
+                )
+                fallback_sample_id = extraction_parent_by_child.get(extraction_container_id)
+                if fallback_sample_id is not None:
+                    sample_metadata = field_metadata_by_sample_id.get(fallback_sample_id)
             if sample_metadata is None:
                 continue
             sample_id, qfield_project, species_names = sample_metadata
@@ -1103,7 +1118,7 @@ class DirectusClient:
 
         field_rows = self._get_items(
             collection="Field_Data",
-            fields="qfield_project,taxon_name,sample_name",
+            fields="qfield_project,taxon_name_unified,taxon_name,sample_name",
         )
 
         species_by_project: dict[str, set[str]] = {}
@@ -1398,6 +1413,23 @@ class DirectusClient:
         return mapping
 
     @staticmethod
+    def _build_field_metadata_map(
+        *,
+        rows: list[dict[str, Any]],
+    ) -> dict[str, tuple[str, str, tuple[str, ...]]]:
+        """Build a sample-id metadata map directly from Field_Data rows."""
+
+        mapping: dict[str, tuple[str, str, tuple[str, ...]]] = {}
+        for row in rows:
+            sample_id = DirectusClient._read_nested_string(row, "sample_id")
+            qfield_project = DirectusClient._read_nested_string(row, "qfield_project")
+            if sample_id is None or qfield_project is None:
+                continue
+            species_names = DirectusClient._read_species_names(row, field_data_prefix=False)
+            mapping[sample_id] = (sample_id, qfield_project, species_names)
+        return mapping
+
+    @staticmethod
     def _read_species_names(
         row: dict[str, Any],
         *,
@@ -1408,7 +1440,7 @@ class DirectusClient:
         path_prefix = ("field_data",) if field_data_prefix else ()
         names: list[str] = []
         seen: set[str] = set()
-        for field_name in ("taxon_name", "sample_name"):
+        for field_name in ("taxon_name_unified", "taxon_name", "sample_name"):
             value = DirectusClient._read_nested_string(row, *path_prefix, field_name)
             if value is None:
                 continue

@@ -1,0 +1,104 @@
+{
+  "fields": [
+    {
+      "name": "filename",
+      "type": "string"
+    },
+    {
+      "name": "sample_number",
+      "type": "integer"
+    },
+    {
+      "name": "sample_type",
+      "type": "string"
+    },
+    {
+      "name": "ATTRIBUTE_species",
+      "type": "string"
+    },
+    {
+      "name": "run_date",
+      "type": "string"
+    },
+    {
+      "name": "sample_label",
+      "type": "string"
+    },
+    {
+      "name": "sample_id",
+      "type": "string"
+    },
+    {
+      "name": "collector_fullname",
+      "type": "string"
+    },
+    {
+      "name": "taxon_name",
+      "type": "string"
+    },
+    {
+      "name": "site_collecte",
+      "type": "string"
+    },
+    {
+      "name": "individuals",
+      "type": "string"
+    },
+    {
+      "name": "observation_subject",
+      "type": "string"
+    },
+    {
+      "name": "site_origine",
+      "type": "string"
+    },
+    {
+      "name": "longitude",
+      "type": "number"
+    },
+    {
+      "name": "latitude",
+      "type": "number"
+    },
+    {
+      "name": "annees_origine",
+      "type": "integer"
+    },
+    {
+      "name": "annee_collecte",
+      "type": "integer"
+    },
+    {
+      "name": "type_site",
+      "type": "string"
+    },
+    {
+      "name": "altitude_collecte",
+      "type": "integer"
+    },
+    {
+      "name": "altitude_origine",
+      "type": "string"
+    },
+    {
+      "name": "origine_cultive",
+      "type": "string"
+    },
+    {
+      "name": "date_plantation",
+      "type": "string"
+    },
+    {
+      "name": "date",
+      "type": "string"
+    },
+    {
+      "name": "jours_apres_plantation",
+      "type": "string"
+    },
+    {
+      "name": "site",
+      "type": "integer"
+    }
+  ]
+}

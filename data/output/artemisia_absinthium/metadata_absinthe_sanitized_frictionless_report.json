@@ -1,0 +1,67 @@
+{
+  "valid": true,
+  "stats": {
+    "tasks": 1,
+    "errors": 0,
+    "warnings": 0,
+    "seconds": 0.222
+  },
+  "warnings": [],
+  "errors": [],
+  "tasks": [
+    {
+      "name": "metadata_absinthe_sanitized",
+      "type": "table",
+      "valid": true,
+      "place": "data/output/artemisia_absinthium/metadata_absinthe_sanitized.csv",
+      "labels": [
+        "filename",
+        "sample_number",
+        "sample_type",
+        "attribute_species",
+        "run_date",
+        "sample_label",
+        "sample_id",
+        "collector_fullname",
+        "taxon_name",
+        "site_collecte",
+        "individuals",
+        "observation_subject",
+        "site_origine",
+        "longitude",
+        "latitude",
+        "annees_origine",
+        "annee_collecte",
+        "type_site",
+        "altitude_collecte",
+        "altitude_origine",
+        "origine_cultive",
+        "date_plantation",
+        "date",
+        "jours_apres_plantation",
+        "site",
+        "file_type",
+        "injection",
+        "container_id",
+        "ionization_mode",
+        "normalized_run_date",
+        "run_date_parse_status",
+        "normalized_observation_date",
+        "observation_date_parse_status",
+        "filename_date_token"
+      ],
+      "stats": {
+        "errors": 0,
+        "warnings": 0,
+        "seconds": 0.222,
+        "md5": "b622e3c372f38200824e260c9553ac6c",
+        "sha256": "dcadf33ea26941dfaf62fa8d72785f5ecd3ea8366732d9629c3addffd7f096ed",
+        "bytes": 180746,
+        "fields": 34,
+        "rows": 521
+      },
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

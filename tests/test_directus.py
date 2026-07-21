@@ -927,6 +927,7 @@ def test_list_profiled_samples_resolves_both_modes(monkeypatch: pytest.MonkeyPat
                 },
             ]
         },
+        "Field_Data": {"data": []},
         "Aliquoting_Data": {
             "data": [
                 {
@@ -969,6 +970,68 @@ def test_list_profiled_samples_resolves_both_modes(monkeypatch: pytest.MonkeyPat
     ]
 
 
+def test_list_profiled_samples_resolves_extraction_only_lineage(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Profiled samples can resolve through extraction parent when dried rows are absent."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+
+    def fake_post(*args: Any, **kwargs: Any) -> FakeResponse:
+        return FakeResponse(200, {"data": {"access_token": "token"}})
+
+    responses = {
+        "MS_Data": {
+            "data": [
+                {
+                    "parent_sample_container": {"container_id": "drog_000469_01"},
+                    "injection_method": {"method_name": "HSST3_ddMS2_pos"},
+                },
+            ]
+        },
+        "Field_Data": {
+            "data": [
+                {
+                    "sample_id": "drog_000469",
+                    "qfield_project": "droguier_jbn",
+                    "taxon_name_unified": "Vaccinium myrtillus",
+                }
+            ]
+        },
+        "Aliquoting_Data": {"data": []},
+        "Extraction_Data": {
+            "data": [
+                {
+                    "sample_container": {"container_id": "drog_000469_01"},
+                    "parent_sample_container": {"container_id": "drog_000469"},
+                }
+            ]
+        },
+        "Dried_Samples_Data": {"data": []},
+    }
+
+    def fake_get(url: str, *args: Any, **kwargs: Any) -> FakeResponse:
+        for collection, payload in responses.items():
+            if f"/items/{collection}" in url:
+                return FakeResponse(200, payload)
+        raise AssertionError(f"Unexpected URL: {url}")
+
+    monkeypatch.setattr(client._session, "post", fake_post)
+    monkeypatch.setattr(client._session, "get", fake_get)
+
+    profiled = client.list_profiled_samples(mode="positive")
+
+    assert [(sample.sample_id, sample.qfield_project, sample.mode) for sample in profiled] == [
+        ("drog_000469", "droguier_jbn", "positive")
+    ]
+    assert profiled[0].species == "Vaccinium myrtillus"
+
+
 def test_summarize_samples_by_project_aggregates_collected_and_profiled(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
@@ -996,6 +1059,19 @@ def test_summarize_samples_by_project_aggregates_collected_and_profiled(
                     "data": [
                         {"qfield_project": "jbuf", "count": {"id": "10"}},
                         {"qfield_project": "fibl", "count": {"id": "5"}},
+                    ]
+                },
+            )
+        if url.endswith("/items/Field_Data") and params == {
+            "limit": "-1",
+            "fields": "sample_id,qfield_project,taxon_name,sample_name,taxon_name_unified",
+        }:
+            return FakeResponse(
+                200,
+                {
+                    "data": [
+                        {"sample_id": "dbgi_001195", "qfield_project": "jbuf"},
+                        {"sample_id": "fibl_000001", "qfield_project": "fibl"},
                     ]
                 },
             )
@@ -1353,7 +1429,7 @@ def test_summarize_species_by_project_counts_distinct_species(
     def fake_get(url: str, params: Any = None, *args: Any, **kwargs: Any) -> FakeResponse:
         if url.endswith("/items/Field_Data") and params == {
             "limit": "-1",
-            "fields": "qfield_project,taxon_name,sample_name",
+            "fields": "qfield_project,taxon_name_unified,taxon_name,sample_name",
         }:
             return FakeResponse(
                 200,
@@ -1382,6 +1458,11 @@ def test_summarize_species_by_project_counts_distinct_species(
                     ]
                 },
             )
+        if url.endswith("/items/Field_Data") and params == {
+            "limit": "-1",
+            "fields": "sample_id,qfield_project,taxon_name,sample_name,taxon_name_unified",
+        }:
+            return FakeResponse(200, {"data": []})
         if "/items/MS_Data" in url:
             return FakeResponse(
                 200,

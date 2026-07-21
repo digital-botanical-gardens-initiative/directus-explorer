@@ -86,6 +86,14 @@ Summarize collected and profiled samples per qfield project:
 uv run directus-explorer samples summary --group-by project
 ```
 
+The default `text` output is an aligned terminal table with a profiled
+percentage and progress bar. Use TSV when you want the previous copy-friendly
+tab-separated output:
+
+```bash
+uv run directus-explorer samples summary --group-by project --format tsv
+```
+
 Count distinct species instead of samples per qfield project:
 
 ```bash

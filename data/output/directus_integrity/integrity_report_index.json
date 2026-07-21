@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T12:12:40.499959+00:00",
+  "generated_at": "2026-07-21T12:50:51.205693+00:00",
   "collection_counts": {
     "Field_Data": 9520,
     "Dried_Samples_Data": 10468,
@@ -11,6 +11,9 @@
     "coordinates_missing_or_invalid.tsv",
     "coordinates_outside_ch_range.tsv",
     "coordinates_swapped_ch.tsv",
+    "droguier_name_proposition_clear_backup.tsv",
+    "droguier_name_proposition_clear_manifest.tsv",
+    "droguier_name_proposition_clear_summary.json",
     "duplicate_observation_fingerprints.tsv",
     "duplicate_observation_single_canonical_blocked_downstream.tsv",
     "duplicate_observation_single_canonical_delete_backup.tsv",

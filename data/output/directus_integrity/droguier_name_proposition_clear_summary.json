@@ -1,0 +1,39 @@
+{
+  "project": "droguier_jbn",
+  "target_count": 185,
+  "old_name_proposition_counts": {
+    "Equisetum arvense": 10,
+    "Mentha x piperita": 8,
+    "Senna alexandrina": 20,
+    "Centaurium erythraea": 11,
+    "Krameria lappacea": 15,
+    "Juglans regia": 16,
+    "Verbascum phlomoides": 1,
+    "Chamaemelum nobile": 22,
+    "Arnica montana": 46,
+    "Vaccinium myrtillus": 15,
+    "Tilia cordata": 21
+  },
+  "taxon_name_counts": {
+    "Valeriana_officinalis_L": 10,
+    "Thymus_serpyllum_L": 8,
+    "Thymus_vulgaris_L": 10,
+    "Laurus_nobilis_L": 10,
+    "Gentiana_lutea_L": 12,
+    "Juniperus_communis_L": 14,
+    "Sambucus_nigra_L": 15,
+    "Filipendula_ulmaria_L_Maxim": 2,
+    "Angelica_archangelica_L": 1,
+    "Papaver_rhoeas_L": 7,
+    "Potentilla_erecta_L_Raeusch_": 10,
+    "Plantago_lanceolata_L": 5,
+    "Foeniculum_vulgare_MilL": 15,
+    "Achillea_millefolium_L": 12,
+    "Frangula_alnus_MilL": 8,
+    "Carum_carvi_L": 11,
+    "Menyanthes_trifoliata_L": 7,
+    "Matricaria_chamomilla_L": 8,
+    "Artemisia_absinthium_L": 12,
+    "Linum_usitatissimum_L": 8
+  }
+}

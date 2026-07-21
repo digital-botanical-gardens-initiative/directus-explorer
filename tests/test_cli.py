@@ -358,7 +358,11 @@ def test_sample_locations_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
             from directus_explorer.ms_metadata import MsMetadataTable
 
             return MsMetadataTable(
-                fieldnames=("original_sample_id", "ms_container_id", "ms_storage_level_1_container_id"),
+                fieldnames=(
+                    "original_sample_id",
+                    "ms_container_id",
+                    "ms_storage_level_1_container_id",
+                ),
                 rows=(
                     {
                         "original_sample_id": "dbgi_001195",
@@ -413,7 +417,12 @@ def test_sample_locations_tsv_output(monkeypatch: pytest.MonkeyPatch) -> None:
 
             return MsMetadataTable(
                 fieldnames=("original_sample_id", "original_sample_container_id"),
-                rows=({"original_sample_id": "dbgi_001195", "original_sample_container_id": "dbgi_001195"},),
+                rows=(
+                    {
+                        "original_sample_id": "dbgi_001195",
+                        "original_sample_container_id": "dbgi_001195",
+                    },
+                ),
             )
 
     monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
@@ -1097,7 +1106,7 @@ def test_profiled_samples_project_filter_is_forwarded(monkeypatch: pytest.Monkey
 
 
 def test_samples_summary_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Project summary text output should render a table-like listing."""
+    """Project summary text output should render a readable terminal table."""
 
     runner = CliRunner()
 
@@ -1130,6 +1139,49 @@ def test_samples_summary_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
 
     result = runner.invoke(cli_module.cli, ["samples", "summary"])
+
+    assert result.exit_code == 0
+    assert "Directus samples summary" in result.output
+    assert "qfield_project" in result.output
+    assert "profiled %" in result.output
+    assert "jbuf" in result.output
+    assert "40.0%" in result.output
+
+
+def test_samples_summary_tsv_output(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Project summary TSV output should preserve copy-friendly output."""
+
+    runner = CliRunner()
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def summarize_samples_by_project(self) -> list[ProjectSampleSummary]:
+            return [
+                ProjectSampleSummary(
+                    qfield_project="jbuf",
+                    collected_count=10,
+                    profiled_count=4,
+                    positive_count=1,
+                    negative_count=1,
+                    both_count=2,
+                )
+            ]
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(cli_module.cli, ["samples", "summary", "--format", "tsv"])
 
     assert result.exit_code == 0
     assert result.output.splitlines() == [
@@ -1223,13 +1275,11 @@ def test_samples_summary_species_text_output(monkeypatch: pytest.MonkeyPatch) ->
     )
 
     assert result.exit_code == 0
-    assert result.output.splitlines() == [
-        (
-            "qfield_project\tcollected_species\tprofiled_species\t"
-            "positive_species\tnegative_species\tboth_species"
-        ),
-        "jbuf\t7\t3\t1\t1\t1",
-    ]
+    assert "Directus species summary" in result.output
+    assert "qfield_project" in result.output
+    assert "profiled %" in result.output
+    assert "jbuf" in result.output
+    assert "42.9%" in result.output
 
 
 def test_samples_summary_project_group_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -1272,10 +1322,10 @@ def test_samples_summary_project_group_text_output(monkeypatch: pytest.MonkeyPat
     )
 
     assert result.exit_code == 0
-    assert result.output.splitlines() == [
-        "project_group\tcollected\tprofiled\tpositive\tnegative\tboth",
-        "dbgi\t6644\t1170\t11\t0\t1159",
-    ]
+    assert "Directus samples summary" in result.output
+    assert "project_group" in result.output
+    assert "dbgi" in result.output
+    assert "17.6%" in result.output
 
 
 def test_samples_summary_species_project_group_json_output(

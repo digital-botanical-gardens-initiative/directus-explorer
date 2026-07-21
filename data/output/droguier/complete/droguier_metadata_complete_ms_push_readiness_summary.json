@@ -1,0 +1,20 @@
+{
+  "input": "data/output/droguier/complete/droguier_metadata_complete_injection_import.csv",
+  "output": "data/output/droguier/complete/droguier_metadata_complete_ms_push_readiness.tsv",
+  "counts": {
+    "possible_with_extraction_only_import_after_schema_decision": 509,
+    "sample_rows": 528,
+    "review_duplicate_sample_id_before_import": 16,
+    "review_missing_field_data_before_import": 3
+  },
+  "duplicate_sample_ids": {
+    "drog_000021": 2,
+    "drog_000005": 2,
+    "drog_000022": 2,
+    "drog_000016": 2,
+    "drog_000034": 2,
+    "drog_000019": 2,
+    "drog_000360": 2,
+    "drog_000032": 2
+  }
+}

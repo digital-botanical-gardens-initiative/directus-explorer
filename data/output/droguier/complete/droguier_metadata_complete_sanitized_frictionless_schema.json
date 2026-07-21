@@ -1,0 +1,168 @@
+{
+  "fields": [
+    {
+      "name": "filename",
+      "type": "string"
+    },
+    {
+      "name": "extension",
+      "type": "string"
+    },
+    {
+      "name": "localisation_in_sciex_os_project",
+      "type": "string"
+    },
+    {
+      "name": "rack",
+      "type": "integer"
+    },
+    {
+      "name": "plate_position",
+      "type": "string"
+    },
+    {
+      "name": "comment",
+      "type": "string"
+    },
+    {
+      "name": "sample_id",
+      "type": "string"
+    },
+    {
+      "name": "latitude",
+      "type": "number"
+    },
+    {
+      "name": "x_coord",
+      "type": "number"
+    },
+    {
+      "name": "y_coord",
+      "type": "number"
+    },
+    {
+      "name": "date_updated",
+      "type": "datetime"
+    },
+    {
+      "name": "user_created",
+      "type": "string"
+    },
+    {
+      "name": "id",
+      "type": "integer"
+    },
+    {
+      "name": "date_created",
+      "type": "datetime"
+    },
+    {
+      "name": "longitude",
+      "type": "number"
+    },
+    {
+      "name": "collector_fullname",
+      "type": "string"
+    },
+    {
+      "name": "observation_subject",
+      "type": "string"
+    },
+    {
+      "name": "inat_upload",
+      "type": "boolean"
+    },
+    {
+      "name": "is_wild",
+      "type": "boolean"
+    },
+    {
+      "name": "taxon_name",
+      "type": "string"
+    },
+    {
+      "name": "no_name_on_list",
+      "type": "boolean"
+    },
+    {
+      "name": "picture_panel",
+      "type": "string"
+    },
+    {
+      "name": "picture_general",
+      "type": "string"
+    },
+    {
+      "name": "picture_detail",
+      "type": "string"
+    },
+    {
+      "name": "picture_cut",
+      "type": "string"
+    },
+    {
+      "name": "picture_panel_label",
+      "type": "string"
+    },
+    {
+      "name": "collector_orcid",
+      "type": "string"
+    },
+    {
+      "name": "collector_inat",
+      "type": "string"
+    },
+    {
+      "name": "qfield_project",
+      "type": "string"
+    },
+    {
+      "name": "name_proposition",
+      "type": "string"
+    },
+    {
+      "name": "ipen",
+      "type": "any"
+    },
+    {
+      "name": "raw_date",
+      "type": "integer"
+    },
+    {
+      "name": "geometry_type",
+      "type": "string"
+    },
+    {
+      "name": "geometry_coordinates",
+      "type": "array"
+    },
+    {
+      "name": "file_type",
+      "type": "string"
+    },
+    {
+      "name": "injection",
+      "type": "integer"
+    },
+    {
+      "name": "container_id",
+      "type": "string"
+    },
+    {
+      "name": "ionization_mode",
+      "type": "string"
+    },
+    {
+      "name": "normalized_date",
+      "type": "datetime"
+    },
+    {
+      "name": "date_parse_status",
+      "type": "string"
+    },
+    {
+      "name": "filename_date_token",
+      "type": "integer"
+    }
+  ]
+}

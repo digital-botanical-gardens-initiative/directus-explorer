@@ -91,7 +91,7 @@
     "missing_primary_taxon_rows": 240,
     "missing_unified_taxon_rows": 0,
     "taxon_recovered_from_fallback_rows": 240,
-    "taxon_unified_conflict_rows": 185,
+    "taxon_unified_conflict_rows": 0,
     "missing_date_rows": 0,
     "missing_coordinate_rows": 398,
     "coordinates_look_swapped_rows": 129,

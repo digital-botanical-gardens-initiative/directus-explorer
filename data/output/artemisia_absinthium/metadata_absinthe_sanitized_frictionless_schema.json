@@ -1,0 +1,140 @@
+{
+  "fields": [
+    {
+      "name": "filename",
+      "type": "string"
+    },
+    {
+      "name": "sample_number",
+      "type": "integer"
+    },
+    {
+      "name": "sample_type",
+      "type": "string"
+    },
+    {
+      "name": "attribute_species",
+      "type": "string"
+    },
+    {
+      "name": "run_date",
+      "type": "string"
+    },
+    {
+      "name": "sample_label",
+      "type": "string"
+    },
+    {
+      "name": "sample_id",
+      "type": "string"
+    },
+    {
+      "name": "collector_fullname",
+      "type": "string"
+    },
+    {
+      "name": "taxon_name",
+      "type": "string"
+    },
+    {
+      "name": "site_collecte",
+      "type": "string"
+    },
+    {
+      "name": "individuals",
+      "type": "integer"
+    },
+    {
+      "name": "observation_subject",
+      "type": "string"
+    },
+    {
+      "name": "site_origine",
+      "type": "string"
+    },
+    {
+      "name": "longitude",
+      "type": "number"
+    },
+    {
+      "name": "latitude",
+      "type": "number"
+    },
+    {
+      "name": "annees_origine",
+      "type": "integer"
+    },
+    {
+      "name": "annee_collecte",
+      "type": "integer"
+    },
+    {
+      "name": "type_site",
+      "type": "string"
+    },
+    {
+      "name": "altitude_collecte",
+      "type": "number"
+    },
+    {
+      "name": "altitude_origine",
+      "type": "number"
+    },
+    {
+      "name": "origine_cultive",
+      "type": "string"
+    },
+    {
+      "name": "date_plantation",
+      "type": "string"
+    },
+    {
+      "name": "date",
+      "type": "string"
+    },
+    {
+      "name": "jours_apres_plantation",
+      "type": "integer"
+    },
+    {
+      "name": "site",
+      "type": "integer"
+    },
+    {
+      "name": "file_type",
+      "type": "string"
+    },
+    {
+      "name": "injection",
+      "type": "integer"
+    },
+    {
+      "name": "container_id",
+      "type": "string"
+    },
+    {
+      "name": "ionization_mode",
+      "type": "string"
+    },
+    {
+      "name": "normalized_run_date",
+      "type": "datetime"
+    },
+    {
+      "name": "run_date_parse_status",
+      "type": "string"
+    },
+    {
+      "name": "normalized_observation_date",
+      "type": "date"
+    },
+    {
+      "name": "observation_date_parse_status",
+      "type": "string"
+    },
+    {
+      "name": "filename_date_token",
+      "type": "integer"
+    }
+  ]
+}

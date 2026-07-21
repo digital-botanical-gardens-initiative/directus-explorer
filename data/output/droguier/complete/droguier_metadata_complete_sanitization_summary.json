@@ -1,0 +1,23 @@
+{
+  "raw_path": "data/working/droguier/droguier_metatda_complete.csv",
+  "sanitized_path": "data/output/droguier/complete/droguier_metadata_complete_sanitized.csv",
+  "import_path": "data/output/droguier/complete/droguier_metadata_complete_injection_import.csv",
+  "issues_path": "data/output/droguier/complete/droguier_metadata_complete_sanitization_issues.tsv",
+  "row_count": 528,
+  "file_type_counts": {
+    "sample": 528
+  },
+  "qfield_project_counts": {
+    "droguier_jbn": 527,
+    "": 1
+  },
+  "ionization_mode_counts": {
+    "positive": 528
+  },
+  "date_parse_status_counts": {
+    "valid": 527,
+    "missing": 1
+  },
+  "duplicate_sample_id_count": 8,
+  "issue_counts": {}
+}

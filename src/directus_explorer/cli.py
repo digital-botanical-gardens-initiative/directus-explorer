@@ -8,6 +8,10 @@ from pathlib import Path
 from typing import Any
 
 import click
+from rich import box
+from rich.console import Console
+from rich.table import Table
+from rich.text import Text
 
 from .config import SettingsError, load_settings
 from .directus import DirectusAuthError, DirectusClient, DirectusError, DirectusResponseError
@@ -190,9 +194,10 @@ def profiled_samples(
 @click.option(
     "--format",
     "output_format",
-    type=click.Choice(("text", "json"), case_sensitive=False),
+    type=click.Choice(("text", "json", "tsv"), case_sensitive=False),
     default="text",
     show_default=True,
+    help="Use text for a readable terminal table, tsv for tab-separated output, or json.",
 )
 @click.option(
     "--env-file",
@@ -264,18 +269,19 @@ def summarize_samples(
         click.echo(json.dumps(payload))
         return
 
-    if count_by == "species":
-        click.echo(
-            f"{_summary_label_header(project_group)}\tcollected_species\tprofiled_species\t"
-            "positive_species\tnegative_species\tboth_species"
+    if output_format == "tsv":
+        _render_summary_tsv(
+            summaries,
+            count_by=count_by,
+            project_group=project_group,
         )
-    else:
-        click.echo(
-            f"{_summary_label_header(project_group)}\tcollected\tprofiled\t"
-            "positive\tnegative\tboth"
-        )
-    for summary in summaries:
-        click.echo(_render_project_summary(summary))
+        return
+
+    _render_summary_table(
+        summaries,
+        count_by=count_by,
+        project_group=project_group,
+    )
 
 
 @samples.command("locations")
@@ -367,7 +373,10 @@ def sample_locations(
     click.echo("\t".join(table.fieldnames))
     for row in table.rows:
         click.echo(
-            "\t".join("" if row.get(fieldname) is None else str(row.get(fieldname)) for fieldname in table.fieldnames)
+            "\t".join(
+                "" if row.get(fieldname) is None else str(row.get(fieldname))
+                for fieldname in table.fieldnames
+            )
         )
 
 
@@ -795,6 +804,102 @@ def _render_project_summary(summary: ProjectSampleSummary | ProjectSpeciesSummar
     )
 
 
+def _render_summary_tsv(
+    summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary],
+    *,
+    count_by: str,
+    project_group: str | None,
+) -> None:
+    """Render project summaries as tab-separated values."""
+
+    if count_by == "species":
+        click.echo(
+            f"{_summary_label_header(project_group)}\tcollected_species\tprofiled_species\t"
+            "positive_species\tnegative_species\tboth_species"
+        )
+    else:
+        click.echo(
+            f"{_summary_label_header(project_group)}\tcollected\tprofiled\t"
+            "positive\tnegative\tboth"
+        )
+    for summary in summaries:
+        click.echo(_render_project_summary(summary))
+
+
+def _render_summary_table(
+    summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary],
+    *,
+    count_by: str,
+    project_group: str | None,
+) -> None:
+    """Render project summaries as an aligned terminal table."""
+
+    label = _summary_label_header(project_group)
+    noun = "species" if count_by == "species" else "samples"
+    table = Table(
+        title=f"Directus {noun} summary",
+        box=box.SIMPLE_HEAVY,
+        min_width=116,
+        show_lines=False,
+        header_style="bold",
+    )
+    table.add_column(label, min_width=29, overflow="fold", no_wrap=False)
+    table.add_column("collected", justify="right")
+    table.add_column("profiled", justify="right")
+    table.add_column("profiled %", justify="right")
+    table.add_column("progress", justify="left")
+    table.add_column("positive", justify="right")
+    table.add_column("negative", justify="right")
+    table.add_column("both", justify="right")
+
+    for summary in summaries:
+        percent = _percentage(summary.profiled_count, summary.collected_count)
+        table.add_row(
+            summary.qfield_project,
+            str(summary.collected_count),
+            str(summary.profiled_count),
+            f"{percent:.1f}%",
+            _summary_progress_bar(percent),
+            str(summary.positive_count),
+            str(summary.negative_count),
+            str(summary.both_count),
+        )
+
+    Console(width=132).print(table)
+
+
+def _percentage(part: int, whole: int) -> float:
+    """Return a percentage, treating empty groups as zero progress."""
+
+    if whole <= 0:
+        return 0.0
+    return part / whole * 100
+
+
+def _summary_progress_bar(percent: float, *, width: int = 18) -> Text:
+    """Render a compact capped progress bar."""
+
+    capped_percent = max(0.0, min(percent, 100.0))
+    filled_width = round(width * capped_percent / 100)
+    fill_style = _summary_progress_style(capped_percent)
+    bar = Text()
+    if filled_width:
+        bar.append("━" * filled_width, style=fill_style)
+    if filled_width < width:
+        bar.append("─" * (width - filled_width), style="bright_black")
+    return bar
+
+
+def _summary_progress_style(percent: float) -> str:
+    """Return progress-bar color for a percentage."""
+
+    if percent < 33:
+        return "red"
+    if percent < 66:
+        return "yellow"
+    return "green"
+
+
 def _summary_label_header(project_group: str | None) -> str:
     """Return the label column for summary output."""
 
@@ -922,13 +1027,19 @@ def _render_location_branch_pretty(
         storage_type = row.get(f"{storage_prefix}_level_{level}_type")
         if not storage_id:
             break
-        storage_chain.append((str(storage_id), storage_type if isinstance(storage_type, str) else None))
+        storage_chain.append(
+            (str(storage_id), storage_type if isinstance(storage_type, str) else None)
+        )
         level += 1
 
     lines = [f"{title}:"]
     for storage_id, storage_type in reversed(storage_chain):
         lines.append(f"- Find {_format_container_label(storage_id, storage_type)}.")
-    lines.append(f"- Retrieve {_format_container_label(str(container_id), container_type if isinstance(container_type, str) else None)}.")
+    current_type = container_type if isinstance(container_type, str) else None
+    lines.append(
+        "- Retrieve "
+        f"{_format_container_label(str(container_id), current_type)}."
+    )
     return lines
 
 

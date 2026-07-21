@@ -1,0 +1,14 @@
+{
+  "readiness": "data/output/droguier/complete/droguier_metadata_complete_ms_push_readiness.tsv",
+  "selected_recommendation": "possible_with_extraction_only_import_after_schema_decision",
+  "selected_count": 509,
+  "prepared_count": 509,
+  "skipped_count": 0,
+  "dry_run": false,
+  "injection_volume": 1,
+  "injection_volume_unit_id": 18,
+  "injection_method_id": 54,
+  "instrument_id": 5,
+  "status": "published",
+  "skip_reasons": {}
+}

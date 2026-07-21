@@ -1,0 +1,450 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	issue
+kew-botanical-gardens	65636	dbgi_2	short_numeric_suffix	dbgi_000002	Passiflora			20251001122422	-0.29062262	51.481995	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74144	dbgi_009958	canonical	dbgi_009958	Abutilon pitcairnense			20250814214057	-0.29309487	51.475	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74176	dbgi_009959	canonical	dbgi_009959	Acacia decora			20250814225820	-0.29313406	51.475388	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74326	dbgi_009960	canonical	dbgi_009960	Acaena novae-zelandiae			20250820183917	-0.29500523	51.475655	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74858	dbgi_010654	canonical	dbgi_010654	Abutilon pitcairnense			20250922093301	-0.28971964	51.48195	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74859	dbgi_010668	canonical	dbgi_010668	Leptotes bicolor			20250922093644	-0.28979832	51.48195	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74860	dbgi_010682	canonical	dbgi_010682	Aechmea distichantha var. schlumbergeri			20250922095305	-0.28974694	51.48192	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74861	dbgi_010712	canonical	dbgi_010712	Acacia cardiophylla			20250922095720	-0.289765	51.481926	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74862	dbgi_010647	canonical	dbgi_010647	Acacia cardiophylla			20250922095815	-0.28970167	51.48193	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74863	dbgi_010666	canonical	dbgi_010666	Acalypha amentacea subsp. wilkesiana			20250922142541	-0.28850082	51.48215	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74864	dbgi_010676	canonical	dbgi_010676	Agave victoriae-reginae			20250922142737	-0.28819615	51.48227	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74865	dbgi_010643	canonical	dbgi_010643	Piper			20250922143248	-0.2885612	51.482166	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74866	dbgi_010717	canonical	dbgi_010717	Humata			20250922143625	-0.28827465	51.481846	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	74909	dbgi_010692	canonical	dbgi_010692	Fascicularia bicolor			20250924105830	-0.28984007	51.481846	out_of_ch_range	true	false	false	false	dbgi_010692		missing_extraction
+kew-botanical-gardens	74936	dbgi_011031	canonical	dbgi_011031	Berberis empetrifolia			20250924133501	-0.28979346	51.48177	out_of_ch_range	true	false	false	false	dbgi_011031		missing_extraction
+kew-botanical-gardens	75054	dbgi_010942	canonical	dbgi_010942	Paeonia			20250929091849	-0.28982	51.481575	out_of_ch_range	true	false	false	false	dbgi_010942		missing_extraction
+kew-botanical-gardens	75055	dbgi_010785	canonical	dbgi_010785	Amelanchier × spicata			20250929092215	-0.28984272	51.481556	out_of_ch_range	true	false	false	false	dbgi_010785		missing_extraction
+kew-botanical-gardens	75056	dbgi_010932	canonical	dbgi_010932	Verbascum lychnitis			20250929092528	-0.28978667	51.481544	out_of_ch_range	true	false	false	false	dbgi_010932		missing_extraction
+kew-botanical-gardens	75057	dbgi_011005	canonical	dbgi_011005	Saxifraga paniculata subsp. cartilaginea			20250929093254	-0.289735	51.481606	out_of_ch_range	true	false	false	false	dbgi_011005		missing_extraction
+kew-botanical-gardens	75058	dbgi_010725	canonical	dbgi_010725	Helianthemum			20250929093639	-0.289745	51.481613	out_of_ch_range	true	false	false	false	dbgi_010725		missing_extraction
+kew-botanical-gardens	75059	dbgi_010948	canonical	dbgi_010948	Artemisia austriaca			20250929093750	-0.28975168	51.481594	out_of_ch_range	true	false	false	false	dbgi_010948		missing_extraction
+kew-botanical-gardens	75060	dbgi_010980	canonical	dbgi_010980	Teucrium arduini			20250929094141	-0.28975	51.481537	out_of_ch_range	true	false	false	false	dbgi_010980		missing_extraction
+kew-botanical-gardens	75061	dbgi_010928	canonical	dbgi_010928	Cystopteris fragilis			20250929094836	-0.28968802	51.48155	out_of_ch_range	true	false	false	false	dbgi_010928		missing_extraction
+kew-botanical-gardens	75062	dbgi_010915	canonical	dbgi_010915	Erodium manescavi			20250929095014	-0.28969038	51.481586	out_of_ch_range	true	false	false	false	dbgi_010915		missing_extraction
+kew-botanical-gardens	75063	dbgi_010921	canonical	dbgi_010921	Erodium manescavi			20250929095126	-0.28969038	51.481586	out_of_ch_range	true	false	false	false	dbgi_010921		missing_extraction
+kew-botanical-gardens	75064	dbgi_010681	canonical	dbgi_010681	Ononis spinosa			20250929095757	-0.28975168	51.48152	out_of_ch_range	true	false	false	false	dbgi_010681		missing_extraction
+kew-botanical-gardens	75065	dbgi_010895	canonical	dbgi_010895	Geranium pratense			20250929100005	-0.28974	51.481564	out_of_ch_range	true	false	false	false	dbgi_010895		missing_extraction
+kew-botanical-gardens	75066	dbgi_010821	canonical	dbgi_010821	Veronica spicata			20250929100456	-0.28966168	51.481552	out_of_ch_range	true	false	false	false	dbgi_010821		missing_extraction
+kew-botanical-gardens	75067	dbgi_010917	canonical	dbgi_010917	Potentilla recta			20250929101001	-0.289705	51.48153	out_of_ch_range	true	false	false	false	dbgi_010917		missing_extraction
+kew-botanical-gardens	75068	dbgi_010786	canonical	dbgi_010786	Paeonia officinalis subsp. banatica			20250929101155	-0.289705	51.481537	out_of_ch_range	true	false	false	false	dbgi_010786		missing_extraction
+kew-botanical-gardens	75069	dbgi_010883	canonical	dbgi_010883	Paeonia officinalis subsp. banatica			20250929101340	-0.289665	51.481552	out_of_ch_range	true	false	false	false	dbgi_010883		missing_extraction
+kew-botanical-gardens	75070	dbgi_010710	canonical	dbgi_010710	Phlox subulata			20250929102107	-0.28955168	51.481644	out_of_ch_range	true	false	false	false	dbgi_010710		missing_extraction
+kew-botanical-gardens	75071	dbgi_011010	canonical	dbgi_011010	Ceanothus prostratus			20250929102302	-0.28956833	51.481625	out_of_ch_range	true	false	false	false	dbgi_011010		missing_extraction
+kew-botanical-gardens	75072	dbgi_010870	canonical	dbgi_010870	Pulsatilla patens subsp. multifida			20250929102614	-0.28958666	51.481632	out_of_ch_range	true	false	false	false	dbgi_010870		missing_extraction
+kew-botanical-gardens	75073	dbgi_010878	canonical	dbgi_010878	Phlox subulata			20250929102801	-0.2895	51.48163	out_of_ch_range	true	false	false	false	dbgi_010878		missing_extraction
+kew-botanical-gardens	75074	dbgi_010651	canonical	dbgi_010651	Fallugia paradoxa			20250929103100	-0.28953168	51.48165	out_of_ch_range	true	false	false	false	dbgi_010651		missing_extraction
+kew-botanical-gardens	75075	dbgi_010848	canonical	dbgi_010848	Agave striata subsp. striata			20250929103809	-0.28951666	51.48163	out_of_ch_range	true	false	false	false	dbgi_010848		missing_extraction
+kew-botanical-gardens	75076	dbgi_010853	canonical	dbgi_010853	Coreopsis tripteris			20250929104026	-0.28950167	51.48166	out_of_ch_range	true	false	false	false	dbgi_010853		missing_extraction
+kew-botanical-gardens	75077	dbgi_010809	canonical	dbgi_010809	Iris fulva			20250929104226	-0.2895529	51.481674	out_of_ch_range	true	false	false	false	dbgi_010809		missing_extraction
+kew-botanical-gardens	75078	dbgi_010863	canonical	dbgi_010863	Typha latifolia			20250929104449	-0.28957	51.48168	out_of_ch_range	true	false	false	false	dbgi_010863		missing_extraction
+kew-botanical-gardens	75079	dbgi_010905	canonical	dbgi_010905	Thalictrum minus			20250929091631	-0.28962702	51.481533	out_of_ch_range	true	false	false	false	dbgi_010905		missing_extraction
+kew-botanical-gardens	75080	dbgi_010693	canonical	dbgi_010693	Veronica gentianoides			20250929092850	-0.2897042	51.4814	out_of_ch_range	true	false	false	false	dbgi_010693		missing_extraction
+kew-botanical-gardens	75081	dbgi_010990	canonical	dbgi_010990	Leucanthemum vulgare			20250929093513	-0.28978112	51.48137	out_of_ch_range	true	false	false	false	dbgi_010990		missing_extraction
+kew-botanical-gardens	75082	dbgi_010653	canonical	dbgi_010653	Sempervivum grandiflorum			20250929094035	-0.28975037	51.481403	out_of_ch_range	true	false	false	false	dbgi_010653		missing_extraction
+kew-botanical-gardens	75083	dbgi_010912	canonical	dbgi_010912	Wulfenia			20250929094506	-0.28978166	51.481407	out_of_ch_range	true	false	false	false	dbgi_010912		missing_extraction
+kew-botanical-gardens	75084	dbgi_011046	canonical	dbgi_011046	Coronilla coronata			20250929100027	-0.2898136	51.481457	out_of_ch_range	true	false	false	false	dbgi_011046		missing_extraction
+kew-botanical-gardens	75085	dbgi_010885	canonical	dbgi_010885	Anthericum ramosum			20250929101245	-0.28983617	51.48147	out_of_ch_range	true	false	false	false	dbgi_010885		missing_extraction
+kew-botanical-gardens	75086	dbgi_011066	canonical	dbgi_011066	Aquilegia atrata			20250929102232	-0.28983557	51.481388	out_of_ch_range	true	false	false	false	dbgi_011066		missing_extraction
+kew-botanical-gardens	75087	dbgi_010941	canonical	dbgi_010941	Crocus tournefortii			20250929102854	-0.28981838	51.481358	out_of_ch_range	true	false	false	false	dbgi_010941		missing_extraction
+kew-botanical-gardens	75088	dbgi_010865	canonical	dbgi_010865	Crocus tournefortii			20250929102954	-0.28981838	51.481358	out_of_ch_range	true	false	false	false	dbgi_010865		missing_extraction
+kew-botanical-gardens	75089	dbgi_010880	canonical	dbgi_010880	Asplenium scolopendrium			20250929103422	-0.28981635	51.48137	out_of_ch_range	true	false	false	false	dbgi_010880		missing_extraction
+kew-botanical-gardens	75090	dbgi_010886	canonical	dbgi_010886	Saxifraga cebennensis			20250929104301	-0.2898387	51.48135	out_of_ch_range	true	false	false	false	dbgi_010886		missing_extraction
+kew-botanical-gardens	75091	dbgi_010858	canonical	dbgi_010858	Juniperus horizontalis			20250929105111	-0.2898891	51.481426	out_of_ch_range	true	false	false	false	dbgi_010858		missing_extraction
+kew-botanical-gardens	75092	dbgi_010877	canonical	dbgi_010877	Sempervivum ciliosum			20250929110935	-0.28987008	51.481388	out_of_ch_range	true	false	false	false	dbgi_010877		missing_extraction
+kew-botanical-gardens	75093	dbgi_010705	canonical	dbgi_010705	Viburnum opulus			20250929111818	-0.2898565	51.481495	out_of_ch_range	true	false	false	false	dbgi_010705		missing_extraction
+kew-botanical-gardens	75094	dbgi_010781	canonical	dbgi_010781	Pterocephalus perennis			20250929112602	-0.2899154	51.481514	out_of_ch_range	true	false	false	false	dbgi_010781		missing_extraction
+kew-botanical-gardens	75095	dbgi_010765	canonical	dbgi_010765	Sempervivum × fauconnettii			20250929113500	-0.29000783	51.48156	out_of_ch_range	true	false	false	false	dbgi_010765		missing_extraction
+kew-botanical-gardens	75096	dbgi_010697	canonical	dbgi_010697	Aster amellus			20250929114205	-0.2899814	51.481583	out_of_ch_range	true	false	false	false	dbgi_010697		missing_extraction
+kew-botanical-gardens	75097	dbgi_010755	canonical	dbgi_010755	Aster amellus			20250929114600	-0.2899814	51.481583	out_of_ch_range	true	false	false	false	dbgi_010755		missing_extraction
+kew-botanical-gardens	75098	dbgi_010806	canonical	dbgi_010806	Iris variegata			20250929115042	-0.28990674	51.481613	out_of_ch_range	true	false	false	false	dbgi_010806		missing_extraction
+kew-botanical-gardens	75099	dbgi_010882	canonical	dbgi_010882	Allium lusitanicum			20250929115416	-0.28986895	51.481644	out_of_ch_range	true	false	false	false	dbgi_010882		missing_extraction
+kew-botanical-gardens	75100	dbgi_010936	canonical	dbgi_010936	Allium lusitanicum			20250929115716	-0.28986895	51.481644	out_of_ch_range	true	false	false	false	dbgi_010936		missing_extraction
+kew-botanical-gardens	75101	dbgi_010777	canonical	dbgi_010777	Helichrysum sibthorpii			20250929110735	-0.289489	51.481617	out_of_ch_range	true	false	false	false	dbgi_010777		missing_extraction
+kew-botanical-gardens	75102	dbgi_010776	canonical	dbgi_010776	Thymus pannonicus			20250929111405	-0.2896444	51.481617	out_of_ch_range	true	false	false	false	dbgi_010776		missing_extraction
+kew-botanical-gardens	75103	dbgi_010836	canonical	dbgi_010836	Linum narbonense			20250929112049	-0.28945565	51.481316	out_of_ch_range	true	false	false	false	dbgi_010836		missing_extraction
+kew-botanical-gardens	75104	dbgi_010779	canonical	dbgi_010779	Prospero autumnale			20250929112606	-0.28943762	51.481617	out_of_ch_range	true	false	false	false	dbgi_010779		missing_extraction
+kew-botanical-gardens	75105	dbgi_010718	canonical	dbgi_010718	Onosma alborosea			20250929113144	-0.2894515	51.481617	out_of_ch_range	true	false	false	false	dbgi_010718		missing_extraction
+kew-botanical-gardens	75106	dbgi_010784	canonical	dbgi_010784	Convolvulus boissieri subsp. boissieri			20250929113549	-0.28948978	51.481606	out_of_ch_range	true	false	false	false	dbgi_010784		missing_extraction
+kew-botanical-gardens	75107	dbgi_010745	canonical	dbgi_010745	Globularia cambessedesii			20250929114416	-0.28955555	51.481636	out_of_ch_range	true	false	false	false	dbgi_010745		missing_extraction
+kew-botanical-gardens	75108	dbgi_010770	canonical	dbgi_010770	Genista pulchella			20250929115218	-0.28950062	51.4816	out_of_ch_range	true	false	false	false	dbgi_010770		missing_extraction
+kew-botanical-gardens	75109	dbgi_010740	canonical	dbgi_010740	Sedum sediforme			20250929115716	-0.28949955	51.48156	out_of_ch_range	true	false	false	false	dbgi_010740		missing_extraction
+kew-botanical-gardens	75110	dbgi_010893	canonical	dbgi_010893	Sedum sediforme			20250929120126	-0.28948796	51.481575	out_of_ch_range	true	false	false	false	dbgi_010893		missing_extraction
+kew-botanical-gardens	75111	dbgi_010794	canonical	dbgi_010794	Sedum sediforme			20250929120339	-0.28948012	51.481575	out_of_ch_range	true	false	false	false	dbgi_010794		missing_extraction
+kew-botanical-gardens	75112	dbgi_010700	canonical	dbgi_010700	Potentilla thurberi			20250929110655	-0.289455	51.481712	out_of_ch_range	true	false	false	false	dbgi_010700		missing_extraction
+kew-botanical-gardens	75113	dbgi_010714	canonical	dbgi_010714	Townsendia formosa			20250929110836	-0.28946668	51.481754	out_of_ch_range	true	false	false	false	dbgi_010714		missing_extraction
+kew-botanical-gardens	75114	dbgi_010695	canonical	dbgi_010695	Juncus dudleyi			20250929111032	-0.289515	51.481743	out_of_ch_range	true	false	false	false	dbgi_010695		missing_extraction
+kew-botanical-gardens	75115	dbgi_010812	canonical	dbgi_010812	Nerine alta			20250929112352	-0.28945833	51.48181	out_of_ch_range	true	false	false	false	dbgi_010812		missing_extraction
+kew-botanical-gardens	75116	dbgi_010771	canonical	dbgi_010771	Tulipa biflora			20250929112700	-0.28944498	51.48183	out_of_ch_range	true	false	false	false	dbgi_010771		missing_extraction
+kew-botanical-gardens	75117	dbgi_010898	canonical	dbgi_010898	Origanum dictamnus			20250929113021	-0.28942406	51.48182	out_of_ch_range	true	false	false	false	dbgi_010898		missing_extraction
+kew-botanical-gardens	75118	dbgi_010807	canonical	dbgi_010807	Origanum dictamnus			20250929113129	-0.28942406	51.48182	out_of_ch_range	true	false	false	false	dbgi_010807		missing_extraction
+kew-botanical-gardens	75119	dbgi_011056	canonical	dbgi_011056	Lachenalia contaminata			20250929113458	-0.28941333	51.481815	out_of_ch_range	true	false	false	false	dbgi_011056		missing_extraction
+kew-botanical-gardens	75120	dbgi_010769	canonical	dbgi_010769	Galanthus			20250929113948	-0.289405	51.481815	out_of_ch_range	true	false	false	false	dbgi_010769		missing_extraction
+kew-botanical-gardens	75121	dbgi_010678	canonical	dbgi_010678	Lachenalia reflexa			20250929114108	-0.2894054	51.481827	out_of_ch_range	true	false	false	false	dbgi_010678		missing_extraction
+kew-botanical-gardens	75122	dbgi_010719	canonical	dbgi_010719	Lachenalia reflexa			20250929114355	-0.2894054	51.481827	out_of_ch_range	true	false	false	false	dbgi_010719		missing_extraction
+kew-botanical-gardens	75123	dbgi_010799	canonical	dbgi_010799	Stachys candida			20250929114511	-0.2893746	51.48185	out_of_ch_range	true	false	false	false	dbgi_010799		missing_extraction
+kew-botanical-gardens	75124	dbgi_010716	canonical	dbgi_010716	Erodium petraeum			20250929114719	-0.2893645	51.481853	out_of_ch_range	true	false	false	false	dbgi_010716		missing_extraction
+kew-botanical-gardens	75125	dbgi_010759	canonical	dbgi_010759	Erodium petraeum			20250929115231	-0.2893643	51.481853	out_of_ch_range	true	false	false	false	dbgi_010759		missing_extraction
+kew-botanical-gardens	75126	dbgi_010735	canonical	dbgi_010735	Prospero autumnale			20250929115653	-0.2893542	51.48186	out_of_ch_range	true	false	false	false	dbgi_010735		missing_extraction
+kew-botanical-gardens	75127	dbgi_010694	canonical	dbgi_010694	Lavandula lanata			20250929115819	-0.2893643	51.48188	out_of_ch_range	true	false	false	false	dbgi_010694		missing_extraction
+kew-botanical-gardens	75128	dbgi_010699	canonical	dbgi_010699	Massonia pustulata			20250929115937	-0.28935385	51.481873	out_of_ch_range	true	false	false	false	dbgi_010699		missing_extraction
+kew-botanical-gardens	75129	dbgi_010731	canonical	dbgi_010731	Carduncellus rhaponticoides			20250929120100	-0.2893377	51.481873	out_of_ch_range	true	false	false	false	dbgi_010731		missing_extraction
+kew-botanical-gardens	75130	dbgi_010810	canonical	dbgi_010810	Narcissus flavus			20250929120213	-0.28934184	51.48188	out_of_ch_range	true	false	false	false	dbgi_010810		missing_extraction
+kew-botanical-gardens	75131	dbgi_010933	canonical	dbgi_010933	Begonia ramentacea			20250930091854	-0.29019812	51.48182	out_of_ch_range	true	false	false	false	dbgi_010933		missing_extraction
+kew-botanical-gardens	75132	dbgi_010881	canonical	dbgi_010881	Begonia itaguassuensis			20250930092241	-0.29021642	51.481785	out_of_ch_range	true	false	false	false	dbgi_010881		missing_extraction
+kew-botanical-gardens	75133	dbgi_010846	canonical	dbgi_010846	Begonia serratipetala			20250930092901	-0.29020813	51.481754	out_of_ch_range	true	false	false	false	dbgi_010846		missing_extraction
+kew-botanical-gardens	75134	dbgi_010826	canonical	dbgi_010826	Begonia cubensis			20250930093324	-0.2902126	51.48174	out_of_ch_range	true	false	false	false	dbgi_010826		missing_extraction
+kew-botanical-gardens	75135	dbgi_010662	canonical	dbgi_010662	Bruguiera gymnorhiza			20250930094228	-0.29023767	51.481766	out_of_ch_range	true	false	false	false	dbgi_010662		missing_extraction
+kew-botanical-gardens	75136	dbgi_010778	canonical	dbgi_010778	Anthurium lindmanianum			20250930095443	-0.2902711	51.4816	out_of_ch_range	true	false	false	false	dbgi_010778		missing_extraction
+kew-botanical-gardens	75137	dbgi_010798	canonical	dbgi_010798	Lagenandra ovata			20250930095920	-0.29028273	51.481594	out_of_ch_range	true	false	false	false	dbgi_010798		missing_extraction
+kew-botanical-gardens	75138	dbgi_010724	canonical	dbgi_010724	Centella asiatica			20250930100403	-0.29028642	51.481583	out_of_ch_range	true	false	false	false	dbgi_010724		missing_extraction
+kew-botanical-gardens	75139	dbgi_010829	canonical	dbgi_010829	Centella asiatica			20250930100604	-0.29028642	51.481583	out_of_ch_range	true	false	false	false	dbgi_010829		missing_extraction
+kew-botanical-gardens	75140	dbgi_010720	canonical	dbgi_010720	Ludwigia peruviana			20250930101057	-0.29029337	51.481575	out_of_ch_range	true	false	false	false	dbgi_010720		missing_extraction
+kew-botanical-gardens	75141	dbgi_010715	canonical	dbgi_010715	Ludwigia peruviana			20250930102223	-0.2902925	51.481575	out_of_ch_range	true	false	false	false	dbgi_010715		missing_extraction
+kew-botanical-gardens	75142	dbgi_010753	canonical	dbgi_010753	Crinum × amabile			20250930103016	-0.29025477	51.481663	out_of_ch_range	true	false	false	false	dbgi_010753		missing_extraction
+kew-botanical-gardens	75143	dbgi_010801	canonical	dbgi_010801	Crinum × amabile			20250930103133	-0.29025477	51.481663	out_of_ch_range	true	false	false	false	dbgi_010801		missing_extraction
+kew-botanical-gardens	75144	dbgi_010645	canonical	dbgi_010645	Eichhornia crassipes			20250930105245	-0.29029584	51.481567	out_of_ch_range	true	false	false	false	dbgi_010645		missing_extraction
+kew-botanical-gardens	75145	dbgi_010624	canonical	dbgi_010624	Crinum erubescens			20250930105953	-0.29030585	51.481544	out_of_ch_range	true	false	false	false	dbgi_010624		missing_extraction
+kew-botanical-gardens	75146	dbgi_010519	canonical	dbgi_010519	Crinum erubescens			20250930110149	-0.29030585	51.481544	out_of_ch_range	true	false	false	false	dbgi_010519		missing_extraction
+kew-botanical-gardens	75147	dbgi_010583	canonical	dbgi_010583	Colocasia esculenta			20250930110604	-0.29030904	51.48153	out_of_ch_range	true	false	false	false	dbgi_010583		missing_extraction
+kew-botanical-gardens	75148	dbgi_010660	canonical	dbgi_010660	Colocasia esculenta			20250930110937	-0.2903102	51.48153	out_of_ch_range	true	false	false	false	dbgi_010660		missing_extraction
+kew-botanical-gardens	75149	dbgi_010581	canonical	dbgi_010581	Barringtonia racemosa			20250930111555	-0.29031774	51.481503	out_of_ch_range	true	false	false	false	dbgi_010581		missing_extraction
+kew-botanical-gardens	75150	dbgi_010639	canonical	dbgi_010639	Barringtonia racemosa			20250930111743	-0.29031774	51.481503	out_of_ch_range	true	false	false	false	dbgi_010639		missing_extraction
+kew-botanical-gardens	75151	dbgi_010491	canonical	dbgi_010491	Barringtonia racemosa			20250930112015	-0.29031774	51.481503	out_of_ch_range	true	false	false	false	dbgi_010491		missing_extraction
+kew-botanical-gardens	75152	dbgi_010591	canonical	dbgi_010591	Etlingera elatior			20250930112727	-0.29036283	51.48142	out_of_ch_range	true	false	false	false	dbgi_010591		missing_extraction
+kew-botanical-gardens	75153	dbgi_010526	canonical	dbgi_010526	Heliconia uxpanapensis			20250930113241	-0.29041958	51.481396	out_of_ch_range	true	false	false	false	dbgi_010526		missing_extraction
+kew-botanical-gardens	75154	dbgi_010610	canonical	dbgi_010610	Heliconia uxpanapensis			20250930113540	-0.29041958	51.481396	out_of_ch_range	true	false	false	false	dbgi_010610		missing_extraction
+kew-botanical-gardens	75155	dbgi_010484	canonical	dbgi_010484	Maranta arundinacea			20250930114433	-0.29045185	51.48142	out_of_ch_range	true	false	false	false	dbgi_010484		missing_extraction
+kew-botanical-gardens	75156	dbgi_010873	canonical	dbgi_010873	Begonia listada			20250930092319	-0.29018018	51.481754	out_of_ch_range	true	false	false	false	dbgi_010873		missing_extraction
+kew-botanical-gardens	75157	dbgi_010730	canonical	dbgi_010730	Begonia			20250930093101	-0.29021856	51.481533	out_of_ch_range	true	false	false	false	dbgi_010730		missing_extraction
+kew-botanical-gardens	75158	dbgi_010750	canonical	dbgi_010750	Begonia mazae			20250930093601	-0.2901864	51.481766	out_of_ch_range	true	false	false	false	dbgi_010750		missing_extraction
+kew-botanical-gardens	75159	dbgi_010811	canonical	dbgi_010811	Columnea oerstediana			20250930093919	-0.29014516	51.48178	out_of_ch_range	true	false	false	false	dbgi_010811		missing_extraction
+kew-botanical-gardens	75160	dbgi_010816	canonical	dbgi_010816	Passiflora			20250930094525	-0.29018483	51.481724	out_of_ch_range	true	false	false	false	dbgi_010816		missing_extraction
+kew-botanical-gardens	75161	dbgi_010937	canonical	dbgi_010937	Passiflora			20250930094745	-0.290313	51.48163	out_of_ch_range	true	false	false	false	dbgi_010937		missing_extraction
+kew-botanical-gardens	75162	dbgi_010824	canonical	dbgi_010824	Nematanthus			20250930095318	-0.29028586	51.481663	out_of_ch_range	true	false	false	false	dbgi_010824		missing_extraction
+kew-botanical-gardens	75163	dbgi_010723	canonical	dbgi_010723	Nematanthus crassifolius			20250930100207	-0.29027164	51.481632	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	75164	dbgi_010793	canonical	dbgi_010793	Aeschynanthus			20250930100747	-0.29034582	51.48157	out_of_ch_range	true	false	false	false	dbgi_010793		missing_extraction
+kew-botanical-gardens	75165	dbgi_010504	canonical	dbgi_010504	Aeschynanthus			20250930101503	-0.2902462	51.481625	out_of_ch_range	true	false	false	false	dbgi_010504		missing_extraction
+kew-botanical-gardens	75166	dbgi_010788	canonical	dbgi_010788	Amydrium zippelianum			20250930101946	-0.29028386	51.481564	out_of_ch_range	true	false	false	false	dbgi_010788		missing_extraction
+kew-botanical-gardens	75167	dbgi_010818	canonical	dbgi_010818	Justicia carnea			20250930102548	-0.29026335	51.48155	out_of_ch_range	true	false	false	false	dbgi_010818		missing_extraction
+kew-botanical-gardens	75168	dbgi_010748	canonical	dbgi_010748	Piper ornatum			20250930103106	-0.29029658	51.48155	out_of_ch_range	true	false	false	false	dbgi_010748		missing_extraction
+kew-botanical-gardens	75169	dbgi_010650	canonical	dbgi_010650	Peperomia magnoliifolia			20250930103810	-0.2903022	51.481518	out_of_ch_range	true	false	false	false	dbgi_010650		missing_extraction
+kew-botanical-gardens	75170	dbgi_010690	canonical	dbgi_010690	Peperomia rubella			20250930104016	-0.2903	51.481544	out_of_ch_range	true	false	false	false	dbgi_010690		missing_extraction
+kew-botanical-gardens	75171	dbgi_010751	canonical	dbgi_010751	Peperomia rubella			20250930104316	-0.2902944	51.481552	out_of_ch_range	true	false	false	false	dbgi_010751		missing_extraction
+kew-botanical-gardens	75172	dbgi_010761	canonical	dbgi_010761	Piper nigrum			20250930105257	-0.29029316	51.481552	out_of_ch_range	true	false	false	false	dbgi_010761		missing_extraction
+kew-botanical-gardens	75173	dbgi_010766	canonical	dbgi_010766	Peperomia nitida			20250930105735	-0.29031488	51.48146	out_of_ch_range	true	false	false	false	dbgi_010766		missing_extraction
+kew-botanical-gardens	75174	dbgi_010680	canonical	dbgi_010680	Peperomia pereskiifolia			20250930110239	-0.29032224	51.481495	out_of_ch_range	true	false	false	false	dbgi_010680		missing_extraction
+kew-botanical-gardens	75175	dbgi_010840	canonical	dbgi_010840	Boucerosia frerei			20250930110450	-0.29030833	51.481472	out_of_ch_range	true	false	false	false	dbgi_010840		missing_extraction
+kew-botanical-gardens	75176	dbgi_010867	canonical	dbgi_010867	Peperomia			20250930110832	-0.29034677	51.481487	out_of_ch_range	true	false	false	false	dbgi_010867		missing_extraction
+kew-botanical-gardens	75177	dbgi_010871	canonical	dbgi_010871	Passiflora macrocarpa			20250930113549	-0.29043856	51.48141	out_of_ch_range	true	false	false	false	dbgi_010871		missing_extraction
+kew-botanical-gardens	75178	dbgi_010757	canonical	dbgi_010757	Goeppertia vaginata			20250930114207	-0.2905385	51.48145	out_of_ch_range	true	false	false	false	dbgi_010757		missing_extraction
+kew-botanical-gardens	75179	dbgi_010935	canonical	dbgi_010935	Passiflora perfoliata			20250930115126	-0.29056343	51.481495	out_of_ch_range	true	false	false	false	dbgi_010935		missing_extraction
+kew-botanical-gardens	75180	dbgi_010756	canonical	dbgi_010756	Aechmea nudicaulis var. cuspidata			20250930115545	-0.29044777	51.48158	out_of_ch_range	true	false	false	false	dbgi_010756		missing_extraction
+kew-botanical-gardens	75181	dbgi_010875	canonical	dbgi_010875	Musa			20250930091916	-0.29017666	51.48175	out_of_ch_range	true	false	false	false	dbgi_010875		missing_extraction
+kew-botanical-gardens	75182	dbgi_010831	canonical	dbgi_010831	Dorstenia psilurus			20250930092217	-0.290215	51.481804	out_of_ch_range	true	false	false	false	dbgi_010831		missing_extraction
+kew-botanical-gardens	75183	dbgi_010763	canonical	dbgi_010763	Hymenocallis speciosa			20250930092451	-0.290305	51.48181	out_of_ch_range	true	false	false	false	dbgi_010763		missing_extraction
+kew-botanical-gardens	75184	dbgi_010685	canonical	dbgi_010685	Aglaonema commutatum var. maculatum			20250930092911	-0.29030833	51.481808	out_of_ch_range	true	false	false	false	dbgi_010685		missing_extraction
+kew-botanical-gardens	75185	dbgi_010841	canonical	dbgi_010841	Clerodendrum thomsoniae var. balfourii			20250930093252	-0.29035333	51.481796	out_of_ch_range	true	false	false	false	dbgi_010841		missing_extraction
+kew-botanical-gardens	75186	dbgi_010927	canonical	dbgi_010927	Musa rubra			20250930093635	-0.29038334	51.48182	out_of_ch_range	true	false	false	false	dbgi_010927		missing_extraction
+kew-botanical-gardens	75187	dbgi_010802	canonical	dbgi_010802	Passiflora xiikzodz			20250930094117	-0.29027334	51.481792	out_of_ch_range	true	false	false	false	dbgi_010802		missing_extraction
+kew-botanical-gardens	75188	dbgi_010764	canonical	dbgi_010764	Goeppertia vaginata			20250930094248	-0.29031333	51.481827	out_of_ch_range	true	false	false	false	dbgi_010764		missing_extraction
+kew-botanical-gardens	75189	dbgi_010726	canonical	dbgi_010726	Crinum × amabile			20250930094831	-0.29033	51.48175	out_of_ch_range	true	false	false	false	dbgi_010726		missing_extraction
+kew-botanical-gardens	75190	dbgi_010738	canonical	dbgi_010738	Kohleria spicata			20250930095349	-0.290355	51.48178	out_of_ch_range	true	false	false	false	dbgi_010738		missing_extraction
+kew-botanical-gardens	75191	dbgi_010772	canonical	dbgi_010772	Kohleria spicata			20250930095502	-0.29034665	51.48183	out_of_ch_range	true	false	false	false	dbgi_010772		missing_extraction
+kew-botanical-gardens	75192	dbgi_010791	canonical	dbgi_010791	Anthurium willdenowii			20250930100006	-0.290385	51.4818	out_of_ch_range	true	false	false	false	dbgi_010791		missing_extraction
+kew-botanical-gardens	75193	dbgi_010688	canonical	dbgi_010688	Eucharis × grandiflora			20250930100252	-0.290385	51.48186	out_of_ch_range	true	false	false	false	dbgi_010688		missing_extraction
+kew-botanical-gardens	75194	dbgi_010773	canonical	dbgi_010773	Philodendron dunstervilleorum			20250930100531	-0.29035833	51.48183	out_of_ch_range	true	false	false	false	dbgi_010773		missing_extraction
+kew-botanical-gardens	75195	dbgi_010762	canonical	dbgi_010762	Alpinia nieuwenhuizii			20250930100715	-0.29041168	51.4818	out_of_ch_range	true	false	false	false	dbgi_010762		missing_extraction
+kew-botanical-gardens	75196	dbgi_010768	canonical	dbgi_010768	Philodendron auriculatum			20250930101309	-0.29043	51.481842	out_of_ch_range	true	false	false	false	dbgi_010768		missing_extraction
+kew-botanical-gardens	75197	dbgi_010939	canonical	dbgi_010939	Anthurium cordatum			20250930101700	-0.29042333	51.48183	out_of_ch_range	true	false	false	false	dbgi_010939		missing_extraction
+kew-botanical-gardens	75198	dbgi_010789	canonical	dbgi_010789	Philodendron annulatum			20250930102349	-0.2904655	51.481815	out_of_ch_range	true	false	false	false	dbgi_010789		missing_extraction
+kew-botanical-gardens	75199	dbgi_010787	canonical	dbgi_010787	Anthurium jenmanii			20250930102943	-0.2904817	51.481754	out_of_ch_range	true	false	false	false	dbgi_010787		missing_extraction
+kew-botanical-gardens	75200	dbgi_010746	canonical	dbgi_010746	Anthurium jenmanii			20250930103210	-0.29048833	51.4818	out_of_ch_range	true	false	false	false	dbgi_010746		missing_extraction
+kew-botanical-gardens	75201	dbgi_010792	canonical	dbgi_010792	Orthophytum gurkenii			20250930103541	-0.290535	51.481804	out_of_ch_range	true	false	false	false	dbgi_010792		missing_extraction
+kew-botanical-gardens	75202	dbgi_010605	canonical	dbgi_010605	Philodendron ornatum			20250930104528	-0.290445	51.48184	out_of_ch_range	true	false	false	false	dbgi_010605		missing_extraction
+kew-botanical-gardens	75203	dbgi_010496	canonical	dbgi_010496	Piper sarmentosum			20250930104742	-0.29053667	51.48183	out_of_ch_range	true	false	false	false	dbgi_010496		missing_extraction
+kew-botanical-gardens	75204	dbgi_010586	canonical	dbgi_010586	Solandra grandiflora			20250930104925	-0.29046962	51.481846	out_of_ch_range	true	false	false	false	dbgi_010586		missing_extraction
+kew-botanical-gardens	75205	dbgi_010568	canonical	dbgi_010568	Syngonium podophyllum			20250930105046	-0.290505	51.481842	out_of_ch_range	true	false	false	false	dbgi_010568		missing_extraction
+kew-botanical-gardens	75206	dbgi_010492	canonical	dbgi_010492	Passiflora jussieui			20250930105640	-0.29048666	51.48184	out_of_ch_range	true	false	false	false	dbgi_010492		missing_extraction
+kew-botanical-gardens	75207	dbgi_010565	canonical	dbgi_010565	Lutheria splendens			20250930105802	-0.29050165	51.481857	out_of_ch_range	true	false	false	false	dbgi_010565		missing_extraction
+kew-botanical-gardens	75208	dbgi_010571	canonical	dbgi_010571	Stictocardia beraviensis			20250930110758	-0.290555	51.48182	out_of_ch_range	true	false	false	false	dbgi_010571		missing_extraction
+kew-botanical-gardens	75209	dbgi_010406	canonical	dbgi_010406	Calathea bachemiana			20250930112052	-0.29026166	51.481777	out_of_ch_range	true	false	false	false	dbgi_010406		missing_extraction
+kew-botanical-gardens	75210	dbgi_010930	canonical	dbgi_010930	Impatiens walleriana			20250930112405	-0.29031166	51.481815	out_of_ch_range	true	false	false	false	dbgi_010930		missing_extraction
+kew-botanical-gardens	75211	dbgi_010582	canonical	dbgi_010582	Impatiens walleriana			20250930112557	-0.29027334	51.481792	out_of_ch_range	true	false	false	false	dbgi_010582		missing_extraction
+kew-botanical-gardens	75212	dbgi_010595	canonical	dbgi_010595	Saintpaulia ionantha subsp. grotei			20250930112904	-0.29028165	51.481808	out_of_ch_range	true	false	false	false	dbgi_010595		missing_extraction
+kew-botanical-gardens	75213	dbgi_010604	canonical	dbgi_010604	Saintpaulia ionantha subsp. grotei			20250930113146	-0.29028666	51.48179	out_of_ch_range	true	false	false	false	dbgi_010604		missing_extraction
+kew-botanical-gardens	75214	dbgi_010670	canonical	dbgi_010670	Episcia cupreata			20250930113413	-0.29033166	51.481777	out_of_ch_range	true	false	false	false	dbgi_010670		missing_extraction
+kew-botanical-gardens	75215	dbgi_010782	canonical	dbgi_010782	Episcia cupreata			20250930113550	-0.29034334	51.481747	out_of_ch_range	true	false	false	false	dbgi_010782		missing_extraction
+kew-botanical-gardens	75216	dbgi_010323	canonical	dbgi_010323	Aegiceras corniculatum			20250930113953	-0.2903	51.48178	out_of_ch_range	true	false	false	false	dbgi_010323		missing_extraction
+kew-botanical-gardens	75217	dbgi_010741	canonical	dbgi_010741	Maranta bicolor			20250930114120	-0.29030332	51.481773	out_of_ch_range	true	false	false	false	dbgi_010741		missing_extraction
+kew-botanical-gardens	75218	dbgi_010665	canonical	dbgi_010665	Thaumatococcus daniellii			20250930114357	-0.290365	51.481762	out_of_ch_range	true	false	false	false	dbgi_010665		missing_extraction
+kew-botanical-gardens	75219	dbgi_010850	canonical	dbgi_010850	Saintpaulia magungensis			20250930114848	-0.29034108	51.481735	out_of_ch_range	true	false	false	false	dbgi_010850		missing_extraction
+kew-botanical-gardens	75220	dbgi_010910	canonical	dbgi_010910	Saintpaulia ionantha subsp. pendula			20250930115203	-0.29039335	51.481712	out_of_ch_range	true	false	false	false	dbgi_010910		missing_extraction
+kew-botanical-gardens	75221	dbgi_010861	canonical	dbgi_010861	Saintpaulia ionantha subsp. pendula			20250930115406	-0.29039443	51.481712	out_of_ch_range	true	false	false	false	dbgi_010861		missing_extraction
+kew-botanical-gardens	75222	dbgi_010524	canonical	dbgi_010524	Selaginella kraussiana			20250930133555	-0.29035166	51.481857	out_of_ch_range	true	false	false	false	dbgi_010524		missing_extraction
+kew-botanical-gardens	75223	dbgi_010433	canonical	dbgi_010433	Heliconia schiedeana			20250930133731	-0.29034832	51.48189	out_of_ch_range	true	false	false	false	dbgi_010433		missing_extraction
+kew-botanical-gardens	75224	dbgi_010632	canonical	dbgi_010632	Passiflora hahnii			20250930133919	-0.29032424	51.48188	out_of_ch_range	true	false	false	false	dbgi_010632		missing_extraction
+kew-botanical-gardens	75225	dbgi_010404	canonical	dbgi_010404	Acanthus ueleensis			20250930134308	-0.29032832	51.481842	out_of_ch_range	true	false	false	false	dbgi_010404		missing_extraction
+kew-botanical-gardens	75226	dbgi_010544	canonical	dbgi_010544	Tectaria paradoxa			20250930134708	-0.29037333	51.48185	out_of_ch_range	true	false	false	false	dbgi_010544		missing_extraction
+kew-botanical-gardens	75227	dbgi_010472	canonical	dbgi_010472	Arachniodes chinensis			20250930135127	-0.29030332	51.481865	out_of_ch_range	true	false	false	false	dbgi_010472		missing_extraction
+kew-botanical-gardens	75228	dbgi_010575	canonical	dbgi_010575	Diplazium chinense			20250930135335	-0.29034168	51.48187	out_of_ch_range	true	false	false	false	dbgi_010575		missing_extraction
+kew-botanical-gardens	75229	dbgi_010424	canonical	dbgi_010424	Stenochlaena tenuifolia			20250930140410	-0.29054	51.481934	out_of_ch_range	true	false	false	false	dbgi_010424		missing_extraction
+kew-botanical-gardens	75230	dbgi_010729	canonical	dbgi_010729	Hedychium spicatum			20250930140557	-0.29058832	51.481907	out_of_ch_range	true	false	false	false	dbgi_010729		missing_extraction
+kew-botanical-gardens	75231	dbgi_010981	canonical	dbgi_010981	Adiantum peruvianum			20250930141037	-0.290535	51.481922	out_of_ch_range	true	false	false	false	dbgi_010981		missing_extraction
+kew-botanical-gardens	75232	dbgi_010554	canonical	dbgi_010554	Calathea varians			20250930141217	-0.290535	51.481922	out_of_ch_range	true	false	false	false	dbgi_010554		missing_extraction
+kew-botanical-gardens	75233	dbgi_010467	canonical	dbgi_010467	Microsorum punctatum			20250930141728	-0.29056334	51.481895	out_of_ch_range	true	false	false	false	dbgi_010467		missing_extraction
+kew-botanical-gardens	75234	dbgi_010996	canonical	dbgi_010996	Adiantum peruvianum			20250930142116	-0.29052168	51.481922	out_of_ch_range	true	false	false	false	dbgi_010996		missing_extraction
+kew-botanical-gardens	75235	dbgi_010733	canonical	dbgi_010733	Aglaomorpha splendens			20250930142311	-0.29050833	51.481903	out_of_ch_range	true	false	false	false	dbgi_010733		missing_extraction
+kew-botanical-gardens	75236	dbgi_010837	canonical	dbgi_010837	Blechnum moorei			20250930142953	-0.29045832	51.481922	out_of_ch_range	true	false	false	false	dbgi_010837		missing_extraction
+kew-botanical-gardens	75237	dbgi_010749	canonical	dbgi_010749	Diplazium esculentum			20250930143121	-0.29044777	51.481915	out_of_ch_range	true	false	false	false	dbgi_010749		missing_extraction
+kew-botanical-gardens	75238	dbgi_010739	canonical	dbgi_010739	Selaginella lyallii			20250930150211	-0.290465	51.4819	out_of_ch_range	true	false	false	false	dbgi_010739		missing_extraction
+kew-botanical-gardens	75239	dbgi_010728	canonical	dbgi_010728	Pronephrium asperum			20250930150349	-0.29053	51.48191	out_of_ch_range	true	false	false	false	dbgi_010728		missing_extraction
+kew-botanical-gardens	75240	dbgi_010744	canonical	dbgi_010744	Pinanga coronata			20250930151136	-0.29058832	51.48192	out_of_ch_range	true	false	false	false	dbgi_010744		missing_extraction
+kew-botanical-gardens	75241	dbgi_010830	canonical	dbgi_010830	Selaginella obtusa			20250930151459	-0.29053333	51.48193	out_of_ch_range	true	false	false	false	dbgi_010830		missing_extraction
+kew-botanical-gardens	75242	dbgi_010774	canonical	dbgi_010774	Selaginella elmeri			20250930151659	-0.29058167	51.481953	out_of_ch_range	true	false	false	false	dbgi_010774		missing_extraction
+kew-botanical-gardens	75243	dbgi_010857	canonical	dbgi_010857	Selaginella braunii			20250930151808	-0.29059666	51.48193	out_of_ch_range	true	false	false	false	dbgi_010857		missing_extraction
+kew-botanical-gardens	75244	dbgi_010958	canonical	dbgi_010958	Xanthosoma sagittifolium			20250930152207	-0.290595	51.481926	out_of_ch_range	true	false	false	false	dbgi_010958		missing_extraction
+kew-botanical-gardens	75245	dbgi_010976	canonical	dbgi_010976	Pinanga coronata			20250930152529	-0.29052	51.48192	out_of_ch_range	true	false	false	false	dbgi_010976		missing_extraction
+kew-botanical-gardens	75246	dbgi_010747	canonical	dbgi_010747	Adiantum polyphyllum			20250930152915	-0.29060835	51.48189	out_of_ch_range	true	false	false	false	dbgi_010747		missing_extraction
+kew-botanical-gardens	75247	dbgi_010722	canonical	dbgi_010722	Medinilla intermedia			20250930153329	-0.29058	51.48193	out_of_ch_range	true	false	false	false	dbgi_010722		missing_extraction
+kew-botanical-gardens	75248	dbgi_010675	canonical	dbgi_010675	Medinilla intermedia			20250930153455	-0.29054832	51.481926	out_of_ch_range	true	false	false	false	dbgi_010675		missing_extraction
+kew-botanical-gardens	75249	dbgi_010889	canonical	dbgi_010889	Hedychium coronarium			20250930153800	-0.29064834	51.481884	out_of_ch_range	true	false	false	false	dbgi_010889		missing_extraction
+kew-botanical-gardens	75250	dbgi_010827	canonical	dbgi_010827	Hedychium coronarium			20250930153919	-0.29064834	51.481884	out_of_ch_range	true	false	false	false	dbgi_010827		missing_extraction
+kew-botanical-gardens	75251	dbgi_010866	canonical	dbgi_010866	Coelogyne			20250930154153	-0.290825	51.481922	out_of_ch_range	true	false	false	false	dbgi_010866		missing_extraction
+kew-botanical-gardens	75252	dbgi_010856	canonical	dbgi_010856	Coelogyne			20250930154336	-0.290825	51.481922	out_of_ch_range	true	false	false	false	dbgi_010856		missing_extraction
+kew-botanical-gardens	75253	dbgi_010567	canonical	dbgi_010567	Woodwardia unigemmata			20250930133651	-0.2904443	51.481915	out_of_ch_range	true	false	false	false	dbgi_010567		missing_extraction
+kew-botanical-gardens	75254	dbgi_010513	canonical	dbgi_010513	Aeschynanthus pulcher			20250930134128	-0.2904389	51.48193	out_of_ch_range	true	false	false	false	dbgi_010513		missing_extraction
+kew-botanical-gardens	75255	dbgi_010629	canonical	dbgi_010629	Adiantum raddianum			20250930134518	-0.29039964	51.48194	out_of_ch_range	true	false	false	false	dbgi_010629		missing_extraction
+kew-botanical-gardens	75256	dbgi_010529	canonical	dbgi_010529	Agapetes serpens			20250930135005	-0.29033688	51.48187	out_of_ch_range	true	false	false	false	dbgi_010529		missing_extraction
+kew-botanical-gardens	75257	dbgi_010631	canonical	dbgi_010631	Aglaomorpha splendens			20250930135656	-0.2902783	51.48185	out_of_ch_range	true	false	false	false	dbgi_010631		missing_extraction
+kew-botanical-gardens	75258	dbgi_010562	canonical	dbgi_010562	Selaginella caulescens var. belulla			20250930140422	-0.2905388	51.48195	out_of_ch_range	true	false	false	false	dbgi_010562		missing_extraction
+kew-botanical-gardens	75259	dbgi_010634	canonical	dbgi_010634	Diplazium esculentum			20250930140709	-0.29057512	51.481953	out_of_ch_range	true	false	false	false	dbgi_010634		missing_extraction
+kew-botanical-gardens	75260	dbgi_010966	canonical	dbgi_010966	Selaginella serpens			20250930141033	-0.2905433	51.48199	out_of_ch_range	true	false	false	false	dbgi_010966		missing_extraction
+kew-botanical-gardens	75261	dbgi_010462	canonical	dbgi_010462	Aglaomorpha splendens			20250930141411	-0.290543	51.481964	out_of_ch_range	true	false	false	false	dbgi_010462		missing_extraction
+kew-botanical-gardens	75262	dbgi_011001	canonical	dbgi_011001	Bolbitis singaporensis			20250930141752	-0.29049888	51.48194	out_of_ch_range	true	false	false	false	dbgi_011001		missing_extraction
+kew-botanical-gardens	75263	dbgi_010971	canonical	dbgi_010971	Microsorum pappei			20250930142146	-0.2905082	51.481945	out_of_ch_range	true	false	false	false	dbgi_010971		missing_extraction
+kew-botanical-gardens	75264	dbgi_010991	canonical	dbgi_010991	Stromanthe tonckat			20250930142939	-0.29046756	51.481968	out_of_ch_range	true	false	false	false	dbgi_010991		missing_extraction
+kew-botanical-gardens	75265	dbgi_010743	canonical	dbgi_010743	Dennstaedtia adiantoides			20250930143232	-0.29044098	51.48196	out_of_ch_range	true	false	false	false	dbgi_010743		missing_extraction
+kew-botanical-gardens	75266	dbgi_010783	canonical	dbgi_010783	Polypodium			20250930150037	-0.29056606	51.48193	out_of_ch_range	true	false	false	false	dbgi_010783		missing_extraction
+kew-botanical-gardens	75267	dbgi_010817	canonical	dbgi_010817	Selaginella kraussiana var. brownii			20250930150347	-0.29061803	51.48192	out_of_ch_range	true	false	false	false	dbgi_010817		missing_extraction
+kew-botanical-gardens	75268	dbgi_010955	canonical	dbgi_010955	Asplenium bipinnatifidum			20250930150911	-0.29059157	51.481907	out_of_ch_range	true	false	false	false	dbgi_010955		missing_extraction
+kew-botanical-gardens	75269	dbgi_010752	canonical	dbgi_010752	Marattia salicina			20250930151432	-0.2905984	51.481915	out_of_ch_range	true	false	false	false	dbgi_010752		missing_extraction
+kew-botanical-gardens	75270	dbgi_010986	canonical	dbgi_010986	Caladium bicolor			20250930151724	-0.29058644	51.481934	out_of_ch_range	true	false	false	false	dbgi_010986		missing_extraction
+kew-botanical-gardens	75271	dbgi_010832	canonical	dbgi_010832	Polypodium			20250930152051	-0.29058197	51.481953	out_of_ch_range	true	false	false	false	dbgi_010832		missing_extraction
+kew-botanical-gardens	75272	dbgi_010655	canonical	dbgi_010655	Blechnum moorei			20250930152608	-0.29043776	51.4819	out_of_ch_range	true	false	false	false	dbgi_010655		missing_extraction
+kew-botanical-gardens	75273	dbgi_010822	canonical	dbgi_010822	Selaginella velutina			20250930152944	-0.29052228	51.4819	out_of_ch_range	true	false	false	false	dbgi_010822		missing_extraction
+kew-botanical-gardens	75274	dbgi_010754	canonical	dbgi_010754	Clidemia petiolaris			20250930153351	-0.29067612	51.481964	out_of_ch_range	true	false	false	false	dbgi_010754		missing_extraction
+kew-botanical-gardens	75275	dbgi_010851	canonical	dbgi_010851	Clidemia petiolaris			20250930153530	-0.29067537	51.48196	out_of_ch_range	true	false	false	false	dbgi_010851		missing_extraction
+kew-botanical-gardens	75276	dbgi_010887	canonical	dbgi_010887	Clidemia petiolaris			20250930153808	-0.290662	51.481945	out_of_ch_range	true	false	false	false	dbgi_010887		missing_extraction
+kew-botanical-gardens	75277	dbgi_010950	canonical	dbgi_010950	Polypodium subauriculatum			20250930154648	-0.29071835	51.481976	out_of_ch_range	true	false	false	false	dbgi_010950		missing_extraction
+kew-botanical-gardens	75278	dbgi_010940	canonical	dbgi_010940	Selaginella martensii			20250930155012	-0.29069772	51.48203	out_of_ch_range	true	false	false	false	dbgi_010940		missing_extraction
+kew-botanical-gardens	75279	dbgi_010593	canonical	dbgi_010593	Sansevieria aethiopica			20251001094906	-0.2907386	51.481514	out_of_ch_range	true	false	false	false	dbgi_010593		missing_extraction
+kew-botanical-gardens	75280	dbgi_010623	canonical	dbgi_010623	Haworthia herrei			20251001095335	-0.2907399	51.48149	out_of_ch_range	true	false	false	false	dbgi_010623		missing_extraction
+kew-botanical-gardens	75281	dbgi_010843	canonical	dbgi_010843	Sansevieria dooneri			20251001100124	-0.2907424	51.48148	out_of_ch_range	true	false	false	false	dbgi_010843		missing_extraction
+kew-botanical-gardens	75282	dbgi_010564	canonical	dbgi_010564	Haworthia × rigida			20251001100634	-0.29070982	51.481335	out_of_ch_range	true	false	false	false	dbgi_010564		missing_extraction
+kew-botanical-gardens	75283	dbgi_010626	canonical	dbgi_010626	Haworthia × rigida			20251001100831	-0.29070982	51.481335	out_of_ch_range	true	false	false	false	dbgi_010626		missing_extraction
+kew-botanical-gardens	75284	dbgi_010499	canonical	dbgi_010499	Pyrenacantha malvifolia			20251001101557	-0.29075417	51.48131	out_of_ch_range	true	false	false	false	dbgi_010499		missing_extraction
+kew-botanical-gardens	75285	dbgi_010616	canonical	dbgi_010616	Pyrenacantha malvifolia			20251001101645	-0.29075417	51.48131	out_of_ch_range	true	false	false	false	dbgi_010616		missing_extraction
+kew-botanical-gardens	75286	dbgi_010545	canonical	dbgi_010545	Haworthia coarctata			20251001102234	-0.290785	51.481277	out_of_ch_range	true	false	false	false	dbgi_010545		missing_extraction
+kew-botanical-gardens	75287	dbgi_010911	canonical	dbgi_010911	Haworthia coarctata			20251001102331	-0.290785	51.481277	out_of_ch_range	true	false	false	false	dbgi_010911		missing_extraction
+kew-botanical-gardens	75288	dbgi_010585	canonical	dbgi_010585	Acrodon subulatus			20251001102828	-0.29077506	51.481262	out_of_ch_range	true	false	false	false	dbgi_010585		missing_extraction
+kew-botanical-gardens	75289	dbgi_010482	canonical	dbgi_010482	Catharanthus roseus			20251001094707	-0.29070166	51.481613	out_of_ch_range	true	false	false	false	dbgi_010482		missing_extraction
+kew-botanical-gardens	75290	dbgi_010596	canonical	dbgi_010596	Catharanthus roseus			20251001094813	-0.29075667	51.481483	out_of_ch_range	true	false	false	false	dbgi_010596		missing_extraction
+kew-botanical-gardens	75291	dbgi_010601	canonical	dbgi_010601	Kalanchoe bracteata			20251001095130	-0.29068667	51.481472	out_of_ch_range	true	false	false	false	dbgi_010601		missing_extraction
+kew-botanical-gardens	75292	dbgi_010466	canonical	dbgi_010466	Albizia atakataka			20251001095559	-0.290715	51.481483	out_of_ch_range	true	false	false	false	dbgi_010466		missing_extraction
+kew-botanical-gardens	75293	dbgi_010494	canonical	dbgi_010494	Xerosicyos danguyi			20251001095755	-0.29059833	51.48153	out_of_ch_range	true	false	false	false	dbgi_010494		missing_extraction
+kew-botanical-gardens	75294	dbgi_010636	canonical	dbgi_010636	Kalanchoe bracteata			20251001100015	-0.29065448	51.4815	out_of_ch_range	true	false	false	false	dbgi_010636		missing_extraction
+kew-botanical-gardens	75295	dbgi_010523	canonical	dbgi_010523	Kalanchoe			20251001100303	-0.29063165	51.481503	out_of_ch_range	true	false	false	false	dbgi_010523		missing_extraction
+kew-botanical-gardens	75296	dbgi_010489	canonical	dbgi_010489	Tetradenia nervosa			20251001101051	-0.29075	51.481445	out_of_ch_range	true	false	false	false	dbgi_010489		missing_extraction
+kew-botanical-gardens	75297	dbgi_010419	canonical	dbgi_010419	Phyllarthron bernierianum			20251001101740	-0.29074332	51.481472	out_of_ch_range	true	false	false	false	dbgi_010419		missing_extraction
+kew-botanical-gardens	75298	dbgi_010429	canonical	dbgi_010429	Bryophyllum beauverdii			20251001102451	-0.29077	51.48142	out_of_ch_range	true	false	false	false	dbgi_010429		missing_extraction
+kew-botanical-gardens	75299	dbgi_010456	canonical	dbgi_010456	Bryophyllum beauverdii			20251001102608	-0.29077	51.48142	out_of_ch_range	true	false	false	false	dbgi_010456		missing_extraction
+kew-botanical-gardens	75300	dbgi_010599	canonical	dbgi_010599	Senecio crassissimus			20251001102749	-0.29079166	51.481415	out_of_ch_range	true	false	false	false	dbgi_010599		missing_extraction
+kew-botanical-gardens	75301	dbgi_010454	canonical	dbgi_010454	Kalanchoe synsepala			20251001103122	-0.29075333	51.481422	out_of_ch_range	true	false	false	false	dbgi_010454		missing_extraction
+kew-botanical-gardens	75302	dbgi_010638	canonical	dbgi_010638	Nauplius intermedius			20251001101032	-0.29066554	51.481262	out_of_ch_range	true	false	false	false	dbgi_010638		missing_extraction
+kew-botanical-gardens	75303	dbgi_010588	canonical	dbgi_010588	Nauplius intermedius			20251001101637	-0.2906225	51.481285	out_of_ch_range	true	false	false	false	dbgi_010588		missing_extraction
+kew-botanical-gardens	75304	dbgi_010633	canonical	dbgi_010633	Canarina canariensis			20251001101841	-0.29061693	51.481277	out_of_ch_range	true	false	false	false	dbgi_010633		missing_extraction
+kew-botanical-gardens	75305	dbgi_010611	canonical	dbgi_010611	Aeonium canariense subsp. virgineum			20251001102105	-0.29062393	51.48127	out_of_ch_range	true	false	false	false	dbgi_010611		missing_extraction
+kew-botanical-gardens	75306	dbgi_010580	canonical	dbgi_010580	Phlomis purpurea			20251001102302	-0.2906222	51.48123	out_of_ch_range	true	false	false	false	dbgi_010580		missing_extraction
+kew-botanical-gardens	75307	dbgi_010563	canonical	dbgi_010563	Pancratium canariense			20251001102546	-0.29059857	51.481262	out_of_ch_range	true	false	false	false	dbgi_010563		missing_extraction
+kew-botanical-gardens	75308	dbgi_010550	canonical	dbgi_010550	Cyphostemma juttae			20251001104925	-0.29078302	51.481316	out_of_ch_range	true	false	false	false	dbgi_010550		missing_extraction
+kew-botanical-gardens	75309	dbgi_010477	canonical	dbgi_010477	Cyphostemma juttae			20251001105239	-0.29078466	51.481316	out_of_ch_range	true	false	false	false	dbgi_010477		missing_extraction
+kew-botanical-gardens	75310	dbgi_010461	canonical	dbgi_010461	Delosperma echinatum			20251001105540	-0.29077122	51.48131	out_of_ch_range	true	false	false	false	dbgi_010461		missing_extraction
+kew-botanical-gardens	75311	dbgi_010417	canonical	dbgi_010417	Bowiea volubilis			20251001105948	-0.29083145	51.481316	out_of_ch_range	true	false	false	false	dbgi_010417		missing_extraction
+kew-botanical-gardens	75312	dbgi_010418	canonical	dbgi_010418	Gasteria carinata var. verrucosa			20251001111340	-0.29086295	51.481335	out_of_ch_range	true	false	false	false	dbgi_010418		missing_extraction
+kew-botanical-gardens	75313	dbgi_010514	canonical	dbgi_010514	Astridia dinteri			20251001111557	-0.2908593	51.481358	out_of_ch_range	true	false	false	false	dbgi_010514		missing_extraction
+kew-botanical-gardens	75314	dbgi_010457	canonical	dbgi_010457	Pelargonium			20251001111859	-0.29086933	51.48135	out_of_ch_range	true	false	false	false	dbgi_010457		missing_extraction
+kew-botanical-gardens	75315	dbgi_010413	canonical	dbgi_010413	Pelargonium			20251001111950	-0.29086933	51.48135	out_of_ch_range	true	false	false	false	dbgi_010413		missing_extraction
+kew-botanical-gardens	75316	dbgi_010488	canonical	dbgi_010488	Dioscorea elephantipes			20251001113105	-0.29076612	51.481182	out_of_ch_range	true	false	false	false	dbgi_010488		missing_extraction
+kew-botanical-gardens	75317	dbgi_010635	canonical	dbgi_010635	Dioscorea elephantipes			20251001113433	-0.29076612	51.481182	out_of_ch_range	true	false	false	false	dbgi_010635		missing_extraction
+kew-botanical-gardens	75318	dbgi_010428	canonical	dbgi_010428	Aeonium holochrysum			20251001104839	-0.29061836	51.48129	out_of_ch_range	true	false	false	false	dbgi_010428		missing_extraction
+kew-botanical-gardens	75319	dbgi_010411	canonical	dbgi_010411	Echium wildpretii			20251001105112	-0.2906128	51.48125	out_of_ch_range	true	false	false	false	dbgi_010411		missing_extraction
+kew-botanical-gardens	75320	dbgi_010538	canonical	dbgi_010538	Sideritis argosphacelus			20251001105500	-0.2906227	51.48118	out_of_ch_range	true	false	false	false	dbgi_010538		missing_extraction
+kew-botanical-gardens	75321	dbgi_010434	canonical	dbgi_010434	Lavandula minutolii var. minutolii			20251001105651	-0.29063344	51.481155	out_of_ch_range	true	false	false	false	dbgi_010434		missing_extraction
+kew-botanical-gardens	75322	dbgi_010621	canonical	dbgi_010621	Lavandula minutolii var. minutolii			20251001105937	-0.29060626	51.481197	out_of_ch_range	true	false	false	false	dbgi_010621		missing_extraction
+kew-botanical-gardens	75323	dbgi_010442	canonical	dbgi_010442	Salvia canariensis			20251001110153	-0.29061976	51.481285	out_of_ch_range	true	false	false	false	dbgi_010442		missing_extraction
+kew-botanical-gardens	75324	dbgi_010541	canonical	dbgi_010541	Echium nervosum			20251001110915	-0.2906723	51.481243	out_of_ch_range	true	false	false	false	dbgi_010541		missing_extraction
+kew-botanical-gardens	75325	dbgi_010540	canonical	dbgi_010540	Lotus mascaensis			20251001111859	-0.29067358	51.481243	out_of_ch_range	true	false	false	false	dbgi_010540		missing_extraction
+kew-botanical-gardens	75326	dbgi_010625	canonical	dbgi_010625	Echium giganteum			20251001112108	-0.29063663	51.481174	out_of_ch_range	true	false	false	false	dbgi_010625		missing_extraction
+kew-botanical-gardens	75327	dbgi_010525	canonical	dbgi_010525	Echium hierrense			20251001112338	-0.2906505	51.481186	out_of_ch_range	true	false	false	false	dbgi_010525		missing_extraction
+kew-botanical-gardens	75328	dbgi_010551	canonical	dbgi_010551	Aeonium lindleyi subsp. lindleyi			20251001112907	-0.29061198	51.48123	out_of_ch_range	true	false	false	false	dbgi_010551		missing_extraction
+kew-botanical-gardens	75329	dbgi_010407	canonical	dbgi_010407	Maranta leuconeura			20251001114033	-0.29082835	51.481586	out_of_ch_range	true	false	false	false	dbgi_010407		missing_extraction
+kew-botanical-gardens	75330	dbgi_010548	canonical	dbgi_010548	Monolena primuliflora			20251001114726	-0.29082835	51.481586	out_of_ch_range	true	false	false	false	dbgi_010548		missing_extraction
+kew-botanical-gardens	75331	dbgi_010560	canonical	dbgi_010560	Monolena primuliflora			20251001115010	-0.2908063	51.481613	out_of_ch_range	true	false	false	false	dbgi_010560		missing_extraction
+kew-botanical-gardens	75332	dbgi_010414	canonical	dbgi_010414	Selaginella caulescens			20251001115942	-0.2907482	51.481747	out_of_ch_range	true	false	false	false	dbgi_010414		missing_extraction
+kew-botanical-gardens	75333	dbgi_010566	canonical	dbgi_010566	Microgramma reptans			20251001120311	-0.29086187	51.48197	out_of_ch_range	true	false	false	false	dbgi_010566		missing_extraction
+kew-botanical-gardens	75334	dbgi_010447	canonical	dbgi_010447	Campyloneurum phyllitidis			20251001120542	-0.29077947	51.481995	out_of_ch_range	true	false	false	false	dbgi_010447		missing_extraction
+kew-botanical-gardens	75335	dbgi_010609	canonical	dbgi_010609	Selaginella erythropus			20251001120804	-0.29085484	51.48199	out_of_ch_range	true	false	false	false	dbgi_010609		missing_extraction
+kew-botanical-gardens	75336	dbgi_010403	canonical	dbgi_010403	Adiantum			20251001120949	-0.29085484	51.48199	out_of_ch_range	true	false	false	false	dbgi_010403		missing_extraction
+kew-botanical-gardens	75337	dbgi_010630	canonical	dbgi_010630	Adiantum raddianum			20251001121253	-0.29082188	51.48198	out_of_ch_range	true	false	false	false	dbgi_010630		missing_extraction
+kew-botanical-gardens	75338	dbgi_010561	canonical	dbgi_010561	Kalanchoe marnieriana			20251001104838	-0.29078	51.4814	out_of_ch_range	true	false	false	false	dbgi_010561		missing_extraction
+kew-botanical-gardens	75339	dbgi_010432	canonical	dbgi_010432	Pelargonium xerophyton			20251001105105	-0.29083666	51.48136	out_of_ch_range	true	false	false	false	dbgi_010432		missing_extraction
+kew-botanical-gardens	75340	dbgi_010451	canonical	dbgi_010451	Pelargonium xerophyton			20251001105224	-0.29071334	51.48139	out_of_ch_range	true	false	false	false	dbgi_010451		missing_extraction
+kew-botanical-gardens	75341	dbgi_010506	canonical	dbgi_010506	Veltheimia bracteata			20251001111602	-0.29081666	51.48134	out_of_ch_range	true	false	false	false	dbgi_010506		missing_extraction
+kew-botanical-gardens	75342	dbgi_010558	canonical	dbgi_010558	Kleinia abyssinica			20251001111720	-0.29077	51.481327	out_of_ch_range	true	false	false	false	dbgi_010558		missing_extraction
+kew-botanical-gardens	75343	dbgi_010617	canonical	dbgi_010617	Aloidendron barberae			20251001111814	-0.29084167	51.48136	out_of_ch_range	true	false	false	false	dbgi_010617		missing_extraction
+kew-botanical-gardens	75344	dbgi_010555	canonical	dbgi_010555	Cyrtanthus sanguineus subsp. sanguineus			20251001112026	-0.29074165	51.481384	out_of_ch_range	true	false	false	false	dbgi_010555		missing_extraction
+kew-botanical-gardens	75345	dbgi_010509	canonical	dbgi_010509	Cyrtanthus sanguineus subsp. sanguineus			20251001112155	-0.29075167	51.48139	out_of_ch_range	true	false	false	false	dbgi_010509		missing_extraction
+kew-botanical-gardens	75346	dbgi_010458	canonical	dbgi_010458	Gasteria carinata var. verrucosa			20251001112825	-0.29084668	51.481308	out_of_ch_range	true	false	false	false	dbgi_010458		missing_extraction
+kew-botanical-gardens	75347	dbgi_010598	canonical	dbgi_010598	Gasteria carinata var. verrucosa			20251001112943	-0.29082334	51.481323	out_of_ch_range	true	false	false	false	dbgi_010598		missing_extraction
+kew-botanical-gardens	75348	dbgi_010507	canonical	dbgi_010507	Hanguana neglecta			20251001113847	-0.290755	51.4816	out_of_ch_range	true	false	false	false	dbgi_010507		missing_extraction
+kew-botanical-gardens	75349	dbgi_010476	canonical	dbgi_010476	Aglaonema commutatum var. maculatum			20251001115459	-0.29070333	51.482025	out_of_ch_range	true	false	false	false	dbgi_010476		missing_extraction
+kew-botanical-gardens	75350	dbgi_010644	canonical	dbgi_010644	Aglaonema commutatum var. maculatum			20251001115611	-0.290735	51.481995	out_of_ch_range	true	false	false	false	dbgi_010644		missing_extraction
+kew-botanical-gardens	75351	dbgi_010603	canonical	dbgi_010603	Aglaonema commutatum var. maculatum			20251001115724	-0.29083666	51.48201	out_of_ch_range	true	false	false	false	dbgi_010603		missing_extraction
+kew-botanical-gardens	75352	dbgi_010640	canonical	dbgi_010640	Begonia			20251001120249	-0.29075667	51.48178	out_of_ch_range	true	false	false	false	dbgi_010640		missing_extraction
+kew-botanical-gardens	75353	dbgi_010531	canonical	dbgi_010531	Begonia			20251001120428	-0.29078335	51.481777	out_of_ch_range	true	false	false	false	dbgi_010531		missing_extraction
+kew-botanical-gardens	75354	dbgi_010452	canonical	dbgi_010452	Medinilla pendula			20251001120903	-0.29066166	51.48169	out_of_ch_range	true	false	false	false	dbgi_010452		missing_extraction
+kew-botanical-gardens	75355	dbgi_010600	canonical	dbgi_010600	Medinilla pendula			20251001120958	-0.29066166	51.48169	out_of_ch_range	true	false	false	false	dbgi_010600		missing_extraction
+kew-botanical-gardens	75356	dbgi_010620	canonical	dbgi_010620	Calathea bella			20251001121407	-0.29050332	51.48172	out_of_ch_range	true	false	false	false	dbgi_010620		missing_extraction
+kew-botanical-gardens	75357	dbgi_010934	canonical	dbgi_010934	Impatiens niamniamensis			20251001122019	-0.29056	51.48203	out_of_ch_range	true	false	false	false	dbgi_010934		missing_extraction
+kew-botanical-gardens	75358	dbgi_010485	canonical	dbgi_010485	Impatiens niamniamensis			20251001122123	-0.29056	51.48203	out_of_ch_range	true	false	false	false	dbgi_010485		missing_extraction
+kew-botanical-gardens	75359	dbgi_011071	canonical	dbgi_011071	Passiflora citrina			20251001122338	-0.29048833	51.482033	out_of_ch_range	true	false	false	false	dbgi_011071		missing_extraction
+kew-botanical-gardens	75360	dbgi_010438	canonical	dbgi_010438	Caladium bicolor			20251001115236	-0.2907802	51.48179	out_of_ch_range	true	false	false	false	dbgi_010438		missing_extraction
+kew-botanical-gardens	75361	dbgi_010401	canonical	dbgi_010401	Aglaonema costatum			20251001120034	-0.29068577	51.48179	out_of_ch_range	true	false	false	false	dbgi_010401		missing_extraction
+kew-botanical-gardens	75362	dbgi_010486	canonical	dbgi_010486	Costus guanaiensis var. tarmicus			20251001120505	-0.29072917	51.481815	out_of_ch_range	true	false	false	false	dbgi_010486		missing_extraction
+kew-botanical-gardens	75363	dbgi_010521	canonical	dbgi_010521	Ctenanthe burle-marxii var. obscura			20251001121040	-0.2907811	51.48174	out_of_ch_range	true	false	false	false	dbgi_010521		missing_extraction
+kew-botanical-gardens	75364	dbgi_010481	canonical	dbgi_010481	Rhododendron macgregoriae			20251001122054	-0.29060814	51.482075	out_of_ch_range	true	false	false	false	dbgi_010481		missing_extraction
+kew-botanical-gardens	75365	dbgi_011119	canonical	dbgi_011119	Alyssum ligusticum			20251006100521	-0.2895388	51.481453	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+kew-botanical-gardens	75366	dbgi_011093	canonical	dbgi_011093	Acis autumnalis			20251006101149	-0.2893758	51.48155	out_of_ch_range	true	false	false	false	dbgi_011093		missing_extraction
+kew-botanical-gardens	75367	dbgi_011166	canonical	dbgi_011166	Vagaria parviflora			20251006101835	-0.28938392	51.48156	out_of_ch_range	true	false	false	false	dbgi_011166		missing_extraction
+kew-botanical-gardens	75368	dbgi_011053	canonical	dbgi_011053	Bulbinella hookeri			20251006104702	-0.29009682	51.481316	out_of_ch_range	true	false	false	false	dbgi_011053		missing_extraction
+kew-botanical-gardens	75369	dbgi_010460	canonical	dbgi_010460	Alyssum ligusticum			20251006094651	-0.28951854	51.48146	out_of_ch_range	true	false	false	false	dbgi_010460		missing_extraction
+kew-botanical-gardens	75370	dbgi_010470	canonical	dbgi_010470	Alyssum ligusticum			20251006095052	-0.2895346	51.481445	out_of_ch_range	true	false	false	false	dbgi_010470		missing_extraction
+kew-botanical-gardens	75371	dbgi_010549	canonical	dbgi_010549	Alyssum ligusticum			20251006095253	-0.28954336	51.481445	out_of_ch_range	true	false	false	false	dbgi_010549		missing_extraction
+kew-botanical-gardens	75372	dbgi_010533	canonical	dbgi_010533	Carduncellus pinnatus			20251006100850	-0.28959695	51.481506	out_of_ch_range	true	false	false	false	dbgi_010533		missing_extraction
+kew-botanical-gardens	75373	dbgi_010465	canonical	dbgi_010465	Sprekelia formosissima			20251006102503	-0.28961197	51.481846	out_of_ch_range	true	false	false	false	dbgi_010465		missing_extraction
+kew-botanical-gardens	75374	dbgi_011098	canonical	dbgi_011098	Moraea tricuspidata			20251006141629	-0.28912666	51.481964	out_of_ch_range	true	false	false	false	dbgi_011098		missing_extraction
+kew-botanical-gardens	75375	dbgi_011078	canonical	dbgi_011078	Tritonia drakensbergensis			20251006143901	-0.28943166	51.48149	out_of_ch_range	true	false	false	false	dbgi_011078		missing_extraction
+kew-botanical-gardens	75376	dbgi_011047	canonical	dbgi_011047	Ferraria crispa			20251006144251	-0.28948334	51.48144	out_of_ch_range	true	false	false	false	dbgi_011047		missing_extraction
+kew-botanical-gardens	75377	dbgi_011191	canonical	dbgi_011191	Pseudofumaria alba subsp. alba			20251006145025	-0.28961167	51.481457	out_of_ch_range	true	false	false	false	dbgi_011191		missing_extraction
+kew-botanical-gardens	75378	dbgi_011196	canonical	dbgi_011196	Pseudofumaria alba subsp. alba			20251006145135	-0.28961	51.48146	out_of_ch_range	true	false	false	false	dbgi_011196		missing_extraction
+kew-botanical-gardens	75379	dbgi_011073	canonical	dbgi_011073	Babiana framesii			20251006145536	-0.28956833	51.481445	out_of_ch_range	true	false	false	false	dbgi_011073		missing_extraction
+kew-botanical-gardens	75380	dbgi_011063	canonical	dbgi_011063	Pulmonaria angustifolia			20251006150133	-0.28983	51.481304	out_of_ch_range	true	false	false	false	dbgi_011063		missing_extraction
+kew-botanical-gardens	75381	dbgi_010543	canonical	dbgi_010543	Pachyphragma macrophyllum			20251006150437	-0.28982666	51.481354	out_of_ch_range	true	false	false	false	dbgi_010543		missing_extraction
+kew-botanical-gardens	75382	dbgi_011085	canonical	dbgi_011085	Olymposciadium caespitosum			20251006151436	-0.28957668	51.48125	out_of_ch_range	true	false	false	false	dbgi_011085		missing_extraction
+kew-botanical-gardens	75383	dbgi_010158	canonical	dbgi_010158	Pteropyrum olivieri			20251006151852	-0.28963	51.48123	out_of_ch_range	true	false	false	false	dbgi_010158		missing_extraction
+kew-botanical-gardens	75384	dbgi_010149	canonical	dbgi_010149	Pteropyrum olivieri			20251006152049	-0.289555	51.481293	out_of_ch_range	true	false	false	false	dbgi_010149		missing_extraction
+kew-botanical-gardens	75385	dbgi_010085	canonical	dbgi_010085	Fessia greilhuberi			20251006153145	-0.29011166	51.4811	out_of_ch_range	true	false	false	false	dbgi_010085		missing_extraction
+kew-botanical-gardens	75386	dbgi_010099	canonical	dbgi_010099	Derwentia perfoliata			20251006154802	-0.29011834	51.48124	out_of_ch_range	true	false	false	false	dbgi_010099		missing_extraction
+kew-botanical-gardens	75387	dbgi_010139	canonical	dbgi_010139	Hymenanthera alpina			20251006155110	-0.29005	51.481247	out_of_ch_range	true	false	false	false	dbgi_010139		missing_extraction
+kew-botanical-gardens	75388	dbgi_011181	canonical	dbgi_011181	Gazania linearis			20251006143131	-0.28937256	51.48162	out_of_ch_range	true	false	false	false	dbgi_011181		missing_extraction
+kew-botanical-gardens	75389	dbgi_011084	canonical	dbgi_011084	Tritonia drakensbergensis			20251006143932	-0.28947952	51.481445	out_of_ch_range	true	false	false	false	dbgi_011084		missing_extraction
+kew-botanical-gardens	75390	dbgi_011115	canonical	dbgi_011115	Ixia rapunculoides			20251006145037	-0.28953227	51.481472	out_of_ch_range	true	false	false	false	dbgi_011115		missing_extraction
+kew-botanical-gardens	75391	dbgi_011068	canonical	dbgi_011068	Ixia rapunculoides			20251006145131	-0.28953454	51.48147	out_of_ch_range	true	false	false	false	dbgi_011068		missing_extraction
+kew-botanical-gardens	75392	dbgi_011120	canonical	dbgi_011120	Dryas × suendermannii			20251006150115	-0.2897475	51.481304	out_of_ch_range	true	false	false	false	dbgi_011120		missing_extraction
+kew-botanical-gardens	75393	dbgi_010083	canonical	dbgi_010083	Puschkinia scilloides			20251006152027	-0.28963938	51.481182	out_of_ch_range	true	false	false	false	dbgi_010083		missing_extraction
+kew-botanical-gardens	75394	dbgi_010144	canonical	dbgi_010144	Hebe × loganioides			20251006154803	-0.2900357	51.481236	out_of_ch_range	true	false	false	false	dbgi_010144		missing_extraction
+kew-botanical-gardens	75395	dbgi_010490	canonical	dbgi_010490	Haworthia pearsonii			20251007102734	-0.2906961	51.481213	out_of_ch_range	true	false	false	false	dbgi_010490		missing_extraction
+kew-botanical-gardens	75396	dbgi_011103	canonical	dbgi_011103	Haworthia planifolia			20251007103159	-0.2907859	51.4811	out_of_ch_range	true	false	false	false	dbgi_011103		missing_extraction
+kew-botanical-gardens	75397	dbgi_010336	canonical	dbgi_010336	Hesperaloe nocturna			20251007103802	-0.2907494	51.481133	out_of_ch_range	true	false	false	false	dbgi_010336		missing_extraction
+kew-botanical-gardens	75398	dbgi_010590	canonical	dbgi_010590	Arthropteris palisotii			20251007112520	-0.29062602	51.481876	out_of_ch_range	true	false	false	false	dbgi_010590		missing_extraction
+kew-botanical-gardens	75399	dbgi_010140	canonical	dbgi_010140	Colysis wrightii			20251007113454	-0.29075617	51.4819	out_of_ch_range	true	false	false	false	dbgi_010140		missing_extraction
+kew-botanical-gardens	75400	dbgi_011108	canonical	dbgi_011108	Hemionitis achariorum			20251007113838	-0.29057893	51.481773	out_of_ch_range	true	false	false	false	dbgi_011108		missing_extraction
+kew-botanical-gardens	75401	dbgi_010105	canonical	dbgi_010105	Haworthia longiana			20251007100316	-0.29077435	51.481197	out_of_ch_range	true	false	false	false	dbgi_010105		missing_extraction
+kew-botanical-gardens	75402	dbgi_010135	canonical	dbgi_010135	Fockea capensis			20251007100906	-0.2907547	51.48135	out_of_ch_range	true	false	false	false	dbgi_010135		missing_extraction
+kew-botanical-gardens	75403	dbgi_010131	canonical	dbgi_010131	Fockea capensis			20251007101039	-0.2908381	51.48135	out_of_ch_range	true	false	false	false	dbgi_010131		missing_extraction
+kew-botanical-gardens	75404	dbgi_011035	canonical	dbgi_011035	Gasteria carinata var. verrucosa			20251007101506	-0.29085732	51.48128	out_of_ch_range	true	false	false	false	dbgi_011035		missing_extraction
+kew-botanical-gardens	75405	dbgi_010119	canonical	dbgi_010119	Aloiampelos ciliaris			20251007102235	-0.29077694	51.481297	out_of_ch_range	true	false	false	false	dbgi_010119		missing_extraction
+kew-botanical-gardens	75406	dbgi_011113	canonical	dbgi_011113	Bryophyllum beauverdii			20251007103211	-0.29072666	51.481445	out_of_ch_range	true	false	false	false	dbgi_011113		missing_extraction
+kew-botanical-gardens	75407	dbgi_010090	canonical	dbgi_010090	Xerosicyos danguyi			20251007103827	-0.29060715	51.48154	out_of_ch_range	true	false	false	false	dbgi_010090		missing_extraction
+kew-botanical-gardens	75408	dbgi_010100	canonical	dbgi_010100	Cyanotis foecunda			20251007105516	-0.29061928	51.481308	out_of_ch_range	true	false	false	false	dbgi_010100		missing_extraction
+kew-botanical-gardens	75409	dbgi_011058	canonical	dbgi_011058	Cyanotis somaliensis			20251007105856	-0.29065645	51.481342	out_of_ch_range	true	false	false	false	dbgi_011058		missing_extraction
+kew-botanical-gardens	75410	dbgi_010450	canonical	dbgi_010450	Selaginella kraussiana var. brownii			20251007112319	-0.29060176	51.481915	out_of_ch_range	true	false	false	false	dbgi_010450		missing_extraction
+kew-botanical-gardens	75411	dbgi_010597	canonical	dbgi_010597	Aglaomorpha splendens			20251007112956	-0.29050753	51.48194	out_of_ch_range	true	false	false	false	dbgi_010597		missing_extraction
+kew-botanical-gardens	75412	dbgi_010110	canonical	dbgi_010110	Marattia salicina			20251007113823	-0.29068252	51.481983	out_of_ch_range	true	false	false	false	dbgi_010110		missing_extraction
+kew-botanical-gardens	75413	dbgi_010114	canonical	dbgi_010114	Quercifilix zeilanica			20251007113947	-0.29068133	51.481968	out_of_ch_range	true	false	false	false	dbgi_010114		missing_extraction
+kew-botanical-gardens	75414	dbgi_010120	canonical	dbgi_010120	Marattia salicina			20251007114236	-0.29059595	51.481964	out_of_ch_range	true	false	false	false	dbgi_010120		missing_extraction
+kew-botanical-gardens	75415	dbgi_010145	canonical	dbgi_010145	Arthropteris orientalis			20251007115050	-0.2907113	51.48201	out_of_ch_range	true	false	false	false	dbgi_010145		missing_extraction
+kew-botanical-gardens	75416	dbgi_010389	canonical	dbgi_010389	Doodia media			20251007121143	-0.29087827	51.48189	out_of_ch_range	true	false	false	false	dbgi_010389		missing_extraction
+kew-botanical-gardens	75417	dbgi_010546	canonical	dbgi_010546	Haemanthus humilis subsp. hirsutus			20251007131947	-0.29078165	51.481243	out_of_ch_range	true	false	false	false	dbgi_010546		missing_extraction
+kew-botanical-gardens	75418	dbgi_010559	canonical	dbgi_010559	Crassula muscosa			20251007132256	-0.29081008	51.481236	out_of_ch_range	true	false	false	false	dbgi_010559		missing_extraction
+kew-botanical-gardens	75419	dbgi_010129	canonical	dbgi_010129	Phyllarthron bernierianum			20251007133639	-0.29061875	51.481464	out_of_ch_range	true	false	false	false	dbgi_010129		missing_extraction
+kew-botanical-gardens	75420	dbgi_010104	canonical	dbgi_010104	Gesneria pedicellaris			20251007140556	-0.29024392	51.481743	out_of_ch_range	true	false	false	false	dbgi_010104		missing_extraction
+kew-botanical-gardens	75421	dbgi_010128	canonical	dbgi_010128	Ctenanthe dasycarpa			20251007141518	-0.29039827	51.481644	out_of_ch_range	true	false	false	false	dbgi_010128		missing_extraction
+kew-botanical-gardens	75422	dbgi_010464	canonical	dbgi_010464	Ctenanthe dasycarpa			20251007141904	-0.2902918	51.48166	out_of_ch_range	true	false	false	false	dbgi_010464		missing_extraction
+kew-botanical-gardens	75423	dbgi_010436	canonical	dbgi_010436	Hemigraphis alternata			20251007142954	-0.29038718	51.48152	out_of_ch_range	true	false	false	false	dbgi_010436		missing_extraction
+kew-botanical-gardens	75424	dbgi_010440	canonical	dbgi_010440	Marantochloa holostachya			20251007143416	-0.2905188	51.481503	out_of_ch_range	true	false	false	false	dbgi_010440		missing_extraction
+kew-botanical-gardens	75425	dbgi_010570	canonical	dbgi_010570	Marantochloa holostachya			20251007143615	-0.29040256	51.48152	out_of_ch_range	true	false	false	false	dbgi_010570		missing_extraction
+kew-botanical-gardens	75426	dbgi_010468	canonical	dbgi_010468	Pithecoctenium aubletii			20251007144718	-0.290356	51.481403	out_of_ch_range	true	false	false	false	dbgi_010468		missing_extraction
+kew-botanical-gardens	75427	dbgi_010084	canonical	dbgi_010084	Pithecoctenium aubletii			20251007144911	-0.2904285	51.48151	out_of_ch_range	true	false	false	false	dbgi_010084		missing_extraction
+kew-botanical-gardens	75428	dbgi_010122	canonical	dbgi_010122	Canistropsis burchellii			20251007145916	-0.29043913	51.481606	out_of_ch_range	true	false	false	false	dbgi_010122		missing_extraction
+kew-botanical-gardens	75429	dbgi_010427	canonical	dbgi_010427	Nidularium scheremetiewii			20251007150411	-0.29055008	51.481594	out_of_ch_range	true	false	false	false	dbgi_010427		missing_extraction
+kew-botanical-gardens	75430	dbgi_010351	canonical	dbgi_010351	Canistrum viride			20251007153041	-0.2904804	51.481544	out_of_ch_range	true	false	false	false	dbgi_010351		missing_extraction
+kew-botanical-gardens	75431	dbgi_010134	canonical	dbgi_010134	Hesperaloe nocturna			20251007095522	-0.29072165	51.481045	out_of_ch_range	true	false	false	false	dbgi_010134		missing_extraction
+kew-botanical-gardens	75432	dbgi_010151	canonical	dbgi_010151	Aichryson laxum			20251007100113	-0.29078168	51.481144	out_of_ch_range	true	false	false	false	dbgi_010151		missing_extraction
+kew-botanical-gardens	75433	dbgi_010159	canonical	dbgi_010159	Pachyphytum coeruleum			20251007100619	-0.29059	51.481243	out_of_ch_range	true	false	false	false	dbgi_010159		missing_extraction
+kew-botanical-gardens	75434	dbgi_010124	canonical	dbgi_010124	Echeveria derenbergii			20251007101002	-0.29057333	51.481255	out_of_ch_range	true	false	false	false	dbgi_010124		missing_extraction
+kew-botanical-gardens	75435	dbgi_010152	canonical	dbgi_010152	Echeveria setosa var. minor			20251007101320	-0.29061666	51.481266	out_of_ch_range	true	false	false	false	dbgi_010152		missing_extraction
+kew-botanical-gardens	75436	dbgi_010132	canonical	dbgi_010132	Echeveria sedoides			20251007101805	-0.29053667	51.481297	out_of_ch_range	true	false	false	false	dbgi_010132		missing_extraction
+kew-botanical-gardens	75437	dbgi_010091	canonical	dbgi_010091	Echeveria leucotricha			20251007101935	-0.29046667	51.4813	out_of_ch_range	true	false	false	false	dbgi_010091		missing_extraction
+kew-botanical-gardens	75438	dbgi_010155	canonical	dbgi_010155	Hechtia tillandsioides			20251007102636	-0.29059333	51.481426	out_of_ch_range	true	false	false	false	dbgi_010155		missing_extraction
+kew-botanical-gardens	75439	dbgi_010160	canonical	dbgi_010160	Hechtia marnier-lapostollei			20251007103211	-0.29061666	51.48142	out_of_ch_range	true	false	false	false	dbgi_010160		missing_extraction
+kew-botanical-gardens	75440	dbgi_011118	canonical	dbgi_011118	Hechtia argentea			20251007103340	-0.29060212	51.481407	out_of_ch_range	true	false	false	false	dbgi_011118		missing_extraction
+kew-botanical-gardens	75441	dbgi_010095	canonical	dbgi_010095	Dyckia frigida			20251007103519	-0.290635	51.481422	out_of_ch_range	true	false	false	false	dbgi_010095		missing_extraction
+kew-botanical-gardens	75442	dbgi_010547	canonical	dbgi_010547	Hechtia podantha			20251007103650	-0.2906	51.481476	out_of_ch_range	true	false	false	false	dbgi_010547		missing_extraction
+kew-botanical-gardens	75443	dbgi_010502	canonical	dbgi_010502	Deuterocohnia lorentziana			20251007104252	-0.29066166	51.48142	out_of_ch_range	true	false	false	false	dbgi_010502		missing_extraction
+kew-botanical-gardens	75444	dbgi_010483	canonical	dbgi_010483	Dyckia encholirioides			20251007105052	-0.290595	51.481434	out_of_ch_range	true	false	false	false	dbgi_010483		missing_extraction
+kew-botanical-gardens	75445	dbgi_010341	canonical	dbgi_010341	Photinopteris speciosa			20251007111636	-0.29054666	51.482014	out_of_ch_range	true	false	false	false	dbgi_010341		missing_extraction
+kew-botanical-gardens	75446	dbgi_010125	canonical	dbgi_010125	Aglaomorpha splendens			20251007112251	-0.29050332	51.481903	out_of_ch_range	true	false	false	false	dbgi_010125		missing_extraction
+kew-botanical-gardens	75447	dbgi_011020	canonical	dbgi_011020	Microsorum pappei			20251007112749	-0.290465	51.481907	out_of_ch_range	true	false	false	false	dbgi_011020		missing_extraction
+kew-botanical-gardens	75448	dbgi_010321	canonical	dbgi_010321	Bolbitis singaporensis			20251007112939	-0.29045665	51.48193	out_of_ch_range	true	false	false	false	dbgi_010321		missing_extraction
+kew-botanical-gardens	75449	dbgi_010576	canonical	dbgi_010576	Colysis wrightii			20251007114010	-0.29068834	51.481907	out_of_ch_range	true	false	false	false	dbgi_010576		missing_extraction
+kew-botanical-gardens	75450	dbgi_010619	canonical	dbgi_010619	Meniscium reticulatum			20251007114720	-0.29073167	51.481995	out_of_ch_range	true	false	false	false	dbgi_010619		missing_extraction
+kew-botanical-gardens	75451	dbgi_010332	canonical	dbgi_010332	Trichodiadema densum			20251007131830	-0.29079834	51.481243	out_of_ch_range	true	false	false	false	dbgi_010332		missing_extraction
+kew-botanical-gardens	75452	dbgi_010516	canonical	dbgi_010516	Haemanthus humilis subsp. hirsutus			20251007132005	-0.290745	51.48125	out_of_ch_range	true	false	false	false	dbgi_010516		missing_extraction
+kew-botanical-gardens	75453	dbgi_010542	canonical	dbgi_010542	Gasteria rawlinsonii			20251007132405	-0.29077	51.481205	out_of_ch_range	true	false	false	false	dbgi_010542		missing_extraction
+kew-botanical-gardens	75454	dbgi_010123	canonical	dbgi_010123	Canarina canariensis			20251007133042	-0.29073167	51.48117	out_of_ch_range	true	false	false	false	dbgi_010123		missing_extraction
+kew-botanical-gardens	75455	dbgi_010148	canonical	dbgi_010148	Greenovia diplocycla			20251007133635	-0.290625	51.48123	out_of_ch_range	true	false	false	false	dbgi_010148		missing_extraction
+kew-botanical-gardens	75456	dbgi_010089	canonical	dbgi_010089	Nauplius intermedius			20251007133844	-0.2906	51.48122	out_of_ch_range	true	false	false	false	dbgi_010089		missing_extraction
+kew-botanical-gardens	75457	dbgi_010356	canonical	dbgi_010356	Nauplius intermedius			20251007133935	-0.29060167	51.481224	out_of_ch_range	true	false	false	false	dbgi_010356		missing_extraction
+kew-botanical-gardens	75458	dbgi_010552	canonical	dbgi_010552	Dracunculus canariensis			20251007134332	-0.29060835	51.48122	out_of_ch_range	true	false	false	false	dbgi_010552		missing_extraction
+kew-botanical-gardens	75459	dbgi_010579	canonical	dbgi_010579	Boucerosia frerei			20251007140039	-0.29029334	51.481445	out_of_ch_range	true	false	false	false	dbgi_010579		missing_extraction
+kew-botanical-gardens	75460	dbgi_010441	canonical	dbgi_010441	Strongylodon macrobotrys			20251007140254	-0.29033667	51.48147	out_of_ch_range	true	false	false	false	dbgi_010441		missing_extraction
+kew-botanical-gardens	75461	dbgi_010535	canonical	dbgi_010535	Amydrium zippelianum			20251007140523	-0.290315	51.48151	out_of_ch_range	true	false	false	false	dbgi_010535		missing_extraction
+kew-botanical-gardens	75462	dbgi_010475	canonical	dbgi_010475	Cryptocoryne ciliata			20251007142000	-0.29032832	51.481724	out_of_ch_range	true	false	false	false	dbgi_010475		missing_extraction
+kew-botanical-gardens	75463	dbgi_010474	canonical	dbgi_010474	Adenocalymma marginatum			20251007142318	-0.29026362	51.48165	out_of_ch_range	true	false	false	false	dbgi_010474		missing_extraction
+kew-botanical-gardens	75464	dbgi_010423	canonical	dbgi_010423	Adenocalymma marginatum			20251007142429	-0.29026362	51.48165	out_of_ch_range	true	false	false	false	dbgi_010423		missing_extraction
+kew-botanical-gardens	75465	dbgi_010557	canonical	dbgi_010557	Anthurium lindmanianum			20251007142750	-0.29026744	51.48164	out_of_ch_range	true	false	false	false	dbgi_010557		missing_extraction
+kew-botanical-gardens	75466	dbgi_010379	canonical	dbgi_010379	Lagenandra ovata			20251007142924	-0.29033166	51.481598	out_of_ch_range	true	false	false	false	dbgi_010379		missing_extraction
+kew-botanical-gardens	75467	dbgi_010487	canonical	dbgi_010487	Urospatha sagittifolia			20251007143529	-0.29035306	51.481556	out_of_ch_range	true	false	false	false	dbgi_010487		missing_extraction
+kew-botanical-gardens	75468	dbgi_010446	canonical	dbgi_010446	Ctenanthe lubbersiana			20251007144646	-0.29043335	51.481403	out_of_ch_range	true	false	false	false	dbgi_010446		missing_extraction
+kew-botanical-gardens	75469	dbgi_010384	canonical	dbgi_010384	Calathea loeseneri			20251007144851	-0.29042667	51.481426	out_of_ch_range	true	false	false	false	dbgi_010384		missing_extraction
+kew-botanical-gardens	75470	dbgi_010402	canonical	dbgi_010402	Goeppertia vaginata			20251007145218	-0.290465	51.481426	out_of_ch_range	true	false	false	false	dbgi_010402		missing_extraction
+kew-botanical-gardens	75471	dbgi_010512	canonical	dbgi_010512	Goeppertia albertii			20251007145322	-0.290455	51.481457	out_of_ch_range	true	false	false	false	dbgi_010512		missing_extraction
+kew-botanical-gardens	75472	dbgi_010102	canonical	dbgi_010102	Aechmea coelestis var. albomarginata			20251007152447	-0.29038835	51.4816	out_of_ch_range	true	false	false	false	dbgi_010102		missing_extraction
+kew-botanical-gardens	75473	dbgi_010536	canonical	dbgi_010536	Nidularium innocentii			20251007152728	-0.29045	51.481636	out_of_ch_range	true	false	false	false	dbgi_010536		missing_extraction
+kew-botanical-gardens	75474	dbgi_010153	canonical	dbgi_010153	Wercklea ferox			20251007152923	-0.29046	51.48171	out_of_ch_range	true	false	false	false	dbgi_010153		missing_extraction
+kew-botanical-gardens	75475	dbgi_010326	canonical	dbgi_010326	Calathea brasiliensis			20251007134120	-0.29040632	51.48165	out_of_ch_range	true	false	false	false	dbgi_010326		missing_extraction
+kew-botanical-gardens	75476	dbgi_010553	canonical	dbgi_010553	Brillantaisia nyanzarum			20251007134935	-0.2905313	51.481716	out_of_ch_range	true	false	false	false	dbgi_010553		missing_extraction
+kew-botanical-gardens	75477	dbgi_010094	canonical	dbgi_010094	Scindapsus pictus			20251007135303	-0.29068723	51.48191	out_of_ch_range	true	false	false	false	dbgi_010094		missing_extraction
+kew-botanical-gardens	75478	dbgi_010444	canonical	dbgi_010444	Anthurium bonplandii subsp. guayanum			20251007140506	-0.29067975	51.481613	out_of_ch_range	true	false	false	false	dbgi_010444		missing_extraction
+kew-botanical-gardens	75479	dbgi_010479	canonical	dbgi_010479	Culcasia mannii			20251007141700	-0.2904268	51.481598	out_of_ch_range	true	false	false	false	dbgi_010479		missing_extraction
+kew-botanical-gardens	75480	dbgi_010480	canonical	dbgi_010480	Anthurium × macrolobum			20251007142050	-0.2905133	51.48172	out_of_ch_range	true	false	false	false	dbgi_010480		missing_extraction
+kew-botanical-gardens	75481	dbgi_010117	canonical	dbgi_010117	Anthurium sellowianum			20251007145019	-0.29045472	51.481667	out_of_ch_range	true	false	false	false	dbgi_010117		missing_extraction
+kew-botanical-gardens	75482	dbgi_010532	canonical	dbgi_010532	Hydnophytum moseleyanum			20251007145523	-0.2904926	51.48184	out_of_ch_range	true	false	false	false	dbgi_010532		missing_extraction
+kew-botanical-gardens	75483	dbgi_010130	canonical	dbgi_010130	Anthurium wendlingeri			20251007145901	-0.2904376	51.48168	out_of_ch_range	true	false	false	false	dbgi_010130		missing_extraction
+kew-botanical-gardens	75484	dbgi_010493	canonical	dbgi_010493	Anthurium llewellynii			20251007151312	-0.29055038	51.48182	out_of_ch_range	true	false	false	false	dbgi_010493		missing_extraction
+kew-botanical-gardens	75485	dbgi_010087	canonical	dbgi_010087	Anthurium cordatum			20251007151750	-0.29040474	51.48165	out_of_ch_range	true	false	false	false	dbgi_010087		missing_extraction
+kew-botanical-gardens	75486	dbgi_010156	canonical	dbgi_010156	Anthurium willdenowii			20251007152110	-0.2904051	51.481785	out_of_ch_range	true	false	false	false	dbgi_010156		missing_extraction
+kew-botanical-gardens	75487	dbgi_010126	canonical	dbgi_010126	Anthurium andraeanum			20251007153539	-0.2904047	51.48165	out_of_ch_range	true	false	false	false	dbgi_010126		missing_extraction

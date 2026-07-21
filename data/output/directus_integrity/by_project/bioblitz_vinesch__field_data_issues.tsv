@@ -1,0 +1,258 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issues
+bioblitz_vinesch	67609	vine_000268	canonical		Trifolium repens			20240608092333	7.874489	46.26164	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67610	vine_000286	canonical		Trifolium repens			20240608093126	7.8744893	46.26164	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67611	vine_000385	canonical		Lepidoptera			20240608093601	7.8744903	46.26165	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67612	vine_000282	canonical		Vitis vinifera			20240608095030	7.8745646	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67613	vine_000273	canonical		Vitis vinifera			20240608095438	7.874546	46.26165	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67614	vine_000384	canonical		Vitis vinifera			20240608095744	7.8745475	46.261627	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67615	vine_000279	canonical		Apis mellifera			20240608100102	7.874536	46.261616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67616	vine_000283	canonical		Insecta			20240608100447	7.874519	46.261616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67617	vine_000343	canonical		Vitis vinifera			20240608100733	7.8745236	46.26163	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67618	vine_000287	canonical		Angiospermae			20240608101114	7.8745546	46.261623	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67619	vine_000314	canonical		Vitis vinifera			20240608101522	7.874529	46.26161	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67620	vine_000262	canonical		Vitis vinifera			20240608101837	7.874515	46.261627	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67621	vine_000290	canonical		Hymenoptera			20240608102151	7.8745303	46.261623	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67622	vine_000310	canonical		Lepidoptera			20240608111458	7.874495	46.261677	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67623	vine_000267	canonical		Artemisia			20240608114332	7.874601	46.26168	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67624	vine_000471	canonical		Medicago lupulina			20240608115534	7.8744974	46.26171	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67625	vine_000463	canonical		Clinopodium acinos			20240608121044	7.8744755	46.26162	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67626	vine_000394	canonical		Insecta			20240608113531	7.874642	46.26181	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67627	vine_000415	canonical		Plantae			20240608120542	7.8745995	46.2618	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67628	vine_000405	canonical		Insecta			20240608121210	7.8745995	46.2618	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67629	vine_000366	canonical		Insecta			20240608121523	7.8745995	46.2618	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67630	vine_000313	canonical		Insecta			20240608122255	7.8745995	46.2618	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67631	vine_000390	canonical		Insecta			20240608123554	7.8745995	46.2618	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67632	vine_000487	canonical		Poaceae			20240608115711	7.8743887	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67633	vine_000500	canonical		Angiospermae			20240608120320	7.8743887	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67634	vine_000495	canonical		Angiospermae			20240608120822	7.8743887	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67635	vine_000484	canonical		Angiospermae			20240608122844	7.874253	46.261707	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67636	vine_000483	canonical		Angiospermae			20240608123517	7.8741713	46.261707	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67637	vine_000488	canonical		Angiospermae			20240608123842	7.874155	46.26171	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67638	vine_000491	canonical		Angiospermae			20240608124459	7.8741455	46.261726	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67639	vine_000492	canonical		Angiospermae			20240608125014	7.8741217	46.261757	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67640	vine_000494	canonical		Prunus			20240608125650	7.874157	46.261745	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67641	vine_000496	canonical		Angiospermae			20240608130045	7.8741603	46.26174	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67642	vine_000372	canonical		Lepidoptera			20240608121147	7.8748493	46.261528	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67643	vine_000177	canonical		Insecta			20240608123637	7.874565	46.261593	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67644	vine_000234	canonical		Poaceae			20240608124125	7.874591	46.261578	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67645	vine_000256	canonical		Coleoptera			20240608124559	7.8745804	46.261566	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67646	vine_000244	canonical		Heteroptera			20240608125029	7.8745866	46.261555	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67647	vine_000170	canonical		Angiospermae			20240608125414	7.8745875	46.261593	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67648	vine_000473	canonical		Saponaria ocymoides			20240608122016	7.874591	46.261475	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67649	vine_000467	canonical		Insecta			20240608123122	7.874572	46.261482	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67650	vine_000469	canonical		Lactuca perennis			20240608123535	7.874572	46.261482	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67651	vine_000465	canonical		Veronica persica			20240608124209	7.8745785	46.26149	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67652	vine_000475	canonical		Linaria angustissima			20240608124704	7.8745785	46.26149	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67653	vine_000462	canonical		Insecta			20240608125421	7.8745785	46.26149	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67654	vine_000466	canonical		Trifolium pratense			20240608130343	7.8745785	46.26149	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67655	vine_000480	canonical		Insecta			20240608130833	7.874593	46.261505	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67656	vine_000224	canonical		Bryophyta			20240608130120	7.8744693	46.261494	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67657	vine_000227	canonical		Angiospermae			20240608130538	7.874482	46.26149	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67658	vine_000196	canonical		Bryophyta			20240608130855	7.8744597	46.261494	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67659	vine_000241	canonical		Bryophyta			20240608131318	7.874471	46.261494	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67660	vine_000219	canonical		Angiospermae			20240608131704	7.8744664	46.261486	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67661	vine_000367	canonical		Plantae			20240608132118	7.874459	46.261486	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67662	vine_000254	canonical		Convolvulus arvensis			20240608115323	7.874411	46.261658	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67663	vine_000395	canonical		Juglans regia			20240608120203	7.8744683	46.26164	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67664	vine_000274	canonical		Heracleum			20240608120917	7.874226	46.261494	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67665	vine_000245	canonical		Humulus lupulus			20240608122132	7.874292	46.261673	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67666	vine_000192	canonical		Asparagus officinalis			20240608123114	7.874295	46.261723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67667	vine_000284	canonical		Torilis arvensis			20240608123945	7.8743353	46.261734	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67668	vine_000373	canonical		Verbascum nigrum			20240608124645	7.8743916	46.261433	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67669	vine_000251	canonical		Campanula trachelium			20240608125031	7.874391	46.261425	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67670	vine_000137	canonical		Tragopogon dubius			20240608130217	7.874512	46.261623	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67671	vine_000175	canonical		Melica ciliata			20240608130710	7.8745017	46.261627	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67672	vine_000255	canonical		Artemisia			20240608115434	7.874531	46.26175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67673	vine_000236	canonical		Plantae			20240608120414	7.874517	46.26175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67674	vine_000247	canonical		Plantae			20240608120813	7.8745165	46.26175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67675	vine_000266	canonical		Plantae			20240608121147	7.8745112	46.26175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67676	vine_000443	canonical		Insecta			20240608121704	7.8745184	46.26175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67677	vine_000437	canonical		Insecta			20240608121926	7.8745184	46.26175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67678	vine_000436	canonical		Insecta			20240608122227	7.8745136	46.26175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67679	vine_000213	canonical		Insecta			20240608122522	7.874511	46.261753	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67680	vine_000270	canonical		Plantae			20240608123001	7.874508	46.261753	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67681	vine_000459	canonical		Insecta			20240608123346	7.874506	46.26175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67682	vine_000456	canonical		Juglans regia			20240608125057	7.874491	46.261696	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67683	vine_000164	canonical		Plantae			20240608125405	7.8744206	46.261673	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67684	vine_000243	canonical		Convolvulaceae			20240608125706	7.8744164	46.261673	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67685	vine_000197	canonical		Sedum album			20240608114347	7.874507	46.2616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67686	vine_000408	canonical		Potentilla			20240608115121	7.874507	46.2616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67687	vine_000246	canonical		Fragaria vesca			20240608115901	7.874507	46.2616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67688	vine_000276	canonical		Carduus acanthoides			20240608120421	7.874507	46.2616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67689	vine_000252	canonical		Trifolium			20240608121249	7.8742228	46.26151	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67690	vine_000230	canonical		Orobanche			20240608123218	7.8742967	46.26173	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67691	vine_000248	canonical		Galium aparine			20240608123853	7.8742967	46.26173	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67692	vine_000260	canonical		Plantago media			20240608125128	7.8746433	46.26148	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67693	vine_000278	canonical		Medicago lupulina			20240608130323	7.8745785	46.261486	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67694	vine_000380	canonical		Insecta			20240608152321	7.874558	46.26171	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67695	vine_000374	canonical		Insecta			20240608152743	7.874558	46.26171	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67696	vine_000493	canonical		Angiospermae			20240608150737	7.8744597	46.26153	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67697	vine_000489	canonical		Plantae			20240608151452	7.874486	46.26154	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67698	vine_000486	canonical		Quercus			20240608151953	7.8744864	46.26155	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67699	vine_000497	canonical		Plantae			20240608152611	7.8745046	46.261562	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67700	vine_000499	canonical		Angiospermae			20240608153008	7.8745065	46.261562	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67701	vine_000396	canonical		Fungi			20240608154456	7.874558	46.26171	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67702	vine_000381	canonical		Insecta			20240608155319	7.874558	46.26171	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67703	vine_000172	canonical		Heteroptera			20240608150702	7.874507	46.26152	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67704	vine_000222	canonical		Heteroptera			20240608151005	7.8744974	46.26152	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67705	vine_000321	canonical		Angiospermae			20240608151310	7.8744555	46.261497	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67706	vine_000240	canonical		Angiospermae			20240608151638	7.8744683	46.261494	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67707	vine_000264	canonical		Poaceae			20240608152114	7.874466	46.261497	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67708	vine_000275	canonical		Poaceae			20240608152614	7.8744636	46.2615	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67709	vine_000253	canonical		Lycoperdon			20240608153736	7.8743057	46.2612	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67710	vine_000082	canonical		Berberis vulgaris			20240608154625	7.8742476	46.261063	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67711	vine_000228	canonical		Asteraceae			20240608155733	7.87412	46.26091	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67712	vine_000401	canonical		Insecta			20240608162821	7.874558	46.26171	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67713	vine_000410	canonical		Euphorbia			20240608162940	7.874558	46.26172	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67714	vine_000166	canonical		Stylommatophora			20240608160526	7.874345	46.261066	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67715	vine_000220	canonical		Fungi			20240608161045	7.8743615	46.261196	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67716	vine_000086	canonical		Berberis vulgaris			20240608161436	7.8742304	46.26106	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67717	vine_000092	canonical		Coleoptera			20240608162022	7.874361	46.26119	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67718	vine_000226	canonical		Taraxacum officinale			20240608162258	7.874361	46.26119	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67719	vine_000097	canonical		Orthoptera			20240608162952	7.87434	46.261253	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67720	vine_000232	canonical		Coleoptera			20240608163518	7.874467	46.26153	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67721	vine_000468	canonical		Daucus carota			20240608145948	7.874601	46.261513	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67722	vine_000470	canonical		Trifolium repens			20240608150456	7.874608	46.2615	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67723	vine_000476	canonical		Geranium pyrenaicum			20240608151042	7.8746142	46.26152	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67724	vine_000477	canonical		Vitis vinifera			20240608151657	7.874605	46.26153	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67725	vine_000478	canonical		Hyssopus officinalis			20240608152127	7.874638	46.261597	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67726	vine_000461	canonical		Bromus squarrosus			20240608152638	7.8746495	46.26161	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67727	vine_000464	canonical		Insecta			20240608153439	7.874666	46.26163	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67728	vine_000474	canonical		Galium mollugo			20240608153819	7.874638	46.261612	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67729	vine_000472	canonical		Ixodida			20240608154641	7.8746605	46.261627	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67730	vine_000136	canonical		Allium oleraceum			20240608160217	7.8748546	46.26156	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67731	vine_000325	canonical		Melica ciliata			20240608160654	7.874851	46.26154	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67732	vine_000158	canonical		Clematis			20240608161757	7.8748336	46.261543	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67733	vine_000187	canonical		Verbascum densiflorum			20240608162200	7.87495	46.261578	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67734	vine_000341	canonical		Insecta			20240608162923	7.874752	46.261467	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67735	vine_000339	canonical		Caucalis platycarpos			20240608163605	7.874518	46.26167	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67736	vine_000342	canonical		Insecta			20240608165237	7.8745527	46.261696	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67737	vine_000091	canonical		Stachys recta			20240608145612	7.8744264	46.261684	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67738	vine_000198	canonical		Geranium pyrenaicum			20240608145957	7.8741703	46.261597	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67739	vine_000233	canonical		Heracleum			20240608150438	7.8742437	46.261593	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67740	vine_000201	canonical		Rosa			20240608151128	7.8742094	46.26157	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67741	vine_000126	canonical		Petrosedum montanum			20240608151816	7.8741946	46.261593	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67742	vine_000258	canonical		Bromus squarrosus			20240608152249	7.8740783	46.26168	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67743	vine_000249	canonical		Polygonatum odoratum			20240608152749	7.8740788	46.26165	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67744	vine_000217	canonical		Origanum			20240608163625	7.8749976	46.261578	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67745	vine_000490	canonical		Taraxacum			20240608153854	7.8745956	46.26162	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67746	vine_000498	canonical		Galium			20240608154535	7.874607	46.261623	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67747	vine_000481	canonical		Angiospermae			20240608155114	7.874593	46.261574	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67748	vine_000129	canonical		Angiospermae			20240608160605	7.8744006	46.26148	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67749	vine_000337	canonical		Angiospermae			20240608160943	7.8744426	46.26142	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67750	vine_000161	canonical		Angiospermae			20240608161328	7.874446	46.261425	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67751	vine_000108	canonical		Angiospermae			20240608161747	7.874441	46.261425	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67752	vine_000151	canonical		Angiospermae			20240608162507	7.8744354	46.26142	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67753	vine_000094	canonical		Angiospermae			20240608162847	7.874434	46.26142	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67754	vine_000106	canonical		Equisetum			20240608163224	7.8744335	46.261425	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67755	vine_000169	canonical		Angiospermae			20240608163556	7.8744335	46.26142	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67756	vine_000235	canonical		Angiospermae			20240608164100	7.874439	46.261395	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67757	vine_000105	canonical		Angiospermae			20240608165501	7.8744473	46.261433	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67758	vine_000365	canonical		Rosaceae			20240608154920	7.8749213	46.261627	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67759	vine_000399	canonical		Rosaceae			20240608155334	7.8749185	46.26163	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67760	vine_000294	canonical		Angiospermae			20240608155757	7.874908	46.261635	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67761	vine_000299	canonical		Angiospermae			20240608160122	7.874909	46.26163	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67762	vine_000364	canonical		Angiospermae			20240608162718	7.8743095	46.261528	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67763	vine_000354	canonical		Geranium pyrenaicum			20240608163010	7.874296	46.261524	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67764	vine_000355	canonical		Asplenium ruta-muraria			20240608163502	7.8743186	46.261517	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67765	vine_000333	canonical		Angiospermae			20240608163921	7.8742924	46.261513	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67766	vine_000191	canonical		Heracleum sphondylium			20240608164944	7.8744216	46.261417	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67767	vine_000386	canonical		Medicago			20240608114630	7.874687	46.261467	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67768	vine_000389	canonical		Lamiaceae			20240608115155	7.8746834	46.261463	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67769	vine_000323	canonical		Crassulaceae			20240608115808	7.874695	46.26147	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67770	vine_000377	canonical		Angiospermae			20240608120355	7.8747377	46.261513	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67771	vine_000357	canonical		Orobanchaceae			20240608121244	7.8745074	46.261494	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67772	vine_000379	canonical		Cornus			20240608122437	7.8745008	46.261482	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67773	vine_000327	canonical		Angiospermae			20240608123034	7.8744917	46.26147	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67774	vine_000307	canonical		Equisetum arvense			20240608123419	7.874481	46.26145	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67775	vine_000370	canonical		Angiospermae			20240608123906	7.874417	46.261425	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67776	vine_000298	canonical		Angiospermae			20240608125001	7.874455	46.2615	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67777	vine_000388	canonical		Poaceae			20240608151049	7.8747725	46.26158	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67778	vine_000296	canonical		Angiospermae			20240608151740	7.874794	46.261585	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67779	vine_000297	canonical		Angiospermae			20240608152453	7.8748274	46.261528	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67780	vine_000358	canonical		Angiospermae			20240608152854	7.874811	46.261528	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67781	vine_000356	canonical		Galium aparine			20240608153714	7.87486	46.261536	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67782	vine_000324	canonical		Angiospermae			20240608154234	7.874874	46.261536	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67783	vine_000353	canonical		Insecta			20240608165720	7.8745313	46.26165	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67784	vine_000291	canonical		Vitis vinifera			20240608115707	7.8745236	46.261578	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67785	vine_000302	canonical		Vitis vinifera			20240608120420	7.874523	46.26159	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67786	vine_000317	canonical		Vitis vinifera			20240608121052	7.874523	46.26159	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67787	vine_000300	canonical		Vitis vinifera			20240608121506	7.874523	46.26159	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67788	vine_000403	canonical		Vitis vinifera			20240608122056	7.874523	46.26159	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67789	vine_000304	canonical		Vitis vinifera			20240608122514	7.8745294	46.2616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67790	vine_000303	canonical		Vitis vinifera			20240608122950	7.874548	46.26163	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67791	vine_000295	canonical		Vitis vinifera			20240608123432	7.874548	46.26163	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67792	vine_000393	canonical		Vitis vinifera			20240608123842	7.874543	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67793	vine_000332	canonical		Vitis vinifera			20240608124236	7.874544	46.26163	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67794	vine_000306	canonical		Vitis vinifera			20240608124635	7.874537	46.261612	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67795	vine_000383	canonical		Vitis vinifera			20240608125012	7.8745403	46.261616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67796	vine_000281	canonical		Vitis vinifera			20240608125420	7.8745403	46.261616	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67797	vine_000288	canonical		Vitis vinifera			20240608125921	7.874547	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67798	vine_000409	canonical		Vitis vinifera			20240608130254	7.874547	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67799	vine_000272	canonical		Pogonocherus hispidulus			20240608150721	7.874547	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67800	vine_000271	canonical		Hymenoptera			20240608152627	7.874547	46.261642	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67801	vine_000163	canonical		Diptera			20240608153706	7.874918	46.26155	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67802	vine_000147	canonical		Vitis vinifera			20240608161307	7.8743777	46.261333	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67803	vine_000263	canonical		Cetonia aurata			20240608162059	7.8743296	46.2614	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67804	vine_000293	canonical		Bombus pascuorum			20240608163457	7.8743296	46.2614	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67805	vine_000413	canonical		Plantae			20240608114359	7.874677	46.261444	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67806	vine_000392	canonical		Insecta			20240608115651	7.8746824	46.261448	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67807	vine_000404	canonical		Plantae			20240608120410	7.8748374	46.261494	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67808	vine_000376	canonical		Angiospermae			20240608122605	7.8745084	46.261505	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67809	vine_000382	canonical		Vitis vinifera			20240608123521	7.8745837	46.26156	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67810	vine_000397	canonical		Angiospermae			20240608123947	7.8745813	46.261566	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67811	vine_000420	canonical		Diptera			20240608124731	7.8745837	46.261604	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67812	vine_000416	canonical		Coleoptera			20240608151121	7.87423	46.261593	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67813	vine_000340	canonical		Rubus			20240608151454	7.8741875	46.26154	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67814	vine_000412	canonical		Angiospermae			20240608152517	7.8744206	46.26173	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67815	vine_000173	canonical		Fungi			20240608154028	7.8742843	46.260784	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67816	vine_000406	canonical		Fungi			20240608155119	7.8744025	46.26086	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67817	vine_000101	canonical		Fungi			20240608155748	7.874341	46.261066	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67818	vine_000371	canonical		Lepiota cristata			20240608161801	7.874664	46.26092	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67819	vine_000418	canonical		Lepiota cristata			20240608162336	7.8746967	46.260906	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67820	vine_000132	canonical		Suillus granulatus			20240608162911	7.8748136	46.26091	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67821	vine_000402	canonical		Fistulina hepatica			20240608170755	7.873218	46.26071	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67822	vine_000229	canonical		Linaria			20240608151229	7.8741565	46.261723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67823	vine_000351	canonical		Sedum dasyphyllum			20240608152019	7.8739886	46.261726	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67824	vine_000221	canonical		Centaurea scabiosa			20240608152823	7.874112	46.261635	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67825	vine_000378	canonical		Prunus mahaleb			20240608162628	7.875131	46.261505	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67826	vine_000322	canonical		Sorbus			20240608163141	7.875164	46.261486	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67827	vine_000239	canonical		Heracleum			20240608163935	7.8748865	46.261375	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67828	vine_000331	canonical		Galium album			20240608171001	7.8750753	46.26154	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67829	vine_000315	canonical		Vicia onobrychioides			20240608171346	7.875101	46.261536	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67830	vine_000309	canonical		Fungi			20240608172934	7.8751693	46.26147	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67831	vine_000425	canonical		Insecta			20240608115835	7.874552	46.261513	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67832	vine_000444	canonical		Insecta			20240608120542	7.874552	46.261513	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67833	vine_000431	canonical		Plantae			20240608121010	7.874552	46.261513	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67834	vine_000434	canonical		Plantae			20240608122325	7.874552	46.261513	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67835	vine_000444xx	other_noncanonical		Insecta			20240608123354	7.8745193	46.26144	looks_swapped_ch_lat_lon	sample_id_other_noncanonical;coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67836	vine_000427	canonical		Insecta			20240608123729	7.8745193	46.26144	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67837	vine_000435	canonical		Insecta			20240608124237	7.8745193	46.26144	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67838	vine_000438	canonical		Plantae			20240608150533	7.8745503	46.26158	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67839	vine_000432	canonical		Insecta			20240608150806	7.8745503	46.26158	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67840	vine_000424	canonical		Insecta			20240608151630	7.8745503	46.26158	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67841	vine_000439	canonical		Plantae			20240608152259	7.874522	46.26153	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67842	vine_000433	canonical		Plantae			20240608153101	7.874522	46.26153	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67843	vine_000428	canonical		Insecta			20240608160126	7.874258	46.2612	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67844	vine_000440	canonical		Plantae			20240608164621	7.8741536	46.261246	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67845	vine_000421	canonical		Plantae			20240608165842	7.8741536	46.261246	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67846	vine_000445	canonical		Plantae			20240608171305	7.8741536	46.261246	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67847	vine_000316	canonical		Insecta			20240608150257	7.875066	46.26141	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67848	vine_000208	canonical		Insecta			20240608150903	7.875055	46.261402	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67849	vine_000223	canonical		Insecta			20240608151357	7.875061	46.2614	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67850	vine_000257	canonical		Insecta			20240608152338	7.875061	46.2614	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67851	vine_000259	canonical		Insecta			20240608153630	7.875048	46.261406	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67852	vine_000218	canonical		Insecta			20240608154608	7.875055	46.261406	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67853	vine_000200	canonical		Camponotus			20240609072608	7.8750534	46.261406	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67854	vine_000329	canonical		Insecta			20240609073018	7.8750505	46.261406	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67855	vine_000269	canonical		Insecta			20240609073710	7.87506	46.261406	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67856	vine_000199	canonical		Insecta			20240609074548	7.875057	46.261402	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67857	vine_000285	canonical		Insecta			20240609074930	7.875058	46.261406	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	67858	vine_000330	canonical		Insecta			20240609075507	7.875062	46.261406	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	69775	vine_000485	canonical		Geranium			20240608121409			missing	coordinate_missing
+bioblitz_vinesch	69776	vine_000482	canonical		Papaver			20240608122002			missing	coordinate_missing
+bioblitz_vinesch	69789	obs_7874548740248612_4626162968485415	other_noncanonical		Insecta			20240608130023	7.874549	46.26163	looks_swapped_ch_lat_lon	sample_id_other_noncanonical;coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	69790	obs_7874519309386798_4626143977329036	other_noncanonical		Insecta			20240608122755	7.8745193	46.26144	looks_swapped_ch_lat_lon	sample_id_other_noncanonical;coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	69791	obs_7874258118111459_4626120054547907	other_noncanonical		Insecta			20240608155541	7.874258	46.2612	looks_swapped_ch_lat_lon	sample_id_other_noncanonical;coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	69792	obs_7874153696652324_4626124450853351	other_noncanonical		Insecta			20240608170856	7.8741536	46.261246	looks_swapped_ch_lat_lon	sample_id_other_noncanonical;coordinate_looks_swapped_ch_lat_lon
+bioblitz_vinesch	69793	obs_7874149866392855_462612278602664	other_noncanonical		Plantae			20240608202039	7.87415	46.261227	looks_swapped_ch_lat_lon	sample_id_other_noncanonical;coordinate_looks_swapped_ch_lat_lon

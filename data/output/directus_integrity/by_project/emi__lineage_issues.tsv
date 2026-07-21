@@ -1,0 +1,10 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	issue
+emi	68467	emi_000006	canonical			Bombus terrestris			6.7667923	46.956886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+emi	68468	emi_000003	canonical			Graphosoma italicum			6.7668114	46.956856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+emi	68469	emi_000016	canonical			Bombus lucorum			6.7666836	46.957073	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+emi	68470	emi_000020	canonical			Apis mellifera			6.766685	46.95703	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+emi	68471	emi_000002	canonical			Clytus arietis			6.766794	46.956837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+emi	68472	emi_000017	canonical			Trichius gallicus			6.766794	46.956837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+emi	68473	emi_000018	canonical			Aaunknown			6.7667704	46.956802	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+emi	68474	emi_000005	canonical			Bombus humilis			6.766769	46.95682	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+emi	68475	emi_000015	canonical			Pseudochorthippus parallelus			6.7668366	46.956833	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction

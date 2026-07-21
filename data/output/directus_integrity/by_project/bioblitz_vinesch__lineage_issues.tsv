@@ -1,0 +1,14 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	issue
+bioblitz_vinesch	67657	vine_000227	canonical		Angiospermae			20240608130538	7.874482	46.26149	looks_swapped_ch_lat_lon	true	false	false	false	vine_000227		missing_extraction
+bioblitz_vinesch	67735	vine_000339	canonical		Caucalis platycarpos			20240608163605	7.874518	46.26167	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+bioblitz_vinesch	67761	vine_000299	canonical		Angiospermae			20240608160122	7.874909	46.26163	looks_swapped_ch_lat_lon	false	true	true	true		vine_000299_01	missing_dried
+bioblitz_vinesch	67769	vine_000323	canonical		Crassulaceae			20240608115808	7.874695	46.26147	looks_swapped_ch_lat_lon	true	false	false	false	vine_000323		missing_extraction
+bioblitz_vinesch	67814	vine_000412	canonical		Angiospermae			20240608152517	7.8744206	46.26173	looks_swapped_ch_lat_lon	true	false	false	false	vine_000412		missing_extraction
+bioblitz_vinesch	67823	vine_000351	canonical		Sedum dasyphyllum			20240608152019	7.8739886	46.261726	looks_swapped_ch_lat_lon	true	false	false	false	vine_000351		missing_extraction
+bioblitz_vinesch	67835	vine_000444xx	other_noncanonical		Insecta			20240608123354	7.8745193	46.26144	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+bioblitz_vinesch	67840	vine_000424	canonical		Insecta			20240608151630	7.8745503	46.26158	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+bioblitz_vinesch	69789	obs_7874548740248612_4626162968485415	other_noncanonical		Insecta			20240608130023	7.874549	46.26163	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+bioblitz_vinesch	69790	obs_7874519309386798_4626143977329036	other_noncanonical		Insecta			20240608122755	7.8745193	46.26144	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+bioblitz_vinesch	69791	obs_7874258118111459_4626120054547907	other_noncanonical		Insecta			20240608155541	7.874258	46.2612	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+bioblitz_vinesch	69792	obs_7874153696652324_4626124450853351	other_noncanonical		Insecta			20240608170856	7.8741536	46.261246	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+bioblitz_vinesch	69793	obs_7874149866392855_462612278602664	other_noncanonical		Plantae			20240608202039	7.87415	46.261227	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction

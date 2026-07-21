@@ -1,0 +1,10 @@
+{
+  "input": "data/output/droguier/massive_metadata_droguier_injection_import.csv",
+  "output": "data/output/droguier/massive_metadata_droguier_ms_push_readiness.tsv",
+  "counts": {
+    "possible_with_extraction_only_import_after_schema_decision": 520,
+    "sample_rows": 520,
+    "skip": 43,
+    "non_sample_rows": 43
+  }
+}

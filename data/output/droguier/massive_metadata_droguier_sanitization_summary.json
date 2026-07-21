@@ -1,0 +1,28 @@
+{
+  "raw_path": "data/working/droguier/massive_metadata_droguier.csv",
+  "sanitized_path": "data/output/droguier/massive_metadata_droguier_sanitized.csv",
+  "import_path": "data/output/droguier/massive_metadata_droguier_injection_import.csv",
+  "issues_path": "data/output/droguier/massive_metadata_droguier_sanitization_issues.tsv",
+  "row_count": 563,
+  "raw_sample_type_counts": {
+    "sample": 520,
+    "blk": 4,
+    "cond": 12,
+    "QC": 27
+  },
+  "file_type_counts": {
+    "sample": 520,
+    "blank": 4,
+    "conditioning": 12,
+    "qc": 27
+  },
+  "ionization_mode_counts": {
+    "positive": 520,
+    "": 43
+  },
+  "date_parse_status_counts": {
+    "valid": 518,
+    "missing": 45
+  },
+  "issue_counts": {}
+}

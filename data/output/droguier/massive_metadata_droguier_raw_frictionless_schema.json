@@ -1,0 +1,128 @@
+{
+  "fields": [
+    {
+      "name": "Filename",
+      "type": "string"
+    },
+    {
+      "name": "Extension",
+      "type": "string"
+    },
+    {
+      "name": "Localisation.in.Sciex.OS.project",
+      "type": "string"
+    },
+    {
+      "name": "sample_id",
+      "type": "string"
+    },
+    {
+      "name": "ATTRIBUTE_Species",
+      "type": "string"
+    },
+    {
+      "name": "sample_type",
+      "type": "string"
+    },
+    {
+      "name": "user_created",
+      "type": "string"
+    },
+    {
+      "name": "id",
+      "type": "integer"
+    },
+    {
+      "name": "date_created",
+      "type": "datetime"
+    },
+    {
+      "name": "collector_fullname",
+      "type": "string"
+    },
+    {
+      "name": "observation_subject",
+      "type": "string"
+    },
+    {
+      "name": "inat_upload",
+      "type": "integer"
+    },
+    {
+      "name": "is_wild",
+      "type": "integer"
+    },
+    {
+      "name": "species_name",
+      "type": "string"
+    },
+    {
+      "name": "no_name_on_list",
+      "type": "integer"
+    },
+    {
+      "name": "picture_panel",
+      "type": "string"
+    },
+    {
+      "name": "picture_general",
+      "type": "string"
+    },
+    {
+      "name": "picture_detail",
+      "type": "string"
+    },
+    {
+      "name": "picture_cut",
+      "type": "string"
+    },
+    {
+      "name": "picture_panel_label",
+      "type": "string"
+    },
+    {
+      "name": "collector_orcid",
+      "type": "string"
+    },
+    {
+      "name": "collector_inat",
+      "type": "string"
+    },
+    {
+      "name": "qfield_project",
+      "type": "string"
+    },
+    {
+      "name": "date",
+      "type": "datetime"
+    },
+    {
+      "name": "Rack",
+      "type": "string"
+    },
+    {
+      "name": "Plate.position",
+      "type": "string"
+    },
+    {
+      "name": "Comment",
+      "type": "string"
+    },
+    {
+      "name": "genus",
+      "type": "string"
+    },
+    {
+      "name": "family",
+      "type": "string"
+    },
+    {
+      "name": "NCBITaxonomy_ID",
+      "type": "integer"
+    },
+    {
+      "name": "Ionization.mode",
+      "type": "string"
+    }
+  ]
+}

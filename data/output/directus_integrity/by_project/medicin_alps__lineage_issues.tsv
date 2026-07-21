@@ -1,0 +1,746 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	issue
+medicin_alps	71304	meda_000001	canonical					20250613163453	6.419377	45.03996	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71325	meda	other_noncanonical		Carex sempervirens			20250623120544	6.4193625	45.039806	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71326	meda_1	short_numeric_suffix					20250623121218	6.4193993	45.039837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71327	meda_2	short_numeric_suffix		Carex sempervirens			20250623122039	6.419457	45.03981	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71328	meda_3	short_numeric_suffix					20250623122330	6.419464	45.03982	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71329	meda_4	short_numeric_suffix		Carex sempervirens			20250623123300	6.4191537	45.039825	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71330	meda_5	short_numeric_suffix					20250623123503	6.419371	45.03983	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71331	meda_6	short_numeric_suffix		Carex sempervirens			20250623124155	6.4194083	45.039814	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71332	meda_7	short_numeric_suffix					20250623124333	6.4193864	45.039845	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71333	meda_8	short_numeric_suffix		Carex sempervirens			20250623125102	6.419309	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71334	meda_9	short_numeric_suffix					20250623125245	6.419217	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71335	meda_10	short_numeric_suffix		Carex sempervirens			20250623130301	6.419117	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71336	meda_11	short_numeric_suffix					20250623130526	6.4191136	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71337	meda_12	short_numeric_suffix		Carex sempervirens			20250623132453	6.4190345	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71338	meda_13	short_numeric_suffix					20250623132708	6.419039	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71339	meda_14	short_numeric_suffix		Carex sempervirens			20250623133529	6.4190035	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71340	meda_15	short_numeric_suffix					20250623133729	6.418991	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71341	meda_16	short_numeric_suffix		Carex sempervirens			20250623134609	6.419243	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71342	meda_17	short_numeric_suffix					20250623134848	6.419268	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71343	meda_18	short_numeric_suffix		Carex sempervirens			20250623135613	6.419055	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71344	meda_19	short_numeric_suffix					20250623135752	6.4190636	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71365	meda_20	short_numeric_suffix		Geum montanum			20250623123150	6.41927	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71366	meda_21	short_numeric_suffix					20250623123349	6.4192915	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71367	meda_22	short_numeric_suffix		Geum montanum			20250623124056	6.4192867	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71368	meda_23	short_numeric_suffix					20250623124252	6.4192867	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71369	meda_24	short_numeric_suffix		Geum montanum			20250623124945	6.4191484	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71370	meda_25	short_numeric_suffix					20250623125252	6.419155	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71371	meda_26	short_numeric_suffix		Geum montanum			20250623125758	6.4191036	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71372	meda_27	short_numeric_suffix					20250623125937	6.4191036	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71373	meda_28	short_numeric_suffix		Geum montanum			20250623131111	6.4190416	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71374	meda_29	short_numeric_suffix					20250623131256	6.419085	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71375	meda_30	short_numeric_suffix		Geum montanum			20250623132011	6.4189935	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71376	meda_31	short_numeric_suffix					20250623132214	6.419015	45.04004	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71377	meda_32	short_numeric_suffix		Geum montanum			20250623133058	6.419282	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71378	meda_33	short_numeric_suffix					20250623133423	6.419282	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71379	meda_34	short_numeric_suffix		Geum montanum			20250623133758	6.4193234	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71380	meda_35	short_numeric_suffix					20250623134006	6.41932	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71392	meda_000207	canonical					20250624112250	6.4193535	45.039886	looks_swapped_ch_lat_lon	false	true	false	false		meda_000207_01	missing_dried
+medicin_alps	71399	meda_36	short_numeric_suffix		Carex sempervirens			20250623120544	6.4193625	45.039806	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71400	meda_37	short_numeric_suffix					20250623121218	6.4193993	45.039837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71401	meda_38	short_numeric_suffix		Carex sempervirens			20250623122039	6.419457	45.03981	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71402	meda_39	short_numeric_suffix					20250623122330	6.419464	45.03982	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71403	meda_40	short_numeric_suffix		Carex sempervirens			20250623123300	6.4191537	45.039825	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71404	meda_41	short_numeric_suffix					20250623123503	6.419371	45.03983	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71405	meda_42	short_numeric_suffix		Carex sempervirens			20250623124155	6.4194083	45.039814	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71406	meda_43	short_numeric_suffix					20250623124333	6.4193864	45.039845	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71407	meda_44	short_numeric_suffix		Carex sempervirens			20250623125102	6.419309	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71408	meda_45	short_numeric_suffix					20250623125245	6.419217	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71409	meda_46	short_numeric_suffix		Carex sempervirens			20250623130301	6.419117	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71410	meda_47	short_numeric_suffix					20250623130526	6.4191136	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71411	meda_48	short_numeric_suffix		Carex sempervirens			20250623132453	6.4190345	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71412	meda_49	short_numeric_suffix					20250623132708	6.419039	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71413	meda_50	short_numeric_suffix		Carex sempervirens			20250623133529	6.4190035	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71414	meda_51	short_numeric_suffix					20250623133729	6.418991	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71415	meda_52	short_numeric_suffix		Carex sempervirens			20250623134609	6.419243	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71416	meda_53	short_numeric_suffix					20250623134848	6.419268	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71417	meda_54	short_numeric_suffix		Carex sempervirens			20250623135613	6.419055	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71418	meda_55	short_numeric_suffix					20250623135752	6.4190636	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71419	meda_56	short_numeric_suffix		Geum montanum			20250623121236	6.41941	45.039776	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71420	meda_57	short_numeric_suffix					20250623121524	6.41941	45.039776	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71421	meda_58	short_numeric_suffix		Geum montanum			20250623122229	6.4193816	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71422	meda_59	short_numeric_suffix					20250623122526	6.4193616	45.03984	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71465	meda_60	short_numeric_suffix		Carex sempervirens			20250623120544	6.4193625	45.039806	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71466	meda_61	short_numeric_suffix					20250623121218	6.4193993	45.039837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71467	meda_62	short_numeric_suffix		Carex sempervirens			20250623122039	6.419457	45.03981	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71468	meda_63	short_numeric_suffix					20250623122330	6.419464	45.03982	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71469	meda_64	short_numeric_suffix		Carex sempervirens			20250623123300	6.4191537	45.039825	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71470	meda_65	short_numeric_suffix					20250623123503	6.419371	45.03983	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71471	meda_66	short_numeric_suffix		Carex sempervirens			20250623124155	6.4194083	45.039814	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71472	meda_67	short_numeric_suffix					20250623124333	6.4193864	45.039845	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71473	meda_68	short_numeric_suffix		Carex sempervirens			20250623125102	6.419309	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71474	meda_69	short_numeric_suffix					20250623125245	6.419217	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71475	meda_70	short_numeric_suffix		Carex sempervirens			20250623130301	6.419117	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71476	meda_71	short_numeric_suffix					20250623130526	6.4191136	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71477	meda_72	short_numeric_suffix		Carex sempervirens			20250623132453	6.4190345	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71478	meda_73	short_numeric_suffix					20250623132708	6.419039	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71479	meda_74	short_numeric_suffix		Carex sempervirens			20250623133529	6.4190035	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71480	meda_75	short_numeric_suffix					20250623133729	6.418991	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71481	meda_76	short_numeric_suffix		Carex sempervirens			20250623134609	6.419243	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71482	meda_77	short_numeric_suffix					20250623134848	6.419268	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71483	meda_78	short_numeric_suffix		Carex sempervirens			20250623135613	6.419055	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71484	meda_79	short_numeric_suffix					20250623135752	6.4190636	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71485	meda_80	short_numeric_suffix		Geum montanum			20250623121236	6.41941	45.039776	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71486	meda_81	short_numeric_suffix					20250623121524	6.41941	45.039776	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71487	meda_82	short_numeric_suffix		Geum montanum			20250623122229	6.4193816	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71488	meda_83	short_numeric_suffix					20250623122526	6.4193616	45.03984	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71489	meda_84	short_numeric_suffix		Geum montanum			20250623123150	6.41927	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71490	meda_85	short_numeric_suffix					20250623123349	6.4192915	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71491	meda_86	short_numeric_suffix		Geum montanum			20250623124056	6.4192867	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71492	meda_87	short_numeric_suffix					20250623124252	6.4192867	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71493	meda_88	short_numeric_suffix		Geum montanum			20250623124945	6.4191484	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71494	meda_89	short_numeric_suffix					20250623125252	6.419155	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71495	meda_90	short_numeric_suffix		Geum montanum			20250623125758	6.4191036	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71496	meda_91	short_numeric_suffix					20250623125937	6.4191036	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71497	meda_92	short_numeric_suffix		Geum montanum			20250623131111	6.4190416	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71498	meda_93	short_numeric_suffix					20250623131256	6.419085	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71499	meda_94	short_numeric_suffix		Geum montanum			20250623132011	6.4189935	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71500	meda_95	short_numeric_suffix					20250623132214	6.419015	45.04004	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71501	meda_96	short_numeric_suffix		Geum montanum			20250623133058	6.419282	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71502	meda_97	short_numeric_suffix					20250623133423	6.419282	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71503	meda_98	short_numeric_suffix		Geum montanum			20250623133758	6.4193234	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71504	meda_99	short_numeric_suffix					20250623134006	6.41932	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71505	meda_100	short_numeric_suffix		Potentilla crantzii			20250624103856	6.4194174	45.039803	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71506	meda_101	short_numeric_suffix					20250624104059	6.419424	45.039814	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71507	meda_102	short_numeric_suffix		Potentilla crantzii			20250624104632	6.419393	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71508	meda_103	short_numeric_suffix					20250624105026	6.4193945	45.039833	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71509	meda_104	short_numeric_suffix		Potentilla crantzii			20250624105622	6.4194226	45.039837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71510	meda_105	short_numeric_suffix					20250624105836	6.419376	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71511	meda_106	short_numeric_suffix		Potentilla crantzii			20250624110551	6.4194202	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71512	meda_107	short_numeric_suffix					20250624110815	6.4194174	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71513	meda_108	short_numeric_suffix		Potentilla crantzii			20250624111318	6.4193087	45.039883	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71514	meda_109	short_numeric_suffix					20250624111506	6.4193063	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71515	meda_110	short_numeric_suffix		Potentilla crantzii			20250624112048	6.419376	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71516	meda_111	short_numeric_suffix					20250624112250	6.4193535	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71517	meda_112	short_numeric_suffix		Potentilla crantzii			20250624113228	6.419238	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71518	meda_113	short_numeric_suffix					20250624113431	6.419216	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71519	meda_114	short_numeric_suffix		Potentilla crantzii			20250624114002	6.419256	45.03993	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71520	meda_115	short_numeric_suffix					20250624114236	6.419263	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71521	meda_116	short_numeric_suffix		Potentilla crantzii			20250624114723	6.4191623	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71522	meda_117	short_numeric_suffix					20250624114922	6.419146	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71523	meda_118	short_numeric_suffix		Potentilla crantzii			20250624115747	6.4192514	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71524	meda_119	short_numeric_suffix					20250624115956	6.4192443	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71525	meda_120	short_numeric_suffix		Potentilla crantzii			20250624121814	6.4191017	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71526	meda_121	short_numeric_suffix					20250624121958	6.4190683	45.039948	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71527	meda_122	short_numeric_suffix		Potentilla crantzii			20250624122658	6.4191637	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71528	meda_123	short_numeric_suffix					20250624122855	6.41916	45.039944	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71529	meda_124	short_numeric_suffix		Potentilla crantzii			20250624123548	6.4190683	45.03997	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71530	meda_125	short_numeric_suffix					20250624123720	6.4190784	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71531	meda_126	short_numeric_suffix		Potentilla crantzii			20250624124442	6.419114	45.03998	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71532	meda_127	short_numeric_suffix					20250624124646	6.4191256	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71533	meda_128	short_numeric_suffix		Potentilla crantzii			20250624125307	6.419118	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71534	meda_129	short_numeric_suffix					20250624125501	6.4190683	45.040024	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71535	meda_130	short_numeric_suffix		Potentilla crantzii			20250624130048	6.419104	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71536	meda_131	short_numeric_suffix					20250624130317	6.4190903	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71537	meda_132	short_numeric_suffix		Potentilla crantzii			20250624130840	6.4192863	45.039936	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71538	meda_133	short_numeric_suffix					20250624131046	6.419256	45.03996	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71539	meda_134	short_numeric_suffix		Potentilla crantzii			20250624131600	6.4192467	45.03997	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71540	meda_135	short_numeric_suffix					20250624131730	6.4192634	45.03998	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71541	meda_136	short_numeric_suffix		Potentilla crantzii			20250624132237	6.4193954	45.039867	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71542	meda_137	short_numeric_suffix					20250624132449	6.4193635	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71543	meda_138	short_numeric_suffix		Potentilla crantzii			20250624132949	6.419349	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71544	meda_139	short_numeric_suffix					20250624133434	6.4193277	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71545	meda_140	short_numeric_suffix		Patzkea paniculata			20250624135330	6.4194145	45.03979	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71546	meda_141	short_numeric_suffix					20250624135530	6.419395	45.03979	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71547	meda_142	short_numeric_suffix		Patzkea paniculata			20250624140006	6.419423	45.039856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71548	meda_143	short_numeric_suffix					20250624140126	6.4194126	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71549	meda_144	short_numeric_suffix		Patzkea paniculata			20250624140725	6.4193554	45.039783	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71550	meda_145	short_numeric_suffix					20250624140934	6.419348	45.03981	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71551	meda_146	short_numeric_suffix		Patzkea paniculata			20250624141757	6.4193616	45.03988	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71552	meda_147	short_numeric_suffix					20250624142039	6.419353	45.03987	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71553	meda_148	short_numeric_suffix		Patzkea paniculata			20250624142514	6.419304	45.039864	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71554	meda_149	short_numeric_suffix					20250624142708	6.41925	45.039864	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71555	meda_150	short_numeric_suffix		Patzkea paniculata			20250624143241	6.4193325	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71556	meda_151	short_numeric_suffix					20250624143425	6.4193125	45.03987	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71557	meda_152	short_numeric_suffix		Patzkea paniculata			20250624143739	6.4192386	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71558	meda_153	short_numeric_suffix					20250624144042	6.419189	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71559	meda_154	short_numeric_suffix		Patzkea paniculata			20250624144721	6.4192348	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71560	meda_155	short_numeric_suffix					20250624144910	6.4192357	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71561	meda_156	short_numeric_suffix		Patzkea paniculata			20250624145233	6.419168	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71562	meda_157	short_numeric_suffix					20250624145600	6.419164	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71563	meda_158	short_numeric_suffix		Patzkea paniculata			20250624145932	6.4191375	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71564	meda_159	short_numeric_suffix					20250624150313	6.4191546	45.03994	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71568	meda_000179 lo	other_noncanonical					20250624104718	6.4194183	45.03983	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71578	meda_000189oo	other_noncanonical					20250624112612	6.4192333	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71579	meda_000190o	other_noncanonical		Bistorta vivipara			20250624113009	6.4192567	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71625	meda_160	short_numeric_suffix		Carex sempervirens			20250623120544	6.4193625	45.039806	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71626	meda_161	short_numeric_suffix					20250623121218	6.4193993	45.039837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71627	meda_162	short_numeric_suffix		Carex sempervirens			20250623122039	6.419457	45.03981	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71628	meda_163	short_numeric_suffix					20250623122330	6.419464	45.03982	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71629	meda_164	short_numeric_suffix		Carex sempervirens			20250623123300	6.4191537	45.039825	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71630	meda_165	short_numeric_suffix					20250623123503	6.419371	45.03983	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71631	meda_166	short_numeric_suffix		Carex sempervirens			20250623124155	6.4194083	45.039814	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71632	meda_167	short_numeric_suffix					20250623124333	6.4193864	45.039845	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71633	meda_168	short_numeric_suffix		Carex sempervirens			20250623125102	6.419309	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71634	meda_169	short_numeric_suffix					20250623125245	6.419217	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71635	meda_170	short_numeric_suffix		Carex sempervirens			20250623130301	6.419117	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71636	meda_171	short_numeric_suffix					20250623130526	6.4191136	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71637	meda_172	short_numeric_suffix		Carex sempervirens			20250623132453	6.4190345	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71638	meda_173	short_numeric_suffix					20250623132708	6.419039	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71639	meda_174	short_numeric_suffix		Carex sempervirens			20250623133529	6.4190035	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71640	meda_175	short_numeric_suffix					20250623133729	6.418991	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71641	meda_176	short_numeric_suffix		Carex sempervirens			20250623134609	6.419243	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71642	meda_177	short_numeric_suffix					20250623134848	6.419268	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71643	meda_178	short_numeric_suffix		Carex sempervirens			20250623135613	6.419055	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71644	meda_179	short_numeric_suffix					20250623135752	6.4190636	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71645	meda_180	short_numeric_suffix		Geum montanum			20250623121236	6.41941	45.039776	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71646	meda_181	short_numeric_suffix					20250623121524	6.41941	45.039776	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71647	meda_182	short_numeric_suffix		Geum montanum			20250623122229	6.4193816	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71648	meda_183	short_numeric_suffix					20250623122526	6.4193616	45.03984	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71649	meda_184	short_numeric_suffix		Geum montanum			20250623123150	6.41927	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71650	meda_185	short_numeric_suffix					20250623123349	6.4192915	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71651	meda_186	short_numeric_suffix		Geum montanum			20250623124056	6.4192867	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71652	meda_187	short_numeric_suffix					20250623124252	6.4192867	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71653	meda_188	short_numeric_suffix		Geum montanum			20250623124945	6.4191484	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71654	meda_189	short_numeric_suffix					20250623125252	6.419155	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71655	meda_190	short_numeric_suffix		Geum montanum			20250623125758	6.4191036	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71656	meda_191	short_numeric_suffix					20250623125937	6.4191036	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71657	meda_192	short_numeric_suffix		Geum montanum			20250623131111	6.4190416	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71658	meda_193	short_numeric_suffix					20250623131256	6.419085	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71659	meda_194	short_numeric_suffix		Geum montanum			20250623132011	6.4189935	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71660	meda_195	short_numeric_suffix					20250623132214	6.419015	45.04004	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71661	meda_196	short_numeric_suffix		Geum montanum			20250623133058	6.419282	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71662	meda_197	short_numeric_suffix					20250623133423	6.419282	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71663	meda_198	short_numeric_suffix		Geum montanum			20250623133758	6.4193234	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71664	meda_199	short_numeric_suffix					20250623134006	6.41932	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71665	meda_200	short_numeric_suffix		Potentilla crantzii			20250624103856	6.4194174	45.039803	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71666	meda_201	short_numeric_suffix					20250624104059	6.419424	45.039814	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71667	meda_202	short_numeric_suffix		Potentilla crantzii			20250624104632	6.419393	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71668	meda_203	short_numeric_suffix					20250624105026	6.4193945	45.039833	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71669	meda_204	short_numeric_suffix		Potentilla crantzii			20250624105622	6.4194226	45.039837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71670	meda_205	short_numeric_suffix					20250624105836	6.419376	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71671	meda_206	short_numeric_suffix		Potentilla crantzii			20250624110551	6.4194202	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71672	meda_207	short_numeric_suffix					20250624110815	6.4194174	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71673	meda_208	short_numeric_suffix		Potentilla crantzii			20250624111318	6.4193087	45.039883	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71674	meda_209	short_numeric_suffix					20250624111506	6.4193063	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71675	meda_210	short_numeric_suffix		Potentilla crantzii			20250624112048	6.419376	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71676	meda_211	short_numeric_suffix					20250624112250	6.4193535	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71677	meda_212	short_numeric_suffix		Potentilla crantzii			20250624113228	6.419238	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71678	meda_213	short_numeric_suffix					20250624113431	6.419216	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71679	meda_214	short_numeric_suffix		Potentilla crantzii			20250624114002	6.419256	45.03993	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71680	meda_215	short_numeric_suffix					20250624114236	6.419263	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71681	meda_216	short_numeric_suffix		Potentilla crantzii			20250624114723	6.4191623	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71682	meda_217	short_numeric_suffix					20250624114922	6.419146	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71683	meda_218	short_numeric_suffix		Potentilla crantzii			20250624115747	6.4192514	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71684	meda_219	short_numeric_suffix					20250624115956	6.4192443	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71685	meda_220	short_numeric_suffix		Potentilla crantzii			20250624121814	6.4191017	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71686	meda_221	short_numeric_suffix					20250624121958	6.4190683	45.039948	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71687	meda_222	short_numeric_suffix		Potentilla crantzii			20250624122658	6.4191637	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71688	meda_223	short_numeric_suffix					20250624122855	6.41916	45.039944	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71689	meda_224	short_numeric_suffix		Potentilla crantzii			20250624123548	6.4190683	45.03997	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71690	meda_225	short_numeric_suffix					20250624123720	6.4190784	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71691	meda_226	short_numeric_suffix		Potentilla crantzii			20250624124442	6.419114	45.03998	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71692	meda_227	short_numeric_suffix					20250624124646	6.4191256	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71693	meda_228	short_numeric_suffix		Potentilla crantzii			20250624125307	6.419118	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71694	meda_229	short_numeric_suffix					20250624125501	6.4190683	45.040024	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71695	meda_230	short_numeric_suffix		Potentilla crantzii			20250624130048	6.419104	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71696	meda_231	short_numeric_suffix					20250624130317	6.4190903	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71697	meda_232	short_numeric_suffix		Potentilla crantzii			20250624130840	6.4192863	45.039936	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71698	meda_233	short_numeric_suffix					20250624131046	6.419256	45.03996	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71699	meda_234	short_numeric_suffix		Potentilla crantzii			20250624131600	6.4192467	45.03997	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71700	meda_235	short_numeric_suffix					20250624131730	6.4192634	45.03998	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71701	meda_236	short_numeric_suffix		Potentilla crantzii			20250624132237	6.4193954	45.039867	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71702	meda_237	short_numeric_suffix					20250624132449	6.4193635	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71703	meda_238	short_numeric_suffix		Potentilla crantzii			20250624132949	6.419349	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71704	meda_239	short_numeric_suffix					20250624133434	6.4193277	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71705	meda_240	short_numeric_suffix		Patzkea paniculata			20250624135330	6.4194145	45.03979	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71706	meda_241	short_numeric_suffix					20250624135530	6.419395	45.03979	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71707	meda_242	short_numeric_suffix		Patzkea paniculata			20250624140006	6.419423	45.039856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71708	meda_243	short_numeric_suffix					20250624140126	6.4194126	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71709	meda_244	short_numeric_suffix		Patzkea paniculata			20250624140725	6.4193554	45.039783	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71710	meda_245	short_numeric_suffix					20250624140934	6.419348	45.03981	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71711	meda_246	short_numeric_suffix		Patzkea paniculata			20250624141757	6.4193616	45.03988	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71712	meda_247	short_numeric_suffix					20250624142039	6.419353	45.03987	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71713	meda_248	short_numeric_suffix		Patzkea paniculata			20250624142514	6.419304	45.039864	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71714	meda_249	short_numeric_suffix					20250624142708	6.41925	45.039864	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71715	meda_250	short_numeric_suffix		Patzkea paniculata			20250624143241	6.4193325	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71716	meda_251	short_numeric_suffix					20250624143425	6.4193125	45.03987	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71717	meda_252	short_numeric_suffix		Patzkea paniculata			20250624143739	6.4192386	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71718	meda_253	short_numeric_suffix					20250624144042	6.419189	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71719	meda_254	short_numeric_suffix		Patzkea paniculata			20250624144721	6.4192348	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71720	meda_255	short_numeric_suffix					20250624144910	6.4192357	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71721	meda_256	short_numeric_suffix		Patzkea paniculata			20250624145233	6.419168	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71722	meda_257	short_numeric_suffix					20250624145600	6.419164	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71723	meda_258	short_numeric_suffix		Patzkea paniculata			20250624145932	6.4191375	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71724	meda_259	short_numeric_suffix					20250624150313	6.4191546	45.03994	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71725	meda_260	short_numeric_suffix		Bistorta vivipara			20250624103551	6.419225	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71726	meda_261	short_numeric_suffix					20250624103840	6.419225	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71727	meda_262	short_numeric_suffix		Bistorta vivipara			20250624104548	6.419433	45.039856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71728	meda_263	short_numeric_suffix					20250624104718	6.4194183	45.03983	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71729	meda_264	short_numeric_suffix		Bistorta vivipara			20250624105132	6.419365	45.039845	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71730	meda_265	short_numeric_suffix					20250624105332	6.41937	45.039856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71731	meda_266	short_numeric_suffix		Bistorta vivipara			20250624110105	6.419355	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71732	meda_267	short_numeric_suffix					20250624110242	6.41935	45.03988	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71733	meda_268	short_numeric_suffix		Bistorta vivipara			20250624110812	6.419258	45.039883	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71734	meda_269	short_numeric_suffix					20250624110914	6.419295	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71735	meda_270	short_numeric_suffix		Bistorta vivipara			20250624111357	6.4193335	45.03989	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71736	meda_271	short_numeric_suffix					20250624111521	6.41932	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71737	meda_272	short_numeric_suffix		Bistorta vivipara			20250624112434	6.419215	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71738	meda_273	short_numeric_suffix					20250624112612	6.4192333	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71739	meda_274	short_numeric_suffix		Bistorta vivipara			20250624113009	6.4192567	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71740	meda_275	short_numeric_suffix					20250624113140	6.4192567	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71741	meda_276	short_numeric_suffix		Bistorta vivipara			20250624113944	6.419153	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71742	meda_277	short_numeric_suffix					20250624114140	6.419152	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71743	meda_278	short_numeric_suffix		Bistorta vivipara			20250624114623	6.41916	45.03994	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71744	meda_279	short_numeric_suffix					20250624114728	6.4191484	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71745	meda_280	short_numeric_suffix		Bistorta vivipara			20250624121309	6.4190764	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71746	meda_281	short_numeric_suffix					20250624121439	6.4190965	45.039955	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71747	meda_282	short_numeric_suffix		Bistorta vivipara			20250624122226	6.4191184	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71748	meda_283	short_numeric_suffix					20250624122349	6.419143	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71749	meda_284	short_numeric_suffix		Bistorta vivipara			20250624122914	6.419085	45.03993	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71750	meda_285	short_numeric_suffix					20250624123048	6.4190764	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71751	meda_286	short_numeric_suffix		Bistorta vivipara			20250624123619	6.4190784	45.04001	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71752	meda_287	short_numeric_suffix					20250624123825	6.4191165	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71753	meda_288	short_numeric_suffix		Bistorta vivipara			20250624124408	6.4190035	45.04004	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71754	meda_289	short_numeric_suffix					20250624124546	6.41905	45.040035	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71755	meda_290	short_numeric_suffix		Bistorta vivipara			20250624125231	6.41905	45.04004	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71756	meda_291	short_numeric_suffix					20250624125416	6.419055	45.04006	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71757	meda_292	short_numeric_suffix		Bistorta vivipara			20250624130101	6.41925	45.039944	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71758	meda_293	short_numeric_suffix					20250624130314	6.4192233	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71759	meda_294	short_numeric_suffix		Bistorta vivipara			20250624130918	6.41906	45.04005	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71760	meda_295	short_numeric_suffix					20250624131107	6.4190884	45.04005	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71761	meda_296	short_numeric_suffix		Bistorta vivipara			20250624131701	6.4193335	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71762	meda_297	short_numeric_suffix					20250624131853	6.419345	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71763	meda_298	short_numeric_suffix		Bistorta vivipara			20250624132403	6.419317	45.03996	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71764	meda_299	short_numeric_suffix					20250624132526	6.419347	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71765	meda_300	short_numeric_suffix		Patzkea paniculata			20250624135400	6.41934	45.03993	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71766	meda_301	short_numeric_suffix					20250624135536	6.419347	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71767	meda_302	short_numeric_suffix		Patzkea paniculata			20250624135935	6.4193335	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71768	meda_303	short_numeric_suffix					20250624140101	6.419325	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71769	meda_304	short_numeric_suffix		Patzkea paniculata			20250624140528	6.4192333	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71770	meda_305	short_numeric_suffix					20250624140641	6.4192333	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71771	meda_306	short_numeric_suffix		Patzkea paniculata			20250624141143	6.4192367	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71772	meda_307	short_numeric_suffix					20250624141258	6.4192433	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71773	meda_308	short_numeric_suffix		Patzkea paniculata			20250624141748	6.4190884	45.040012	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71774	meda_309	short_numeric_suffix					20250624141912	6.41905	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71775	meda_310	short_numeric_suffix		Patzkea paniculata			20250624142507	6.41901	45.040016	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71776	meda_311	short_numeric_suffix					20250624142656	6.41901	45.040016	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71777	meda_312	short_numeric_suffix		Patzkea paniculata			20250624143207	6.4190183	45.04003	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71778	meda_313	short_numeric_suffix					20250624143344	6.4190183	45.04003	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71779	meda_314	short_numeric_suffix		Patzkea paniculata			20250624143928	6.419113	45.04001	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71780	meda_315	short_numeric_suffix					20250624144046	6.419113	45.04001	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71781	meda_316	short_numeric_suffix		Patzkea paniculata			20250624144552	6.4190917	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71782	meda_317	short_numeric_suffix					20250624144742	6.4190917	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71783	meda_318	short_numeric_suffix		Patzkea paniculata			20250624145423	6.4191165	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71784	meda_319	short_numeric_suffix					20250624145556	6.4191165	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71825	meda_320	short_numeric_suffix		Carex sempervirens			20250623120544	6.4193625	45.039806	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71826	meda_321	short_numeric_suffix					20250623121218	6.4193993	45.039837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71827	meda_322	short_numeric_suffix		Carex sempervirens			20250623122039	6.419457	45.03981	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71828	meda_323	short_numeric_suffix					20250623122330	6.419464	45.03982	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71829	meda_324	short_numeric_suffix		Carex sempervirens			20250623123300	6.4191537	45.039825	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71830	meda_325	short_numeric_suffix					20250623123503	6.419371	45.03983	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71831	meda_326	short_numeric_suffix		Carex sempervirens			20250623124155	6.4194083	45.039814	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71832	meda_327	short_numeric_suffix					20250623124333	6.4193864	45.039845	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71833	meda_328	short_numeric_suffix		Carex sempervirens			20250623125102	6.419309	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71834	meda_329	short_numeric_suffix					20250623125245	6.419217	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71835	meda_330	short_numeric_suffix		Carex sempervirens			20250623130301	6.419117	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71836	meda_331	short_numeric_suffix					20250623130526	6.4191136	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71837	meda_332	short_numeric_suffix		Carex sempervirens			20250623132453	6.4190345	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71838	meda_333	short_numeric_suffix					20250623132708	6.419039	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71839	meda_334	short_numeric_suffix		Carex sempervirens			20250623133529	6.4190035	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71840	meda_335	short_numeric_suffix					20250623133729	6.418991	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71841	meda_336	short_numeric_suffix		Carex sempervirens			20250623134609	6.419243	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71842	meda_337	short_numeric_suffix					20250623134848	6.419268	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71843	meda_338	short_numeric_suffix		Carex sempervirens			20250623135613	6.419055	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71844	meda_339	short_numeric_suffix					20250623135752	6.4190636	45.040028	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71845	meda_340	short_numeric_suffix		Geum montanum			20250623121236	6.41941	45.039776	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71846	meda_341	short_numeric_suffix					20250623121524	6.41941	45.039776	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71847	meda_342	short_numeric_suffix		Geum montanum			20250623122229	6.4193816	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71848	meda_343	short_numeric_suffix					20250623122526	6.4193616	45.03984	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71849	meda_344	short_numeric_suffix		Geum montanum			20250623123150	6.41927	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71850	meda_345	short_numeric_suffix					20250623123349	6.4192915	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71851	meda_346	short_numeric_suffix		Geum montanum			20250623124056	6.4192867	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71852	meda_347	short_numeric_suffix					20250623124252	6.4192867	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71853	meda_348	short_numeric_suffix		Geum montanum			20250623124945	6.4191484	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71854	meda_349	short_numeric_suffix					20250623125252	6.419155	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71855	meda_350	short_numeric_suffix		Geum montanum			20250623125758	6.4191036	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71856	meda_351	short_numeric_suffix					20250623125937	6.4191036	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71857	meda_352	short_numeric_suffix		Geum montanum			20250623131111	6.4190416	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71858	meda_353	short_numeric_suffix					20250623131256	6.419085	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71859	meda_354	short_numeric_suffix		Geum montanum			20250623132011	6.4189935	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71860	meda_355	short_numeric_suffix					20250623132214	6.419015	45.04004	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71861	meda_356	short_numeric_suffix		Geum montanum			20250623133058	6.419282	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71862	meda_357	short_numeric_suffix					20250623133423	6.419282	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71863	meda_358	short_numeric_suffix		Geum montanum			20250623133758	6.4193234	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71864	meda_359	short_numeric_suffix					20250623134006	6.41932	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71865	meda_360	short_numeric_suffix		Potentilla crantzii			20250624103856	6.4194174	45.039803	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71866	meda_361	short_numeric_suffix					20250624104059	6.419424	45.039814	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71867	meda_362	short_numeric_suffix		Potentilla crantzii			20250624104632	6.419393	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71868	meda_363	short_numeric_suffix					20250624105026	6.4193945	45.039833	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71869	meda_364	short_numeric_suffix		Potentilla crantzii			20250624105622	6.4194226	45.039837	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71870	meda_365	short_numeric_suffix					20250624105836	6.419376	45.03985	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71871	meda_366	short_numeric_suffix		Potentilla crantzii			20250624110551	6.4194202	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71872	meda_367	short_numeric_suffix					20250624110815	6.4194174	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71873	meda_368	short_numeric_suffix		Potentilla crantzii			20250624111318	6.4193087	45.039883	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71874	meda_369	short_numeric_suffix					20250624111506	6.4193063	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71875	meda_370	short_numeric_suffix		Potentilla crantzii			20250624112048	6.419376	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71876	meda_371	short_numeric_suffix					20250624112250	6.4193535	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71877	meda_372	short_numeric_suffix		Potentilla crantzii			20250624113228	6.419238	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71878	meda_373	short_numeric_suffix					20250624113431	6.419216	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71879	meda_374	short_numeric_suffix		Potentilla crantzii			20250624114002	6.419256	45.03993	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71880	meda_375	short_numeric_suffix					20250624114236	6.419263	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71881	meda_376	short_numeric_suffix		Potentilla crantzii			20250624114723	6.4191623	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71882	meda_377	short_numeric_suffix					20250624114922	6.419146	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71883	meda_378	short_numeric_suffix		Potentilla crantzii			20250624115747	6.4192514	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71884	meda_379	short_numeric_suffix					20250624115956	6.4192443	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71885	meda_380	short_numeric_suffix		Potentilla crantzii			20250624121814	6.4191017	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71886	meda_381	short_numeric_suffix					20250624121958	6.4190683	45.039948	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71887	meda_382	short_numeric_suffix		Potentilla crantzii			20250624122658	6.4191637	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71888	meda_383	short_numeric_suffix					20250624122855	6.41916	45.039944	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71889	meda_384	short_numeric_suffix		Potentilla crantzii			20250624123548	6.4190683	45.03997	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71890	meda_385	short_numeric_suffix					20250624123720	6.4190784	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71891	meda_386	short_numeric_suffix		Potentilla crantzii			20250624124442	6.419114	45.03998	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71892	meda_387	short_numeric_suffix					20250624124646	6.4191256	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71893	meda_388	short_numeric_suffix		Potentilla crantzii			20250624125307	6.419118	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71894	meda_389	short_numeric_suffix					20250624125501	6.4190683	45.040024	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71895	meda_390	short_numeric_suffix		Potentilla crantzii			20250624130048	6.419104	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71896	meda_391	short_numeric_suffix					20250624130317	6.4190903	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71897	meda_392	short_numeric_suffix		Potentilla crantzii			20250624130840	6.4192863	45.039936	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71898	meda_393	short_numeric_suffix					20250624131046	6.419256	45.03996	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71899	meda_394	short_numeric_suffix		Potentilla crantzii			20250624131600	6.4192467	45.03997	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71900	meda_395	short_numeric_suffix					20250624131730	6.4192634	45.03998	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71901	meda_396	short_numeric_suffix		Potentilla crantzii			20250624132237	6.4193954	45.039867	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71902	meda_397	short_numeric_suffix					20250624132449	6.4193635	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71903	meda_398	short_numeric_suffix		Potentilla crantzii			20250624132949	6.419349	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71904	meda_399	short_numeric_suffix					20250624133434	6.4193277	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71905	meda_400	short_numeric_suffix		Patzkea paniculata			20250624135330	6.4194145	45.03979	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71906	meda_401	short_numeric_suffix					20250624135530	6.419395	45.03979	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71907	meda_402	short_numeric_suffix		Patzkea paniculata			20250624140006	6.419423	45.039856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71908	meda_403	short_numeric_suffix					20250624140126	6.4194126	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71909	meda_404	short_numeric_suffix		Patzkea paniculata			20250624140725	6.4193554	45.039783	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71910	meda_405	short_numeric_suffix					20250624140934	6.419348	45.03981	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71911	meda_406	short_numeric_suffix		Patzkea paniculata			20250624141757	6.4193616	45.03988	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71912	meda_407	short_numeric_suffix					20250624142039	6.419353	45.03987	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71913	meda_408	short_numeric_suffix		Patzkea paniculata			20250624142514	6.419304	45.039864	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71914	meda_409	short_numeric_suffix					20250624142708	6.41925	45.039864	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71915	meda_410	short_numeric_suffix		Patzkea paniculata			20250624143241	6.4193325	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71916	meda_411	short_numeric_suffix					20250624143425	6.4193125	45.03987	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71917	meda_412	short_numeric_suffix		Patzkea paniculata			20250624143739	6.4192386	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71918	meda_413	short_numeric_suffix					20250624144042	6.419189	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71919	meda_414	short_numeric_suffix		Patzkea paniculata			20250624144721	6.4192348	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71920	meda_415	short_numeric_suffix					20250624144910	6.4192357	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71921	meda_416	short_numeric_suffix		Patzkea paniculata			20250624145233	6.419168	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71922	meda_417	short_numeric_suffix					20250624145600	6.419164	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71923	meda_418	short_numeric_suffix		Patzkea paniculata			20250624145932	6.4191375	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71924	meda_419	short_numeric_suffix					20250624150313	6.4191546	45.03994	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71925	meda_420	short_numeric_suffix		Bistorta vivipara			20250624103551	6.419225	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71926	meda_421	short_numeric_suffix					20250624103840	6.419225	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71927	meda_422	short_numeric_suffix		Bistorta vivipara			20250624104548	6.419433	45.039856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71928	meda_423	short_numeric_suffix					20250624104718	6.4194183	45.03983	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71929	meda_424	short_numeric_suffix		Bistorta vivipara			20250624105132	6.419365	45.039845	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71930	meda_425	short_numeric_suffix					20250624105332	6.41937	45.039856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71931	meda_426	short_numeric_suffix		Bistorta vivipara			20250624110105	6.419355	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71932	meda_427	short_numeric_suffix					20250624110242	6.41935	45.03988	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71933	meda_428	short_numeric_suffix		Bistorta vivipara			20250624110812	6.419258	45.039883	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71934	meda_429	short_numeric_suffix					20250624110914	6.419295	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71935	meda_430	short_numeric_suffix		Bistorta vivipara			20250624111357	6.4193335	45.03989	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71936	meda_431	short_numeric_suffix					20250624111521	6.41932	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71937	meda_432	short_numeric_suffix		Bistorta vivipara			20250624112434	6.419215	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71938	meda_433	short_numeric_suffix					20250624112612	6.4192333	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71939	meda_434	short_numeric_suffix		Bistorta vivipara			20250624113009	6.4192567	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71940	meda_435	short_numeric_suffix					20250624113140	6.4192567	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71941	meda_436	short_numeric_suffix		Bistorta vivipara			20250624113944	6.419153	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71942	meda_437	short_numeric_suffix					20250624114140	6.419152	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71943	meda_438	short_numeric_suffix		Bistorta vivipara			20250624114623	6.41916	45.03994	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71944	meda_439	short_numeric_suffix					20250624114728	6.4191484	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71945	meda_440	short_numeric_suffix		Bistorta vivipara			20250624121309	6.4190764	45.039917	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71946	meda_441	short_numeric_suffix					20250624121439	6.4190965	45.039955	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71947	meda_442	short_numeric_suffix		Bistorta vivipara			20250624122226	6.4191184	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71948	meda_443	short_numeric_suffix					20250624122349	6.419143	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71949	meda_444	short_numeric_suffix		Bistorta vivipara			20250624122914	6.419085	45.03993	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71950	meda_445	short_numeric_suffix					20250624123048	6.4190764	45.039913	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71951	meda_446	short_numeric_suffix		Bistorta vivipara			20250624123619	6.4190784	45.04001	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71952	meda_447	short_numeric_suffix					20250624123825	6.4191165	45.04002	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71953	meda_448	short_numeric_suffix		Bistorta vivipara			20250624124408	6.4190035	45.04004	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71954	meda_449	short_numeric_suffix					20250624124546	6.41905	45.040035	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71955	meda_450	short_numeric_suffix		Bistorta vivipara			20250624125231	6.41905	45.04004	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71956	meda_451	short_numeric_suffix					20250624125416	6.419055	45.04006	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71957	meda_452	short_numeric_suffix		Bistorta vivipara			20250624130101	6.41925	45.039944	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71958	meda_453	short_numeric_suffix					20250624130314	6.4192233	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71959	meda_454	short_numeric_suffix		Bistorta vivipara			20250624130918	6.41906	45.04005	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71960	meda_455	short_numeric_suffix					20250624131107	6.4190884	45.04005	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71961	meda_456	short_numeric_suffix		Bistorta vivipara			20250624131701	6.4193335	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71962	meda_457	short_numeric_suffix					20250624131853	6.419345	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71963	meda_458	short_numeric_suffix		Bistorta vivipara			20250624132403	6.419317	45.03996	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71964	meda_459	short_numeric_suffix					20250624132526	6.419347	45.039978	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71965	meda_460	short_numeric_suffix		Patzkea paniculata			20250624135400	6.41934	45.03993	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71966	meda_461	short_numeric_suffix					20250624135536	6.419347	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71967	meda_462	short_numeric_suffix		Patzkea paniculata			20250624135935	6.4193335	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71968	meda_463	short_numeric_suffix					20250624140101	6.419325	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71969	meda_464	short_numeric_suffix		Patzkea paniculata			20250624140528	6.4192333	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71970	meda_465	short_numeric_suffix					20250624140641	6.4192333	45.039967	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71971	meda_466	short_numeric_suffix		Patzkea paniculata			20250624141143	6.4192367	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71972	meda_467	short_numeric_suffix					20250624141258	6.4192433	45.039925	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71973	meda_468	short_numeric_suffix		Patzkea paniculata			20250624141748	6.4190884	45.040012	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71974	meda_469	short_numeric_suffix					20250624141912	6.41905	45.040047	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71975	meda_470	short_numeric_suffix		Patzkea paniculata			20250624142507	6.41901	45.040016	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71976	meda_471	short_numeric_suffix					20250624142656	6.41901	45.040016	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71977	meda_472	short_numeric_suffix		Patzkea paniculata			20250624143207	6.4190183	45.04003	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71978	meda_473	short_numeric_suffix					20250624143344	6.4190183	45.04003	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71979	meda_474	short_numeric_suffix		Patzkea paniculata			20250624143928	6.419113	45.04001	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71980	meda_475	short_numeric_suffix					20250624144046	6.419113	45.04001	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71981	meda_476	short_numeric_suffix		Patzkea paniculata			20250624144552	6.4190917	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71982	meda_477	short_numeric_suffix					20250624144742	6.4190917	45.039974	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71983	meda_478	short_numeric_suffix		Patzkea paniculata			20250624145423	6.4191165	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71984	meda_479	short_numeric_suffix					20250624145556	6.4191165	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71985	meda_480	short_numeric_suffix		Achillea millefolium			20250625101819	6.419417	45.039795	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71986	meda_481	short_numeric_suffix					20250625101953	6.4194217	45.039852	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71987	meda_482	short_numeric_suffix		Achillea millefolium			20250625102508	6.4194365	45.039845	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71988	meda_483	short_numeric_suffix					20250625102636	6.4194	45.03984	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71989	meda_484	short_numeric_suffix		Achillea millefolium			20250625103240	6.41935	45.039856	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71990	meda_485	short_numeric_suffix					20250625103404	6.4193683	45.039833	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71991	meda_486	short_numeric_suffix		Achillea millefolium			20250625103853	6.4193835	45.039864	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71992	meda_487	short_numeric_suffix					20250625104010	6.419367	45.03986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71993	meda_488	short_numeric_suffix		Achillea millefolium			20250625104630	6.4193115	45.039886	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71994	meda_489	short_numeric_suffix					20250625104802	6.4193015	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71995	meda_490	short_numeric_suffix		Achillea millefolium			20250625105355	6.41933	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71996	meda_491	short_numeric_suffix					20250625105534	6.4193215	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71997	meda_492	short_numeric_suffix		Achillea millefolium			20250625110250	6.419255	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71998	meda_493	short_numeric_suffix					20250625110417	6.4192367	45.039898	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	71999	meda_494	short_numeric_suffix		Achillea millefolium			20250625110829	6.4192615	45.039894	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72000	meda_495	short_numeric_suffix					20250625110948	6.41927	45.0399	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72001	meda_496	short_numeric_suffix		Achillea millefolium			20250625111402	6.419175	45.03993	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72002	meda_497	short_numeric_suffix					20250625111516	6.4191833	45.039875	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72003	meda_498	short_numeric_suffix		Achillea millefolium			20250625112108	6.419153	45.039955	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72004	meda_499	short_numeric_suffix					20250625112242	6.41913	45.039963	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72005	meda_500	short_numeric_suffix		Achillea millefolium			20250625113624	6.41909	45.039936	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72006	meda_501	short_numeric_suffix					20250625113737	6.4191184	45.03994	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72007	meda_502	short_numeric_suffix		Achillea millefolium			20250625114304	6.4191284	45.039986	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72008	meda_503	short_numeric_suffix					20250625114425	6.4191732	45.03995	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72009	meda_504	short_numeric_suffix		Achillea millefolium			20250625115001	6.4190583	45.040005	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72010	meda_505	short_numeric_suffix					20250625115115	6.4190583	45.040005	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72011	meda_506	short_numeric_suffix		Achillea millefolium			20250625115607	6.4191065	45.04	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72012	meda_507	short_numeric_suffix					20250625115726	6.4190965	45.03999	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72013	meda_508	short_numeric_suffix		Achillea millefolium			20250625120251	6.419065	45.040024	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72014	meda_509	short_numeric_suffix					20250625120357	6.41906	45.04001	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72015	meda_510	short_numeric_suffix		Achillea millefolium			20250625121018	6.419075	45.04005	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72016	meda_511	short_numeric_suffix					20250625121134	6.419073	45.04006	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72017	meda_512	short_numeric_suffix		Achillea millefolium			20250625121804	6.419258	45.039944	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72018	meda_513	short_numeric_suffix					20250625121924	6.419288	45.03992	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72019	meda_514	short_numeric_suffix		Achillea millefolium			20250625122553	6.4193416	45.03995	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72020	meda_515	short_numeric_suffix					20250625122815	6.4193535	45.039932	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72021	meda_516	short_numeric_suffix		Achillea millefolium			20250625123500	6.4193583	45.039906	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72022	meda_517	short_numeric_suffix					20250625123621	6.4193516	45.03991	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72023	meda_518	short_numeric_suffix		Achillea millefolium			20250625124133	6.419355	45.039944	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72024	meda_519	short_numeric_suffix					20250625124246	6.419355	45.039948	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72085	meda_520	short_numeric_suffix		Geum montanum			20250715120414	6.4008064	45.054436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72086	meda_521	short_numeric_suffix					20250715120556	6.40079	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72087	meda_522	short_numeric_suffix		Geum montanum			20250715121155	6.400765	45.05445	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72088	meda_523	short_numeric_suffix					20250715121351	6.400705	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72089	meda_524	short_numeric_suffix		Geum montanum			20250715121857	6.40073	45.054447	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72090	meda_525	short_numeric_suffix					20250715122035	6.400672	45.054436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72091	meda_526	short_numeric_suffix		Geum montanum			20250715122750	6.4006963	45.05445	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72092	meda_527	short_numeric_suffix					20250715122908	6.4006777	45.054455	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72093	meda_528	short_numeric_suffix		Geum montanum			20250715123512	6.400596	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72094	meda_529	short_numeric_suffix					20250715123635	6.400488	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72095	meda_530	short_numeric_suffix		Geum montanum			20250715124620	6.400553	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72096	meda_531	short_numeric_suffix					20250715124746	6.400532	45.054394	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72097	meda_532	short_numeric_suffix		Geum montanum			20250715125340	6.400523	45.054394	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72098	meda_533	short_numeric_suffix					20250715125810	6.400542	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72099	meda_534	short_numeric_suffix		Geum montanum			20250715130634	6.400397	45.05442	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72100	meda_535	short_numeric_suffix					20250715130816	6.4004	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72101	meda_536	short_numeric_suffix		Geum montanum			20250715131539	6.4003234	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72102	meda_537	short_numeric_suffix					20250715131659	6.4002867	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72103	meda_538	short_numeric_suffix		Geum montanum			20250715132707	6.4004316	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72104	meda_539	short_numeric_suffix					20250715132854	6.400358	45.05443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72165	meda_540	short_numeric_suffix		Bistorta vivipara			20250716140511	6.4003468	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72166	meda_541	short_numeric_suffix					20250716140624	6.400355	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72167	meda_542	short_numeric_suffix		Bistorta vivipara			20250716141207	6.4003334	45.054398	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72168	meda_543	short_numeric_suffix					20250716141337	6.4002934	45.054382	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72169	meda_544	short_numeric_suffix		Bistorta vivipara			20250716141859	6.400415	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72170	meda_545	short_numeric_suffix					20250716142021	6.4003983	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72171	meda_546	short_numeric_suffix		Bistorta vivipara			20250716142633	6.40034	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72172	meda_547	short_numeric_suffix					20250716142746	6.40034	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72179	meda_548	short_numeric_suffix		Geum montanum			20250715120414	6.4008064	45.054436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72180	meda_549	short_numeric_suffix					20250715120556	6.40079	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72181	meda_550	short_numeric_suffix		Geum montanum			20250715121155	6.400765	45.05445	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72182	meda_551	short_numeric_suffix					20250715121351	6.400705	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72183	meda_552	short_numeric_suffix		Geum montanum			20250715121857	6.40073	45.054447	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72184	meda_553	short_numeric_suffix					20250715122035	6.400672	45.054436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72185	meda_554	short_numeric_suffix		Geum montanum			20250715122750	6.4006963	45.05445	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72186	meda_555	short_numeric_suffix					20250715122908	6.4006777	45.054455	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72187	meda_556	short_numeric_suffix		Geum montanum			20250715123512	6.400596	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72188	meda_557	short_numeric_suffix					20250715123635	6.400488	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72189	meda_558	short_numeric_suffix		Geum montanum			20250715124620	6.400553	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72190	meda_559	short_numeric_suffix					20250715124746	6.400532	45.054394	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72191	meda_560	short_numeric_suffix		Geum montanum			20250715125340	6.400523	45.054394	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72192	meda_561	short_numeric_suffix					20250715125810	6.400542	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72193	meda_562	short_numeric_suffix		Geum montanum			20250715130634	6.400397	45.05442	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72194	meda_563	short_numeric_suffix					20250715130816	6.4004	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72195	meda_564	short_numeric_suffix		Geum montanum			20250715131539	6.4003234	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72196	meda_565	short_numeric_suffix					20250715131659	6.4002867	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72197	meda_566	short_numeric_suffix		Geum montanum			20250715132707	6.4004316	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72198	meda_567	short_numeric_suffix					20250715132854	6.400358	45.05443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72199	meda_568	short_numeric_suffix		Patzkea paniculata			20250716094932	6.40039	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72200	meda_569	short_numeric_suffix					20250716095115	6.40035	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72201	meda_570	short_numeric_suffix		Patzkea paniculata			20250716095644	6.400318	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72202	meda_571	short_numeric_suffix					20250716095803	6.40028	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72203	meda_572	short_numeric_suffix		Patzkea paniculata			20250716100432	6.40033	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72204	meda_573	short_numeric_suffix					20250716100555	6.4003367	45.05439	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72205	meda_574	short_numeric_suffix		Patzkea paniculata			20250716101137	6.400338	45.05441	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72206	meda_575	short_numeric_suffix					20250716101311	6.400252	45.054367	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72207	meda_576	short_numeric_suffix		Patzkea paniculata			20250716101925	6.400387	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72208	meda_577	short_numeric_suffix					20250716102026	6.400387	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72209	meda_578	short_numeric_suffix		Patzkea paniculata			20250716103118	6.400387	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72210	meda_579	short_numeric_suffix					20250716103212	6.400387	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72211	meda_580	short_numeric_suffix		Patzkea paniculata			20250716104033	6.4006033	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72212	meda_581	short_numeric_suffix					20250716104206	6.4005384	45.054466	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72213	meda_582	short_numeric_suffix		Patzkea paniculata			20250716104959	6.4005265	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72214	meda_583	short_numeric_suffix					20250716105044	6.4005265	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72215	meda_584	short_numeric_suffix		Patzkea paniculata			20250716105859	6.4006066	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72216	meda_585	short_numeric_suffix					20250716110311	6.400575	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72217	meda_586	short_numeric_suffix		Patzkea paniculata			20250716110826	6.40067	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72218	meda_587	short_numeric_suffix					20250716110944	6.40062	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72219	meda_588	short_numeric_suffix		Bistorta vivipara			20250716120512	6.4007516	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72220	meda_589	short_numeric_suffix					20250716120628	6.4007435	45.054398	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72221	meda_590	short_numeric_suffix		Bistorta vivipara			20250716121652	6.4006414	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72222	meda_591	short_numeric_suffix					20250716121756	6.40063	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72223	meda_592	short_numeric_suffix		Bistorta vivipara			20250716122247	6.400715	45.05442	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72224	meda_593	short_numeric_suffix					20250716122354	6.4006834	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72225	meda_594	short_numeric_suffix		Bistorta vivipara			20250716122947	6.400638	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72226	meda_595	short_numeric_suffix					20250716123032	6.400638	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72227	meda_596	short_numeric_suffix		Bistorta vivipara			20250716123538	6.40068	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72228	meda_597	short_numeric_suffix					20250716123628	6.40068	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72229	meda_598	short_numeric_suffix		Bistorta vivipara			20250716124228	6.40051	45.054375	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72230	meda_599	short_numeric_suffix					20250716124344	6.40051	45.054375	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72231	meda_600	short_numeric_suffix		Bistorta vivipara			20250716124847	6.400625	45.05443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72232	meda_601	short_numeric_suffix					20250716124938	6.400625	45.05443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72233	meda_602	short_numeric_suffix		Bistorta vivipara			20250716125915	6.4004564	45.054485	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72234	meda_603	short_numeric_suffix					20250716130008	6.4004564	45.054485	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72235	meda_604	short_numeric_suffix		Bistorta vivipara			20250716130603	6.4005666	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72236	meda_605	short_numeric_suffix					20250716130709	6.4005666	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72237	meda_606	short_numeric_suffix		Bistorta vivipara			20250716131411	6.400625	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72238	meda_607	short_numeric_suffix					20250716131510	6.40063	45.054466	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72239	meda_608	short_numeric_suffix		Bistorta vivipara			20250716132537	6.4005485	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72240	meda_609	short_numeric_suffix					20250716132703	6.400582	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72241	meda_610	short_numeric_suffix		Bistorta vivipara			20250716133224	6.4006433	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72242	meda_611	short_numeric_suffix					20250716133341	6.4006433	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72243	meda_612	short_numeric_suffix		Bistorta vivipara			20250716133900	6.4006414	45.054485	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72244	meda_613	short_numeric_suffix					20250716134009	6.4006534	45.054493	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72245	meda_614	short_numeric_suffix		Bistorta vivipara			20250716134433	6.40059	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72246	meda_615	short_numeric_suffix					20250716134537	6.40058	45.054386	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72247	meda_616	short_numeric_suffix		Bistorta vivipara			20250716135151	6.40035	45.05436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72248	meda_617	short_numeric_suffix					20250716135308	6.40035	45.05436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72249	meda_618	short_numeric_suffix		Bistorta vivipara			20250716135910	6.40044	45.05446	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72250	meda_619	short_numeric_suffix					20250716140023	6.40044	45.05446	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72285	meda_620	short_numeric_suffix		Geum montanum			20250715120414	6.4008064	45.054436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72286	meda_621	short_numeric_suffix					20250715120556	6.40079	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72287	meda_622	short_numeric_suffix		Geum montanum			20250715121155	6.400765	45.05445	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72288	meda_623	short_numeric_suffix					20250715121351	6.400705	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72289	meda_624	short_numeric_suffix		Geum montanum			20250715121857	6.40073	45.054447	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72290	meda_625	short_numeric_suffix					20250715122035	6.400672	45.054436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72291	meda_626	short_numeric_suffix		Geum montanum			20250715122750	6.4006963	45.05445	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72292	meda_627	short_numeric_suffix					20250715122908	6.4006777	45.054455	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72293	meda_628	short_numeric_suffix		Geum montanum			20250715123512	6.400596	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72294	meda_629	short_numeric_suffix					20250715123635	6.400488	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72295	meda_630	short_numeric_suffix		Geum montanum			20250715124620	6.400553	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72296	meda_631	short_numeric_suffix					20250715124746	6.400532	45.054394	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72297	meda_632	short_numeric_suffix		Geum montanum			20250715125340	6.400523	45.054394	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72298	meda_633	short_numeric_suffix					20250715125810	6.400542	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72299	meda_634	short_numeric_suffix		Geum montanum			20250715130634	6.400397	45.05442	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72300	meda_635	short_numeric_suffix					20250715130816	6.4004	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72301	meda_636	short_numeric_suffix		Geum montanum			20250715131539	6.4003234	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72302	meda_637	short_numeric_suffix					20250715131659	6.4002867	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72303	meda_638	short_numeric_suffix		Geum montanum			20250715132707	6.4004316	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72304	meda_639	short_numeric_suffix					20250715132854	6.400358	45.05443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72305	meda_640	short_numeric_suffix		Patzkea paniculata			20250716094932	6.40039	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72306	meda_641	short_numeric_suffix					20250716095115	6.40035	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72307	meda_642	short_numeric_suffix		Patzkea paniculata			20250716095644	6.400318	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72308	meda_643	short_numeric_suffix					20250716095803	6.40028	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72309	meda_644	short_numeric_suffix		Patzkea paniculata			20250716100432	6.40033	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72310	meda_645	short_numeric_suffix					20250716100555	6.4003367	45.05439	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72311	meda_646	short_numeric_suffix		Patzkea paniculata			20250716101137	6.400338	45.05441	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72312	meda_647	short_numeric_suffix					20250716101311	6.400252	45.054367	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72313	meda_648	short_numeric_suffix		Patzkea paniculata			20250716101925	6.400387	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72314	meda_649	short_numeric_suffix					20250716102026	6.400387	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72315	meda_650	short_numeric_suffix		Patzkea paniculata			20250716103118	6.400387	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72316	meda_651	short_numeric_suffix					20250716103212	6.400387	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72317	meda_652	short_numeric_suffix		Patzkea paniculata			20250716104033	6.4006033	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72318	meda_653	short_numeric_suffix					20250716104206	6.4005384	45.054466	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72319	meda_654	short_numeric_suffix		Patzkea paniculata			20250716104959	6.4005265	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72320	meda_655	short_numeric_suffix					20250716105044	6.4005265	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72321	meda_656	short_numeric_suffix		Patzkea paniculata			20250716105859	6.4006066	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72322	meda_657	short_numeric_suffix					20250716110311	6.400575	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72323	meda_658	short_numeric_suffix		Patzkea paniculata			20250716110826	6.40067	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72324	meda_659	short_numeric_suffix					20250716110944	6.40062	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72325	meda_660	short_numeric_suffix		Bistorta vivipara			20250716120512	6.4007516	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72326	meda_661	short_numeric_suffix					20250716120628	6.4007435	45.054398	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72327	meda_662	short_numeric_suffix		Bistorta vivipara			20250716121652	6.4006414	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72328	meda_663	short_numeric_suffix					20250716121756	6.40063	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72329	meda_664	short_numeric_suffix		Bistorta vivipara			20250716122247	6.400715	45.05442	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72330	meda_665	short_numeric_suffix					20250716122354	6.4006834	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72331	meda_666	short_numeric_suffix		Bistorta vivipara			20250716122947	6.400638	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72332	meda_667	short_numeric_suffix					20250716123032	6.400638	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72333	meda_668	short_numeric_suffix		Bistorta vivipara			20250716123538	6.40068	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72334	meda_669	short_numeric_suffix					20250716123628	6.40068	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72335	meda_670	short_numeric_suffix		Bistorta vivipara			20250716124228	6.40051	45.054375	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72336	meda_671	short_numeric_suffix					20250716124344	6.40051	45.054375	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72337	meda_672	short_numeric_suffix		Bistorta vivipara			20250716124847	6.400625	45.05443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72338	meda_673	short_numeric_suffix					20250716124938	6.400625	45.05443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72339	meda_674	short_numeric_suffix		Bistorta vivipara			20250716125915	6.4004564	45.054485	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72340	meda_675	short_numeric_suffix					20250716130008	6.4004564	45.054485	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72341	meda_676	short_numeric_suffix		Bistorta vivipara			20250716130603	6.4005666	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72342	meda_677	short_numeric_suffix					20250716130709	6.4005666	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72343	meda_678	short_numeric_suffix		Bistorta vivipara			20250716131411	6.400625	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72344	meda_679	short_numeric_suffix					20250716131510	6.40063	45.054466	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72345	meda_680	short_numeric_suffix		Bistorta vivipara			20250716132537	6.4005485	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72346	meda_681	short_numeric_suffix					20250716132703	6.400582	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72347	meda_682	short_numeric_suffix		Bistorta vivipara			20250716133224	6.4006433	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72348	meda_683	short_numeric_suffix					20250716133341	6.4006433	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72349	meda_684	short_numeric_suffix		Bistorta vivipara			20250716133900	6.4006414	45.054485	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72350	meda_685	short_numeric_suffix					20250716134009	6.4006534	45.054493	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72351	meda_686	short_numeric_suffix		Bistorta vivipara			20250716134433	6.40059	45.054405	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72352	meda_687	short_numeric_suffix					20250716134537	6.40058	45.054386	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72353	meda_688	short_numeric_suffix		Bistorta vivipara			20250716135151	6.40035	45.05436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72354	meda_689	short_numeric_suffix					20250716135308	6.40035	45.05436	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72355	meda_690	short_numeric_suffix		Bistorta vivipara			20250716135910	6.40044	45.05446	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72356	meda_691	short_numeric_suffix					20250716140023	6.40044	45.05446	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72357	meda_692	short_numeric_suffix		Bistorta vivipara			20250716140511	6.4003468	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72358	meda_693	short_numeric_suffix					20250716140624	6.400355	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72359	meda_694	short_numeric_suffix		Bistorta vivipara			20250716141207	6.4003334	45.054398	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72360	meda_695	short_numeric_suffix					20250716141337	6.4002934	45.054382	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72361	meda_696	short_numeric_suffix		Bistorta vivipara			20250716141859	6.400415	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72362	meda_697	short_numeric_suffix					20250716142021	6.4003983	45.054443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72363	meda_698	short_numeric_suffix		Bistorta vivipara			20250716142633	6.40034	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72364	meda_699	short_numeric_suffix					20250716142746	6.40034	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72365	meda_700	short_numeric_suffix		Achillea millefolium			20250717095938	6.400707	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72366	meda_701	short_numeric_suffix					20250717100142	6.4006734	45.05441	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72367	meda_702	short_numeric_suffix		Achillea millefolium			20250717100635	6.400777	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72368	meda_703	short_numeric_suffix					20250717100725	6.400777	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72369	meda_704	short_numeric_suffix		Achillea millefolium			20250717103314	6.4007583	45.05442	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72370	meda_705	short_numeric_suffix					20250717103413	6.4007583	45.05442	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72371	meda_706	short_numeric_suffix		Achillea millefolium			20250717104243	6.40078	45.054462	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72372	meda_707	short_numeric_suffix					20250717104404	6.4007635	45.05447	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72373	meda_708	short_numeric_suffix		Achillea millefolium			20250717104910	6.4006233	45.05446	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72374	meda_709	short_numeric_suffix					20250717105043	6.4007382	45.05451	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72375	meda_710	short_numeric_suffix		Achillea millefolium			20250717105742	6.4007335	45.05448	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72376	meda_711	short_numeric_suffix					20250717105900	6.40074	45.054474	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72377	meda_712	short_numeric_suffix		Achillea millefolium			20250717110451	6.400602	45.05443	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72378	meda_713	short_numeric_suffix					20250717110606	6.400612	45.05445	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72379	meda_714	short_numeric_suffix		Achillea millefolium			20250717111201	6.400727	45.05448	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72380	meda_715	short_numeric_suffix					20250717111311	6.400727	45.05448	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72381	meda_716	short_numeric_suffix		Achillea millefolium			20250717111727	6.4006166	45.05442	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72382	meda_717	short_numeric_suffix					20250717111843	6.40055	45.05439	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72383	meda_718	short_numeric_suffix		Achillea millefolium			20250717112414	6.400632	45.054455	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72384	meda_719	short_numeric_suffix					20250717112529	6.400638	45.05446	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72385	meda_720	short_numeric_suffix		Achillea millefolium			20250717114501	6.400582	45.054462	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72386	meda_721	short_numeric_suffix					20250717114625	6.400592	45.054455	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72387	meda_722	short_numeric_suffix		Achillea millefolium			20250717115247	6.4006286	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72388	meda_723	short_numeric_suffix					20250717115350	6.4006286	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72389	meda_724	short_numeric_suffix		Achillea millefolium			20250717115916	6.400582	45.054474	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72390	meda_725	short_numeric_suffix					20250717120032	6.4005966	45.05449	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72391	meda_726	short_numeric_suffix		Achillea millefolium			20250717120530	6.40051	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72392	meda_727	short_numeric_suffix					20250717120659	6.400553	45.054432	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72393	meda_728	short_numeric_suffix		Achillea millefolium			20250717121152	6.400407	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72394	meda_729	short_numeric_suffix					20250717121310	6.4003935	45.054417	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72395	meda_730	short_numeric_suffix		Achillea millefolium			20250717121908	6.4004416	45.054493	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72396	meda_731	short_numeric_suffix					20250717122025	6.400435	45.054474	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72397	meda_732	short_numeric_suffix		Achillea millefolium			20250717122519	6.4003534	45.054413	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72398	meda_733	short_numeric_suffix					20250717122658	6.400338	45.054424	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72399	meda_734	short_numeric_suffix		Achillea millefolium			20250717123350	6.4003015	45.0544	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72400	meda_735	short_numeric_suffix					20250717123521	6.4003167	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72401	meda_736	short_numeric_suffix		Achillea millefolium			20250717124106	6.400387	45.05448	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72402	meda_737	short_numeric_suffix					20250717124249	6.400417	45.054474	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72403	meda_738	short_numeric_suffix		Achillea millefolium			20250717124853	6.40038	45.05444	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction
+medicin_alps	72404	meda_739	short_numeric_suffix					20250717125056	6.400378	45.054474	looks_swapped_ch_lat_lon	false	false	false	false			missing_dried;missing_extraction

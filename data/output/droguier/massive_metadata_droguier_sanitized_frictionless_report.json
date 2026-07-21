@@ -1,0 +1,70 @@
+{
+  "valid": true,
+  "stats": {
+    "tasks": 1,
+    "errors": 0,
+    "warnings": 0,
+    "seconds": 0.6
+  },
+  "warnings": [],
+  "errors": [],
+  "tasks": [
+    {
+      "name": "massive_metadata_droguier_sanitized",
+      "type": "table",
+      "valid": true,
+      "place": "data/output/droguier/massive_metadata_droguier_sanitized.csv",
+      "labels": [
+        "filename",
+        "extension",
+        "localisation_in_sciex_os_project",
+        "sample_id",
+        "attribute_species",
+        "sample_type",
+        "user_created",
+        "id",
+        "date_created",
+        "collector_fullname",
+        "observation_subject",
+        "inat_upload",
+        "is_wild",
+        "species_name",
+        "no_name_on_list",
+        "picture_panel",
+        "picture_general",
+        "picture_detail",
+        "picture_cut",
+        "picture_panel_label",
+        "collector_orcid",
+        "collector_inat",
+        "qfield_project",
+        "raw_date",
+        "rack",
+        "plate_position",
+        "comment",
+        "genus",
+        "family",
+        "ncbi_taxonomy_id",
+        "ionization_mode",
+        "file_type",
+        "injection",
+        "container_id",
+        "normalized_date",
+        "date_parse_status",
+        "filename_date_token"
+      ],
+      "stats": {
+        "errors": 0,
+        "warnings": 0,
+        "seconds": 0.6,
+        "md5": "66eaa17d8f7c73a083a87961da34dc31",
+        "sha256": "155e79946e78630c6ef29c41bc071f9ff3567472404304192e2bdccf9e3759ab",
+        "bytes": 405203,
+        "fields": 37,
+        "rows": 563
+      },
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

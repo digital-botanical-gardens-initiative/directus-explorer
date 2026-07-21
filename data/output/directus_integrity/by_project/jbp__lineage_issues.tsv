@@ -1,0 +1,92 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	issue
+jbp	74177	dbgi_009877	canonical	dbgi_009877	Rumex aquaticus			20250814094637	14.411989	50.121628	out_of_ch_range	true	false	false	false	dbgi_009877		missing_extraction
+jbp	74178	dbgi_009892 00	other_noncanonical		Rumex aquaticus			20250814095305	14.411982	50.12162	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+jbp	74179	dbgi_009887	canonical	dbgi_009887	Rumex aquaticus			20250814095738	14.411989	50.121628	out_of_ch_range	true	false	false	false	dbgi_009887		missing_extraction
+jbp	74180	dbgi_009854	canonical	dbgi_009854				20250814101322	14.412845	50.121593	out_of_ch_range	true	false	false	false	dbgi_009854		missing_extraction
+jbp	74181	dbgi_009899	canonical	dbgi_009899	Caesalpinia bonduc			20250814091908	14.412362	50.121735	out_of_ch_range	true	false	false	false	dbgi_009899		missing_extraction
+jbp	74182	dbgi_009878	canonical	dbgi_009878				20250814102327	14.412848	50.12159	out_of_ch_range	true	false	false	false	dbgi_009878		missing_extraction
+jbp	74183	dbgi_009892	canonical	dbgi_009892	Rumex aquaticus			20250814095305	14.411982	50.12162	out_of_ch_range	true	false	false	false	dbgi_009892		missing_extraction
+jbp	74184	dbgi_009842	canonical	dbgi_009842	Consolida regalis			20250815152159	14.415398	50.118725	out_of_ch_range	true	false	false	false	dbgi_009842		missing_extraction
+jbp	74185	dbgi_009903	canonical	dbgi_009903	Consolida regalis			20250815152556	14.415398	50.118725	out_of_ch_range	true	false	false	false	dbgi_009903		missing_extraction
+jbp	74186	dbgi_009917	canonical	dbgi_009917	Caesalpinia spinosa			20250815155207	14.412406	50.121788	out_of_ch_range	true	false	false	false	dbgi_009917		missing_extraction
+jbp	74187	dbgi_009881	canonical	dbgi_009881	Artemisia afra			20250815155733	14.412386	50.12177	out_of_ch_range	true	false	false	false	dbgi_009881		missing_extraction
+jbp	74188	dbgi_009902	canonical	dbgi_009902	Caesalpinia pulcherrima			20250815162910	14.412434	50.121758	out_of_ch_range	true	false	false	false	dbgi_009902		missing_extraction
+jbp	74189	dbgi_009897	canonical	dbgi_009897	Caesalpinia pulcherrima			20250815163107	14.412434	50.121758	out_of_ch_range	true	false	false	false	dbgi_009897		missing_extraction
+jbp	74190	dbgi_009859	canonical	dbgi_009859	Caesalpinia gilliesii			20250815163323	14.412418	50.121735	out_of_ch_range	true	false	false	false	dbgi_009859		missing_extraction
+jbp	74192	dbgi_009890	canonical	dbgi_009890				20250815164132	14.415659	50.120968	out_of_ch_range	true	false	false	false	dbgi_009890		missing_extraction
+jbp	74194	dbgi_009896	canonical	dbgi_009896	Thalictrum pubescens			20250815165058	14.416706	50.122204	out_of_ch_range	true	false	false	false	dbgi_009896		missing_extraction
+jbp	74195	dbgi_009838	canonical	dbgi_009838	Thalictrum pubescens			20250815165310	14.416706	50.122204	out_of_ch_range	true	false	false	false	dbgi_009838		missing_extraction
+jbp	74196	dbgi_009869	canonical	dbgi_009869	Artemisia alba			20250815170256	14.414897	50.11871	out_of_ch_range	true	false	false	false	dbgi_009869		missing_extraction
+jbp	74197	dbgi_009873	canonical	dbgi_009873	Artemisia alba			20250815170456	14.414897	50.11871	out_of_ch_range	true	false	false	false	dbgi_009873		missing_extraction
+jbp	74198	dbgi_009914	canonical	dbgi_009914	Artemisia rutifolia			20250815170937	14.41487	50.118687	out_of_ch_range	true	false	false	false	dbgi_009914		missing_extraction
+jbp	74199	dbgi_009882	canonical	dbgi_009882	Artemisia rutifolia			20250815171103	14.41487	50.118687	out_of_ch_range	true	false	false	false	dbgi_009882		missing_extraction
+jbp	74200	dbgi_009823	canonical	dbgi_009823				20250815171402	14.419965	50.123383	out_of_ch_range	true	false	false	false	dbgi_009823		missing_extraction
+jbp	74201	dbgi_009827	canonical	dbgi_009827				20250815171622	14.419965	50.123383	out_of_ch_range	true	false	false	false	dbgi_009827		missing_extraction
+jbp	74203	dbgi_009852	canonical	dbgi_009852	Aconitum carmichaelii			20250815172028	14.419545	50.123394	out_of_ch_range	true	false	false	false	dbgi_009852		missing_extraction
+jbp	74204	dbgi_009846	canonical	dbgi_009846				20250818094748	14.414391	50.117977	out_of_ch_range	true	false	false	false	dbgi_009846		missing_extraction
+jbp	74205	dbgi_009826	canonical	dbgi_009826				20250818095238	14.414391	50.117977	out_of_ch_range	true	false	false	false	dbgi_009826		missing_extraction
+jbp	74206	dbgi_009855	canonical	dbgi_009855	Artemisia frigida			20250818095801	14.414413	50.118004	out_of_ch_range	true	false	false	false	dbgi_009855		missing_extraction
+jbp	74207	dbgi_009821	canonical	dbgi_009821	Artemisia frigida			20250818100320	14.414415	50.118008	out_of_ch_range	true	false	false	false	dbgi_009821		missing_extraction
+jbp	74208	dbgi_009836	canonical	dbgi_009836	Artemisia pontica			20250818100636	14.414472	50.1187	out_of_ch_range	true	false	false	false	dbgi_009836		missing_extraction
+jbp	74209	dbgi_009866	canonical	dbgi_009866	Artemisia pontica			20250818100913	14.414472	50.1187	out_of_ch_range	true	false	false	false	dbgi_009866		missing_extraction
+jbp	74210	dbgi_009891	canonical	dbgi_009891				20250818101434	14.414206	50.11851	out_of_ch_range	true	false	false	false	dbgi_009891		missing_extraction
+jbp	74211	dbgi_009895	canonical	dbgi_009895	Artemisia alba			20250818101704	14.414206	50.11851	out_of_ch_range	true	false	false	false	dbgi_009895		missing_extraction
+jbp	74213	dbgi_009818	canonical	dbgi_009818	Artemisia santonicum			20250818102303	14.414769	50.11836	out_of_ch_range	true	false	false	false	dbgi_009818		missing_extraction
+jbp	74214	dbgi_009853	canonical	dbgi_009853	Artemisia dracunculus			20250818102554	14.414895	50.118736	out_of_ch_range	true	false	false	false	dbgi_009853		missing_extraction
+jbp	74215	dbgi_009850	canonical	dbgi_009850	Artemisia dracunculus			20250818102935	14.414895	50.118736	out_of_ch_range	true	false	false	false	dbgi_009850		missing_extraction
+jbp	74216	dbgi_009825	canonical	dbgi_009825	Artemisia abrotanum			20250818103208	14.41499	50.11879	out_of_ch_range	true	false	false	false	dbgi_009825		missing_extraction
+jbp	74217	dbgi_009910	canonical	dbgi_009910	Artemisia abrotanum			20250818103609	14.41499	50.11879	out_of_ch_range	true	false	false	false	dbgi_009910		missing_extraction
+jbp	74218	dbgi_009872	canonical	dbgi_009872	Artemisia absinthium			20250818103921	14.414989	50.118793	out_of_ch_range	true	false	false	false	dbgi_009872		missing_extraction
+jbp	74219	dbgi_009870	canonical	dbgi_009870	Artemisia absinthium			20250818104214	14.414989	50.118793	out_of_ch_range	true	false	false	false	dbgi_009870		missing_extraction
+jbp	74220	dbgi_009880	canonical	dbgi_009880	Inula hirta			20250818120109	14.415007	50.119648	out_of_ch_range	true	false	false	false	dbgi_009880		missing_extraction
+jbp	74221	dbgi_009893	canonical	dbgi_009893	Inula hirta			20250818120622	14.415007	50.119648	out_of_ch_range	true	false	false	false	dbgi_009893		missing_extraction
+jbp	74222	dbgi_009906	canonical	dbgi_009906	Inula hirta			20250818121137	14.415007	50.119648	out_of_ch_range	true	false	false	false	dbgi_009906		missing_extraction
+jbp	74224	dbgi_009904	canonical	dbgi_009904	Inula oculus-christi			20250818121805	14.415001	50.119663	out_of_ch_range	true	false	false	false	dbgi_009904		missing_extraction
+jbp	74225	dbgi_009832	canonical	dbgi_009832	Inula oculus-christi			20250818121950	14.415001	50.119663	out_of_ch_range	true	false	false	false	dbgi_009832		missing_extraction
+jbp	74226	dbgi_009876	canonical	dbgi_009876	Inula ensifolia			20250818122152	14.414995	50.11968	out_of_ch_range	true	false	false	false	dbgi_009876		missing_extraction
+jbp	74227	dbgi_009908	canonical	dbgi_009908	Inula ensifolia			20250818122333	14.414995	50.11968	out_of_ch_range	true	false	false	false	dbgi_009908		missing_extraction
+jbp	74228	dbgi_009894	canonical	dbgi_009894	Inula ensifolia			20250818122616	14.414995	50.11968	out_of_ch_range	true	false	false	false	dbgi_009894		missing_extraction
+jbp	74229	dbgi_009871	canonical	dbgi_009871	Inula ensifolia			20250818122817	14.414995	50.11968	out_of_ch_range	true	false	false	false	dbgi_009871		missing_extraction
+jbp	74230	dbgi_009898	canonical	dbgi_009898	Thalictrum flavum			20250818123739	14.414769	50.119644	out_of_ch_range	true	false	false	false	dbgi_009898		missing_extraction
+jbp	74231	dbgi_009883	canonical	dbgi_009883	Thalictrum flavum			20250818123855	14.414769	50.119644	out_of_ch_range	true	false	false	false	dbgi_009883		missing_extraction
+jbp	74232	dbgi_009834	canonical	dbgi_009834	Thalictrum flavum			20250818124025	14.414769	50.119644	out_of_ch_range	true	false	false	false	dbgi_009834		missing_extraction
+jbp	74233	dbgi_009907	canonical	dbgi_009907	Thalictrum simplex			20250818124317	14.414782	50.119705	out_of_ch_range	true	false	false	false	dbgi_009907		missing_extraction
+jbp	74234	dbgi_009847	canonical	dbgi_009847	Thalictrum simplex			20250818124537	14.414782	50.119705	out_of_ch_range	true	false	false	false	dbgi_009847		missing_extraction
+jbp	74235	dbgi_009861	canonical	dbgi_009861	Thalictrum lucidum			20250818124714	14.414753	50.119686	out_of_ch_range	true	false	false	false	dbgi_009861		missing_extraction
+jbp	74236	dbgi_009885	canonical	dbgi_009885	Thalictrum lucidum			20250818124821	14.414753	50.119686	out_of_ch_range	true	false	false	false	dbgi_009885		missing_extraction
+jbp	74237	dbgi_009829	canonical	dbgi_009829	Aconitum variegatum			20250818144832	14.419825	50.123386	out_of_ch_range	true	false	false	false	dbgi_009829		missing_extraction
+jbp	74239	dbgi_009889	canonical	dbgi_009889				20250818130549	14.41538	50.121643	out_of_ch_range	true	false	false	false	dbgi_009889		missing_extraction
+jbp	74240	dbgi_009843	canonical	dbgi_009843				20250818131008	14.41538	50.121643	out_of_ch_range	true	false	false	false	dbgi_009843		missing_extraction
+jbp	74241	dbgi_009865	canonical	dbgi_009865	Spiraea nipponica			20250818132021	14.415343	50.12161	out_of_ch_range	true	false	false	false	dbgi_009865		missing_extraction
+jbp	74242	dbgi_009828	canonical	dbgi_009828	Spiraea nipponica			20250818132319	14.415343	50.12161	out_of_ch_range	true	false	false	false	dbgi_009828		missing_extraction
+jbp	74243	dbgi_009831	canonical	dbgi_009831	Spiraea japonica			20250818132746	14.415308	50.121582	out_of_ch_range	true	false	false	false	dbgi_009831		missing_extraction
+jbp	74244	dbgi_009863	canonical	dbgi_009863	Spiraea japonica			20250818133104	14.415308	50.121582	out_of_ch_range	true	false	false	false	dbgi_009863		missing_extraction
+jbp	74245	dbgi_009912	canonical	dbgi_009912	Spiraea japonica			20250818133500	14.415308	50.121582	out_of_ch_range	true	false	false	false	dbgi_009912		missing_extraction
+jbp	74246	dbgi_009839	canonical	dbgi_009839	Spiraea media			20250818134019	14.418057	50.12301	out_of_ch_range	true	false	false	false	dbgi_009839		missing_extraction
+jbp	74247	dbgi_009874	canonical	dbgi_009874	Spiraea media			20250818134314	14.418057	50.12301	out_of_ch_range	true	false	false	false	dbgi_009874		missing_extraction
+jbp	74248	dbgi_009888	canonical	dbgi_009888	Spiraea media			20250818134558	14.418057	50.12301	out_of_ch_range	true	false	false	false	dbgi_009888		missing_extraction
+jbp	74249	dbgi_009901	canonical	dbgi_009901	Spiraea humilis			20250818134827	14.418001	50.123	out_of_ch_range	true	false	false	false	dbgi_009901		missing_extraction
+jbp	74250	dbgi_009867	canonical	dbgi_009867	Spiraea media			20250818135247	14.4180565	50.12301	out_of_ch_range	true	false	false	false	dbgi_009867		missing_extraction
+jbp	74251	dbgi_009913	canonical	dbgi_009913	Spiraea humilis			20250818135546	14.417999	50.123	out_of_ch_range	true	false	false	false	dbgi_009913		missing_extraction
+jbp	74252	dbgi_009833	canonical	dbgi_009833	Spiraea humilis			20250818135838	14.417999	50.123	out_of_ch_range	true	false	false	false	dbgi_009833		missing_extraction
+jbp	74253	dbgi_009864	canonical	dbgi_009864	Spiraea humilis			20250818140043	14.417999	50.123	out_of_ch_range	true	false	false	false	dbgi_009864		missing_extraction
+jbp	74254	dbgi_009820	canonical	dbgi_009820				20250818140313	14.416558	50.12256	out_of_ch_range	true	false	false	false	dbgi_009820		missing_extraction
+jbp	74255	dbgi_009879	canonical	dbgi_009879				20250818140833	14.416558	50.12256	out_of_ch_range	true	false	false	false	dbgi_009879		missing_extraction
+jbp	74256	dbgi_009911	canonical	dbgi_009911				20250818141136	14.416558	50.12256	out_of_ch_range	true	false	false	false	dbgi_009911		missing_extraction
+jbp	74257	dbgi_009837	canonical	dbgi_009837				20250818141709	14.416558	50.12256	out_of_ch_range	true	false	false	false	dbgi_009837		missing_extraction
+jbp	74258	dbgi_009858	canonical	dbgi_009858				20250818142754	14.416558	50.12256	out_of_ch_range	true	false	false	false	dbgi_009858		missing_extraction
+jbp	74259	dbgi_009822	canonical	dbgi_009822	Spiraea betulifolia			20250818143107	14.416282	50.122322	out_of_ch_range	true	false	false	false	dbgi_009822		missing_extraction
+jbp	74260	dbgi_009860	canonical	dbgi_009860	Spiraea betulifolia			20250818143449	14.416282	50.122322	out_of_ch_range	true	false	false	false	dbgi_009860		missing_extraction
+jbp	74261	dbgi_009835	canonical	dbgi_009835	Spiraea betulifolia			20250818143703	14.416282	50.122322	out_of_ch_range	true	false	false	false	dbgi_009835		missing_extraction
+jbp	74262	dbgi_009857	canonical	dbgi_009857	Spiraea salicifolia			20250818143935	14.415109	50.12093	out_of_ch_range	true	false	false	false	dbgi_009857		missing_extraction
+jbp	74263	dbgi_009915	canonical	dbgi_009915	Spiraea salicifolia			20250818144154	14.415109	50.12093	out_of_ch_range	true	false	false	false	dbgi_009915		missing_extraction
+jbp	74264	dbgi_009875	canonical	dbgi_009875	Spiraea salicifolia			20250818144350	14.415109	50.12093	out_of_ch_range	true	false	false	false	dbgi_009875		missing_extraction
+jbp	74265	dbgi_009819	canonical	dbgi_009819	Spiraea salicifolia			20250818144653	14.415109	50.12093	out_of_ch_range	true	false	false	false	dbgi_009819		missing_extraction
+jbp	74266	dbgi_009900	canonical	dbgi_009900	Caesalpinia mexicana			20250818144953	14.412951	50.12173	out_of_ch_range	true	false	false	false	dbgi_009900		missing_extraction
+jbp	74267	dbgi_009845	canonical	dbgi_009845	Caesalpinia mexicana			20250818145602	14.412951	50.12173	out_of_ch_range	true	false	false	false	dbgi_009845		missing_extraction
+jbp	74268	dbgi_009830	canonical	dbgi_009830	Caesalpinia mexicana			20250818145811	14.412951	50.12173	out_of_ch_range	true	false	false	false	dbgi_009830		missing_extraction
+jbp	74269	dbgi_009862	canonical	dbgi_009862	Coffea arabica			20250818145941	14.41292	50.121666	out_of_ch_range	true	false	false	false	dbgi_009862		missing_extraction
+jbp	74270	dbgi_009851	canonical	dbgi_009851	Coffea arabica			20250818150240	14.41292	50.121666	out_of_ch_range	true	false	false	false	dbgi_009851		missing_extraction
+jbp	76280	dbgi_012066	canonical	dbgi_012066	Nerium oleander			20260225132659	14.41257	50.121803	out_of_ch_range	true	false	false	false	dbgi_012066		missing_extraction
+jbp	76328	dbgi_012105	canonical	dbgi_012105				20260225122946	14.412285	50.121517	out_of_ch_range	true	false	false	false	dbgi_012105		missing_extraction
+jbp	76350	dbgi_012083	canonical	dbgi_012083	Drosera capensis			20260225133504	14.412285	50.121517	out_of_ch_range	true	false	false	false	dbgi_012083		missing_extraction

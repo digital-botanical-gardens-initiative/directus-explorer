@@ -1,0 +1,17 @@
+group_id	group_size	fingerprint	project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status
+117	2	jbuf|agrimonia eupatoria l.|20240625134458|7.157249|46.79255	jbuf	65627	dbgi_003185	canonical	dbgi_003185	Agrimonia eupatoria L.			20240625134458	7.157249	46.79255	looks_swapped_ch_lat_lon
+117	2	jbuf|agrimonia eupatoria l.|20240625134458|7.157249|46.79255	jbuf	65634	dbgi	other_noncanonical		Agrimonia eupatoria L.			20240625134458	7.157249	46.79255	looks_swapped_ch_lat_lon
+118	2	jbuf|hyoscyamus niger l.|20240625141853|7.15671|46.792603	jbuf	65632	dbgi_003214	canonical	dbgi_003214	Hyoscyamus niger L.			20240625141853	7.15671	46.792603	looks_swapped_ch_lat_lon
+118	2	jbuf|hyoscyamus niger l.|20240625141853|7.15671|46.792603	jbuf	65639	dbgi_5	short_numeric_suffix	dbgi_000005	Hyoscyamus niger L.			20240625141853	7.15671	46.792603	looks_swapped_ch_lat_lon
+119	2	jbuf|petunia integrifolia (hook.) schinz et thell.|20240625142337|7.1567|46.792587	jbuf	65633	dbgi_003180	canonical	dbgi_003180	Petunia integrifolia (Hook.) Schinz et Thell.			20240625142337	7.1567	46.792587	looks_swapped_ch_lat_lon
+119	2	jbuf|petunia integrifolia (hook.) schinz et thell.|20240625142337|7.1567|46.792587	jbuf	65640	dbgi_6	short_numeric_suffix	dbgi_000006	Petunia integrifolia (Hook.) Schinz et Thell.			20240625142337	7.1567	46.792587	looks_swapped_ch_lat_lon
+120	2	jbuf|rosa glauca pourr.|20240625140558|7.157282|46.79245	jbuf	65630	dbgi_003223	canonical	dbgi_003223	Rosa glauca Pourr.			20240625140558	7.1572824	46.79245	looks_swapped_ch_lat_lon
+120	2	jbuf|rosa glauca pourr.|20240625140558|7.157282|46.79245	jbuf	65637	dbgi_3	short_numeric_suffix	dbgi_000003	Rosa glauca Pourr.			20240625140558	7.1572824	46.79245	looks_swapped_ch_lat_lon
+121	2	jbuf|rubus idaeus l. 'autumn bliss'|20240625135158|7.157231|46.79254	jbuf	65628	dbgi_003155	canonical	dbgi_003155	Rubus idaeus L. 'Autumn Bliss'			20240625135158	7.157231	46.79254	looks_swapped_ch_lat_lon
+121	2	jbuf|rubus idaeus l. 'autumn bliss'|20240625135158|7.157231|46.79254	jbuf	65635	dbgi_1	short_numeric_suffix	dbgi_000001	Rubus idaeus L. 'Autumn Bliss'			20240625135158	7.157231	46.79254	looks_swapped_ch_lat_lon
+122	2	jbuf|stephanandra incisa (thunb.) zabel 'crispa'|20240625141040|7.157309|46.79241	jbuf	65631	dbgi_003101	canonical	dbgi_003101	Stephanandra incisa (Thunb.) Zabel 'Crispa'			20240625141040	7.1573086	46.79241	looks_swapped_ch_lat_lon
+122	2	jbuf|stephanandra incisa (thunb.) zabel 'crispa'|20240625141040|7.157309|46.79241	jbuf	65638	dbgi_4	short_numeric_suffix	dbgi_000004	Stephanandra incisa (Thunb.) Zabel 'Crispa'			20240625141040	7.1573086	46.79241	looks_swapped_ch_lat_lon
+123	2	jbuf|tsuga canadensis (l.) carr.|20250410150414|7.155265|46.79312	jbuf	70078	dbgi_007573	canonical	dbgi_007573	Tsuga canadensis (L.) Carr.			20250410150414	7.155265	46.79312	looks_swapped_ch_lat_lon
+123	2	jbuf|tsuga canadensis (l.) carr.|20250410150414|7.155265|46.79312	jbuf	70079	dbgi_007782	canonical	dbgi_007782	Tsuga canadensis (L.) Carr.			20250410150414	7.155265	46.79312	looks_swapped_ch_lat_lon
+124	2	jbuf||20250325113329|7.157474|46.79119	jbuf	69973	dbgi_0077098	other_noncanonical	dbgi_077098				20250325113329	7.1574736	46.79119	looks_swapped_ch_lat_lon
+124	2	jbuf||20250325113329|7.157474|46.79119	jbuf	70412	dbgi_007709	canonical	dbgi_007709				20250325113329	7.1574736	46.79119	looks_swapped_ch_lat_lon

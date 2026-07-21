@@ -1,0 +1,3 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	issue
+jbb	74329	dbgi_007867	canonical	dbgi_007867	Acacia retinodes Schltdl.			20251228111920	-74.10103	4.6676435	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction
+jbb	74330	dbgi_007858	canonical	dbgi_007858	Achyrocline alata (Kunth) DC.			20251228112734	-74.101006	4.667911	out_of_ch_range	false	false	false	false			missing_dried;missing_extraction

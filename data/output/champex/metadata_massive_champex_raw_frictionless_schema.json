@@ -1,0 +1,118 @@
+{
+  "name": "metadata_massive_champex",
+  "type": "table",
+  "path": "data/working/champex_original/metadata_massive_champex.csv",
+  "scheme": "file",
+  "format": "csv",
+  "mediatype": "text/csv",
+  "encoding": "utf-8",
+  "hash": "sha256:10bd798a12da5b47644110be7c6e07bf4d3b7369a3e652886c208df01575ccea",
+  "bytes": 61825,
+  "fields": 24,
+  "rows": 134,
+  "dialect": {
+    "csv": {
+      "delimiter": ";"
+    }
+  },
+  "schema": {
+    "fields": [
+      {
+        "name": "filename",
+        "type": "string"
+      },
+      {
+        "name": "Extension",
+        "type": "string"
+      },
+      {
+        "name": "Localisation.in.Sciex.OS.project",
+        "type": "string"
+      },
+      {
+        "name": "sample_id",
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "collector_fullname",
+        "type": "string"
+      },
+      {
+        "name": "observation_subject",
+        "type": "string"
+      },
+      {
+        "name": "inat_upload",
+        "type": "integer"
+      },
+      {
+        "name": "is_wild",
+        "type": "integer"
+      },
+      {
+        "name": "ATTRIBUTE_Species",
+        "type": "string"
+      },
+      {
+        "name": "no_name_on_list",
+        "type": "integer"
+      },
+      {
+        "name": "picture_panel",
+        "type": "string"
+      },
+      {
+        "name": "picture_general",
+        "type": "string"
+      },
+      {
+        "name": "picture_detail",
+        "type": "string"
+      },
+      {
+        "name": "picture_cut",
+        "type": "string"
+      },
+      {
+        "name": "picture_panel_label",
+        "type": "string"
+      },
+      {
+        "name": "x_coord",
+        "type": "number"
+      },
+      {
+        "name": "y_coord",
+        "type": "number"
+      },
+      {
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "name": "collector_orcid",
+        "type": "string"
+      },
+      {
+        "name": "collector_inat",
+        "type": "string"
+      },
+      {
+        "name": "NCBITaxonomy_ID",
+        "type": "integer"
+      },
+      {
+        "name": "Ionization mode",
+        "type": "string"
+      },
+      {
+        "name": "garden",
+        "type": "string"
+      }
+    ]
+  }
+}

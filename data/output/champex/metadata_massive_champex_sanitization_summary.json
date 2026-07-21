@@ -1,0 +1,18 @@
+{
+  "raw_path": "data/working/champex_original/metadata_massive_champex.csv",
+  "sanitized_path": "data/output/champex/metadata_massive_champex_sanitized.csv",
+  "issues_path": "data/output/champex/metadata_massive_champex_sanitization_issues.tsv",
+  "row_count": 134,
+  "file_type_counts": {
+    "SAMPLE": 127,
+    "Blank": 1,
+    "QC": 6
+  },
+  "date_parse_status_counts": {
+    "ambiguous_spreadsheet_scientific_date": 127,
+    "non_sample_marker": 7
+  },
+  "issue_counts": {
+    "ambiguous_spreadsheet_scientific_date": 127
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "valid": true,
+  "stats": {
+    "tasks": 1,
+    "errors": 0,
+    "warnings": 0,
+    "seconds": 0.032
+  },
+  "warnings": [],
+  "errors": [],
+  "tasks": [
+    {
+      "name": "metadata_massive_champex_sanitized",
+      "type": "table",
+      "valid": true,
+      "place": "data/output/champex/metadata_massive_champex_sanitized.csv",
+      "labels": [
+        "filename",
+        "extension",
+        "localisation_in_sciex_os_project",
+        "sample_id",
+        "type",
+        "collector_fullname",
+        "observation_subject",
+        "inat_upload",
+        "is_wild",
+        "attribute_species",
+        "no_name_on_list",
+        "picture_panel",
+        "picture_general",
+        "picture_detail",
+        "picture_cut",
+        "picture_panel_label",
+        "x_coord",
+        "y_coord",
+        "raw_date",
+        "collector_orcid",
+        "collector_inat",
+        "ncbi_taxonomy_id",
+        "ionization_mode",
+        "garden",
+        "normalized_date",
+        "date_parse_status",
+        "filename_date_token"
+      ],
+      "stats": {
+        "errors": 0,
+        "warnings": 0,
+        "seconds": 0.032,
+        "md5": "f0d7e952090366bb9d2511581297c921",
+        "sha256": "816b0f29201d6b226d3d64138471adddb1f6e517e867f41818266d4f184012ff",
+        "bytes": 69581,
+        "fields": 27,
+        "rows": 134
+      },
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

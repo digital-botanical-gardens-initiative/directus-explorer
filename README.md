@@ -206,3 +206,83 @@ The per-row report is exact-filename based. It also carries the Directus-sourced
 `dbgi_#####` sample identifier and the more specific profiled sample/aliquot code such as
 `dbgi_001195_01_01` as contextual columns, but those identifiers are not used to create secondary
 matches. For exact matches, the report also includes the watcher-exported mzML `polarity`.
+
+## Champex Metadata Sanitization
+
+The Champex massive metadata CSV is kept immutable in `data/input`. Work from a copy and write
+all derived files under `data/output/champex`:
+
+```bash
+mkdir -p data/working/champex_original data/output/champex
+cp -n data/input/metadata_massive_champex.csv \
+  data/working/champex_original/metadata_massive_champex.csv
+```
+
+Run the local sanitizer:
+
+```bash
+uv run python scripts/sanitize_champex_metadata.py
+```
+
+This writes:
+
+```text
+data/output/champex/metadata_massive_champex_sanitized.csv
+data/output/champex/metadata_massive_champex_sanitization_issues.tsv
+data/output/champex/metadata_massive_champex_sanitization_summary.json
+```
+
+The sanitizer converts the semicolon-delimited source into a comma-delimited CSV, normalizes
+headers to snake case, converts `0`/`1` flags to booleans, coerces numeric columns, blanks
+`QC`/`Blank` markers in typed metadata fields, preserves the damaged source date as `raw_date`,
+and adds `normalized_date`, `date_parse_status`, and `filename_date_token`.
+
+Run Frictionless profiling and validation:
+
+```bash
+uv run python -c "
+from frictionless import Resource, validate
+from frictionless.formats.csv import CsvControl
+import json
+
+specs = [
+    (
+        'data/working/champex_original/metadata_massive_champex.csv',
+        'data/output/champex/metadata_massive_champex_raw_frictionless_schema.json',
+        'data/output/champex/metadata_massive_champex_raw_frictionless_report.json',
+        ';',
+    ),
+    (
+        'data/output/champex/metadata_massive_champex_sanitized.csv',
+        'data/output/champex/metadata_massive_champex_sanitized_frictionless_schema.json',
+        'data/output/champex/metadata_massive_champex_sanitized_frictionless_report.json',
+        ',',
+    ),
+]
+
+for source, schema_path, report_path, delimiter in specs:
+    resource = Resource(path=source, control=CsvControl(delimiter=delimiter))
+    resource.infer(stats=True)
+    descriptor = resource.to_descriptor()
+    open(schema_path, 'w', encoding='utf-8').write(
+        json.dumps(descriptor, indent=2, ensure_ascii=False)
+    )
+    report = validate(resource)
+    open(report_path, 'w', encoding='utf-8').write(
+        json.dumps(report.to_descriptor(), indent=2, ensure_ascii=False)
+    )
+    print(source, 'valid=', report.valid, 'errors=', report.stats.get('errors'))
+"
+```
+
+Expected current result:
+
+```text
+data/working/champex_original/metadata_massive_champex.csv valid= False errors= 42
+data/output/champex/metadata_massive_champex_sanitized.csv valid= True errors= 0
+```
+
+The `date` values in the source, such as `2,02506E+13`, are spreadsheet-damaged and are not
+recoverable as full day-level dates from this CSV alone. The sanitizer therefore leaves
+`normalized_date` empty for those rows and records `ambiguous_spreadsheet_scientific_date` in
+`date_parse_status` and the issues TSV.

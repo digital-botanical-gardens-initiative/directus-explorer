@@ -11,6 +11,7 @@ import click
 
 from .config import SettingsError, load_settings
 from .directus import DirectusAuthError, DirectusClient, DirectusError, DirectusResponseError
+from .injection_audit import summarize_injection_audit
 from .ms_converted_check import (
     ConvertedMatchSummary,
     compare_metadata_to_watcher,
@@ -332,7 +333,13 @@ def sample_locations(
             from .ms_metadata import write_ms_metadata_csv
 
             write_ms_metadata_csv(table, output_path, delimiter="\t")
-    except (SettingsError, DirectusAuthError, DirectusError, DirectusResponseError, ValueError) as exc:
+    except (
+        SettingsError,
+        DirectusAuthError,
+        DirectusError,
+        DirectusResponseError,
+        ValueError,
+    ) as exc:
         raise click.ClickException(str(exc)) from exc
 
     if output_format == "json":
@@ -438,6 +445,232 @@ def export_ms_metadata(
         click.echo(
             f"Wrote {row_count} metadata rows for project {qfield_project} to {output_path}"
         )
+
+
+@ms.command("audit-injection-list")
+@click.argument(
+    "input_csv",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+)
+@click.option(
+    "--output",
+    "output_path",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+    default=None,
+    help="Write the row-level audit report to this TSV path.",
+)
+@click.option(
+    "--file-type",
+    "required_file_type",
+    default="sample",
+    show_default=True,
+    help="CSV file_type value considered eligible for MS import.",
+)
+@click.option(
+    "--ms-parent-level",
+    type=click.Choice(("aliquot", "extraction"), case_sensitive=False),
+    default="aliquot",
+    show_default=True,
+    help="Directus sample-container level that MS_Data.parent_sample_container should target.",
+)
+@click.option(
+    "--format",
+    "output_format",
+    type=click.Choice(("text", "json", "tsv"), case_sensitive=False),
+    default="text",
+    show_default=True,
+)
+@click.option(
+    "--env-file",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+    default=None,
+    help="Override the default local .env file.",
+)
+def audit_injection_list(
+    input_csv: Path,
+    output_path: Path | None,
+    required_file_type: str,
+    ms_parent_level: str,
+    output_format: str,
+    env_file: Path | None,
+) -> None:
+    """Audit an acquisition injection list against Directus sample lineage."""
+
+    if output_format == "tsv" and output_path is None:
+        raise click.ClickException("--output is required when --format tsv")
+
+    try:
+        settings = load_settings(env_file=env_file)
+        client = DirectusClient(settings)
+        table = client.build_injection_audit_table(
+            input_path=input_csv,
+            required_file_type=required_file_type,
+            ms_parent_level=ms_parent_level,
+        )
+        if output_path is not None:
+            from .injection_audit import write_injection_audit_tsv
+
+            write_injection_audit_tsv(table, output_path)
+    except (
+        SettingsError,
+        DirectusAuthError,
+        DirectusError,
+        DirectusResponseError,
+        ValueError,
+    ) as exc:
+        raise click.ClickException(str(exc)) from exc
+
+    summary = summarize_injection_audit(table)
+    if output_format == "json":
+        click.echo(
+            json.dumps(
+                {
+                    "input_csv": str(input_csv),
+                    "output": str(output_path) if output_path is not None else None,
+                    "ms_parent_level": ms_parent_level,
+                    "summary": summary,
+                    "rows": list(table.rows),
+                }
+            )
+        )
+        return
+
+    if output_format == "tsv":
+        click.echo(f"Wrote {summary['row_count']} injection audit rows to {output_path}")
+        return
+
+    click.echo(_render_injection_audit_summary(summary))
+    if output_path is not None:
+        click.echo(f"report\t{output_path}")
+
+
+@ms.command("import-ready-injection-runs")
+@click.argument(
+    "input_csv",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+)
+@click.option(
+    "--file-type",
+    "required_file_type",
+    default="sample",
+    show_default=True,
+    help="CSV file_type value considered eligible for MS import.",
+)
+@click.option(
+    "--ms-parent-level",
+    type=click.Choice(("aliquot", "extraction"), case_sensitive=False),
+    default="aliquot",
+    show_default=True,
+    help="Directus sample-container level that MS_Data.parent_sample_container should target.",
+)
+@click.option(
+    "--injection-volume",
+    type=int,
+    default=1,
+    show_default=True,
+    help="MS_Data.injection_volume value.",
+)
+@click.option(
+    "--injection-volume-unit-id",
+    type=int,
+    required=True,
+    help="Directus SI_Units.id for the injection volume unit.",
+)
+@click.option(
+    "--injection-method-id",
+    type=int,
+    required=True,
+    help="Directus Injection_Methods.id to assign to every created run.",
+)
+@click.option(
+    "--instrument-id",
+    type=int,
+    required=True,
+    help="Directus Instruments.id to assign to every created run.",
+)
+@click.option(
+    "--batch-id",
+    type=int,
+    default=None,
+    help="Optional Directus Batches.id to assign to every created run.",
+)
+@click.option(
+    "--status",
+    "item_status",
+    default="published",
+    show_default=True,
+    help="MS_Data.status value for created rows.",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Import at most this many ready rows.",
+)
+@click.option(
+    "--commit",
+    is_flag=True,
+    help="Actually create MS_Data rows. Without this flag, only perform a dry run.",
+)
+@click.option(
+    "--format",
+    "output_format",
+    type=click.Choice(("text", "json"), case_sensitive=False),
+    default="text",
+    show_default=True,
+)
+@click.option(
+    "--env-file",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+    default=None,
+    help="Override the default local .env file.",
+)
+def import_ready_injection_runs(
+    input_csv: Path,
+    required_file_type: str,
+    ms_parent_level: str,
+    injection_volume: int,
+    injection_volume_unit_id: int,
+    injection_method_id: int,
+    instrument_id: int,
+    batch_id: int | None,
+    item_status: str,
+    limit: int | None,
+    commit: bool,
+    output_format: str,
+    env_file: Path | None,
+) -> None:
+    """Create MS_Data rows for audit-ready acquisition-list rows."""
+
+    try:
+        settings = load_settings(env_file=env_file)
+        client = DirectusClient(settings)
+        summary = client.import_ready_injection_runs(
+            input_path=input_csv,
+            required_file_type=required_file_type,
+            ms_parent_level=ms_parent_level,
+            injection_volume=injection_volume,
+            injection_volume_unit_id=injection_volume_unit_id,
+            injection_method_id=injection_method_id,
+            instrument_id=instrument_id,
+            status=item_status,
+            batch_id=batch_id,
+            limit=limit,
+            commit=commit,
+        )
+    except (
+        SettingsError,
+        DirectusAuthError,
+        DirectusError,
+        DirectusResponseError,
+        ValueError,
+    ) as exc:
+        raise click.ClickException(str(exc)) from exc
+
+    if output_format == "json":
+        click.echo(json.dumps(summary))
+        return
+    click.echo(_render_injection_import_summary(summary))
 
 
 @ms.command("check-converted")
@@ -576,6 +809,44 @@ def _render_converted_match_summary(summary: ConvertedMatchSummary) -> str:
             f"metadata_row_count\t{summary.metadata_row_count}",
             f"exact_match_count\t{summary.exact_match_count}",
             f"no_match_count\t{summary.no_match_count}",
+        )
+    )
+
+
+def _render_injection_audit_summary(summary: dict[str, int]) -> str:
+    """Render an injection audit summary in plain text."""
+
+    return "\n".join(
+        (
+            f"row_count\t{summary['row_count']}",
+            f"sample_file_count\t{summary['sample_file_count']}",
+            f"ready_count\t{summary['ready_count']}",
+            f"blocked_count\t{summary['blocked_count']}",
+            f"already_imported_count\t{summary['already_imported_count']}",
+            f"skipped_count\t{summary['skipped_count']}",
+            f"missing_dried_material_count\t{summary['missing_dried_material_count']}",
+            "missing_extraction_sample_container_count\t"
+            f"{summary['missing_extraction_sample_container_count']}",
+            "missing_aliquot_sample_container_count\t"
+            f"{summary['missing_aliquot_sample_container_count']}",
+            f"missing_csv_identifier_count\t{summary['missing_csv_identifier_count']}",
+        )
+    )
+
+
+def _render_injection_import_summary(summary: dict[str, Any]) -> str:
+    """Render an injection import summary in plain text."""
+
+    mode = "dry_run" if summary.get("dry_run") else "committed"
+    return "\n".join(
+        (
+            f"mode\t{mode}",
+            f"ready_count\t{summary['ready_count']}",
+            f"selected_count\t{summary['selected_count']}",
+            f"created_count\t{summary['created_count']}",
+            f"skipped_selected_count\t{summary['skipped_selected_count']}",
+            f"blocked_count\t{summary['blocked_count']}",
+            f"already_imported_count\t{summary['already_imported_count']}",
         )
     )
 

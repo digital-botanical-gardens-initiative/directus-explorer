@@ -11,7 +11,17 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from .config import Settings
-from .ms_converted_check import flatten_watcher_metadata, load_watcher_entries, strip_mzml_suffix
+from .injection_audit import (
+    build_injection_audit_table,
+    load_injection_list,
+    summarize_injection_audit,
+    write_injection_audit_tsv,
+)
+from .ms_converted_check import (
+    flatten_watcher_metadata,
+    load_watcher_entries,
+    strip_mzml_suffix,
+)
 from .ms_metadata import (
     ALIQUOTING_DATA_FIELDS,
     DRIED_SAMPLES_DATA_FIELDS,
@@ -284,6 +294,190 @@ class DirectusClient:
             table = select_table_view(table, view=view)
         write_ms_metadata_csv(table, output_path, delimiter="\t")
         return len(table.rows)
+
+    def export_injection_audit_tsv(
+        self,
+        *,
+        input_path: str | Path,
+        output_path: str | Path,
+        required_file_type: str = "sample",
+        ms_parent_level: str = "aliquot",
+    ) -> int:
+        """Write an injection-list lineage audit TSV and return the row count."""
+
+        table = self.build_injection_audit_table(
+            input_path=input_path,
+            required_file_type=required_file_type,
+            ms_parent_level=ms_parent_level,
+        )
+        write_injection_audit_tsv(table, Path(output_path))
+        return len(table.rows)
+
+    def build_injection_audit_table(
+        self,
+        *,
+        input_path: str | Path,
+        required_file_type: str = "sample",
+        ms_parent_level: str = "aliquot",
+    ) -> MsMetadataTable:
+        """Audit an acquisition injection list against Directus lineage records."""
+
+        injection_rows = load_injection_list(Path(input_path))
+        self._authenticate()
+
+        dried_rows = self._get_items(
+            collection="Dried_Samples_Data",
+            fields="id,sample_container.container_id,field_data.sample_id",
+        )
+        extraction_rows = self._get_items(
+            collection="Extraction_Data",
+            fields=(
+                "id,sample_container.container_id,"
+                "parent_sample_container.container_id"
+            ),
+        )
+        aliquot_rows = self._get_items(
+            collection="Aliquoting_Data",
+            fields=(
+                "id,sample_container.container_id,"
+                "parent_sample_container.container_id"
+            ),
+        )
+        ms_rows = self._get_items(
+            collection="MS_Data",
+            fields="id,filename,parent_sample_container.container_id",
+        )
+        return build_injection_audit_table(
+            injection_rows=injection_rows,
+            dried_rows=dried_rows,
+            extraction_rows=extraction_rows,
+            aliquot_rows=aliquot_rows,
+            ms_rows=ms_rows,
+            required_file_type=required_file_type,
+            ms_parent_level=ms_parent_level,
+        )
+
+    def import_ready_injection_runs(
+        self,
+        *,
+        input_path: str | Path,
+        required_file_type: str = "sample",
+        ms_parent_level: str = "aliquot",
+        injection_volume: int,
+        injection_volume_unit_id: int,
+        injection_method_id: int,
+        instrument_id: int,
+        status: str = "published",
+        batch_id: int | None = None,
+        limit: int | None = None,
+        commit: bool = False,
+    ) -> dict[str, Any]:
+        """Create MS_Data rows for audit-ready injection-list rows."""
+
+        if limit is not None and limit < 1:
+            raise ValueError("--limit must be greater than zero")
+
+        injection_rows = load_injection_list(Path(input_path))
+        self._authenticate()
+
+        dried_rows = self._get_items(
+            collection="Dried_Samples_Data",
+            fields="id,sample_container.container_id,field_data.sample_id",
+        )
+        extraction_rows = self._get_items(
+            collection="Extraction_Data",
+            fields=(
+                "id,sample_container.id,sample_container.container_id,"
+                "parent_sample_container.container_id"
+            ),
+        )
+        aliquot_rows = self._get_items(
+            collection="Aliquoting_Data",
+            fields=(
+                "id,sample_container.id,sample_container.container_id,"
+                "parent_sample_container.container_id"
+            ),
+        )
+        ms_rows = self._get_items(
+            collection="MS_Data",
+            fields="id,filename,parent_sample_container.container_id",
+        )
+        audit_table = build_injection_audit_table(
+            injection_rows=injection_rows,
+            dried_rows=dried_rows,
+            extraction_rows=extraction_rows,
+            aliquot_rows=aliquot_rows,
+            ms_rows=ms_rows,
+            required_file_type=required_file_type,
+            ms_parent_level=ms_parent_level,
+        )
+        ready_rows = [row for row in audit_table.rows if row.get("status") == "ready"]
+        selected_rows = ready_rows[:limit] if limit is not None else ready_rows
+        parent_container_ids = self._ms_parent_container_ids_by_code(
+            extraction_rows=extraction_rows,
+            aliquot_rows=aliquot_rows,
+            ms_parent_level=ms_parent_level,
+        )
+
+        created_rows: list[dict[str, Any]] = []
+        skipped_rows: list[dict[str, Any]] = []
+        for row in selected_rows:
+            parent_container_code = row.get("target_ms_parent_container_id")
+            if not isinstance(parent_container_code, str) or not parent_container_code:
+                skipped_rows.append(
+                    {
+                        "filename": row.get("normalized_filename"),
+                        "reason": "missing_target_ms_parent_container_id",
+                    }
+                )
+                continue
+            parent_container_id = parent_container_ids.get(parent_container_code)
+            if parent_container_id is None:
+                skipped_rows.append(
+                    {
+                        "filename": row.get("normalized_filename"),
+                        "reason": "target_ms_parent_container_not_resolved",
+                        "target_ms_parent_container_id": parent_container_code,
+                    }
+                )
+                continue
+
+            filename = row.get("normalized_filename")
+            if not isinstance(filename, str) or not filename:
+                skipped_rows.append(
+                    {
+                        "filename": filename,
+                        "reason": "missing_normalized_filename",
+                    }
+                )
+                continue
+
+            payload: dict[str, Any] = {
+                "filename": filename,
+                "parent_sample_container": parent_container_id,
+                "injection_volume": injection_volume,
+                "injection_volume_unit": injection_volume_unit_id,
+                "injection_method": injection_method_id,
+                "instrument_used": instrument_id,
+                "status": status,
+            }
+            if batch_id is not None:
+                payload["batch"] = batch_id
+            if commit:
+                created_rows.append(self._post_item("MS_Data", payload))
+
+        summary = summarize_injection_audit(audit_table)
+        return {
+            "dry_run": not commit,
+            "ready_count": summary["ready_count"],
+            "selected_count": len(selected_rows),
+            "created_count": len(created_rows),
+            "skipped_selected_count": len(skipped_rows),
+            "blocked_count": summary["blocked_count"],
+            "already_imported_count": summary["already_imported_count"],
+            "created_rows": created_rows,
+            "skipped_rows": skipped_rows,
+        }
 
     def _build_sample_compact_metadata_table(self, table: MsMetadataTable) -> MsMetadataTable:
         """Return one compact metadata row per original collected sample."""
@@ -814,6 +1008,35 @@ class DirectusClient:
 
         return payload
 
+    def _post_item(self, collection: str, payload: dict[str, Any]) -> dict[str, Any]:
+        """Create one Directus item and return the created row payload."""
+
+        response = self._session.post(
+            self._url(f"/items/{collection}"),
+            json=payload,
+            timeout=(10, 60),
+        )
+        if response.status_code not in {200, 201}:
+            raise DirectusError(
+                f"Directus POST /items/{collection} failed with status {response.status_code}: "
+                f"{response.text}"
+            )
+
+        try:
+            response_payload = response.json()
+        except ValueError as exc:
+            raise DirectusResponseError("Directus response was not valid JSON") from exc
+
+        if not isinstance(response_payload, dict):
+            raise DirectusResponseError("Directus response payload was not an object")
+
+        data = response_payload.get("data")
+        if not isinstance(data, dict):
+            raise DirectusResponseError(
+                f"Directus {collection} create payload did not contain an object data row"
+            )
+        return data
+
     def _get_items(self, collection: str, fields: str) -> list[dict[str, Any]]:
         """Fetch all rows for a collection using a minimal field projection."""
 
@@ -1119,6 +1342,37 @@ class DirectusClient:
             if child_value is None or parent_value is None:
                 continue
             mapping[child_value] = parent_value
+        return mapping
+
+    @staticmethod
+    def _ms_parent_container_ids_by_code(
+        *,
+        extraction_rows: list[dict[str, Any]],
+        aliquot_rows: list[dict[str, Any]],
+        ms_parent_level: str,
+    ) -> dict[str, int]:
+        """Return sample container integer ids keyed by container code."""
+
+        if ms_parent_level == "extraction":
+            rows = extraction_rows
+        elif ms_parent_level == "aliquot":
+            rows = aliquot_rows
+        else:
+            raise ValueError("ms_parent_level must be either 'aliquot' or 'extraction'")
+
+        mapping: dict[str, int] = {}
+        for row in rows:
+            container = DirectusClient._read_mapping(row, "sample_container")
+            container_code = DirectusClient._read_nested_string(
+                row,
+                "sample_container",
+                "container_id",
+            )
+            if container is None or container_code is None:
+                continue
+            container_id = container.get("id")
+            if isinstance(container_id, int):
+                mapping.setdefault(container_code, container_id)
         return mapping
 
     @staticmethod

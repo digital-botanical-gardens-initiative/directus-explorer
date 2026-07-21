@@ -23,6 +23,7 @@ directus-explorer = "directus_explorer.cli:cli"
 
 [dependency-groups]
 dev = [
+  "frictionless>=5.19.0",
   "mypy>=1.15.0,<2",
   "pytest>=8.3.5,<9",
   "pytest-cov>=6.1.1,<7",

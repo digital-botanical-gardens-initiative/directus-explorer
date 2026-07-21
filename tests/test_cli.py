@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pytest
 from click.testing import CliRunner
 
 from directus_explorer import cli as cli_module
 from directus_explorer.config import Settings, SettingsError
+from directus_explorer.ms_metadata import MsMetadataTable
 from directus_explorer.samples import ProfiledSample, ProjectSampleSummary, ProjectSpeciesSummary
 
 
@@ -253,6 +255,77 @@ def test_export_ms_metadata_passes_project_group_sample_compact_view(
 
     assert result.exit_code == 0
     assert result.output.strip() == "Wrote 6644 metadata rows for project group dbgi to dbgi.tsv"
+
+
+def test_audit_injection_list_writes_report_and_summary(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """The injection-list audit command should write TSV reports and summarize rows."""
+
+    runner = CliRunner()
+    input_csv = tmp_path / "injections.csv"
+    output_tsv = tmp_path / "audit.tsv"
+    input_csv.write_text(
+        "filename,injection,file_type,sample_id,container_id,Ionization.mode\n"
+        "run_a.mzML,1,sample,dbgi_001,dbgi_001_01_01,positive\n",
+        encoding="utf-8",
+    )
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def build_injection_audit_table(
+            self,
+            *,
+            input_path: Path,
+            required_file_type: str = "sample",
+            ms_parent_level: str = "aliquot",
+        ) -> MsMetadataTable:
+            assert input_path == input_csv
+            assert required_file_type == "sample"
+            assert ms_parent_level == "extraction"
+            return MsMetadataTable(
+                fieldnames=("is_sample_file", "ready_for_ms_data_import", "status", "reason"),
+                rows=(
+                    {
+                        "is_sample_file": "true",
+                        "ready_for_ms_data_import": "true",
+                        "status": "ready",
+                        "reason": "",
+                    },
+                ),
+            )
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(
+        cli_module.cli,
+        [
+            "ms",
+            "audit-injection-list",
+            str(input_csv),
+            "--output",
+            str(output_tsv),
+            "--ms-parent-level",
+            "extraction",
+        ],
+    )
+
+    assert result.exit_code == 0
+    assert "ready_count\t1" in result.output
+    assert output_tsv.exists()
 
 
 def test_sample_locations_text_output(monkeypatch: pytest.MonkeyPatch) -> None:

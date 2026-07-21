@@ -1,0 +1,9 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issue
+artemisia_absinthium	69794	absi_000323	canonical		artemisia absinthium			20240821135402			missing	coordinates_missing
+artemisia_absinthium	69795	absi_000667	canonical		artemisia absinthium			20240821135541			missing	coordinates_missing
+artemisia_absinthium	69796	absi_000666	canonical		artemisia absinthium			20240821135830			missing	coordinates_missing
+artemisia_absinthium	69797	absi_000674	canonical		artemisia absinthium			20240821140153			missing	coordinates_missing
+artemisia_absinthium	69798	absi_000545	canonical		artemisia absinthium			20240821140238			missing	coordinates_missing
+artemisia_absinthium	69799	absi_000520	canonical		artemisia absinthium			20240821140459			missing	coordinates_missing
+artemisia_absinthium	69800	absi_000698	canonical		artemisia absinthium			20240821144152			missing	coordinates_missing
+artemisia_absinthium	69801	absi_000625	canonical		artemisia absinthium			20240821144315			missing	coordinates_missing

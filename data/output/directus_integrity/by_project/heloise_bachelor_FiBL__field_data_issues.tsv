@@ -1,110 +1,110 @@
 project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issues
-heloise_bachelor_FiBL	67859	fibl_000082	canonical			Mixte			7.5397544	47.502293	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67860	fibl_000027	canonical			Solanum tuberosum			7.539666	47.50211	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67861	fibl_000034	canonical			Angiospermae			7.539664	47.502106	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67862	fibl_000028	canonical			Triticum aestivum			7.5396824	47.502106	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67863	fibl_000020	canonical			Triticum aestivum			7.539682	47.502106	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67864	fibl_000032	canonical			Triticum aestivum			7.539684	47.502106	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67865	fibl_000040	canonical			Angiospermae			7.5397825	47.50233	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67866	fibl_000049	canonical			Angiospermae			7.539788	47.50233	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67867	fibl_000057	canonical			Unknown			7.5397906	47.502335	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67868	fibl_000054	canonical			Triticum aestivum			7.5397906	47.502335	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67869	fibl_000021	canonical			Triticum aestivum			7.5397916	47.50234	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67870	fibl_000046	canonical			Triticum aestivum			7.5397925	47.502335	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67871	fibl_000053	canonical			Triticum aestivum			7.5397887	47.50234	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67872	fibl_000038	canonical			Triticum aestivum			7.5397887	47.50234	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67873	fibl_000059	canonical			Triticum aestivum			7.539789	47.50234	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67874	fibl_000023	canonical			Angiospermae			7.539786	47.502335	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67875	fibl_000052	canonical			Angiospermae			7.539788	47.502335	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67876	fibl_000060	canonical			Angiospermae			7.5397887	47.502342	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67877	fibl_000035	canonical			Solanum tuberosum			7.539783	47.502335	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67878	fibl_000041	canonical			Angiospermae			7.539794	47.50234	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67879	fibl_000058	canonical			Triticum aestivum			7.5396876	47.502113	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67880	fibl_000037	canonical			Triticum aestivum			7.5396743	47.502106	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67881	fibl_000044	canonical			Triticum aestivum			7.5396776	47.50211	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67882	fibl_000019	canonical			Triticum aestivum			7.539003	47.502262	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67883	fibl_000007	canonical			Triticum aestivum			7.5391383	47.50248	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67884	fibl_000014	canonical			Triticum aestivum			7.538561	47.50308	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67885	fibl_000029	canonical			Unknown			7.5385585	47.503082	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67886	fibl_000008	canonical			Solanum tuberosum			7.538556	47.50308	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67887	fibl_000045	canonical			Unknown			7.5384774	47.50291	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67888	fibl_000056	canonical			Triticum aestivum			7.5396986	47.502853	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67889	fibl_000036	canonical			Solanum tuberosum			7.539667	47.502804	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67890	fibl_000022	canonical			Triticum aestivum			7.538424	47.502888	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67891	fibl_000047	canonical			Solanum tuberosum			7.5384483	47.502937	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67892	fibl_000051	canonical			Triticum aestivum			7.539579	47.502632	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67893	fibl_000006	canonical			Solanum tuberosum			7.5396075	47.50269	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67894	fibl_000025	canonical			Triticum aestivum			7.539605	47.502674	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67895	fibl_000010	canonical			Triticum aestivum			7.539636	47.50285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67896	fibl_000012	canonical			Euphorbia			7.5396256	47.50271	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67897	fibl_000015	canonical			Triticum aestivum			7.538452	47.502876	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67898	fibl_000067	canonical			Euphorbia			7.538492	47.502953	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67899	fibl_000069	canonical			Triticum aestivum			7.5390553	47.50231	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67900	fibl_000074	canonical			Triticum aestivum			7.5391197	47.502438	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67901	fibl_000009	canonical			Unknown			7.5390387	47.50231	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67902	fibl_000073	canonical			Triticum aestivum			7.5397387	47.502163	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67903	fibl_000065	canonical			Triticum aestivum			7.5397635	47.502308	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67904	fibl_000048	canonical			Poaceae			7.539596	47.50267	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67905	fibl_000002	canonical			Unknown			7.539705	47.50288	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67906	fibl_000026	canonical			Poaceae			7.539713	47.502884	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67907	fibl_000039	canonical			Poaceae			7.538524	47.503056	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67908	fibl_000068	canonical			Poaceae			7.538466	47.502895	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67909	fibl_000075	canonical			Unknown			7.539032	47.502304	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67910	fibl_000018	canonical			Poaceae			7.5390115	47.502274	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67911	fibl_000080	canonical			Poaceae			7.539086	47.502453	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67912	fibl_000004	canonical			Poaceae			7.5397267	47.502155	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67913	fibl_000017	canonical			Coleoptera			7.5397267	47.502155	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67914	fibl_000070	canonical			Poaceae			7.53977	47.502323	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67915	fibl_000030	canonical			Solanum tuberosum			7.5396104	47.5027	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67916	fibl_000031	canonical			Solanum tuberosum			7.53965	47.502804	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67917	fibl_000013	canonical			Euphorbia			7.5388827	47.50383	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67918	fibl_000043	canonical			Solanum tuberosum			7.538436	47.502903	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67919	fibl_000066	canonical			Solanum tuberosum			7.538538	47.503063	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67920	fibl_000079	canonical			Cynara			7.538424	47.50295	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67921	fibl_000064	canonical			Solanum tuberosum			7.539055	47.502323	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67922	fibl_000003	canonical			Solanum tuberosum			7.5390744	47.50244	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67923	fibl_000001	canonical			Cynara			7.5383363	47.50275	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67924	fibl_000076	canonical			Solanum tuberosum			7.539735	47.502197	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67925	fibl_000061	canonical			Solanum tuberosum			7.5398483	47.502422	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67926	fibl_000081	canonical			Mixte			7.5397544	47.502296	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67927	fibl_000084	canonical			Mixte			7.5397177	47.50215	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67928	fibl_000086	canonical			Mixte			7.539033	47.502308	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67929	fibl_000088	canonical			Mixte			7.53909	47.502415	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67930	fibl_000090	canonical			Mixte			7.5385275	47.503044	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67931	fibl_000092	canonical			Mixte			7.5395856	47.502697	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67932	fibl_000094	canonical			Mixte			7.539664	47.5028	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67933	fibl_000096	canonical			Mixte			7.53846	47.502926	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67934	fibl_000083	canonical			Mixte			7.539756	47.502293	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67935	fibl_000024	canonical			Mixte			7.539756	47.502293	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67936	fibl_000085	canonical			Mixte			7.5397177	47.50215	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67937	fibl_000033	canonical			Mixte			7.5397177	47.50215	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67938	fibl_000087	canonical			Mixte			7.539033	47.502308	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67939	fibl_000055	canonical			Mixte			7.539033	47.502308	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67940	fibl_000089	canonical			Mixte			7.53909	47.502415	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67941	fibl_000050	canonical			Mixte			7.53909	47.502415	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67942	fibl_000091	canonical			Mixte			7.538528	47.503048	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67943	fibl_000042	canonical			Mixte			7.538528	47.503048	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67944	fibl_000093	canonical			Mixte			7.5395856	47.502697	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67945	fibl_000016	canonical			Mixte			7.5395856	47.502697	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67946	fibl_000095	canonical			Mixte			7.539664	47.5028	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67947	fibl_000011	canonical			Mixte			7.539664	47.5028	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67948	fibl_000097	canonical			Mixte			7.53846	47.502926	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67949	fibl_000005	canonical			Mixte			7.53846	47.502926	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67950	fibl_000077	canonical			Unknown			7.539086	47.502415	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67951	fibl_000072	canonical			Unknown			7.539033	47.502304	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67952	fibl_000062	canonical			Unknown			7.539033	47.502304	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67953	fibl_000063	canonical			Unknown			7.538451	47.502922	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67954	fibl_000099	canonical			Unknown			7.538503	47.50305	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67955	fibl_000115	canonical			Unknown			7.538457	47.502926	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67956	fibl_000100	canonical			Unknown			7.5384583	47.502926	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67957	fibl_000071	canonical			Unknown			7.5384574	47.502926	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67958	fibl_000078	canonical			Unknown			7.538459	47.502926	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67959	fibl_000111	canonical			Unknown			7.539662	47.5028	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67960	fibl_000112	canonical			Unknown			7.5396605	47.5028	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67961	fibl_000116	canonical			Unknown			7.539664	47.502796	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67962	fibl_000117	canonical			Unknown			7.5396667	47.5028	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67963	fibl_000104	canonical			Unknown			7.5395875	47.502697	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67964	fibl_000102	canonical			Unknown			7.539719	47.50215	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67965	fibl_000105	canonical			Unknown			7.5397573	47.502293	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67966	fibl_000110	canonical			Unknown			7.5397563	47.502293	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-heloise_bachelor_FiBL	67967	fibl_000109	canonical			Unknown			7.5397544	47.502293	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
+heloise_bachelor_FiBL	67859	fibl_000082	canonical			Mixte			7.5397544	47.502293	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67860	fibl_000027	canonical			Solanum tuberosum			7.539666	47.50211	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67861	fibl_000034	canonical			Angiospermae			7.539664	47.502106	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67862	fibl_000028	canonical			Triticum aestivum			7.5396824	47.502106	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67863	fibl_000020	canonical			Triticum aestivum			7.539682	47.502106	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67864	fibl_000032	canonical			Triticum aestivum			7.539684	47.502106	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67865	fibl_000040	canonical			Angiospermae			7.5397825	47.50233	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67866	fibl_000049	canonical			Angiospermae			7.539788	47.50233	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67867	fibl_000057	canonical			Unknown			7.5397906	47.502335	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67868	fibl_000054	canonical			Triticum aestivum			7.5397906	47.502335	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67869	fibl_000021	canonical			Triticum aestivum			7.5397916	47.50234	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67870	fibl_000046	canonical			Triticum aestivum			7.5397925	47.502335	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67871	fibl_000053	canonical			Triticum aestivum			7.5397887	47.50234	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67872	fibl_000038	canonical			Triticum aestivum			7.5397887	47.50234	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67873	fibl_000059	canonical			Triticum aestivum			7.539789	47.50234	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67874	fibl_000023	canonical			Angiospermae			7.539786	47.502335	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67875	fibl_000052	canonical			Angiospermae			7.539788	47.502335	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67876	fibl_000060	canonical			Angiospermae			7.5397887	47.502342	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67877	fibl_000035	canonical			Solanum tuberosum			7.539783	47.502335	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67878	fibl_000041	canonical			Angiospermae			7.539794	47.50234	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67879	fibl_000058	canonical			Triticum aestivum			7.5396876	47.502113	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67880	fibl_000037	canonical			Triticum aestivum			7.5396743	47.502106	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67881	fibl_000044	canonical			Triticum aestivum			7.5396776	47.50211	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67882	fibl_000019	canonical			Triticum aestivum			7.539003	47.502262	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67883	fibl_000007	canonical			Triticum aestivum			7.5391383	47.50248	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67884	fibl_000014	canonical			Triticum aestivum			7.538561	47.50308	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67885	fibl_000029	canonical			Unknown			7.5385585	47.503082	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67886	fibl_000008	canonical			Solanum tuberosum			7.538556	47.50308	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67887	fibl_000045	canonical			Unknown			7.5384774	47.50291	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67888	fibl_000056	canonical			Triticum aestivum			7.5396986	47.502853	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67889	fibl_000036	canonical			Solanum tuberosum			7.539667	47.502804	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67890	fibl_000022	canonical			Triticum aestivum			7.538424	47.502888	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67891	fibl_000047	canonical			Solanum tuberosum			7.5384483	47.502937	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67892	fibl_000051	canonical			Triticum aestivum			7.539579	47.502632	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67893	fibl_000006	canonical			Solanum tuberosum			7.5396075	47.50269	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67894	fibl_000025	canonical			Triticum aestivum			7.539605	47.502674	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67895	fibl_000010	canonical			Triticum aestivum			7.539636	47.50285	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67896	fibl_000012	canonical			Euphorbia			7.5396256	47.50271	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67897	fibl_000015	canonical			Triticum aestivum			7.538452	47.502876	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67898	fibl_000067	canonical			Euphorbia			7.538492	47.502953	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67899	fibl_000069	canonical			Triticum aestivum			7.5390553	47.50231	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67900	fibl_000074	canonical			Triticum aestivum			7.5391197	47.502438	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67901	fibl_000009	canonical			Unknown			7.5390387	47.50231	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67902	fibl_000073	canonical			Triticum aestivum			7.5397387	47.502163	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67903	fibl_000065	canonical			Triticum aestivum			7.5397635	47.502308	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67904	fibl_000048	canonical			Poaceae			7.539596	47.50267	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67905	fibl_000002	canonical			Unknown			7.539705	47.50288	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67906	fibl_000026	canonical			Poaceae			7.539713	47.502884	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67907	fibl_000039	canonical			Poaceae			7.538524	47.503056	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67908	fibl_000068	canonical			Poaceae			7.538466	47.502895	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67909	fibl_000075	canonical			Unknown			7.539032	47.502304	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67910	fibl_000018	canonical			Poaceae			7.5390115	47.502274	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67911	fibl_000080	canonical			Poaceae			7.539086	47.502453	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67912	fibl_000004	canonical			Poaceae			7.5397267	47.502155	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67913	fibl_000017	canonical			Coleoptera			7.5397267	47.502155	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67914	fibl_000070	canonical			Poaceae			7.53977	47.502323	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67915	fibl_000030	canonical			Solanum tuberosum			7.5396104	47.5027	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67916	fibl_000031	canonical			Solanum tuberosum			7.53965	47.502804	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67917	fibl_000013	canonical			Euphorbia			7.5388827	47.50383	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67918	fibl_000043	canonical			Solanum tuberosum			7.538436	47.502903	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67919	fibl_000066	canonical			Solanum tuberosum			7.538538	47.503063	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67920	fibl_000079	canonical			Cynara			7.538424	47.50295	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67921	fibl_000064	canonical			Solanum tuberosum			7.539055	47.502323	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67922	fibl_000003	canonical			Solanum tuberosum			7.5390744	47.50244	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67923	fibl_000001	canonical			Cynara			7.5383363	47.50275	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67924	fibl_000076	canonical			Solanum tuberosum			7.539735	47.502197	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67925	fibl_000061	canonical			Solanum tuberosum			7.5398483	47.502422	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67926	fibl_000081	canonical			Mixte			7.5397544	47.502296	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67927	fibl_000084	canonical			Mixte			7.5397177	47.50215	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67928	fibl_000086	canonical			Mixte			7.539033	47.502308	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67929	fibl_000088	canonical			Mixte			7.53909	47.502415	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67930	fibl_000090	canonical			Mixte			7.5385275	47.503044	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67931	fibl_000092	canonical			Mixte			7.5395856	47.502697	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67932	fibl_000094	canonical			Mixte			7.539664	47.5028	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67933	fibl_000096	canonical			Mixte			7.53846	47.502926	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67934	fibl_000083	canonical			Mixte			7.539756	47.502293	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67935	fibl_000024	canonical			Mixte			7.539756	47.502293	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67936	fibl_000085	canonical			Mixte			7.5397177	47.50215	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67937	fibl_000033	canonical			Mixte			7.5397177	47.50215	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67938	fibl_000087	canonical			Mixte			7.539033	47.502308	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67939	fibl_000055	canonical			Mixte			7.539033	47.502308	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67940	fibl_000089	canonical			Mixte			7.53909	47.502415	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67941	fibl_000050	canonical			Mixte			7.53909	47.502415	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67942	fibl_000091	canonical			Mixte			7.538528	47.503048	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67943	fibl_000042	canonical			Mixte			7.538528	47.503048	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67944	fibl_000093	canonical			Mixte			7.5395856	47.502697	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67945	fibl_000016	canonical			Mixte			7.5395856	47.502697	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67946	fibl_000095	canonical			Mixte			7.539664	47.5028	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67947	fibl_000011	canonical			Mixte			7.539664	47.5028	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67948	fibl_000097	canonical			Mixte			7.53846	47.502926	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67949	fibl_000005	canonical			Mixte			7.53846	47.502926	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67950	fibl_000077	canonical			Unknown			7.539086	47.502415	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67951	fibl_000072	canonical			Unknown			7.539033	47.502304	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67952	fibl_000062	canonical			Unknown			7.539033	47.502304	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67953	fibl_000063	canonical			Unknown			7.538451	47.502922	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67954	fibl_000099	canonical			Unknown			7.538503	47.50305	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67955	fibl_000115	canonical			Unknown			7.538457	47.502926	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67956	fibl_000100	canonical			Unknown			7.5384583	47.502926	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67957	fibl_000071	canonical			Unknown			7.5384574	47.502926	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67958	fibl_000078	canonical			Unknown			7.538459	47.502926	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67959	fibl_000111	canonical			Unknown			7.539662	47.5028	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67960	fibl_000112	canonical			Unknown			7.5396605	47.5028	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67961	fibl_000116	canonical			Unknown			7.539664	47.502796	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67962	fibl_000117	canonical			Unknown			7.5396667	47.5028	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67963	fibl_000104	canonical			Unknown			7.5395875	47.502697	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67964	fibl_000102	canonical			Unknown			7.539719	47.50215	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67965	fibl_000105	canonical			Unknown			7.5397573	47.502293	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67966	fibl_000110	canonical			Unknown			7.5397563	47.502293	looks_swapped_ch_lat_lon	missing_date
+heloise_bachelor_FiBL	67967	fibl_000109	canonical			Unknown			7.5397544	47.502293	looks_swapped_ch_lat_lon	missing_date

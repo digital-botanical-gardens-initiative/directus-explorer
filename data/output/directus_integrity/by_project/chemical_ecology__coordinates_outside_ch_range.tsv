@@ -1,0 +1,2 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issue
+chemical_ecology	70835	chec_000187	canonical		Bellis perennis			20250502171618	4.935476	45.905846	out_of_ch_range	coordinates_out_of_ch_range

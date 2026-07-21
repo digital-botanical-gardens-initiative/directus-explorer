@@ -1,0 +1,2 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	lineage_status
+sandbox	69942	dbgi_007553	canonical	dbgi_007553	Abies georgei		Abies georgei	20260314210934	14.420024	50.124043	out_of_ch_range	true	true	true	false	dbgi_007553	dbgi_007553_01	no_ms

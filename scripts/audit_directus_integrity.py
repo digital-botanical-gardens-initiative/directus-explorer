@@ -82,6 +82,7 @@ def main() -> None:
     _write_raw_snapshot(field_rows)
     _write_project_summary(records)
     _write_field_issues(records)
+    _write_coordinate_reports(records)
     _write_duplicate_sample_ids(records)
     _write_duplicate_observations(records)
     _write_lineage_reports(
@@ -199,12 +200,38 @@ def _write_field_issues(records: list[FieldRecord]) -> None:
             issues.append("missing_taxon_name")
         if not record.date:
             issues.append("missing_date")
-        if record.coordinate_status not in {"ok_ch_range", "out_of_ch_range"}:
-            issues.append(f"coordinate_{record.coordinate_status}")
         if not issues:
             continue
         rows.append(_record_row(record) | {"issues": ";".join(issues)})
     _write_tsv(OUTPUT_DIR / "field_data_issues.tsv", rows)
+
+
+def _write_coordinate_reports(records: list[FieldRecord]) -> None:
+    swapped_rows: list[dict[str, Any]] = []
+    missing_or_invalid_rows: list[dict[str, Any]] = []
+    non_ch_rows: list[dict[str, Any]] = []
+
+    for record in records:
+        row = _record_row(record)
+        if record.coordinate_status == "looks_swapped_ch_lat_lon":
+            swapped_rows.append(
+                row
+                | {
+                    "suggested_latitude": record.longitude,
+                    "suggested_longitude": record.latitude,
+                    "issue": "coordinates_look_swapped_ch_lat_lon",
+                }
+            )
+        elif record.coordinate_status in {"missing", "invalid_number"}:
+            missing_or_invalid_rows.append(
+                row | {"issue": f"coordinates_{record.coordinate_status}"}
+            )
+        elif record.coordinate_status == "out_of_ch_range":
+            non_ch_rows.append(row | {"issue": "coordinates_out_of_ch_range"})
+
+    _write_tsv(OUTPUT_DIR / "coordinates_swapped_ch.tsv", swapped_rows)
+    _write_tsv(OUTPUT_DIR / "coordinates_missing_or_invalid.tsv", missing_or_invalid_rows)
+    _write_tsv(OUTPUT_DIR / "coordinates_outside_ch_range.tsv", non_ch_rows)
 
 
 def _write_duplicate_sample_ids(records: list[FieldRecord]) -> None:
@@ -301,7 +328,8 @@ def _write_lineage_reports(
     aliquot_by_child = _group_by_nested(aliquot_rows, ("sample_container", "container_id"))
     ms_by_parent = _group_by_nested(ms_rows, ("parent_sample_container", "container_id"))
 
-    lineage_rows: list[dict[str, Any]] = []
+    lineage_status_rows: list[dict[str, Any]] = []
+    lineage_issue_rows: list[dict[str, Any]] = []
     project_counts: dict[str, Counter[str]] = defaultdict(Counter)
     for record in records:
         dried = dried_by_sample_id.get(record.sample_id, [])
@@ -347,24 +375,35 @@ def _write_lineage_reports(
         project_counts[record.project]["has_aliquot"] += int(has_aliquot)
         project_counts[record.project]["has_ms"] += int(has_ms)
 
-        if not (has_dried and has_extraction):
-            lineage_rows.append(
+        status_labels = _lineage_status_labels(
+            has_dried=has_dried,
+            has_extraction=has_extraction,
+            has_aliquot=has_aliquot,
+            has_ms=has_ms,
+        )
+        lineage_row = {
+            **_record_row(record),
+            "has_dried": str(has_dried).lower(),
+            "has_extraction": str(has_extraction).lower(),
+            "has_aliquot": str(has_aliquot).lower(),
+            "has_ms": str(has_ms).lower(),
+            "dried_sample_container_ids": _join(dried_container_ids),
+            "extraction_sample_container_ids": _join(extraction_container_ids),
+            "lineage_status": ";".join(status_labels),
+        }
+        lineage_status_rows.append(lineage_row)
+
+        issue_labels = _lineage_issue_labels(
+            has_dried=has_dried,
+            has_extraction=has_extraction,
+            has_aliquot=has_aliquot,
+            has_ms=has_ms,
+        )
+        if issue_labels:
+            lineage_issue_rows.append(
                 {
-                    **_record_row(record),
-                    "has_dried": str(has_dried).lower(),
-                    "has_extraction": str(has_extraction).lower(),
-                    "has_aliquot": str(has_aliquot).lower(),
-                    "has_ms": str(has_ms).lower(),
-                    "dried_sample_container_ids": _join(dried_container_ids),
-                    "extraction_sample_container_ids": _join(extraction_container_ids),
-                    "issue": ";".join(
-                        issue
-                        for issue, present in (
-                            ("missing_dried", has_dried),
-                            ("missing_extraction", has_extraction),
-                        )
-                        if not present
-                    ),
+                    **lineage_row,
+                    "issue": ";".join(issue_labels),
                 }
             )
 
@@ -373,7 +412,8 @@ def _write_lineage_reports(
         for project, counts in sorted(project_counts.items())
     ]
     _write_tsv(OUTPUT_DIR / "lineage_summary_by_project.tsv", project_rows)
-    _write_tsv(OUTPUT_DIR / "lineage_issues.tsv", lineage_rows)
+    _write_tsv(OUTPUT_DIR / "lineage_status_by_sample.tsv", lineage_status_rows)
+    _write_tsv(OUTPUT_DIR / "lineage_issues.tsv", lineage_issue_rows)
     _write_orphan_lineage_reports(
         records_by_sample_id=records_by_sample_id,
         dried_rows=dried_rows,
@@ -383,6 +423,44 @@ def _write_lineage_reports(
         extraction_by_child=extraction_by_child,
         aliquot_by_child=aliquot_by_child,
     )
+
+
+def _lineage_status_labels(
+    *,
+    has_dried: bool,
+    has_extraction: bool,
+    has_aliquot: bool,
+    has_ms: bool,
+) -> tuple[str, ...]:
+    labels: list[str] = []
+    if not has_dried:
+        labels.append("no_dried_link")
+    if not has_extraction:
+        labels.append("not_extracted")
+    if has_extraction and not has_aliquot:
+        labels.append("no_aliquot")
+    if has_extraction and not has_ms:
+        labels.append("no_ms")
+    if has_ms:
+        labels.append("has_ms")
+    return tuple(labels or ["complete_or_no_obvious_gap"])
+
+
+def _lineage_issue_labels(
+    *,
+    has_dried: bool,
+    has_extraction: bool,
+    has_aliquot: bool,
+    has_ms: bool,
+) -> tuple[str, ...]:
+    labels: list[str] = []
+    if not has_dried and (has_extraction or has_aliquot or has_ms):
+        labels.append("downstream_lineage_without_dried_link")
+    if has_aliquot and not has_extraction:
+        labels.append("aliquot_without_resolved_extraction")
+    if has_ms and not (has_extraction or has_aliquot):
+        labels.append("ms_without_resolved_parent_lineage")
+    return tuple(labels)
 
 
 def _write_orphan_lineage_reports(
@@ -476,9 +554,15 @@ def _write_index(
 def _write_per_project_splits() -> None:
     split_dir = OUTPUT_DIR / "by_project"
     split_dir.mkdir(parents=True, exist_ok=True)
+    for stale_path in split_dir.glob("*.tsv"):
+        stale_path.unlink()
     for path in (
         OUTPUT_DIR / "field_data_issues.tsv",
+        OUTPUT_DIR / "coordinates_swapped_ch.tsv",
+        OUTPUT_DIR / "coordinates_missing_or_invalid.tsv",
+        OUTPUT_DIR / "coordinates_outside_ch_range.tsv",
         OUTPUT_DIR / "duplicate_observation_fingerprints.tsv",
+        OUTPUT_DIR / "lineage_status_by_sample.tsv",
         OUTPUT_DIR / "lineage_issues.tsv",
     ):
         rows = _read_tsv(path)

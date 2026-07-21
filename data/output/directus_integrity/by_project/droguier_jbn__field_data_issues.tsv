@@ -1,528 +1,242 @@
 project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issues
-droguier_jbn	74331	drog_000167	canonical					20260123090952			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74332	drog_000184	canonical					20260123091455			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74333	drog_000054	canonical					20260123091957			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74334	drog_000197	canonical					20260123092349			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74335	drog_000144	canonical					20260123092625			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74336	drog_000149	canonical					20260123092827			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74337	drog_000082	canonical					20260123093054			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74338	drog_000136	canonical					20260123093250			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74339	drog_000211	canonical					20260123093442			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74340	drog_000059	canonical					20260123093910			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74341	drog_000215	canonical					20260123094336			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74342	drog_000067	canonical					20260123094542			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74343	drog_000155	canonical					20260123094751			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74344	drog_000090	canonical					20260123095032			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74345	drog_000323	canonical					20260123095237			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74346	drog_000105	canonical					20260123095537			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74347	drog_000126	canonical					20260123095805			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74348	drog_000186	canonical					20260123095959			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74349	drog_000102	canonical					20260123100225			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74350	drog_000301	canonical		Valeriana_officinalis_L			20260123105222			missing	coordinate_missing
-droguier_jbn	74351	drog_000056	canonical		Valeriana_officinalis_L			20260123105644			missing	coordinate_missing
-droguier_jbn	74352	drog_000147	canonical		Valeriana_officinalis_L			20260123105954			missing	coordinate_missing
-droguier_jbn	74353	drog_000122	canonical		Valeriana_officinalis_L			20260123110207			missing	coordinate_missing
-droguier_jbn	74354	drog_000388	canonical		Valeriana_officinalis_L			20260123110435			missing	coordinate_missing
-droguier_jbn	74355	drog_000231	canonical		Valeriana_officinalis_L			20260123110655			missing	coordinate_missing
-droguier_jbn	74356	drog_000277	canonical		Valeriana_officinalis_L			20260123110856			missing	coordinate_missing
-droguier_jbn	74357	drog_000088	canonical		Valeriana_officinalis_L			20260123111045			missing	coordinate_missing
-droguier_jbn	74358	drog_000169	canonical		Valeriana_officinalis_L			20260123111248			missing	coordinate_missing
-droguier_jbn	74359	drog_000198	canonical		Valeriana_officinalis_L			20260123111455			missing	coordinate_missing
-droguier_jbn	74360	drog_000052	canonical					20260123112036			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74361	drog_000514	canonical					20260123112453			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74362	drog_000557	canonical					20260123112717			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74363	drog_000572	canonical					20260123112845			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74364	drog_000543	canonical					20260123113043			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74365	drog_000407	canonical					20260123113151			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74366	drog_000580	canonical					20260123113345			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74367	drog_000537	canonical					20260123113505			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74368	drog_000528	canonical					20260123113637			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74369	drog_000513	canonical		Thymus_serpyllum_L			20260123113958			missing	coordinate_missing
-droguier_jbn	74370	drog_000578	canonical		Thymus_serpyllum_L			20260123114150			missing	coordinate_missing
-droguier_jbn	74371	drog_000558	canonical		Thymus_serpyllum_L			20260123114326			missing	coordinate_missing
-droguier_jbn	74372	drog_000396	canonical		Thymus_serpyllum_L			20260123114537			missing	coordinate_missing
-droguier_jbn	74373	drog_000413	canonical		Thymus_serpyllum_L			20260123114652			missing	coordinate_missing
-droguier_jbn	74374	drog_000463	canonical		Thymus_serpyllum_L			20260123114812			missing	coordinate_missing
-droguier_jbn	74375	drog_000405	canonical		Thymus_serpyllum_L			20260123114934			missing	coordinate_missing
-droguier_jbn	74376	drog_000415	canonical		Thymus_serpyllum_L			20260123115056			missing	coordinate_missing
-droguier_jbn	74377	drog_000552	canonical		Humulus_lupulus_L			20260126091613			missing	coordinate_missing
-droguier_jbn	74378	drog_000577	canonical		Humulus_lupulus_L			20260126091830			missing	coordinate_missing
-droguier_jbn	74379	drog_000352	canonical		Humulus_lupulus_L			20260126091956			missing	coordinate_missing
-droguier_jbn	74380	drog_000536	canonical		Humulus_lupulus_L			20260126092140			missing	coordinate_missing
-droguier_jbn	74381	drog_000397	canonical		Humulus_lupulus_L			20260126092456			missing	coordinate_missing
-droguier_jbn	74382	drog_000503	canonical		Humulus_lupulus_L			20260126092627			missing	coordinate_missing
-droguier_jbn	74383	drog_000568	canonical		Humulus_lupulus_L			20260126092805			missing	coordinate_missing
-droguier_jbn	74384	drog_000395	canonical		Humulus_lupulus_L			20260126092948			missing	coordinate_missing
-droguier_jbn	74385	drog_000539	canonical					20260126093345			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74386	drog_000544	canonical					20260126094253			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74387	drog_000529	canonical					20260126094504			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74388	drog_000419	canonical					20260126094641			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74389	drog_000444	canonical					20260126094828			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74390	drog_000508	canonical					20260126094947			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74391	drog_000461	canonical					20260126095129			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74392	drog_000555	canonical					20260126095306			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74393	drog_000387	canonical					20260126095424			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74394	drog_000445	canonical					20260126095528			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74395	drog_000460	canonical					20260126095652			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74396	drog_000433	canonical					20260126103908			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74397	drog_000402	canonical					20260126104051			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74398	drog_000390	canonical					20260126104152			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74399	drog_000400	canonical					20260126104407			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74400	drog_000412	canonical					20260126104633			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74401	drog_000329	canonical					20260126104817			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74402	drog_000339	canonical					20260126104955			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74403	drog_000439	canonical					20260126105157			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74404	drog_000454	canonical					20260126105257			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74405	drog_000416	canonical					20260126105410			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74406	drog_000435	canonical					20260126105607			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74407	drog_000442	canonical					20260126105738			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74408	drog_000458	canonical					20260126105842			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74409	drog_000353	canonical					20260126110034			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74410	drog_000414	canonical					20260126110145			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74411	drog_000562	canonical					20260126110227			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74412	drog_000417	canonical		Thymus_vulgaris_L			20260126110429			missing	coordinate_missing
-droguier_jbn	74413	drog_000327	canonical		Thymus_vulgaris_L			20260126110652			missing	coordinate_missing
-droguier_jbn	74414	drog_000348	canonical		Thymus_vulgaris_L			20260126110841			missing	coordinate_missing
-droguier_jbn	74415	drog_000374	canonical		Thymus_vulgaris_L			20260126110949			missing	coordinate_missing
-droguier_jbn	74416	drog_000569	canonical		Thymus_vulgaris_L			20260126111156			missing	coordinate_missing
-droguier_jbn	74417	drog_000406	canonical		Thymus_vulgaris_L			20260126111351			missing	coordinate_missing
-droguier_jbn	74418	drog_000547	canonical		Thymus_vulgaris_L			20260126111453			missing	coordinate_missing
-droguier_jbn	74419	drog_000420	canonical		Thymus_vulgaris_L			20260126111702			missing	coordinate_missing
-droguier_jbn	74420	drog_000545	canonical		Thymus_vulgaris_L			20260126111850			missing	coordinate_missing
-droguier_jbn	74421	drog_000422	canonical		Thymus_vulgaris_L			20260126112009			missing	coordinate_missing
-droguier_jbn	74422	drog_000561	canonical		Laurus_nobilis_L			20260126112242			missing	coordinate_missing
-droguier_jbn	74423	drog_000465	canonical		Laurus_nobilis_L			20260126112414			missing	coordinate_missing
-droguier_jbn	74424	drog_000317	canonical		Laurus_nobilis_L			20260126112619			missing	coordinate_missing
-droguier_jbn	74425	drog_000451	canonical		Laurus_nobilis_L			20260126112747			missing	coordinate_missing
-droguier_jbn	74426	drog_000548	canonical		Laurus_nobilis_L			20260126112913			missing	coordinate_missing
-droguier_jbn	74427	drog_000330	canonical		Laurus_nobilis_L			20260126113053			missing	coordinate_missing
-droguier_jbn	74428	drog_000349	canonical		Laurus_nobilis_L			20260126113159			missing	coordinate_missing
-droguier_jbn	74429	drog_000393	canonical		Laurus_nobilis_L			20260126113257			missing	coordinate_missing
-droguier_jbn	74430	drog_000344	canonical		Laurus_nobilis_L			20260126113448			missing	coordinate_missing
-droguier_jbn	74431	drog_000509	canonical		Laurus_nobilis_L			20260126113621			missing	coordinate_missing
-droguier_jbn	74432	drog_000345	canonical					20260126113755			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74433	drog_000356	canonical					20260126114220			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74434	drog_000337	canonical					20260126114325			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74435	drog_000523	canonical					20260126114542			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74436	drog_000535	canonical					20260126114702			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74437	drog_000318	canonical					20260126114842			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74438	drog_000443	canonical					20260126114957			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74439	drog_000464	canonical					20260126115118			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74440	drog_000434	canonical					20260126115239			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74441	drog_000575	canonical					20260126115409			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74442	drog_000424	canonical					20260126115529			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74443	drog_000565	canonical					20260126115722			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74444	drog_000333	canonical		Gentiana_lutea_L			20260126120107			missing	coordinate_missing
-droguier_jbn	74445	drog_000372	canonical		Gentiana_lutea_L			20260126120452			missing	coordinate_missing
-droguier_jbn	74446	drog_000364	canonical		Gentiana_lutea_L			20260126120608			missing	coordinate_missing
-droguier_jbn	74447	drog_000361	canonical		Gentiana_lutea_L			20260126120721			missing	coordinate_missing
-droguier_jbn	74448	drog_000334	canonical		Gentiana_lutea_L			20260126120825			missing	coordinate_missing
-droguier_jbn	74449	drog_000383	canonical		Gentiana_lutea_L			20260126120933			missing	coordinate_missing
-droguier_jbn	74450	drog_000307	canonical		Gentiana_lutea_L			20260126121033			missing	coordinate_missing
-droguier_jbn	74451	drog_000363	canonical		Gentiana_lutea_L			20260126121339			missing	coordinate_missing
-droguier_jbn	74452	drog_000564	canonical		Gentiana_lutea_L			20260126121608			missing	coordinate_missing
-droguier_jbn	74453	drog_000392	canonical		Gentiana_lutea_L			20260126121724			missing	coordinate_missing
-droguier_jbn	74454	drog_000403	canonical		Gentiana_lutea_L			20260126121855			missing	coordinate_missing
-droguier_jbn	74455	drog_000399	canonical					20260126131632			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74456	drog_000533	canonical					20260126132628			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74457	drog_000554	canonical					20260126132758			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74458	drog_000549	canonical					20260126132932			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74459	drog_000563	canonical					20260126133135			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74460	drog_000560	canonical					20260126133426			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74461	drog_000437	canonical					20260126133551			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74462	drog_000483	canonical					20260126133753			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74463	drog_000559	canonical					20260126134016			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74464	drog_000325	canonical					20260126134314			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74465	drog_000394	canonical					20260126134654			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74466	drog_000579	canonical					20260126134934			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74467	drog_000441	canonical					20260126135210			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74468	drog_000438	canonical					20260126135424			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74469	drog_000312	canonical					20260126135603			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74470	drog_000504	canonical					20260126135804			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74471	drog_000411	canonical		Gentiana_lutea_L			20260126135854			missing	coordinate_missing
-droguier_jbn	74472	drog_000436	canonical		Juniperus_communis_L			20260126140141			missing	coordinate_missing
-droguier_jbn	74473	drog_000380	canonical		Juniperus_communis_L			20260126140456			missing	coordinate_missing
-droguier_jbn	74474	drog_000418	canonical		Juniperus_communis_L			20260126140703			missing	coordinate_missing
-droguier_jbn	74475	drog_000410	canonical		Juniperus_communis_L			20260126140834			missing	coordinate_missing
-droguier_jbn	74476	drog_000409	canonical		Juniperus_communis_L			20260126140935			missing	coordinate_missing
-droguier_jbn	74477	drog_000001	canonical		Frangula_alnus_MilL			20260112152106	6.9347687	47.000175	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74478	drog_000002	canonical		Juniperus_communis_L			20260112153133	6.9346356	47.00024	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74479	drog_000003	canonical					20260112153847	6.934525	47.000164	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74480	drog_000004	canonical		Menyanthes_trifoliata_L			20260112154603	6.9345083	47.00021	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74481	drog_000005	canonical		Tussilago_farfara_L			20260112155135	6.934536	47.00018	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74482	drog_000006	canonical		Viola_tricolor_L			20260112155528	6.934637	47.00018	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74483	drog_000007	canonical		Salvia_officinalis_L			20260112160354	6.934537	47.00012	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74484	drog_000008	canonical		Sambucus_nigra_L			20260112160809	6.934542	47.000122	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74485	drog_000009	canonical		Melissa_officinalis_L			20260112161133	6.934502	47.000103	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74486	drog_000010	canonical		Papaver_rhoeas_L			20260112161623	6.934611	47.000156	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74487	drog_000011	canonical					20260112162222	6.934556	47.00017	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74488	drog_000012	canonical					20260112163229	6.9345436	47.000134	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74489	drog_000013	canonical		Matricaria_chamomilla_L			20260112163804	6.9344945	47.000053	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74490	drog_000014	canonical					20260112164355	6.9344945	47.000053	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74491	drog_000015	canonical		Filipendula_ulmaria_L_Maxim			20260112165048	6.9344945	47.000053	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74492	drog_000016	canonical					20260112165546	6.9344945	47.000053	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74493	drog_000017*	other_noncanonical					20260112170007	6.9344945	47.000053	looks_swapped_ch_lat_lon	sample_id_other_noncanonical;missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74494	drog_000018	canonical					20260113105456	6.9346695	47.000256	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74495	drog_000019	canonical		Artemisia_absinthium_L			20260113105951	6.9345393	47.000126	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74496	drog_000020	canonical		Thymus_serpyllum_L			20260113110250	6.9344997	47.000256	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74497	drog_000021	canonical					20260113110553	6.9344997	47.000256	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74498	drog_000022	canonical		Plantago_lanceolata_L			20260113110835	6.9344997	47.000256	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74499	drog_000023	canonical		Sambucus_nigra_L			20260113111130	6.9345274	47.000164	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74500	drog_000024	canonical					20260113111420	6.934327	46.999992	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74501	drog_000025	canonical					20260113111818	6.9346323	47.000072	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74502	drog_000026	canonical		Achillea_millefolium_L			20260113112116	6.934452	47.000107	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74503	drog_000027	canonical		Humulus_lupulus_L			20260113112332	6.934452	47.000107	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74504	drog_000028	canonical		Linum_usitatissimum_L			20260113112629	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74505	drog_000029	canonical		Laurus_nobilis_L			20260113112959	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74506	drog_000030	canonical		Angelica_archangelica_L			20260113113208	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74507	drog_000031	canonical					20260113113437	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74508	drog_000032	canonical		Ononis_spinosa_L			20260113113810	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74509	drog_000033	canonical		Gentiana_lutea_L			20260113114115	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74510	drog_000034	canonical					20260113114455	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74511	drog_000035	canonical		Valeriana_officinalis_L			20260113114906	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74512	drog_000036	canonical		Juniperus_communis_L			20260113115234	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74513	drog_000037	canonical					20260113115443	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74514	drog_000038	canonical		Thymus_vulgaris_L			20260113115722	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74515	drog_000039	canonical		Carum_carvi_L			20260113120004	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74516	drog_000040	canonical		Foeniculum_vulgare_MilL			20260113120224	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74517	drog_000047	canonical					20260114132948	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74518	drog_000042	canonical					20260114133828	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74519	drog_000046	canonical					20260114134107	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74520	drog_000043	canonical					20260114134305	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74521	drog_000075	canonical					20260114134500	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74522	drog_000041	canonical					20260114134626	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74523	drog_000044	canonical					20260114134811	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74524	drog_000066	canonical					20260114135050	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74525	drog_000121	canonical					20260114135243	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74526	drog_000084	canonical					20260114135359	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74527	drog_000089	canonical					20260114135532	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74528	drog_000078	canonical					20260114135646	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74529	drog_000058	canonical					20260114135855	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74530	drog_000051	canonical					20260114140028	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74531	drog_000190	canonical					20260114140227	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74532	drog_000045	canonical					20260114140430	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74533	drog_000146	canonical					20260114140545	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74534	drog_000080	canonical					20260114140700	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74535	drog_000069	canonical					20260114140808	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74536	drog_000061	canonical					20260114140915	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74537	drog_000074	canonical					20260114141025	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74538	drog_000060	canonical					20260114141157	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74539	drog_000062	canonical					20260114141256	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74540	drog_000049	canonical					20260114141454	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74541	drog_000077	canonical		Salvia_officinalis_L			20260114141625	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74542	drog_000103	canonical		Salvia_officinalis_L			20260114141918	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74543	drog_000068	canonical		Salvia_officinalis_L			20260114142032	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74544	drog_000079	canonical		Salvia_officinalis_L			20260114142134	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74545	drog_000072	canonical		Salvia_officinalis_L			20260114142300	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74546	drog_000050	canonical		Salvia_officinalis_L			20260114142620	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74547	drog_000053	canonical		Salvia_officinalis_L			20260114142838	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74548	drog_000057	canonical		Salvia_officinalis_L			20260114142938	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74549	drog_000135	canonical		Salvia_officinalis_L			20260114143042	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74550	drog_000232	canonical		Ononis_spinosa_L			20260114143212	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74551	drog_000134	canonical		Ononis_spinosa_L			20260114143706	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74552	drog_000164	canonical		Ononis_spinosa_L			20260114143923	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74553	drog_000162	canonical		Ononis_spinosa_L			20260114144133	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74554	drog_000240	canonical		Ononis_spinosa_L			20260114144402	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74555	drog_000148	canonical		Ononis_spinosa_L			20260114144521	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74556	drog_000161	canonical		Filipendula_ulmaria_L_Maxim			20260114144847	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74557	drog_000266	canonical		Filipendula_ulmaria_L_Maxim			20260114145157	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74558	drog_000304	canonical		Filipendula_ulmaria_L_Maxim			20260114145325	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74559	drog_000204	canonical		Filipendula_ulmaria_L_Maxim			20260114145440	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74560	drog_000095	canonical		Anchusa_officinalis_L			20260114145652	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74561	drog_000086	canonical		Anchusa_officinalis_L			20260114145831	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74562	drog_000097	canonical		Anchusa_officinalis_L			20260114145953	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74563	drog_000255	canonical		Anchusa_officinalis_L			20260114150126	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74564	drog_000196	canonical		Anchusa_officinalis_L			20260114150230	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74565	drog_000227	canonical		Anchusa_officinalis_L			20260114150346	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74566	drog_000128	canonical		Anchusa_officinalis_L			20260114150456	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74567	drog_000267	canonical		Anchusa_officinalis_L			20260114150610	6.9343843	47.000084	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74568	drog_000252	canonical		Viola_tricolor_L			20260114155039	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74569	drog_000096	canonical		Viola_tricolor_L			20260114155256	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74570	drog_000076	canonical		Viola_tricolor_L			20260114155424	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74571	drog_000241	canonical		Viola_tricolor_L			20260114155624	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74572	drog_000220	canonical		Viola_tricolor_L			20260114155752	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74573	drog_000230	canonical		Viola_tricolor_L			20260114155921	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74574	drog_000256	canonical		Viola_tricolor_L			20260114160044	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74575	drog_000290	canonical		Viola_tricolor_L			20260114160153	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74576	drog_000286	canonical		Viola_tricolor_L			20260114160301	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74577	drog_000279	canonical		Viola_tricolor_L			20260114160417	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74578	drog_000206	canonical		Viola_tricolor_L			20260114160533	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74579	drog_000115	canonical		Viola_tricolor_L			20260114160701	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74580	drog_000217	canonical					20260114160830	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74581	drog_000239	canonical		Tussilago_farfara_L			20260114161110	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74582	drog_000214	canonical		Tussilago_farfara_L			20260114161555	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74583	drog_000125	canonical		Tussilago_farfara_L			20260114161716	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74584	drog_000200	canonical		Tussilago_farfara_L			20260114161827	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74585	drog_000250	canonical		Tussilago_farfara_L			20260114162000	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74586	drog_000116	canonical		Tussilago_farfara_L			20260114162124	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74587	drog_000282	canonical		Tussilago_farfara_L			20260114162229	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74588	drog_000163	canonical		Tussilago_farfara_L			20260114162335	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74589	drog_000303	canonical		Tussilago_farfara_L			20260114162435	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74590	drog_000111	canonical		Tussilago_farfara_L			20260114162555	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74591	drog_000238	canonical		Tussilago_farfara_L			20260114162732	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74592	drog_000221	canonical		Tussilago_farfara_L			20260114162846	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74593	drog_000213	canonical		Tussilago_farfara_L			20260114163000	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74594	drog_000236	canonical		Melissa_officinalis_L			20260114163559	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74595	drog_000291	canonical		Melissa_officinalis_L			20260114163844	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74596	drog_000224	canonical		Melissa_officinalis_L			20260114164100	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74597	drog_000235	canonical		Melissa_officinalis_L			20260114164253	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74598	drog_000112	canonical		Melissa_officinalis_L			20260114164456	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74599	drog_000212	canonical		Melissa_officinalis_L			20260114164702	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74600	drog_000137	canonical		Melissa_officinalis_L			20260114164908	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74601	drog_000179	canonical		Melissa_officinalis_L			20260114165104	6.905559	46.983723	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74602	drog_000120	canonical					20260114165356	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74603	drog_000219	canonical					20260114165704	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74604	drog_000109	canonical					20260114165851	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74605	drog_000131	canonical					20260114165940	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name;coordinate_looks_swapped_ch_lat_lon
-droguier_jbn	74606	drog_000073	canonical					20260114170134			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74607	drog_000225	canonical					20260114170455			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74608	drog_000118	canonical					20260114170604			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74609	drog_000101	canonical					20260114170722			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74610	drog_000254	canonical					20260114170905			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74611	drog_000110	canonical					20260114171029			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74612	drog_000183)	other_noncanonical		Angelica_archangelica_L			20260121085541			missing	sample_id_other_noncanonical;coordinate_missing
-droguier_jbn	74613	drog_000244	canonical		Angelica_archangelica_L			20260121090059			missing	coordinate_missing
-droguier_jbn	74614	drog_000242	canonical		Angelica_archangelica_L			20260121090301			missing	coordinate_missing
-droguier_jbn	74615	drog_000229	canonical		Angelica_archangelica_L			20260121090533			missing	coordinate_missing
-droguier_jbn	74616	drog_000298	canonical		Angelica_archangelica_L			20260121090651			missing	coordinate_missing
-droguier_jbn	74617	drog_000246	canonical		Angelica_archangelica_L			20260121090837			missing	coordinate_missing
-droguier_jbn	74618	drog_000048	canonical		Angelica_archangelica_L			20260121091002			missing	coordinate_missing
-droguier_jbn	74619	drog_000145	canonical					20260121091351			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74620	drog_000165	canonical					20260121091750			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74621	drog_000285	canonical					20260121091948			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74622	drog_000245	canonical					20260121092121			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74623	drog_000251	canonical					20260121092305			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74624	drog_000130	canonical					20260121092448			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74625	drog_000243	canonical					20260121092706			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74626	drog_000293	canonical					20260121092901			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74627	drog_000194	canonical					20260121093117			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74628	drog_000133	canonical					20260121093342			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74629	drog_000173	canonical					20260121093643			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74630	drog_000247	canonical					20260121093836			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74631	drog_000189	canonical		Sambucus_nigra_L			20260121094628			missing	coordinate_missing
-droguier_jbn	74632	drog_000228	canonical		Sambucus_nigra_L			20260121094853			missing	coordinate_missing
-droguier_jbn	74633	drog_000233	canonical		Sambucus_nigra_L			20260121095142			missing	coordinate_missing
-droguier_jbn	74634	drog_000299	canonical		Sambucus_nigra_L			20260121095312			missing	coordinate_missing
-droguier_jbn	74635	drog_000270	canonical		Sambucus_nigra_L			20260121095616			missing	coordinate_missing
-droguier_jbn	74636	drog_000296	canonical		Sambucus_nigra_L			20260121095825			missing	coordinate_missing
-droguier_jbn	74637	drog_000151	canonical		Sambucus_nigra_L			20260121100004			missing	coordinate_missing
-droguier_jbn	74638	drog_000071	canonical		Sambucus_nigra_L			20260121100147			missing	coordinate_missing
-droguier_jbn	74639	drog_000257	canonical		Filipendula_ulmaria_L_Maxim			20260121100309			missing	coordinate_missing
-droguier_jbn	74640	drog_000249	canonical		Sambucus_nigra_L			20260121100815			missing	coordinate_missing
-droguier_jbn	74641	drog_000263	canonical		Sambucus_nigra_L			20260121101002			missing	coordinate_missing
-droguier_jbn	74642	drog_000262	canonical		Sambucus_nigra_L			20260121101152			missing	coordinate_missing
-droguier_jbn	74643	drog_000140	canonical		Sambucus_nigra_L			20260121101352			missing	coordinate_missing
-droguier_jbn	74644	drog_000269	canonical		Sambucus_nigra_L			20260121101702			missing	coordinate_missing
-droguier_jbn	74645	drog_000218	canonical		Sambucus_nigra_L			20260121101844			missing	coordinate_missing
-droguier_jbn	74646	drog_000260	canonical		Sambucus_nigra_L			20260121102025			missing	coordinate_missing
-droguier_jbn	74647	drog_000268	canonical					20260121110155			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74648	drog_000191	canonical					20260121111037			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74649	drog_000205	canonical					20260121111348			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74650	drog_000201	canonical					20260121111530			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74651	drog_000226	canonical					20260121111839			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74652	drog_000202	canonical					20260121112018			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74653	drog_000081	canonical					20260121112219			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74654	drog_000092	canonical					20260121112649			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74655	drog_000087	canonical		Angelica_archangelica_L			20260121113039			missing	coordinate_missing
-droguier_jbn	74656	drog_000203	canonical					20260121113346			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74657	drog_000223	canonical					20260121114153			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74658	drog_000280	canonical					20260121114329			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74659	drog_000193	canonical					20260121114512			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74660	drog_000294	canonical					20260121114647			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74661	drog_000108	canonical					20260121114856			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74662	drog_000278	canonical					20260121115251			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74663	drog_000275	canonical					20260121115424			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74664	drog_000152	canonical					20260121115608			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74665	drog_000188	canonical					20260121115836			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74666	drog_000287	canonical					20260121120002			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74667	drog_000106	canonical		Papaver_rhoeas_L			20260121120218			missing	coordinate_missing
-droguier_jbn	74668	drog_000185	canonical		Papaver_rhoeas_L			20260121120421			missing	coordinate_missing
-droguier_jbn	74669	drog_000119	canonical		Papaver_rhoeas_L			20260121120553			missing	coordinate_missing
-droguier_jbn	74670	drog_000117	canonical		Papaver_rhoeas_L			20260121120744			missing	coordinate_missing
-droguier_jbn	74671	drog_000064	canonical		Papaver_rhoeas_L			20260121120919			missing	coordinate_missing
-droguier_jbn	74672	drog_000175	canonical		Papaver_rhoeas_L			20260121121059			missing	coordinate_missing
-droguier_jbn	74673	drog_000124	canonical		Papaver_rhoeas_L			20260121121257			missing	coordinate_missing
-droguier_jbn	74674	drog_000091	canonical		Potentilla_erecta_L_Raeusch_			20260121125828			missing	coordinate_missing
-droguier_jbn	74675	drog_000070	canonical		Potentilla_erecta_L_Raeusch_			20260121130318			missing	coordinate_missing
-droguier_jbn	74676	drog_000143	canonical		Potentilla_erecta_L_Raeusch_			20260121130445			missing	coordinate_missing
-droguier_jbn	74677	drog_000210	canonical		Potentilla_erecta_L_Raeusch_			20260121130747			missing	coordinate_missing
-droguier_jbn	74678	drog_000180	canonical		Potentilla_erecta_L_Raeusch_			20260121130935			missing	coordinate_missing
-droguier_jbn	74679	drog_000085	canonical		Potentilla_erecta_L_Raeusch_			20260121131056			missing	coordinate_missing
-droguier_jbn	74680	drog_000181	canonical		Potentilla_erecta_L_Raeusch_			20260121131255			missing	coordinate_missing
-droguier_jbn	74681	drog_000107	canonical		Potentilla_erecta_L_Raeusch_			20260121131418			missing	coordinate_missing
-droguier_jbn	74682	drog_000283	canonical		Potentilla_erecta_L_Raeusch_			20260121131613			missing	coordinate_missing
-droguier_jbn	74683	drog_000292	canonical		Potentilla_erecta_L_Raeusch_			20260121131756			missing	coordinate_missing
-droguier_jbn	74684	drog_000099	canonical		Plantago_lanceolata_L			20260121132234			missing	coordinate_missing
-droguier_jbn	74685	drog_000127	canonical		Plantago_lanceolata_L			20260121132544			missing	coordinate_missing
-droguier_jbn	74686	drog_000222	canonical		Plantago_lanceolata_L			20260121132714			missing	coordinate_missing
-droguier_jbn	74687	drog_000199	canonical		Plantago_lanceolata_L			20260121132858			missing	coordinate_missing
-droguier_jbn	74688	drog_000253	canonical		Plantago_lanceolata_L			20260121133035			missing	coordinate_missing
-droguier_jbn	74689	drog_000177	canonical					20260121133304			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74690	drog_000207	canonical					20260121133851			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74691	drog_000104	canonical					20260121134040			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74692	drog_000295	canonical					20260121134240			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74693	drog_000153	canonical					20260121134404			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74694	drog_000209	canonical					20260121134713			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74695	drog_000274	canonical					20260121135107			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74696	drog_000273	canonical					20260121135317			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74697	drog_000123	canonical					20260121135537			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74698	drog_000154	canonical					20260121135729			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74699	drog_000234	canonical					20260121135906			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74700	drog_000114	canonical					20260121140102			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74701	drog_000150	canonical					20260121140236			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74702	drog_000174	canonical					20260121140356			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74703	drog_000208	canonical					20260121140520			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74704	drog_000182	canonical					20260121140906			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74705	drog_000297	canonical		Foeniculum_vulgare_MilL			20260121141318			missing	coordinate_missing
-droguier_jbn	74706	drog_000138	canonical		Foeniculum_vulgare_MilL			20260121141709			missing	coordinate_missing
-droguier_jbn	74707	drog_000171	canonical		Foeniculum_vulgare_MilL			20260121141845			missing	coordinate_missing
-droguier_jbn	74708	drog_000113	canonical		Foeniculum_vulgare_MilL			20260121142001			missing	coordinate_missing
-droguier_jbn	74709	drog_000272	canonical		Foeniculum_vulgare_MilL			20260121142120			missing	coordinate_missing
-droguier_jbn	74710	drog_000258	canonical		Foeniculum_vulgare_MilL			20260121142248			missing	coordinate_missing
-droguier_jbn	74711	drog_000281	canonical		Foeniculum_vulgare_MilL			20260121142424			missing	coordinate_missing
-droguier_jbn	74712	drog_000248	canonical		Foeniculum_vulgare_MilL			20260121143240			missing	coordinate_missing
-droguier_jbn	74713	drog_000261	canonical		Foeniculum_vulgare_MilL			20260121143357			missing	coordinate_missing
-droguier_jbn	74714	drog_000276	canonical		Foeniculum_vulgare_MilL			20260121143514			missing	coordinate_missing
-droguier_jbn	74715	drog_000216	canonical		Foeniculum_vulgare_MilL			20260121143631			missing	coordinate_missing
-droguier_jbn	74716	drog_000265	canonical		Foeniculum_vulgare_MilL			20260121143851			missing	coordinate_missing
-droguier_jbn	74717	drog_000172	canonical		Foeniculum_vulgare_MilL			20260121144053			missing	coordinate_missing
-droguier_jbn	74718	drog_000300	canonical		Foeniculum_vulgare_MilL			20260121144218			missing	coordinate_missing
-droguier_jbn	74719	drog_000159	canonical		Foeniculum_vulgare_MilL			20260121144355			missing	coordinate_missing
-droguier_jbn	74720	drog_000139	canonical		Achillea_millefolium_L			20260121144736			missing	coordinate_missing
-droguier_jbn	74721	drog_000168	canonical		Achillea_millefolium_L			20260121144937			missing	coordinate_missing
-droguier_jbn	74722	drog_000166	canonical		Achillea_millefolium_L			20260121145057			missing	coordinate_missing
-droguier_jbn	74723	drog_000187	canonical		Achillea_millefolium_L			20260121145222			missing	coordinate_missing
-droguier_jbn	74724	drog_000284	canonical		Achillea_millefolium_L			20260121145343			missing	coordinate_missing
-droguier_jbn	74725	drog_000063	canonical		Achillea_millefolium_L			20260121145451			missing	coordinate_missing
-droguier_jbn	74726	drog_000141	canonical		Achillea_millefolium_L			20260121145713			missing	coordinate_missing
-droguier_jbn	74727	drog_000271	canonical		Achillea_millefolium_L			20260121145841			missing	coordinate_missing
-droguier_jbn	74728	drog_000176	canonical		Achillea_millefolium_L			20260121150018			missing	coordinate_missing
-droguier_jbn	74729	drog_000158	canonical		Achillea_millefolium_L			20260121150135			missing	coordinate_missing
-droguier_jbn	74730	drog_000264	canonical		Achillea_millefolium_L			20260121150255			missing	coordinate_missing
-droguier_jbn	74731	drog_000142	canonical		Achillea_millefolium_L			20260121150416			missing	coordinate_missing
-droguier_jbn	74732	drog_000170	canonical		Frangula_alnus_MilL			20260121151344			missing	coordinate_missing
-droguier_jbn	74733	drog_000157	canonical		Frangula_alnus_MilL			20260121151557			missing	coordinate_missing
-droguier_jbn	74734	drog_000289	canonical		Frangula_alnus_MilL			20260121151828			missing	coordinate_missing
-droguier_jbn	74735	drog_000302	canonical		Frangula_alnus_MilL			20260121152004			missing	coordinate_missing
-droguier_jbn	74736	drog_000160	canonical		Frangula_alnus_MilL			20260121152134			missing	coordinate_missing
-droguier_jbn	74737	drog_000083	canonical		Frangula_alnus_MilL			20260121152308			missing	coordinate_missing
-droguier_jbn	74738	drog_000129	canonical		Frangula_alnus_MilL			20260121152440			missing	coordinate_missing
-droguier_jbn	74739	drog_000156	canonical		Frangula_alnus_MilL			20260121152619			missing	coordinate_missing
-droguier_jbn	74740	drog_000259	canonical		Carum_carvi_L			20260121153042			missing	coordinate_missing
-droguier_jbn	74741	drog_000094	canonical		Carum_carvi_L			20260121153449			missing	coordinate_missing
-droguier_jbn	74742	drog_000192	canonical		Carum_carvi_L			20260121153716			missing	coordinate_missing
-droguier_jbn	74743	drog_000093	canonical		Carum_carvi_L			20260121153906			missing	coordinate_missing
-droguier_jbn	74744	drog_000178	canonical		Carum_carvi_L			20260121154311			missing	coordinate_missing
-droguier_jbn	74745	drog_000100	canonical		Carum_carvi_L			20260121154554			missing	coordinate_missing
-droguier_jbn	74746	drog_000288	canonical		Carum_carvi_L			20260121154730			missing	coordinate_missing
-droguier_jbn	74747	drog_000195	canonical		Carum_carvi_L			20260121154913			missing	coordinate_missing
-droguier_jbn	74748	drog_000065	canonical		Carum_carvi_L			20260121155038			missing	coordinate_missing
-droguier_jbn	74749	drog_000098	canonical		Carum_carvi_L			20260121155149			missing	coordinate_missing
-droguier_jbn	74750	drog_000132	canonical		Carum_carvi_L			20260121155313			missing	coordinate_missing
-droguier_jbn	74751	drog_000237	canonical					20260121155430			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74752	drog_000055	canonical					20260121155825			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74753	drog_000538	canonical		Juniperus_communis_L			20260126141105			missing	coordinate_missing
-droguier_jbn	74754	drog_000316	canonical		Juniperus_communis_L			20260126141226			missing	coordinate_missing
-droguier_jbn	74755	drog_000421	canonical		Juniperus_communis_L			20260126141320			missing	coordinate_missing
-droguier_jbn	74756	drog_000423	canonical		Juniperus_communis_L			20260126141501			missing	coordinate_missing
-droguier_jbn	74757	drog_000346	canonical		Juniperus_communis_L			20260126141553			missing	coordinate_missing
-droguier_jbn	74758	drog_000408	canonical		Juniperus_communis_L			20260126141714			missing	coordinate_missing
-droguier_jbn	74759	drog_000398	canonical		Juniperus_communis_L			20260126141837			missing	coordinate_missing
-droguier_jbn	74760	drog_000452	canonical		Juniperus_communis_L			20260126142122			missing	coordinate_missing
-droguier_jbn	74761	drog_000553	canonical		Juniperus_communis_L			20260126142450			missing	coordinate_missing
-droguier_jbn	74762	drog_000426	canonical					20260126142908			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74763	drog_000373	canonical					20260126143220			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74764	drog_000457	canonical					20260126143542			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74765	drog_000342	canonical					20260126143733			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74766	drog_000313	canonical					20260126143905			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74767	drog_000379	canonical					20260126144126			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74768	drog_000448	canonical					20260126144244			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74769	drog_000324	canonical					20260126144452			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74770	drog_000467	canonical					20260126144605			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74771	drog_000385	canonical					20260126144744			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74772	drog_000475	canonical					20260126145034			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74773	drog_000456	canonical					20260126145200			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74774	drog_000371	canonical					20260126145317			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74775	drog_000459	canonical					20260126145420			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74776	drog_000425	canonical					20260126145542			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74777	drog_000341	canonical					20260126145734			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74778	drog_000366	canonical					20260126145837			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74779	drog_000314	canonical					20260126150625			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74780	drog_000495	canonical					20260126150910			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74781	drog_000485	canonical					20260126151201			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74782	drog_000480	canonical					20260126151556			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74783	drog_000481	canonical					20260126151736			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74784	drog_000469	canonical					20260126151855			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74785	drog_000376	canonical					20260126152037			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74786	drog_000490	canonical					20260126152236			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74787	drog_000384	canonical					20260126152352			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74788	drog_000447	canonical					20260126152507			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74789	drog_000455	canonical					20260126152630			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74790	drog_000446	canonical					20260126152808			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74791	drog_000466	canonical					20260126152931			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74792	drog_000305	canonical					20260126153219			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74793	drog_000497	canonical					20260126153338			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74794	drog_000427	canonical		Menyanthes_trifoliata_L			20260126153615			missing	coordinate_missing
-droguier_jbn	74795	drog_000360	canonical		Menyanthes_trifoliata_L			20260126153851			missing	coordinate_missing
-droguier_jbn	74796	drog_000450	canonical		Menyanthes_trifoliata_L			20260126154101			missing	coordinate_missing
-droguier_jbn	74797	drog_000335	canonical		Menyanthes_trifoliata_L			20260126154229			missing	coordinate_missing
-droguier_jbn	74798	drog_000358	canonical		Menyanthes_trifoliata_L			20260126154357			missing	coordinate_missing
-droguier_jbn	74799	drog_000332	canonical		Menyanthes_trifoliata_L			20260126154529			missing	coordinate_missing
-droguier_jbn	74800	drog_000375	canonical		Menyanthes_trifoliata_L			20260126154628			missing	coordinate_missing
-droguier_jbn	74801	drog_000382	canonical		Matricaria_chamomilla_L			20260126154957			missing	coordinate_missing
-droguier_jbn	74802	drog_000308	canonical		Matricaria_chamomilla_L			20260126155207			missing	coordinate_missing
-droguier_jbn	74803	drog_000429	canonical		Matricaria_chamomilla_L			20260126155341			missing	coordinate_missing
-droguier_jbn	74804	drog_000470	canonical		Matricaria_chamomilla_L			20260126155443			missing	coordinate_missing
-droguier_jbn	74805	drog_000340	canonical		Matricaria_chamomilla_L			20260126155619			missing	coordinate_missing
-droguier_jbn	74806	drog_000462	canonical		Matricaria_chamomilla_L			20260126155800			missing	coordinate_missing
-droguier_jbn	74807	drog_000482	canonical		Matricaria_chamomilla_L			20260126160140			missing	coordinate_missing
-droguier_jbn	74808	drog_000449	canonical		Matricaria_chamomilla_L			20260126160303			missing	coordinate_missing
-droguier_jbn	74809	drog_000343	canonical					20260126160447			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74810	drog_000432	canonical					20260126160938			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74811	drog_000453	canonical					20260126161214			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74812	drog_000306	canonical					20260126161336			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74813	drog_000428	canonical					20260126161505			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74814	drog_000492	canonical					20260126161747			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74815	drog_000440	canonical					20260126161915			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74816	drog_000354	canonical					20260126162057			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74817	drog_000477	canonical					20260126162258			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74818	drog_000322	canonical					20260126162401			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74819	drog_000369	canonical		Artemisia_absinthium_L			20260127081917			missing	coordinate_missing
-droguier_jbn	74820	drog_000389	canonical		Artemisia_absinthium_L			20260127082337			missing	coordinate_missing
-droguier_jbn	74821	drog_000542	canonical		Artemisia_absinthium_L			20260127082827			missing	coordinate_missing
-droguier_jbn	74822	drog_000331	canonical		Artemisia_absinthium_L			20260127083006			missing	coordinate_missing
-droguier_jbn	74823	drog_000351	canonical		Artemisia_absinthium_L			20260127083258			missing	coordinate_missing
-droguier_jbn	74824	drog_000378	canonical		Artemisia_absinthium_L			20260127083442			missing	coordinate_missing
-droguier_jbn	74825	drog_000431	canonical		Artemisia_absinthium_L			20260127083536			missing	coordinate_missing
-droguier_jbn	74826	drog_000368	canonical		Artemisia_absinthium_L			20260127083805			missing	coordinate_missing
-droguier_jbn	74827	drog_000350	canonical		Artemisia_absinthium_L			20260127083951			missing	coordinate_missing
-droguier_jbn	74828	drog_000309	canonical		Artemisia_absinthium_L			20260127084246			missing	coordinate_missing
-droguier_jbn	74829	drog_000519	canonical		Artemisia_absinthium_L			20260127084321			missing	coordinate_missing
-droguier_jbn	74830	drog_000310	canonical		Artemisia_absinthium_L			20260127084611			missing	coordinate_missing
-droguier_jbn	74831	drog_000430	canonical		Linum_usitatissimum_L			20260127084902			missing	coordinate_missing
-droguier_jbn	74832	drog_000401	canonical		Linum_usitatissimum_L			20260127090405			missing	coordinate_missing
-droguier_jbn	74833	drog_000320	canonical		Linum_usitatissimum_L			20260127090532			missing	coordinate_missing
-droguier_jbn	74834	drog_000484	canonical		Linum_usitatissimum_L			20260127090707			missing	coordinate_missing
-droguier_jbn	74835	drog_000377	canonical		Linum_usitatissimum_L			20260127090908			missing	coordinate_missing
-droguier_jbn	74836	drog_000496	canonical		Linum_usitatissimum_L			20260127091041			missing	coordinate_missing
-droguier_jbn	74837	drog_000321	canonical		Linum_usitatissimum_L			20260127091213			missing	coordinate_missing
-droguier_jbn	74838	drog_000493	canonical		Linum_usitatissimum_L			20260127091402			missing	coordinate_missing
-droguier_jbn	74839	drog_000487	canonical		Filipendula_ulmaria_L_Maxim			20260127091504			missing	coordinate_missing
-droguier_jbn	74840	drog_000499	canonical					20260127091911			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74841	drog_000474	canonical					20260127092334			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74842	drog_000471	canonical					20260127093019			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74843	drog_000498	canonical					20260127093600			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74844	drog_000570	canonical					20260127093718			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74845	drog_000336	canonical					20260127094206			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74846	drog_000472	canonical					20260127094259			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74847	drog_000315	canonical					20260127094455			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74848	drog_000491	canonical					20260127094617			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74849	drog_000338	canonical					20260127094840			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74850	drog_000357	canonical					20260127094941			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74851	drog_000359	canonical					20260127095247			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74852	drog_000486	canonical					20260127095423			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74853	drog_000404	canonical					20260127095630			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74854	drog_000367	canonical					20260127095801			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74855	drog_000365	canonical					20260127095844			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74856	drog_000468	canonical					20260127100111			missing	missing_taxon_name;coordinate_missing
-droguier_jbn	74857	drog_000391	canonical					20260127100316			missing	missing_taxon_name;coordinate_missing
+droguier_jbn	74331	drog_000167	canonical					20260123090952			missing	missing_taxon_name
+droguier_jbn	74332	drog_000184	canonical					20260123091455			missing	missing_taxon_name
+droguier_jbn	74333	drog_000054	canonical					20260123091957			missing	missing_taxon_name
+droguier_jbn	74334	drog_000197	canonical					20260123092349			missing	missing_taxon_name
+droguier_jbn	74335	drog_000144	canonical					20260123092625			missing	missing_taxon_name
+droguier_jbn	74336	drog_000149	canonical					20260123092827			missing	missing_taxon_name
+droguier_jbn	74337	drog_000082	canonical					20260123093054			missing	missing_taxon_name
+droguier_jbn	74338	drog_000136	canonical					20260123093250			missing	missing_taxon_name
+droguier_jbn	74339	drog_000211	canonical					20260123093442			missing	missing_taxon_name
+droguier_jbn	74340	drog_000059	canonical					20260123093910			missing	missing_taxon_name
+droguier_jbn	74341	drog_000215	canonical					20260123094336			missing	missing_taxon_name
+droguier_jbn	74342	drog_000067	canonical					20260123094542			missing	missing_taxon_name
+droguier_jbn	74343	drog_000155	canonical					20260123094751			missing	missing_taxon_name
+droguier_jbn	74344	drog_000090	canonical					20260123095032			missing	missing_taxon_name
+droguier_jbn	74345	drog_000323	canonical					20260123095237			missing	missing_taxon_name
+droguier_jbn	74346	drog_000105	canonical					20260123095537			missing	missing_taxon_name
+droguier_jbn	74347	drog_000126	canonical					20260123095805			missing	missing_taxon_name
+droguier_jbn	74348	drog_000186	canonical					20260123095959			missing	missing_taxon_name
+droguier_jbn	74349	drog_000102	canonical					20260123100225			missing	missing_taxon_name
+droguier_jbn	74360	drog_000052	canonical					20260123112036			missing	missing_taxon_name
+droguier_jbn	74361	drog_000514	canonical					20260123112453			missing	missing_taxon_name
+droguier_jbn	74362	drog_000557	canonical					20260123112717			missing	missing_taxon_name
+droguier_jbn	74363	drog_000572	canonical					20260123112845			missing	missing_taxon_name
+droguier_jbn	74364	drog_000543	canonical					20260123113043			missing	missing_taxon_name
+droguier_jbn	74365	drog_000407	canonical					20260123113151			missing	missing_taxon_name
+droguier_jbn	74366	drog_000580	canonical					20260123113345			missing	missing_taxon_name
+droguier_jbn	74367	drog_000537	canonical					20260123113505			missing	missing_taxon_name
+droguier_jbn	74368	drog_000528	canonical					20260123113637			missing	missing_taxon_name
+droguier_jbn	74385	drog_000539	canonical					20260126093345			missing	missing_taxon_name
+droguier_jbn	74386	drog_000544	canonical					20260126094253			missing	missing_taxon_name
+droguier_jbn	74387	drog_000529	canonical					20260126094504			missing	missing_taxon_name
+droguier_jbn	74388	drog_000419	canonical					20260126094641			missing	missing_taxon_name
+droguier_jbn	74389	drog_000444	canonical					20260126094828			missing	missing_taxon_name
+droguier_jbn	74390	drog_000508	canonical					20260126094947			missing	missing_taxon_name
+droguier_jbn	74391	drog_000461	canonical					20260126095129			missing	missing_taxon_name
+droguier_jbn	74392	drog_000555	canonical					20260126095306			missing	missing_taxon_name
+droguier_jbn	74393	drog_000387	canonical					20260126095424			missing	missing_taxon_name
+droguier_jbn	74394	drog_000445	canonical					20260126095528			missing	missing_taxon_name
+droguier_jbn	74395	drog_000460	canonical					20260126095652			missing	missing_taxon_name
+droguier_jbn	74396	drog_000433	canonical					20260126103908			missing	missing_taxon_name
+droguier_jbn	74397	drog_000402	canonical					20260126104051			missing	missing_taxon_name
+droguier_jbn	74398	drog_000390	canonical					20260126104152			missing	missing_taxon_name
+droguier_jbn	74399	drog_000400	canonical					20260126104407			missing	missing_taxon_name
+droguier_jbn	74400	drog_000412	canonical					20260126104633			missing	missing_taxon_name
+droguier_jbn	74401	drog_000329	canonical					20260126104817			missing	missing_taxon_name
+droguier_jbn	74402	drog_000339	canonical					20260126104955			missing	missing_taxon_name
+droguier_jbn	74403	drog_000439	canonical					20260126105157			missing	missing_taxon_name
+droguier_jbn	74404	drog_000454	canonical					20260126105257			missing	missing_taxon_name
+droguier_jbn	74405	drog_000416	canonical					20260126105410			missing	missing_taxon_name
+droguier_jbn	74406	drog_000435	canonical					20260126105607			missing	missing_taxon_name
+droguier_jbn	74407	drog_000442	canonical					20260126105738			missing	missing_taxon_name
+droguier_jbn	74408	drog_000458	canonical					20260126105842			missing	missing_taxon_name
+droguier_jbn	74409	drog_000353	canonical					20260126110034			missing	missing_taxon_name
+droguier_jbn	74410	drog_000414	canonical					20260126110145			missing	missing_taxon_name
+droguier_jbn	74411	drog_000562	canonical					20260126110227			missing	missing_taxon_name
+droguier_jbn	74432	drog_000345	canonical					20260126113755			missing	missing_taxon_name
+droguier_jbn	74433	drog_000356	canonical					20260126114220			missing	missing_taxon_name
+droguier_jbn	74434	drog_000337	canonical					20260126114325			missing	missing_taxon_name
+droguier_jbn	74435	drog_000523	canonical					20260126114542			missing	missing_taxon_name
+droguier_jbn	74436	drog_000535	canonical					20260126114702			missing	missing_taxon_name
+droguier_jbn	74437	drog_000318	canonical					20260126114842			missing	missing_taxon_name
+droguier_jbn	74438	drog_000443	canonical					20260126114957			missing	missing_taxon_name
+droguier_jbn	74439	drog_000464	canonical					20260126115118			missing	missing_taxon_name
+droguier_jbn	74440	drog_000434	canonical					20260126115239			missing	missing_taxon_name
+droguier_jbn	74441	drog_000575	canonical					20260126115409			missing	missing_taxon_name
+droguier_jbn	74442	drog_000424	canonical					20260126115529			missing	missing_taxon_name
+droguier_jbn	74443	drog_000565	canonical					20260126115722			missing	missing_taxon_name
+droguier_jbn	74455	drog_000399	canonical					20260126131632			missing	missing_taxon_name
+droguier_jbn	74456	drog_000533	canonical					20260126132628			missing	missing_taxon_name
+droguier_jbn	74457	drog_000554	canonical					20260126132758			missing	missing_taxon_name
+droguier_jbn	74458	drog_000549	canonical					20260126132932			missing	missing_taxon_name
+droguier_jbn	74459	drog_000563	canonical					20260126133135			missing	missing_taxon_name
+droguier_jbn	74460	drog_000560	canonical					20260126133426			missing	missing_taxon_name
+droguier_jbn	74461	drog_000437	canonical					20260126133551			missing	missing_taxon_name
+droguier_jbn	74462	drog_000483	canonical					20260126133753			missing	missing_taxon_name
+droguier_jbn	74463	drog_000559	canonical					20260126134016			missing	missing_taxon_name
+droguier_jbn	74464	drog_000325	canonical					20260126134314			missing	missing_taxon_name
+droguier_jbn	74465	drog_000394	canonical					20260126134654			missing	missing_taxon_name
+droguier_jbn	74466	drog_000579	canonical					20260126134934			missing	missing_taxon_name
+droguier_jbn	74467	drog_000441	canonical					20260126135210			missing	missing_taxon_name
+droguier_jbn	74468	drog_000438	canonical					20260126135424			missing	missing_taxon_name
+droguier_jbn	74469	drog_000312	canonical					20260126135603			missing	missing_taxon_name
+droguier_jbn	74470	drog_000504	canonical					20260126135804			missing	missing_taxon_name
+droguier_jbn	74479	drog_000003	canonical					20260112153847	6.934525	47.000164	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74487	drog_000011	canonical					20260112162222	6.934556	47.00017	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74488	drog_000012	canonical					20260112163229	6.9345436	47.000134	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74490	drog_000014	canonical					20260112164355	6.9344945	47.000053	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74492	drog_000016	canonical					20260112165546	6.9344945	47.000053	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74493	drog_000017*	other_noncanonical					20260112170007	6.9344945	47.000053	looks_swapped_ch_lat_lon	sample_id_other_noncanonical;missing_taxon_name
+droguier_jbn	74494	drog_000018	canonical					20260113105456	6.9346695	47.000256	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74497	drog_000021	canonical					20260113110553	6.9344997	47.000256	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74500	drog_000024	canonical					20260113111420	6.934327	46.999992	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74501	drog_000025	canonical					20260113111818	6.9346323	47.000072	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74507	drog_000031	canonical					20260113113437	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74510	drog_000034	canonical					20260113114455	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74513	drog_000037	canonical					20260113115443	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74517	drog_000047	canonical					20260114132948	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74518	drog_000042	canonical					20260114133828	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74519	drog_000046	canonical					20260114134107	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74520	drog_000043	canonical					20260114134305	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74521	drog_000075	canonical					20260114134500	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74522	drog_000041	canonical					20260114134626	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74523	drog_000044	canonical					20260114134811	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74524	drog_000066	canonical					20260114135050	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74525	drog_000121	canonical					20260114135243	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74526	drog_000084	canonical					20260114135359	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74527	drog_000089	canonical					20260114135532	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74528	drog_000078	canonical					20260114135646	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74529	drog_000058	canonical					20260114135855	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74530	drog_000051	canonical					20260114140028	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74531	drog_000190	canonical					20260114140227	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74532	drog_000045	canonical					20260114140430	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74533	drog_000146	canonical					20260114140545	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74534	drog_000080	canonical					20260114140700	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74535	drog_000069	canonical					20260114140808	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74536	drog_000061	canonical					20260114140915	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74537	drog_000074	canonical					20260114141025	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74538	drog_000060	canonical					20260114141157	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74539	drog_000062	canonical					20260114141256	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74540	drog_000049	canonical					20260114141454	6.9343843	47.000084	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74580	drog_000217	canonical					20260114160830	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74602	drog_000120	canonical					20260114165356	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74603	drog_000219	canonical					20260114165704	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74604	drog_000109	canonical					20260114165851	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74605	drog_000131	canonical					20260114165940	6.905559	46.983723	looks_swapped_ch_lat_lon	missing_taxon_name
+droguier_jbn	74606	drog_000073	canonical					20260114170134			missing	missing_taxon_name
+droguier_jbn	74607	drog_000225	canonical					20260114170455			missing	missing_taxon_name
+droguier_jbn	74608	drog_000118	canonical					20260114170604			missing	missing_taxon_name
+droguier_jbn	74609	drog_000101	canonical					20260114170722			missing	missing_taxon_name
+droguier_jbn	74610	drog_000254	canonical					20260114170905			missing	missing_taxon_name
+droguier_jbn	74611	drog_000110	canonical					20260114171029			missing	missing_taxon_name
+droguier_jbn	74612	drog_000183)	other_noncanonical		Angelica_archangelica_L			20260121085541			missing	sample_id_other_noncanonical
+droguier_jbn	74619	drog_000145	canonical					20260121091351			missing	missing_taxon_name
+droguier_jbn	74620	drog_000165	canonical					20260121091750			missing	missing_taxon_name
+droguier_jbn	74621	drog_000285	canonical					20260121091948			missing	missing_taxon_name
+droguier_jbn	74622	drog_000245	canonical					20260121092121			missing	missing_taxon_name
+droguier_jbn	74623	drog_000251	canonical					20260121092305			missing	missing_taxon_name
+droguier_jbn	74624	drog_000130	canonical					20260121092448			missing	missing_taxon_name
+droguier_jbn	74625	drog_000243	canonical					20260121092706			missing	missing_taxon_name
+droguier_jbn	74626	drog_000293	canonical					20260121092901			missing	missing_taxon_name
+droguier_jbn	74627	drog_000194	canonical					20260121093117			missing	missing_taxon_name
+droguier_jbn	74628	drog_000133	canonical					20260121093342			missing	missing_taxon_name
+droguier_jbn	74629	drog_000173	canonical					20260121093643			missing	missing_taxon_name
+droguier_jbn	74630	drog_000247	canonical					20260121093836			missing	missing_taxon_name
+droguier_jbn	74647	drog_000268	canonical					20260121110155			missing	missing_taxon_name
+droguier_jbn	74648	drog_000191	canonical					20260121111037			missing	missing_taxon_name
+droguier_jbn	74649	drog_000205	canonical					20260121111348			missing	missing_taxon_name
+droguier_jbn	74650	drog_000201	canonical					20260121111530			missing	missing_taxon_name
+droguier_jbn	74651	drog_000226	canonical					20260121111839			missing	missing_taxon_name
+droguier_jbn	74652	drog_000202	canonical					20260121112018			missing	missing_taxon_name
+droguier_jbn	74653	drog_000081	canonical					20260121112219			missing	missing_taxon_name
+droguier_jbn	74654	drog_000092	canonical					20260121112649			missing	missing_taxon_name
+droguier_jbn	74656	drog_000203	canonical					20260121113346			missing	missing_taxon_name
+droguier_jbn	74657	drog_000223	canonical					20260121114153			missing	missing_taxon_name
+droguier_jbn	74658	drog_000280	canonical					20260121114329			missing	missing_taxon_name
+droguier_jbn	74659	drog_000193	canonical					20260121114512			missing	missing_taxon_name
+droguier_jbn	74660	drog_000294	canonical					20260121114647			missing	missing_taxon_name
+droguier_jbn	74661	drog_000108	canonical					20260121114856			missing	missing_taxon_name
+droguier_jbn	74662	drog_000278	canonical					20260121115251			missing	missing_taxon_name
+droguier_jbn	74663	drog_000275	canonical					20260121115424			missing	missing_taxon_name
+droguier_jbn	74664	drog_000152	canonical					20260121115608			missing	missing_taxon_name
+droguier_jbn	74665	drog_000188	canonical					20260121115836			missing	missing_taxon_name
+droguier_jbn	74666	drog_000287	canonical					20260121120002			missing	missing_taxon_name
+droguier_jbn	74689	drog_000177	canonical					20260121133304			missing	missing_taxon_name
+droguier_jbn	74690	drog_000207	canonical					20260121133851			missing	missing_taxon_name
+droguier_jbn	74691	drog_000104	canonical					20260121134040			missing	missing_taxon_name
+droguier_jbn	74692	drog_000295	canonical					20260121134240			missing	missing_taxon_name
+droguier_jbn	74693	drog_000153	canonical					20260121134404			missing	missing_taxon_name
+droguier_jbn	74694	drog_000209	canonical					20260121134713			missing	missing_taxon_name
+droguier_jbn	74695	drog_000274	canonical					20260121135107			missing	missing_taxon_name
+droguier_jbn	74696	drog_000273	canonical					20260121135317			missing	missing_taxon_name
+droguier_jbn	74697	drog_000123	canonical					20260121135537			missing	missing_taxon_name
+droguier_jbn	74698	drog_000154	canonical					20260121135729			missing	missing_taxon_name
+droguier_jbn	74699	drog_000234	canonical					20260121135906			missing	missing_taxon_name
+droguier_jbn	74700	drog_000114	canonical					20260121140102			missing	missing_taxon_name
+droguier_jbn	74701	drog_000150	canonical					20260121140236			missing	missing_taxon_name
+droguier_jbn	74702	drog_000174	canonical					20260121140356			missing	missing_taxon_name
+droguier_jbn	74703	drog_000208	canonical					20260121140520			missing	missing_taxon_name
+droguier_jbn	74704	drog_000182	canonical					20260121140906			missing	missing_taxon_name
+droguier_jbn	74751	drog_000237	canonical					20260121155430			missing	missing_taxon_name
+droguier_jbn	74752	drog_000055	canonical					20260121155825			missing	missing_taxon_name
+droguier_jbn	74762	drog_000426	canonical					20260126142908			missing	missing_taxon_name
+droguier_jbn	74763	drog_000373	canonical					20260126143220			missing	missing_taxon_name
+droguier_jbn	74764	drog_000457	canonical					20260126143542			missing	missing_taxon_name
+droguier_jbn	74765	drog_000342	canonical					20260126143733			missing	missing_taxon_name
+droguier_jbn	74766	drog_000313	canonical					20260126143905			missing	missing_taxon_name
+droguier_jbn	74767	drog_000379	canonical					20260126144126			missing	missing_taxon_name
+droguier_jbn	74768	drog_000448	canonical					20260126144244			missing	missing_taxon_name
+droguier_jbn	74769	drog_000324	canonical					20260126144452			missing	missing_taxon_name
+droguier_jbn	74770	drog_000467	canonical					20260126144605			missing	missing_taxon_name
+droguier_jbn	74771	drog_000385	canonical					20260126144744			missing	missing_taxon_name
+droguier_jbn	74772	drog_000475	canonical					20260126145034			missing	missing_taxon_name
+droguier_jbn	74773	drog_000456	canonical					20260126145200			missing	missing_taxon_name
+droguier_jbn	74774	drog_000371	canonical					20260126145317			missing	missing_taxon_name
+droguier_jbn	74775	drog_000459	canonical					20260126145420			missing	missing_taxon_name
+droguier_jbn	74776	drog_000425	canonical					20260126145542			missing	missing_taxon_name
+droguier_jbn	74777	drog_000341	canonical					20260126145734			missing	missing_taxon_name
+droguier_jbn	74778	drog_000366	canonical					20260126145837			missing	missing_taxon_name
+droguier_jbn	74779	drog_000314	canonical					20260126150625			missing	missing_taxon_name
+droguier_jbn	74780	drog_000495	canonical					20260126150910			missing	missing_taxon_name
+droguier_jbn	74781	drog_000485	canonical					20260126151201			missing	missing_taxon_name
+droguier_jbn	74782	drog_000480	canonical					20260126151556			missing	missing_taxon_name
+droguier_jbn	74783	drog_000481	canonical					20260126151736			missing	missing_taxon_name
+droguier_jbn	74784	drog_000469	canonical					20260126151855			missing	missing_taxon_name
+droguier_jbn	74785	drog_000376	canonical					20260126152037			missing	missing_taxon_name
+droguier_jbn	74786	drog_000490	canonical					20260126152236			missing	missing_taxon_name
+droguier_jbn	74787	drog_000384	canonical					20260126152352			missing	missing_taxon_name
+droguier_jbn	74788	drog_000447	canonical					20260126152507			missing	missing_taxon_name
+droguier_jbn	74789	drog_000455	canonical					20260126152630			missing	missing_taxon_name
+droguier_jbn	74790	drog_000446	canonical					20260126152808			missing	missing_taxon_name
+droguier_jbn	74791	drog_000466	canonical					20260126152931			missing	missing_taxon_name
+droguier_jbn	74792	drog_000305	canonical					20260126153219			missing	missing_taxon_name
+droguier_jbn	74793	drog_000497	canonical					20260126153338			missing	missing_taxon_name
+droguier_jbn	74809	drog_000343	canonical					20260126160447			missing	missing_taxon_name
+droguier_jbn	74810	drog_000432	canonical					20260126160938			missing	missing_taxon_name
+droguier_jbn	74811	drog_000453	canonical					20260126161214			missing	missing_taxon_name
+droguier_jbn	74812	drog_000306	canonical					20260126161336			missing	missing_taxon_name
+droguier_jbn	74813	drog_000428	canonical					20260126161505			missing	missing_taxon_name
+droguier_jbn	74814	drog_000492	canonical					20260126161747			missing	missing_taxon_name
+droguier_jbn	74815	drog_000440	canonical					20260126161915			missing	missing_taxon_name
+droguier_jbn	74816	drog_000354	canonical					20260126162057			missing	missing_taxon_name
+droguier_jbn	74817	drog_000477	canonical					20260126162258			missing	missing_taxon_name
+droguier_jbn	74818	drog_000322	canonical					20260126162401			missing	missing_taxon_name
+droguier_jbn	74840	drog_000499	canonical					20260127091911			missing	missing_taxon_name
+droguier_jbn	74841	drog_000474	canonical					20260127092334			missing	missing_taxon_name
+droguier_jbn	74842	drog_000471	canonical					20260127093019			missing	missing_taxon_name
+droguier_jbn	74843	drog_000498	canonical					20260127093600			missing	missing_taxon_name
+droguier_jbn	74844	drog_000570	canonical					20260127093718			missing	missing_taxon_name
+droguier_jbn	74845	drog_000336	canonical					20260127094206			missing	missing_taxon_name
+droguier_jbn	74846	drog_000472	canonical					20260127094259			missing	missing_taxon_name
+droguier_jbn	74847	drog_000315	canonical					20260127094455			missing	missing_taxon_name
+droguier_jbn	74848	drog_000491	canonical					20260127094617			missing	missing_taxon_name
+droguier_jbn	74849	drog_000338	canonical					20260127094840			missing	missing_taxon_name
+droguier_jbn	74850	drog_000357	canonical					20260127094941			missing	missing_taxon_name
+droguier_jbn	74851	drog_000359	canonical					20260127095247			missing	missing_taxon_name
+droguier_jbn	74852	drog_000486	canonical					20260127095423			missing	missing_taxon_name
+droguier_jbn	74853	drog_000404	canonical					20260127095630			missing	missing_taxon_name
+droguier_jbn	74854	drog_000367	canonical					20260127095801			missing	missing_taxon_name
+droguier_jbn	74855	drog_000365	canonical					20260127095844			missing	missing_taxon_name
+droguier_jbn	74856	drog_000468	canonical					20260127100111			missing	missing_taxon_name
+droguier_jbn	74857	drog_000391	canonical					20260127100316			missing	missing_taxon_name

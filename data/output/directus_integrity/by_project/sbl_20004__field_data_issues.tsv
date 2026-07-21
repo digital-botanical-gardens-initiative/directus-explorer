@@ -1,38 +1,13 @@
 project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issues
-sbl_20004	68455	tp24_000007	canonical			Erythroxylum australe			7.1551256	46.793304	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68456	tp24_000016	canonical			Plutella xylostella			7.155673	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68457	tp24_000017	canonical			Biscutella laevigata			7.1556735	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68458	tp24_000019	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68459	tp24_000018	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68460	tp24_000020	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68461	tp24_000012	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68462	tp24_000015	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68463	tp24_000011	canonical			Biscutella laevigata			7.1556735	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68464	tp24_000013	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68465	tp24_000014	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	68466	tp24_000006	canonical			Plutella xylostella			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date;coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70119	tp24_000004	canonical		Solanum tuberosum			20250409115135	7.1557016	46.792866	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70120	tp24_000008	canonical		Solanum tuberosum			20250409115703	7.1557055	46.792866	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70121	tp24_000021	canonical		Solanum tuberosum			20250409120300	7.1556997	46.79287	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70122	tp24_000022	canonical		Solanum tuberosum			20250409120416	7.155702	46.792873	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70123	tp24_000023	canonical		Solanum tuberosum			20250409120737	7.155707	46.792873	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70124	tp24_000024	canonical		Solanum tuberosum			20250409120942	7.155709	46.79287	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70125	tp24_000026	canonical		Solanum tuberosum			20250409121106	7.155705	46.79287	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70126	tp24_000027	canonical		Solanum tuberosum			20250409125441	7.155703	46.79287	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70127	tp24_000028	canonical		Solanum tuberosum			20250409125558	7.155702	46.79287	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70128	tp24_000029	canonical		Solanum tuberosum			20250409125741	7.155698	46.792866	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70129	tp24_000034	canonical		Solanum tuberosum			20250409125844	7.1557	46.79287	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70130	tp24_000035	canonical		Solanum tuberosum			20250409130024	7.155704	46.79287	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70131	tp24_000033	canonical		Trichoderma sp.			20250409133845	7.1556544	46.792507	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70132	tp24_000031	canonical		Trichoderma sp.			20250409134246	7.1556587	46.792515	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70133	tp24_000032	canonical		PDA medium			20250409134807	7.1556587	46.792515	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70134	tp24_000036	canonical		1/2 MS + 3-HDA			20250409135511	7.1554356	46.79321	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70135	tp24_000041	canonical		1/2 MS			20250409140235	7.155428	46.79321	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70136	tp24_000046	canonical		arabidopsis thaliana			20250409140546	7.1554203	46.793198	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70137	tp24_000037	canonical		arabidopsis thaliana			20250409140827	7.1554203	46.793198	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70138	tp24_000038	canonical		arabidopsis thaliana			20250409141008	7.1554203	46.793198	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70139	tp24_000039	canonical		arabidopsis thaliana			20250409141208	7.1554203	46.793198	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70140	tp24_000040	canonical		arabidopsis thaliana			20250409141336	7.1554203	46.793198	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70141	tp24_000042	canonical		arabidopsis thaliana			20250409141511	7.1554203	46.793198	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70142	tp24_000043	canonical		arabidopsis thaliana			20250409141735	7.1554203	46.793198	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
-sbl_20004	70143	tp24_000044	canonical		arabidopsis thaliana			20250409141924	7.1554203	46.793198	looks_swapped_ch_lat_lon	coordinate_looks_swapped_ch_lat_lon
+sbl_20004	68455	tp24_000007	canonical			Erythroxylum australe			7.1551256	46.793304	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68456	tp24_000016	canonical			Plutella xylostella			7.155673	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68457	tp24_000017	canonical			Biscutella laevigata			7.1556735	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68458	tp24_000019	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68459	tp24_000018	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68460	tp24_000020	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68461	tp24_000012	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68462	tp24_000015	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68463	tp24_000011	canonical			Biscutella laevigata			7.1556735	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68464	tp24_000013	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68465	tp24_000014	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date
+sbl_20004	68466	tp24_000006	canonical			Plutella xylostella			7.1556745	46.79285	looks_swapped_ch_lat_lon	missing_date

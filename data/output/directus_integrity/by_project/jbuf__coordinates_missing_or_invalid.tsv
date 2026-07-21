@@ -1,0 +1,6 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	issue
+jbuf	69811	dbgi_007471	canonical	dbgi_007471	Aristolochia littoralis Parodi			20250305105710			missing	coordinates_missing
+jbuf	69840	dbgi_007414	canonical	dbgi_007414				20250305171910			missing	coordinates_missing
+jbuf	69889	dbgi_007458	canonical	dbgi_007458	Quercus coccifera L.			20250306155311			missing	coordinates_missing
+jbuf	69892	dbgi_007459	canonical	dbgi_007459	Salvia cacaliifolia Benth.			20250306164717			missing	coordinates_missing
+jbuf	70096	obs_nan_nan	other_noncanonical					20250411152125			missing	coordinates_missing

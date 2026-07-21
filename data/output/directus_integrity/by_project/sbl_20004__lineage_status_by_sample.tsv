@@ -1,0 +1,38 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	lineage_status
+sbl_20004	68455	tp24_000007	canonical			Erythroxylum australe			7.1551256	46.793304	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000007	tp24_000007_01;tp24_000007_02	has_ms
+sbl_20004	68456	tp24_000016	canonical			Plutella xylostella			7.155673	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000016	tp24_000016_01	has_ms
+sbl_20004	68457	tp24_000017	canonical			Biscutella laevigata			7.1556735	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000017	tp24_000017_01	has_ms
+sbl_20004	68458	tp24_000019	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000019	tp24_000019_01	has_ms
+sbl_20004	68459	tp24_000018	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000018	tp24_000018_01	has_ms
+sbl_20004	68460	tp24_000020	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000020	tp24_000020_01	has_ms
+sbl_20004	68461	tp24_000012	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000012	tp24_000012_01	has_ms
+sbl_20004	68462	tp24_000015	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000015	tp24_000015_01	has_ms
+sbl_20004	68463	tp24_000011	canonical			Biscutella laevigata			7.1556735	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000011	tp24_000011_01	has_ms
+sbl_20004	68464	tp24_000013	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000013	tp24_000013_01	has_ms
+sbl_20004	68465	tp24_000014	canonical			Biscutella laevigata			7.1556745	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000014	tp24_000014_01	has_ms
+sbl_20004	68466	tp24_000006	canonical			Plutella xylostella			7.1556745	46.79285	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000006	tp24_000006_01	has_ms
+sbl_20004	70119	tp24_000004	canonical		Solanum tuberosum			20250409115135	7.1557016	46.792866	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000004	tp24_000004_01	has_ms
+sbl_20004	70120	tp24_000008	canonical		Solanum tuberosum			20250409115703	7.1557055	46.792866	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000008	tp24_000008_01	has_ms
+sbl_20004	70121	tp24_000021	canonical		Solanum tuberosum			20250409120300	7.1556997	46.79287	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000021	tp24_000021_01	has_ms
+sbl_20004	70122	tp24_000022	canonical		Solanum tuberosum			20250409120416	7.155702	46.792873	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000022	tp24_000022_01	has_ms
+sbl_20004	70123	tp24_000023	canonical		Solanum tuberosum			20250409120737	7.155707	46.792873	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000023	tp24_000023_01	has_ms
+sbl_20004	70124	tp24_000024	canonical		Solanum tuberosum			20250409120942	7.155709	46.79287	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000024	tp24_000024_01;tp24_000024_02;tp24_000024_03	has_ms
+sbl_20004	70125	tp24_000026	canonical		Solanum tuberosum			20250409121106	7.155705	46.79287	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000026	tp24_000026_01	has_ms
+sbl_20004	70126	tp24_000027	canonical		Solanum tuberosum			20250409125441	7.155703	46.79287	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000027	tp24_000027_01	has_ms
+sbl_20004	70127	tp24_000028	canonical		Solanum tuberosum			20250409125558	7.155702	46.79287	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000028	tp24_000028_01	has_ms
+sbl_20004	70128	tp24_000029	canonical		Solanum tuberosum			20250409125741	7.155698	46.792866	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000029	tp24_000029_01	has_ms
+sbl_20004	70129	tp24_000034	canonical		Solanum tuberosum			20250409125844	7.1557	46.79287	looks_swapped_ch_lat_lon	true	true	false	false	tp24_000034	tp24_000034_01	no_aliquot;no_ms
+sbl_20004	70130	tp24_000035	canonical		Solanum tuberosum			20250409130024	7.155704	46.79287	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000035	tp24_000035_01	has_ms
+sbl_20004	70131	tp24_000033	canonical		Trichoderma sp.			20250409133845	7.1556544	46.792507	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000033	tp24_000033_01	has_ms
+sbl_20004	70132	tp24_000031	canonical		Trichoderma sp.			20250409134246	7.1556587	46.792515	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000031	tp24_000031_01	has_ms
+sbl_20004	70133	tp24_000032	canonical		PDA medium			20250409134807	7.1556587	46.792515	looks_swapped_ch_lat_lon	true	true	true	true	tp24_000032	tp24_000032_01	has_ms
+sbl_20004	70134	tp24_000036	canonical		1/2 MS + 3-HDA			20250409135511	7.1554356	46.79321	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000036_01	no_dried_link;no_ms
+sbl_20004	70135	tp24_000041	canonical		1/2 MS			20250409140235	7.155428	46.79321	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000041_01	no_dried_link;no_ms
+sbl_20004	70136	tp24_000046	canonical		arabidopsis thaliana			20250409140546	7.1554203	46.793198	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000046_01	no_dried_link;no_ms
+sbl_20004	70137	tp24_000037	canonical		arabidopsis thaliana			20250409140827	7.1554203	46.793198	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000037_01	no_dried_link;no_ms
+sbl_20004	70138	tp24_000038	canonical		arabidopsis thaliana			20250409141008	7.1554203	46.793198	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000038_01	no_dried_link;no_ms
+sbl_20004	70139	tp24_000039	canonical		arabidopsis thaliana			20250409141208	7.1554203	46.793198	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000039_01	no_dried_link;no_ms
+sbl_20004	70140	tp24_000040	canonical		arabidopsis thaliana			20250409141336	7.1554203	46.793198	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000040_01	no_dried_link;no_ms
+sbl_20004	70141	tp24_000042	canonical		arabidopsis thaliana			20250409141511	7.1554203	46.793198	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000042_01	no_dried_link;no_ms
+sbl_20004	70142	tp24_000043	canonical		arabidopsis thaliana			20250409141735	7.1554203	46.793198	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000043_01	no_dried_link;no_ms
+sbl_20004	70143	tp24_000044	canonical		arabidopsis thaliana			20250409141924	7.1554203	46.793198	looks_swapped_ch_lat_lon	false	true	true	false		tp24_000044_01	no_dried_link;no_ms

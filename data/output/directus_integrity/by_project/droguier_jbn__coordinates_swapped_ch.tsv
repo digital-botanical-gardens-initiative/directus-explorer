@@ -1,0 +1,130 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	suggested_latitude	suggested_longitude	issue
+droguier_jbn	74477	drog_000001	canonical		Frangula_alnus_MilL			20260112152106	6.9347687	47.000175	looks_swapped_ch_lat_lon	47.000175	6.9347687	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74478	drog_000002	canonical		Juniperus_communis_L			20260112153133	6.9346356	47.00024	looks_swapped_ch_lat_lon	47.00024	6.9346356	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74479	drog_000003	canonical					20260112153847	6.934525	47.000164	looks_swapped_ch_lat_lon	47.000164	6.934525	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74480	drog_000004	canonical		Menyanthes_trifoliata_L			20260112154603	6.9345083	47.00021	looks_swapped_ch_lat_lon	47.00021	6.9345083	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74481	drog_000005	canonical		Tussilago_farfara_L			20260112155135	6.934536	47.00018	looks_swapped_ch_lat_lon	47.00018	6.934536	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74482	drog_000006	canonical		Viola_tricolor_L			20260112155528	6.934637	47.00018	looks_swapped_ch_lat_lon	47.00018	6.934637	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74483	drog_000007	canonical		Salvia_officinalis_L			20260112160354	6.934537	47.00012	looks_swapped_ch_lat_lon	47.00012	6.934537	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74484	drog_000008	canonical		Sambucus_nigra_L			20260112160809	6.934542	47.000122	looks_swapped_ch_lat_lon	47.000122	6.934542	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74485	drog_000009	canonical		Melissa_officinalis_L			20260112161133	6.934502	47.000103	looks_swapped_ch_lat_lon	47.000103	6.934502	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74486	drog_000010	canonical		Papaver_rhoeas_L			20260112161623	6.934611	47.000156	looks_swapped_ch_lat_lon	47.000156	6.934611	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74487	drog_000011	canonical					20260112162222	6.934556	47.00017	looks_swapped_ch_lat_lon	47.00017	6.934556	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74488	drog_000012	canonical					20260112163229	6.9345436	47.000134	looks_swapped_ch_lat_lon	47.000134	6.9345436	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74489	drog_000013	canonical		Matricaria_chamomilla_L			20260112163804	6.9344945	47.000053	looks_swapped_ch_lat_lon	47.000053	6.9344945	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74490	drog_000014	canonical					20260112164355	6.9344945	47.000053	looks_swapped_ch_lat_lon	47.000053	6.9344945	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74491	drog_000015	canonical		Filipendula_ulmaria_L_Maxim			20260112165048	6.9344945	47.000053	looks_swapped_ch_lat_lon	47.000053	6.9344945	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74492	drog_000016	canonical					20260112165546	6.9344945	47.000053	looks_swapped_ch_lat_lon	47.000053	6.9344945	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74493	drog_000017*	other_noncanonical					20260112170007	6.9344945	47.000053	looks_swapped_ch_lat_lon	47.000053	6.9344945	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74494	drog_000018	canonical					20260113105456	6.9346695	47.000256	looks_swapped_ch_lat_lon	47.000256	6.9346695	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74495	drog_000019	canonical		Artemisia_absinthium_L			20260113105951	6.9345393	47.000126	looks_swapped_ch_lat_lon	47.000126	6.9345393	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74496	drog_000020	canonical		Thymus_serpyllum_L			20260113110250	6.9344997	47.000256	looks_swapped_ch_lat_lon	47.000256	6.9344997	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74497	drog_000021	canonical					20260113110553	6.9344997	47.000256	looks_swapped_ch_lat_lon	47.000256	6.9344997	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74498	drog_000022	canonical		Plantago_lanceolata_L			20260113110835	6.9344997	47.000256	looks_swapped_ch_lat_lon	47.000256	6.9344997	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74499	drog_000023	canonical		Sambucus_nigra_L			20260113111130	6.9345274	47.000164	looks_swapped_ch_lat_lon	47.000164	6.9345274	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74500	drog_000024	canonical					20260113111420	6.934327	46.999992	looks_swapped_ch_lat_lon	46.999992	6.934327	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74501	drog_000025	canonical					20260113111818	6.9346323	47.000072	looks_swapped_ch_lat_lon	47.000072	6.9346323	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74502	drog_000026	canonical		Achillea_millefolium_L			20260113112116	6.934452	47.000107	looks_swapped_ch_lat_lon	47.000107	6.934452	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74503	drog_000027	canonical		Humulus_lupulus_L			20260113112332	6.934452	47.000107	looks_swapped_ch_lat_lon	47.000107	6.934452	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74504	drog_000028	canonical		Linum_usitatissimum_L			20260113112629	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74505	drog_000029	canonical		Laurus_nobilis_L			20260113112959	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74506	drog_000030	canonical		Angelica_archangelica_L			20260113113208	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74507	drog_000031	canonical					20260113113437	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74508	drog_000032	canonical		Ononis_spinosa_L			20260113113810	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74509	drog_000033	canonical		Gentiana_lutea_L			20260113114115	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74510	drog_000034	canonical					20260113114455	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74511	drog_000035	canonical		Valeriana_officinalis_L			20260113114906	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74512	drog_000036	canonical		Juniperus_communis_L			20260113115234	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74513	drog_000037	canonical					20260113115443	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74514	drog_000038	canonical		Thymus_vulgaris_L			20260113115722	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74515	drog_000039	canonical		Carum_carvi_L			20260113120004	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74516	drog_000040	canonical		Foeniculum_vulgare_MilL			20260113120224	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74517	drog_000047	canonical					20260114132948	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74518	drog_000042	canonical					20260114133828	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74519	drog_000046	canonical					20260114134107	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74520	drog_000043	canonical					20260114134305	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74521	drog_000075	canonical					20260114134500	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74522	drog_000041	canonical					20260114134626	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74523	drog_000044	canonical					20260114134811	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74524	drog_000066	canonical					20260114135050	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74525	drog_000121	canonical					20260114135243	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74526	drog_000084	canonical					20260114135359	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74527	drog_000089	canonical					20260114135532	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74528	drog_000078	canonical					20260114135646	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74529	drog_000058	canonical					20260114135855	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74530	drog_000051	canonical					20260114140028	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74531	drog_000190	canonical					20260114140227	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74532	drog_000045	canonical					20260114140430	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74533	drog_000146	canonical					20260114140545	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74534	drog_000080	canonical					20260114140700	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74535	drog_000069	canonical					20260114140808	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74536	drog_000061	canonical					20260114140915	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74537	drog_000074	canonical					20260114141025	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74538	drog_000060	canonical					20260114141157	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74539	drog_000062	canonical					20260114141256	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74540	drog_000049	canonical					20260114141454	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74541	drog_000077	canonical		Salvia_officinalis_L			20260114141625	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74542	drog_000103	canonical		Salvia_officinalis_L			20260114141918	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74543	drog_000068	canonical		Salvia_officinalis_L			20260114142032	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74544	drog_000079	canonical		Salvia_officinalis_L			20260114142134	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74545	drog_000072	canonical		Salvia_officinalis_L			20260114142300	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74546	drog_000050	canonical		Salvia_officinalis_L			20260114142620	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74547	drog_000053	canonical		Salvia_officinalis_L			20260114142838	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74548	drog_000057	canonical		Salvia_officinalis_L			20260114142938	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74549	drog_000135	canonical		Salvia_officinalis_L			20260114143042	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74550	drog_000232	canonical		Ononis_spinosa_L			20260114143212	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74551	drog_000134	canonical		Ononis_spinosa_L			20260114143706	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74552	drog_000164	canonical		Ononis_spinosa_L			20260114143923	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74553	drog_000162	canonical		Ononis_spinosa_L			20260114144133	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74554	drog_000240	canonical		Ononis_spinosa_L			20260114144402	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74555	drog_000148	canonical		Ononis_spinosa_L			20260114144521	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74556	drog_000161	canonical		Filipendula_ulmaria_L_Maxim			20260114144847	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74557	drog_000266	canonical		Filipendula_ulmaria_L_Maxim			20260114145157	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74558	drog_000304	canonical		Filipendula_ulmaria_L_Maxim			20260114145325	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74559	drog_000204	canonical		Filipendula_ulmaria_L_Maxim			20260114145440	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74560	drog_000095	canonical		Anchusa_officinalis_L			20260114145652	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74561	drog_000086	canonical		Anchusa_officinalis_L			20260114145831	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74562	drog_000097	canonical		Anchusa_officinalis_L			20260114145953	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74563	drog_000255	canonical		Anchusa_officinalis_L			20260114150126	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74564	drog_000196	canonical		Anchusa_officinalis_L			20260114150230	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74565	drog_000227	canonical		Anchusa_officinalis_L			20260114150346	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74566	drog_000128	canonical		Anchusa_officinalis_L			20260114150456	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74567	drog_000267	canonical		Anchusa_officinalis_L			20260114150610	6.9343843	47.000084	looks_swapped_ch_lat_lon	47.000084	6.9343843	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74568	drog_000252	canonical		Viola_tricolor_L			20260114155039	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74569	drog_000096	canonical		Viola_tricolor_L			20260114155256	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74570	drog_000076	canonical		Viola_tricolor_L			20260114155424	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74571	drog_000241	canonical		Viola_tricolor_L			20260114155624	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74572	drog_000220	canonical		Viola_tricolor_L			20260114155752	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74573	drog_000230	canonical		Viola_tricolor_L			20260114155921	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74574	drog_000256	canonical		Viola_tricolor_L			20260114160044	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74575	drog_000290	canonical		Viola_tricolor_L			20260114160153	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74576	drog_000286	canonical		Viola_tricolor_L			20260114160301	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74577	drog_000279	canonical		Viola_tricolor_L			20260114160417	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74578	drog_000206	canonical		Viola_tricolor_L			20260114160533	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74579	drog_000115	canonical		Viola_tricolor_L			20260114160701	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74580	drog_000217	canonical					20260114160830	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74581	drog_000239	canonical		Tussilago_farfara_L			20260114161110	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74582	drog_000214	canonical		Tussilago_farfara_L			20260114161555	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74583	drog_000125	canonical		Tussilago_farfara_L			20260114161716	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74584	drog_000200	canonical		Tussilago_farfara_L			20260114161827	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74585	drog_000250	canonical		Tussilago_farfara_L			20260114162000	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74586	drog_000116	canonical		Tussilago_farfara_L			20260114162124	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74587	drog_000282	canonical		Tussilago_farfara_L			20260114162229	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74588	drog_000163	canonical		Tussilago_farfara_L			20260114162335	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74589	drog_000303	canonical		Tussilago_farfara_L			20260114162435	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74590	drog_000111	canonical		Tussilago_farfara_L			20260114162555	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74591	drog_000238	canonical		Tussilago_farfara_L			20260114162732	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74592	drog_000221	canonical		Tussilago_farfara_L			20260114162846	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74593	drog_000213	canonical		Tussilago_farfara_L			20260114163000	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74594	drog_000236	canonical		Melissa_officinalis_L			20260114163559	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74595	drog_000291	canonical		Melissa_officinalis_L			20260114163844	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74596	drog_000224	canonical		Melissa_officinalis_L			20260114164100	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74597	drog_000235	canonical		Melissa_officinalis_L			20260114164253	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74598	drog_000112	canonical		Melissa_officinalis_L			20260114164456	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74599	drog_000212	canonical		Melissa_officinalis_L			20260114164702	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74600	drog_000137	canonical		Melissa_officinalis_L			20260114164908	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74601	drog_000179	canonical		Melissa_officinalis_L			20260114165104	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74602	drog_000120	canonical					20260114165356	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74603	drog_000219	canonical					20260114165704	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74604	drog_000109	canonical					20260114165851	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon
+droguier_jbn	74605	drog_000131	canonical					20260114165940	6.905559	46.983723	looks_swapped_ch_lat_lon	46.983723	6.905559	coordinates_look_swapped_ch_lat_lon

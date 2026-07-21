@@ -1,0 +1,556 @@
+project	field_data_id	sample_id	sample_id_class	canonical_candidate	taxon_name	sample_name	taxon_name_final	date	latitude	longitude	coordinate_status	has_dried	has_extraction	has_aliquot	has_ms	dried_sample_container_ids	extraction_sample_container_ids	lineage_status
+jbp-new	75585	dbgi_011777	canonical	dbgi_011777	Amborella trichopoda		Amborella trichopoda	20260429100629	14.412591	50.121822	out_of_ch_range	true	true	true	false	dbgi_011777	dbgi_011777_01	no_ms
+jbp-new	75586	dbgi_012101	canonical	dbgi_012101	Sanvitalia procumbens		Sanvitalia procumbens	20260501130310	14.41257	50.121838	out_of_ch_range	true	false	false	false	dbgi_012101		not_extracted
+jbp-new	75587	dbgi_012052	canonical	dbgi_012052	Sanvitalia procumbens		Sanvitalia procumbens	20260501130634	14.41257	50.121838	out_of_ch_range	true	true	false	false	dbgi_012052	dbgi_012052_01;dbgi_012052_02	no_aliquot;no_ms
+jbp-new	75588	dbgi_011846	canonical	dbgi_011846	Osteospermum 'Akila White'		Osteospermum 'Akila White'	20260501130849	14.412562	50.121838	out_of_ch_range	true	true	false	false	dbgi_011846	dbgi_011846_01;dbgi_011846_02	no_aliquot;no_ms
+jbp-new	75589	dbgi_011756	canonical	dbgi_011756	Osteospermum  'Akila White'		Osteospermum  'Akila White'	20260501132347	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_011756		not_extracted
+jbp-new	75590	dbgi_011865	canonical	dbgi_011865	Calibrachoa 'Calita Pink Morn'		Calibrachoa 'Calita Pink Morn'	20260501132603	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_011865		not_extracted
+jbp-new	75591	dbgi_012038	canonical	dbgi_012038	Calibrachoa 'Calita Pink Morn'		Calibrachoa 'Calita Pink Morn'	20260501133220	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_012038		not_extracted
+jbp-new	75592	dbgi_011988	canonical	dbgi_011988	Calibrachoa 'Calita Pink Morn'		Calibrachoa 'Calita Pink Morn'	20260501133431	14.412562	50.121838	out_of_ch_range	true	true	false	false	dbgi_011988	dbgi_011988_01	no_aliquot;no_ms
+jbp-new	75593	dbgi_011917	canonical	dbgi_011917	Ricinus 'Carmencita Rosa'		Ricinus 'Carmencita Rosa'	20260501133634	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_011917		not_extracted
+jbp-new	75594	dbgi_011994	canonical	dbgi_011994	Ricinus 'Carmencita Rosa'		Ricinus 'Carmencita Rosa'	20260501133942	14.412562	50.121838	out_of_ch_range	true	true	true	false	dbgi_011994	dbgi_011994_01	no_ms
+jbp-new	75595	dbgi_012046	canonical	dbgi_012046	Ammobium alatum		Ammobium alatum	20260501134242	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_012046		not_extracted
+jbp-new	75596	dbgi_012002	canonical	dbgi_012002	Anthurium 'Yellow Rocket'		Anthurium 'Yellow Rocket'	20260501134547	14.412562	50.121838	out_of_ch_range	true	true	true	false	dbgi_012002	dbgi_012002_01	no_ms
+jbp-new	75597	dbgi_012153	canonical	dbgi_012153	Anthurium 'Yellow Rocket'		Anthurium 'Yellow Rocket'	20260501134838	14.412562	50.121838	out_of_ch_range	true	true	false	false	dbgi_012153	dbgi_012153_01	no_aliquot;no_ms
+jbp-new	75598	dbgi_010014	canonical	dbgi_010014	Dahlia 'Black Forest Ruby'		Dahlia 'Black Forest Ruby'	20260501135021	14.412562	50.121838	out_of_ch_range	true	true	false	false	dbgi_010014	dbgi_010014_01	no_aliquot;no_ms
+jbp-new	75599	dbgi_012113	canonical	dbgi_012113	Dahlia 'Black Forest Ruby'		Dahlia 'Black Forest Ruby'	20260501135315	14.412562	50.121838	out_of_ch_range	true	true	false	false	dbgi_012113	dbgi_012113_01;dbgi_012113_02	no_aliquot;no_ms
+jbp-new	75600	dbgi_012042	canonical	dbgi_012042	Barclaya longifolia		Barclaya longifolia	20260501135902	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_012042		not_extracted
+jbp-new	75601	dbgi_011768	canonical	dbgi_011768	Barclaya longifolia		Barclaya longifolia	20260501140031	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_011768		not_extracted
+jbp-new	75602	dbgi_012036	canonical	dbgi_012036	Barclaya longifolia		Barclaya longifolia	20260501140158	14.412562	50.121838	out_of_ch_range	true	true	true	false	dbgi_012036	dbgi_012036_01	no_ms
+jbp-new	75603	dbgi_012028	canonical	dbgi_012028	Anthurium 'Yellow Rocket'		Anthurium 'Yellow Rocket'	20260501140349	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_012028		not_extracted
+jbp-new	75604	dbgi_012086	canonical	dbgi_012086	Ricinus 'Carmencita Rosa'		Ricinus 'Carmencita Rosa'	20260501140714	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_012086		not_extracted
+jbp-new	75605	dbgi_011767	canonical	dbgi_011767	Osteospermum 'Akila White'		Osteospermum 'Akila White'	20260501141142	14.412562	50.121838	out_of_ch_range	true	false	false	false	dbgi_011767		not_extracted
+jbp-new	75606	dbgi_011946	canonical	dbgi_011946	Dahlia 'Black Forest Ruby'		Dahlia 'Black Forest Ruby'	20260501142053	14.412562	50.121838	out_of_ch_range	true	true	true	false	dbgi_011946	dbgi_011946_01	no_ms
+jbp-new	75607	dbgi_011956	canonical	dbgi_011956	Geonoma pohliana		Geonoma pohliana	20260501142225	14.412559	50.121838	out_of_ch_range	true	true	false	false	dbgi_011956	dbgi_011956_01	no_aliquot;no_ms
+jbp-new	75608	dbgi_012003	canonical	dbgi_012003	Allagoptera arenaria		Allagoptera arenaria	20260501142532	14.412556	50.12184	out_of_ch_range	true	false	false	false	dbgi_012003		not_extracted
+jbp-new	75609	dbgi_012010	canonical	dbgi_012010	Oxalis sp.		Oxalis sp.	20260501142810	14.412554	50.12184	out_of_ch_range	true	false	false	false	dbgi_012010		not_extracted
+jbp-new	75610	dbgi_011945	canonical	dbgi_011945	Oxalis sp.		Oxalis sp.	20260501143233	14.412554	50.12184	out_of_ch_range	true	true	false	false	dbgi_011945	dbgi_011945_01	no_aliquot;no_ms
+jbp-new	75611	dbgi_011835	canonical	dbgi_011835	Cissus sp.		Cissus sp.	20260501143620	14.412554	50.121845	out_of_ch_range	true	true	false	false	dbgi_011835	dbgi_011835_01	no_aliquot;no_ms
+jbp-new	75612	dbgi_012044	canonical	dbgi_012044	Cissus sp.		Cissus sp.	20260501143755	14.412554	50.121845	out_of_ch_range	true	false	false	false	dbgi_012044		not_extracted
+jbp-new	75613	dbgi_011852	canonical	dbgi_011852	Cissus sp.		Cissus sp.	20260501144043	14.412554	50.121845	out_of_ch_range	true	false	false	false	dbgi_011852		not_extracted
+jbp-new	75614	dbgi_012085	canonical	dbgi_012085	Oxalis decumbens		Oxalis decumbens	20260501144304	14.412552	50.12185	out_of_ch_range	true	false	false	false	dbgi_012085		not_extracted
+jbp-new	75615	dbgi_011983	canonical	dbgi_011983	Oxalis decumbens		Oxalis decumbens	20260501144727	14.412552	50.12185	out_of_ch_range	true	false	false	false	dbgi_011983		not_extracted
+jbp-new	75616	dbgi_011763	canonical	dbgi_011763	Oxalis decumbens		Oxalis decumbens	20260501144845	14.412552	50.12185	out_of_ch_range	true	false	false	false	dbgi_011763		not_extracted
+jbp-new	75617	dbgi_011948	canonical	dbgi_011948	Cissus sp.		Cissus sp.	20260501150353	14.412551	50.12185	out_of_ch_range	true	false	false	false	dbgi_011948		not_extracted
+jbp-new	75618	dbgi_011884	canonical	dbgi_011884	Cissus sp.		Cissus sp.	20260501150559	14.412551	50.12185	out_of_ch_range	true	false	false	false	dbgi_011884		not_extracted
+jbp-new	75619	dbgi_012021	canonical	dbgi_012021	Cissus sp.		Cissus sp.	20260501151026	14.412551	50.12185	out_of_ch_range	true	false	false	false	dbgi_012021		not_extracted
+jbp-new	75620	dbgi_011997	canonical	dbgi_011997	Kedrostis foetidissima		Kedrostis foetidissima	20260501152153	14.412549	50.121853	out_of_ch_range	true	false	false	false	dbgi_011997		not_extracted
+jbp-new	75621	dbgi_011750	canonical	dbgi_011750	Kedrostis foetidissima		Kedrostis foetidissima	20260501152442	14.412549	50.121853	out_of_ch_range	true	false	false	false	dbgi_011750		not_extracted
+jbp-new	75622	dbgi_011951	canonical	dbgi_011951	Kedrostis foetidissima		Kedrostis foetidissima	20260501152625	14.412549	50.121853	out_of_ch_range	true	false	false	false	dbgi_011951		not_extracted
+jbp-new	75623	dbgi_011995	canonical	dbgi_011995	Oxalis depressa		Oxalis depressa	20260501152750	14.412548	50.121853	out_of_ch_range	true	false	false	false	dbgi_011995		not_extracted
+jbp-new	75624	dbgi_011981	canonical	dbgi_011981	Oxalis depressa		Oxalis depressa	20260501153119	14.412548	50.121853	out_of_ch_range	true	false	false	false	dbgi_011981		not_extracted
+jbp-new	75625	dbgi_012047	canonical	dbgi_012047	Oxalis bowiei		Oxalis bowiei	20260501153428	14.412548	50.121853	out_of_ch_range	true	false	false	false	dbgi_012047		not_extracted
+jbp-new	75626	dbgi_012114	canonical	dbgi_012114	Oxalis bowiei		Oxalis bowiei	20260501153651	14.412548	50.121853	out_of_ch_range	true	false	false	false	dbgi_012114		not_extracted
+jbp-new	75627	dbgi_012009	canonical	dbgi_012009	Oxalis bowiei		Oxalis bowiei	20260501153826	14.412548	50.121853	out_of_ch_range	true	false	false	false	dbgi_012009		not_extracted
+jbp-new	75628	dbgi_011799	canonical	dbgi_011799	Sarracenia alata		Sarracenia alata	20260501154127	14.412548	50.121853	out_of_ch_range	true	true	true	false	dbgi_011799	dbgi_011799_01;dbgi_011799_02	no_ms
+jbp-new	75629	dbgi_009983	canonical	dbgi_009983	Sarracenia alata		Sarracenia alata	20260501154514	14.412548	50.121853	out_of_ch_range	true	false	false	false	dbgi_009983		not_extracted
+jbp-new	75630	dbgi_012142	canonical	dbgi_012142	Sarracenia alata		Sarracenia alata	20260501154730	14.412548	50.121853	out_of_ch_range	true	true	false	false	dbgi_012142	dbgi_012142_01	no_aliquot;no_ms
+jbp-new	75631	dbgi_012023	canonical	dbgi_012023	Sarracenia alata		Sarracenia alata	20260501155131	14.412548	50.121853	out_of_ch_range	true	true	false	false	dbgi_012023	dbgi_012023_01;dbgi_012023_02	no_aliquot;no_ms
+jbp-new	75632	dbgi_011944	canonical	dbgi_011944	Philesia magellanica		Philesia magellanica	20260501155256	14.412543	50.12186	out_of_ch_range	true	false	false	false	dbgi_011944		not_extracted
+jbp-new	75633	dbgi_011836	canonical	dbgi_011836	Philesia magellanica		Philesia magellanica	20260501155510	14.412543	50.12186	out_of_ch_range	true	true	false	false	dbgi_011836	dbgi_011836_01	no_aliquot;no_ms
+jbp-new	75634	dbgi_011959	canonical	dbgi_011959	Philesia magellanica		Philesia magellanica	20260501155727	14.412543	50.12186	out_of_ch_range	true	false	false	false	dbgi_011959		not_extracted
+jbp-new	75635	dbgi_011875	canonical	dbgi_011875	Drosera binata		Drosera binata	20260501155836	14.412411	50.1219	out_of_ch_range	true	false	false	false	dbgi_011875		not_extracted
+jbp-new	75636	dbgi_011831	canonical	dbgi_011831	Drosera binata		Drosera binata	20260501160020	14.412411	50.1219	out_of_ch_range	true	false	false	false	dbgi_011831		not_extracted
+jbp-new	75637	dbgi_011889	canonical	dbgi_011889	Drosera binata		Drosera binata	20260501160138	14.412411	50.1219	out_of_ch_range	true	true	true	false	dbgi_011889	dbgi_011889_01	no_ms
+jbp-new	75638	dbgi_011749	canonical	dbgi_011749	Gunnera cordifolia		Gunnera cordifolia	20260501160254	14.412249	50.121857	out_of_ch_range	true	true	true	false	dbgi_011749	dbgi_011749_01	no_ms
+jbp-new	75639	dbgi_011891	canonical	dbgi_011891	Gunnera cordifolia		Gunnera cordifolia	20260501160401	14.412249	50.121857	out_of_ch_range	true	true	true	false	dbgi_011891	dbgi_011891_01	no_ms
+jbp-new	75640	dbgi_011757	canonical	dbgi_011757	Gunnera cordifolia		Gunnera cordifolia	20260501160637	14.412249	50.121857	out_of_ch_range	true	true	false	false	dbgi_011757	dbgi_011757_01;dbgi_011757_02	no_aliquot;no_ms
+jbp-new	75641	dbgi_012005	canonical	dbgi_012005	Gunnera cordifolia		Gunnera cordifolia	20260501160800	14.412249	50.121857	out_of_ch_range	true	true	true	false	dbgi_012005	dbgi_012005_01	no_ms
+jbp-new	75642	dbgi_011957	canonical	dbgi_011957	Gunnera albocarpa		Gunnera albocarpa	20260501161057	14.412264	50.12192	out_of_ch_range	true	true	true	false	dbgi_011957	dbgi_011957_01	no_ms
+jbp-new	75643	dbgi_012059	canonical	dbgi_012059	Gunnera albocarpa		Gunnera albocarpa	20260501161311	14.412264	50.12192	out_of_ch_range	true	true	true	false	dbgi_012059	dbgi_012059_01	no_ms
+jbp-new	75644	dbgi_011877	canonical	dbgi_011877	Gunnera albocarpa		Gunnera albocarpa	20260501161451	14.412264	50.12192	out_of_ch_range	true	false	false	false	dbgi_011877		not_extracted
+jbp-new	75645	dbgi_011834	canonical	dbgi_011834	Gunnera albocarpa		Gunnera albocarpa	20260501161623	14.412264	50.12192	out_of_ch_range	true	true	true	false	dbgi_011834	dbgi_011834_01	no_ms
+jbp-new	75646	dbgi_011874	canonical	dbgi_011874	Bolboschoenus maritimus		Bolboschoenus maritimus	20260501161741	14.412416	50.121655	out_of_ch_range	true	true	false	false	dbgi_011874	dbgi_011874_01	no_aliquot;no_ms
+jbp-new	75647	dbgi_012000	canonical	dbgi_012000	Batrachium baudotii		Batrachium baudotii	20260501162134	14.412384	50.12166	out_of_ch_range	true	false	false	false	dbgi_012000		not_extracted
+jbp-new	75648	dbgi_012149	canonical	dbgi_012149	Batrachium baudotii		Batrachium baudotii	20260501162253	14.412384	50.12166	out_of_ch_range	true	true	true	false	dbgi_012149	dbgi_012149_01	no_ms
+jbp-new	75649	dbgi_011802	canonical	dbgi_011802	Houttuynia cordata		Houttuynia cordata	20260501162441	14.412357	50.121662	out_of_ch_range	true	true	false	false	dbgi_011802	dbgi_011802_01	no_aliquot;no_ms
+jbp-new	75650	dbgi_012069	canonical	dbgi_012069	Houttuynia cordata		Houttuynia cordata	20260501162734	14.412357	50.121662	out_of_ch_range	true	false	false	false	dbgi_012069		not_extracted
+jbp-new	75651	dbgi_011996	canonical	dbgi_011996	Houttuynia cordata		Houttuynia cordata	20260501162840	14.412357	50.121662	out_of_ch_range	true	true	false	false	dbgi_011996	dbgi_011996_01	no_aliquot;no_ms
+jbp-new	75652	dbgi_011796	canonical	dbgi_011796	Lysichiton camtschatcensis		Lysichiton camtschatcensis	20260501164055	14.412431	50.121643	out_of_ch_range	true	false	false	false	dbgi_011796		not_extracted
+jbp-new	75653	dbgi_011886	canonical	dbgi_011886	Lysichiton camtschatcensis		Lysichiton camtschatcensis	20260501164206	14.412431	50.121643	out_of_ch_range	true	true	false	false	dbgi_011886	dbgi_011886_01	no_aliquot;no_ms
+jbp-new	75654	dbgi_011879	canonical	dbgi_011879	Carex cespitosa		Carex cespitosa	20260501164331	14.412409	50.121643	out_of_ch_range	true	true	true	false	dbgi_011879	dbgi_011879_01	no_ms
+jbp-new	75655	dbgi_011902	canonical	dbgi_011902	Carex cespitosa		Carex cespitosa	20260501164614	14.412409	50.121643	out_of_ch_range	true	true	false	false	dbgi_011902	dbgi_011902_01	no_aliquot;no_ms
+jbp-new	75656	dbgi_011960	canonical	dbgi_011960	Carex strigosa		Carex strigosa	20260501164729	14.41239	50.121647	out_of_ch_range	true	false	false	false	dbgi_011960		not_extracted
+jbp-new	75657	dbgi_012096	canonical	dbgi_012096	Carex strigosa		Carex strigosa	20260501164856	14.41239	50.121647	out_of_ch_range	true	true	true	false	dbgi_012096	dbgi_012096_01	no_ms
+jbp-new	75658	dbgi_011904	canonical	dbgi_011904	Eleocharis mamillata		Eleocharis mamillata	20260501165005	14.41237	50.12165	out_of_ch_range	true	false	false	false	dbgi_011904		not_extracted
+jbp-new	75659	dbgi_012092	canonical	dbgi_012092	Eleocharis mamillata		Eleocharis mamillata	20260501165124	14.41237	50.12165	out_of_ch_range	true	true	false	false	dbgi_012092	dbgi_012092_01;dbgi_012092_02	no_aliquot;no_ms
+jbp-new	75660	dbgi_012055	canonical	dbgi_012055	Amborella trichopoda		Amborella trichopoda	20260501171046	14.412591	50.121822	out_of_ch_range	true	true	false	false	dbgi_012055	dbgi_012055_01	no_aliquot;no_ms
+jbp-new	75661	dbgi_011779	canonical	dbgi_011779	Amborella trichopoda		Amborella trichopoda	20260501171751	14.412591	50.121822	out_of_ch_range	true	false	false	false	dbgi_011779		not_extracted
+jbp-new	75662	dbgi_012027	canonical	dbgi_012027	Muehlenbeckia complexa		Muehlenbeckia complexa	20260501171926	14.412551	50.121796	out_of_ch_range	true	true	true	false	dbgi_012027	dbgi_012027_01	no_ms
+jbp-new	75663	dbgi_011864	canonical	dbgi_011864	Muehlenbeckia complexa		Muehlenbeckia complexa	20260501172215	14.412551	50.121796	out_of_ch_range	true	false	false	false	dbgi_011864		not_extracted
+jbp-new	75664	dbgi_011751	canonical	dbgi_011751	Muehlenbeckia complexa		Muehlenbeckia complexa	20260501172430	14.412551	50.121796	out_of_ch_range	true	true	true	false	dbgi_011751	dbgi_011751_01	no_ms
+jbp-new	75665	dbgi_012093	canonical	dbgi_012093	Equisetum hyemale		Equisetum hyemale	20260501172702	14.412511	50.121773	out_of_ch_range	true	true	true	false	dbgi_012093	dbgi_012093_01	no_ms
+jbp-new	75666	dbgi_012040	canonical	dbgi_012040	Equisetum hyemale		Equisetum hyemale	20260501172913	14.412511	50.121773	out_of_ch_range	true	false	false	false	dbgi_012040		not_extracted
+jbp-new	75667	dbgi_011764	canonical	dbgi_011764	Blumenbachia hieronymi		Blumenbachia hieronymi	20260501173120	14.41257	50.121754	out_of_ch_range	true	false	false	false	dbgi_011764		not_extracted
+jbp-new	75668	dbgi_011862	canonical	dbgi_011862	Blumenbachia hieronymi		Blumenbachia hieronymi	20260501173521	14.41257	50.121754	out_of_ch_range	true	true	false	false	dbgi_011862	dbgi_011862_01;dbgi_011862_02	no_aliquot;no_ms
+jbp-new	75669	dbgi_011774	canonical	dbgi_011774	Blumenbachia hieronymi		Blumenbachia hieronymi	20260501173822	14.41257	50.121754	out_of_ch_range	true	true	false	false	dbgi_011774	dbgi_011774_01	no_aliquot;no_ms
+jbp-new	75670	dbgi_012037	canonical	dbgi_012037	Loasa tricolor		Loasa tricolor	20260501174112	14.412661	50.12179	out_of_ch_range	true	true	true	false	dbgi_012037	dbgi_012037_01	no_ms
+jbp-new	75671	dbgi_011974	canonical	dbgi_011974	Loasa tricolor		Loasa tricolor	20260501174408	14.412661	50.12179	out_of_ch_range	true	true	false	false	dbgi_011974	dbgi_011974_01	no_aliquot;no_ms
+jbp-new	75672	dbgi_012054	canonical	dbgi_012054	Loasa tricolor		Loasa tricolor	20260501174633	14.412661	50.12179	out_of_ch_range	true	true	false	false	dbgi_012054	dbgi_012054_01	no_aliquot;no_ms
+jbp-new	75673	dbgi_011967	canonical	dbgi_011967	Laurentia 'Mintaka Blue'		Laurentia 'Mintaka Blue'	20260501174934	14.412732	50.121834	out_of_ch_range	true	false	false	false	dbgi_011967		not_extracted
+jbp-new	75674	dbgi_011985	canonical	dbgi_011985	Laurentia 'Mintaka Blue'		Laurentia 'Mintaka Blue'	20260501175433	14.412732	50.121834	out_of_ch_range	true	false	false	false	dbgi_011985		not_extracted
+jbp-new	75675	dbgi_011773	canonical	dbgi_011773	Laurentia 'Mintaka Blue'		Laurentia 'Mintaka Blue'	20260501175633	14.412732	50.121834	out_of_ch_range	true	false	false	false	dbgi_011773		not_extracted
+jbp-new	75676	dbgi_011888	canonical	dbgi_011888	Salvia splendens		Saluka splendens	20260501175848	14.412736	50.121803	out_of_ch_range	true	true	false	false	dbgi_011888	dbgi_011888_01	no_aliquot;no_ms
+jbp-new	75677	dbgi_012073	canonical	dbgi_012073	Salvia splendens		Salvia splendens	20260501181346	14.412735	50.121803	out_of_ch_range	true	false	false	false	dbgi_012073		not_extracted
+jbp-new	75678	dbgi_011929	canonical	dbgi_011929	Salvia splendens		Salvia splendens	20260501182117	14.412734	50.121803	out_of_ch_range	true	true	false	false	dbgi_011929	dbgi_011929_01	no_aliquot;no_ms
+jbp-new	75679	dbgi_011998	canonical	dbgi_011998	Cattleya lawrenceana		Cattleya lawrenceana	20260501182445	14.41271	50.12177	out_of_ch_range	true	false	false	false	dbgi_011998		not_extracted
+jbp-new	75680	dbgi_011781	canonical	dbgi_011781	Cattleya lawrenceana		Cattleya lawrenceana	20260501182645	14.41271	50.12177	out_of_ch_range	true	true	true	false	dbgi_011781	dbgi_011781_01	no_ms
+jbp-new	75681	dbgi_012090	canonical	dbgi_012090	Cattleya lawrenceana		Cattleya lawrenceana	20260501183045	14.41271	50.12177	out_of_ch_range	true	true	true	false	dbgi_012090	dbgi_012090_01	no_ms
+jbp-new	75682	dbgi_012064	canonical	dbgi_012064	Paphiopedilum tranlienianum		Paphiopedilum tranlienianum	20260501183229	14.412692	50.121742	out_of_ch_range	true	false	false	false	dbgi_012064		not_extracted
+jbp-new	75683	dbgi_012025	canonical	dbgi_012025	Paphiopedilum tranlienianum		Paphiopedilum tranlienianum	20260501183626	14.412692	50.121742	out_of_ch_range	true	true	false	false	dbgi_012025	dbgi_012025_01	no_aliquot;no_ms
+jbp-new	75684	dbgi_012011	canonical	dbgi_012011	Ageratum 'leda'		Ageratum 'leda'	20260501183855	14.412687	50.121723	out_of_ch_range	true	false	false	false	dbgi_012011		not_extracted
+jbp-new	75685	dbgi_011828	canonical	dbgi_011828	Ageratum 'Leda'		Ageratum 'Leda'	20260501184227	14.412687	50.121723	out_of_ch_range	true	true	false	false	dbgi_011828	dbgi_011828_01	no_aliquot;no_ms
+jbp-new	75686	dbgi_011807	canonical	dbgi_011807	Ageratum 'Leda'		Ageratum 'Leda'	20260501184430	14.412687	50.121723	out_of_ch_range	true	false	false	false	dbgi_011807		not_extracted
+jbp-new	75687	dbgi_012146	canonical	dbgi_012146	Trochetiopsis ebenus		Trochetiopsis ebenus	20260501184927	14.412683	50.1217	out_of_ch_range	true	false	false	false	dbgi_012146		not_extracted
+jbp-new	75688	dbgi_011972	canonical	dbgi_011972	Trochetiopsis ebenus		Trochetiopsis ebenus	20260501185200	14.412683	50.1217	out_of_ch_range	true	false	false	false	dbgi_011972		not_extracted
+jbp-new	75689	dbgi_012020	canonical	dbgi_012020	Piper borbonense		Piper borbonense	20260501185756	14.412375	50.121864	out_of_ch_range	true	false	false	false	dbgi_012020		not_extracted
+jbp-new	75690	dbgi_011882	canonical	dbgi_011882	Piper borbonense		Piper borbonense	20260501185908	14.412375	50.121864	out_of_ch_range	true	false	false	false	dbgi_011882		not_extracted
+jbp-new	75691	dbgi_012018	canonical	dbgi_012018	Piper borbonense		Piper borbonense	20260501190137	14.412375	50.121864	out_of_ch_range	true	false	false	false	dbgi_012018		not_extracted
+jbp-new	75692	dbgi_011962	canonical	dbgi_011962	Piper amalago		Piper amalago	20260501190342	14.412363	50.121857	out_of_ch_range	true	true	false	false	dbgi_011962	dbgi_011962_01	no_aliquot;no_ms
+jbp-new	75693	dbgi_011990	canonical	dbgi_011990	Piper amalago		Piper amalago	20260501190522	14.412363	50.121857	out_of_ch_range	true	false	false	false	dbgi_011990		not_extracted
+jbp-new	75694	dbgi_011947	canonical	dbgi_011947	Piper amalago		Piper amalago	20260501190710	14.412363	50.121857	out_of_ch_range	true	false	false	false	dbgi_011947		not_extracted
+jbp-new	75695	dbgi_011856	canonical	dbgi_011856	Acacia dealbata		Acacia dealbata	20260501190857	14.412487	50.121883	out_of_ch_range	true	false	false	false	dbgi_011856		not_extracted
+jbp-new	75696	dbgi_012029	canonical	dbgi_012029	Acacia dealbata		Acacia dealbata	20260501191051	14.412487	50.121883	out_of_ch_range	true	true	true	false	dbgi_012029	dbgi_012029_01	no_ms
+jbp-new	75697	dbgi_011832	canonical	dbgi_011832	Acacia dealbata		Acacia dealbata	20260501191239	14.412487	50.121883	out_of_ch_range	true	false	false	false	dbgi_011832		not_extracted
+jbp-new	75698	dbgi_011868	canonical	dbgi_011868	Piper obtusissimum		Piper obtusissimum	20260501191445	14.412357	50.121845	out_of_ch_range	true	false	false	false	dbgi_011868		not_extracted
+jbp-new	75699	dbgi_012145	canonical	dbgi_012145	Piper parmatum		Piper parmatum	20260501191802	14.412349	50.121834	out_of_ch_range	true	false	false	false	dbgi_012145		not_extracted
+jbp-new	75700	dbgi_011993	canonical	dbgi_011993	Piper saurodermus		Piper saurodermus	20260501191955	14.412336	50.12182	out_of_ch_range	true	false	false	false	dbgi_011993		not_extracted
+jbp-new	75701	dbgi_011850	canonical	dbgi_011850	Piper villenaorum		Piper villenaorum	20260501192154	14.412324	50.12181	out_of_ch_range	true	true	true	false	dbgi_011850	dbgi_011850_01	no_ms
+jbp-new	75702	dbgi_011926	canonical	dbgi_011926	Antiaris toxicaria		Antiaris toxicaria	20260501192349	14.412299	50.1218	out_of_ch_range	true	false	false	false	dbgi_011926		not_extracted
+jbp-new	75703	dbgi_011755	canonical	dbgi_011755	Antiaris toxicaria		Antiaris toxicaria	20260501192540	14.412299	50.1218	out_of_ch_range	true	false	false	false	dbgi_011755		not_extracted
+jbp-new	75704	dbgi_012006	canonical	dbgi_012006	Antiaris toxicaria		Antiaris toxicaria	20260501192806	14.412299	50.1218	out_of_ch_range	true	true	true	false	dbgi_012006	dbgi_012006_01	no_ms
+jbp-new	75705	dbgi_011863	canonical	dbgi_011863	Gunnera flavida		Gunnera flavida	20260501193118	14.412471	50.12184	out_of_ch_range	true	false	false	false	dbgi_011863		not_extracted
+jbp-new	75706	dbgi_012074	canonical	dbgi_012074	Gunnera flavida		Gunnera flavida	20260501193316	14.412471	50.12184	out_of_ch_range	true	false	false	false	dbgi_012074		not_extracted
+jbp-new	75707	dbgi_011805	canonical	dbgi_011805	Gunnera flavida		Gunnera flavida	20260501193659	14.412471	50.12184	out_of_ch_range	true	true	true	false	dbgi_011805	dbgi_011805_01	no_ms
+jbp-new	75708	dbgi_011943	canonical	dbgi_011943	Gunnera flavida		Gunnera flavida	20260501193816	14.412471	50.12184	out_of_ch_range	true	false	false	false	dbgi_011943		not_extracted
+jbp-new	75709	dbgi_011955	canonical	dbgi_011955	Gaultheria mucronata		Gaultheria mucronata	20260501193935	14.412457	50.12183	out_of_ch_range	true	false	false	false	dbgi_011955		not_extracted
+jbp-new	75710	dbgi_011878	canonical	dbgi_011878	Gaultheria mucronata		Gaultheria mucronata	20260501194154	14.412457	50.12183	out_of_ch_range	true	true	true	false	dbgi_011878	dbgi_011878_01;dbgi_011878_02	no_ms
+jbp-new	75711	dbgi_011872	canonical	dbgi_011872	Gaultheria mucronata		Gaultheria mucronata	20260501194452	14.412457	50.12183	out_of_ch_range	true	false	false	false	dbgi_011872		not_extracted
+jbp-new	75712	dbgi_011883	canonical	dbgi_011883	Potamogeton coloratus		Potamogeton coloratus	20260501194618	14.412357	50.12167	out_of_ch_range	true	true	true	false	dbgi_011883	dbgi_011883_01;dbgi_011883_02	no_ms
+jbp-new	75713	dbgi_011876	canonical	dbgi_011876	Potamogeton coloratus		Potamogeton coloratus	20260501194800	14.412357	50.12167	out_of_ch_range	true	false	false	false	dbgi_011876		not_extracted
+jbp-new	75714	dbgi_011892	canonical	dbgi_011892	Potamogeton coloratus		Potamogeton coloratus	20260501194927	14.412357	50.12167	out_of_ch_range	true	false	false	false	dbgi_011892		not_extracted
+jbp-new	75715	dbgi_011752	canonical	dbgi_011752	Nymphaea alba		Nymphaea alba	20260501195131	14.41235	50.121662	out_of_ch_range	true	false	false	false	dbgi_011752		not_extracted
+jbp-new	75716	dbgi_011775	canonical	dbgi_011775	Nymphaea alba		Nymphaea alba	20260501195319	14.41235	50.121662	out_of_ch_range	true	true	true	false	dbgi_011775	dbgi_011775_01	no_ms
+jbp-new	75717	dbgi_011803	canonical	dbgi_011803	Nymphaea alba		Nymphaea alba	20260501195422	14.41235	50.121662	out_of_ch_range	true	true	true	false	dbgi_011803	dbgi_011803_01	no_ms
+jbp-new	75718	dbgi_011784	canonical	dbgi_011784	Chloranthus sessilifolius		Chloranthus sessilifolius	20260501195536	14.412348	50.121666	out_of_ch_range	true	true	false	false	dbgi_011784	dbgi_011784_01	no_aliquot;no_ms
+jbp-new	75719	dbgi_012043	canonical	dbgi_012043	Chloranthus sessilifolius		Chloranthus sessilifolius	20260501195739	14.412348	50.121666	out_of_ch_range	true	true	false	false	dbgi_012043	dbgi_012043_01	no_aliquot;no_ms
+jbp-new	75720	dbgi_012017	canonical	dbgi_012017	Potamogeton crispus		Potamogeton crispus	20260501200241	14.412355	50.121655	out_of_ch_range	true	true	true	false	dbgi_012017	dbgi_012017_01	no_ms
+jbp-new	75721	dbgi_011806	canonical	dbgi_011806	Potamogeton crispus		Potamogeton crispus	20260501200407	14.412355	50.121655	out_of_ch_range	true	true	false	false	dbgi_011806	dbgi_011806_01	no_aliquot;no_ms
+jbp-new	75722	dbgi_012035	canonical	dbgi_012035	Potamogeton crispus		Potamogeton crispus	20260501200509	14.412355	50.121655	out_of_ch_range	true	true	false	false	dbgi_012035	dbgi_012035_01	no_aliquot;no_ms
+jbp-new	75723	dbgi_011887	canonical	dbgi_011887	Allium karataviense		Allium karataviense	20260514102004	14.414573	50.118523	out_of_ch_range	true	false	false	false	dbgi_011887		not_extracted
+jbp-new	75724	dbgi_012048	canonical	dbgi_012048	Allium karataviense		Allium karataviense	20260514102525	14.414576	50.118523	out_of_ch_range	true	true	false	false	dbgi_012048	dbgi_012048_01	no_aliquot;no_ms
+jbp-new	75725	dbgi_011987	canonical	dbgi_011987	Allium karataviense		Allium karataviense	20260514102853	14.414571	50.11852	out_of_ch_range	true	true	false	false	dbgi_011987	dbgi_011987_01	no_aliquot;no_ms
+jbp-new	75726	dbgi_011788	canonical	dbgi_011788	Allium karataviense		Allium karataviense	20260514103205	14.41458	50.118515	out_of_ch_range	true	true	true	false	dbgi_011788	dbgi_011788_02;dbgi_011788_03	no_ms
+jbp-new	75727	dbgi_012081	canonical	dbgi_012081	Adonis aestivalis		Adonis aestivalis	20260514103957	14.414353	50.118526	out_of_ch_range	true	true	false	false	dbgi_012081	dbgi_012081_01	no_aliquot;no_ms
+jbp-new	75728	dbgi_011894	canonical	dbgi_011894	Adonis aestivalis		Adonis aestivalis	20260514104608	14.414353	50.118526	out_of_ch_range	true	true	false	false	dbgi_011894	dbgi_011894_01	no_aliquot;no_ms
+jbp-new	75729	dbgi_011942	canonical	dbgi_011942	Adonis aestivalis		Adonis aestivalis	20260514104939	14.414353	50.118526	out_of_ch_range	true	true	true	false	dbgi_011942	dbgi_011942_01	no_ms
+jbp-new	75730	dbgi_011940	canonical	dbgi_011940	Beta vulgaris		Beta vulgaris	20260514105517	14.414018	50.118347	out_of_ch_range	true	true	false	false	dbgi_011940	dbgi_011940_01;dbgi_011940_02;dbgi_011940_03;dbgi_011940_04	no_aliquot;no_ms
+jbp-new	75731	dbgi_012156	canonical	dbgi_012156	Beta vulgaris		Beta vulgaris	20260514105825	14.414018	50.118347	out_of_ch_range	true	true	true	false	dbgi_012156	dbgi_012156_01;dbgi_012156_02;dbgi_012156_03;dbgi_012156_04	no_ms
+jbp-new	75732	dbgi_012075	canonical	dbgi_012075	Beta vulgaris		Beta vulgaris	20260514110042	14.414018	50.118347	out_of_ch_range	true	true	true	false	dbgi_012075	dbgi_012075_01;dbgi_012075_02;dbgi_012075_03;dbgi_012075_04	no_ms
+jbp-new	75733	dbgi_011840	canonical	dbgi_011840	Allium christophii		Allium christophii	20260514111132	14.413646	50.11861	out_of_ch_range	true	true	false	false	dbgi_011840	dbgi_011840_01;dbgi_011840_02;dbgi_011840_03;dbgi_011840_04	no_aliquot;no_ms
+jbp-new	75734	dbgi_011923	canonical	dbgi_011923	Allium christophii		Allium christophii	20260514111310	14.413646	50.11861	out_of_ch_range	true	true	true	false	dbgi_011923	dbgi_011923_01;dbgi_011923_02;dbgi_011923_03;dbgi_011923_04	no_ms
+jbp-new	75735	dbgi_012077	canonical	dbgi_012077	Allium christophii		Allium christophii	20260514111626	14.413646	50.11861	out_of_ch_range	true	true	true	false	dbgi_012077	dbgi_012077_01;dbgi_012077_02;dbgi_012077_03;dbgi_012077_04	no_ms
+jbp-new	75736	dbgi_012160	canonical	dbgi_012160	Colchicum byzantinum		Colchicum byzantinum	20260514112207	14.413603	50.119	out_of_ch_range	true	true	false	false	dbgi_012160	dbgi_012160_01	no_aliquot;no_ms
+jbp-new	75737	dbgi_011936	canonical	dbgi_011936	Colchicum byzantinum		Colchicum byzantinum	20260514112413	14.413603	50.119	out_of_ch_range	true	false	false	false	dbgi_011936		not_extracted
+jbp-new	75738	dbgi_012012	canonical	dbgi_012012	Colchicum speciosum		Colchicum speciosum	20260514113052	14.413854	50.11915	out_of_ch_range	true	true	false	false	dbgi_012012	dbgi_012012_01	no_aliquot;no_ms
+jbp-new	75739	dbgi_011978	canonical	dbgi_011978	Colchicum speciosum		Colchicum speciosum	20260514113236	14.413854	50.11915	out_of_ch_range	true	true	true	false	dbgi_011978	dbgi_011978_01	no_ms
+jbp-new	75740	dbgi_011873	canonical	dbgi_011873	Colchicum speciosum		Colchicum speciosum	20260514113359	14.413854	50.11915	out_of_ch_range	true	true	true	false	dbgi_011873	dbgi_011873_01	no_ms
+jbp-new	75741	dbgi_011830	canonical	dbgi_011830	Canna spp.		Canna spp.	20260514114556	14.414944	50.119736	out_of_ch_range	true	true	false	false	dbgi_011830	dbgi_011830_01	no_aliquot;no_ms
+jbp-new	75742	dbgi_011753	canonical	dbgi_011753	Allium hybr.		Allium hybr.	20260514102741	14.414549	50.118515	out_of_ch_range	true	true	false	false	dbgi_011753	dbgi_011753_01	no_aliquot;no_ms
+jbp-new	75743	dbgi_011992	canonical	dbgi_011992	Allium hybr.		Allium hybr.	20260514103012	14.414566	50.1185	out_of_ch_range	true	true	true	false	dbgi_011992	dbgi_011992_01	no_ms
+jbp-new	75744	dbgi_011783	canonical	dbgi_011783	Allium hybr.		Allium hybr.	20260514103228	14.414556	50.118507	out_of_ch_range	true	true	true	false	dbgi_011783	dbgi_011783_01	no_ms
+jbp-new	75745	dbgi_011843	canonical	dbgi_011843	Allium hybr.		Allium hybr.	20260514103601	14.41456	50.11849	out_of_ch_range	true	true	false	false	dbgi_011843	dbgi_011843_01	no_aliquot;no_ms
+jbp-new	75746	dbgi_011971	canonical	dbgi_011971	Silene pensylvanica		Silene pensylvanica	20260514104028	14.414941	50.11884	out_of_ch_range	true	true	true	false	dbgi_011971	dbgi_011971_01	no_ms
+jbp-new	75747	dbgi_012088	canonical	dbgi_012088	Silene pensylvanica		Silene pensylvanica	20260514104354	14.414941	50.11884	out_of_ch_range	true	true	false	false	dbgi_012088	dbgi_012088_01	no_aliquot;no_ms
+jbp-new	75748	dbgi_011927	canonical	dbgi_011927	Silene pensylvanica		Silene pensylvanica	20260514104832	14.41476	50.11876	out_of_ch_range	true	true	false	false	dbgi_011927	dbgi_011927_01	no_aliquot;no_ms
+jbp-new	75749	dbgi_012115	canonical	dbgi_012115	Silene pensylvanica		Silene pensylvanica	20260514105116	14.414572	50.118797	out_of_ch_range	true	true	true	false	dbgi_012115	dbgi_012115_01	no_ms
+jbp-new	75750	dbgi_012082	canonical	dbgi_012082	Allium thunbergii		Allium thunbergii	20260514105835	14.413775	50.1183	out_of_ch_range	true	true	false	false	dbgi_012082	dbgi_012082_01	no_aliquot;no_ms
+jbp-new	75751	dbgi_011928	canonical	dbgi_011928	Allium thunbergii		Allium thunbergii	20260514110120	14.413795	50.1183	out_of_ch_range	true	true	false	false	dbgi_011928	dbgi_011928_01	no_aliquot;no_ms
+jbp-new	75752	dbgi_012070	canonical	dbgi_012070	Allium moly		Allium moly	20260514111011	14.413687	50.118465	out_of_ch_range	true	true	true	false	dbgi_012070	dbgi_012070_01;dbgi_012070_02;dbgi_012070_03;dbgi_012070_04;dbgi_012070_05	no_ms
+jbp-new	75753	dbgi_012076	canonical	dbgi_012076	Allium moly		Allium moly	20260514111151	14.413687	50.118465	out_of_ch_range	true	true	false	false	dbgi_012076	dbgi_012076_01;dbgi_012076_02;dbgi_012076_03;dbgi_012076_04;dbgi_012076_05	no_aliquot;no_ms
+jbp-new	75754	dbgi_011893	canonical	dbgi_011893	Allium moly		Allium moly	20260514111311	14.413711	50.11846	out_of_ch_range	true	true	false	false	dbgi_011893	dbgi_011893_01;dbgi_011893_02;dbgi_011893_03;dbgi_011893_04	no_aliquot;no_ms
+jbp-new	75755	dbgi_011991	canonical	dbgi_011991	Allium moly		Allium moly	20260514111419	14.413709	50.11847	out_of_ch_range	true	true	false	false	dbgi_011991	dbgi_011991_01;dbgi_011991_02;dbgi_011991_03;dbgi_011991_04	no_aliquot;no_ms
+jbp-new	75756	dbgi_012071	canonical	dbgi_012071	Colchicum laetum		Colchicum laetum	20260514112059	14.41357	50.11898	out_of_ch_range	true	false	false	false	dbgi_012071		not_extracted
+jbp-new	75757	dbgi_012041	canonical	dbgi_012041	Colchicum laetum		Colchicum laetum	20260514112505	14.4135685	50.118973	out_of_ch_range	true	true	true	false	dbgi_012041	dbgi_012041_01	no_ms
+jbp-new	75758	dbgi_011899	canonical	dbgi_011899	Viola stagnina		Viola stagnina	20260514114746	14.414412	50.120045	out_of_ch_range	true	true	false	false	dbgi_011899	dbgi_011899_01	no_aliquot;no_ms
+jbp-new	75759	dbgi_011934	canonical	dbgi_011934	Viola stagnina		Viola stagnina	20260514114936	14.4144125	50.12005	out_of_ch_range	true	true	true	false	dbgi_011934	dbgi_011934_01	no_ms
+jbp-new	75760	dbgi_011906	canonical	dbgi_011906	Taraxacum pauckertianum		Taraxacum pauckertianum	20260514115258	14.414354	50.12007	out_of_ch_range	true	true	true	false	dbgi_011906	dbgi_011906_01	no_ms
+jbp-new	75761	dbgi_012151	canonical	dbgi_012151	Taraxacum pauckertianum		Taraxacum pauckertianum	20260514115514	14.414365	50.120056	out_of_ch_range	true	true	false	false	dbgi_012151	dbgi_012151_01	no_aliquot;no_ms
+jbp-new	75762	dbgi_011855	canonical	dbgi_011855	Taraxacum pauckertianum		Taraxacum pauckertianum	20260514115730	14.41436	50.120056	out_of_ch_range	true	true	false	false	dbgi_011855	dbgi_011855_01	no_aliquot;no_ms
+jbp-new	75763	dbgi_011857	canonical	dbgi_011857	Bassia prostrata		Bassia prostrata	20260514102214	14.415003	50.119633	out_of_ch_range	true	true	true	false	dbgi_011857	dbgi_011857_01	no_ms
+jbp-new	75764	dbgi_012013	canonical	dbgi_012013			Bassia prostrata	20260514102631	14.414977	50.119633	out_of_ch_range	true	true	true	false	dbgi_012013	dbgi_012013_01	no_ms
+jbp-new	75765	dbgi_011909	canonical	dbgi_011909	Triticum vagans		Triticum vagans	20260514103358	14.415917	50.119778	out_of_ch_range	true	true	true	false	dbgi_011909	dbgi_011909_01	no_ms
+jbp-new	75766	dbgi_011869	canonical	dbgi_011869	Triticum vagans		Triticum vagans	20260514103620	14.415925	50.11977	out_of_ch_range	true	true	true	false	dbgi_011869	dbgi_011869_01	no_ms
+jbp-new	75767	dbgi_011885	canonical	dbgi_011885			Triticum vagans	20260514103915	14.415925	50.11977	out_of_ch_range	true	true	false	false	dbgi_011885	dbgi_011885_01	no_aliquot;no_ms
+jbp-new	75768	dbgi_011823	canonical	dbgi_011823	Triticum polonicum		Triticum polonicum	20260514104543	14.415898	50.11988	out_of_ch_range	true	true	true	false	dbgi_011823	dbgi_011823_01;dbgi_011823_02;dbgi_011823_03;dbgi_011823_04	no_ms
+jbp-new	75769	dbgi_011931	canonical	dbgi_011931			Triticum polonicum	20260514105038	14.415854	50.119877	out_of_ch_range	true	true	true	false	dbgi_011931	dbgi_011931_01;dbgi_011931_02;dbgi_011931_03;dbgi_011931_04	no_ms
+jbp-new	75770	dbgi_011758	canonical	dbgi_011758			Triticum polonicum	20260514105304	14.415857	50.11987	out_of_ch_range	true	true	false	false	dbgi_011758	dbgi_011758_01;dbgi_011758_02;dbgi_011758_03;dbgi_011758_04;dbgi_011758_05	no_aliquot;no_ms
+jbp-new	75771	dbgi_011949	canonical	dbgi_011949	Veronica bellidioides		Veronica bellidioides	20260514110123	14.415031	50.119656	out_of_ch_range	true	true	false	false	dbgi_011949	dbgi_011949_01	no_aliquot;no_ms
+jbp-new	75772	dbgi_011754	canonical	dbgi_011754	Veronica bellidioides		Veronica bellidioides	20260514110324	14.414963	50.119724	out_of_ch_range	true	true	true	false	dbgi_011754	dbgi_011754_01	no_ms
+jbp-new	75773	dbgi_011905	canonical	dbgi_011905	Veronica bellidioides		Veronica bellidioides	20260514110513	14.414954	50.119717	out_of_ch_range	true	true	false	false	dbgi_011905	dbgi_011905_01	no_aliquot;no_ms
+jbp-new	75774	dbgi_012032	canonical	dbgi_012032	Veronica bellidioides		Veronica bellidioides	20260514110712	14.41496	50.11972	out_of_ch_range	true	true	true	false	dbgi_012032	dbgi_012032_01	no_ms
+jbp-new	75775	dbgi_011979	canonical	dbgi_011979	Geum montanum		Geum montanum	20260514111015	14.414949	50.119724	out_of_ch_range	true	true	false	false	dbgi_011979	dbgi_011979_01	no_aliquot;no_ms
+jbp-new	75776	dbgi_011838	canonical	dbgi_011838			Geum montanum	20260514111228	14.414953	50.119713	out_of_ch_range	true	true	false	false	dbgi_011838	dbgi_011838_01	no_aliquot;no_ms
+jbp-new	75777	dbgi_011770	canonical	dbgi_011770			Geum montanum	20260514111434	14.414949	50.119728	out_of_ch_range	true	true	false	false	dbgi_011770	dbgi_011770_01	no_aliquot;no_ms
+jbp-new	75778	dbgi_011921	canonical	dbgi_011921			Geum montanum	20260514111621	14.414954	50.11973	out_of_ch_range	true	true	true	false	dbgi_011921	dbgi_011921_01	no_ms
+jbp-new	75779	dbgi_011954	canonical	dbgi_011954	Euphorbia salicifolia		Euphorbia salicifolia	20260514112040	14.414998	50.119698	out_of_ch_range	true	true	false	false	dbgi_011954	dbgi_011954_01;dbgi_011954_02;dbgi_011954_03;dbgi_011954_04;dbgi_011954_05	no_aliquot;no_ms
+jbp-new	75780	dbgi_011913	canonical	dbgi_011913			Euphorbia salicifolia	20260514112246	14.415011	50.119717	out_of_ch_range	true	true	false	false	dbgi_011913	dbgi_011913_01;dbgi_011913_02;dbgi_011913_03;dbgi_011913_04	no_aliquot;no_ms
+jbp-new	75781	dbgi_012091	canonical	dbgi_012091			Euphorbia salicifolia	20260514112513	14.415014	50.11972	out_of_ch_range	true	true	false	false	dbgi_012091	dbgi_012091_01;dbgi_012091_02;dbgi_012091_03;dbgi_012091_04	no_aliquot;no_ms
+jbp-new	75782	dbgi_011958	canonical	dbgi_011958			Euphorbia salicifolia	20260514112647	14.415006	50.119713	out_of_ch_range	true	true	false	false	dbgi_011958	dbgi_011958_01;dbgi_011958_02;dbgi_011958_03;dbgi_011958_04	no_aliquot;no_ms
+jbp-new	75783	dbgi_012147	canonical	dbgi_012147	Plantago altissima		Plantago altissima	20260514112947	14.414947	50.119785	out_of_ch_range	true	true	false	false	dbgi_012147	dbgi_012147_01;dbgi_012147_02;dbgi_012147_03;dbgi_012147_04;dbgi_012147_05	no_aliquot;no_ms
+jbp-new	75784	dbgi_011824	canonical	dbgi_011824	Plantago altissima		Plantago altissima	20260514113127	14.414917	50.1198	out_of_ch_range	true	true	false	false	dbgi_011824	dbgi_011824_01;dbgi_011824_02;dbgi_011824_03;dbgi_011824_04	no_aliquot;no_ms
+jbp-new	75785	dbgi_011844	canonical	dbgi_011844	Plantago altissima		Plantago altissima	20260514113250	14.41492	50.1198	out_of_ch_range	true	true	false	false	dbgi_011844	dbgi_011844_01;dbgi_011844_02;dbgi_011844_03;dbgi_011844_04	no_aliquot;no_ms
+jbp-new	75786	dbgi_011977	canonical	dbgi_011977	Plantago altissima		Plantago altissima	20260514113355	14.414913	50.11979	out_of_ch_range	true	true	true	false	dbgi_011977	dbgi_011977_01;dbgi_011977_02;dbgi_011977_03;dbgi_011977_04	no_ms
+jbp-new	75787	dbgi_012079	canonical	dbgi_012079	Phyteuma nigrum		Phyteuma nigrum	20260514113752	14.414952	50.11973	out_of_ch_range	true	true	false	false	dbgi_012079	dbgi_012079_01	no_aliquot;no_ms
+jbp-new	75788	dbgi_012039	canonical	dbgi_012039	Phyteuma nigrum		Phyteuma nigrum	20260514114114	14.414946	50.119728	out_of_ch_range	true	true	false	false	dbgi_012039	dbgi_012039_01	no_aliquot;no_ms
+jbp-new	75789	dbgi_012067	canonical	dbgi_012067	Phyteuma nigrum		Phyteuma nigrum	20260514114306	14.414948	50.119743	out_of_ch_range	true	true	false	false	dbgi_012067	dbgi_012067_01	no_aliquot;no_ms
+jbp-new	75790	dbgi_011963	canonical	dbgi_011963	Phyteuma nigrum		Phyteuma nigrum	20260514114438	14.414948	50.119728	out_of_ch_range	true	true	true	false	dbgi_011963	dbgi_011963_01	no_ms
+jbp-new	75791	dbgi_012078	canonical	dbgi_012078	Meum athamanticum		Meum athamanticum	20260514114900	14.414934	50.119804	out_of_ch_range	true	true	true	false	dbgi_012078	dbgi_012078_01	no_ms
+jbp-new	75792	dbgi_012161	canonical	dbgi_012161	Meum athamanticum		Meum athamanticum	20260514115113	14.414924	50.11978	out_of_ch_range	true	false	false	false	dbgi_012161		not_extracted
+jbp-new	75793	dbgi_011897	canonical	dbgi_011897	Meum athamanticum		Meum athamanticum	20260514115302	14.414938	50.119797	out_of_ch_range	true	true	true	false	dbgi_011897	dbgi_011897_01	no_ms
+jbp-new	75794	dbgi_012155	canonical	dbgi_012155	Meum athamanticum		Meum athamanticum	20260514115836	14.414932	50.1198	out_of_ch_range	true	true	false	false	dbgi_012155	dbgi_012155_01	no_aliquot;no_ms
+jbp-new	75795	dbgi_011953	canonical	dbgi_011953	Jurinea mollis		Jurinea mollis	20260514120302	14.415015	50.11961	out_of_ch_range	true	true	true	false	dbgi_011953	dbgi_011953_01	no_ms
+jbp-new	75796	dbgi_011842	canonical	dbgi_011842			Jurinea mollis	20260514120925	14.415046	50.119633	out_of_ch_range	true	true	false	false	dbgi_011842	dbgi_011842_01	no_aliquot;no_ms
+jbp-new	75797	dbgi_011941	canonical	dbgi_011941			Jurinea mollis	20260514121018	14.415032	50.119614	out_of_ch_range	true	false	false	false	dbgi_011941		not_extracted
+jbp-new	75798	dbgi_012033	canonical	dbgi_012033			Jurinea mollis	20260514121115	14.4150305	50.11961	out_of_ch_range	true	true	false	false	dbgi_012033	dbgi_012033_01	no_aliquot;no_ms
+jbp-new	75799	dbgi_012015	canonical	dbgi_012015	Thymus alpestris		Thymus alpestris	20260514115737	14.414956	50.119747	out_of_ch_range	true	true	false	false	dbgi_012015	dbgi_012015_01	no_aliquot;no_ms
+jbp-new	75800	dbgi_012060	canonical	dbgi_012060	Thymus alpestris		Thymus alpestris	20260514120012	14.414956	50.119747	out_of_ch_range	true	true	false	false	dbgi_012060	dbgi_012060_01	no_aliquot;no_ms
+jbp-new	75801	dbgi_011760	canonical	dbgi_011760	Thymus alpestris		Thymus alpestris	20260514120210	14.414956	50.119747	out_of_ch_range	true	true	false	false	dbgi_011760	dbgi_011760_01	no_aliquot;no_ms
+jbp-new	75802	dbgi_011911	canonical	dbgi_011911	Thymus alpestris		Thymus alpestris	20260514120420	14.414956	50.119747	out_of_ch_range	true	true	false	false	dbgi_011911	dbgi_011911_01	no_aliquot;no_ms
+jbp-new	75803	dbgi_011789	canonical	dbgi_011789	Cirisum pannonicum		Cirisum pannonicum	20260514120307	14.414203	50.120113	out_of_ch_range	true	false	false	false	dbgi_011789		not_extracted
+jbp-new	75804	dbgi_011837	canonical	dbgi_011837	Cirisum pannonicum		Cirisum pannonicum	20260514120511	14.414203	50.120113	out_of_ch_range	true	true	false	false	dbgi_011837	dbgi_011837_01	no_aliquot;no_ms
+jbp-new	75805	dbgi_011908	canonical	dbgi_011908	Cirisum pannonicum		Cirisum pannonicum	20260514120601	14.414203	50.120113	out_of_ch_range	true	true	true	false	dbgi_011908	dbgi_011908_01	no_ms
+jbp-new	75806	dbgi_011871	canonical	dbgi_011871	Cirisum pannonicum		Cirisum pannonicum	20260514120707	14.414203	50.120113	out_of_ch_range	true	true	true	false	dbgi_011871	dbgi_011871_01	no_ms
+jbp-new	75807	dbgi_011930	canonical	dbgi_011930	Achillea pannonica		Achillea pannonica	20260514121006	14.414293	50.11994	out_of_ch_range	true	true	false	false	dbgi_011930	dbgi_011930_01	no_aliquot;no_ms
+jbp-new	75808	dbgi_011989	canonical	dbgi_011989	Achillea pannonica		Achillea pannonica	20260514121241	14.414289	50.119938	out_of_ch_range	true	true	false	false	dbgi_011989	dbgi_011989_01	no_aliquot;no_ms
+jbp-new	75809	dbgi_011901	canonical	dbgi_011901	Achillea pannonica		Achillea pannonica	20260514121420	14.414293	50.11994	out_of_ch_range	true	true	true	false	dbgi_011901	dbgi_011901_01	no_ms
+jbp-new	75810	dbgi_011880	canonical	dbgi_011880	Ceratophyllum demersum		Ceratophyllum demersum	20260514134845	14.414565	50.121845	out_of_ch_range	true	true	true	false	dbgi_011880	dbgi_011880_01;dbgi_011880_02	no_ms
+jbp-new	75811	dbgi_011907	canonical	dbgi_011907			Ceratophyllum demersum	20260514135045	14.414627	50.121876	out_of_ch_range	true	true	false	false	dbgi_011907	dbgi_011907_01	no_aliquot;no_ms
+jbp-new	75812	dbgi_011915	canonical	dbgi_011915	Nymphaea thermarum		Nymphaea thermarum	20260514140148	14.414656	50.121864	out_of_ch_range	true	true	false	false	dbgi_011915	dbgi_011915_01	no_aliquot;no_ms
+jbp-new	75813	dbgi_012063	canonical	dbgi_012063	Nymphaea thermarum		Nymphaea thermarum	20260514140418	14.414645	50.12188	out_of_ch_range	true	true	false	false	dbgi_012063	dbgi_012063_01	no_aliquot;no_ms
+jbp-new	75814	dbgi_012062	canonical	dbgi_012062	Nymphaea thermarum		Nymphaea thermarum	20260514140726	14.414743	50.121937	out_of_ch_range	true	true	true	false	dbgi_012062	dbgi_012062_01	no_ms
+jbp-new	75815	dbgi_012057	canonical	dbgi_012057	Nymphaea thermarum		Nymphaea thermarum	20260514140831	14.414642	50.12187	out_of_ch_range	true	true	true	false	dbgi_012057	dbgi_012057_01	no_ms
+jbp-new	75816	dbgi_011968	canonical	dbgi_011968	Illicium merrillianum		Illicium merrillianum	20260514142001	14.41262	50.12179	out_of_ch_range	true	true	true	false	dbgi_011968	dbgi_011968_01	no_ms
+jbp-new	75817	dbgi_011935	canonical	dbgi_011935	Illicium merrillianum		Illicium merrillianum	20260514142147	14.412742	50.121784	out_of_ch_range	true	true	true	false	dbgi_011935	dbgi_011935_01	no_ms
+jbp-new	75818	dbgi_011847	canonical	dbgi_011847	Illicium merrillianum		Illicium merrillianum	20260514142311	14.412781	50.121788	out_of_ch_range	true	true	false	false	dbgi_011847	dbgi_011847_01	no_aliquot;no_ms
+jbp-new	75819	dbgi_011761	canonical	dbgi_011761	Illicium merrillianum		Illicium merrillianum	20260514142439	14.412628	50.12174	out_of_ch_range	true	true	true	false	dbgi_011761	dbgi_011761_01;dbgi_011761_02	no_ms
+jbp-new	75820	dbgi_011870	canonical	dbgi_011870	Welwitschia mirabilis		Welwitschia mirabilis	20260514143132	14.412516	50.121925	out_of_ch_range	true	true	true	false	dbgi_011870	dbgi_011870_01	no_ms
+jbp-new	75821	dbgi_011827	canonical	dbgi_011827	Welwitschia mirabilis		Welwitschia mirabilis	20260514143307	14.412796	50.121758	out_of_ch_range	true	true	false	false	dbgi_011827	dbgi_011827_01	no_aliquot;no_ms
+jbp-new	75822	dbgi_011898	canonical	dbgi_011898	Austrobaileya scandens		Austrobaileya scandens	20260514144840	14.412747	50.121807	out_of_ch_range	true	true	false	false	dbgi_011898	dbgi_011898_01	no_aliquot;no_ms
+jbp-new	75823	dbgi_012084	canonical	dbgi_012084			Austrobaileya scandens	20260514144959	14.412747	50.121807	out_of_ch_range	true	true	false	false	dbgi_012084	dbgi_012084_01	no_aliquot;no_ms
+jbp-new	75824	dbgi_011765	canonical	dbgi_011765	Spiraea betulifolia		Spiraea betulifolia	20260514133541	14.414852	50.12088	out_of_ch_range	true	false	false	false	dbgi_011765		not_extracted
+jbp-new	75825	dbgi_011984	canonical	dbgi_011984	Spiraea betulifolia		Spiraea betulifolia	20260514134546	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_011984		not_extracted
+jbp-new	75826	dbgi_011925	canonical	dbgi_011925	Spiraea betulifolia		Spiraea betulifolia	20260514135048	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_011925		not_extracted
+jbp-new	75827	dbgi_011866	canonical	dbgi_011866	Spiraea betulifolia		Spiraea betulifolia	20260514135550	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_011866		not_extracted
+jbp-new	75828	dbgi_011848	canonical	dbgi_011848	Spiraea betulifolia		Spiraea betulifolia	20260514140536	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_011848		not_extracted
+jbp-new	75829	dbgi_012103	canonical	dbgi_012103	Spiraea betulifolia		Spiraea betulifolia	20260514141041	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_012103		not_extracted
+jbp-new	75830	dbgi_012007	canonical	dbgi_012007	Spiraea betulifolia		Spiraea betulifolia	20260514141844	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_012007		not_extracted
+jbp-new	75831	dbgi_012104	canonical	dbgi_012104	Spiraea betulifolia		Spiraea betulifolia	20260514142630	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_012104		not_extracted
+jbp-new	75832	dbgi_011975	canonical	dbgi_011975	Spiraea betulifolia		Spiraea betulifolia	20260514143502	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_011975		not_extracted
+jbp-new	75833	dbgi_011785	canonical	dbgi_011785	Spiraea betulifolia		Spiraea betulifolia	20260514143950	14.414865	50.120888	out_of_ch_range	true	false	false	false	dbgi_011785		not_extracted
+jbp-new	75834	dbgi_011825	canonical	dbgi_011825	Spiraea chinensis		Spiraea chinensis	20260514134027	14.415233	50.121483	out_of_ch_range	true	false	false	false	dbgi_011825		not_extracted
+jbp-new	75835	dbgi_011795	canonical	dbgi_011795	Spiraea chinensis		Spiraea chinensis	20260514134547	14.41522	50.12149	out_of_ch_range	true	false	false	false	dbgi_011795		not_extracted
+jbp-new	75836	dbgi_012098	canonical	dbgi_012098	Spiraea chinensis		Spiraea chinensis	20260514134739	14.415242	50.12148	out_of_ch_range	true	false	false	false	dbgi_012098		not_extracted
+jbp-new	75837	dbgi_011890	canonical	dbgi_011890	Spiraea chinensis		Spiraea chinensis	20260514134848	14.415238	50.12148	out_of_ch_range	true	false	false	false	dbgi_011890		not_extracted
+jbp-new	75838	dbgi_012065	canonical	dbgi_012065	Spiraea chinensis		Spiraea chinensis	20260514135021	14.415234	50.121483	out_of_ch_range	true	false	false	false	dbgi_012065		not_extracted
+jbp-new	75839	dbgi_011762	canonical	dbgi_011762	Spiraea chinensis		Spiraea chinensis	20260514135137	14.415241	50.121483	out_of_ch_range	true	false	false	false	dbgi_011762		not_extracted
+jbp-new	75840	dbgi_011759	canonical	dbgi_011759	Spiraea chinensis		Spiraea chinensis	20260514135413	14.415229	50.121487	out_of_ch_range	true	false	false	false	dbgi_011759		not_extracted
+jbp-new	75841	dbgi_011841	canonical	dbgi_011841	Spiraea chinensis		Spiraea chinensis	20260514135528	14.415246	50.12149	out_of_ch_range	true	false	false	false	dbgi_011841		not_extracted
+jbp-new	75842	dbgi_011859	canonical	dbgi_011859	Spiraea chinensis		Spiraea chinensis	20260514135651	14.415246	50.12149	out_of_ch_range	true	false	false	false	dbgi_011859		not_extracted
+jbp-new	75843	dbgi_011922	canonical	dbgi_011922	Gnetum cuspidatum		Gnetum cuspidatum	20260514142556	14.412715	50.12184	out_of_ch_range	true	true	false	false	dbgi_011922	dbgi_011922_01	no_aliquot;no_ms
+jbp-new	75844	dbgi_011950	canonical	dbgi_011950	Gnetum cuspidatum		Gnetum cuspidatum	20260514142848	14.412768	50.121777	out_of_ch_range	true	true	false	false	dbgi_011950	dbgi_011950_01	no_aliquot;no_ms
+jbp-new	75845	dbgi_011782	canonical	dbgi_011782	Canna spp.		Canna spp.	20260518152648	14.414944	50.119736	out_of_ch_range	true	true	false	false	dbgi_011782	dbgi_011782_01	no_aliquot;no_ms
+jbp-new	75846	dbgi_012397	canonical	dbgi_012397	Spiraea betulifolia		Spiraea betulifolia	20260520093531	14.414868	50.120884	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75847	dbgi_012402	canonical	dbgi_012402	Spiraea betulifolia		Spiraea betulifolia	20260520093850	14.414868	50.120884	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75848	dbgi_011965	canonical	dbgi_011965	Spiraea nipponica		Spiraea nipponica	20260520095056	14.415274	50.121387	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75849	dbgi_012229	canonical	dbgi_012229	Spiraea nipponica		Spiraea nipponica	20260520095534	14.415285	50.12139	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75850	dbgi_012295	canonical	dbgi_012295	Spiraea nipponica		Spiraea nipponica	20260520095908	14.415342	50.121403	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75851	dbgi_011964	canonical	dbgi_011964	Spiraea nipponica		Spiraea nipponica	20260520100019	14.415342	50.121403	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75852	dbgi_012241	canonical	dbgi_012241	Spiraea nipponica		Spiraea nipponica	20260520100141	14.415342	50.121403	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75853	dbgi_011937	canonical	dbgi_011937	Spiraea nipponica		Spiraea nipponica	20260520100243	14.415342	50.121403	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75854	dbgi_012409	canonical	dbgi_012409	Spiraea nipponica		Spiraea nipponica	20260520100417	14.415342	50.121403	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75855	dbgi_012415	canonical	dbgi_012415	Spiraea nipponica		Spiraea nipponica	20260520100609	14.415244	50.12139	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75856	dbgi_011821	canonical	dbgi_011821	Spiraea nipponica		Spiraea nipponica	20260520100711	14.415218	50.121372	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75857	dbgi_012138	canonical	dbgi_012138	Geranium renardii		Geranium renardii	20260528095559	14.413592	50.11873	out_of_ch_range	true	true	false	false	dbgi_012138	dbgi_012138_01;dbgi_012138_02	no_aliquot;no_ms
+jbp-new	75858	dbgi_012135	canonical	dbgi_012135	Geranium renardii		Geranium renardii	20260528095936	14.413603	50.11869	out_of_ch_range	true	false	false	false	dbgi_012135		not_extracted
+jbp-new	75859	dbgi_012139	canonical	dbgi_012139	Geranium renardii		Geranium renardii	20260528100230	14.41361	50.1187	out_of_ch_range	true	false	false	false	dbgi_012139		not_extracted
+jbp-new	75860	dbgi_012377	canonical	dbgi_012377	Salvia desoleana		Salvia desoleana	20260528100700	14.4134245	50.11839	out_of_ch_range	true	true	true	false	dbgi_012377	dbgi_012377_01	no_ms
+jbp-new	75861	dbgi_012204	canonical	dbgi_012204	Salvia desoleana		Salvia desoleana	20260528100818	14.4134245	50.11839	out_of_ch_range	true	false	false	false	dbgi_012204		not_extracted
+jbp-new	75862	dbgi_012388	canonical	dbgi_012388	Salvia hierosolymitana		Salvia hierosolymitana	20260528101101	14.4134245	50.11839	out_of_ch_range	true	false	false	false	dbgi_012388		not_extracted
+jbp-new	75863	dbgi_012382	canonical	dbgi_012382	Salvia hierosolymitana		Salvia hierosolymitana	20260528101426	14.413227	50.11744	out_of_ch_range	true	false	false	false	dbgi_012382		not_extracted
+jbp-new	75864	dbgi_012378	canonical	dbgi_012378	Centaurea bella		Centaurea bella	20260528101838	14.413741	50.118584	out_of_ch_range	true	false	false	false	dbgi_012378		not_extracted
+jbp-new	75865	dbgi_012197	canonical	dbgi_012197	Centaurea bella		Centaurea bella	20260528102230	14.413673	50.118523	out_of_ch_range	true	true	false	false	dbgi_012197	dbgi_012197_01	no_aliquot;no_ms
+jbp-new	75866	dbgi_012134	canonical	dbgi_012134	Centaurea bella		Centaurea bella	20260528102547	14.41372	50.118515	out_of_ch_range	true	false	false	false	dbgi_012134		not_extracted
+jbp-new	75867	dbgi_012302	canonical	dbgi_012302	Centaurea simplicicaulis		Centaurea simplicicaulis	20260528102846	14.413725	50.118595	out_of_ch_range	true	true	true	false	dbgi_012302	dbgi_012302_01;dbgi_012302_02	no_ms
+jbp-new	75868	dbgi_012137	canonical	dbgi_012137	Centaurea simplicicaulis		Centaurea simplicicaulis	20260528103142	14.413756	50.11851	out_of_ch_range	true	true	true	false	dbgi_012137	dbgi_012137_01	no_ms
+jbp-new	75869	dbgi_012243	canonical	dbgi_012243	Centaurea simplicicaulis		Centaurea simplicicaulis	20260528103346	14.413693	50.11856	out_of_ch_range	true	false	false	false	dbgi_012243		not_extracted
+jbp-new	75870	dbgi_012128	canonical	dbgi_012128	Aster sedifolius		Aster sedifolius	20260528103640	14.413504	50.118267	out_of_ch_range	true	false	false	false	dbgi_012128		not_extracted
+jbp-new	75871	dbgi_012381	canonical	dbgi_012381	Aster sedifolius		Aster sedifolius	20260528103803	14.413561	50.118397	out_of_ch_range	true	false	false	false	dbgi_012381		not_extracted
+jbp-new	75872	dbgi_012238	canonical	dbgi_012238	Pseudolysimachion incanum		Pseudolysimachion incanum	20260528104353	14.413449	50.118034	out_of_ch_range	true	true	false	false	dbgi_012238	dbgi_012238_01	no_aliquot;no_ms
+jbp-new	75873	dbgi_012384	canonical	dbgi_012384	Pseudolysimachion incanum		Pseudolysimachion incanum	20260528104541	14.413632	50.118267	out_of_ch_range	true	false	false	false	dbgi_012384		not_extracted
+jbp-new	75874	dbgi_012242	canonical	dbgi_012242	Allium thunbergii		Allium thunbergii	20260528105059	14.413813	50.118244	out_of_ch_range	true	true	true	false	dbgi_012242	dbgi_012242_01	no_ms
+jbp-new	75875	dbgi_012308	canonical	dbgi_012308	Glebionis coronaria		Glebionis coronaria	20260528105615	14.414089	50.118214	out_of_ch_range	true	false	false	false	dbgi_012308		not_extracted
+jbp-new	75876	dbgi_012014	canonical	dbgi_012014	Glebionis coronaria		Glebionis coronaria	20260528105755	14.414089	50.118214	out_of_ch_range	true	true	true	false	dbgi_012014	dbgi_012014_01	no_ms
+jbp-new	75877	dbgi_012233	canonical	dbgi_012233	Glebionis coronaria		Glebionis coronaria	20260528110119	14.414089	50.118214	out_of_ch_range	true	true	true	false	dbgi_012233	dbgi_012233_01	no_ms
+jbp-new	75878	dbgi_012237	canonical	dbgi_012237	Achillea clypeolata		Achillea clypeolata	20260528111037	14.416259	50.118626	out_of_ch_range	true	false	false	false	dbgi_012237		not_extracted
+jbp-new	75879	dbgi_012196	canonical	dbgi_012196	Achillea clypeolata		Achillea clypeolata	20260528111548	14.416248	50.118607	out_of_ch_range	true	false	false	false	dbgi_012196		not_extracted
+jbp-new	75880	dbgi_012383	canonical	dbgi_012383	Achillea clypeolata		Achillea clypeolata	20260528111854	14.416248	50.118607	out_of_ch_range	true	true	false	false	dbgi_012383	dbgi_012383_01	no_aliquot;no_ms
+jbp-new	75881	dbgi_012226	canonical	dbgi_012226	Euphorbia characias		Euphorbia characias	20260528112826	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75882	dbgi_011976	canonical	dbgi_011976	Euphorbia characias		Euphorbia characias	20260528113354	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75883	dbgi_012152	canonical	dbgi_012152	Euphorbia characias		Euphorbia characias	20260528113713	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75884	dbgi_012150	canonical	dbgi_012150	Euphorbia characias		Euphorbia characias	20260528114051	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75885	dbgi_012301	canonical	dbgi_012301	Euphorbia characias		Euphorbia characias	20260528114329	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75886	dbgi_012140	canonical	dbgi_012140	Euphorbia characias		Euphorbia characias	20260528114534	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75887	dbgi_012230	canonical	dbgi_012230	Euphorbia characias		Euphorbia characias	20260528114752	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75888	dbgi_012026	canonical	dbgi_012026	Euphorbia characias		Euphorbia characias	20260528115157	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75889	dbgi_012292	canonical	dbgi_012292	Papaver orientale		Papaver orientale	20260528115706	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75890	dbgi_012099	canonical	dbgi_012099	Papaver orientale		Papaver orientale	20260528120350	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75891	dbgi_011933	canonical	dbgi_011933	Papaver orientale		Papaver orientale	20260528120641	14.416248	50.118607	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75892	dbgi_012024	canonical	dbgi_012024	Papaver orientale		Papaver orientale	20260528120955	14.416336	50.11864	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75893	dbgi_012087	canonical	dbgi_012087	Papaver orientale		Papaver orientale	20260528121152	14.416336	50.11864	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75894	dbgi_012232	canonical	dbgi_012232	Papaver orientale		Papaver orientale	20260528121430	14.416336	50.11864	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75895	dbgi_012045	canonical	dbgi_012045	Papaver orientale		Papaver orientale	20260528121655	14.416336	50.11864	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75896	dbgi_012053	canonical	dbgi_012053	Papaver orientale		Papaver orientale	20260528121920	14.416336	50.11864	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75897	dbgi_011912	canonical	dbgi_011912	Papaver orientale		Papaver orientale	20260528122133	14.416336	50.11864	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75898	dbgi_012031	canonical	dbgi_012031	Papaver orientale		Papaver orientale	20260528122354	14.416336	50.11864	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75899	dbgi_012277	canonical	dbgi_012277	Oenothera laciniata		Oenothera laciniata	20260528102203	14.413221	50.119	out_of_ch_range	true	false	false	false	dbgi_012277		not_extracted
+jbp-new	75900	dbgi_012305	canonical	dbgi_012305	Oenothera laciniata		Oenothera laciniata	20260528102459	14.413221	50.119	out_of_ch_range	true	false	false	false	dbgi_012305		not_extracted
+jbp-new	75901	dbgi_012283	canonical	dbgi_012283	Oenothera laciniata		Oenothera laciniata	20260528102829	14.413221	50.119	out_of_ch_range	true	false	false	false	dbgi_012283		not_extracted
+jbp-new	75902	dbgi_012306	canonical	dbgi_012306	Scutellaria diffusa		Scutellaria diffusa	20260528103105	14.413686	50.1187	out_of_ch_range	true	true	false	false	dbgi_012306	dbgi_012306_01	no_aliquot;no_ms
+jbp-new	75903	dbgi_012266	canonical	dbgi_012266	Scutellaria diffusa		Scutellaria diffusa	20260528103343	14.413686	50.1187	out_of_ch_range	true	true	true	false	dbgi_012266	dbgi_012266_01	no_ms
+jbp-new	75904	dbgi_012347	canonical	dbgi_012347	Geranium himalayense		Geranium himalayense	20260528103656	14.413465	50.118614	out_of_ch_range	true	true	true	false	dbgi_012347	dbgi_012347_01	no_ms
+jbp-new	75905	dbgi_012406	canonical	dbgi_012406	Geranium himalayense		Geranium himalayense	20260528104025	14.413472	50.118607	out_of_ch_range	true	false	false	false	dbgi_012406		not_extracted
+jbp-new	75906	dbgi_012358	canonical	dbgi_012358	Geranium himalayense		Geranium himalayense	20260528104644	14.413455	50.118607	out_of_ch_range	true	true	true	false	dbgi_012358	dbgi_012358_01	no_ms
+jbp-new	75907	dbgi_012094	canonical	dbgi_012094	Geranium himalayense		Geranium himalayense	20260528105316	14.413459	50.11861	out_of_ch_range	true	false	false	false	dbgi_012094		not_extracted
+jbp-new	75908	dbgi_012418	canonical	dbgi_012418	Ruscus aculeatus		Ruscus aculeatus	20260528110029	14.414145	50.11817	out_of_ch_range	true	false	false	false	dbgi_012418		not_extracted
+jbp-new	75909	dbgi_012312	canonical	dbgi_012312	Ruscus aculeatus		Ruscus aculeatus	20260528110348	14.414151	50.118176	out_of_ch_range	true	true	true	false	dbgi_012312	dbgi_012312_01	no_ms
+jbp-new	75910	dbgi_012350	canonical	dbgi_012350	Scutellaria diffusa		Scutellaria diffusa	20260528110845	14.413458	50.118603	out_of_ch_range	true	false	false	false	dbgi_012350		not_extracted
+jbp-new	75911	dbgi_012311	canonical	dbgi_012311	Tanacetum densum		Tanacetum densum	20260528112407	14.416409	50.118595	out_of_ch_range	true	false	false	false	dbgi_012311		not_extracted
+jbp-new	75912	dbgi_012309	canonical	dbgi_012309	Tanacetum densum		Tanacetum densum	20260528113000	14.416422	50.118603	out_of_ch_range	true	true	false	false	dbgi_012309	dbgi_012309_01	no_aliquot;no_ms
+jbp-new	75913	dbgi_012231	canonical	dbgi_012231	Tanacetum densum		Tanacetum densum	20260528113438	14.416418	50.1186	out_of_ch_range	true	true	true	false	dbgi_012231	dbgi_012231_01	no_ms
+jbp-new	75914	dbgi_012270	canonical	dbgi_012270	Organum sipyleum		Organum sipyleum	20260528114303	14.416293	50.118576	out_of_ch_range	true	true	false	false	dbgi_012270	dbgi_012270_01	no_aliquot;no_ms
+jbp-new	75915	dbgi_012341	canonical	dbgi_012341	Origanum sipyleum		Origanum sipyleum	20260528114603	14.416293	50.118576	out_of_ch_range	true	true	false	false	dbgi_012341	dbgi_012341_01	no_aliquot;no_ms
+jbp-new	75916	dbgi_012168	canonical	dbgi_012168	Thymus leucotrichus		Thymus leucotrichus	20260528115712	14.416715	50.11867	out_of_ch_range	true	true	false	false	dbgi_012168	dbgi_012168_01	no_aliquot;no_ms
+jbp-new	75917	dbgi_012167	canonical	dbgi_012167	Thymus leucotrichus		Thymus leucotrichus	20260528120349	14.416715	50.11867	out_of_ch_range	true	false	false	false	dbgi_012167		not_extracted
+jbp-new	75918	dbgi_012120	canonical	dbgi_012120	Thymus leucotrichus		Thymus leucotrichus	20260528121013	14.416715	50.11867	out_of_ch_range	true	false	false	false	dbgi_012120		not_extracted
+jbp-new	75919	dbgi_012307	canonical	dbgi_012307	Papaver orientale		Papaver orientale	20260528121547	14.41665	50.11874	out_of_ch_range	true	false	false	false	dbgi_012307		not_extracted
+jbp-new	75920	dbgi_012200	canonical	dbgi_012200	Papaver orientale		Papaver orientale	20260528122250	14.41665	50.11874	out_of_ch_range	true	true	false	false	dbgi_012200	dbgi_012200_01	no_aliquot;no_ms
+jbp-new	75921	dbgi_012343	canonical	dbgi_012343	Papaver orientale		Papaver orientale	20260528124609	14.416657	50.118713	out_of_ch_range	true	true	true	false	dbgi_012343	dbgi_012343_01	no_ms
+jbp-new	75922	dbgi_012121	canonical	dbgi_012121	Scabiosa japonica		Scabiosa japonica	20260528095432	14.414912	50.121067	out_of_ch_range	true	false	false	false	dbgi_012121		not_extracted
+jbp-new	75923	dbgi_012185	canonical	dbgi_012185	Scabiosa japonica		Scabiosa japonica	20260528095627	14.414912	50.121067	out_of_ch_range	true	false	false	false	dbgi_012185		not_extracted
+jbp-new	75924	dbgi_012122	canonical	dbgi_012122	Geranium krameri		Geranium krameri	20260528100126	14.415013	50.12105	out_of_ch_range	true	true	false	false	dbgi_012122	dbgi_012122_01	no_aliquot;no_ms
+jbp-new	75925	dbgi_012216	canonical	dbgi_012216	Geranium krameri		Geranium krameri	20260528100252	14.415013	50.12105	out_of_ch_range	true	false	false	false	dbgi_012216		not_extracted
+jbp-new	75926	dbgi_012192	canonical	dbgi_012192	Rodgersia podophylla		Rodgersia podophylla	20260528100654	14.414961	50.121185	out_of_ch_range	true	true	false	false	dbgi_012192	dbgi_012192_01	no_aliquot;no_ms
+jbp-new	75927	dbgi_012298	canonical	dbgi_012298	Rodgersia podophylla		Rodgersia podophylla	20260528100910	14.415023	50.121143	out_of_ch_range	true	false	false	false	dbgi_012298		not_extracted
+jbp-new	75928	dbgi_012175	canonical	dbgi_012175	Rodgersia podophylla		Rodgersia podophylla	20260528101011	14.415017	50.121174	out_of_ch_range	true	false	false	false	dbgi_012175		not_extracted
+jbp-new	75929	dbgi_012125	canonical	dbgi_012125	Rodgersia podophylla		Rodgersia podophylla	20260528101307	14.4150095	50.121155	out_of_ch_range	true	true	true	false	dbgi_012125	dbgi_012125_01	no_ms
+jbp-new	75930	dbgi_012219	canonical	dbgi_012219	Geranium thunbergii		Geranium thunbergii	20260528101548	14.414909	50.12104	out_of_ch_range	true	false	false	false	dbgi_012219		not_extracted
+jbp-new	75931	dbgi_012380	canonical	dbgi_012380	Geranium thunbergii		Geranium thunbergii	20260528101709	14.414915	50.121037	out_of_ch_range	true	true	false	false	dbgi_012380	dbgi_012380_01	no_aliquot;no_ms
+jbp-new	75932	dbgi_012177	canonical	dbgi_012177	Geranium thunbergii		Geranium thunbergii	20260528101819	14.414888	50.121063	out_of_ch_range	true	false	false	false	dbgi_012177		not_extracted
+jbp-new	75933	dbgi_011826	canonical	dbgi_011826	Hakonechloa macra		Hakonechloa macra	20260528102046	14.4148	50.121117	out_of_ch_range	true	true	false	false	dbgi_011826	dbgi_011826_01	no_aliquot;no_ms
+jbp-new	75934	dbgi_011966	canonical	dbgi_011966	Hakonechloa macra		Hakonechloa macra	20260528102232	14.414786	50.121136	out_of_ch_range	true	false	false	false	dbgi_011966		not_extracted
+jbp-new	75935	dbgi_012195	canonical	dbgi_012195	Hakonechloa macra		Hakonechloa macra	20260528102533	14.414778	50.12114	out_of_ch_range	true	false	false	false	dbgi_012195		not_extracted
+jbp-new	75936	dbgi_012368	canonical	dbgi_012368	Aster yomena		Aster yomena	20260528103221	14.414717	50.1211	out_of_ch_range	true	true	true	false	dbgi_012368	dbgi_012368_01	no_ms
+jbp-new	75937	dbgi_012413	canonical	dbgi_012413			Aster yomena	20260528103549	14.415141	50.12108	out_of_ch_range	true	false	false	false	dbgi_012413		not_extracted
+jbp-new	75938	dbgi_012405	canonical	dbgi_012405			Aster yomena	20260528103923	14.415141	50.12108	out_of_ch_range	true	false	false	false	dbgi_012405		not_extracted
+jbp-new	75939	dbgi_012123	canonical	dbgi_012123	Stephanandra incisa		Stephanandra incisa	20260528104110	14.41482	50.121162	out_of_ch_range	true	false	false	false	dbgi_012123		not_extracted
+jbp-new	75940	dbgi_011786	canonical	dbgi_011786	Stephanandra incisa		Stephanandra incisa	20260528104327	14.414825	50.121193	out_of_ch_range	true	false	false	false	dbgi_011786		not_extracted
+jbp-new	75941	dbgi_012068	canonical	dbgi_012068	Stephanandra incisa		Stephanandra incisa	20260528104523	14.414852	50.121174	out_of_ch_range	true	true	false	false	dbgi_012068	dbgi_012068_01;dbgi_012068_02	no_aliquot;no_ms
+jbp-new	75942	dbgi_012408	canonical	dbgi_012408	Stephanandra incisa		Stephanandra incisa	20260528104714	14.414814	50.121193	out_of_ch_range	true	false	false	false	dbgi_012408		not_extracted
+jbp-new	75943	dbgi_012371	canonical	dbgi_012371	Veronica onoei		Veronica onoei	20260528105024	14.41504	50.121326	out_of_ch_range	true	false	false	false	dbgi_012371		not_extracted
+jbp-new	75944	dbgi_011973	canonical	dbgi_011973			Veronica onoei	20260528105238	14.41504	50.121326	out_of_ch_range	true	false	false	false	dbgi_011973		not_extracted
+jbp-new	75945	dbgi_012348	canonical	dbgi_012348			Veronica onoei	20260528105418	14.415019	50.12134	out_of_ch_range	true	true	true	false	dbgi_012348	dbgi_012348_01	no_ms
+jbp-new	75946	dbgi_012373	canonical	dbgi_012373	Allium ramosum		Allium ramosum	20260528110223	14.41554	50.12082	out_of_ch_range	true	false	false	false	dbgi_012373		not_extracted
+jbp-new	75947	dbgi_012080	canonical	dbgi_012080			Allium ramosum	20260528110448	14.41554	50.12082	out_of_ch_range	true	true	false	false	dbgi_012080	dbgi_012080_01	no_aliquot;no_ms
+jbp-new	75948	dbgi_012210	canonical	dbgi_012210			Allium ramosum	20260528110603	14.415551	50.120792	out_of_ch_range	true	false	false	false	dbgi_012210		not_extracted
+jbp-new	75949	dbgi_012148	canonical	dbgi_012148			Allium ramosum	20260528110721	14.415551	50.120792	out_of_ch_range	true	true	false	false	dbgi_012148	dbgi_012148_01	no_aliquot;no_ms
+jbp-new	75950	dbgi_011914	canonical	dbgi_011914	Polygonatum macropodum		Polygonatum macropodum	20260528111225	14.415658	50.120743	out_of_ch_range	true	false	false	false	dbgi_011914		not_extracted
+jbp-new	75951	dbgi_012171	canonical	dbgi_012171	Polygonatum macropodum		Polygonatum macropodum	20260528111503	14.415658	50.120743	out_of_ch_range	true	true	false	false	dbgi_012171	dbgi_012171_01	no_aliquot;no_ms
+jbp-new	75952	dbgi_012328	canonical	dbgi_012328	Polygonatum macropodum		Polygonatum macropodum	20260528111626	14.415658	50.120743	out_of_ch_range	true	false	false	false	dbgi_012328		not_extracted
+jbp-new	75953	dbgi_012089	canonical	dbgi_012089	Polygonatum macropodum		Polygonatum macropodum	20260528111858	14.415658	50.120743	out_of_ch_range	true	false	false	false	dbgi_012089		not_extracted
+jbp-new	75954	dbgi_011839	canonical	dbgi_011839	Gentiana siphonantha		Gentiana siphonantha	20260528112330	14.415563	50.120934	out_of_ch_range	true	true	true	false	dbgi_011839	dbgi_011839_01	no_ms
+jbp-new	75955	dbgi_012318	canonical	dbgi_012318	Phytolacca americana		Phytolacca americana	20260528113132	14.417418	50.121426	out_of_ch_range	true	false	false	false	dbgi_012318		not_extracted
+jbp-new	75956	dbgi_012379	canonical	dbgi_012379	Phytolacca americana		Phytolacca americana	20260528113433	14.417418	50.121426	out_of_ch_range	true	false	false	false	dbgi_012379		not_extracted
+jbp-new	75957	dbgi_012162	canonical	dbgi_012162	Sasa palmata		Sasa palmata	20260528114843	14.414858	50.120834	out_of_ch_range	true	false	false	false	dbgi_012162		not_extracted
+jbp-new	75958	dbgi_012016	canonical	dbgi_012016	Sasa palmata		Sasa palmata	20260528114957	14.414889	50.120834	out_of_ch_range	true	true	false	false	dbgi_012016	dbgi_012016_01	no_aliquot;no_ms
+jbp-new	75959	dbgi_012244	canonical	dbgi_012244	Sasa palmata		Sasa palmata	20260528115205	14.41489	50.120827	out_of_ch_range	true	true	false	false	dbgi_012244	dbgi_012244_01	no_aliquot;no_ms
+jbp-new	75960	dbgi_012349	canonical	dbgi_012349	Brunnera macrophylla		Brunnera macrophylla	20260528131749	14.416838	50.12275	out_of_ch_range	true	true	false	false	dbgi_012349	dbgi_012349_01	no_aliquot;no_ms
+jbp-new	75961	dbgi_012315	canonical	dbgi_012315	Brunnera macrophylla		Brunnera macrophylla	20260528131947	14.416781	50.12289	out_of_ch_range	true	false	false	false	dbgi_012315		not_extracted
+jbp-new	75962	dbgi_012340	canonical	dbgi_012340	Brunnera macrophylla		Brunnera macrophylla	20260528132115	14.416815	50.122887	out_of_ch_range	true	false	false	false	dbgi_012340		not_extracted
+jbp-new	75963	dbgi_012417	canonical	dbgi_012417	Dryopteris affinis		Dryopteris affinis	20260528132449	14.416804	50.12289	out_of_ch_range	true	false	false	false	dbgi_012417		not_extracted
+jbp-new	75964	dbgi_012338	canonical	dbgi_012338	Dryopteris affinis		Dryopteris affinis	20260528132558	14.416804	50.12289	out_of_ch_range	true	true	false	false	dbgi_012338	dbgi_012338_01	no_aliquot;no_ms
+jbp-new	75965	dbgi_012284	canonical	dbgi_012284	Osmunda regalis		Osmunda regalis	20260528132723	14.416764	50.122932	out_of_ch_range	true	false	false	false	dbgi_012284		not_extracted
+jbp-new	75966	dbgi_012254	canonical	dbgi_012254	Osmunda regalis		Osmunda regalis	20260528132853	14.416764	50.122932	out_of_ch_range	true	true	false	false	dbgi_012254	dbgi_012254_01	no_aliquot;no_ms
+jbp-new	75967	dbgi_011903	canonical	dbgi_011903	Viola sororia		Viola sororia	20260528133431	14.416781	50.123188	out_of_ch_range	true	true	true	false	dbgi_011903	dbgi_011903_01;dbgi_011903_02	no_ms
+jbp-new	75968	dbgi_012331	canonical	dbgi_012331	Viola sororia		Viola sororia	20260528133545	14.416821	50.12317	out_of_ch_range	true	true	false	false	dbgi_012331	dbgi_012331_01	no_aliquot;no_ms
+jbp-new	75969	dbgi_012240	canonical	dbgi_012240	Viola sororia		Viola sororia	20260528133711	14.416795	50.12318	out_of_ch_range	true	false	false	false	dbgi_012240		not_extracted
+jbp-new	75970	dbgi_011822	canonical	dbgi_011822	Bergenia crassifolia		Bergenia crassifolia	20260528133922	14.416792	50.123177	out_of_ch_range	true	true	false	false	dbgi_011822	dbgi_011822_01	no_aliquot;no_ms
+jbp-new	75971	dbgi_011881	canonical	dbgi_011881	Bergenia crassifolia		Bergenia crassifolia	20260528134130	14.416782	50.123196	out_of_ch_range	true	true	true	false	dbgi_011881	dbgi_011881_01	no_ms
+jbp-new	75972	dbgi_012335	canonical	dbgi_012335	Bergenia crassifolia		Bergenia crassifolia	20260528134231	14.416771	50.123177	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	75973	dbgi_012282	canonical	dbgi_012282	Kadsura japonica		Kadsura japonica	20260528135519	14.418658	50.1238	out_of_ch_range	true	false	false	false	dbgi_012282		not_extracted
+jbp-new	75974	dbgi_012412	canonical	dbgi_012412	Kadsura japonica		Kadsura japonica	20260528135656	14.418946	50.12388	out_of_ch_range	true	true	false	false	dbgi_012412	dbgi_012412_01	no_aliquot;no_ms
+jbp-new	75975	dbgi_012271	canonical	dbgi_012271	Schisandra incarnata		Schisandra incarnata	20260528135913	14.418937	50.123985	out_of_ch_range	true	true	false	false	dbgi_012271	dbgi_012271_01;dbgi_012271_02	no_aliquot;no_ms
+jbp-new	75976	dbgi_012363	canonical	dbgi_012363	Schisandra incarnata		Schisandra incarnata	20260528140149	14.418958	50.123985	out_of_ch_range	true	true	false	false	dbgi_012363	dbgi_012363_01	no_aliquot;no_ms
+jbp-new	75977	dbgi_012249	canonical	dbgi_012249	Tripterygium regelii		Tripterygium regelii	20260528140741	14.41881	50.123238	out_of_ch_range	true	true	false	false	dbgi_012249	dbgi_012249_01	no_aliquot;no_ms
+jbp-new	75978	dbgi_012342	canonical	dbgi_012342	Tripterygium regelii		Tripterygium regelii	20260528140934	14.41881	50.123238	out_of_ch_range	true	true	true	false	dbgi_012342	dbgi_012342_01	no_ms
+jbp-new	75979	dbgi_012362	canonical	dbgi_012362	Tripterygium regelii		Tripterygium regelii	20260528141106	14.418811	50.123238	out_of_ch_range	true	false	false	false	dbgi_012362		not_extracted
+jbp-new	75980	dbgi_012273	canonical	dbgi_012273	Knautia drymeia		Knautia drymeia	20260528141724	14.419179	50.123886	out_of_ch_range	true	false	false	false	dbgi_012273		not_extracted
+jbp-new	75981	dbgi_012255	canonical	dbgi_012255	Knautia drymeia		Knautia drymeia	20260528142034	14.419196	50.123894	out_of_ch_range	true	false	false	false	dbgi_012255		not_extracted
+jbp-new	75982	dbgi_012323	canonical	dbgi_012323	Knautia drymeia		Knautia drymeia	20260528142335	14.419172	50.123886	out_of_ch_range	true	true	false	false	dbgi_012323	dbgi_012323_01	no_aliquot;no_ms
+jbp-new	75983	dbgi_012364	canonical	dbgi_012364	Knautia drymeia		Knautia drymeia	20260528142649	14.419185	50.12389	out_of_ch_range	true	true	true	false	dbgi_012364	dbgi_012364_01	no_ms
+jbp-new	75984	dbgi_012263	canonical	dbgi_012263	Saxifraga umbrosa		Saxifraga umbrosa	20260528143126	14.41923	50.123875	out_of_ch_range	true	true	true	false	dbgi_012263	dbgi_012263_01	no_ms
+jbp-new	75985	dbgi_012222	canonical	dbgi_012222	Saxifraga umbrosa		Saxifraga umbrosa	20260528143248	14.419247	50.123894	out_of_ch_range	true	true	false	false	dbgi_012222	dbgi_012222_01	no_aliquot;no_ms
+jbp-new	75986	dbgi_012227	canonical	dbgi_012227	Saxifraga umbrosa		Saxifraga umbrosa	20260528143356	14.419265	50.123898	out_of_ch_range	true	true	false	false	dbgi_012227	dbgi_012227_01	no_aliquot;no_ms
+jbp-new	75987	dbgi_012339	canonical	dbgi_012339	Saxifraga umbrosa		Saxifraga umbrosa	20260528143529	14.41924	50.123894	out_of_ch_range	true	true	false	false	dbgi_012339	dbgi_012339_01	no_aliquot;no_ms
+jbp-new	75988	dbgi_012319	canonical	dbgi_012319	Deinanthe caerulea		Deinanthe caerulea	20260528143822	14.41925	50.12386	out_of_ch_range	true	false	false	false	dbgi_012319		not_extracted
+jbp-new	75989	dbgi_012297	canonical	dbgi_012297	Deinanthe caerulea		Deinanthe caerulea	20260528143950	14.419269	50.12387	out_of_ch_range	true	true	false	false	dbgi_012297	dbgi_012297_01	no_aliquot;no_ms
+jbp-new	75990	dbgi_012279	canonical	dbgi_012279	Deinanthe caerulea		Deinanthe caerulea	20260528144043	14.419262	50.12386	out_of_ch_range	true	false	false	false	dbgi_012279		not_extracted
+jbp-new	75991	dbgi_012275	canonical	dbgi_012275	Astrantia major		Astrantia major	20260528144302	14.419067	50.12389	out_of_ch_range	true	true	false	false	dbgi_012275	dbgi_012275_01	no_aliquot;no_ms
+jbp-new	75992	dbgi_011982	canonical	dbgi_011982	Astrantia major		Astrantia major	20260528144508	14.419067	50.12389	out_of_ch_range	true	true	false	false	dbgi_011982	dbgi_011982_01;dbgi_011982_02	no_aliquot;no_ms
+jbp-new	75993	dbgi_012322	canonical	dbgi_012322	Astrantia major		Astrantia major	20260528144638	14.419089	50.123898	out_of_ch_range	true	false	false	false	dbgi_012322		not_extracted
+jbp-new	75994	dbgi_012288	canonical	dbgi_012288	Matteuccia struthiopteris		Matteuccia struthiopteris	20260528144938	14.4186735	50.12387	out_of_ch_range	true	true	false	false	dbgi_012288	dbgi_012288_01	no_aliquot;no_ms
+jbp-new	75995	dbgi_012320	canonical	dbgi_012320	Matteuccia struthiopteris		Matteuccia struthiopteris	20260528145129	14.418602	50.123833	out_of_ch_range	true	true	true	false	dbgi_012320	dbgi_012320_01	no_ms
+jbp-new	75996	dbgi_011910	canonical	dbgi_011910	Matteuccia struthiopteris		Matteuccia struthiopteris	20260528145313	14.418602	50.123833	out_of_ch_range	true	true	true	false	dbgi_011910	dbgi_011910_01;dbgi_011910_02	no_ms
+jbp-new	75997	dbgi_012072	canonical	dbgi_012072	Dicksonia squarrosa		Dicksonia squarrosa	20260528150304	14.418669	50.12413	out_of_ch_range	true	true	false	false	dbgi_012072	dbgi_012072_01	no_aliquot;no_ms
+jbp-new	75998	dbgi_012346	canonical	dbgi_012346	Dicksonia squarrosa		Dicksonia squarrosa	20260528150526	14.418686	50.12416	out_of_ch_range	true	false	false	false	dbgi_012346		not_extracted
+jbp-new	75999	dbgi_012294	canonical	dbgi_012294	Dicksonia squarrosa		Dicksonia squarrosa	20260528150731	14.418686	50.12416	out_of_ch_range	true	true	false	false	dbgi_012294	dbgi_012294_01	no_aliquot;no_ms
+jbp-new	76000	dbgi_012334	canonical	dbgi_012334	Omphalodes verna		Omphalodes verna	20260528151421	14.418798	50.12405	out_of_ch_range	true	true	false	false	dbgi_012334	dbgi_012334_01	no_aliquot;no_ms
+jbp-new	76001	dbgi_012276	canonical	dbgi_012276	Omphalodes verna		Omphalodes verna	20260528151617	14.418798	50.12405	out_of_ch_range	true	false	false	false	dbgi_012276		not_extracted
+jbp-new	76002	dbgi_011961	canonical	dbgi_011961	Omphalodes verna		Omphalodes verna	20260528151826	14.418765	50.12404	out_of_ch_range	true	true	false	false	dbgi_011961	dbgi_011961_01	no_aliquot;no_ms
+jbp-new	76003	dbgi_012199	canonical	dbgi_012199	Dioscorea sansibariensis		Dioscorea sansibariensis	20260528132316	14.412449	50.121952	out_of_ch_range	true	false	false	false	dbgi_012199		not_extracted
+jbp-new	76004	dbgi_012217	canonical	dbgi_012217	Dioscorea sansibariensis		Dioscorea sansibariensis	20260528132517	14.412491	50.121834	out_of_ch_range	true	true	false	false	dbgi_012217	dbgi_012217_01;dbgi_012217_02	no_aliquot;no_ms
+jbp-new	76005	dbgi_012173	canonical	dbgi_012173	Dioscorea sansibariensis		Dioscorea sansibariensis	20260528132650	14.412495	50.121815	out_of_ch_range	true	true	false	false	dbgi_012173	dbgi_012173_01	no_aliquot;no_ms
+jbp-new	76006	dbgi_012129	canonical	dbgi_012129	Dioscorea sansibariensis		Dioscorea sansibariensis	20260528132838	14.412381	50.121872	out_of_ch_range	true	false	false	false	dbgi_012129		not_extracted
+jbp-new	76007	dbgi_012117	canonical	dbgi_012117	Curcuma petiolata		Curcuma petiolata	20260528133052	14.412493	50.12183	out_of_ch_range	true	false	false	false	dbgi_012117		not_extracted
+jbp-new	76008	dbgi_012191	canonical	dbgi_012191	Curcuma petiolata		Curcuma petiolata	20260528133539	14.412354	50.121815	out_of_ch_range	true	true	false	false	dbgi_012191	dbgi_012191_01	no_aliquot;no_ms
+jbp-new	76009	dbgi_012176	canonical	dbgi_012176	Curcuma petiolata		Curcuma petiolata	20260528133720	14.412389	50.12185	out_of_ch_range	true	true	false	false	dbgi_012176	dbgi_012176_01	no_aliquot;no_ms
+jbp-new	76010	dbgi_012172	canonical	dbgi_012172	Passiflora coriacea		Passiflora coriacea	20260528134158	14.4123335	50.12188	out_of_ch_range	true	true	false	false	dbgi_012172	dbgi_012172_01;dbgi_012172_02	no_aliquot;no_ms
+jbp-new	76011	dbgi_012203	canonical	dbgi_012203	Passiflora coriacea		Passiflora coriacea	20260528134441	14.412344	50.121887	out_of_ch_range	true	true	false	false	dbgi_012203	dbgi_012203_01	no_aliquot;no_ms
+jbp-new	76012	dbgi_012198	canonical	dbgi_012198	Passiflora coriacea		Passiflora coriacea	20260528134733	14.412322	50.12191	out_of_ch_range	true	true	false	false	dbgi_012198	dbgi_012198_01	no_aliquot;no_ms
+jbp-new	76013	dbgi_012333	canonical	dbgi_012333	Passiflora coriacea		Passiflora coriacea	20260528134953	14.412417	50.121845	out_of_ch_range	true	false	false	false	dbgi_012333		not_extracted
+jbp-new	76014	dbgi_012269	canonical	dbgi_012269	Passiflora citrina		Passiflora citrina	20260528135129	14.41235	50.121834	out_of_ch_range	true	false	false	false	dbgi_012269		not_extracted
+jbp-new	76015	dbgi_012205	canonical	dbgi_012205	Passiflora citrina		Passiflora citrina	20260528135320	14.412325	50.1219	out_of_ch_range	true	false	false	false	dbgi_012205		not_extracted
+jbp-new	76016	dbgi_012337	canonical	dbgi_012337	Passiflora citrina		Passiflora citrina	20260528135520	14.412362	50.121906	out_of_ch_range	true	true	false	false	dbgi_012337	dbgi_012337_01	no_aliquot;no_ms
+jbp-new	76017	dbgi_012220	canonical	dbgi_012220	Moringa oleifera		Moringa oleifera	20260528135659	14.412427	50.12196	out_of_ch_range	true	false	false	false	dbgi_012220		not_extracted
+jbp-new	76018	dbgi_012351	canonical	dbgi_012351	Passiflora citrina		Passiflora citrina	20260528140041	14.412322	50.121937	out_of_ch_range	true	true	false	false	dbgi_012351	dbgi_012351_01	no_aliquot;no_ms
+jbp-new	76019	dbgi_012257	canonical	dbgi_012257	Passiflora citrina		Passiflora citrina	20260528140224	14.412406	50.12181	out_of_ch_range	true	true	false	false	dbgi_012257	dbgi_012257_01	no_aliquot;no_ms
+jbp-new	76020	dbgi_012256	canonical	dbgi_012256	Tilia platyphyllos		Tilia platyphyllos	20260528142830	14.415141	50.119053	out_of_ch_range	true	true	false	false	dbgi_012256	dbgi_012256_01	no_aliquot;no_ms
+jbp-new	76021	dbgi_012247	canonical	dbgi_012247	Tilia platyphyllos		Tilia platyphyllos	20260528143212	14.415141	50.119053	out_of_ch_range	true	false	false	false	dbgi_012247		not_extracted
+jbp-new	76022	dbgi_012169	canonical	dbgi_012169	Tilia platyphyllos		Tilia platyphyllos	20260528143459	14.415141	50.119053	out_of_ch_range	true	true	true	false	dbgi_012169	dbgi_012169_01	no_ms
+jbp-new	76023	dbgi_012193	canonical	dbgi_012193	Allium schoenoprasum		Allium schoenoprasum	20260528145307	14.414984	50.118732	out_of_ch_range	true	true	false	false	dbgi_012193	dbgi_012193_01	no_aliquot;no_ms
+jbp-new	76024	dbgi_012136	canonical	dbgi_012136	Allium senescens		Allium senescens	20260528145532	14.414984	50.118732	out_of_ch_range	true	true	false	false	dbgi_012136	dbgi_012136_01	no_aliquot;no_ms
+jbp-new	76025	dbgi_012218	canonical	dbgi_012218	Allium schoenoprasum		Allium schoenoprasum	20260528145656	14.414695	50.117336	out_of_ch_range	true	true	false	false	dbgi_012218	dbgi_012218_01	no_aliquot;no_ms
+jbp-new	76026	dbgi_012209	canonical	dbgi_012209	Viburnum rhytidophyllum		Viburnum rhytidophyllum	20260528150356	14.414695	50.117336	out_of_ch_range	true	true	true	false	dbgi_012209	dbgi_012209_01;dbgi_012209_02	no_ms
+jbp-new	76027	dbgi_012304	canonical	dbgi_012304	Viburnum rhytidophyllum		Viburnum rhytidophyllum	20260528150603	14.414695	50.117336	out_of_ch_range	true	true	false	false	dbgi_012304	dbgi_012304_01;dbgi_012304_02	no_aliquot;no_ms
+jbp-new	76028	dbgi_012166	canonical	dbgi_012166	Viburnum rhytidophyllum		Viburnum rhytidophyllum	20260528150751	14.415017	50.11863	out_of_ch_range	true	false	false	false	dbgi_012166		not_extracted
+jbp-new	76029	dbgi_012214	canonical	dbgi_012214	Silybum marianum		Silybum marianum	20260528151120	14.414944	50.11876	out_of_ch_range	true	false	false	false	dbgi_012214		not_extracted
+jbp-new	76030	dbgi_012248	canonical	dbgi_012248	Silybum marianum		Silybum marianum	20260528151255	14.414944	50.11876	out_of_ch_range	true	true	false	false	dbgi_012248	dbgi_012248_01	no_aliquot;no_ms
+jbp-new	76031	dbgi_012119	canonical	dbgi_012119	Allium cernuum		Allium cernuum	20260528152519	14.414957	50.118645	out_of_ch_range	true	true	false	false	dbgi_012119	dbgi_012119_01	no_aliquot;no_ms
+jbp-new	76032	dbgi_012259	canonical	dbgi_012259	Allium cernuum		Allium cernuum	20260528152753	14.415003	50.118607	out_of_ch_range	true	false	false	false	dbgi_012259		not_extracted
+jbp-new	76033	dbgi_012184	canonical	dbgi_012184	Allium sp.		Allium sp.	20260528152944	14.414714	50.11721	out_of_ch_range	true	true	false	false	dbgi_012184	dbgi_012184_01	no_aliquot;no_ms
+jbp-new	76034	dbgi_012124	canonical	dbgi_012124	Allium tricoccum		Allium tricoccum	20260528153200	14.414714	50.11721	out_of_ch_range	true	true	false	false	dbgi_012124	dbgi_012124_01	no_aliquot;no_ms
+jbp-new	76035	dbgi_011791	canonical	dbgi_011791	Thymus kosteleckyanus		Thymus kosteleckyanus	20260528145406	14.415	50.1188	out_of_ch_range	true	true	false	false	dbgi_011791	dbgi_011791_01;dbgi_011791_02	no_aliquot;no_ms
+jbp-new	76036	dbgi_011980	canonical	dbgi_011980	Thymus kosteleckyanus		Thymus kosteleckyanus	20260528145606	14.414998	50.118805	out_of_ch_range	true	false	false	false	dbgi_011980		not_extracted
+jbp-new	76037	dbgi_011896	canonical	dbgi_011896	Thymus kosteleckyanus		Thymus kosteleckyanus	20260528145755	14.414996	50.118805	out_of_ch_range	true	false	false	false	dbgi_011896		not_extracted
+jbp-new	76038	dbgi_012179	canonical	dbgi_012179	Acanthopanax sieboldianus		Acanthopanax sieboldianus	20260528151225	14.414824	50.118538	out_of_ch_range	true	true	false	false	dbgi_012179	dbgi_012179_01	no_aliquot;no_ms
+jbp-new	76039	dbgi_012019	canonical	dbgi_012019	Acanthopanax sieboldianus		Acanthopanax sieboldianus	20260528151430	14.414824	50.118538	out_of_ch_range	true	false	false	false	dbgi_012019		not_extracted
+jbp-new	76040	dbgi_011797	canonical	dbgi_011797	Acanthopanax sieboldianus		Acanthopanax sieboldianus	20260528151650	14.414824	50.118538	out_of_ch_range	true	true	true	false	dbgi_011797	dbgi_011797_01	no_ms
+jbp-new	76041	dbgi_012131	canonical	dbgi_012131	Forage officinalis		Forage officinalis	20260528153107	14.414749	50.118675	out_of_ch_range	true	true	false	false	dbgi_012131	dbgi_012131_01	no_aliquot;no_ms
+jbp-new	76042	dbgi_012239	canonical	dbgi_012239	Borage officinalis		Borage officinalis	20260528154051	14.414991	50.118805	out_of_ch_range	true	true	true	false	dbgi_012239	dbgi_012239_01	no_ms
+jbp-new	76043	dbgi_012208	canonical	dbgi_012208	Borago officinalis		Borago officinalis	20260528155124	14.414991	50.118805	out_of_ch_range	true	true	false	false	dbgi_012208	dbgi_012208_01	no_aliquot;no_ms
+jbp-new	76044	dbgi_012419	canonical	dbgi_012419	Borago officinalis		Borago officinalis	20260528160924	14.414991	50.118805	out_of_ch_range	true	true	true	false	dbgi_012419	dbgi_012419_01	no_ms
+jbp-new	76045	dbgi_012290	canonical	dbgi_012290	Asparagus officinalis		Asparagus officinalis	20260528161343	14.415008	50.11888	out_of_ch_range	true	true	false	false	dbgi_012290	dbgi_012290_01	no_aliquot;no_ms
+jbp-new	76046	dbgi_012132	canonical	dbgi_012132	Asparagus officinalis		Asparagus officinalis	20260528161942	14.415008	50.11888	out_of_ch_range	true	true	false	false	dbgi_012132	dbgi_012132_01	no_aliquot;no_ms
+jbp-new	76047	dbgi_012194	canonical	dbgi_012194	Oxalis sp.		Oxalis sp.	20260528162514	14.415008	50.11888	out_of_ch_range	true	true	false	false	dbgi_012194	dbgi_012194_01	no_aliquot;no_ms
+jbp-new	76048	dbgi_012188	canonical	dbgi_012188	Oxalis sp.		Oxalis sp.	20260529105350	14.4150715	50.11884	out_of_ch_range	true	true	false	false	dbgi_012188	dbgi_012188_01	no_aliquot;no_ms
+jbp-new	76049	dbgi_012133	canonical	dbgi_012133	Oxalis sp.		Oxalis sp.	20260529111620	14.415081	50.11884	out_of_ch_range	true	false	false	false	dbgi_012133		not_extracted
+jbp-new	76050	dbgi_012126	canonical	dbgi_012126	Oxalis sp.		Oxalis sp.	20260529112011	14.415081	50.11884	out_of_ch_range	true	true	false	false	dbgi_012126	dbgi_012126_01	no_aliquot;no_ms
+jbp-new	76051	dbgi_012202	canonical	dbgi_012202	Oxalis sp.		Oxalis sp.	20260529112323	14.415081	50.11884	out_of_ch_range	true	true	true	false	dbgi_012202	dbgi_012202_01	no_ms
+jbp-new	76052	dbgi_012212	canonical	dbgi_012212	Oxalis sp.		Oxalis sp.	20260529112601	14.415081	50.11884	out_of_ch_range	true	true	false	false	dbgi_012212	dbgi_012212_01	no_aliquot;no_ms
+jbp-new	76053	dbgi_011969	canonical	dbgi_011969	Cuminum cyminum		Cuminum cyminum	20260529113151	14.415086	50.11886	out_of_ch_range	true	true	false	false	dbgi_011969	dbgi_011969_01	no_aliquot;no_ms
+jbp-new	76054	dbgi_012201	canonical	dbgi_012201	Cuminum cyminum		Cuminum cyminum	20260529113400	14.415082	50.11889	out_of_ch_range	true	false	false	false	dbgi_012201		not_extracted
+jbp-new	76055	dbgi_012420	canonical	dbgi_012420	Cuminum cyminum		Cuminum cyminum	20260529113805	14.415078	50.1189	out_of_ch_range	true	true	false	false	dbgi_012420	dbgi_012420_01	no_aliquot;no_ms
+jbp-new	76056	dbgi_012280	canonical	dbgi_012280	Cuminum cyminum		Cuminum cyminum	20260529114040	14.415078	50.1189	out_of_ch_range	true	true	false	false	dbgi_012280	dbgi_012280_01	no_aliquot;no_ms
+jbp-new	76353	dbgi_012655	canonical	dbgi_012655	Pterocarya stenoptera		Pterocarya stenoptera	20260702114059	14.415871	50.12121	out_of_ch_range	false	true	false	false		dbgi_012655_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76354	dbgi_012608	canonical	dbgi_012608	Pterocarya stenoptera		Pterocarya stenoptera	20260702114647	14.415871	50.12121	out_of_ch_range	false	true	false	false		dbgi_012608_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76355	dbgi_012688	canonical	dbgi_012688	Pulmonaria officinalis		Pulmonaria officinalis	20260702115827	14.417259	50.123486	out_of_ch_range	false	true	false	false		dbgi_012688_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76356	dbgi_012679	canonical	dbgi_012679	Pulmonaria officinalis		Pulmonaria officinalis	20260702120100	14.417259	50.123486	out_of_ch_range	false	true	false	false		dbgi_012679_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76357	dbgi_012680	canonical	dbgi_012680	Pulmonaria officinalis		Pulmonaria officinalis	20260702120346	14.41726	50.123493	out_of_ch_range	false	true	false	false		dbgi_012680_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76358	dbgi_012720	canonical	dbgi_012720	Luzula pilosa		Luzula pilosa	20260702120608	14.417122	50.123493	out_of_ch_range	false	true	false	false		dbgi_012720_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76359	dbgi_012568	canonical	dbgi_012568	Athyrium niponicum		Athyrium niponicum	20260702120815	14.417044	50.123444	out_of_ch_range	false	true	false	false		dbgi_012568_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76360	dbgi_012709	canonical	dbgi_012709	Athyrium niponicum		Athyrium niponicum	20260702121046	14.417044	50.123444	out_of_ch_range	false	true	false	false		dbgi_012709_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76361	dbgi_012553	canonical	dbgi_012553	Astilbe x arendsii		Astilbe x arendsii	20260702122141	14.41695	50.123363	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76362	dbgi_012660	canonical	dbgi_012660	Astilbe x arendsii		Astilbe x arendsii	20260702122422	14.41695	50.123363	out_of_ch_range	false	true	true	false		dbgi_012660_01	no_dried_link;no_ms
+jbp-new	76363	dbgi_012637	canonical	dbgi_012637	Astilbe x arendsii		Astilbe x arendsii	20260702122707	14.41695	50.123363	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76364	dbgi_012610	canonical	dbgi_012610	Pinellia tripartita		Pinellia tripartita	20260702123627	14.417063	50.123474	out_of_ch_range	false	true	false	false		dbgi_012610_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76365	dbgi_012718	canonical	dbgi_012718	Pinellia tripartita		Pinellia tripartita	20260702123903	14.417063	50.123474	out_of_ch_range	false	true	false	false		dbgi_012718_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76366	dbgi_012563	canonical	dbgi_012563	Pinellia tripartita		Pinellia tripartita	20260702124155	14.417063	50.123474	out_of_ch_range	false	true	false	false		dbgi_012563_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76367	dbgi_012554	canonical	dbgi_012554	Tilia cordata		Tilia cordata	20260702124444	14.416964	50.122623	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76368	dbgi_012592	canonical	dbgi_012592	Tilia cordata		Tilia cordata	20260702124702	14.416964	50.122623	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76369	dbgi_012550	canonical	dbgi_012550	Tilia cordata		Tilia cordata	20260702124953	14.416964	50.122623	out_of_ch_range	false	true	false	false		dbgi_012550_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76370	dbgi_012547	canonical	dbgi_012547	Tilia cordata		Tilia cordata	20260702125147	14.416964	50.122623	out_of_ch_range	false	true	false	false		dbgi_012547_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76371	dbgi_012565	canonical	dbgi_012565	Quercus rubra		Quercus rubra	20260702130731	14.417038	50.122723	out_of_ch_range	false	true	false	false		dbgi_012565_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76372	dbgi_012531	canonical	dbgi_012531	Quercus rubra		Quercus rubra	20260702131723	14.417036	50.122723	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76373	dbgi_012559	canonical	dbgi_012559	Quercus rubra		Quercus rubra	20260702131930	14.417036	50.122723	out_of_ch_range	false	true	true	false		dbgi_012559_01	no_dried_link;no_ms
+jbp-new	76374	dbgi_012573	canonical	dbgi_012573	Quercus rubra		Quercus rubra	20260702132143	14.41705	50.12274	out_of_ch_range	false	true	false	false		dbgi_012573_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76375	dbgi_012606	canonical	dbgi_012606	Quercus robur		Quercus robur	20260702132415	14.417005	50.122753	out_of_ch_range	false	true	false	false		dbgi_012606_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76376	dbgi_012632	canonical	dbgi_012632	Quercus robur		Quercus robur	20260702132604	14.417005	50.122753	out_of_ch_range	false	true	false	false		dbgi_012632_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76377	dbgi_012627	canonical	dbgi_012627	Quercus robur		Quercus robur	20260702132748	14.417005	50.122753	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76378	dbgi_012640	canonical	dbgi_012640	Quercus robur		Quercus robur	20260702132933	14.417005	50.122753	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76379	dbgi_012652	canonical	dbgi_012652	Quercus robur		Quercus robur	20260702133109	14.417005	50.122753	out_of_ch_range	false	true	false	false		dbgi_012652_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76380	dbgi_012586	canonical	dbgi_012586	Saxifraga rosaceae subsp. sponhemica		Saxifraga rosaceae subsp. sponhemica	20260702133732	14.412135	50.1217	out_of_ch_range	false	true	false	false		dbgi_012586_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76381	dbgi_012522	canonical	dbgi_012522	Poa riphaea		Poa riphaea	20260702134206	14.412114	50.12171	out_of_ch_range	false	true	false	false		dbgi_012522_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76382	dbgi_012564	canonical	dbgi_012564	Festuca psammophila		Festuca psammophila	20260702134650	14.412102	50.12168	out_of_ch_range	false	true	false	false		dbgi_012564_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76383	dbgi_012639	canonical	dbgi_012639	Festuca psammophila		Festuca psammophila	20260702134922	14.412102	50.12168	out_of_ch_range	false	true	false	false		dbgi_012639_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76384	dbgi_012581	canonical	dbgi_012581	Saxifraga bryoides		Saxifraga bryoides	20260702135537	14.41209	50.12168	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76385	dbgi_012587	canonical	dbgi_012587	Cicuta maculata		Cicuta maculata	20260702135843	14.412078	50.121693	out_of_ch_range	false	true	false	false		dbgi_012587_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76386	dbgi_012558	canonical	dbgi_012558	Cicuta maculata		Cicuta maculata	20260702144219	14.412077	50.121693	out_of_ch_range	false	true	false	false		dbgi_012558_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76387	dbgi_012625	canonical	dbgi_012625	Cicuta maculata		Cicuta maculata	20260702144654	14.412077	50.121693	out_of_ch_range	false	true	false	false		dbgi_012625_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76388	dbgi_012633	canonical	dbgi_012633	Cicuta maculata		Cicuta maculata	20260702144848	14.412077	50.121693	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76389	dbgi_012561	canonical	dbgi_012561	Saxifraga aizoides		Saxifraga aizoides	20260702145635	14.412068	50.121704	out_of_ch_range	false	true	false	false		dbgi_012561_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76390	dbgi_012616	canonical	dbgi_012616	Saxifraga aizoides		Saxifraga aizoides	20260702145938	14.412068	50.121704	out_of_ch_range	false	true	false	false		dbgi_012616_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76391	dbgi_012526	canonical	dbgi_012526	Saxifraga paniculata		Saxifraga paniculata	20260702150216	14.412072	50.121716	out_of_ch_range	false	true	false	false		dbgi_012526_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76392	dbgi_012543	canonical	dbgi_012543	Saxifraga paniculata		Saxifraga paniculata	20260702150443	14.412072	50.121716	out_of_ch_range	false	true	false	false		dbgi_012543_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76393	dbgi_012603	canonical	dbgi_012603	Saxifraga sp.		Saxifraga sp.	20260702150711	14.4120455	50.12171	out_of_ch_range	false	true	false	false		dbgi_012603_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76394	dbgi_012614	canonical	dbgi_012614	Oenanthe silaifolia		Oenanthe silaifolia	20260702150855	14.412039	50.121696	out_of_ch_range	false	true	false	false		dbgi_012614_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76395	dbgi_012598	canonical	dbgi_012598	Oenanthe silaifolia		Oenanthe silaifolia	20260702151035	14.412039	50.121696	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76396	dbgi_012551	canonical	dbgi_012551	Oenanthe silaifolia		Oenanthe silaifolia	20260702151215	14.412039	50.121696	out_of_ch_range	false	true	false	false		dbgi_012551_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76397	dbgi_012542	canonical	dbgi_012542	Narthecium ossifragum		Narthecium ossifragum	20260702151425	14.412045	50.121685	out_of_ch_range	false	true	false	false		dbgi_012542_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76398	dbgi_012605	canonical	dbgi_012605	"Thesium 
+linophyllon"		"Thesium 
+linophyllon"	20260702151626	14.41201	50.12169	out_of_ch_range	false	true	false	false		dbgi_012605_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76399	dbgi_012635	canonical	dbgi_012635	"Thesium 
+linophyllon"		"Thesium 
+linophyllon"	20260702151901	14.41201	50.12169	out_of_ch_range	false	true	false	false		dbgi_012635_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76400	dbgi_012669	canonical	dbgi_012669	Groenlandia densa		Groenlandia densa	20260702152411	14.412016	50.1217	out_of_ch_range	false	true	true	false		dbgi_012669_01	no_dried_link;no_ms
+jbp-new	76401	dbgi_012404	canonical	dbgi_012404	Groenlandia densa		Groenlandia densa	20260702152623	14.412011	50.12169	out_of_ch_range	false	true	false	false		dbgi_012404_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76402	dbgi_012641	canonical	dbgi_012641	Groenlandia densa		Groenlandia densa	20260702152811	14.412011	50.12169	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76403	dbgi_012630	canonical	dbgi_012630	Coriaria japonica		Coriaria japonica	20260702153440	14.412037	50.121727	out_of_ch_range	false	true	true	false		dbgi_012630_01	no_dried_link;no_ms
+jbp-new	76404	dbgi_012710	canonical	dbgi_012710	Coriaria japonica		Coriaria japonica	20260702153757	14.412037	50.121727	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76405	dbgi_012711	canonical	dbgi_012711	Carex shimidzensis		Carex shimidzensis	20260702154006	14.412026	50.121708	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76406	dbgi_012274	canonical	dbgi_012274	Carex shimidzensis		Carex shimidzensis	20260702154147	14.412026	50.121708	out_of_ch_range	false	true	false	false		dbgi_012274_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76407	dbgi_012644	canonical	dbgi_012644	Carex shimidzensis		Carex shimidzensis	20260702154320	14.412026	50.121708	out_of_ch_range	false	true	false	false		dbgi_012644_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76408	dbgi_012705	canonical	dbgi_012705	Carex pulicaris		Carex pulicaris	20260702154814	14.412062	50.121727	out_of_ch_range	false	true	false	false		dbgi_012705_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76409	dbgi_012691	canonical	dbgi_012691	Carex pulicaris		Carex pulicaris	20260702155012	14.412062	50.121727	out_of_ch_range	false	true	false	false		dbgi_012691_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76410	dbgi_012697	canonical	dbgi_012697	Poa crassipes		Poa crassipes	20260702160015	14.412048	50.12174	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76411	dbgi_012628	canonical	dbgi_012628	Poa crassipes		Poa crassipes	20260702160139	14.412048	50.12174	out_of_ch_range	false	true	false	false		dbgi_012628_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76412	dbgi_012687	canonical	dbgi_012687	Danthonia alpina		Danthonia alpina	20260702160338	14.412058	50.121746	out_of_ch_range	false	true	false	false		dbgi_012687_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76413	dbgi_012699	canonical	dbgi_012699	Danthonia alpina		Danthonia alpina	20260702160545	14.412058	50.121746	out_of_ch_range	false	true	false	false		dbgi_012699_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76414	dbgi_012359	canonical	dbgi_012359	Koeleria glauca		Koeleria glauca	20260702160727	14.412077	50.121735	out_of_ch_range	false	true	false	false		dbgi_012359_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76415	dbgi_012401	canonical	dbgi_012401	Poa badensis		Poa badensis	20260702161210	14.412091	50.121716	out_of_ch_range	false	true	true	false		dbgi_012401_01	no_dried_link;no_ms
+jbp-new	76416	dbgi_012708	canonical	dbgi_012708	Carex atrata		Carex atrata	20260702161431	14.412087	50.121708	out_of_ch_range	false	true	false	false		dbgi_012708_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76417	dbgi_012527	canonical	dbgi_012527	Potamogeton perfoliatus		Potamogeton perfoliatus	20260702161735	14.412104	50.12173	out_of_ch_range	false	true	false	false		dbgi_012527_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76418	dbgi_012336	canonical	dbgi_012336	Potamogeton perfoliatus		Potamogeton perfoliatus	20260702162621	14.412127	50.121723	out_of_ch_range	false	true	false	false		dbgi_012336_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76419	dbgi_012629	canonical	dbgi_012629	Potamogeton perfoliatus		Potamogeton perfoliatus	20260702162830	14.412127	50.121723	out_of_ch_range	false	true	false	false		dbgi_012629_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76420	dbgi_012278	canonical	dbgi_012278	Apium repens		Apium repens	20260702163139	14.41211	50.1217	out_of_ch_range	false	true	false	false		dbgi_012278_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76421	dbgi_012665	canonical	dbgi_012665	Apium repens		Apium repens	20260702163425	14.41211	50.1217	out_of_ch_range	false	true	false	false		dbgi_012665_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76422	dbgi_012262	canonical	dbgi_012262	Apium repens		Apium repens	20260702163809	14.41211	50.1217	out_of_ch_range	false	true	false	false		dbgi_012262_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76423	dbgi_012636	canonical	dbgi_012636	Carex distans		Carex distans	20260702164041	14.412039	50.12167	out_of_ch_range	false	true	false	false		dbgi_012636_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76424	dbgi_012684	canonical	dbgi_012684	Carex distans		Carex distans	20260702164259	14.412039	50.12167	out_of_ch_range	false	true	false	false		dbgi_012684_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76425	dbgi_012634	canonical	dbgi_012634	Carex otrubae		Carex otrubae	20260702164521	14.412062	50.12167	out_of_ch_range	false	true	false	false		dbgi_012634_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76426	dbgi_012661	canonical	dbgi_012661	Carex otrubae		Carex otrubae	20260702164650	14.412062	50.12167	out_of_ch_range	false	true	false	false		dbgi_012661_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76427	dbgi_012657	canonical	dbgi_012657	Carex otrubae		Carex otrubae	20260702164827	14.412062	50.12167	out_of_ch_range	false	true	false	false		dbgi_012657_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76428	dbgi_012620	canonical	dbgi_012620	Lolium temulentum		Lolium temulentum	20260702165103	14.41208	50.121677	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76429	dbgi_012716	canonical	dbgi_012716	Lolium temulentum		Lolium temulentum	20260702165555	14.41208	50.121677	out_of_ch_range	false	false	false	false			no_dried_link;not_extracted
+jbp-new	76430	dbgi_012690	canonical	dbgi_012690	Lolium temulentum		Lolium temulentum	20260702165749	14.41208	50.121677	out_of_ch_range	false	true	false	false		dbgi_012690_01	no_dried_link;no_aliquot;no_ms
+jbp-new	76431	dbgi_012643	canonical	dbgi_012643	Lolium temulentum		Lolium temulentum	20260702170006	14.41208	50.121677	out_of_ch_range	false	true	false	false		dbgi_012643_01	no_dried_link;no_aliquot;no_ms

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T10:36:13.469857+00:00",
+  "generated_at": "2026-07-21T10:47:21.587403+00:00",
   "collection_counts": {
     "Field_Data": 10488,
     "Dried_Samples_Data": 10468,
@@ -8,6 +8,9 @@
     "MS_Data": 4245
   },
   "reports": [
+    "coordinates_missing_or_invalid.tsv",
+    "coordinates_outside_ch_range.tsv",
+    "coordinates_swapped_ch.tsv",
     "duplicate_observation_fingerprints.tsv",
     "duplicate_sample_ids_across_projects.tsv",
     "duplicate_sample_ids_within_project.tsv",
@@ -16,6 +19,7 @@
     "integrity_report_index.json",
     "lineage_issues.tsv",
     "lineage_orphans.tsv",
+    "lineage_status_by_sample.tsv",
     "lineage_summary_by_project.tsv",
     "project_summary.json",
     "project_summary.tsv"

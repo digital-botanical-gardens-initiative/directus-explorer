@@ -1,0 +1,66 @@
+{
+  "valid": true,
+  "stats": {
+    "tasks": 1,
+    "errors": 0,
+    "warnings": 0,
+    "seconds": 0.093
+  },
+  "warnings": [],
+  "errors": [],
+  "tasks": [
+    {
+      "name": "grad_metadata_complete_sampleonly",
+      "type": "table",
+      "valid": true,
+      "place": "data/working/champex_gradient/grad_metadata_complete_sampleonly.csv",
+      "labels": [
+        "Filename",
+        "Extension",
+        "Localisation.in.Sciex.OS.project",
+        "Rack",
+        "Vial",
+        "sample_id",
+        "number",
+        "type",
+        "collector_fullname",
+        "observation_subject",
+        "inat_upload",
+        "is_wild",
+        "taxon_name",
+        "no_name_on_list",
+        "name_proposition",
+        "picture_panel",
+        "picture_general",
+        "picture_detail",
+        "picture_cut",
+        "picture_panel_label",
+        "picture_free",
+        "x_coord",
+        "y_coord",
+        "ipen",
+        "herbivory_percent",
+        "comment_eco",
+        "soil_type",
+        "weather",
+        "temperature_.C",
+        "comment_env",
+        "collector_orcid",
+        "collector_inat",
+        "date"
+      ],
+      "stats": {
+        "errors": 0,
+        "warnings": 0,
+        "seconds": 0.093,
+        "md5": "b325407e7378608d54f1632ebbb7833e",
+        "sha256": "c1547ea7fe34c720524ab227ec090d83fd0e4c04d635202f70bccae4d77f60fc",
+        "bytes": 237254,
+        "fields": 33,
+        "rows": 395
+      },
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "fields": [
+    {
+      "name": "Filename",
+      "type": "string"
+    },
+    {
+      "name": "Extension",
+      "type": "string"
+    },
+    {
+      "name": "Localisation.in.Sciex.OS.project",
+      "type": "string"
+    },
+    {
+      "name": "Rack",
+      "type": "integer"
+    },
+    {
+      "name": "Vial",
+      "type": "string"
+    },
+    {
+      "name": "sample_id",
+      "type": "string"
+    },
+    {
+      "name": "number",
+      "type": "string"
+    },
+    {
+      "name": "type",
+      "type": "string"
+    },
+    {
+      "name": "collector_fullname",
+      "type": "string"
+    },
+    {
+      "name": "observation_subject",
+      "type": "string"
+    },
+    {
+      "name": "inat_upload",
+      "type": "string"
+    },
+    {
+      "name": "is_wild",
+      "type": "string"
+    },
+    {
+      "name": "taxon_name",
+      "type": "string"
+    },
+    {
+      "name": "no_name_on_list",
+      "type": "string"
+    },
+    {
+      "name": "name_proposition",
+      "type": "string"
+    },
+    {
+      "name": "picture_panel",
+      "type": "string"
+    },
+    {
+      "name": "picture_general",
+      "type": "string"
+    },
+    {
+      "name": "picture_detail",
+      "type": "string"
+    },
+    {
+      "name": "picture_cut",
+      "type": "string"
+    },
+    {
+      "name": "picture_panel_label",
+      "type": "string"
+    },
+    {
+      "name": "picture_free",
+      "type": "string"
+    },
+    {
+      "name": "x_coord",
+      "type": "string"
+    },
+    {
+      "name": "y_coord",
+      "type": "string"
+    },
+    {
+      "name": "ipen",
+      "type": "string"
+    },
+    {
+      "name": "herbivory_percent",
+      "type": "string"
+    },
+    {
+      "name": "comment_eco",
+      "type": "string"
+    },
+    {
+      "name": "soil_type",
+      "type": "string"
+    },
+    {
+      "name": "weather",
+      "type": "string"
+    },
+    {
+      "name": "temperature_.C",
+      "type": "string"
+    },
+    {
+      "name": "comment_env",
+      "type": "string"
+    },
+    {
+      "name": "collector_orcid",
+      "type": "string"
+    },
+    {
+      "name": "collector_inat",
+      "type": "string"
+    },
+    {
+      "name": "date",
+      "type": "string"
+    }
+  ]
+}

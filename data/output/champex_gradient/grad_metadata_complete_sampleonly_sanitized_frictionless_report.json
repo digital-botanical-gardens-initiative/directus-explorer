@@ -1,0 +1,73 @@
+{
+  "valid": true,
+  "stats": {
+    "tasks": 1,
+    "errors": 0,
+    "warnings": 0,
+    "seconds": 0.144
+  },
+  "warnings": [],
+  "errors": [],
+  "tasks": [
+    {
+      "name": "grad_metadata_complete_sampleonly_sanitized",
+      "type": "table",
+      "valid": true,
+      "place": "data/output/champex_gradient/grad_metadata_complete_sampleonly_sanitized.csv",
+      "labels": [
+        "filename",
+        "extension",
+        "localisation_in_sciex_os_project",
+        "rack",
+        "vial",
+        "sample_id",
+        "number",
+        "type",
+        "collector_fullname",
+        "observation_subject",
+        "inat_upload",
+        "is_wild",
+        "taxon_name",
+        "no_name_on_list",
+        "name_proposition",
+        "picture_panel",
+        "picture_general",
+        "picture_detail",
+        "picture_cut",
+        "picture_panel_label",
+        "picture_free",
+        "x_coord",
+        "y_coord",
+        "ipen",
+        "herbivory_percent",
+        "comment_eco",
+        "soil_type",
+        "weather",
+        "temperature_c",
+        "comment_env",
+        "collector_orcid",
+        "collector_inat",
+        "raw_date",
+        "file_type",
+        "injection",
+        "container_id",
+        "ionization_mode",
+        "normalized_date",
+        "date_parse_status",
+        "filename_date_token"
+      ],
+      "stats": {
+        "errors": 0,
+        "warnings": 0,
+        "seconds": 0.144,
+        "md5": "cc855f0c68ec59a9a57c7ac4b74e562e",
+        "sha256": "7b66a29a0793641b26d5a20d3d033d0a0a176d61eaead86e57ff417a12608520",
+        "bytes": 246037,
+        "fields": 40,
+        "rows": 395
+      },
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

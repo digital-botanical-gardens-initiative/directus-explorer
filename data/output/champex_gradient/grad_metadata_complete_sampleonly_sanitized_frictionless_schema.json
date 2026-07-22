@@ -1,0 +1,164 @@
+{
+  "fields": [
+    {
+      "name": "filename",
+      "type": "string"
+    },
+    {
+      "name": "extension",
+      "type": "string"
+    },
+    {
+      "name": "localisation_in_sciex_os_project",
+      "type": "string"
+    },
+    {
+      "name": "rack",
+      "type": "integer"
+    },
+    {
+      "name": "vial",
+      "type": "string"
+    },
+    {
+      "name": "sample_id",
+      "type": "string"
+    },
+    {
+      "name": "number",
+      "type": "any"
+    },
+    {
+      "name": "type",
+      "type": "string"
+    },
+    {
+      "name": "collector_fullname",
+      "type": "string"
+    },
+    {
+      "name": "observation_subject",
+      "type": "string"
+    },
+    {
+      "name": "inat_upload",
+      "type": "boolean"
+    },
+    {
+      "name": "is_wild",
+      "type": "boolean"
+    },
+    {
+      "name": "taxon_name",
+      "type": "string"
+    },
+    {
+      "name": "no_name_on_list",
+      "type": "boolean"
+    },
+    {
+      "name": "name_proposition",
+      "type": "any"
+    },
+    {
+      "name": "picture_panel",
+      "type": "string"
+    },
+    {
+      "name": "picture_general",
+      "type": "string"
+    },
+    {
+      "name": "picture_detail",
+      "type": "string"
+    },
+    {
+      "name": "picture_cut",
+      "type": "string"
+    },
+    {
+      "name": "picture_panel_label",
+      "type": "string"
+    },
+    {
+      "name": "picture_free",
+      "type": "any"
+    },
+    {
+      "name": "x_coord",
+      "type": "number"
+    },
+    {
+      "name": "y_coord",
+      "type": "number"
+    },
+    {
+      "name": "ipen",
+      "type": "any"
+    },
+    {
+      "name": "herbivory_percent",
+      "type": "any"
+    },
+    {
+      "name": "comment_eco",
+      "type": "any"
+    },
+    {
+      "name": "soil_type",
+      "type": "any"
+    },
+    {
+      "name": "weather",
+      "type": "any"
+    },
+    {
+      "name": "temperature_c",
+      "type": "any"
+    },
+    {
+      "name": "comment_env",
+      "type": "any"
+    },
+    {
+      "name": "collector_orcid",
+      "type": "string"
+    },
+    {
+      "name": "collector_inat",
+      "type": "string"
+    },
+    {
+      "name": "raw_date",
+      "type": "datetime"
+    },
+    {
+      "name": "file_type",
+      "type": "string"
+    },
+    {
+      "name": "injection",
+      "type": "string"
+    },
+    {
+      "name": "container_id",
+      "type": "string"
+    },
+    {
+      "name": "ionization_mode",
+      "type": "string"
+    },
+    {
+      "name": "normalized_date",
+      "type": "datetime"
+    },
+    {
+      "name": "date_parse_status",
+      "type": "string"
+    },
+    {
+      "name": "filename_date_token",
+      "type": "integer"
+    }
+  ]
+}

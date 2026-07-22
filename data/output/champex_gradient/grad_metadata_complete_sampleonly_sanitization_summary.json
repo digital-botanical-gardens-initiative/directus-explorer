@@ -1,0 +1,21 @@
+{
+  "raw_path": "data/working/champex_gradient/grad_metadata_complete_sampleonly.csv",
+  "original_copy_path": "data/output/champex_gradient/original/grad_metadata_complete_sampleonly.csv",
+  "sanitized_path": "data/output/champex_gradient/grad_metadata_complete_sampleonly_sanitized.csv",
+  "import_path": "data/output/champex_gradient/grad_metadata_complete_sampleonly_injection_import.csv",
+  "issues_path": "data/output/champex_gradient/grad_metadata_complete_sampleonly_sanitization_issues.tsv",
+  "row_count": 395,
+  "file_type_counts": {
+    "sample": 395
+  },
+  "sample_id_count": 395,
+  "duplicate_sample_id_count": 0,
+  "ionization_mode_counts": {
+    "positive": 395
+  },
+  "date_parse_status_counts": {
+    "valid": 379,
+    "missing": 16
+  },
+  "issue_counts": {}
+}

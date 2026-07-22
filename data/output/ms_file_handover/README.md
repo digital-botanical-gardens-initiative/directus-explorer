@@ -44,20 +44,13 @@ whole computer unless needed, because it can take a long time.
 Example for Champex gradient:
 
 ```bash
+PROJECT_NAME="champex_gradient"
 PROJECT_TSV="/path/to/champex_gradient__ms_filename_sample_id.tsv"
 SEARCH_DIR="/path/to/folder/containing/ms/files"
+UPLOAD_DIR="${PROJECT_NAME}_files_for_upload"
 ```
 
-List all files found in `SEARCH_DIR`:
-
-```bash
-awk -F '\t' 'NR > 1 {print $3}' "$PROJECT_TSV" |
-while read -r stem; do
-  find "$SEARCH_DIR" \( -iname "${stem}.mzML" -o -iname "${stem}.mzXML" \)
-done
-```
-
-Save the list of found files:
+Find all matching `.mzML` and `.mzXML` files once, and save the result:
 
 ```bash
 awk -F '\t' 'NR > 1 {print $3}' "$PROJECT_TSV" |
@@ -66,18 +59,36 @@ while read -r stem; do
 done > found_ms_files.txt
 ```
 
-Copy all found files to a folder for upload:
+Copy all found files to the project upload folder:
 
 ```bash
-mkdir -p files_for_upload
+mkdir -p "$UPLOAD_DIR"
 
-awk -F '\t' 'NR > 1 {print $3}' "$PROJECT_TSV" |
-while read -r stem; do
-  find "$SEARCH_DIR" \( -iname "${stem}.mzML" -o -iname "${stem}.mzXML" \)
-done |
 while read -r file; do
-  cp "$file" files_for_upload/
-done
+  cp "$file" "$UPLOAD_DIR/"
+done < found_ms_files.txt
+```
+
+Check how many files were expected and how many were copied:
+
+```bash
+expected=$(awk -F '\t' 'NR > 1 {print $3}' "$PROJECT_TSV" | sort -u | wc -l)
+found=$(find "$UPLOAD_DIR" -type f \( -iname '*.mzML' -o -iname '*.mzXML' \) | wc -l)
+echo "Expected: $expected"
+echo "Copied:   $found"
+```
+
+Optional: make a missing-file report from the copied files:
+
+```bash
+awk -F '\t' 'NR > 1 {print $3}' "$PROJECT_TSV" | sort -u > expected_stems.txt
+
+find "$UPLOAD_DIR" -type f \( -iname '*.mzML' -o -iname '*.mzXML' \) \
+  -exec basename {} \; |
+sed -E 's/\.(mzML|mzXML)$//' |
+sort -u > found_stems.txt
+
+comm -23 expected_stems.txt found_stems.txt > missing_stems.txt
 ```
 
 If you really need to search from the current folder, set:
@@ -86,30 +97,8 @@ If you really need to search from the current folder, set:
 SEARCH_DIR="."
 ```
 
-Check how many files were expected and how many were found:
-
-```bash
-expected=$(awk -F '\t' 'NR > 1 {print $3}' "$PROJECT_TSV" | sort -u | wc -l)
-found=$(find files_for_upload -type f \( -iname '*.mzML' -o -iname '*.mzXML' \) | wc -l)
-echo "Expected: $expected"
-echo "Found:    $found"
-```
-
-Make a missing-file report:
-
-```bash
-awk -F '\t' 'NR > 1 {print $3}' "$PROJECT_TSV" | sort -u > expected_stems.txt
-
-find files_for_upload -type f \( -iname '*.mzML' -o -iname '*.mzXML' \) \
-  -exec basename {} \; |
-sed -E 's/\.(mzML|mzXML)$//' |
-sort -u > found_stems.txt
-
-comm -23 expected_stems.txt found_stems.txt > missing_stems.txt
-```
-
 `missing_stems.txt` will contain filename stems from the TSV that were not found
-in `files_for_upload`.
+in the project upload folder.
 
 ## Finding One File Manually
 

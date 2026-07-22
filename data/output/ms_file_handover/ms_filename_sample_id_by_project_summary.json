@@ -1,0 +1,46 @@
+{
+  "output_path": "data/output/ms_file_handover/ms_filename_sample_id_by_project.tsv",
+  "unresolved_output_path": "data/output/ms_file_handover/ms_filename_sample_id_unresolved.tsv",
+  "project_output_paths": {
+    "artemisia_absinthium": "data/output/ms_file_handover/by_project/artemisia_absinthium__ms_filename_sample_id.tsv",
+    "bioblitz_vinesch": "data/output/ms_file_handover/by_project/bioblitz_vinesch__ms_filename_sample_id.tsv",
+    "champex_gradient": "data/output/ms_file_handover/by_project/champex_gradient__ms_filename_sample_id.tsv",
+    "droguier_jbn": "data/output/ms_file_handover/by_project/droguier_jbn__ms_filename_sample_id.tsv",
+    "heloise_bachelor_FiBL": "data/output/ms_file_handover/by_project/heloise_bachelor_FiBL__ms_filename_sample_id.tsv",
+    "jbc": "data/output/ms_file_handover/by_project/jbc__ms_filename_sample_id.tsv",
+    "jbn": "data/output/ms_file_handover/by_project/jbn__ms_filename_sample_id.tsv",
+    "jbp": "data/output/ms_file_handover/by_project/jbp__ms_filename_sample_id.tsv",
+    "jbuf": "data/output/ms_file_handover/by_project/jbuf__ms_filename_sample_id.tsv",
+    "sbl_20004": "data/output/ms_file_handover/by_project/sbl_20004__ms_filename_sample_id.tsv"
+  },
+  "directus_ms_row_count": 5617,
+  "handover_row_count": 5555,
+  "resolved_count": 5555,
+  "unresolved_count": 62,
+  "rows_by_project": {
+    "artemisia_absinthium": 485,
+    "bioblitz_vinesch": 490,
+    "champex_gradient": 378,
+    "droguier_jbn": 509,
+    "heloise_bachelor_FiBL": 232,
+    "jbc": 126,
+    "jbn": 859,
+    "jbp": 78,
+    "jbuf": 2355,
+    "sbl_20004": 43
+  },
+  "unresolved_rows_by_parent_container_prefix": {
+    "blk": 28,
+    "dbgi": 32,
+    "vine": 2
+  },
+  "rows_by_resolution_status": {
+    "unresolved": 62,
+    "resolved": 5555
+  },
+  "rows_by_resolution_path": {
+    "aliquot_to_extraction_to_original_sample": 3256,
+    "no_lineage_match": 4,
+    "extraction_to_original_sample": 2357
+  }
+}

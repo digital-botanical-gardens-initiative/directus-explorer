@@ -1,0 +1,47 @@
+{
+  "valid": true,
+  "stats": {
+    "tasks": 1,
+    "errors": 0,
+    "warnings": 0,
+    "seconds": 0.063
+  },
+  "warnings": [],
+  "errors": [],
+  "tasks": [
+    {
+      "name": "jbp_batch006_metadata_sanitized",
+      "type": "table",
+      "valid": true,
+      "place": "data/output/jbp-new/batch006/jbp_batch006_metadata_sanitized.csv",
+      "labels": [
+        "qfield_project",
+        "sample_id",
+        "ms_filename",
+        "ms_data_id",
+        "ms_parent_container_id",
+        "injection_method",
+        "taxon_name",
+        "file_type",
+        "injection",
+        "container_id",
+        "ionization_mode",
+        "normalized_filename",
+        "filename_has_supported_extension",
+        "filename_date_token"
+      ],
+      "stats": {
+        "errors": 0,
+        "warnings": 0,
+        "seconds": 0.063,
+        "md5": "79a0413d8e38638334bf336e9b785e96",
+        "sha256": "a6822fedfd46dfa7a209f7ee78e1798e60019ec6ff8d3954cc4255bda71f30c0",
+        "bytes": 19302,
+        "fields": 14,
+        "rows": 76
+      },
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

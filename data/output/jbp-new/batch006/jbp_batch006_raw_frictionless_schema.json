@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "name": "qfield_project",
+      "type": "string"
+    },
+    {
+      "name": "sample_id",
+      "type": "string"
+    },
+    {
+      "name": "ms_filename",
+      "type": "string"
+    },
+    {
+      "name": "ms_data_id",
+      "type": "integer"
+    },
+    {
+      "name": "ms_parent_container_id",
+      "type": "string"
+    },
+    {
+      "name": "injection_method",
+      "type": "string"
+    },
+    {
+      "name": "taxon_name",
+      "type": "string"
+    }
+  ]
+}

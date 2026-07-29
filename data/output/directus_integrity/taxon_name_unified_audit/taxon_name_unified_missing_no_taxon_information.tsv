@@ -1,0 +1,172 @@
+project	field_data_id	sample_id	stored_taxon_name_unified	stored_placeholder_status	expected_unified_taxon_name	expected_unified_taxon_source	expected_unified_taxon_status	source_taxon_fields_present	source_taxon_field_conflict	taxon_name_final	taxon_name	sample_name	name_proposition	match_name	MatchedCanonical	species_name	date	latitude	longitude	source_values_normalized	issues
+jbuf	65887	dbgi_000461					missing_all_taxon_information											7.1566825	46.792492		missing_unified_taxon_name
+jbuf	65894	dbgi_000437					missing_all_taxon_information											7.1566963	46.792507		missing_unified_taxon_name
+jbuf	65896	dbgi_000442					missing_all_taxon_information											7.1566916	46.792492		missing_unified_taxon_name
+jbuf	65982	dbgi_000445					missing_all_taxon_information											7.156759	46.792366		missing_unified_taxon_name
+jbuf	65987	dbgi_000530					missing_all_taxon_information											7.156644	46.79246		missing_unified_taxon_name
+jbuf	66000	dbgi_000533					missing_all_taxon_information											7.1566625	46.792416		missing_unified_taxon_name
+jbuf	66044	dbgi_000503					missing_all_taxon_information											7.1571026	46.79242		missing_unified_taxon_name
+jbuf	66045	dbgi_000881					missing_all_taxon_information											7.156628	46.792343		missing_unified_taxon_name
+jbuf	66052	dbgi_000884					missing_all_taxon_information											7.156633	46.792336		missing_unified_taxon_name
+jbuf	66054	dbgi_000559					missing_all_taxon_information											7.1566367	46.79233		missing_unified_taxon_name
+jbuf	66057	dbgi_000874					missing_all_taxon_information											7.1567016	46.792236		missing_unified_taxon_name
+jbuf	66058	dbgi_000877					missing_all_taxon_information											7.1566534	46.792274		missing_unified_taxon_name
+jbuf	66062	dbgi_000561					missing_all_taxon_information											7.156585	46.792355		missing_unified_taxon_name
+jbuf	66071	dbgi_000513					missing_all_taxon_information											7.1565776	46.792255		missing_unified_taxon_name
+jbn	68572	dbgi_002234					missing_all_taxon_information										20240709115541	6.9351068	47.000313		missing_unified_taxon_name
+jbn	68574	dbgi_002105					missing_all_taxon_information										20240709120317	6.9350867	47.000317		missing_unified_taxon_name
+jbn	68586	dbgi_002180					missing_all_taxon_information										20240708105411	6.9349194	47.000183		missing_unified_taxon_name
+jbn	68611	dbgi_002201					missing_all_taxon_information										20240708125901	6.934982	47.000237		missing_unified_taxon_name
+jbn	68627	dbgi_002122					missing_all_taxon_information										20240708142910	6.935096	47.000248		missing_unified_taxon_name
+jbn	68629	dbgi_002143					missing_all_taxon_information										20240708144150	6.935015	47.000244		missing_unified_taxon_name
+jbn	68637	dbgi_001993					missing_all_taxon_information										20240708151625	6.9351077	47.00027		missing_unified_taxon_name
+jbn	68736	dbgi_234567					missing_all_taxon_information										20240716153731	6.9342027	47.000496		missing_unified_taxon_name
+jbn	68744	dbgi_345678					missing_all_taxon_information										20240719141354	6.934498	47.000786		missing_unified_taxon_name
+jbn	68745	dbgi_3456789					missing_all_taxon_information										20240722071339	6.934381	47.00079		missing_unified_taxon_name
+jbn	68746	dbgi_9876543					missing_all_taxon_information										20240722071600	6.9344625	47.000828		missing_unified_taxon_name
+jbn	69109	dbgi_003747					missing_all_taxon_information										20240812151637	6.9336414	46.999607		missing_unified_taxon_name
+jbn	69110	dbgi_003874					missing_all_taxon_information										20240812152034	6.933653	46.99961		missing_unified_taxon_name
+jbn	69112	dbgi_003756					missing_all_taxon_information										20240812152727	6.9336653	46.999615		missing_unified_taxon_name
+jbn	69114	dbgi_003755					missing_all_taxon_information										20240812153613	6.9336824	46.99961		missing_unified_taxon_name
+jbn	69117	dbgi_003876					missing_all_taxon_information										20240812155250	6.93375	46.99965		missing_unified_taxon_name
+jbn	69118	dbgi_003875					missing_all_taxon_information										20240812155810	6.933737	46.99966		missing_unified_taxon_name
+jbn	69121	dbgi_003873					missing_all_taxon_information										20240812161843	6.9336443	46.999653		missing_unified_taxon_name
+jbn	69127	dbgi_003275					missing_all_taxon_information										20240813111332	6.93389	46.999695		missing_unified_taxon_name
+jbn	69128	dbgi_002229					missing_all_taxon_information										20240813111741	6.9339795	46.9997		missing_unified_taxon_name
+jbn	69130	dbgi_002043					missing_all_taxon_information										20240813112703	6.93394	46.999683		missing_unified_taxon_name
+jbn	69132	dbgi_003398					missing_all_taxon_information										20240813113623	6.933958	46.999706		missing_unified_taxon_name
+jbn	69135	dbgi_003393					missing_all_taxon_information										20240813114941	6.9340043	46.999733		missing_unified_taxon_name
+jbn	69137	dbgi_003444					missing_all_taxon_information										20240813125600	6.933755	46.999683		missing_unified_taxon_name
+jbn	69139	dbgi_003268					missing_all_taxon_information										20240813130329	6.933753	46.999683		missing_unified_taxon_name
+jbn	69182	dbgi_003843					missing_all_taxon_information										20240813094730	6.9337764	46.999645		missing_unified_taxon_name
+jbn	69187	dbgi_003826					missing_all_taxon_information										20240813101252	6.9338064	46.999653		missing_unified_taxon_name
+jbn	69193	dbgi_003855					missing_all_taxon_information										20240813103925	6.93392	46.999657		missing_unified_taxon_name
+jbn	69194	dbgi_003812					missing_all_taxon_information										20240813104304	6.933915	46.999653		missing_unified_taxon_name
+jbn	69351	dbgi_003792					missing_all_taxon_information										20240826120538	6.9340515	46.999664		missing_unified_taxon_name
+jbn	69384	dbgi_003564					missing_all_taxon_information										20240826143748	6.9342217	46.999588		missing_unified_taxon_name
+jbn	69415	dbgi_3456780					missing_all_taxon_information										20240829100504	6.9343753	47.00052		missing_unified_taxon_name
+jbn	69416	dbgi_765432					missing_all_taxon_information										20240829100700	6.934404	47.000595		missing_unified_taxon_name
+jbn	69417	dbgi_111111					missing_all_taxon_information										20240829102150	6.9347987	47.000797		missing_unified_taxon_name
+jbn	69418	dbgi_234123					missing_all_taxon_information										20240829104209	6.933476	47.000717		missing_unified_taxon_name
+jbn	69419	dbgi_123123					missing_all_taxon_information										20240829104944	6.933409	47.00077		missing_unified_taxon_name
+jbuf	70096	obs_nan_nan					missing_all_taxon_information										20250411152125				missing_unified_taxon_name
+medicin_alps	71304	meda_000001					missing_all_taxon_information										20250613163453	6.419377	45.03996		missing_unified_taxon_name
+medicin_alps	71346	meda_000157					missing_all_taxon_information										20250623121524	6.41941	45.039776		missing_unified_taxon_name
+medicin_alps	71350	meda_000161					missing_all_taxon_information										20250623123349	6.4192915	45.03985		missing_unified_taxon_name
+medicin_alps	71356	meda_000167					missing_all_taxon_information										20250623125937	6.4191036	45.039932		missing_unified_taxon_name
+medicin_alps	71360	meda_000171					missing_all_taxon_information										20250623132214	6.419015	45.04004		missing_unified_taxon_name
+medicin_alps	71566	meda_000177					missing_all_taxon_information										20250624103840	6.419225	45.04002		missing_unified_taxon_name
+medicin_alps	71568	meda_000179 lo					missing_all_taxon_information										20250624104718	6.4194183	45.03983		missing_unified_taxon_name
+medicin_alps	71570	meda_000181					missing_all_taxon_information										20250624105332	6.41937	45.039856		missing_unified_taxon_name
+medicin_alps	71572	meda_000183					missing_all_taxon_information										20250624110242	6.41935	45.03988		missing_unified_taxon_name
+medicin_alps	71574	meda_000185					missing_all_taxon_information										20250624110914	6.419295	45.03986		missing_unified_taxon_name
+medicin_alps	71576	meda_000187					missing_all_taxon_information										20250624111521	6.41932	45.03992		missing_unified_taxon_name
+medicin_alps	71578	meda_000189oo					missing_all_taxon_information										20250624112612	6.4192333	45.039906		missing_unified_taxon_name
+medicin_alps	71580	meda_000191					missing_all_taxon_information										20250624113140	6.4192567	45.039917		missing_unified_taxon_name
+medicin_alps	71582	meda_000193					missing_all_taxon_information										20250624114140	6.419152	45.039925		missing_unified_taxon_name
+medicin_alps	71584	meda_000195					missing_all_taxon_information										20250624114728	6.4191484	45.039963		missing_unified_taxon_name
+medicin_alps	71586	meda_000217					missing_all_taxon_information										20250624121439	6.4190965	45.039955		missing_unified_taxon_name
+medicin_alps	71588	meda_000219					missing_all_taxon_information										20250624122349	6.419143	45.039978		missing_unified_taxon_name
+medicin_alps	71590	meda_000221					missing_all_taxon_information										20250624123048	6.4190764	45.039913		missing_unified_taxon_name
+medicin_alps	71592	meda_000223					missing_all_taxon_information										20250624123825	6.4191165	45.04002		missing_unified_taxon_name
+medicin_alps	71594	meda_000225					missing_all_taxon_information										20250624124546	6.41905	45.040035		missing_unified_taxon_name
+medicin_alps	71596	meda_000227					missing_all_taxon_information										20250624125416	6.419055	45.04006		missing_unified_taxon_name
+medicin_alps	71598	meda_000229					missing_all_taxon_information										20250624130314	6.4192233	45.039925		missing_unified_taxon_name
+medicin_alps	71600	meda_000231					missing_all_taxon_information										20250624131107	6.4190884	45.04005		missing_unified_taxon_name
+medicin_alps	71602	meda_000233					missing_all_taxon_information										20250624131853	6.419345	45.0399		missing_unified_taxon_name
+medicin_alps	71604	meda_000235					missing_all_taxon_information										20250624132526	6.419347	45.039978		missing_unified_taxon_name
+medicin_alps	71606	meda_000295					missing_all_taxon_information										20250624135536	6.419347	45.03992		missing_unified_taxon_name
+medicin_alps	71608	meda_000293					missing_all_taxon_information										20250624140101	6.419325	45.039886		missing_unified_taxon_name
+medicin_alps	71610	meda_000291					missing_all_taxon_information										20250624140641	6.4192333	45.039967		missing_unified_taxon_name
+medicin_alps	71612	meda_000289					missing_all_taxon_information										20250624141258	6.4192433	45.039925		missing_unified_taxon_name
+medicin_alps	71614	meda_000287					missing_all_taxon_information										20250624141912	6.41905	45.040047		missing_unified_taxon_name
+medicin_alps	71616	meda_000285					missing_all_taxon_information										20250624142656	6.41901	45.040016		missing_unified_taxon_name
+medicin_alps	71618	meda_000283					missing_all_taxon_information										20250624143344	6.4190183	45.04003		missing_unified_taxon_name
+medicin_alps	71620	meda_000281					missing_all_taxon_information										20250624144046	6.419113	45.04001		missing_unified_taxon_name
+medicin_alps	71622	meda_000279					missing_all_taxon_information										20250624144742	6.4190917	45.039974		missing_unified_taxon_name
+medicin_alps	71624	meda_000277					missing_all_taxon_information										20250624145556	6.4191165	45.039932		missing_unified_taxon_name
+medicin_alps	71728	meda_263					missing_all_taxon_information										20250624104718	6.4194183	45.03983		missing_unified_taxon_name
+medicin_alps	71738	meda_273					missing_all_taxon_information										20250624112612	6.4192333	45.039906		missing_unified_taxon_name
+medicin_alps	71786	meda_000337					missing_all_taxon_information										20250625101953	6.4194217	45.039852		missing_unified_taxon_name
+medicin_alps	71788	meda_000339					missing_all_taxon_information										20250625102636	6.4194	45.03984		missing_unified_taxon_name
+medicin_alps	71790	meda_000341					missing_all_taxon_information										20250625103404	6.4193683	45.039833		missing_unified_taxon_name
+medicin_alps	71792	meda_000343					missing_all_taxon_information										20250625104010	6.419367	45.03986		missing_unified_taxon_name
+medicin_alps	71794	meda_000345					missing_all_taxon_information										20250625104802	6.4193015	45.039898		missing_unified_taxon_name
+medicin_alps	71796	meda_000347					missing_all_taxon_information										20250625105534	6.4193215	45.0399		missing_unified_taxon_name
+medicin_alps	71798	meda_000349					missing_all_taxon_information										20250625110417	6.4192367	45.039898		missing_unified_taxon_name
+medicin_alps	71800	meda_000351					missing_all_taxon_information										20250625110948	6.41927	45.0399		missing_unified_taxon_name
+medicin_alps	71802	meda_000353					missing_all_taxon_information										20250625111516	6.4191833	45.039875		missing_unified_taxon_name
+medicin_alps	71804	meda_000355					missing_all_taxon_information										20250625112242	6.41913	45.039963		missing_unified_taxon_name
+medicin_alps	71806	meda_000357					missing_all_taxon_information										20250625113737	6.4191184	45.03994		missing_unified_taxon_name
+medicin_alps	71808	meda_000359					missing_all_taxon_information										20250625114425	6.4191732	45.03995		missing_unified_taxon_name
+medicin_alps	71810	meda_000361					missing_all_taxon_information										20250625115115	6.4190583	45.040005		missing_unified_taxon_name
+medicin_alps	71812	meda_000363					missing_all_taxon_information										20250625115726	6.4190965	45.03999		missing_unified_taxon_name
+medicin_alps	71814	meda_000365					missing_all_taxon_information										20250625120357	6.41906	45.04001		missing_unified_taxon_name
+medicin_alps	71816	meda_000367					missing_all_taxon_information										20250625121134	6.419073	45.04006		missing_unified_taxon_name
+medicin_alps	71818	meda_000369					missing_all_taxon_information										20250625121924	6.419288	45.03992		missing_unified_taxon_name
+medicin_alps	71820	meda_000371					missing_all_taxon_information										20250625122815	6.4193535	45.039932		missing_unified_taxon_name
+medicin_alps	71822	meda_000373					missing_all_taxon_information										20250625123621	6.4193516	45.03991		missing_unified_taxon_name
+medicin_alps	71824	meda_000375					missing_all_taxon_information										20250625124246	6.419355	45.039948		missing_unified_taxon_name
+medicin_alps	71928	meda_423					missing_all_taxon_information										20250624104718	6.4194183	45.03983		missing_unified_taxon_name
+medicin_alps	71938	meda_433					missing_all_taxon_information										20250624112612	6.4192333	45.039906		missing_unified_taxon_name
+medicin_alps	72066	meda_000397					missing_all_taxon_information										20250715120556	6.40079	45.054413		missing_unified_taxon_name
+medicin_alps	72068	meda_000399					missing_all_taxon_information										20250715121351	6.400705	45.054413		missing_unified_taxon_name
+medicin_alps	72070	meda_000401					missing_all_taxon_information										20250715122035	6.400672	45.054436		missing_unified_taxon_name
+medicin_alps	72072	meda_000403					missing_all_taxon_information										20250715122908	6.4006777	45.054455		missing_unified_taxon_name
+medicin_alps	72074	meda_000405					missing_all_taxon_information										20250715123635	6.400488	45.0544		missing_unified_taxon_name
+medicin_alps	72076	meda_000407					missing_all_taxon_information										20250715124746	6.400532	45.054394		missing_unified_taxon_name
+medicin_alps	72078	meda_000409					missing_all_taxon_information										20250715125810	6.400542	45.054417		missing_unified_taxon_name
+medicin_alps	72080	meda_000411					missing_all_taxon_information										20250715130816	6.4004	45.05444		missing_unified_taxon_name
+medicin_alps	72082	meda_000413					missing_all_taxon_information										20250715131659	6.4002867	45.054405		missing_unified_taxon_name
+medicin_alps	72084	meda_000415					missing_all_taxon_information										20250715132854	6.400358	45.05443		missing_unified_taxon_name
+medicin_alps	72106	meda_000535					missing_all_taxon_information										20250716095115	6.40035	45.054405		missing_unified_taxon_name
+medicin_alps	72108	meda_000533					missing_all_taxon_information										20250716095803	6.40028	45.054443		missing_unified_taxon_name
+medicin_alps	72110	meda_000531					missing_all_taxon_information										20250716100555	6.4003367	45.05439		missing_unified_taxon_name
+medicin_alps	72112	meda_000529					missing_all_taxon_information										20250716101311	6.400252	45.054367		missing_unified_taxon_name
+medicin_alps	72114	meda_000527					missing_all_taxon_information										20250716102026	6.400387	45.0544		missing_unified_taxon_name
+medicin_alps	72116	meda_000525					missing_all_taxon_information										20250716103212	6.400387	45.054443		missing_unified_taxon_name
+medicin_alps	72118	meda_000523					missing_all_taxon_information										20250716104206	6.4005384	45.054466		missing_unified_taxon_name
+medicin_alps	72120	meda_000521					missing_all_taxon_information										20250716105044	6.4005265	45.0544		missing_unified_taxon_name
+medicin_alps	72122	meda_000519					missing_all_taxon_information										20250716110311	6.400575	45.05444		missing_unified_taxon_name
+medicin_alps	72124	meda_000517					missing_all_taxon_information										20250716110944	6.40062	45.054405		missing_unified_taxon_name
+medicin_alps	72126	meda_000417					missing_all_taxon_information										20250716120628	6.4007435	45.054398		missing_unified_taxon_name
+medicin_alps	72128	meda_000419					missing_all_taxon_information										20250716121756	6.40063	45.054432		missing_unified_taxon_name
+medicin_alps	72130	meda_000421					missing_all_taxon_information										20250716122354	6.4006834	45.054424		missing_unified_taxon_name
+medicin_alps	72132	meda_000423					missing_all_taxon_information										20250716123032	6.400638	45.054413		missing_unified_taxon_name
+medicin_alps	72134	meda_000425					missing_all_taxon_information										20250716123628	6.40068	45.054424		missing_unified_taxon_name
+medicin_alps	72136	meda_000427					missing_all_taxon_information										20250716124344	6.40051	45.054375		missing_unified_taxon_name
+medicin_alps	72138	meda_000429					missing_all_taxon_information										20250716124938	6.400625	45.05443		missing_unified_taxon_name
+medicin_alps	72140	meda_000431					missing_all_taxon_information										20250716130008	6.4004564	45.054485		missing_unified_taxon_name
+medicin_alps	72142	meda_000433					missing_all_taxon_information										20250716130709	6.4005666	45.054417		missing_unified_taxon_name
+medicin_alps	72144	meda_000435					missing_all_taxon_information										20250716131510	6.40063	45.054466		missing_unified_taxon_name
+medicin_alps	72146	meda_000437					missing_all_taxon_information										20250716132703	6.400582	45.054405		missing_unified_taxon_name
+medicin_alps	72148	meda_000439					missing_all_taxon_information										20250716133341	6.4006433	45.054413		missing_unified_taxon_name
+medicin_alps	72150	meda_000441					missing_all_taxon_information										20250716134009	6.4006534	45.054493		missing_unified_taxon_name
+medicin_alps	72152	meda_000443					missing_all_taxon_information										20250716134537	6.40058	45.054386		missing_unified_taxon_name
+medicin_alps	72154	meda_000445					missing_all_taxon_information										20250716135308	6.40035	45.05436		missing_unified_taxon_name
+medicin_alps	72156	meda_000447					missing_all_taxon_information										20250716140023	6.40044	45.05446		missing_unified_taxon_name
+medicin_alps	72158	meda_000449					missing_all_taxon_information										20250716140624	6.400355	45.054424		missing_unified_taxon_name
+medicin_alps	72160	meda_000451					missing_all_taxon_information										20250716141337	6.4002934	45.054382		missing_unified_taxon_name
+medicin_alps	72162	meda_000453					missing_all_taxon_information										20250716142021	6.4003983	45.054443		missing_unified_taxon_name
+medicin_alps	72164	meda_000455					missing_all_taxon_information										20250716142746	6.40034	45.054417		missing_unified_taxon_name
+medicin_alps	72174	meda_000577					missing_all_taxon_information										20250717100142	6.4006734	45.05441		missing_unified_taxon_name
+medicin_alps	72176	meda_000579					missing_all_taxon_information										20250717100725	6.400777	45.054424		missing_unified_taxon_name
+medicin_alps	72178	meda_000581					missing_all_taxon_information										20250717103413	6.4007583	45.05442		missing_unified_taxon_name
+medicin_alps	72252	meda_000583					missing_all_taxon_information										20250717104404	6.4007635	45.05447		missing_unified_taxon_name
+medicin_alps	72254	meda_000585					missing_all_taxon_information										20250717105043	6.4007382	45.05451		missing_unified_taxon_name
+medicin_alps	72256	meda_000587					missing_all_taxon_information										20250717105900	6.40074	45.054474		missing_unified_taxon_name
+medicin_alps	72258	meda_000589					missing_all_taxon_information										20250717110606	6.400612	45.05445		missing_unified_taxon_name
+medicin_alps	72260	meda_000591					missing_all_taxon_information										20250717111311	6.400727	45.05448		missing_unified_taxon_name
+medicin_alps	72262	meda_000593					missing_all_taxon_information										20250717111843	6.40055	45.05439		missing_unified_taxon_name
+medicin_alps	72264	meda_000595					missing_all_taxon_information										20250717112529	6.400638	45.05446		missing_unified_taxon_name
+medicin_alps	72266	meda_000597					missing_all_taxon_information										20250717114625	6.400592	45.054455		missing_unified_taxon_name
+medicin_alps	72268	meda_000599					missing_all_taxon_information										20250717115350	6.4006286	45.054417		missing_unified_taxon_name
+medicin_alps	72270	meda_000601					missing_all_taxon_information										20250717120032	6.4005966	45.05449		missing_unified_taxon_name
+medicin_alps	72272	meda_000603					missing_all_taxon_information										20250717120659	6.400553	45.054432		missing_unified_taxon_name
+medicin_alps	72274	meda_000605					missing_all_taxon_information										20250717121310	6.4003935	45.054417		missing_unified_taxon_name
+medicin_alps	72276	meda_000607					missing_all_taxon_information										20250717122025	6.400435	45.054474		missing_unified_taxon_name
+medicin_alps	72278	meda_000609					missing_all_taxon_information										20250717122658	6.400338	45.054424		missing_unified_taxon_name
+medicin_alps	72280	meda_000611					missing_all_taxon_information										20250717123521	6.4003167	45.05444		missing_unified_taxon_name
+medicin_alps	72282	meda_000613					missing_all_taxon_information										20250717124249	6.400417	45.054474		missing_unified_taxon_name
+medicin_alps	72284	meda_000615					missing_all_taxon_information										20250717125056	6.400378	45.054474		missing_unified_taxon_name
+jbn-new	76450	obs_693382552658983_4699954641278273					missing_all_taxon_information										20260630091253	6.9338255	46.999546		missing_unified_taxon_name

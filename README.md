@@ -215,6 +215,20 @@ The per-row report is exact-filename based. It also carries the Directus-sourced
 `dbgi_001195_01_01` as contextual columns, but those identifiers are not used to create secondary
 matches. For exact matches, the report also includes the watcher-exported mzML `polarity`.
 
+Correct filenames on existing `MS_Data` rows from a CSV containing
+`ms_data_id` and `ms_filename`. Optional `ms_parent_container_id` and
+`injection_method` columns are checked against Directus before a row becomes
+eligible. The command is a dry run unless `--commit` is supplied:
+
+```bash
+uv run directus-explorer ms update-filenames filename_updates.csv \
+  --output filename_update_audit.tsv
+
+uv run directus-explorer ms update-filenames filename_updates.csv \
+  --output filename_update_audit.tsv \
+  --commit
+```
+
 ## Champex Metadata Sanitization
 
 The Champex massive metadata CSV is kept immutable in `data/input`. Work from a copy and write

@@ -682,6 +682,78 @@ def import_ready_injection_runs(
     click.echo(_render_injection_import_summary(summary))
 
 
+@ms.command("update-filenames")
+@click.argument(
+    "input_csv",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+)
+@click.option(
+    "--output",
+    "output_path",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+    default=None,
+    help="Write the row-level validation report to this TSV path.",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Update at most this many validated rows.",
+)
+@click.option(
+    "--commit",
+    is_flag=True,
+    help="Actually update MS_Data filenames. Without this flag, only perform a dry run.",
+)
+@click.option(
+    "--format",
+    "output_format",
+    type=click.Choice(("text", "json"), case_sensitive=False),
+    default="text",
+    show_default=True,
+)
+@click.option(
+    "--env-file",
+    type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
+    default=None,
+    help="Override the default local .env file.",
+)
+def update_ms_filenames(
+    input_csv: Path,
+    output_path: Path | None,
+    limit: int | None,
+    commit: bool,
+    output_format: str,
+    env_file: Path | None,
+) -> None:
+    """Validate and update filenames for existing MS_Data rows."""
+
+    try:
+        settings = load_settings(env_file=env_file)
+        client = DirectusClient(settings)
+        summary = client.update_ms_filenames(
+            input_path=input_csv,
+            output_path=output_path,
+            limit=limit,
+            commit=commit,
+        )
+    except (
+        SettingsError,
+        DirectusAuthError,
+        DirectusError,
+        DirectusResponseError,
+        ValueError,
+    ) as exc:
+        raise click.ClickException(str(exc)) from exc
+
+    if output_format == "json":
+        click.echo(json.dumps(summary))
+        return
+    click.echo(_render_ms_filename_update_summary(summary))
+    if output_path is not None:
+        click.echo(f"report\t{output_path}")
+
+
 @ms.command("check-converted")
 @click.option(
     "--metadata-csv",
@@ -952,6 +1024,23 @@ def _render_injection_import_summary(summary: dict[str, Any]) -> str:
             f"skipped_selected_count\t{summary['skipped_selected_count']}",
             f"blocked_count\t{summary['blocked_count']}",
             f"already_imported_count\t{summary['already_imported_count']}",
+        )
+    )
+
+
+def _render_ms_filename_update_summary(summary: dict[str, Any]) -> str:
+    """Render an MS filename update summary in plain text."""
+
+    mode = "dry_run" if summary.get("dry_run") else "committed"
+    return "\n".join(
+        (
+            f"mode\t{mode}",
+            f"row_count\t{summary['row_count']}",
+            f"ready_count\t{summary['ready_count']}",
+            f"selected_count\t{summary['selected_count']}",
+            f"updated_count\t{summary['updated_count']}",
+            f"unchanged_count\t{summary['unchanged_count']}",
+            f"blocked_count\t{summary['blocked_count']}",
         )
     )
 

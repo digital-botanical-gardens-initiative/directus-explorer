@@ -94,6 +94,57 @@ def test_count_field_samples_raises_on_malformed_payload(monkeypatch: pytest.Mon
         client.count_field_samples("jbuf")
 
 
+def test_update_ms_filenames_patches_only_validated_rows(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    input_csv = tmp_path / "updates.csv"
+    input_csv.write_text(
+        "ms_data_id,ms_filename,ms_parent_container_id,injection_method\n"
+        "42,new_name.mzML,dbgi_001_01_01,general_ms2_pos\n",
+        encoding="utf-8",
+    )
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+    client._authenticated = True
+    monkeypatch.setattr(
+        client,
+        "_get_items",
+        lambda collection, fields: [
+            {
+                "id": 42,
+                "filename": "old_name",
+                "parent_sample_container": {"container_id": "dbgi_001_01_01"},
+                "injection_method": {"method_name": "general_ms2_pos"},
+            }
+        ],
+    )
+    patched: list[tuple[str, int, dict[str, Any]]] = []
+
+    def fake_patch_item(
+        *,
+        collection: str,
+        item_id: int,
+        payload: dict[str, Any],
+    ) -> dict[str, Any]:
+        patched.append((collection, item_id, payload))
+        return {"id": item_id, **payload}
+
+    monkeypatch.setattr(client, "_patch_item", fake_patch_item)
+
+    dry_run = client.update_ms_filenames(input_path=input_csv)
+    committed = client.update_ms_filenames(input_path=input_csv, commit=True)
+
+    assert dry_run["ready_count"] == 1
+    assert dry_run["updated_count"] == 0
+    assert committed["updated_count"] == 1
+    assert patched == [("MS_Data", 42, {"filename": "new_name"})]
+
+
 def test_list_projects_returns_sorted_project_keys(monkeypatch: pytest.MonkeyPatch) -> None:
     """Project listing should return sorted distinct qfield project values."""
 
@@ -566,8 +617,8 @@ def test_export_ms_metadata_csv_writes_flat_csv(
 
     monkeypatch.setattr(
         client,
-        "build_ms_metadata_table",
-        lambda project=None: MsMetadataTable(
+        "build_ms_metadata_table_with_watcher",
+        lambda project=None, project_group=None, watcher_tsv_paths=(): MsMetadataTable(
             fieldnames=("ms_data_id", "qfield_project"),
             rows=({"ms_data_id": 1, "qfield_project": "jbuf"},),
         ),
@@ -598,7 +649,7 @@ def test_export_ms_metadata_csv_compact_view_writes_curated_columns(
     monkeypatch.setattr(
         client,
         "build_ms_metadata_table_with_watcher",
-        lambda project=None, watcher_tsv_paths=(): MsMetadataTable(
+        lambda project=None, project_group=None, watcher_tsv_paths=(): MsMetadataTable(
             fieldnames=(
                 "original_sample_id",
                 "ms_container_id",

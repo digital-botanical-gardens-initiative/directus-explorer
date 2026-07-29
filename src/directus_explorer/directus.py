@@ -22,6 +22,12 @@ from .ms_converted_check import (
     load_watcher_entries,
     strip_mzml_suffix,
 )
+from .ms_filename_update import (
+    build_ms_filename_update_table,
+    load_ms_filename_updates,
+    summarize_ms_filename_updates,
+    write_ms_filename_update_tsv,
+)
 from .ms_metadata import (
     ALIQUOTING_DATA_FIELDS,
     DRIED_SAMPLES_DATA_FIELDS,
@@ -477,6 +483,58 @@ class DirectusClient:
             "already_imported_count": summary["already_imported_count"],
             "created_rows": created_rows,
             "skipped_rows": skipped_rows,
+        }
+
+    def update_ms_filenames(
+        self,
+        *,
+        input_path: str | Path,
+        output_path: str | Path | None = None,
+        limit: int | None = None,
+        commit: bool = False,
+    ) -> dict[str, Any]:
+        """Validate and optionally apply filename corrections to existing MS rows."""
+
+        if limit is not None and limit < 1:
+            raise ValueError("--limit must be greater than zero")
+
+        updates = load_ms_filename_updates(Path(input_path))
+        self._authenticate()
+        ms_rows = self._get_items(
+            collection="MS_Data",
+            fields=(
+                "id,filename,parent_sample_container.container_id,"
+                "injection_method.method_name"
+            ),
+        )
+        table = build_ms_filename_update_table(updates=updates, ms_rows=ms_rows)
+        if output_path is not None:
+            write_ms_filename_update_tsv(table, Path(output_path))
+
+        ready_rows = [row for row in table.rows if row.get("status") == "ready"]
+        selected_rows = ready_rows[:limit] if limit is not None else ready_rows
+        updated_rows: list[dict[str, Any]] = []
+        if commit:
+            for row in selected_rows:
+                ms_data_id = row.get("ms_data_id")
+                filename = row.get("normalized_filename")
+                if not isinstance(ms_data_id, str) or not isinstance(filename, str):
+                    continue
+                updated_rows.append(
+                    self._patch_item(
+                        collection="MS_Data",
+                        item_id=int(ms_data_id),
+                        payload={"filename": filename},
+                    )
+                )
+
+        summary = summarize_ms_filename_updates(table)
+        return {
+            "dry_run": not commit,
+            **summary,
+            "selected_count": len(selected_rows),
+            "updated_count": len(updated_rows),
+            "updated_rows": updated_rows,
         }
 
     def _build_sample_compact_metadata_table(self, table: MsMetadataTable) -> MsMetadataTable:
@@ -1049,6 +1107,41 @@ class DirectusClient:
         if not isinstance(data, dict):
             raise DirectusResponseError(
                 f"Directus {collection} create payload did not contain an object data row"
+            )
+        return data
+
+    def _patch_item(
+        self,
+        *,
+        collection: str,
+        item_id: int,
+        payload: dict[str, Any],
+    ) -> dict[str, Any]:
+        """Update one Directus item and return the updated row payload."""
+
+        response = self._session.patch(
+            self._url(f"/items/{collection}/{item_id}"),
+            json=payload,
+            timeout=(10, 60),
+        )
+        if response.status_code != 200:
+            raise DirectusError(
+                f"Directus PATCH /items/{collection}/{item_id} failed with status "
+                f"{response.status_code}: {response.text}"
+            )
+
+        try:
+            response_payload = response.json()
+        except ValueError as exc:
+            raise DirectusResponseError("Directus response was not valid JSON") from exc
+
+        if not isinstance(response_payload, dict):
+            raise DirectusResponseError("Directus response payload was not an object")
+
+        data = response_payload.get("data")
+        if not isinstance(data, dict):
+            raise DirectusResponseError(
+                f"Directus {collection} update payload did not contain an object data row"
             )
         return data
 

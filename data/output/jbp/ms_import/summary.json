@@ -1,0 +1,75 @@
+{
+  "project": "jbp",
+  "directus_project_membership": {
+    "jbp": 198,
+    "missing": 0,
+    "multiple": 0
+  },
+  "injection_method": {
+    "id": 52,
+    "method_name": "general_ms2_pos",
+    "polarity": "positive"
+  },
+  "injection_volume": {
+    "value": 1,
+    "unit_id": 18,
+    "unit_symbol": "µl"
+  },
+  "instrument": {
+    "id": 4,
+    "instrument_id": "inst_000003",
+    "model": "LCMS Orbitrap ID-X"
+  },
+  "batches": {
+    "batch004": {
+      "action": "create",
+      "row_count": 85,
+      "ms_parent_level": "extraction",
+      "directus_audit": {
+        "ready": 85,
+        "blocked": 0,
+        "already_imported": 0
+      },
+      "source_metadata": "data/input/jbp/ms_import/batch004/jbp_batch004_metadata.xlsx",
+      "external_source_metadata": "/media/nvme8tb/jbp/swisstransfer-019fa916-fb6f-7247-a6b1-7e9314cc6539/jbp_batch004_metadata.xlsx"
+    },
+    "batch005": {
+      "action": "create",
+      "row_count": 38,
+      "ms_parent_level": "extraction",
+      "directus_audit": {
+        "ready": 38,
+        "blocked": 0,
+        "already_imported": 0
+      },
+      "source_metadata": "data/input/jbp/ms_import/batch005/jbp_batch005_metadata.xlsx",
+      "external_source_metadata": "/media/nvme8tb/jbp/swisstransfer-019fa91c-29ec-70d7-9c10-06e5524af480/jbp_batch005_metadata.xlsx"
+    },
+    "batch006": {
+      "action": "update_filename",
+      "row_count": 77,
+      "ms_parent_level": "aliquot",
+      "source_metadata": "data/input/jbp/ms_import/batch006/jbp_batch006_metadata.csv",
+      "external_source_metadata": "/media/nvme8tb/jbp/swisstransfer-019fa320-c437-71f3-80c3-b25cd9f5747a/jbp_batch006_metadata.csv",
+      "declared_metadata_rows": 76,
+      "recovered_rows": 1,
+      "directus_update_audit": {
+        "ready": 77,
+        "blocked": 0,
+        "unchanged": 0
+      },
+      "existing_directus_batch_id": 152
+    }
+  },
+  "sanitization": {
+    "qfield_projects": {
+      "jbp": 199
+    },
+    "injection_methods": {
+      "general_ms2_pos": 199
+    },
+    "duplicate_declared_filenames": 0,
+    "physical_mzml_count": 200,
+    "batch006_unlisted_mzml": "20260427_79_144110_KK_general_ms2_pos_dbgi_011800_02_01_1uL.mzML"
+  }
+}

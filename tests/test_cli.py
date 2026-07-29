@@ -328,6 +328,66 @@ def test_audit_injection_list_writes_report_and_summary(
     assert output_tsv.exists()
 
 
+def test_update_ms_filenames_defaults_to_dry_run(monkeypatch: pytest.MonkeyPatch) -> None:
+    """The filename update command should require --commit before writing."""
+
+    runner = CliRunner()
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def update_ms_filenames(
+            self,
+            *,
+            input_path: Path,
+            output_path: Path | None,
+            limit: int | None,
+            commit: bool,
+        ) -> dict[str, object]:
+            assert input_path == Path("updates.csv")
+            assert output_path == Path("updates_audit.tsv")
+            assert limit is None
+            assert commit is False
+            return {
+                "dry_run": True,
+                "row_count": 2,
+                "ready_count": 2,
+                "selected_count": 2,
+                "updated_count": 0,
+                "unchanged_count": 0,
+                "blocked_count": 0,
+                "updated_rows": [],
+            }
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(
+        cli_module.cli,
+        [
+            "ms",
+            "update-filenames",
+            "updates.csv",
+            "--output",
+            "updates_audit.tsv",
+        ],
+    )
+
+    assert result.exit_code == 0
+    assert "mode\tdry_run" in result.output
+    assert "ready_count\t2" in result.output
+    assert "report\tupdates_audit.tsv" in result.output
+
+
 def test_sample_locations_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
     """The locations command should print a TSV row for one sample."""
 

@@ -106,6 +106,81 @@ Species summaries first collect distinct non-empty values from both
 resolved Catalogue of Life taxon ids. Unresolved names are not counted in the
 species-level summary.
 
+Generate a read-only, human-review queue for conflicting taxon fields:
+
+```bash
+uv run python scripts/generate_taxon_curation_review.py \
+  --project jbp \
+  --round 1
+```
+
+The curation command groups repeated conflicts, parses botanical annotations,
+and resolves names against the pinned Catalogue of Life release recorded in
+the output metadata. `gnverifier` supplies secondary fuzzy suggestions; every
+such suggestion is checked again against the pinned CoL release before it is
+shown. It never writes to Directus. Reviewers fill `decision` with one of
+`accept_proposal`, `override`, `unresolved`, or `defer`; an override also needs
+`chosen_verbatim_name`. Generated rounds are stored under
+`data/working/taxonomy_curation/`.
+
+After every grouped decision has been reviewed, expand the accepted groups into
+a row-level dry-run manifest:
+
+```bash
+uv run python scripts/prepare_taxon_curation_manifest.py \
+  --review data/working/taxonomy_curation/col_2026_07_17_xr/jbp_round_001/jbp_round_001_review.tsv
+```
+
+The manifest command refuses blank or invalid decisions and still performs no
+Directus writes.
+
+Before applying a reviewed manifest, compare it with the live Directus rows and
+create a timestamped backup and exact write preview:
+
+```bash
+uv run python scripts/preflight_taxon_curation_directus_update.py \
+  --manifest data/working/taxonomy_curation/col_2026_07_17_xr/jbp_round_001/jbp_round_001_update_manifest.tsv \
+  --env-file .env
+```
+
+The preflight uses GET requests only. Rows whose project, sample id, source
+name, or current unified value changed since the audit are reported as blocking
+conflicts and excluded from the write preview.
+
+Apply an approved preview only after inspecting its matching backup:
+
+```bash
+uv run python scripts/apply_taxon_curation_directus_update.py \
+  --preview PATH_TO_WRITE_PREVIEW.tsv \
+  --backup PATH_TO_MATCHING_BACKUP.tsv \
+  --project jbp \
+  --env-file .env.admin \
+  --commit
+```
+
+The apply command repeats the live-state checks before writing, changes only
+`Field_Data.taxon_name_unified`, records each successful update in an execution
+journal, and verifies all resulting values.
+
+To avoid copying long artifact paths, select the newest matching preflight pair
+for a project automatically:
+
+```bash
+uv run python scripts/apply_taxon_curation_directus_update.py \
+  -p jbuf -l -e .env.admin -c
+```
+
+Refresh the standalone taxonomy curation dashboard after an audit, review, or
+update run:
+
+```bash
+uv run python scripts/generate_taxon_curation_dashboard.py
+```
+
+Open `data/working/taxonomy_curation/taxonomy_curation_dashboard.html` in a web
+browser. The report is self-contained and reads only local audit, review,
+preflight, and execution artifacts; it makes no network requests.
+
 Summarize the DBGI megaproject (`jbc`, `jbn`, `jbp`, `jbuf`, and
 `kew-botanical-gardens`) as one row:
 

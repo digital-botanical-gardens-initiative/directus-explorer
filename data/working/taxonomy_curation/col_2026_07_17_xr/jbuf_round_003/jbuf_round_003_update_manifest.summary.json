@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-04T12:14:09.099463+00:00",
+  "mode": "dry_run_manifest",
+  "directus_writes": false,
+  "review": "data/working/taxonomy_curation/col_2026_07_17_xr/jbuf_round_003/jbuf_round_003_review.tsv",
+  "audit": "data/output/directus_integrity/taxon_name_unified_audit/taxon_name_unified_audit_all.tsv",
+  "update_count": 41,
+  "skipped_count": 15,
+  "skipped_by_decision": {
+    "unresolved": 15
+  }
+}

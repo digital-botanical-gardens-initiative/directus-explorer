@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-04T14:36:44.533919+00:00",
+  "mode": "directus_get_only_preflight",
+  "directus_writes": false,
+  "manifest": "data/working/taxonomy_curation/col_2026_07_17_xr/jbn_round_002/jbn_round_002_update_manifest.tsv",
+  "manifest_sha256": "718d7cec5671186d7fbcfc3ed817ea3537907b37563f3833fadce284be5dae96",
+  "requested_count": 14,
+  "fetched_count": 14,
+  "ready_count": 14,
+  "conflict_count": 0,
+  "conflicts_by_reason": {},
+  "backup": "data/working/taxonomy_curation/col_2026_07_17_xr/jbn_round_002/jbn_round_002_directus_backup_20260804T143644Z.tsv",
+  "backup_sha256": "5d37fddfae99105ca1000ec7c9a237131cbe33e3d57b74a949358cb900f533d7",
+  "write_preview": "data/working/taxonomy_curation/col_2026_07_17_xr/jbn_round_002/jbn_round_002_write_preview_20260804T143644Z.tsv",
+  "conflicts": "data/working/taxonomy_curation/col_2026_07_17_xr/jbn_round_002/jbn_round_002_preflight_conflicts_20260804T143644Z.tsv"
+}

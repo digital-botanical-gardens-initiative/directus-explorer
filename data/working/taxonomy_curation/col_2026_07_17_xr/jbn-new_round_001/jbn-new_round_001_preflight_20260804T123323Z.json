@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-04T12:33:23.330885+00:00",
+  "mode": "directus_get_only_preflight",
+  "directus_writes": false,
+  "manifest": "data/working/taxonomy_curation/col_2026_07_17_xr/jbn-new_round_001/jbn-new_round_001_update_manifest.tsv",
+  "manifest_sha256": "e9e00ed3899afbda0fe6fa371e0e0d4e7513781b11ff4db1903b8b3401174424",
+  "requested_count": 88,
+  "fetched_count": 88,
+  "ready_count": 88,
+  "conflict_count": 0,
+  "conflicts_by_reason": {},
+  "backup": "data/working/taxonomy_curation/col_2026_07_17_xr/jbn-new_round_001/jbn-new_round_001_directus_backup_20260804T123323Z.tsv",
+  "backup_sha256": "87ab48a954be77c9f6cc92bbd6f496aa61359e6d12a6429046a2186a2378edd2",
+  "write_preview": "data/working/taxonomy_curation/col_2026_07_17_xr/jbn-new_round_001/jbn-new_round_001_write_preview_20260804T123323Z.tsv",
+  "conflicts": "data/working/taxonomy_curation/col_2026_07_17_xr/jbn-new_round_001/jbn-new_round_001_preflight_conflicts_20260804T123323Z.tsv"
+}

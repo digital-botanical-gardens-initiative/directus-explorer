@@ -14,7 +14,11 @@ def main() -> None:
     args = _parse_args()
     rows = _read_tsv(args.review)
     reviewed_at = datetime.now(UTC).date().isoformat()
-    updated_rows, accepted = accept_direct_col_matches(rows, reviewed_at=reviewed_at)
+    updated_rows, accepted = accept_direct_col_matches(
+        rows,
+        reviewed_at=reviewed_at,
+        reviewer=args.reviewer,
+    )
     if not args.commit:
         print(f"Dry run: would accept {accepted} direct CoL matches in {args.review}")
         return
@@ -25,6 +29,11 @@ def main() -> None:
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--review", type=Path, required=True)
+    parser.add_argument(
+        "--reviewer",
+        default="",
+        help="Reviewer identity to record for newly accepted rows.",
+    )
     parser.add_argument("--commit", action="store_true")
     return parser.parse_args()
 

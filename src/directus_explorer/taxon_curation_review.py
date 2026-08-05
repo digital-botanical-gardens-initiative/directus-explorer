@@ -34,9 +34,9 @@ def preserve_review_decisions(
 
 
 def accept_direct_col_matches(
-    rows: list[dict[str, str]], *, reviewed_at: str
+    rows: list[dict[str, str]], *, reviewed_at: str, reviewer: str = ""
 ) -> tuple[list[dict[str, str]], int]:
-    """Accept pending rows that already have a direct pinned-CoL target."""
+    """Accept pending rows with an unambiguous direct pinned-CoL target."""
 
     accepted = 0
     for row in rows:
@@ -46,8 +46,16 @@ def accept_direct_col_matches(
             continue
         if not row.get("col_accepted_name", "").strip():
             continue
+        if row.get("col_match_type", "").strip().lower() not in {"exact", "variant"}:
+            continue
+        if row.get("col_matched_status", "").strip().lower() not in {
+            "accepted",
+            "synonym",
+        }:
+            continue
         row["decision"] = "accept_proposal"
         row["confidence"] = "high"
+        row["reviewer"] = reviewer
         row["reviewed_at"] = reviewed_at
         row["review_note"] = (
             "Accepted single non-conflicting source candidate with direct pinned-CoL match."

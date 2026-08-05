@@ -15,6 +15,8 @@ def test_accept_direct_col_matches_leaves_unresolved_rows_pending() -> None:
             "decision": "",
             "col_accepted_name": "Erica arborea",
             "col_accepted_usage_id": "6GL83",
+            "col_match_type": "exact",
+            "col_matched_status": "accepted",
         },
         {
             "review_id": "fuzzy",
@@ -24,12 +26,41 @@ def test_accept_direct_col_matches_leaves_unresolved_rows_pending() -> None:
         },
     ]
 
-    updated, count = accept_direct_col_matches(rows, reviewed_at="2026-08-03")
+    updated, count = accept_direct_col_matches(
+        rows, reviewed_at="2026-08-03", reviewer="user"
+    )
 
     assert count == 1
     assert updated[0]["decision"] == "accept_proposal"
     assert updated[0]["confidence"] == "high"
+    assert updated[0]["reviewer"] == "user"
     assert updated[1]["decision"] == ""
+
+
+def test_accept_direct_col_matches_leaves_ambiguous_targets_pending() -> None:
+    rows = [
+        {
+            "review_id": "ambiguous",
+            "decision": "",
+            "col_accepted_name": "sect. Acacia",
+            "col_accepted_usage_id": "KZR2D",
+            "col_match_type": "ambiguous",
+            "col_matched_status": "accepted",
+        },
+        {
+            "review_id": "ambiguous-synonym",
+            "decision": "",
+            "col_accepted_name": "Chamaecytisus hirsutus",
+            "col_accepted_usage_id": "TJKG",
+            "col_match_type": "exact",
+            "col_matched_status": "ambiguous synonym",
+        },
+    ]
+
+    updated, count = accept_direct_col_matches(rows, reviewed_at="2026-08-04")
+
+    assert count == 0
+    assert {row["decision"] for row in updated} == {""}
 
 
 def test_preserve_review_decisions_copies_only_human_fields() -> None:

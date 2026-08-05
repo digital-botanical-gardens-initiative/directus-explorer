@@ -63,14 +63,17 @@ def main() -> None:
     journal: list[dict[str, str]] = []
     for row in ready_rows:
         field_id = int(row["field_data_id"])
-        new_value = row["new_taxon_name_unified"]
+        update_action = row.get("update_action", "set_value")
+        new_value = (
+            None if update_action == "clear_value" else row["new_taxon_name_unified"]
+        )
         updated = client._patch_item(
             collection="Field_Data",
             item_id=field_id,
             payload={"taxon_name_unified": new_value},
         )
         returned_value = _text(updated.get("taxon_name_unified"))
-        if returned_value != new_value:
+        if returned_value != _text(new_value):
             raise DirectusResponseError(
                 f"Directus returned an unexpected value for Field_Data {field_id}: "
                 f"{returned_value!r}"
@@ -81,7 +84,8 @@ def main() -> None:
                 "field_data_id": str(field_id),
                 "sample_id": row["sample_id"],
                 "old_value": row["current_taxon_name_unified"],
-                "new_value": new_value,
+                "new_value": _text(new_value),
+                "update_action": update_action,
                 "status": "updated",
             }
         )
@@ -97,7 +101,7 @@ def main() -> None:
         row["field_data_id"]
         for row in preview_rows
         if _text(verified_by_id.get(row["field_data_id"], {}).get("taxon_name_unified"))
-        != row["new_taxon_name_unified"]
+        != ("" if row.get("update_action") == "clear_value" else row["new_taxon_name_unified"])
     ]
     if failures:
         raise DirectusResponseError(
@@ -186,7 +190,8 @@ def _validate_inputs(
     invalid_decisions = {
         row.get("decision", "")
         for row in preview_rows
-        if row.get("decision", "") not in {"accept_proposal", "override"}
+        if row.get("decision", "")
+        not in {"accept_proposal", "override", "clear_placeholder"}
     }
     if invalid_decisions:
         raise ValueError(
@@ -223,7 +228,7 @@ def _fetch_current_rows(
         "sample_id",
         "qfield_project",
         "taxon_name_unified",
-        *sorted(source_fields),
+        *sorted(source_fields - {"taxon_name_unified"}),
     ]
     payload = client._get(
         "/items/Field_Data",

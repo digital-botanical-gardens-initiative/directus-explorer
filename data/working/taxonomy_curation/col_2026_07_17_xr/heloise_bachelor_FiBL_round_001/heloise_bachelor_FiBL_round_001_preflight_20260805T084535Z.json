@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-05T08:45:35.880311+00:00",
+  "mode": "directus_get_only_preflight",
+  "directus_writes": false,
+  "manifest": "data/working/taxonomy_curation/col_2026_07_17_xr/heloise_bachelor_FiBL_round_001/heloise_bachelor_FiBL_round_001_update_manifest.tsv",
+  "manifest_sha256": "b6069d97a9ac23f983507970f83c5a5423aae31e1e0ddd2e7a43b24b40c42e0e",
+  "requested_count": 24,
+  "fetched_count": 24,
+  "ready_count": 24,
+  "conflict_count": 0,
+  "conflicts_by_reason": {},
+  "backup": "data/working/taxonomy_curation/col_2026_07_17_xr/heloise_bachelor_FiBL_round_001/heloise_bachelor_FiBL_round_001_directus_backup_20260805T084535Z.tsv",
+  "backup_sha256": "e4dc3f0782216f857a891be2244e46123db6df7c7429c1b5469e8dbe3cb75152",
+  "write_preview": "data/working/taxonomy_curation/col_2026_07_17_xr/heloise_bachelor_FiBL_round_001/heloise_bachelor_FiBL_round_001_write_preview_20260805T084535Z.tsv",
+  "conflicts": "data/working/taxonomy_curation/col_2026_07_17_xr/heloise_bachelor_FiBL_round_001/heloise_bachelor_FiBL_round_001_preflight_conflicts_20260805T084535Z.tsv"
+}

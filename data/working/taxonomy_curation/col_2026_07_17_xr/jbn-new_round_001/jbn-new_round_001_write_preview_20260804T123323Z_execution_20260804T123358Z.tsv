@@ -1,0 +1,89 @@
+updated_at	field_data_id	sample_id	old_value	new_value	update_action	status
+2026-08-04T12:33:58.712472+00:00	76452	dbgi_011129		Papaver somniferum	set_value	updated
+2026-08-04T12:33:58.741324+00:00	75575	dbgi_011251		Campanula raddeana	set_value	updated
+2026-08-04T12:33:58.766590+00:00	75497	dbgi_011138		Petrosedum ochroleucum	set_value	updated
+2026-08-04T12:33:58.791194+00:00	75519	dbgi_011200		Phillyrea latifolia	set_value	updated
+2026-08-04T12:33:58.816064+00:00	75576	dbgi_011102		Saxifraga juniperifolia	set_value	updated
+2026-08-04T12:33:58.840984+00:00	75566	dbgi_011168		Origanum vulgare	set_value	updated
+2026-08-04T12:33:58.865774+00:00	75567	dbgi_011070		Origanum vulgare	set_value	updated
+2026-08-04T12:33:58.890931+00:00	75568	dbgi_011175		Laburnum anagyroidis	set_value	updated
+2026-08-04T12:33:58.917003+00:00	75539	dbgi_010859		Armeria alpina	set_value	updated
+2026-08-04T12:33:58.948825+00:00	76434	dbgi_011057		Digitalis purpurea subsp. purpurea	set_value	updated
+2026-08-04T12:33:58.978879+00:00	76435	dbgi_011228		Digitalis purpurea subsp. purpurea	set_value	updated
+2026-08-04T12:33:59.011864+00:00	75583	dbgi_010702		Rubia tinctorum	set_value	updated
+2026-08-04T12:33:59.035179+00:00	75584	dbgi_011165		Rubia tinctorum	set_value	updated
+2026-08-04T12:33:59.059915+00:00	75526	dbgi_011124		Juniperus communis var. saxatilis	set_value	updated
+2026-08-04T12:33:59.083701+00:00	75510	dbgi_011060		Santolina chamaecyparissus	set_value	updated
+2026-08-04T12:33:59.107630+00:00	75511	dbgi_010649		Santolina chamaecyparissus	set_value	updated
+2026-08-04T12:33:59.133120+00:00	75564	dbgi_011236		Digitalis ferruginea	set_value	updated
+2026-08-04T12:33:59.159758+00:00	75544	dbgi_011216		Silene saxifraga	set_value	updated
+2026-08-04T12:33:59.186307+00:00	76436	dbgi_011348		Aconitum napellus	set_value	updated
+2026-08-04T12:33:59.212297+00:00	75569	dbgi_010658		Alyssoides utriculata	set_value	updated
+2026-08-04T12:33:59.239388+00:00	76437	dbgi_010854		Taxus baccata	set_value	updated
+2026-08-04T12:33:59.264838+00:00	75520	dbgi_011212		Cistus laurifolius	set_value	updated
+2026-08-04T12:33:59.291680+00:00	75573	dbgi_011198		Picea orientalis	set_value	updated
+2026-08-04T12:33:59.318634+00:00	75546	dbgi_011135		Achnatherum calamagrostis	set_value	updated
+2026-08-04T12:33:59.344694+00:00	75532	dbgi_011277		Helichrysum serotinum subsp. serotinum	set_value	updated
+2026-08-04T12:33:59.367114+00:00	75533	dbgi_011170		Helichrysum serotinum subsp. serotinum	set_value	updated
+2026-08-04T12:33:59.395799+00:00	75550	dbgi_011089		Oenanthe lachenalii	set_value	updated
+2026-08-04T12:33:59.424082+00:00	75524	dbgi_011203		Erodium manescavi	set_value	updated
+2026-08-04T12:33:59.448967+00:00	75525	dbgi_011082		Erodium manescavi	set_value	updated
+2026-08-04T12:33:59.476034+00:00	75554	dbgi_011144		Nepeta grandiflora	set_value	updated
+2026-08-04T12:33:59.501237+00:00	75555	dbgi_011132		Nepeta grandiflora	set_value	updated
+2026-08-04T12:33:59.526405+00:00	75513	dbgi_011172		Helictotrichon cantabricum	set_value	updated
+2026-08-04T12:33:59.552561+00:00	75572	dbgi_011231		Daphne pontica	set_value	updated
+2026-08-04T12:33:59.578843+00:00	75556	dbgi_011140		Juniperus thurifera subsp. thurifera	set_value	updated
+2026-08-04T12:33:59.604342+00:00	75507	dbgi_011276		Foeniculum vulgare	set_value	updated
+2026-08-04T12:33:59.629702+00:00	75552	dbgi_011087		Globularia trichosantha	set_value	updated
+2026-08-04T12:33:59.655962+00:00	75495	dbgi_999998		Acacia	set_value	updated
+2026-08-04T12:33:59.682145+00:00	75580	dbgi_011159		Veronica peduncularis	set_value	updated
+2026-08-04T12:33:59.707742+00:00	75496	dbgi_010876		Iberis sempervirens	set_value	updated
+2026-08-04T12:33:59.737871+00:00	75536	dbgi_011226		Iberis sempervirens	set_value	updated
+2026-08-04T12:33:59.763334+00:00	75562	dbgi_010637		Festuca cinerea	set_value	updated
+2026-08-04T12:33:59.789005+00:00	75540	dbgi_011162		Sideritis hyssopifolia	set_value	updated
+2026-08-04T12:33:59.823663+00:00	75541	dbgi_011247		Sideritis hyssopifolia	set_value	updated
+2026-08-04T12:33:59.849622+00:00	75503	dbgi_011266		Bupleurum fruticosum	set_value	updated
+2026-08-04T12:33:59.874605+00:00	76442	dbgi_011233		Digitalis lutea	set_value	updated
+2026-08-04T12:33:59.900770+00:00	75537	dbgi_011050		Potentilla recta	set_value	updated
+2026-08-04T12:33:59.926475+00:00	75514	dbgi_010707		Euphorbia characias	set_value	updated
+2026-08-04T12:33:59.953049+00:00	75515	dbgi_011153		Euphorbia characias	set_value	updated
+2026-08-04T12:33:59.978225+00:00	75517	dbgi_011034		Euphorbia characias	set_value	updated
+2026-08-04T12:34:00.004121+00:00	75535	dbgi_011179		Cota tinctoria subsp. tinctoria	set_value	updated
+2026-08-04T12:34:00.030426+00:00	75549	dbgi_011146		Cota tinctoria subsp. tinctoria	set_value	updated
+2026-08-04T12:34:00.055697+00:00	76439	dbgi_010607		Polygonatum multiflorum	set_value	updated
+2026-08-04T12:34:00.080680+00:00	75499	dbgi_010673		Potentilla alchimilloides	set_value	updated
+2026-08-04T12:34:00.106044+00:00	76448	dbgi_011169		Aristolochia clematitis	set_value	updated
+2026-08-04T12:34:00.130992+00:00	75579	dbgi_011272		Hylotelephium maximum subsp. ruprechtii	set_value	updated
+2026-08-04T12:34:00.156434+00:00	75551	dbgi_011201		Draba lasiocarpa	set_value	updated
+2026-08-04T12:34:00.182145+00:00	76433	dbgi_011045		Ilex aquifolium	set_value	updated
+2026-08-04T12:34:00.211050+00:00	76449	dbgi_010574		Agrimonia eupatoria	set_value	updated
+2026-08-04T12:34:00.235792+00:00	76451	dbgi_011242		Agrimonia eupatoria	set_value	updated
+2026-08-04T12:34:00.260988+00:00	75502	dbgi_011180		Chamaecytisus hirsutus	set_value	updated
+2026-08-04T12:34:00.287012+00:00	75553	dbgi_011090		Paliurus spina-christi	set_value	updated
+2026-08-04T12:34:00.312248+00:00	76438	dbgi_011223		Ruscus aculeatus	set_value	updated
+2026-08-04T12:34:00.337780+00:00	75504	dbgi_011192		Erinacea anthyllis subsp. anthyllis	set_value	updated
+2026-08-04T12:34:00.365222+00:00	76440	dbgi_011110		Hedera helix	set_value	updated
+2026-08-04T12:34:00.391787+00:00	76441	dbgi_011257		Hedera helix	set_value	updated
+2026-08-04T12:34:00.417847+00:00	76443	dbgi_010622		Aquilegia vulgaris	set_value	updated
+2026-08-04T12:34:00.443156+00:00	75508	dbgi_011125		Catananche caerulea	set_value	updated
+2026-08-04T12:34:00.469773+00:00	75509	dbgi_011121		Catananche caerulea	set_value	updated
+2026-08-04T12:34:00.495477+00:00	75527	dbgi_011149		Catananche caerulea	set_value	updated
+2026-08-04T12:34:00.521452+00:00	75528	dbgi_011221		Catananche caerulea	set_value	updated
+2026-08-04T12:34:00.546915+00:00	76445	dbgi_011152		Convallaria majalis	set_value	updated
+2026-08-04T12:34:00.573921+00:00	75516	dbgi_011206		Santolina elegans	set_value	updated
+2026-08-04T12:34:00.599623+00:00	75512	dbgi_011241		Teucrium pyrenaicum	set_value	updated
+2026-08-04T12:34:00.625880+00:00	75500	dbgi_011194		Ranunculus gramineus	set_value	updated
+2026-08-04T12:34:00.652555+00:00	75501	dbgi_011055		Lonicera etrusca	set_value	updated
+2026-08-04T12:34:00.678745+00:00	75557	dbgi_011150		Lavandula lanata	set_value	updated
+2026-08-04T12:34:00.704298+00:00	75578	dbgi_011080		Dianthus caucaseus	set_value	updated
+2026-08-04T12:34:00.736355+00:00	76432	dbgi_010518		Dryopteris filix-mas	set_value	updated
+2026-08-04T12:34:00.760971+00:00	75545	dbgi_011189		Satureja montana	set_value	updated
+2026-08-04T12:34:00.786498+00:00	75505	dbgi_011173		Medicago sativa subsp. sativa	set_value	updated
+2026-08-04T12:34:00.811397+00:00	75506	dbgi_011131		Medicago sativa subsp. sativa	set_value	updated
+2026-08-04T12:34:00.838322+00:00	75538	dbgi_010602		Sempervivum calcareum	set_value	updated
+2026-08-04T12:34:00.862807+00:00	76444	dbgi_011143		Pteridium aquilinum	set_value	updated
+2026-08-04T12:34:00.888373+00:00	75531	dbgi_010618		Vella spinosa	set_value	updated
+2026-08-04T12:34:00.913869+00:00	75563	dbgi_011256		Sideritis italica	set_value	updated
+2026-08-04T12:34:00.940662+00:00	76446	dbgi_010628		Corylus avellana	set_value	updated
+2026-08-04T12:34:00.965971+00:00	75570	dbgi_011100		Telekia speciosa	set_value	updated
+2026-08-04T12:34:00.990670+00:00	75571	dbgi_011130		Telekia speciosa	set_value	updated

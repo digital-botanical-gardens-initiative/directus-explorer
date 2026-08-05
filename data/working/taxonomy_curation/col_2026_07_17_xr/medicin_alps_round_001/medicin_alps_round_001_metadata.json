@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-08-04T14:39:33.221409+00:00",
+  "mode": "read_only_review_queue",
+  "directus_writes": false,
+  "project": "medicin_alps",
+  "round": 1,
+  "input": "data/output/directus_integrity/taxon_name_unified_audit/taxon_name_unified_missing_expected_no_conflict.tsv",
+  "input_sha256": "6fb0f26444a87d29f23cfc62f9d6263cac37c72137ecd596db850691c776e722",
+  "review_group_count": 5,
+  "affected_field_data_count": 103,
+  "distinct_name_count": 5,
+  "col_api": "https://api.checklistbank.org",
+  "col_dataset": {
+    "key": 315834,
+    "alias": "COL26.7 XR",
+    "title": "Catalogue of Life",
+    "version": "2026-07-17 XR",
+    "issued": "2026-07-17",
+    "doi": "10.48580/dgykv",
+    "origin": "xrelease"
+  },
+  "gnverifier": {
+    "role": "unversioned_secondary_diagnostic_only",
+    "version": "version: v1.1.5\nbuild:"
+  },
+  "decision_values": [
+    "accept_proposal",
+    "override",
+    "unresolved",
+    "defer"
+  ],
+  "confidence_values": [
+    "high",
+    "medium",
+    "low"
+  ]
+}

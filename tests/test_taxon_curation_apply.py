@@ -61,6 +61,23 @@ def test_validate_inputs_accepts_reviewed_override() -> None:
     script._validate_inputs([preview], [_backup()], expected_project="jbp")
 
 
+def test_validate_inputs_accepts_placeholder_clear() -> None:
+    script = _load_script()
+    preview = _preview()
+    preview.update(
+        {
+            "decision": "clear_placeholder",
+            "current_taxon_name_unified": "aaunknown",
+            "new_taxon_name_unified": "",
+            "update_action": "clear_value",
+        }
+    )
+    backup = _backup()
+    backup.update({"old_value": "aaunknown", "proposed_new_value": ""})
+
+    script._validate_inputs([preview], [backup], expected_project="jbp")
+
+
 def test_resolve_input_paths_discovers_matching_latest_pair(tmp_path: Path) -> None:
     script = _load_script()
     round_dir = tmp_path / "col_release/jbuf_round_001"

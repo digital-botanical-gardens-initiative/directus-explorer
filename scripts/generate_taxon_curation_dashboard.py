@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
+
+from dotenv import dotenv_values
 
 from directus_explorer.taxon_curation_dashboard import load_dashboard_data, write_dashboard
 
@@ -19,6 +22,7 @@ def main() -> None:
     data = load_dashboard_data(
         curation_root=args.curation_root,
         audit_summary=args.audit_summary,
+        directus_instance=_directus_instance(args.env_file),
     )
     write_dashboard(args.output, data)
     print(f"Wrote taxonomy curation dashboard to {args.output}")
@@ -33,11 +37,22 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--curation-root", type=Path, default=DEFAULT_ROOT)
     parser.add_argument("--audit-summary", type=Path, default=DEFAULT_AUDIT)
     parser.add_argument(
+        "--env-file",
+        type=Path,
+        default=Path(".env"),
+        help="Read the non-secret DIRECTUS_INSTANCE used for item links.",
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         default=DEFAULT_ROOT / "taxonomy_curation_dashboard.html",
     )
     return parser.parse_args()
+
+
+def _directus_instance(env_file: Path) -> str:
+    values = dotenv_values(env_file) if env_file.exists() else {}
+    return (os.environ.get("DIRECTUS_INSTANCE") or values.get("DIRECTUS_INSTANCE") or "").strip()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-04T13:17:44.723796+00:00",
+  "mode": "directus_get_only_preflight",
+  "directus_writes": false,
+  "manifest": "data/working/taxonomy_curation/col_2026_07_17_xr/artemisia_absinthium_round_001/artemisia_absinthium_round_001_update_manifest.tsv",
+  "manifest_sha256": "32246fbdd5b47f20eee9d9f612de07d9a34681d83b17cd1b4f3a49903cd1c790",
+  "requested_count": 31,
+  "fetched_count": 31,
+  "ready_count": 31,
+  "conflict_count": 0,
+  "conflicts_by_reason": {},
+  "backup": "data/working/taxonomy_curation/col_2026_07_17_xr/artemisia_absinthium_round_001/artemisia_absinthium_round_001_directus_backup_20260804T131744Z.tsv",
+  "backup_sha256": "c7996fca49890421bdd92cec1a67365684e694124044d5aaa60a60ba3973d458",
+  "write_preview": "data/working/taxonomy_curation/col_2026_07_17_xr/artemisia_absinthium_round_001/artemisia_absinthium_round_001_write_preview_20260804T131744Z.tsv",
+  "conflicts": "data/working/taxonomy_curation/col_2026_07_17_xr/artemisia_absinthium_round_001/artemisia_absinthium_round_001_preflight_conflicts_20260804T131744Z.tsv"
+}

@@ -60,3 +60,31 @@ def test_preflight_blocks_row_changed_since_audit() -> None:
     assert not backups
     assert not previews
     assert conflicts[0]["conflict_reason"] == "taxon_name_unified_changed_since_audit"
+
+
+def test_preflight_serializes_placeholder_clear_as_json_null() -> None:
+    manifest = _manifest()
+    manifest.update(
+        {
+            "current_taxon_name_unified": "aaunknown",
+            "authoritative_source_field": "taxon_name_unified",
+            "authoritative_verbatim_name": "aaunknown",
+            "new_taxon_name_unified": "",
+            "update_action": "clear_value",
+            "decision": "clear_placeholder",
+        }
+    )
+    current = {
+        "42": {
+            "id": 42,
+            "sample_id": "dbgi_1",
+            "qfield_project": "jbp",
+            "taxon_name_unified": "aaunknown",
+        }
+    }
+
+    backups, previews, conflicts = build_taxon_update_preflight([manifest], current)
+
+    assert not conflicts
+    assert backups[0]["old_value"] == "aaunknown"
+    assert previews[0]["patch_payload_json"] == '{"taxon_name_unified":null}'

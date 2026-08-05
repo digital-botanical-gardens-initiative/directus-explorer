@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-05T08:42:34.064420+00:00",
+  "mode": "directus_get_only_preflight",
+  "directus_writes": false,
+  "manifest": "data/working/taxonomy_curation/col_2026_07_17_xr/medicin_alps_round_002/medicin_alps_round_002_update_manifest.tsv",
+  "manifest_sha256": "30af3b13251c3d5a3444d950813c10a72925f208b1877bad11865aa4ec7ea5dd",
+  "requested_count": 120,
+  "fetched_count": 120,
+  "ready_count": 120,
+  "conflict_count": 0,
+  "conflicts_by_reason": {},
+  "backup": "data/working/taxonomy_curation/col_2026_07_17_xr/medicin_alps_round_002/medicin_alps_round_002_directus_backup_20260805T084234Z.tsv",
+  "backup_sha256": "9a4d0f60809cc4766d93acad2d912374fd10f0c5e565b1676d1994466b4ca5da",
+  "write_preview": "data/working/taxonomy_curation/col_2026_07_17_xr/medicin_alps_round_002/medicin_alps_round_002_write_preview_20260805T084234Z.tsv",
+  "conflicts": "data/working/taxonomy_curation/col_2026_07_17_xr/medicin_alps_round_002/medicin_alps_round_002_preflight_conflicts_20260805T084234Z.tsv"
+}

@@ -134,6 +134,21 @@ uv run python scripts/prepare_taxon_curation_manifest.py \
 The manifest command refuses blank or invalid decisions and still performs no
 Directus writes.
 
+When a project has only placeholder values or records without any taxonomic
+evidence left, create an explicit unresolved cleanup round:
+
+```bash
+uv run python scripts/generate_unresolved_taxon_curation_review.py \
+  --project jbuf \
+  --round 3
+```
+
+This groups placeholder values under `clear_placeholder` and evidence-free
+NULL rows under `unresolved`. Preparing the resulting manifest includes only
+the placeholder clears; unresolved rows already stored as NULL are registered
+without a Directus write. Placeholder previews use the explicit action
+`clear_value` and serialize the patch as `{"taxon_name_unified": null}`.
+
 Before applying a reviewed manifest, compare it with the live Directus rows and
 create a timestamped backup and exact write preview:
 
@@ -176,6 +191,10 @@ update run:
 ```bash
 uv run python scripts/generate_taxon_curation_dashboard.py
 ```
+
+When `DIRECTUS_INSTANCE` is available in `.env`, each decision lists its sample
+IDs and links directly to the corresponding `Field_Data` item in the Directus
+admin interface. The dashboard embeds only the instance URL, never credentials.
 
 Open `data/working/taxonomy_curation/taxonomy_curation_dashboard.html` in a web
 browser. The report is self-contained and reads only local audit, review,

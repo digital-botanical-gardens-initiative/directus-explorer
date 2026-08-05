@@ -60,13 +60,22 @@ def build_taxon_update_preflight(
                 **manifest,
                 "preflight_status": "ready",
                 "patch_payload_json": json.dumps(
-                    {"taxon_name_unified": manifest["new_taxon_name_unified"]},
+                    {"taxon_name_unified": _target_value(manifest)},
                     ensure_ascii=False,
                     separators=(",", ":"),
                 ),
             }
         )
     return backups, previews, conflicts
+
+
+def _target_value(manifest: dict[str, str]) -> str | None:
+    action = manifest.get("update_action", "set_value")
+    if action == "clear_value":
+        return None
+    if action == "set_value":
+        return manifest["new_taxon_name_unified"]
+    raise ValueError(f"Unsupported taxon curation update action: {action!r}")
 
 
 def _conflict(

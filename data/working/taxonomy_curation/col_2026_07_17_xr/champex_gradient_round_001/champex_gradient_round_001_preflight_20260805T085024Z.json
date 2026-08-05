@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-05T08:50:24.169053+00:00",
+  "mode": "directus_get_only_preflight",
+  "directus_writes": false,
+  "manifest": "data/working/taxonomy_curation/col_2026_07_17_xr/champex_gradient_round_001/champex_gradient_round_001_update_manifest.tsv",
+  "manifest_sha256": "8459685431bf55a528a2cde4a3c2daf4e1c6726b0f1faf1fa2970dd53afbf835",
+  "requested_count": 1,
+  "fetched_count": 1,
+  "ready_count": 1,
+  "conflict_count": 0,
+  "conflicts_by_reason": {},
+  "backup": "data/working/taxonomy_curation/col_2026_07_17_xr/champex_gradient_round_001/champex_gradient_round_001_directus_backup_20260805T085024Z.tsv",
+  "backup_sha256": "29499a13ac82399d8b21843d2cec5dde1249ab9940f9fc368b107fbcb70140db",
+  "write_preview": "data/working/taxonomy_curation/col_2026_07_17_xr/champex_gradient_round_001/champex_gradient_round_001_write_preview_20260805T085024Z.tsv",
+  "conflicts": "data/working/taxonomy_curation/col_2026_07_17_xr/champex_gradient_round_001/champex_gradient_round_001_preflight_conflicts_20260805T085024Z.tsv"
+}

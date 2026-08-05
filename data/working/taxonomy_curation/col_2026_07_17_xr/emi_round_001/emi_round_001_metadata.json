@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-08-05T08:47:19.790653+00:00",
+  "mode": "reviewed_unresolved_cleanup",
+  "directus_writes": false,
+  "project": "emi",
+  "round": 1,
+  "input": "data/output/directus_integrity/taxon_name_unified_audit/taxon_name_unified_audit_all.tsv",
+  "input_sha256": "8a8add66b7f6174abaabe2367720a560d0816b35c503c0dcebf299743d1497b3",
+  "review_group_count": 1,
+  "affected_field_data_count": 1,
+  "col_dataset": {
+    "key": 315834,
+    "version": "2026-07-17 XR",
+    "doi": "10.48580/dgykv",
+    "lookup_performed": false,
+    "reason": "No usable taxonomic names were present."
+  }
+}

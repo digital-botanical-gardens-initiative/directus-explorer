@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-05T08:39:49.850420+00:00",
+  "mode": "dry_run_manifest",
+  "directus_writes": false,
+  "review": "data/working/taxonomy_curation/col_2026_07_17_xr/medicin_alps_round_002/medicin_alps_round_002_review.tsv",
+  "audit": "data/output/directus_integrity/taxon_name_unified_audit/taxon_name_unified_audit_all.tsv",
+  "update_count": 120,
+  "skipped_count": 119,
+  "skipped_by_decision": {
+    "unresolved": 119
+  }
+}

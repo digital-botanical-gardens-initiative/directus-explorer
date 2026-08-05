@@ -103,7 +103,7 @@ def _fetch_current_rows(
         "sample_id",
         "qfield_project",
         "taxon_name_unified",
-        *sorted(source_fields),
+        *sorted(source_fields - {"taxon_name_unified"}),
     ]
     payload = client._get(
         "/items/Field_Data",

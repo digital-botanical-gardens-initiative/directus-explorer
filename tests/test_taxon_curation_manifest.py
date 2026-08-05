@@ -65,3 +65,54 @@ def test_build_manifest_uses_explicit_override_target() -> None:
     assert manifest[0]["authoritative_source_field"] == "name_proposition"
     assert manifest[0]["new_taxon_name_unified"] == "Trollius asiaticus"
     assert manifest[0]["col_accepted_usage_id"] == "7CVTQ"
+
+
+def test_build_manifest_uses_reviewed_fuzzy_target_without_changing_source() -> None:
+    review = _review_row()
+    review.update(
+        {
+            "proposal_verbatim_name": "Solidago vigaurea",
+            "chosen_col_accepted_name": "Solidago virgaurea",
+            "chosen_col_accepted_usage_id": "4Y7L3",
+            "chosen_col_accepted_rank": "species",
+        }
+    )
+    audit = {
+        "10": {"stored_taxon_name_unified": ""},
+        "11": {"stored_taxon_name_unified": ""},
+    }
+
+    manifest, _ = build_taxon_update_manifest([review], audit)
+
+    assert manifest[0]["authoritative_source_field"] == "taxon_name"
+    assert manifest[0]["authoritative_verbatim_name"] == "Solidago vigaurea"
+    assert manifest[0]["new_taxon_name_unified"] == "Solidago virgaurea"
+
+
+def test_build_manifest_creates_explicit_placeholder_clear() -> None:
+    review = _review_row(decision="clear_placeholder")
+    audit = {
+        "10": {"stored_taxon_name_unified": "aaunknown"},
+        "11": {"stored_taxon_name_unified": "Aaunknown"},
+    }
+
+    manifest, skipped = build_taxon_update_manifest([review], audit)
+
+    assert not skipped
+    assert {row["update_action"] for row in manifest} == {"clear_value"}
+    assert {row["new_taxon_name_unified"] for row in manifest} == {""}
+    assert manifest[0]["authoritative_source_field"] == "taxon_name_unified"
+
+
+def test_build_manifest_skips_reviewed_unresolved_without_a_write() -> None:
+    review = _review_row(decision="unresolved")
+    audit = {
+        "10": {"stored_taxon_name_unified": ""},
+        "11": {"stored_taxon_name_unified": ""},
+    }
+
+    manifest, skipped = build_taxon_update_manifest([review], audit)
+
+    assert not manifest
+    assert len(skipped) == 2
+    assert {row["decision"] for row in skipped} == {"unresolved"}

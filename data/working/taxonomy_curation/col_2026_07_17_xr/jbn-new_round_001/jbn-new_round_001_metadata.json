@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-08-04T12:18:16.617611+00:00",
+  "mode": "read_only_review_queue",
+  "directus_writes": false,
+  "project": "jbn-new",
+  "round": 1,
+  "input": "data/output/directus_integrity/taxon_name_unified_audit/taxon_name_unified_missing_expected_conflict.tsv",
+  "input_sha256": "000a2ecd6b8cc93d4c7ad061758e51db1f35d3ee0403cadcabbde1c77781febc",
+  "review_group_count": 69,
+  "affected_field_data_count": 88,
+  "distinct_name_count": 138,
+  "col_api": "https://api.checklistbank.org",
+  "col_dataset": {
+    "key": 315834,
+    "alias": "COL26.7 XR",
+    "title": "Catalogue of Life",
+    "version": "2026-07-17 XR",
+    "issued": "2026-07-17",
+    "doi": "10.48580/dgykv",
+    "origin": "xrelease"
+  },
+  "gnverifier": {
+    "role": "unversioned_secondary_diagnostic_only",
+    "version": "version: v1.1.5\nbuild:"
+  },
+  "decision_values": [
+    "accept_proposal",
+    "override",
+    "unresolved",
+    "defer"
+  ],
+  "confidence_values": [
+    "high",
+    "medium",
+    "low"
+  ]
+}

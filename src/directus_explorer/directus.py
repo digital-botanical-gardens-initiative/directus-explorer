@@ -42,6 +42,7 @@ from .ms_metadata import (
 )
 from .samples import (
     PROJECT_GROUPS,
+    CollectorSampleSummary,
     ProfiledSample,
     ProjectSampleSummary,
     ProjectSpeciesSummary,
@@ -918,6 +919,30 @@ class DirectusClient:
             )
         ]
 
+    def summarize_samples_by_collector(self) -> list[CollectorSampleSummary]:
+        """Return collected sample counts grouped by field collector full name.
+
+        Only collected_count is meaningful; profiled/positive/negative/both are always
+        zero because collector identity cannot be traced through to profiled samples
+        (see CollectorSampleSummary).
+        """
+
+        self._authenticate()
+
+        collected_counts = self._get_field_sample_counts_by_collector()
+
+        return [
+            CollectorSampleSummary(
+                collector_fullname=collector_fullname,
+                collected_count=collected_count,
+                profiled_count=0,
+                positive_count=0,
+                negative_count=0,
+                both_count=0,
+            )
+            for collector_fullname, collected_count in sorted(collected_counts.items())
+        ]
+
     def summarize_species_by_project(self) -> list[ProjectSpeciesSummary]:
         """Return distinct collected and profiled species counts grouped by qfield project."""
 
@@ -1205,6 +1230,50 @@ class DirectusClient:
                 ) from exc
 
         return counts_by_project
+
+    def _get_field_sample_counts_by_collector(self) -> dict[str, int]:
+        """Return collected sample counts grouped by field collector full name."""
+
+        payload = self._get(
+            "/items/Field_Data",
+            params={
+                "limit": "-1",
+                "groupBy[]": "collector_fullname",
+                "aggregate[count]": "id",
+            },
+        )
+        data = payload.get("data")
+        if not isinstance(data, list):
+            raise DirectusResponseError(
+                "Directus Field_Data aggregate payload did not contain a data list"
+            )
+
+        counts_by_collector: dict[str, int] = {}
+        for row in data:
+            if not isinstance(row, dict):
+                raise DirectusResponseError("Directus Field_Data aggregate row is not an object")
+
+            collector_fullname = row.get("collector_fullname")
+            count_data = row.get("count")
+            if not isinstance(collector_fullname, str) or not collector_fullname.strip():
+                continue
+            if not isinstance(count_data, dict):
+                continue
+
+            count_value = count_data.get("id")
+            if count_value is None:
+                raise DirectusResponseError(
+                    "Directus Field_Data aggregate row did not contain count.id"
+                )
+
+            try:
+                counts_by_collector[collector_fullname] = int(str(count_value))
+            except ValueError as exc:
+                raise DirectusResponseError(
+                    f"Directus Field_Data aggregate count is not an integer: {count_value!r}"
+                ) from exc
+
+        return counts_by_collector
 
     def _get_field_species_by_project(self) -> dict[str, set[str]]:
         """Return distinct collected species grouped by qfield project."""

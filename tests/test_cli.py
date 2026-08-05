@@ -11,7 +11,12 @@ from click.testing import CliRunner
 from directus_explorer import cli as cli_module
 from directus_explorer.config import Settings, SettingsError
 from directus_explorer.ms_metadata import MsMetadataTable
-from directus_explorer.samples import ProfiledSample, ProjectSampleSummary, ProjectSpeciesSummary
+from directus_explorer.samples import (
+    CollectorSampleSummary,
+    ProfiledSample,
+    ProjectSampleSummary,
+    ProjectSpeciesSummary,
+)
 
 
 def test_cli_help() -> None:
@@ -1294,6 +1299,66 @@ def test_samples_summary_json_output(monkeypatch: pytest.MonkeyPatch) -> None:
         '[{"qfield_project": "jbuf", "collected_count": 10, "profiled_count": 4, '
         '"positive_count": 1, "negative_count": 1, "both_count": 2}]}'
     )
+
+
+def test_samples_summary_group_by_collector_json_output(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Collector summary JSON should key rows by collector_fullname."""
+
+    runner = CliRunner()
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def summarize_samples_by_collector(self) -> list[CollectorSampleSummary]:
+            return [
+                CollectorSampleSummary(
+                    collector_fullname="Katerina Kucerova",
+                    collected_count=12,
+                    profiled_count=0,
+                    positive_count=0,
+                    negative_count=0,
+                    both_count=0,
+                )
+            ]
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+
+    result = runner.invoke(
+        cli_module.cli,
+        ["samples", "summary", "--group-by", "collector", "--format", "json"],
+    )
+
+    assert result.exit_code == 0
+    assert result.output.strip() == (
+        '{"group_by": "collector", "projects": '
+        '[{"collector_fullname": "Katerina Kucerova", "collected_count": 12, '
+        '"profiled_count": 0, "positive_count": 0, "negative_count": 0, "both_count": 0}]}'
+    )
+
+
+def test_samples_summary_group_by_collector_rejects_species_count() -> None:
+    """Collector grouping does not support --count species."""
+
+    runner = CliRunner()
+
+    result = runner.invoke(
+        cli_module.cli,
+        ["samples", "summary", "--group-by", "collector", "--count", "species"],
+    )
+
+    assert result.exit_code != 0
+    assert "does not support --count species" in result.output
 
 
 def test_samples_summary_species_text_output(monkeypatch: pytest.MonkeyPatch) -> None:

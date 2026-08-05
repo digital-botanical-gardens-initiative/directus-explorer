@@ -12,7 +12,7 @@ import pytest
 from directus_explorer.config import Settings
 from directus_explorer.directus import DirectusAuthError, DirectusClient, DirectusResponseError
 from directus_explorer.ms_metadata import MsMetadataTable
-from directus_explorer.samples import ProfiledSample, ProjectSampleSummary
+from directus_explorer.samples import CollectorSampleSummary, ProfiledSample, ProjectSampleSummary
 from directus_explorer.taxonomy import TaxonResolution
 
 
@@ -1214,6 +1214,64 @@ def test_summarize_samples_by_project_aggregates_collected_and_profiled(
     ] == [
         ("fibl", 5, 1, 1, 0, 0),
         ("jbuf", 10, 1, 0, 0, 1),
+    ]
+
+
+def test_summarize_samples_by_collector_aggregates_collected(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Collector summary should return collected counts keyed by collector full name."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+
+    def fake_post(*args: Any, **kwargs: Any) -> FakeResponse:
+        return FakeResponse(200, {"data": {"access_token": "token"}})
+
+    def fake_get(url: str, params: Any = None, *args: Any, **kwargs: Any) -> FakeResponse:
+        if url.endswith("/items/Field_Data") and params == {
+            "limit": "-1",
+            "groupBy[]": "collector_fullname",
+            "aggregate[count]": "id",
+        }:
+            return FakeResponse(
+                200,
+                {
+                    "data": [
+                        {"collector_fullname": "Katerina Kucerova", "count": {"id": "12"}},
+                        {"collector_fullname": "Jan Novak", "count": {"id": "3"}},
+                        {"collector_fullname": None, "count": {"id": "7"}},
+                    ]
+                },
+            )
+        raise AssertionError(f"Unexpected URL or params: {url!r} {params!r}")
+
+    monkeypatch.setattr(client._session, "post", fake_post)
+    monkeypatch.setattr(client._session, "get", fake_get)
+
+    summary = client.summarize_samples_by_collector()
+
+    assert summary == [
+        CollectorSampleSummary(
+            collector_fullname="Jan Novak",
+            collected_count=3,
+            profiled_count=0,
+            positive_count=0,
+            negative_count=0,
+            both_count=0,
+        ),
+        CollectorSampleSummary(
+            collector_fullname="Katerina Kucerova",
+            collected_count=12,
+            profiled_count=0,
+            positive_count=0,
+            negative_count=0,
+            both_count=0,
+        ),
     ]
 
 

@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-08-05T13:18:21.127673+00:00",
+  "mode": "commit",
+  "seed": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_spelling_round_002/manual_spelling_round_002_taxa_seed.tsv",
+  "seed_count": 22,
+  "existing_exact_count": 15,
+  "missing_count": 7,
+  "conflict_count": 0,
+  "preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_spelling_round_002/taxa_seed_preview_20260805T131821Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_spelling_round_002/taxa_seed_conflicts_20260805T131821Z.tsv"
+}

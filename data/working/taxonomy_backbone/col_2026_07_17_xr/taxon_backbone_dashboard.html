@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>CoL Taxonomy Backbone</title>
+<style>
+body{font:14px system-ui;margin:0;background:#f5f6f8;color:#20242a}main{max-width:1500px;margin:auto;padding:24px}
+h1{margin:0 0 6px}.sub{color:#667085}.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:20px 0}
+.card,.panel{background:white;border:1px solid #dde1e7;border-radius:10px}.card{padding:14px}.card span{display:block;color:#667085}.card b{font-size:24px}
+.panel{padding:16px;margin:16px 0;overflow:auto}table{border-collapse:collapse;width:100%}th,td{padding:8px;border-bottom:1px solid #eaecf0;text-align:left;vertical-align:top}th{position:sticky;top:0;background:white}.num{text-align:right}
+input{padding:9px;width:360px;border:1px solid #ccd1d8;border-radius:7px}a{color:#175cd3;text-decoration:none}code{font-size:12px}details{max-width:420px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><main>
+<h1>Catalogue of Life taxonomy backbone</h1><p class="sub">Pinned release 2026-07-17 XR · dataset 315834 · DOI 10.48580/dgykv</p>
+<section class="cards"><article class='card'><span>Populated records</span><b>9,365</b></article><article class='card'><span>Automatic links</span><b>8,450</b></article><article class='card'><span>Reviewed CoL links</span><b>876</b></article><article class='card'><span>Explicit unresolved</span><b>39</b></article><article class='card'><span>Remaining names</span><b>0</b></article><article class='card'><span>Remaining records</span><b>0</b></article></section>
+<section class="panel"><h2>Remaining review cohorts</h2><p class="sub">582 names / 915 records have been completed through reviewed rounds. 0 remaining names have a pinned candidate.</p><table><thead><tr><th>Current status</th><th>Pinned suggestion</th><th class="num">Names</th><th class="num">Records</th></tr></thead><tbody></tbody></table></section>
+<section class="panel"><h2>Names still requiring decisions</h2><p><input id="filter" placeholder="Filter names, projects, status…"></p>
+<table id="review"><thead><tr><th>Status</th><th>Unified name</th><th class="num">Records</th><th>Projects / samples</th><th>Current pinned result</th><th>Verified candidate</th><th>gnverifier</th></tr></thead><tbody></tbody></table></section>
+</main><script>const q=document.querySelector('#filter');q.addEventListener('input',()=>{const v=q.value.toLowerCase();document.querySelectorAll('#review tbody tr').forEach(r=>r.hidden=!r.textContent.toLowerCase().includes(v));});</script></body></html>

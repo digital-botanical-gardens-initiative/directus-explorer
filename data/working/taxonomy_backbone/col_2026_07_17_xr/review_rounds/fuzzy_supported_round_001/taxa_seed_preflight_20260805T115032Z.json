@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-08-05T11:50:32.071085+00:00",
+  "mode": "directus_get_only_preflight",
+  "seed": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/fuzzy_supported_round_001/fuzzy_supported_round_001_taxa_seed.tsv",
+  "seed_count": 8,
+  "existing_exact_count": 6,
+  "missing_count": 2,
+  "conflict_count": 0,
+  "preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/fuzzy_supported_round_001/taxa_seed_preview_20260805T115032Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/fuzzy_supported_round_001/taxa_seed_conflicts_20260805T115032Z.tsv"
+}

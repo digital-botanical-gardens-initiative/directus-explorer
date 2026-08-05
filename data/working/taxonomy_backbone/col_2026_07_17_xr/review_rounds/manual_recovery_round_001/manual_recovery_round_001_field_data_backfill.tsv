@@ -1,0 +1,11 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version
+jbc	73779	dbgi_009164	Edelweiss saastal	5CBZ	genus_fallback	2026-07-17 XR
+jbc	72834	dbgi_008592	Eringium zabelii	NPTJT	manual_spelling_supported	2026-07-17 XR
+jbp-new	76041	dbgi_012131	Forage officinalis	MJ92	manual_spelling_supported	2026-07-17 XR
+jbc	70456	dbgi_008818	Helicrysum thianschenicum	3K7CP	manual_spelling_supported	2026-07-17 XR
+jbc	72860	dbgi_008625	Horreur vulgare	6MDJP	manual_spelling_supported	2026-07-17 XR
+jbuf	69803	dbgi_007485	Sacramental catesbaei	7WS9M	manual_spelling_supported	2026-07-17 XR
+jbc	70936	dbgi_006613	Salix arminali x eleagos	7BWB	hybrid_formula_genus_fallback	2026-07-17 XR
+bioblitz_vinesch	67714	vine_000166	Stylommatophora		higher_taxon_unresolved	2026-07-17 XR
+jbp	76167	dbgi_009944	Toccoca sp.	63B9N	genus_fallback	2026-07-17 XR
+jbp	76168	dbgi_009962	Toccoca sp.	63B9N	genus_fallback	2026-07-17 XR

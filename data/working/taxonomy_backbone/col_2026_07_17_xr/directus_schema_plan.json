@@ -1,0 +1,142 @@
+{
+  "mode": "commit",
+  "expected_schema": {
+    "collection": "Taxa",
+    "taxa_fields": {
+      "id": {
+        "type": "integer",
+        "required": true,
+        "primary_key": true
+      },
+      "col_id": {
+        "type": "string",
+        "required": true,
+        "unique": true
+      },
+      "scientific_name": {
+        "type": "string",
+        "required": true
+      },
+      "authorship": {
+        "type": "string",
+        "required": false
+      },
+      "rank": {
+        "type": "string",
+        "required": false
+      },
+      "backbone_version": {
+        "type": "string",
+        "required": true
+      },
+      "backbone_dataset_key": {
+        "type": "integer",
+        "required": true
+      },
+      "backbone_doi": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "field_data_fields": {
+      "taxon_col_id": {
+        "type": "string",
+        "required": false
+      },
+      "taxon_resolution_status": {
+        "type": "string",
+        "required": false
+      },
+      "taxon_backbone_version": {
+        "type": "string",
+        "required": false
+      },
+      "taxon_ref": {
+        "type": "integer",
+        "required": false
+      },
+      "taxon_parent_col_ids": {
+        "type": "json",
+        "required": false
+      }
+    },
+    "relation": {
+      "many_collection": "Field_Data",
+      "many_field": "taxon_ref",
+      "one_collection": "Taxa"
+    }
+  },
+  "before": {
+    "taxa_collection_exists": true,
+    "taxa_fields": {
+      "id": "integer",
+      "col_id": "string",
+      "scientific_name": "string",
+      "authorship": "string",
+      "rank": "string",
+      "backbone_version": "string",
+      "backbone_dataset_key": "integer",
+      "backbone_doi": "string"
+    },
+    "field_data_fields": {
+      "id": "integer",
+      "user_created": "uuid",
+      "date_created": "timestamp",
+      "user_updated": "uuid",
+      "date_updated": "timestamp",
+      "collector_fullname": "string",
+      "observation_subject": "string",
+      "inat_upload": "integer",
+      "is_wild": "integer",
+      "taxon_name": "string",
+      "no_name_on_list": "integer",
+      "sample_id": "string",
+      "picture_panel": "string",
+      "picture_general": "string",
+      "picture_detail": "string",
+      "picture_cut": "string",
+      "picture_panel_label": "string",
+      "x_coord": "float",
+      "y_coord": "float",
+      "collector_orcid": "string",
+      "collector_inat": "string",
+      "latitude": "float",
+      "longitude": "float",
+      "qfield_project": "string",
+      "picture_free": "string",
+      "comment_eco": "text",
+      "weather": "string",
+      "sample_name": "string",
+      "name_proposition": "string",
+      "ipen": "string",
+      "match_name": "string",
+      "ott_id": "string",
+      "rank": "string",
+      "wikidataID": "string",
+      "unknown": "string",
+      "comment_env": "text",
+      "herbivory_percent": "float",
+      "temperature_\u00b0C": "float",
+      "geometry": "geometry.Point",
+      "date": "bigInteger",
+      "soil_type": "string",
+      "catalogue_number": "string",
+      "extracted_id": "string",
+      "project": "string",
+      "uuid_qfield": "string",
+      "MatchedCanonical": "string",
+      "TaxonId": "string",
+      "unique_id": "string",
+      "taxon_name_final": "string",
+      "taxon_name_unified": "string",
+      "taxon_col_id": "string",
+      "taxon_resolution_status": "string",
+      "taxon_backbone_version": "string",
+      "taxon_ref": "integer"
+    },
+    "taxon_ref_relation_exists": true
+  },
+  "planned_actions": [
+    "create_field:Field_Data.taxon_parent_col_ids"
+  ]
+}

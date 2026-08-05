@@ -1,0 +1,19 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+jbc	71178	dbgi_006771	Arrhenatherum elatior subsp. sardoum	7JBM8	annotated_base_taxon	2026-07-17 XR					7JBM8	annotated_base_taxon	2026-07-17 XR	3860
+jbn	68986	dbgi_003537	Asplenium_ruta_muraria_L_subsp_ruta_muraria	5FTQV	annotated_base_taxon	2026-07-17 XR					5FTQV	annotated_base_taxon	2026-07-17 XR	3858
+jbuf	69835	dbgi_007340	Camellia sinensis théier	Q9S3	annotated_base_taxon	2026-07-17 XR					Q9S3	annotated_base_taxon	2026-07-17 XR	3534
+jbn	68662	dbgi_002235	Cannabis_sativa_L_Sch�ne_vom_Albis	QM84	annotated_base_taxon	2026-07-17 XR					QM84	annotated_base_taxon	2026-07-17 XR	3553
+jbn	69162	dbgi_002042	Cannabis_sativa_L_Sch�ne_vom_Albis	QM84	annotated_base_taxon	2026-07-17 XR					QM84	annotated_base_taxon	2026-07-17 XR	3553
+jbn	68665	dbgi_001968	Ferula_assa_foetida_L	6HS3T	annotated_base_taxon	2026-07-17 XR					6HS3T	annotated_base_taxon	2026-07-17 XR	3859
+jbuf	66633	dbgi_002643	Ilex aquifolium L. femelle	6N77K	annotated_base_taxon	2026-07-17 XR					6N77K	annotated_base_taxon	2026-07-17 XR	2209
+jbuf	70890	dbgi_007827	Iris lactea fo. bioluminescent (Vahl) Kitag.	3PZTQ	annotated_base_taxon	2026-07-17 XR					3PZTQ	annotated_base_taxon	2026-07-17 XR	3857
+jbuf	67058	dbgi_001134	Mammillaria magnimamma Haw. fo. obconella	7KB6W	annotated_base_taxon	2026-07-17 XR					7KB6W	annotated_base_taxon	2026-07-17 XR	3861
+jbuf	67055	dbgi_001054	Opuntia tuna (L.) Mill. var. monstrosa	9Y783	annotated_base_taxon	2026-07-17 XR					9Y783	annotated_base_taxon	2026-07-17 XR	3862
+champex_gradient	76138	grad_000180	Sempervivum montanum no	4WHZ2	annotated_base_taxon	2026-07-17 XR					4WHZ2	annotated_base_taxon	2026-07-17 XR	1142
+jbuf	65963	dbgi_000444	Taxus baccata L. femelle	5527N	annotated_base_taxon	2026-07-17 XR					5527N	annotated_base_taxon	2026-07-17 XR	1266
+jbuf	69965	dbgi_007729	Taxus baccata L. femelle	5527N	annotated_base_taxon	2026-07-17 XR					5527N	annotated_base_taxon	2026-07-17 XR	1266
+jbuf	69966	dbgi_007665	Taxus baccata L. femelle	5527N	annotated_base_taxon	2026-07-17 XR					5527N	annotated_base_taxon	2026-07-17 XR	1266
+jbuf	69967	dbgi_007680	Taxus baccata L. femelle	5527N	annotated_base_taxon	2026-07-17 XR					5527N	annotated_base_taxon	2026-07-17 XR	1266
+jbuf	67434	dbgi_007186	Thymus vulgaris Var. fragrantissima	56RHL	annotated_base_taxon	2026-07-17 XR					56RHL	annotated_base_taxon	2026-07-17 XR	1311
+jbuf	67059	dbgi_001045	Trichocereus bridgesii (Salm-Dyck) Britton et Rose fo. monstruosa	38KFS	annotated_base_taxon	2026-07-17 XR					38KFS	annotated_base_taxon	2026-07-17 XR	3856
+jbn	69097	dbgi_003734	Vitex_agnus_castus_L	5BKY5	annotated_base_taxon	2026-07-17 XR					5BKY5	annotated_base_taxon	2026-07-17 XR	1400

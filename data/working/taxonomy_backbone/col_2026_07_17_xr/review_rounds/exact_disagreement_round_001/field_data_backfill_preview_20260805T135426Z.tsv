@@ -1,0 +1,19 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+jbp	74266	dbgi_009900	Caesalpinia mexicana	9DNJM	ambiguous_current_supported	2026-07-17 XR					9DNJM	ambiguous_current_supported	2026-07-17 XR	3063
+jbp	74267	dbgi_009845	Caesalpinia mexicana	9DNJM	ambiguous_current_supported	2026-07-17 XR					9DNJM	ambiguous_current_supported	2026-07-17 XR	3063
+jbp	74268	dbgi_009830	Caesalpinia mexicana	9DNJM	ambiguous_current_supported	2026-07-17 XR					9DNJM	ambiguous_current_supported	2026-07-17 XR	3063
+jbc	70695	dbgi_006988	Inula oculus-christi	76NKQ	ambiguous_current_supported	2026-07-17 XR					76NKQ	ambiguous_current_supported	2026-07-17 XR	2588
+jbc	70696	dbgi_006897	Inula oculus-christi	76NKQ	ambiguous_current_supported	2026-07-17 XR					76NKQ	ambiguous_current_supported	2026-07-17 XR	2588
+jbp	74223	dbgi_009841	Inula oculus-christi	76NKQ	ambiguous_current_supported	2026-07-17 XR					76NKQ	ambiguous_current_supported	2026-07-17 XR	2588
+jbp	74224	dbgi_009904	Inula oculus-christi	76NKQ	ambiguous_current_supported	2026-07-17 XR					76NKQ	ambiguous_current_supported	2026-07-17 XR	2588
+jbp	74225	dbgi_009832	Inula oculus-christi	76NKQ	ambiguous_current_supported	2026-07-17 XR					76NKQ	ambiguous_current_supported	2026-07-17 XR	2588
+kew-botanical-gardens	75109	dbgi_010740	Sedum sediforme	6V8CK	ambiguous_current_supported	2026-07-17 XR					6V8CK	ambiguous_current_supported	2026-07-17 XR	2333
+kew-botanical-gardens	75110	dbgi_010893	Sedum sediforme	6V8CK	ambiguous_current_supported	2026-07-17 XR					6V8CK	ambiguous_current_supported	2026-07-17 XR	2333
+kew-botanical-gardens	75111	dbgi_010794	Sedum sediforme	6V8CK	ambiguous_current_supported	2026-07-17 XR					6V8CK	ambiguous_current_supported	2026-07-17 XR	2333
+champex_gradient	74158	grad_000145	Senecio incanus	5J5YG	ambiguous_current_supported	2026-07-17 XR					5J5YG	ambiguous_current_supported	2026-07-17 XR	1497
+champex_gradient	74165	grad_000234	Senecio incanus	5J5YG	ambiguous_current_supported	2026-07-17 XR					5J5YG	ambiguous_current_supported	2026-07-17 XR	1497
+champex_gradient	74170	grad_000166	Senecio incanus	5J5YG	ambiguous_current_supported	2026-07-17 XR					5J5YG	ambiguous_current_supported	2026-07-17 XR	1497
+champex_gradient	74175	grad_000179	Senecio incanus	5J5YG	ambiguous_current_supported	2026-07-17 XR					5J5YG	ambiguous_current_supported	2026-07-17 XR	1497
+champex_gradient	76113	grad_000272	Senecio incanus	5J5YG	ambiguous_current_supported	2026-07-17 XR					5J5YG	ambiguous_current_supported	2026-07-17 XR	1497
+champex_gradient	76121	grad_000178	Senecio incanus	5J5YG	ambiguous_current_supported	2026-07-17 XR					5J5YG	ambiguous_current_supported	2026-07-17 XR	1497
+champex_gradient	76132	grad_000169	Senecio incanus	5J5YG	ambiguous_current_supported	2026-07-17 XR					5J5YG	ambiguous_current_supported	2026-07-17 XR	1497

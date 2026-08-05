@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-08-05T12:44:06.108501+00:00",
+  "mode": "commit",
+  "seed": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/fuzzy_synonym_round_001/fuzzy_synonym_round_001_taxa_seed.tsv",
+  "seed_count": 22,
+  "existing_exact_count": 9,
+  "missing_count": 13,
+  "conflict_count": 0,
+  "preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/fuzzy_synonym_round_001/taxa_seed_preview_20260805T124406Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/fuzzy_synonym_round_001/taxa_seed_conflicts_20260805T124406Z.tsv"
+}

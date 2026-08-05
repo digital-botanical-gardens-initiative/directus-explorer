@@ -1,0 +1,8 @@
+{
+  "directus_writes": false,
+  "taxa_seed_count": 3805,
+  "safe_field_data_backfill_count": 8450,
+  "taxa_seed": "data/working/taxonomy_backbone/col_2026_07_17_xr/taxa_seed.tsv",
+  "safe_field_data_backfill": "data/working/taxonomy_backbone/col_2026_07_17_xr/field_data_safe_backfill.tsv",
+  "taxon_name_unified_changes": 0
+}

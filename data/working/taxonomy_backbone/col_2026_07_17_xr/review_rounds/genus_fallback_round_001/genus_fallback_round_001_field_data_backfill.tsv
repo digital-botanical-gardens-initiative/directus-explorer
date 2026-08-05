@@ -1,0 +1,124 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version
+jbc	72879	dbgi_008545	Acaena glauca	LVN	genus_fallback	2026-07-17 XR
+jbc	73504	dbgi_009254	Achillea dutoitii	MRG	genus_fallback	2026-07-17 XR
+jbc	71092	dbgi_006927	Achillea kolbiana	MRG	genus_fallback	2026-07-17 XR
+jbc	72893	dbgi_008507	Achillea marschlinsii	MRG	genus_fallback	2026-07-17 XR
+jbuf	70921	dbgi_007786	Agapanthus - Headbourne- Hybriden	8VTF6	genus_fallback	2026-07-17 XR
+jbc	73684	dbgi_009477	Agapanthus lilliput	8VTF6	genus_fallback	2026-07-17 XR
+jbc	70448	dbgi_008702	Allium cernuuml	8VTKZ	genus_fallback	2026-07-17 XR
+jbc	70681	dbgi_007035	Alyssoides urticulatum	C64D6	genus_fallback	2026-07-17 XR
+jbc	73483	dbgi_001418	Angelica archangelia	7NDZL	genus_fallback	2026-07-17 XR
+jbn	69049	dbgi_003413	Anthyllis_barba_jovis_L	9CJVP	genus_fallback	2026-07-17 XR
+jbc	70970	dbgi_006691	Betonica alspeculus	8WCKJ	genus_fallback	2026-07-17 XR
+jbp	76329	dbgi_011919	Boquila trifoliata	3BGY	genus_fallback	2026-07-17 XR
+jbp	76330	dbgi_012106	Boquila trifoliata	3BGY	genus_fallback	2026-07-17 XR
+jbc	73835	dbgi_009181	Bromus benekii	8VVRP	genus_fallback	2026-07-17 XR
+jbn	69629	dbgi_001257	Callicarpa	7NRKR	genus_fallback	2026-07-17 XR
+jbn	68939	dbgi_002048	Campanula rumelia	8VR3V	genus_fallback	2026-07-17 XR
+champex_gradient	76088	grad_000487	Campanula scheuchezri	8VR3V	genus_fallback	2026-07-17 XR
+jbc	73805	dbgi_009243	Chamaecytisus lindemenii	9CS5H	genus_fallback	2026-07-17 XR
+droguier_jbn	74455	drog_000399	Chondrus crispus stackhouse	3NZZ	genus_fallback	2026-07-17 XR
+droguier_jbn	74456	drog_000533	Chondrus crispus stackhouse	3NZZ	genus_fallback	2026-07-17 XR
+droguier_jbn	74457	drog_000554	Chondrus crispus stackhouse	3NZZ	genus_fallback	2026-07-17 XR
+droguier_jbn	74458	drog_000549	Chondrus crispus stackhouse	3NZZ	genus_fallback	2026-07-17 XR
+droguier_jbn	74459	drog_000563	Chondrus crispus stackhouse	3NZZ	genus_fallback	2026-07-17 XR
+droguier_jbn	74460	drog_000560	Chondrus crispus stackhouse	3NZZ	genus_fallback	2026-07-17 XR
+droguier_jbn	74461	drog_000437	Chondrus crispus stackhouse	3NZZ	genus_fallback	2026-07-17 XR
+droguier_jbn	74462	drog_000483	Chondrus crispus stackhouse	3NZZ	genus_fallback	2026-07-17 XR
+jbn	69093	dbgi_003744	Cistus pop major	3Q9F	genus_fallback	2026-07-17 XR
+jbc	73794	dbgi_009392	Convolvulus cantabrians	3TL7	genus_fallback	2026-07-17 XR
+jbn	69408	dbgi_003898	Crocosmia lucifer	8VWJZ	genus_fallback	2026-07-17 XR
+jbp	76220	dbgi_009936	Cryptostegia grandifolia	3WTJ	genus_fallback	2026-07-17 XR
+jbp	76221	dbgi_009920	Cryptostegia grandifolia	3WTJ	genus_fallback	2026-07-17 XR
+jbp	76222	dbgi_009961	Cryptostegia grandifolia	3WTJ	genus_fallback	2026-07-17 XR
+jbc	70816	dbgi_008721	Cytisus radiolatus	9CKHH	genus_fallback	2026-07-17 XR
+jbn	68649	dbgi_002050	Dryopteris_filix_mas_L_Schott	48JM	genus_fallback	2026-07-17 XR
+jbn	69597	dbgi_001447	Dryopteris_filix_mas_L_Schott	48JM	genus_fallback	2026-07-17 XR
+jbuf	66975	dbgi_000923	Echeveria x titubanus	49FG	genus_fallback	2026-07-17 XR
+jbc	73467	dbgi_001371	Eriophorum lanatum	8VXGV	genus_fallback	2026-07-17 XR
+jbc	70661	dbgi_007017	Erodium cheilanthis	62RQR	genus_fallback	2026-07-17 XR
+jbc	70941	dbgi_004120	Erodium x lindavicum	62RQR	genus_fallback	2026-07-17 XR
+jbc	72618	dbgi_008738	Euphorbia chamecyparissia	8VRY5	genus_fallback	2026-07-17 XR
+jbc	71231	dbgi_006838	Geranium cireneum	4N5F	genus_fallback	2026-07-17 XR
+jbc	71109	dbgi_006703	Geranium platypellatum	4N5F	genus_fallback	2026-07-17 XR
+jbc	73831	dbgi_009294	Globularia pseudonana	4P32	genus_fallback	2026-07-17 XR
+jbc	73809	dbgi_009114	Haberlea ferdinandi-caburjii	4S7Y	genus_fallback	2026-07-17 XR
+jbc	73113	dbgi_006618	Hebe lindsayi	63VMN	genus_fallback	2026-07-17 XR
+jbc	72856	dbgi_008426	Helianthemum scardicum	62TKD	genus_fallback	2026-07-17 XR
+jbc	70536	dbgi_008847	Heuchera cantisii	4WWF	genus_fallback	2026-07-17 XR
+jbuf	65879	dbgi_000457	Impatiens x new guinea	542F	genus_fallback	2026-07-17 XR
+jbc	70648	dbgi_007011	Iris iegata	8NKD9	genus_fallback	2026-07-17 XR
+jbuf	67076	dbgi_000931	Kleinia petrae (R.E. Fr.) C. Jeffrey	58HD	genus_fallback	2026-07-17 XR
+jbc	71158	dbgi_004153	Ligustrum ferulaceum	8VYWY	genus_fallback	2026-07-17 XR
+bioblitz_vinesch	67822	vine_000229	Linaria	62YPP	genus_fallback	2026-07-17 XR
+jbn	69119	dbgi_003807	Linaria	62YPP	genus_fallback	2026-07-17 XR
+jbc	73564	dbgi_009209	Linum salsoides	62YHH	genus_fallback	2026-07-17 XR
+jbc	73776	dbgi_009247	Lithodora deifolia	5FM3	genus_fallback	2026-07-17 XR
+jbn	68896	dbgi_003384	Lonicera caucasia	5GFJ	genus_fallback	2026-07-17 XR
+jbuf	67112	dbgi_002947	Ludwigia ovalifolia	5H78	genus_fallback	2026-07-17 XR
+jbc	70677	dbgi_007040	Muscari colenicum	8VZJD	genus_fallback	2026-07-17 XR
+jbn	69269	dbgi_003805	Ocimum basiculum	8VZSY	genus_fallback	2026-07-17 XR
+jbc	74304	dbgi_009571	Onobrychis areniora	9CLHZ	genus_fallback	2026-07-17 XR
+jbuf	69869	dbgi_007473	Oreopanax nymphaeifjfolius	8VZXQ	genus_fallback	2026-07-17 XR
+jbp-new	75614	dbgi_012085	Oxalis decumbens	6B6T	genus_fallback	2026-07-17 XR
+jbp-new	75615	dbgi_011983	Oxalis decumbens	6B6T	genus_fallback	2026-07-17 XR
+jbp-new	75616	dbgi_011763	Oxalis decumbens	6B6T	genus_fallback	2026-07-17 XR
+jbn	68982	dbgi_003293	Paliurus_spina_christi_MilL	6CRN	genus_fallback	2026-07-17 XR
+jbn	69252	dbgi_003699	Pelargonium scalleton rose	6K7C	genus_fallback	2026-07-17 XR
+jbuf	67091	dbgi_000981	Pelargonium x ardens Lodd.	6K7C	genus_fallback	2026-07-17 XR
+jbc	71161	dbgi_007145	Petrophytum hembersonii	6M5S	genus_fallback	2026-07-17 XR
+jbp-new	75700	dbgi_011993	Piper saurodermus	6QRC	genus_fallback	2026-07-17 XR
+jbp-new	75701	dbgi_011850	Piper villenaorum	6QRC	genus_fallback	2026-07-17 XR
+jbc	72958	dbgi_008662	Potentilla agryophylla	6V7H	genus_fallback	2026-07-17 XR
+jbc	71137	dbgi_006784	Pulsatilla helvetica	63R79	genus_fallback	2026-07-17 XR
+jbc	73001	dbgi_006678	Pulsatilla hybride	63R79	genus_fallback	2026-07-17 XR
+jbc	74284	dbgi_009119	Radiola artica	76RJ	genus_fallback	2026-07-17 XR
+jbc	70447	dbgi_008819	Rhododendron hisurtum	63QC9	genus_fallback	2026-07-17 XR
+jbc	72928	dbgi_009066	Rhododendron radistrotum	63QC9	genus_fallback	2026-07-17 XR
+jbc	70620	dbgi_007106	Rhododendron sagittatum	63QC9	genus_fallback	2026-07-17 XR
+jbc	71048	dbgi_006727	Rhododendron sichuan	63QC9	genus_fallback	2026-07-17 XR
+jbc	71073	dbgi_006614	Rhododendron sichuan	63QC9	genus_fallback	2026-07-17 XR
+jbn	69267	dbgi_003639	Ribes emibois muriaux	79VF	genus_fallback	2026-07-17 XR
+jbn	69266	dbgi_003844	Ribes noir de bevaix	79VF	genus_fallback	2026-07-17 XR
+jbn	69265	dbgi_003663	Ribes rouge de chigny	79VF	genus_fallback	2026-07-17 XR
+jbc	72888	dbgi_008451	Rodgersia aesubifolia	6444P	genus_fallback	2026-07-17 XR
+jbc	74309	dbgi_009465	Rodgersia aesubifolia	6444P	genus_fallback	2026-07-17 XR
+jbc	70580	dbgi_008445	Rosa Charles bonnet	63S6D	genus_fallback	2026-07-17 XR
+jbuf	67570	dbgi_007359	Rosa speci	63S6D	genus_fallback	2026-07-17 XR
+jbuf	67576	dbgi_007302	Rosa speci	63S6D	genus_fallback	2026-07-17 XR
+jbn	68704	dbgi_001959	Rosa x bornoniana	63S6D	genus_fallback	2026-07-17 XR
+jbc	71022	dbgi_006757	Salix himalaicum	7BWB	genus_fallback	2026-07-17 XR
+jbuf	69891	dbgi_007493	Salvia lanthina	8W39F	genus_fallback	2026-07-17 XR
+jbuf	67589	dbgi_007352	Salvia lanthina Otto et A. Dieter.	8W39F	genus_fallback	2026-07-17 XR
+jbuf	66889	dbgi_000005	Sansevieria longifolia Sims.	87FPX	genus_fallback	2026-07-17 XR
+jbuf	66890	dbgi_000119	Sansevieria longifolia Sims.	87FPX	genus_fallback	2026-07-17 XR
+jbc	73473	dbgi_001387	Santolina hybrida	7C9M	genus_fallback	2026-07-17 XR
+jbc	73645	dbgi_009235	Saponaria boissieri	63RPN	genus_fallback	2026-07-17 XR
+jbc	73668	dbgi_009188	Saxifraga borisii	7CVF	genus_fallback	2026-07-17 XR
+jbc	71166	dbgi_006907	Saxifraga boydii	7CVF	genus_fallback	2026-07-17 XR
+jbc	73781	dbgi_009217	Saxifraga ferdinandi	7CVF	genus_fallback	2026-07-17 XR
+jbc	72630	dbgi_008396	Saxifraga franzii	7CVF	genus_fallback	2026-07-17 XR
+jbc	70641	dbgi_008830	Saxifraga godseffiana	7CVF	genus_fallback	2026-07-17 XR
+jbc	73784	dbgi_009206	Saxifraga jarreri	7CVF	genus_fallback	2026-07-17 XR
+jbc	73810	dbgi_009306	Saxifraga kellereri	7CVF	genus_fallback	2026-07-17 XR
+jbc	73609	dbgi_009079	Saxifraga praecutiana	7CVF	genus_fallback	2026-07-17 XR
+jbc	73617	dbgi_009329	Saxifraga prawislava	7CVF	genus_fallback	2026-07-17 XR
+jbc	72635	dbgi_008504	Saxifraga pseudo-kotschyl,	7CVF	genus_fallback	2026-07-17 XR
+jbc	73501	dbgi_009416	Saxifraga pseudo-valdensis	7CVF	genus_fallback	2026-07-17 XR
+jbc	73503	dbgi_009354	Saxifraga rhodaphaea	7CVF	genus_fallback	2026-07-17 XR
+jbc	73571	dbgi_009322	Saxifraga stormonthi	7CVF	genus_fallback	2026-07-17 XR
+jbc	72641	dbgi_008431	Sedum ellecombienum	7F44	genus_fallback	2026-07-17 XR
+jbc	70713	dbgi_008671	Sempervivum florealpe	7FHX	genus_fallback	2026-07-17 XR
+jbc	70729	dbgi_008586	Sempervivum montanumtectorum	7FHX	genus_fallback	2026-07-17 XR
+jbn	68843	dbgi_003433	Sempervivum rupicolom	7FHX	genus_fallback	2026-07-17 XR
+jbn	69180	dbgi_003487	Solanum tuberculosum	63SD9	genus_fallback	2026-07-17 XR
+jbc	71051	dbgi_006629	Taraxacum aureoculatum	7SSF	genus_fallback	2026-07-17 XR
+jbp	76227	dbgi_009996	Terminalia synsepala	647GM	genus_fallback	2026-07-17 XR
+jbp	76228	dbgi_010035	Terminalia synsepala	647GM	genus_fallback	2026-07-17 XR
+jbc	70938	dbgi_004148	Thymus alvinoides	8W474	genus_fallback	2026-07-17 XR
+jbc	70460	dbgi_008564	Thymus hisurtum	8W474	genus_fallback	2026-07-17 XR
+jbc	71227	dbgi_004275	Thymus kozo-polyanski	8W474	genus_fallback	2026-07-17 XR
+jbc	72859	dbgi_189	Triticum aevistum	8W4FX	genus_fallback	2026-07-17 XR
+champex_gradient	73991	grad_000328	Vaccinium vitis idae	85LF	genus_fallback	2026-07-17 XR
+champex_gradient	73909	grad_000195	Vaccinium vitis-idae	85LF	genus_fallback	2026-07-17 XR
+jbuf	66971	dbgi_001000	Zephyranthes andersoniana Benth. et Hook. f.	8W4T4	genus_fallback	2026-07-17 XR

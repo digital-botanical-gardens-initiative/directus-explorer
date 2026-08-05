@@ -42,6 +42,7 @@ class ColNameResolution:
     accepted_rank: str
     issues: str
     fuzzy_candidates: str
+    lookup_name: str = ""
 
     @property
     def is_usable_match(self) -> bool:
@@ -91,20 +92,28 @@ class ChecklistBankColClient:
             )
         return metadata
 
-    def resolve_name(self, verbatim_name: str, *, fuzzy_limit: int = 5) -> ColNameResolution:
+    def resolve_name(
+        self,
+        verbatim_name: str,
+        *,
+        fuzzy_limit: int = 5,
+        kingdom: str | None = "Plantae",
+    ) -> ColNameResolution:
         """Parse and match a botanical name, returning review-only fuzzy candidates if needed."""
 
         parsed = self._get_json(
             "/parser/name",
             params={"q": verbatim_name, "code": "BOTANICAL"},
         )
+        match_params: dict[str, str | int] = {
+            "scientificName": verbatim_name,
+            "verbose": "true",
+        }
+        if kingdom:
+            match_params["kingdom"] = kingdom
         match_result = self._get_json(
             f"/dataset/{self.dataset_key}/match/nameusage",
-            params={
-                "scientificName": verbatim_name,
-                "kingdom": "Plantae",
-                "verbose": "true",
-            },
+            params=match_params,
         )
 
         match_type = _text(match_result.get("type"))
@@ -123,7 +132,9 @@ class ChecklistBankColClient:
 
         fuzzy_candidates = ""
         if not usable:
-            fuzzy_candidates = self._fuzzy_candidates(verbatim_name, limit=fuzzy_limit)
+            fuzzy_candidates = self._fuzzy_candidates(
+                verbatim_name, limit=fuzzy_limit, kingdom=kingdom
+            )
 
         return ColNameResolution(
             verbatim_name=verbatim_name,
@@ -162,9 +173,12 @@ class ChecklistBankColClient:
             ),
             issues=json.dumps(match_result.get("issues") or {}, sort_keys=True),
             fuzzy_candidates=fuzzy_candidates,
+            lookup_name=verbatim_name,
         )
 
-    def _fuzzy_candidates(self, name: str, *, limit: int) -> str:
+    def _fuzzy_candidates(
+        self, name: str, *, limit: int, kingdom: str | None = "Plantae"
+    ) -> str:
         result = self._get_json(
             f"/dataset/{self.dataset_key}/nameusage/search",
             params={
@@ -175,7 +189,7 @@ class ChecklistBankColClient:
         )
         candidates: list[dict[str, str]] = []
         for wrapper in result.get("result") or []:
-            if not isinstance(wrapper, dict) or not _is_plant(wrapper):
+            if not isinstance(wrapper, dict) or (kingdom and not _is_kingdom(wrapper, kingdom)):
                 continue
             usage = _mapping(wrapper.get("usage"))
             scientific_name = _mapping(usage.get("name"))
@@ -218,13 +232,13 @@ def _text(value: object) -> str:
     return str(value).strip() if value is not None else ""
 
 
-def _is_plant(wrapper: dict[str, Any]) -> bool:
+def _is_kingdom(wrapper: dict[str, Any], kingdom: str) -> bool:
     classification = wrapper.get("classification")
     if not isinstance(classification, list):
         return False
     return any(
         isinstance(item, dict)
         and _text(item.get("rank")).lower() == "kingdom"
-        and _text(item.get("name")).lower() == "plantae"
+        and _text(item.get("name")).casefold() == kingdom.casefold()
         for item in classification
     )

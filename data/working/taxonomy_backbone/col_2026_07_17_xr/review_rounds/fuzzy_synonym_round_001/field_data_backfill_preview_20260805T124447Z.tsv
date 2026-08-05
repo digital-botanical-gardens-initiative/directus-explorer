@@ -1,0 +1,27 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+jbc	74287	dbgi_009109	Actea alba	7J8K6	fuzzy_synonym_supported	2026-07-17 XR					7J8K6	fuzzy_synonym_supported	2026-07-17 XR	3902
+jbc	74316	dbgi_009573	Adenostyle glabra	7J7YL	fuzzy_synonym_supported	2026-07-17 XR					7J7YL	fuzzy_synonym_supported	2026-07-17 XR	2809
+jbc	71106	dbgi_006700	Alysum spinosum	3MPG8	fuzzy_synonym_supported	2026-07-17 XR					3MPG8	fuzzy_synonym_supported	2026-07-17 XR	376
+jbc	72555	dbgi_008408	Anthennaria canadensis	5FN5H	fuzzy_synonym_supported	2026-07-17 XR					5FN5H	fuzzy_synonym_supported	2026-07-17 XR	3896
+jbuf	67334	dbgi_003092	Aphelandra tetragonia (Vahl) Nees	FC3K	fuzzy_synonym_supported	2026-07-17 XR					FC3K	fuzzy_synonym_supported	2026-07-17 XR	3904
+jbn	68995	dbgi_003263	Astericus spinosus	5K5BP	fuzzy_synonym_supported	2026-07-17 XR					5K5BP	fuzzy_synonym_supported	2026-07-17 XR	1519
+jbc	73000	dbgi_006675	Calamintha nepetorides	5YZS9	fuzzy_synonym_supported	2026-07-17 XR					5YZS9	fuzzy_synonym_supported	2026-07-17 XR	1699
+jbc	70819	dbgi_008759	Crataegus macrantha	5NBV5	fuzzy_synonym_supported	2026-07-17 XR					5NBV5	fuzzy_synonym_supported	2026-07-17 XR	3899
+jbc	70549	dbgi_008651	Elysa myosuroides	5XCJ3	fuzzy_synonym_supported	2026-07-17 XR					5XCJ3	fuzzy_synonym_supported	2026-07-17 XR	3900
+jbc	73006	dbgi_006666	Erigeron belligifolius	6GPTF	fuzzy_synonym_supported	2026-07-17 XR					6GPTF	fuzzy_synonym_supported	2026-07-17 XR	3901
+champex_gradient	76098	grad_000100	Knautia arvenensis	3R9Z5	fuzzy_synonym_supported	2026-07-17 XR					3R9Z5	fuzzy_synonym_supported	2026-07-17 XR	3894
+jbc	70673	dbgi_007168	Melandrium zawadskii	9YK58	fuzzy_synonym_supported	2026-07-17 XR					9YK58	fuzzy_synonym_supported	2026-07-17 XR	3114
+jbc	73010	dbgi_006672	Polygomum amplexicaule	LX55	fuzzy_synonym_supported	2026-07-17 XR					LX55	fuzzy_synonym_supported	2026-07-17 XR	3450
+jbc	70640	dbgi_008836	Ptilotrichium spinosum	3MPG8	fuzzy_synonym_supported	2026-07-17 XR					3MPG8	fuzzy_synonym_supported	2026-07-17 XR	376
+jbc	71124	dbgi_006857	Rosa rousseaviorum	4TCXN	fuzzy_synonym_supported	2026-07-17 XR					4TCXN	fuzzy_synonym_supported	2026-07-17 XR	3895
+jbuf	67479	dbgi_007274	Salvia officinales subsp lavandulifolia (Vahl) Gams	DNX5Z	fuzzy_synonym_supported	2026-07-17 XR					DNX5Z	fuzzy_synonym_supported	2026-07-17 XR	3903
+jbc	73722	dbgi_009116	Satureja repeta	5YZS9	fuzzy_synonym_supported	2026-07-17 XR					5YZS9	fuzzy_synonym_supported	2026-07-17 XR	1699
+jbc	71208	dbgi_006797	Saxifraga apiculata	5L2JV	fuzzy_synonym_supported	2026-07-17 XR					5L2JV	fuzzy_synonym_supported	2026-07-17 XR	3897
+jbc	72867	dbgi_009082	Saxifraga apiculata	5L2JV	fuzzy_synonym_supported	2026-07-17 XR					5L2JV	fuzzy_synonym_supported	2026-07-17 XR	3897
+jbc	73663	dbgi_009246	Saxifraga apiculata	5L2JV	fuzzy_synonym_supported	2026-07-17 XR					5L2JV	fuzzy_synonym_supported	2026-07-17 XR	3897
+jbc	70452	dbgi_008627	Sedum telephiu	3NGSL	fuzzy_synonym_supported	2026-07-17 XR					3NGSL	fuzzy_synonym_supported	2026-07-17 XR	393
+jbc	70724	dbgi_006976	Sempervirum juvanii	5L5CF	fuzzy_synonym_supported	2026-07-17 XR					5L5CF	fuzzy_synonym_supported	2026-07-17 XR	3898
+jbc	70720	dbgi_008666	Sempervivum odenotrichum	6YFWP	fuzzy_synonym_supported	2026-07-17 XR					6YFWP	fuzzy_synonym_supported	2026-07-17 XR	2467
+jbn	68906	dbgi_003366	Sorbus danabialis	GLFN	fuzzy_synonym_supported	2026-07-17 XR					GLFN	fuzzy_synonym_supported	2026-07-17 XR	3905
+jbc	73453	dbgi_001388	Sorbus xerubescens	GLJ5	fuzzy_synonym_supported	2026-07-17 XR					GLJ5	fuzzy_synonym_supported	2026-07-17 XR	3906
+jbc	71034	dbgi_006774	Thymus serpyllum vallesiacum	5LJJ7	fuzzy_synonym_supported	2026-07-17 XR					5LJJ7	fuzzy_synonym_supported	2026-07-17 XR	1560

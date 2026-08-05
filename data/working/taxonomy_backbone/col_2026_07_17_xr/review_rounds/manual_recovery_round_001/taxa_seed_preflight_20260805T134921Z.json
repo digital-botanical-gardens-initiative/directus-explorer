@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-08-05T13:49:21.913552+00:00",
+  "mode": "commit",
+  "seed": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_recovery_round_001/manual_recovery_round_001_taxa_seed.tsv",
+  "seed_count": 8,
+  "existing_exact_count": 3,
+  "missing_count": 5,
+  "conflict_count": 0,
+  "preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_recovery_round_001/taxa_seed_preview_20260805T134921Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_recovery_round_001/taxa_seed_conflicts_20260805T134921Z.tsv"
+}

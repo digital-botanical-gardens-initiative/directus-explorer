@@ -1,0 +1,44 @@
+created_at	directus_id	col_id	scientific_name	status
+2026-08-05T11:27:18.745829+00:00	3806	329ZP	Cucurbita pepo	created
+2026-08-05T11:27:18.802808+00:00	3807	3CGW7	Euonymus fortunei	created
+2026-08-05T11:27:18.827191+00:00	3808	3DV5K	Fargesia robusta	created
+2026-08-05T11:27:18.848952+00:00	3809	3F7L	Calibrachoa	created
+2026-08-05T11:27:18.873837+00:00	3810	3PX6Z	Ipomoea tricolor	created
+2026-08-05T11:27:18.897595+00:00	3811	3R6JN	Kerria japonica	created
+2026-08-05T11:27:18.922237+00:00	3812	3XHDM	Magnolia liliflora	created
+2026-08-05T11:27:18.945543+00:00	3813	3XHJY	Magnolia stellata	created
+2026-08-05T11:27:18.970188+00:00	3814	3ZGZ	Dahlia	created
+2026-08-05T11:27:18.994116+00:00	3815	43MQZ	Miscanthus sinensis	created
+2026-08-05T11:27:19.020445+00:00	3816	4N8NW	Prunus armeniaca	created
+2026-08-05T11:27:19.044486+00:00	3817	4N8QS	Prunus cerasus	created
+2026-08-05T11:27:19.069615+00:00	3818	4N8Y3	Prunus laurocerasus	created
+2026-08-05T11:27:19.093317+00:00	3819	4N94F	Prunus persica	created
+2026-08-05T11:27:19.118391+00:00	3820	4QW8P	Pyrrosia lingua	created
+2026-08-05T11:27:19.142790+00:00	3821	4SYG6	Ribes nigrum	created
+2026-08-05T11:27:19.167792+00:00	3822	4TJSS	Rubus cochinchinensis	created
+2026-08-05T11:27:19.191820+00:00	3823	4Y3RT	Solanum pimpinellifolium	created
+2026-08-05T11:27:19.216155+00:00	3824	5M3HJ	Aglaonema commutatum var. commutatum	created
+2026-08-05T11:27:19.239960+00:00	3825	5Y9PC	Chlorophytum capense	created
+2026-08-05T11:27:19.263662+00:00	3826	635JB	Helenium	created
+2026-08-05T11:27:19.287330+00:00	3827	63GQQ	Osteospermum	created
+2026-08-05T11:27:19.311899+00:00	3828	64Q3F	Actinidia chinensis	created
+2026-08-05T11:27:19.335561+00:00	3829	6CPLC	Deutzia scabra	created
+2026-08-05T11:27:19.359248+00:00	3830	6DHYD	Dorstenia urceolata	created
+2026-08-05T11:27:19.383261+00:00	3831	6MJ8V	Hydrangea paniculata	created
+2026-08-05T11:27:19.408876+00:00	3832	6P487	Lavandula × intermedia	created
+2026-08-05T11:27:19.433657+00:00	3833	6QN36	Lonicera japonica	created
+2026-08-05T11:27:19.456768+00:00	3834	6TSTD	Parthenocissus tricuspidata	created
+2026-08-05T11:27:19.479283+00:00	3835	6V8D2	Petroselinum crispum	created
+2026-08-05T11:27:19.505200+00:00	3836	6YKG8	Setaria italica	created
+2026-08-05T11:27:19.528713+00:00	3837	7F7GJ	Vaccinium corymbosum	created
+2026-08-05T11:27:19.551225+00:00	3838	7SGHY	Begonia masoniana	created
+2026-08-05T11:27:19.573436+00:00	3839	8MTYK	Ricinus	created
+2026-08-05T11:27:19.595769+00:00	3840	8VTYD	Anthurium	created
+2026-08-05T11:27:19.618305+00:00	3841	8W4GT	Tulipa	created
+2026-08-05T11:27:19.642700+00:00	3842	9HGQ	Acorus gramineus	created
+2026-08-05T11:27:19.666476+00:00	3843	9KLJT	Peperomia serpens	created
+2026-08-05T11:27:19.690377+00:00	3844	CH37	Amaranthus hypochondriacus	created
+2026-08-05T11:27:19.713054+00:00	3845	LDVND	Aglaostigma	created
+2026-08-05T11:27:19.735644+00:00	3846	QPF	Ageratum	created
+2026-08-05T11:27:19.759467+00:00	3847	RJHB	Caryopteris × clandonensis	created
+2026-08-05T11:27:19.783771+00:00	3848	ZKPS	Crocosmia masoniorum	created

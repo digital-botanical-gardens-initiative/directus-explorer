@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-08-05T12:47:26.214504+00:00",
+  "mode": "directus_get_only_preflight",
+  "seed": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/genus_fallback_round_001/genus_fallback_round_001_taxa_seed.tsv",
+  "seed_count": 70,
+  "existing_exact_count": 26,
+  "missing_count": 44,
+  "conflict_count": 0,
+  "preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/genus_fallback_round_001/taxa_seed_preview_20260805T124726Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/genus_fallback_round_001/taxa_seed_conflicts_20260805T124726Z.tsv"
+}

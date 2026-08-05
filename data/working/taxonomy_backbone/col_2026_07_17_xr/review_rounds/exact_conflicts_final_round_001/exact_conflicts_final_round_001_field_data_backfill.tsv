@@ -1,0 +1,28 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version
+jbc	73753	dbgi_009032	Alnus viridis	7J97N	nomenclatural_synonym_supported	2026-07-17 XR
+jbc	72779	dbgi_008508	Alyssum alpestre	C7WDX	ambiguous_homonym_genus_fallback	2026-07-17 XR
+jbn-new	75574	dbgi_011155	Alyssum murale	87C5N	nomenclatural_synonym_supported	2026-07-17 XR
+jbc	73615	dbgi_009027	Androsace primuloides	5FM29	nomenclatural_synonym_supported	2026-07-17 XR
+jbc	73403	dbgi_007146	Anthemis montana	XBC	ambiguous_homonym_genus_fallback	2026-07-17 XR
+jbuf	66097	dbgi_001860	Arenaria juniperina (L.) Maire & Petitm.	4TVSL	authorship_supported	2026-07-17 XR
+jbc	72836	dbgi_008509	Aster sibiricus	7JRKM	nomenclatural_synonym_supported	2026-07-17 XR
+jbc	70706	dbgi_007110	Centaurea dealbata	622TP	ambiguous_homonym_family_fallback	2026-07-17 XR
+jbn	68709	dbgi_002073	Citrus nobilis	3QB2	ambiguous_homonym_genus_fallback	2026-07-17 XR
+jbuf	67297	dbgi_002818	Dieffenbachia amoena Gentil	VP6CR	authorship_supported	2026-07-17 XR
+jbc	71133	dbgi_006812	Festuca gigantea	627FW	ambiguous_homonym_family_fallback	2026-07-17 XR
+jbc	73761	dbgi_009390	Gentiana campestris	62T5G	ambiguous_homonym_genus_fallback	2026-07-17 XR
+kew-botanical-gardens	74950	dbgi_011003	Geranium fremontii	6KCK5	nomenclatural_synonym_supported	2026-07-17 XR
+jbuf	66275	dbgi_002248	Holodiscus dumosus (Hook.) A. Heller	6LXYK	authorship_supported	2026-07-17 XR
+jbc	73127	dbgi_007039	Inula salicina	622TP	ambiguous_homonym_family_fallback	2026-07-17 XR
+jbc	71174	dbgi_006925	Leontopodium linearifolium	6P8L9	nomenclatural_synonym_supported	2026-07-17 XR
+jbc	71064	dbgi_004295	Ligusticum ferulaceum	62MQS	ambiguous_homonym_genus_fallback	2026-07-17 XR
+jbc	73827	dbgi_009120	Lithospermum graminifolium	5JQSL	nomenclatural_synonym_supported	2026-07-17 XR
+kew-botanical-gardens	75217	dbgi_010741	Maranta bicolor	624K3	ambiguous_homonym_family_fallback	2026-07-17 XR
+jbn	69274	dbgi_003764	Mentha gracilis	8VZ9G	ambiguous_homonym_genus_fallback	2026-07-17 XR
+kew-botanical-gardens	75177	dbgi_010871	Passiflora macrocarpa	764F8	nomenclatural_synonym_supported	2026-07-17 XR
+jbc	72916	dbgi_008710	Potentilla parviflora	6V7H	ambiguous_homonym_genus_fallback	2026-07-17 XR
+jbc	73707	dbgi_009131	Scutellaria peregrina	5L4GQ	nomenclatural_synonym_supported	2026-07-17 XR
+jbc	72857	dbgi_008380	Sedum reflexum	6M67	ambiguous_homonym_genus_fallback	2026-07-17 XR
+jbc	72934	dbgi_009049	Senecio abrotanifolius	5J5Y4	nomenclatural_synonym_supported	2026-07-17 XR
+jbc	70468	dbgi_008776	Senecio jacobaea	5644	ambiguous_homonym_genus_fallback	2026-07-17 XR
+kew-botanical-gardens	75048	dbgi_011030	Yucca angustifolia	8W4SH	ambiguous_homonym_genus_fallback	2026-07-17 XR

@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-08-05T09:07:09.712287+00:00",
+  "directus_writes": false,
+  "input": "data/output/directus_integrity/taxon_name_unified_audit/taxon_name_unified_audit_all.tsv",
+  "col_dataset": {
+    "key": 315834,
+    "version": "2026-07-17 XR",
+    "doi": "10.48580/dgykv"
+  },
+  "matching_scope": "all_kingdoms",
+  "lookup_normalization": "underscores_to_spaces_then_parsed_name_fallback",
+  "distinct_name_count": 5107,
+  "field_data_count": 9365,
+  "distinct_names_with_col_id": 4695,
+  "field_data_with_col_id": 8763,
+  "resolution_status_by_distinct_name": {
+    "accepted_exact": 1541,
+    "accepted_variant": 2362,
+    "ambiguous_match": 166,
+    "cultivar_requires_review": 118,
+    "higher_rank_match": 167,
+    "synonym": 622,
+    "unmatched": 99,
+    "unparsed": 32
+  },
+  "resolution_status_by_field_data": {
+    "accepted_exact": 2302,
+    "accepted_variant": 5314,
+    "ambiguous_match": 309,
+    "cultivar_requires_review": 183,
+    "higher_rank_match": 199,
+    "synonym": 834,
+    "unmatched": 185,
+    "unparsed": 39
+  },
+  "backbone_tsv": "data/working/taxonomy_backbone/col_2026_07_17_xr/taxon_name_unified_col_backbone.tsv",
+  "field_data_mapping_tsv": "data/working/taxonomy_backbone/col_2026_07_17_xr/field_data_col_mapping.tsv",
+  "cache": "data/working/taxonomy_backbone/col_2026_07_17_xr/col_resolution_cache_unrestricted_normalized_v1.jsonl"
+}

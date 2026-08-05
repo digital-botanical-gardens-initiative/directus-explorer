@@ -1,0 +1,15 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+jbc	72897	dbgi_006733	Anemone rivularis	3B2KQ	ambiguous_authorship_supported	2026-07-17 XR					3B2KQ	ambiguous_authorship_supported	2026-07-17 XR	3969
+jbc	73253	dbgi_006780	Anemone rivularis	3B2KQ	ambiguous_authorship_supported	2026-07-17 XR					3B2KQ	ambiguous_authorship_supported	2026-07-17 XR	3969
+jbc	70470	dbgi_008742	Erica herbacea	6GKM2	ambiguous_alternative_supported	2026-07-17 XR					6GKM2	ambiguous_alternative_supported	2026-07-17 XR	2018
+jbc	70494	dbgi_008456	Erica herbacea	6GKM2	ambiguous_alternative_supported	2026-07-17 XR					6GKM2	ambiguous_alternative_supported	2026-07-17 XR	2018
+kew-botanical-gardens	75124	dbgi_010716	Erodium petraeum	62RQR	ambiguous_homonym_genus_fallback	2026-07-17 XR					62RQR	ambiguous_homonym_genus_fallback	2026-07-17 XR	3919
+kew-botanical-gardens	75125	dbgi_010759	Erodium petraeum	62RQR	ambiguous_homonym_genus_fallback	2026-07-17 XR					62RQR	ambiguous_homonym_genus_fallback	2026-07-17 XR	3919
+jbc	71172	dbgi_006924	Leontopodium alpinum	7K8NS	ambiguous_current_supported	2026-07-17 XR					7K8NS	ambiguous_current_supported	2026-07-17 XR	2833
+jbc	73505	dbgi_009344	Leontopodium alpinum	7K8NS	ambiguous_current_supported	2026-07-17 XR					7K8NS	ambiguous_current_supported	2026-07-17 XR	2833
+jbc	70983	dbgi_004187	Micromeria dalmatica	8YJDQ	ambiguous_current_supported	2026-07-17 XR					8YJDQ	ambiguous_current_supported	2026-07-17 XR	3013
+jbc	72565	dbgi_008646	Micromeria dalmatica	8YJDQ	ambiguous_current_supported	2026-07-17 XR					8YJDQ	ambiguous_current_supported	2026-07-17 XR	3013
+jbc	70445	dbgi_006948	Potentilla ambigua	4X5RM	ambiguous_authorship_supported	2026-07-17 XR					4X5RM	ambiguous_authorship_supported	2026-07-17 XR	3970
+jbc	72662	dbgi_008500	Potentilla ambigua	4X5RM	ambiguous_authorship_supported	2026-07-17 XR					4X5RM	ambiguous_authorship_supported	2026-07-17 XR	3970
+jbp-new	75872	dbgi_012238	Pseudolysimachion incanum	5B6V7	ambiguous_current_supported	2026-07-17 XR					5B6V7	ambiguous_current_supported	2026-07-17 XR	1365
+jbp-new	75873	dbgi_012384	Pseudolysimachion incanum	5B6V7	ambiguous_current_supported	2026-07-17 XR					5B6V7	ambiguous_current_supported	2026-07-17 XR	1365

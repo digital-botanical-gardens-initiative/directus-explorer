@@ -1,0 +1,10 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version
+jbc	70573	dbgi_008851	Cotoeaster adpressa	YXTJ	fuzzy_supported	2026-07-17 XR
+jbc	73716	dbgi_009485	Cottoneaster adpressa	YXTJ	fuzzy_supported	2026-07-17 XR
+jbc	72953	dbgi_006984	Ramondia myconii	6X3DQ	fuzzy_supported	2026-07-17 XR
+jbc	71175	dbgi_006599	Saxifraga ferdinand-coburgii	6XR66	fuzzy_supported	2026-07-17 XR
+jbn-new	75547	dbgi_011095	Sempervivum x rupicolum (montanum x wulfeni)	4WJ6V	fuzzy_supported	2026-07-17 XR
+jbn-new	75548	dbgi_011542	Sempervivum x rupicolum (montanum x wulfeni)	4WJ6V	fuzzy_supported	2026-07-17 XR
+champex_gradient	74125	grad_000025	Vaccinium vitis idaea	7F8TT	fuzzy_supported	2026-07-17 XR
+champex_gradient	74130	grad_000391	Vaccinium vitis idaea	7F8TT	fuzzy_supported	2026-07-17 XR
+champex_gradient	74134	grad_000078	Vaccinium vitis idaea	7F8TT	fuzzy_supported	2026-07-17 XR

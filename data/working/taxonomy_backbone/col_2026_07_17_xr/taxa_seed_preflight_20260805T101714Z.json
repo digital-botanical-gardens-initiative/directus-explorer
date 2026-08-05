@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-08-05T10:17:14.862450+00:00",
+  "mode": "commit",
+  "seed": "data/working/taxonomy_backbone/col_2026_07_17_xr/taxa_seed.tsv",
+  "seed_count": 3805,
+  "existing_exact_count": 0,
+  "missing_count": 3805,
+  "conflict_count": 0,
+  "preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/taxa_seed_preview_20260805T101714Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/taxa_seed_conflicts_20260805T101714Z.tsv"
+}

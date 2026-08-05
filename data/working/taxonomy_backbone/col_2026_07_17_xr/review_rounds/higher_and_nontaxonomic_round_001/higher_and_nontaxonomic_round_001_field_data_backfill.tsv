@@ -1,0 +1,85 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version
+sbl_20004	70135	tp24_000041	1/2 MS		non_taxonomic_unresolved	2026-07-17 XR
+sbl_20004	70134	tp24_000036	1/2 MS + 3-HDA		non_taxonomic_unresolved	2026-07-17 XR
+bioblitz_vinesch	67618	vine_000287	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67633	vine_000500	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67634	vine_000495	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67635	vine_000484	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67636	vine_000483	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67637	vine_000488	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67638	vine_000491	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67639	vine_000492	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67641	vine_000496	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67647	vine_000170	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67657	vine_000227	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67660	vine_000219	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67696	vine_000493	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67700	vine_000499	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67705	vine_000321	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67706	vine_000240	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67747	vine_000481	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67748	vine_000129	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67749	vine_000337	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67750	vine_000161	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67751	vine_000108	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67752	vine_000151	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67753	vine_000094	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67755	vine_000169	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67756	vine_000235	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67757	vine_000105	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67760	vine_000294	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67761	vine_000299	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67762	vine_000364	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67765	vine_000333	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67770	vine_000377	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67773	vine_000327	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67775	vine_000370	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67776	vine_000298	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67778	vine_000296	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67779	vine_000297	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67780	vine_000358	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67782	vine_000324	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67808	vine_000376	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67810	vine_000397	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+bioblitz_vinesch	67814	vine_000412	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+heloise_bachelor_FiBL	67861	fibl_000034	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+heloise_bachelor_FiBL	67865	fibl_000040	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+heloise_bachelor_FiBL	67866	fibl_000049	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+heloise_bachelor_FiBL	67874	fibl_000023	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+heloise_bachelor_FiBL	67875	fibl_000052	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+heloise_bachelor_FiBL	67876	fibl_000060	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+heloise_bachelor_FiBL	67878	fibl_000041	Angiospermae	P	higher_taxon_fallback	2026-07-17 XR
+heloise_bachelor_FiBL	67859	fibl_000082	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67926	fibl_000081	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67927	fibl_000084	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67928	fibl_000086	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67929	fibl_000088	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67930	fibl_000090	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67931	fibl_000092	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67932	fibl_000094	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67933	fibl_000096	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67934	fibl_000083	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67935	fibl_000024	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67936	fibl_000085	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67937	fibl_000033	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67938	fibl_000087	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67939	fibl_000055	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67940	fibl_000089	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67941	fibl_000050	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67942	fibl_000091	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67943	fibl_000042	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67944	fibl_000093	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67945	fibl_000016	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67946	fibl_000095	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67947	fibl_000011	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67948	fibl_000097	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+heloise_bachelor_FiBL	67949	fibl_000005	Mixte		non_taxonomic_unresolved	2026-07-17 XR
+jbuf	69813	dbgi_007318	Monocotyledon	L2L	higher_taxon_normalized	2026-07-17 XR
+medicin_alps	71364	meda_000175	NA et		non_taxonomic_unresolved	2026-07-17 XR
+medicin_alps	71352	meda_000163	NA lo		non_taxonomic_unresolved	2026-07-17 XR
+medicin_alps	71348	meda_000159	NAo		non_taxonomic_unresolved	2026-07-17 XR
+medicin_alps	71358	meda_000169	NAo		non_taxonomic_unresolved	2026-07-17 XR
+medicin_alps	71354	meda_000165	NAo.o		non_taxonomic_unresolved	2026-07-17 XR
+medicin_alps	71362	meda_000173	NAp		non_taxonomic_unresolved	2026-07-17 XR
+sbl_20004	70133	tp24_000032	PDA medium		non_taxonomic_unresolved	2026-07-17 XR
+jbuf	69851	dbgi_007296	Planta	P	higher_taxon_normalized	2026-07-17 XR

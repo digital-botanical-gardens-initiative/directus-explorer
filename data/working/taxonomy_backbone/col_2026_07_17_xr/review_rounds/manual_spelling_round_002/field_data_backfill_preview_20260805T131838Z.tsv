@@ -1,0 +1,24 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+jbuf	67581	dbgi_007412	A Araucaria bidwillii	G67F	manual_spelling_supported	2026-07-17 XR					G67F	manual_spelling_supported	2026-07-17 XR	3961
+jbuf	69887	dbgi_007483	A Auraucaria bidwilii	G67F	manual_spelling_supported	2026-07-17 XR					G67F	manual_spelling_supported	2026-07-17 XR	3961
+jbc	72770	dbgi_008497	Aillium hymenorrhizum,	669D5	manual_spelling_supported	2026-07-17 XR					669D5	manual_spelling_supported	2026-07-17 XR	3957
+jbc	70543	dbgi_008439	Alchemia alpina	BHDT	manual_spelling_supported	2026-07-17 XR					BHDT	manual_spelling_supported	2026-07-17 XR	3150
+jbc	72950	dbgi_008400	Allysum spinosum	3MPG8	manual_spelling_supported	2026-07-17 XR					3MPG8	manual_spelling_supported	2026-07-17 XR	376
+jbc	72616	dbgi_008642	Androsaceae sarmentosa	DVHP	manual_spelling_supported	2026-07-17 XR					DVHP	manual_spelling_supported	2026-07-17 XR	3273
+jbuf	69885	dbgi_007488	Cunningham lanceolata	6BRMR	manual_spelling_supported	2026-07-17 XR					6BRMR	manual_spelling_supported	2026-07-17 XR	1932
+jbc	73129	dbgi_007045	Epidemium grandiflorum	6G6L8	manual_spelling_supported	2026-07-17 XR					6G6L8	manual_spelling_supported	2026-07-17 XR	3958
+jbc	70449	dbgi_008775	Erysium ochroleucum.	3BBPM	manual_spelling_supported	2026-07-17 XR					3BBPM	manual_spelling_supported	2026-07-17 XR	159
+champex_gradient	73842	grad_000212	Glechauma hederaceae	3G6WF	manual_spelling_supported	2026-07-17 XR					3G6WF	manual_spelling_supported	2026-07-17 XR	269
+jbc	72774	dbgi_008387	Hemerocellis lilioasphodolus	3KKXG	manual_spelling_supported	2026-07-17 XR					3KKXG	manual_spelling_supported	2026-07-17 XR	341
+jbc	70784	dbgi_008632	Ile aquifolium	6N77K	manual_spelling_supported	2026-07-17 XR					6N77K	manual_spelling_supported	2026-07-17 XR	2209
+jbc	70553	dbgi_008584	Mateucia struthilpteris	3YF7H	manual_spelling_supported	2026-07-17 XR					3YF7H	manual_spelling_supported	2026-07-17 XR	598
+jbn	69277	dbgi_003623	Mordana  citriodora	44283	manual_spelling_supported	2026-07-17 XR					44283	manual_spelling_supported	2026-07-17 XR	644
+jbc	71096	dbgi_006910	Onoethera fruticosa	48XVD	manual_spelling_supported	2026-07-17 XR					48XVD	manual_spelling_supported	2026-07-17 XR	725
+jbc	72948	dbgi_190	Phlodouglasii Hook.	4GJ88	manual_spelling_supported	2026-07-17 XR					4GJ88	manual_spelling_supported	2026-07-17 XR	814
+jbc	74313	dbgi_009423	Placytodon grandiflora	4JPWP	manual_spelling_supported	2026-07-17 XR					4JPWP	manual_spelling_supported	2026-07-17 XR	871
+jbc	70952	dbgi_004162	Sali serpyillifolia	6XDVS	manual_spelling_supported	2026-07-17 XR					6XDVS	manual_spelling_supported	2026-07-17 XR	3959
+jbc	73699	dbgi_009455	Schrophuleria canina	4VZ5H	manual_spelling_supported	2026-07-17 XR					4VZ5H	manual_spelling_supported	2026-07-17 XR	3955
+jbc	70552	dbgi_008806	Sempervirens montanum	4WHZ2	manual_spelling_supported	2026-07-17 XR					4WHZ2	manual_spelling_supported	2026-07-17 XR	1142
+jbc	70507	dbgi_008762	Sibbeldia duneata	9YJH3	manual_spelling_supported	2026-07-17 XR					9YJH3	manual_spelling_supported	2026-07-17 XR	3960
+jbn	68989	dbgi_003272	Sparaginum angustifolium	6Z7M3	manual_spelling_supported	2026-07-17 XR					6Z7M3	manual_spelling_supported	2026-07-17 XR	2483
+jbn	69407	dbgi_003894	Triteteia taxa	593TY	manual_spelling_supported	2026-07-17 XR					593TY	manual_spelling_supported	2026-07-17 XR	3956

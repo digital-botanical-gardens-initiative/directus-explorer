@@ -1,0 +1,71 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+jbn	69317	dbgi_003709	Acmella oleacea	9FBD	fuzzy_supported	2026-07-17 XR					9FBD	fuzzy_supported	2026-07-17 XR	3885
+champex_gradient	76104	grad_000461	Adenostyle alpina	64QDS	fuzzy_supported	2026-07-17 XR					64QDS	fuzzy_supported	2026-07-17 XR	3877
+jbc	70600	dbgi_008521	Anthericum liligo	67B87	fuzzy_supported	2026-07-17 XR					67B87	fuzzy_supported	2026-07-17 XR	1836
+jbn	69010	dbgi_003261	Antirrhinum_braun_blanquetii_Rothm	F2RG	fuzzy_supported	2026-07-17 XR					F2RG	fuzzy_supported	2026-07-17 XR	3890
+jbc	72663	dbgi_008461	Arctostaphylus uva-ursi	GBQG	fuzzy_supported	2026-07-17 XR					GBQG	fuzzy_supported	2026-07-17 XR	3304
+artemisia_absinthium	67973	absi_000235	Artemisa campestris	GW62	fuzzy_supported	2026-07-17 XR					GW62	fuzzy_supported	2026-07-17 XR	3331
+jbn	68760	dbgi_002167	Asplenium scalopendrium	67V95	fuzzy_supported	2026-07-17 XR					67V95	fuzzy_supported	2026-07-17 XR	1860
+jbn	68616	dbgi_001984	Atropa_bella_donna_L	JLWL	fuzzy_supported	2026-07-17 XR					JLWL	fuzzy_supported	2026-07-17 XR	3388
+jbuf	67601	dbgi_007376	Azardirachta indica A Juss	K57C	fuzzy_supported	2026-07-17 XR					K57C	fuzzy_supported	2026-07-17 XR	3891
+jbc	72988	dbgi_006686	Bergena ciliata	5WK3T	fuzzy_supported	2026-07-17 XR					5WK3T	fuzzy_supported	2026-07-17 XR	3875
+jbp-new	76042	dbgi_012239	Borage officinalis	MJ92	fuzzy_supported	2026-07-17 XR					MJ92	fuzzy_supported	2026-07-17 XR	3469
+jbc	70487	dbgi_008842	Bruxus sempervirens	5X65N	fuzzy_supported	2026-07-17 XR					5X65N	fuzzy_supported	2026-07-17 XR	1667
+jbn	69410	dbgi_003944	Carex muskigumensis	5XCJ5	fuzzy_supported	2026-07-17 XR					5XCJ5	fuzzy_supported	2026-07-17 XR	3876
+jbn-new	75561	dbgi_011271	Carex psedocyperus	RBBG	fuzzy_supported	2026-07-17 XR					RBBG	fuzzy_supported	2026-07-17 XR	3579
+jbc	70467	dbgi_008537	Carolina acanthifolia	5XBRJ	fuzzy_supported	2026-07-17 XR					5XBRJ	fuzzy_supported	2026-07-17 XR	1673
+jbc	73796	dbgi_009157	Centaurea pechtinata	S76P	fuzzy_supported	2026-07-17 XR					S76P	fuzzy_supported	2026-07-17 XR	3892
+jbc	71077	dbgi_006786	Cincaea alpina	VFQN	fuzzy_supported	2026-07-17 XR					VFQN	fuzzy_supported	2026-07-17 XR	3893
+jbn	69001	dbgi_003250	Coristospernum lucidum	YFJR	fuzzy_supported	2026-07-17 XR					YFJR	fuzzy_supported	2026-07-17 XR	3757
+champex_gradient	76101	grad_000286	Cryptgramma crispa	B9BZY	fuzzy_supported	2026-07-17 XR					B9BZY	fuzzy_supported	2026-07-17 XR	3888
+jbn	69316	dbgi_003666	Cuminum oyminum	6C25L	fuzzy_supported	2026-07-17 XR					6C25L	fuzzy_supported	2026-07-17 XR	1937
+jbc	70538	dbgi_008846	Dianthus lusitanius	6D24G	fuzzy_supported	2026-07-17 XR					6D24G	fuzzy_supported	2026-07-17 XR	3878
+jbc	73611	dbgi_009393	Dianthus patraeus	6D24T	fuzzy_supported	2026-07-17 XR					6D24T	fuzzy_supported	2026-07-17 XR	1966
+jbc	72931	dbgi_009043	Dioscolea caucasica	36CGW	fuzzy_supported	2026-07-17 XR					36CGW	fuzzy_supported	2026-07-17 XR	94
+jbc	71141	dbgi_004111	Dryas sundermannii	6DLM5	fuzzy_supported	2026-07-17 XR					6DLM5	fuzzy_supported	2026-07-17 XR	1981
+jbc	71148	dbgi_004164	Epilobium tetragonium	6G4MQ	fuzzy_supported	2026-07-17 XR					6G4MQ	fuzzy_supported	2026-07-17 XR	3879
+jbc	72833	dbgi_008568	Eringium bourgatii	8532L	fuzzy_supported	2026-07-17 XR					8532L	fuzzy_supported	2026-07-17 XR	2907
+jbc	71236	dbgi_006883	Euphorbia verracosa	6HB4M	fuzzy_supported	2026-07-17 XR					6HB4M	fuzzy_supported	2026-07-17 XR	3880
+jbn	69307	dbgi_003800	Festuca avina	6HST6	fuzzy_supported	2026-07-17 XR					6HST6	fuzzy_supported	2026-07-17 XR	2057
+jbc	72643	dbgi_008413	Gentiana marcailhuana	B47JG	fuzzy_supported	2026-07-17 XR					B47JG	fuzzy_supported	2026-07-17 XR	3887
+jbc	70933	dbgi_006662	Geranium sangineum	3FV5W	fuzzy_supported	2026-07-17 XR					3FV5W	fuzzy_supported	2026-07-17 XR	248
+jbc	71097	dbgi_006880	Hormatophylla halimifolia	3MPFY	fuzzy_supported	2026-07-17 XR					3MPFY	fuzzy_supported	2026-07-17 XR	3865
+jbn	69038	dbgi_003506	Ioeniculum vulgare	6JBPX	fuzzy_supported	2026-07-17 XR					6JBPX	fuzzy_supported	2026-07-17 XR	2085
+champex_gradient	76096	grad_000087	Jacobea incana	3QJFM	fuzzy_supported	2026-07-17 XR					3QJFM	fuzzy_supported	2026-07-17 XR	458
+jbc	70988	dbgi_004157	Koelaria cenisia	3RBJG	fuzzy_supported	2026-07-17 XR					3RBJG	fuzzy_supported	2026-07-17 XR	3866
+jbc	73025	dbgi_006736	Koeleria valleriana	8WW6K	fuzzy_supported	2026-07-17 XR					8WW6K	fuzzy_supported	2026-07-17 XR	3004
+champex_gradient	76087	grad_000294	Laserpitum halleri	3SC3R	fuzzy_supported	2026-07-17 XR					3SC3R	fuzzy_supported	2026-07-17 XR	3867
+champex_gradient	74028	grad_000058	Leotodon hispidus	6P8JN	fuzzy_supported	2026-07-17 XR					6P8JN	fuzzy_supported	2026-07-17 XR	2238
+jbn	68878	dbgi_003335	Marubium peregrinum	3Y8JF	fuzzy_supported	2026-07-17 XR					3Y8JF	fuzzy_supported	2026-07-17 XR	595
+jbp-new	75914	dbgi_012270	Organum sipyleum	757BF	fuzzy_supported	2026-07-17 XR					757BF	fuzzy_supported	2026-07-17 XR	2545
+jbc	70824	dbgi_008739	Phlo douglasii	4GJ88	fuzzy_supported	2026-07-17 XR					4GJ88	fuzzy_supported	2026-07-17 XR	814
+jbc	74318	dbgi_009418	Pilostemon afer	4Q8GM	fuzzy_supported	2026-07-17 XR					4Q8GM	fuzzy_supported	2026-07-17 XR	961
+jbc	73680	dbgi_009469	Pinguicala vulgaris	77LM6	fuzzy_supported	2026-07-17 XR					77LM6	fuzzy_supported	2026-07-17 XR	2613
+champex_gradient	76094	grad_000482	Pinus mungo	4J2CJ	fuzzy_supported	2026-07-17 XR					4J2CJ	fuzzy_supported	2026-07-17 XR	850
+jbc	73496	dbgi_009379	Platycodon grandiflorum	4JPWP	fuzzy_supported	2026-07-17 XR					4JPWP	fuzzy_supported	2026-07-17 XR	871
+jbc	71149	dbgi_006594	Plobularia nudicaulis	6KJ6N	fuzzy_supported	2026-07-17 XR					6KJ6N	fuzzy_supported	2026-07-17 XR	2157
+jbc	72548	dbgi_008422	Polystichium aculeatum	4LMKP	fuzzy_supported	2026-07-17 XR					4LMKP	fuzzy_supported	2026-07-17 XR	891
+jbc	70479	dbgi_008630	Potentilla alchemilloides	78822	fuzzy_supported	2026-07-17 XR					78822	fuzzy_supported	2026-07-17 XR	2626
+jbc	70591	dbgi_008687	Potentilla dombeya	4M59L	fuzzy_supported	2026-07-17 XR					4M59L	fuzzy_supported	2026-07-17 XR	3868
+jbc	70625	dbgi_007013	Potentilla eriocatpa	BMKTZ	fuzzy_supported	2026-07-17 XR					BMKTZ	fuzzy_supported	2026-07-17 XR	3889
+jbc	70529	dbgi_008543	Rhododendron caucasium	4SFLC	fuzzy_supported	2026-07-17 XR					4SFLC	fuzzy_supported	2026-07-17 XR	3869
+jbc	71138	dbgi_006828	Rosa tebeydensis	6WWFH	fuzzy_supported	2026-07-17 XR					6WWFH	fuzzy_supported	2026-07-17 XR	3881
+jbc	73458	dbgi_001540	Rubus saxatalis	4TLLM	fuzzy_supported	2026-07-17 XR					4TLLM	fuzzy_supported	2026-07-17 XR	3870
+jbc	71020	dbgi_006633	Sali hastata	79C87	fuzzy_supported	2026-07-17 XR					79C87	fuzzy_supported	2026-07-17 XR	2655
+jbc	73763	dbgi_009149	Salix tiandra	79DKG	fuzzy_supported	2026-07-17 XR					79DKG	fuzzy_supported	2026-07-17 XR	3883
+jbc	72981	dbgi_006955	Saxifraga pancta	79R8S	fuzzy_supported	2026-07-17 XR					79R8S	fuzzy_supported	2026-07-17 XR	2716
+jbc	70973	dbgi_006949	Sedum apathulifolium	4W9YJ	fuzzy_supported	2026-07-17 XR					4W9YJ	fuzzy_supported	2026-07-17 XR	3871
+jbn	68952	dbgi_003312	Seseli racile	4WZBF	fuzzy_supported	2026-07-17 XR					4WZBF	fuzzy_supported	2026-07-17 XR	3872
+jbc	73533	dbgi_001353	Silene volgensis	6Z2HB	fuzzy_supported	2026-07-17 XR					6Z2HB	fuzzy_supported	2026-07-17 XR	3882
+jbc	73464	dbgi_001531	Solidago vigaurea	4Y7L3	fuzzy_supported	2026-07-17 XR					4Y7L3	fuzzy_supported	2026-07-17 XR	1199
+jbc	71130	dbgi_006799	Syringa homarowii	542F5	fuzzy_supported	2026-07-17 XR					542F5	fuzzy_supported	2026-07-17 XR	3873
+jbc	70792	dbgi_008770	Tanaceatum corymbosum	54N7L	fuzzy_supported	2026-07-17 XR					54N7L	fuzzy_supported	2026-07-17 XR	1257
+jbn	68631	dbgi_002159	Tanacetum_parthenicum_L_Sch_Bip	7BJ6P	fuzzy_supported	2026-07-17 XR					7BJ6P	fuzzy_supported	2026-07-17 XR	2725
+jbc	73800	dbgi_009135	Thymus langicaulis	56R5N	fuzzy_supported	2026-07-17 XR					56R5N	fuzzy_supported	2026-07-17 XR	1303
+champex_gradient	73957	grad_000004	Thymus sepyllum	56RDY	fuzzy_supported	2026-07-17 XR					56RDY	fuzzy_supported	2026-07-17 XR	1309
+jbc	73834	dbgi_009117	Trinta glauca	58VJZ	fuzzy_supported	2026-07-17 XR					58VJZ	fuzzy_supported	2026-07-17 XR	1341
+jbn	68810	dbgi_003349	Trisia glauca	58VJZ	fuzzy_supported	2026-07-17 XR					58VJZ	fuzzy_supported	2026-07-17 XR	1341
+jbn	69181	dbgi_003502	Tritucum aestivum	5944Q	fuzzy_supported	2026-07-17 XR					5944Q	fuzzy_supported	2026-07-17 XR	1343
+jbn	69331	dbgi_003661	Vernania gigantea	B443Q	fuzzy_supported	2026-07-17 XR					B443Q	fuzzy_supported	2026-07-17 XR	3886
+jbuf	66687	dbgi_003029	Vernonia noveboracencis (L.) Michx.	5B5JC	fuzzy_supported	2026-07-17 XR					5B5JC	fuzzy_supported	2026-07-17 XR	3874
+jbn	69206	dbgi_003823	Vigna unguicalata	7FSHX	fuzzy_supported	2026-07-17 XR					7FSHX	fuzzy_supported	2026-07-17 XR	3884

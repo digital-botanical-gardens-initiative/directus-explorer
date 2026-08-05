@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-08-05T10:22:14.649742+00:00",
+  "mode": "directus_get_only_preflight",
+  "backfill": "data/working/taxonomy_backbone/col_2026_07_17_xr/field_data_safe_backfill.tsv",
+  "requested_count": 8450,
+  "ready_count": 8450,
+  "already_exact_count": 0,
+  "conflict_count": 0,
+  "backup": "data/working/taxonomy_backbone/col_2026_07_17_xr/field_data_backfill_backup_20260805T102214Z.tsv",
+  "preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/field_data_backfill_preview_20260805T102214Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/field_data_backfill_conflicts_20260805T102214Z.tsv",
+  "taxon_name_unified_changes": 0
+}

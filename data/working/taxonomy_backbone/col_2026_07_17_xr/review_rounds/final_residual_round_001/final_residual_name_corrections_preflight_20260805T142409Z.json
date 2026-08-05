@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-05T14:24:09.973225+00:00",
+  "mode": "directus_get_only_preflight",
+  "directus_writes": false,
+  "manifest": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/final_residual_round_001/final_residual_name_corrections_update_manifest.tsv",
+  "manifest_sha256": "9da7b2f108d4380eb7ec938d4ff213111bb10a9e80cf2f1d68c8cbd9b29d7da8",
+  "requested_count": 4,
+  "fetched_count": 4,
+  "ready_count": 4,
+  "conflict_count": 0,
+  "conflicts_by_reason": {},
+  "backup": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/final_residual_round_001/final_residual_name_corrections_directus_backup_20260805T142409Z.tsv",
+  "backup_sha256": "da067d2ed34ce4ac1c831466c5485ba72022e0e883bceb1f15dea54321329133",
+  "write_preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/final_residual_round_001/final_residual_name_corrections_write_preview_20260805T142409Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/final_residual_round_001/final_residual_name_corrections_preflight_conflicts_20260805T142409Z.tsv"
+}

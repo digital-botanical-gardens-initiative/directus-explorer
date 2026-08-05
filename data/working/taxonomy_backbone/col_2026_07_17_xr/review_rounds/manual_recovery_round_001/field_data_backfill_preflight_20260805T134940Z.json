@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-08-05T13:49:40.278668+00:00",
+  "mode": "directus_get_only_preflight",
+  "backfill": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_recovery_round_001/manual_recovery_round_001_field_data_backfill.tsv",
+  "requested_count": 10,
+  "ready_count": 10,
+  "already_exact_count": 0,
+  "conflict_count": 0,
+  "backup": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_recovery_round_001/field_data_backfill_backup_20260805T134940Z.tsv",
+  "preview": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_recovery_round_001/field_data_backfill_preview_20260805T134940Z.tsv",
+  "conflicts": "data/working/taxonomy_backbone/col_2026_07_17_xr/review_rounds/manual_recovery_round_001/field_data_backfill_conflicts_20260805T134940Z.tsv",
+  "taxon_name_unified_changes": 0
+}

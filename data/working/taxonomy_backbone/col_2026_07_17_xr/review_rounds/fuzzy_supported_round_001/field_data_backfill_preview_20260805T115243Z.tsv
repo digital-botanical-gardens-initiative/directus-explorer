@@ -1,0 +1,24 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+champex_gradient	74010	grad_000326	Astrentia minor	J3KC	fuzzy_supported	2026-07-17 XR					J3KC	fuzzy_supported	2026-07-17 XR	3382
+champex_gradient	74093	grad_000290	Astrentia minor	J3KC	fuzzy_supported	2026-07-17 XR					J3KC	fuzzy_supported	2026-07-17 XR	3382
+champex_gradient	74101	grad_000523	Astrentia minor	J3KC	fuzzy_supported	2026-07-17 XR					J3KC	fuzzy_supported	2026-07-17 XR	3382
+champex_gradient	74112	grad_000310	Astrentia minor	J3KC	fuzzy_supported	2026-07-17 XR					J3KC	fuzzy_supported	2026-07-17 XR	3382
+jbc	71114	dbgi_006750	Dianthus gratianapolitanus	6CPPZ	fuzzy_supported	2026-07-17 XR					6CPPZ	fuzzy_supported	2026-07-17 XR	1953
+jbc	73121	dbgi_007060	Dianthus gratianapolitanus	6CPPZ	fuzzy_supported	2026-07-17 XR					6CPPZ	fuzzy_supported	2026-07-17 XR	1953
+jbc	73459	dbgi_001559	Dianthus gratianapolitanus	6CPPZ	fuzzy_supported	2026-07-17 XR					6CPPZ	fuzzy_supported	2026-07-17 XR	1953
+champex_gradient	73840	grad_000216	Geranium robertiarum	3FV57	fuzzy_supported	2026-07-17 XR					3FV57	fuzzy_supported	2026-07-17 XR	3863
+champex_gradient	73850	grad_000007	Geranium robertiarum	3FV57	fuzzy_supported	2026-07-17 XR					3FV57	fuzzy_supported	2026-07-17 XR	3863
+champex_gradient	73864	grad_000114	Geranium robertiarum	3FV57	fuzzy_supported	2026-07-17 XR					3FV57	fuzzy_supported	2026-07-17 XR	3863
+champex_gradient	73869	grad_000030	Geranium robertiarum	3FV57	fuzzy_supported	2026-07-17 XR					3FV57	fuzzy_supported	2026-07-17 XR	3863
+jbn	69271	dbgi_003567	Houtuynia cordata	3MR6R	fuzzy_supported	2026-07-17 XR					3MR6R	fuzzy_supported	2026-07-17 XR	377
+jbn	69313	dbgi_003785	Houtuynia cordata	3MR6R	fuzzy_supported	2026-07-17 XR					3MR6R	fuzzy_supported	2026-07-17 XR	377
+jbp	76253	dbgi_009927	Phoenix doctylifera	4GKRK	fuzzy_supported	2026-07-17 XR					4GKRK	fuzzy_supported	2026-07-17 XR	817
+jbp	76254	dbgi_010031	Phoenix doctylifera	4GKRK	fuzzy_supported	2026-07-17 XR					4GKRK	fuzzy_supported	2026-07-17 XR	817
+champex_gradient	74078	grad_000550	Sempervirum montanum	4WHZ2	fuzzy_supported	2026-07-17 XR					4WHZ2	fuzzy_supported	2026-07-17 XR	1142
+champex_gradient	74083	grad_000545	Sempervirum montanum	4WHZ2	fuzzy_supported	2026-07-17 XR					4WHZ2	fuzzy_supported	2026-07-17 XR	1142
+jbc	70458	dbgi_008833	Sempervirum tectorum	4WJ47	fuzzy_supported	2026-07-17 XR					4WJ47	fuzzy_supported	2026-07-17 XR	1144
+champex_gradient	73844	grad_000042	Sempervirum tectorum	4WJ47	fuzzy_supported	2026-07-17 XR					4WJ47	fuzzy_supported	2026-07-17 XR	1144
+champex_gradient	73847	grad_000045	Sempervirum tectorum	4WJ47	fuzzy_supported	2026-07-17 XR					4WJ47	fuzzy_supported	2026-07-17 XR	1144
+jbp	76153	dbgi_009999	Tabernaemontana brahyantha	549QP	fuzzy_supported	2026-07-17 XR					549QP	fuzzy_supported	2026-07-17 XR	3864
+jbp	76154	dbgi_010067	Tabernaemontana brahyantha	549QP	fuzzy_supported	2026-07-17 XR					549QP	fuzzy_supported	2026-07-17 XR	3864
+jbp	76155	dbgi_010029	Tabernaemontana brahyantha	549QP	fuzzy_supported	2026-07-17 XR					549QP	fuzzy_supported	2026-07-17 XR	3864

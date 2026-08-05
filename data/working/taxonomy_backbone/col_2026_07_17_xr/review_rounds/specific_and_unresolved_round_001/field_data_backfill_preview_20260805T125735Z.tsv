@@ -1,0 +1,9 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+jbn-new	76434	dbgi_011057	Digitalis purpurea subsp. purpurea	5GWHN	ambiguous_specific_supported	2026-07-17 XR					5GWHN	ambiguous_specific_supported	2026-07-17 XR	1478
+jbn-new	76435	dbgi_011228	Digitalis purpurea subsp. purpurea	5GWHN	ambiguous_specific_supported	2026-07-17 XR					5GWHN	ambiguous_specific_supported	2026-07-17 XR	1478
+jbn	68561	dbgi_002035	Digitalis_purpurea_L_subsp_purpurea	5GWHN	ambiguous_specific_supported	2026-07-17 XR					5GWHN	ambiguous_specific_supported	2026-07-17 XR	1478
+jbuf	65792	dbgi_001196	Geranium robertianum L. subsp. robertianum	DJY2H	ambiguous_specific_supported	2026-07-17 XR					DJY2H	ambiguous_specific_supported	2026-07-17 XR	3263
+jbuf	67399	dbgi_007233	Geranium robertianum L. subsp. robertianum	DJY2H	ambiguous_specific_supported	2026-07-17 XR					DJY2H	ambiguous_specific_supported	2026-07-17 XR	3263
+jbn	68807	dbgi_003332	Laburnum_anagyroides_Medik_subsp_anagyroides	3RL8J	normalized_exact	2026-07-17 XR					3RL8J	normalized_exact	2026-07-17 XR	504
+champex_gradient	73974	grad_000073	Phyteuma orbiculare ou hemisphaericum		alternative_identification_unresolved	2026-07-17 XR						alternative_identification_unresolved	2026-07-17 XR	
+jbuf	66361	dbgi_002463	Prunus padus L. subsp. padus	5KPJD	ambiguous_specific_supported	2026-07-17 XR					5KPJD	ambiguous_specific_supported	2026-07-17 XR	1525

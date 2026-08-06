@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-08-06T10:32:51.586479+00:00",
+  "mode": "commit",
+  "institution_exists": false,
+  "institution_to_create": {
+    "university_name": "Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences (IOCB Prague)",
+    "country": "Czech Republic",
+    "alpha_two": "CZ",
+    "web_pages": "['https://www.uochb.cz/en']",
+    "state": "Prague",
+    "domains": "['uochb.cz']"
+  },
+  "pluskal_group_exists": false,
+  "pluskal_memberships_to_create": 7,
+  "commons_memberships_to_create": 1,
+  "preview": "data/working/research_groups/pluskal_memberships_preview_20260806T103251Z.tsv",
+  "institution_id": 4,
+  "pluskal_group_id": 3,
+  "created_membership_count": 8,
+  "execution_journal": "data/working/research_groups/pluskal_execution_20260806T103251Z.tsv"
+}

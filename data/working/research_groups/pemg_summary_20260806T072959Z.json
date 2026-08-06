@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-08-06T07:29:59.517200+00:00",
+  "mode": "read_only_preflight",
+  "university": {
+    "id": 2,
+    "university_name": "Université de Neuchâtel"
+  },
+  "website_field_action": "none",
+  "pemg_exists": true,
+  "planned_membership_count": 0,
+  "lendita_person_id": 6,
+  "lendita_current_name": "Lëndita Schwegler",
+  "lendita_new_name": "Lëndita Schwegler",
+  "planned_field_rename_count": 0,
+  "rename_preview": "data/working/research_groups/lendita_rename_preview_20260806T072959Z.tsv",
+  "memberships_preview": "data/working/research_groups/pemg_memberships_preview_20260806T072959Z.tsv"
+}

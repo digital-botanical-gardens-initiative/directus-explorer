@@ -218,6 +218,59 @@ uv run python scripts/harmonize_collector_fullname.py \
   --commit
 ```
 
+Backfill explicitly approved collector names from the first directory below
+`DCIM`, create Collector records in the `People` collection, and link each
+updated `Field_Data` row through `collector_ref`:
+
+```bash
+uv run python scripts/backfill_collectors_from_dcim_paths.py
+uv run python scripts/backfill_collectors_from_dcim_paths.py --commit
+```
+
+The first command is a read-only preflight. The commit mode performs an
+additive, idempotent schema migration, revalidates the path evidence and empty
+target fields, journals every update, and verifies both the name and relation.
+
+Seed `People` from every canonical non-empty collector name and link all other
+named `Field_Data` rows that still have an empty `collector_ref`:
+
+```bash
+uv run python scripts/link_collectors_to_people.py
+uv run python scripts/link_collectors_to_people.py --commit
+```
+
+Observed ORCID and iNaturalist identifiers are copied to new People records
+only when they are internally consistent. Existing non-empty relations are
+never overwritten.
+
+Create the reusable research-group affiliation model and link the approved
+COMMONS Lab people to the existing University of Fribourg record:
+
+```bash
+uv run python scripts/link_commons_lab_affiliations.py
+uv run python scripts/link_commons_lab_affiliations.py --commit
+```
+
+This creates `Research_Groups` and the `People_Research_Groups` many-to-many
+junction when absent. Building and current/former membership status are left
+unset unless separately curated.
+
+Create PEMG under the existing Université de Neuchâtel, link its approved
+people, and expand Lendita to the canonical full name Lëndita Schwegler:
+
+```bash
+uv run python scripts/link_pemg_affiliations.py
+uv run python scripts/link_pemg_affiliations.py --commit
+```
+
+Create the accurate IOCB Prague institution and Tomáš Pluskal Group, link its
+approved people, and add Jade Dandois to COMMONS Lab:
+
+```bash
+uv run python scripts/link_pluskal_affiliations.py
+uv run python scripts/link_pluskal_affiliations.py --commit
+```
+
 Summarize the DBGI megaproject (`jbc`, `jbn`, `jbp`, `jbuf`, and
 `kew-botanical-gardens`) as one row:
 

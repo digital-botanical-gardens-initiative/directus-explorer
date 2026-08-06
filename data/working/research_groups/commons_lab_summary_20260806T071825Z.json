@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-08-06T07:18:25.370053+00:00",
+  "mode": "read_only_preflight",
+  "university": {
+    "id": 1,
+    "university_name": "University of Fribourg"
+  },
+  "schema_before": {
+    "research_groups_collection": false,
+    "memberships_collection": false,
+    "research_group_fields": {},
+    "membership_fields": {},
+    "people_groups_alias": false,
+    "university_relation": false,
+    "person_relation": false,
+    "group_relation": false
+  },
+  "schema_actions": [
+    "create_collection:Research_Groups",
+    "create_collection:People_Research_Groups",
+    "create_field:Research_Groups.id",
+    "create_field:Research_Groups.group_name",
+    "create_field:Research_Groups.university_ref",
+    "create_field:Research_Groups.people",
+    "create_field:People_Research_Groups.id",
+    "create_field:People_Research_Groups.person_ref",
+    "create_field:People_Research_Groups.research_group_ref",
+    "create_field:People.research_groups",
+    "create_relation:Research_Groups.university_ref->Universities.id",
+    "create_relation:People_Research_Groups.person_ref->People.id",
+    "create_relation:People_Research_Groups.research_group_ref->Research_Groups.id"
+  ],
+  "commons_lab_exists": false,
+  "existing_membership_count": 0,
+  "planned_membership_count": 9,
+  "preview": "data/working/research_groups/commons_lab_memberships_20260806T071825Z.tsv"
+}

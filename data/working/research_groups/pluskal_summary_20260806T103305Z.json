@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-08-06T10:33:05.030160+00:00",
+  "mode": "read_only_preflight",
+  "institution_exists": true,
+  "institution_to_create": null,
+  "pluskal_group_exists": true,
+  "pluskal_memberships_to_create": 0,
+  "commons_memberships_to_create": 0,
+  "preview": "data/working/research_groups/pluskal_memberships_preview_20260806T103305Z.tsv"
+}

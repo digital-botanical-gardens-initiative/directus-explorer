@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-08-06T06:49:58.610763+00:00",
+  "mode": "read_only_preflight",
+  "schema_before": {
+    "people_collection": false,
+    "people_fields": {},
+    "collector_ref_field": false,
+    "collector_ref_relation": false
+  },
+  "schema_actions": [
+    "create_collection:People",
+    "create_field:People.id",
+    "create_field:People.full_name",
+    "create_field:People.email",
+    "create_field:People.orcid",
+    "create_field:People.inat",
+    "create_field:People.role",
+    "create_field:Field_Data.collector_ref",
+    "create_relation:Field_Data.collector_ref->People.id"
+  ],
+  "planned_people": [
+    {
+      "full_name": "Audrey Le Cabec",
+      "email": "",
+      "orcid": "",
+      "inat": "",
+      "role": "Collector"
+    },
+    {
+      "full_name": "Clement Duckert",
+      "email": "",
+      "orcid": "",
+      "inat": "",
+      "role": "Collector"
+    },
+    {
+      "full_name": "Edouard Brülhart",
+      "email": "",
+      "orcid": "0000-0003-3950-4065",
+      "inat": "@edouardbruelhart",
+      "role": "Collector"
+    },
+    {
+      "full_name": "Emmanuel Defossez",
+      "email": "",
+      "orcid": "0000-0002-3279-9190",
+      "inat": "@manu_dfz",
+      "role": "Collector"
+    },
+    {
+      "full_name": "Héloïse Coen",
+      "email": "",
+      "orcid": "0009-0009-8832-7457",
+      "inat": "@hcoen",
+      "role": "Collector"
+    },
+    {
+      "full_name": "Lendita",
+      "email": "lendita.kashtanjeva@unifr.ch",
+      "orcid": "",
+      "inat": "",
+      "role": "Collector"
+    },
+    {
+      "full_name": "Stephanie Tandem Guetchueng",
+      "email": "",
+      "orcid": "",
+      "inat": "",
+      "role": "Collector"
+    }
+  ],
+  "planned_people_count": 7,
+  "planned_update_count": 1802,
+  "ready_count": 1802,
+  "conflict_count": 0,
+  "updates_by_person": {
+    "Audrey Le Cabec": 38,
+    "Clement Duckert": 18,
+    "Edouard Brülhart": 887,
+    "Emmanuel Defossez": 17,
+    "Héloïse Coen": 511,
+    "Lendita": 326,
+    "Stephanie Tandem Guetchueng": 5
+  },
+  "updates_by_project": {
+    "emi": 9,
+    "jbn": 380,
+    "jbuf": 1413
+  },
+  "preview": "data/working/collector_path_backfill/collector_path_preview_20260806T064958Z.tsv",
+  "backup": "data/working/collector_path_backfill/collector_path_backup_20260806T064958Z.tsv",
+  "conflicts": "data/working/collector_path_backfill/collector_path_conflicts_20260806T064958Z.tsv",
+  "people_preview": "data/working/collector_path_backfill/collector_people_20260806T064958Z.tsv"
+}

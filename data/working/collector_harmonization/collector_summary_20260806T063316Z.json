@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-08-06T06:33:16.929390+00:00",
+  "mode": "directus_get_only_dry_run",
+  "rows_audited": 9755,
+  "nonempty_rows": 7207,
+  "variant_group_count": 2,
+  "planned_update_count": 363,
+  "ready_count": 363,
+  "conflict_count": 0,
+  "updates_by_old_value": {
+    "Emilie Lab": 34,
+    "Lab Emilie": 86,
+    "Mazzarine laboureau": 243
+  },
+  "groups": "data/working/collector_harmonization/collector_variant_groups_20260806T063316Z.tsv",
+  "backup": "data/working/collector_harmonization/collector_directus_backup_20260806T063316Z.tsv",
+  "write_preview": "data/working/collector_harmonization/collector_write_preview_20260806T063316Z.tsv",
+  "conflicts": "data/working/collector_harmonization/collector_conflicts_20260806T063316Z.tsv"
+}

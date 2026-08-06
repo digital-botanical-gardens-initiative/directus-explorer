@@ -200,6 +200,24 @@ Open `data/working/taxonomy_curation/taxonomy_curation_dashboard.html` in a web
 browser. The report is self-contained and reads only local audit, review,
 preflight, and execution artifacts; it makes no network requests.
 
+Audit spelling, capitalization, accent, and name-order variants in
+`Field_Data.collector_fullname` and prepare a backup and write preview:
+
+```bash
+uv run python scripts/harmonize_collector_fullname.py --env-file .env
+```
+
+The most frequent spelling in each identity group is selected as canonical.
+The default mode uses GET requests only. After reviewing the artifacts under
+`data/working/collector_harmonization/`, apply and verify the updates with an
+account that can update `Field_Data`:
+
+```bash
+uv run python scripts/harmonize_collector_fullname.py \
+  --env-file .env.admin \
+  --commit
+```
+
 Summarize the DBGI megaproject (`jbc`, `jbn`, `jbp`, `jbuf`, and
 `kew-botanical-gardens`) as one row:
 

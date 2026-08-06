@@ -1,0 +1,23 @@
+record_id = 20267087
+title = "DBGI samples metadata"
+description_html = "<p>Metadata associated with samples collected across Digital Botanical Gardens Initiative projects as of {{date}}. Version {{version}} contains one row per sample and dereferences the curated Directus taxon_ref to include the final accepted Catalogue of Life name and pinned backbone metadata.</p>"
+creators = ["Digital Botanical Gardens Initiative"]
+license = "cc-by-4.0"
+community = "dbgi-zenodo-repository"
+working_dir = ".."
+output_dir = "../data/output/zenodo/dbgi-samples-metadata"
+readme_template = "dbgi-samples-metadata-README.template.md"
+export_command = [
+  "uv",
+  "run",
+  "directus-explorer",
+  "ms",
+  "export-metadata",
+  "--output",
+  "{output}",
+  "--project-group",
+  "dbgi",
+  "--view",
+  "sample-compact",
+  "--require-col-id",
+]

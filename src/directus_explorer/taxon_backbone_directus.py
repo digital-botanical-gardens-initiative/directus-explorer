@@ -2,8 +2,63 @@
 
 from __future__ import annotations
 
+import csv
 from collections.abc import Iterable
+from pathlib import Path
 from typing import Any
+
+
+DEFAULT_TAXONOMY_ARTIFACTS_ROOT = Path(
+    "data/working/taxonomy_backbone/col_2026_07_17_xr"
+)
+
+
+def load_stored_taxa_index(root: Path) -> dict[str, dict[str, str]]:
+    """Reconstruct Directus Taxa rows from verified seed execution artifacts."""
+
+    seed_paths = [
+        root / "taxa_seed.tsv",
+        *sorted(root.glob("review_rounds/*/*_taxa_seed.tsv")),
+    ]
+    execution_paths = [
+        *sorted(root.glob("taxa_seed_execution_*.tsv")),
+        *sorted(root.glob("review_rounds/*/taxa_seed_execution_*.tsv")),
+    ]
+    if not seed_paths[0].is_file() or not execution_paths:
+        raise ValueError(f"Taxonomy seed artifacts are incomplete under {root}")
+
+    seeds_by_col_id: dict[str, dict[str, str]] = {}
+    for path in seed_paths:
+        for row in _read_tsv(path):
+            col_id = row.get("col_id", "").strip()
+            existing = seeds_by_col_id.get(col_id)
+            if existing is not None and existing != row:
+                raise ValueError(f"Conflicting Taxa seed metadata for COL ID {col_id}")
+            seeds_by_col_id[col_id] = row
+
+    col_id_by_directus_id: dict[str, str] = {}
+    for path in execution_paths:
+        for row in _read_tsv(path):
+            directus_id = row.get("directus_id", "").strip()
+            col_id = row.get("col_id", "").strip()
+            existing_col_id = col_id_by_directus_id.get(directus_id)
+            if existing_col_id is not None and existing_col_id != col_id:
+                raise ValueError(f"Conflicting COL IDs for Directus Taxa ID {directus_id}")
+            col_id_by_directus_id[directus_id] = col_id
+
+    taxa_by_id: dict[str, dict[str, str]] = {}
+    for directus_id, col_id in col_id_by_directus_id.items():
+        try:
+            seed = seeds_by_col_id[col_id]
+        except KeyError as exc:
+            raise ValueError(f"Missing Taxa seed metadata for COL ID {col_id}") from exc
+        taxa_by_id[directus_id] = {"id": directus_id, **seed}
+    return taxa_by_id
+
+
+def _read_tsv(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
 
 
 def build_taxa_seed(backbone_rows: Iterable[dict[str, str]]) -> list[dict[str, str]]:

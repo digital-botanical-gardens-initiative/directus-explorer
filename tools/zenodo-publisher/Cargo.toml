@@ -1,0 +1,18 @@
+[package]
+name = "dbgi-zenodo-publisher"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.86"
+description = "Manifest-driven, resumable Zenodo version publisher for DBGI artifacts"
+license = "MIT"
+
+[dependencies]
+chrono = "0.4"
+clap = { version = "4", features = ["derive"] }
+csv = "1"
+md-5 = "0.10"
+serde = { version = "1", features = ["derive"] }
+sha2 = "0.10"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time"] }
+toml = "0.8"
+zenodo-rs = "0.3.0"

@@ -141,6 +141,15 @@ COMPACT_FIELDNAMES = (
     "field_taxon_resolution_status",
     "field_taxon_backbone_version",
     "field_taxon_ref",
+    "field_taxon_ref_id",
+    "field_taxon_ref_col_id",
+    "field_taxon_ref_scientific_name",
+    "field_taxon_ref_authorship",
+    "field_taxon_accepted_name",
+    "field_taxon_ref_rank",
+    "field_taxon_ref_backbone_version",
+    "field_taxon_ref_backbone_dataset_key",
+    "field_taxon_ref_backbone_doi",
     "field_taxon_parent_col_ids",
     "field_date",
     "field_latitude",
@@ -358,6 +367,13 @@ def build_sample_metadata_row(
 
     field_data = field_row if field_row is not None else _read_mapping(dried_row, "field_data")
     _flatten_mapping(row, prefix="field", mapping=field_data)
+    taxon_ref = _read_mapping(field_data, "taxon_ref")
+    taxon_scientific_name = _read_nested_string(field_data, "taxon_ref", "scientific_name")
+    taxon_authorship = _read_nested_string(field_data, "taxon_ref", "authorship")
+    if taxon_ref is not None:
+        row["field_taxon_accepted_name"] = " ".join(
+            value for value in (taxon_scientific_name, taxon_authorship) if value
+        )
 
     row["original_sample_container_id"] = _read_nested_string(
         dried_row,

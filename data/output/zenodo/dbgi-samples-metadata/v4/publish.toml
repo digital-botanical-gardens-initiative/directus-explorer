@@ -1,0 +1,16 @@
+previous_record_id = 21827179
+version = "v4"
+title = "DBGI samples metadata"
+publication_date = "2026-08-06"
+description_html = "<p>Metadata associated with samples collected across Digital Botanical Gardens Initiative projects as of 2026-08-06. Version v4 contains one row per sample and dereferences the curated Directus taxon_ref to include the final accepted Catalogue of Life name and pinned backbone metadata.</p>"
+creators = ["Digital Botanical Gardens Initiative"]
+license = "cc-by-4.0"
+community = "dbgi-zenodo-repository"
+
+[[files]]
+archive_name = "sample_metadata_dbgi_col_20260806T173321Z.tsv"
+path = "sample_metadata_dbgi_col_20260806T173321Z.tsv"
+
+[[files]]
+archive_name = "README.md"
+path = "README.md"

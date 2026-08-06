@@ -270,6 +270,11 @@ def test_export_ms_metadata_requires_col_ids(monkeypatch: pytest.MonkeyPatch) ->
             directus_password="secret",
         ),
     )
+    monkeypatch.setattr(
+        cli_module,
+        "load_stored_taxa_index",
+        lambda root: {"1927": {"id": "1927", "col_id": "97H4"}},
+    )
 
     class FakeClient:
         def __init__(self, settings: Settings) -> None:
@@ -279,6 +284,9 @@ def test_export_ms_metadata_requires_col_ids(monkeypatch: pytest.MonkeyPatch) ->
             assert kwargs["project_group"] == "dbgi"
             assert kwargs["view"] == "sample-compact"
             assert kwargs["require_col_id"] is True
+            assert kwargs["stored_taxa_by_id"] == {
+                "1927": {"id": "1927", "col_id": "97H4"}
+            }
             return 123
 
     monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)

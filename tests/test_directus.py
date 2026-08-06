@@ -243,6 +243,17 @@ def test_build_ms_metadata_table_flattens_linked_records(
                     "sample_name": "Sample Name",
                     "temperature_°C": 20.5,
                     "geometry": {"type": "Point", "coordinates": [7.1, 46.7]},
+                    "taxon_col_id": "97H4",
+                    "taxon_ref": {
+                        "id": 1927,
+                        "col_id": "97H4",
+                        "scientific_name": "Achillea millefolium",
+                        "authorship": "L.",
+                        "rank": "species",
+                        "backbone_version": "2026-07-17 XR",
+                        "backbone_dataset_key": 315834,
+                        "backbone_doi": "10.48580/dgykv",
+                    },
                 }
             ]
         },
@@ -390,6 +401,10 @@ def test_build_ms_metadata_table_flattens_linked_records(
     assert row["field_sample_name"] == "Sample Name"
     assert row["field_temperature_c"] == 20.5
     assert row["field_geometry_coordinates"] == "[7.1, 46.7]"
+    assert row["field_taxon_ref_id"] == 1927
+    assert row["field_taxon_ref_col_id"] == "97H4"
+    assert row["field_taxon_accepted_name"] == "Achillea millefolium L."
+    assert row["field_taxon_ref_backbone_dataset_key"] == 315834
     assert "field_geometry" not in table.fieldnames
 
 
@@ -740,11 +755,31 @@ def test_export_ms_metadata_csv_can_keep_only_rows_with_col_ids(
     client = DirectusClient(settings)
     source_table = MsMetadataTable(fieldnames=(), rows=())
     compact_table = MsMetadataTable(
-        fieldnames=("original_sample_id", "field_taxon_col_id"),
+        fieldnames=(
+            "original_sample_id",
+            "field_taxon_col_id",
+            "field_taxon_ref_col_id",
+            "field_taxon_accepted_name",
+        ),
         rows=(
-            {"original_sample_id": "dbgi_001", "field_taxon_col_id": "97H4"},
-            {"original_sample_id": "dbgi_002", "field_taxon_col_id": ""},
-            {"original_sample_id": "dbgi_003", "field_taxon_col_id": None},
+            {
+                "original_sample_id": "dbgi_001",
+                "field_taxon_col_id": "97H4",
+                "field_taxon_ref_col_id": "97H4",
+                "field_taxon_accepted_name": "Achillea millefolium L.",
+            },
+            {
+                "original_sample_id": "dbgi_002",
+                "field_taxon_col_id": "",
+                "field_taxon_ref_col_id": "",
+                "field_taxon_accepted_name": "",
+            },
+            {
+                "original_sample_id": "dbgi_003",
+                "field_taxon_col_id": None,
+                "field_taxon_ref_col_id": "",
+                "field_taxon_accepted_name": "",
+            },
         ),
     )
     monkeypatch.setattr(
@@ -755,10 +790,19 @@ def test_export_ms_metadata_csv_can_keep_only_rows_with_col_ids(
     monkeypatch.setattr(
         client,
         "_build_sample_compact_metadata_table",
-        lambda table, resolve_taxonomy=True: (
+        lambda table, resolve_taxonomy=True, stored_taxa_by_id=None: (
             compact_table
             if not resolve_taxonomy
             else pytest.fail("COL resolver must not run for stored-taxonomy exports")
+        ),
+    )
+    monkeypatch.setattr(
+        client,
+        "_get_items",
+        lambda collection, fields: (
+            [{"id": 1927, "col_id": "97H4"}]
+            if collection == "Taxa"
+            else pytest.fail(f"Unexpected collection: {collection}")
         ),
     )
 
@@ -768,12 +812,18 @@ def test_export_ms_metadata_csv_can_keep_only_rows_with_col_ids(
         project_group="dbgi",
         view="sample-compact",
         require_col_id=True,
+        stored_taxa_by_id={"1927": {"id": "1927", "col_id": "97H4"}},
     )
 
     assert row_count == 1
     with output_path.open(newline="", encoding="utf-8") as handle:
         assert list(csv.DictReader(handle, delimiter="\t")) == [
-            {"original_sample_id": "dbgi_001", "field_taxon_col_id": "97H4"}
+            {
+                "original_sample_id": "dbgi_001",
+                "field_taxon_col_id": "97H4",
+                "field_taxon_ref_col_id": "97H4",
+                "field_taxon_accepted_name": "Achillea millefolium L.",
+            }
         ]
 
 
@@ -1412,6 +1462,7 @@ def test_sample_compact_metadata_can_use_stored_taxonomy_without_col_request() -
             "field_taxon_col_id",
             "field_taxon_resolution_status",
             "field_taxon_backbone_version",
+            "field_taxon_ref",
         ),
         rows=(
             {
@@ -1422,6 +1473,7 @@ def test_sample_compact_metadata_can_use_stored_taxonomy_without_col_request() -
                 "field_taxon_col_id": "97H4",
                 "field_taxon_resolution_status": "resolved",
                 "field_taxon_backbone_version": "2026-07-17 XR",
+                "field_taxon_ref": "1927",
             },
         ),
     )
@@ -1429,10 +1481,24 @@ def test_sample_compact_metadata_can_use_stored_taxonomy_without_col_request() -
     compact = client._build_sample_compact_metadata_table(
         table,
         resolve_taxonomy=False,
+        stored_taxa_by_id={
+            "1927": {
+                "id": 1927,
+                "col_id": "97H4",
+                "scientific_name": "Achillea millefolium",
+                "authorship": "L.",
+                "rank": "species",
+                "backbone_version": "2026-07-17 XR",
+                "backbone_dataset_key": 315834,
+                "backbone_doi": "10.48580/dgykv",
+            }
+        },
     )
 
     assert compact.rows[0]["field_taxon_col_id"] == "97H4"
     assert compact.rows[0]["field_taxon_name_unified"] == "Achillea millefolium"
+    assert compact.rows[0]["field_taxon_accepted_name"] == "Achillea millefolium L."
+    assert compact.rows[0]["field_taxon_ref_backbone_doi"] == "10.48580/dgykv"
     assert "resolved_taxon_id" not in compact.fieldnames
 
 

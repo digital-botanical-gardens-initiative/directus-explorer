@@ -296,19 +296,57 @@ artefact traceable to its preparation time:
 
 ```bash
 export DBGI_EXPORT_TIMESTAMP="$(date -u +%Y%m%dT%H%M%SZ)"
-uv run directus-explorer ms export-metadata \
-  --output "data/output/sample_metadata_dbgi_col_${DBGI_EXPORT_TIMESTAMP}.tsv" \
-  --project-group dbgi \
-  --view sample-compact \
-  --require-col-id
+export DBGI_EXPORT_PATH="data/output/sample_metadata_dbgi_col_${DBGI_EXPORT_TIMESTAMP}.tsv"
+
+if [[ -e "${DBGI_EXPORT_PATH}" ]]; then
+  echo "Refusing to overwrite immutable export: ${DBGI_EXPORT_PATH}" >&2
+  false
+else
+  uv run directus-explorer ms export-metadata \
+    --output "${DBGI_EXPORT_PATH}" \
+    --project-group dbgi \
+    --view sample-compact \
+    --require-col-id
+fi
+
+shasum -a 256 "${DBGI_EXPORT_PATH}"
 ```
+
+Treat the resulting timestamped file as immutable. If its content needs to be
+corrected, run the export again with a new timestamp and publish a new Zenodo
+version; never overwrite the earlier path.
 
 This produces one row per `original_sample_id`, limits the source projects to the
 repository-maintained DBGI list, and excludes rows whose stored
 `field_taxon_col_id` is empty. It does not query Catalogue of Life: the export
 uses the taxonomic resolution previously curated and applied to `Field_Data` in
-Directus. The export retains those stored taxonomic fields, collection metadata,
-and positive/negative profiling flags.
+Directus. It dereferences `field_taxon_ref` through the verified Taxa seed
+execution artifacts and includes the final accepted name, authorship, rank,
+backbone release, dataset key, and DOI. The export also retains collection
+metadata and positive/negative profiling flags.
+
+The recommended release workflow is one command:
+
+```bash
+cargo run --manifest-path tools/zenodo-publisher/Cargo.toml -- \
+  release zenodo/dbgi-samples-metadata-release.toml
+```
+
+It resolves the latest record, increments `vN`, creates a fresh immutable
+timestamped export, validates required taxonomy and sample uniqueness, generates
+the archive README and frozen release manifest, verifies the Zenodo draft by
+size and MD5, and publishes it. Use `--draft-only` to stop before publication:
+
+```bash
+cargo run --manifest-path tools/zenodo-publisher/Cargo.toml -- \
+  release zenodo/dbgi-samples-metadata-release.toml --draft-only
+```
+
+The publisher reads `ZENODO_TOKEN`, creates or reuses the editable new-version
+draft, replaces and verifies its files by size and MD5, and publishes only after
+verification. Re-running the same manifest is safe: an already-published `vN`
+is verified and returned instead of creating another version. See
+`tools/zenodo-publisher/README.md` for details.
 
 Export one wide TSV row per collected sample lineage. Samples without any MS records are still included; samples with MS rows are enriched with the linked lineage metadata:
 

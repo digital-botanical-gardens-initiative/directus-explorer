@@ -29,6 +29,10 @@ from .samples import (
     ProjectSampleSummary,
     ProjectSpeciesSummary,
 )
+from .taxon_backbone_directus import (
+    DEFAULT_TAXONOMY_ARTIFACTS_ROOT,
+    load_stored_taxa_index,
+)
 
 
 @click.group()
@@ -421,6 +425,13 @@ def sample_locations(
     help="Keep only sample-compact rows with a stored Directus Catalogue of Life ID.",
 )
 @click.option(
+    "--taxa-artifacts-root",
+    type=click.Path(path_type=Path, file_okay=False, resolve_path=False),
+    default=DEFAULT_TAXONOMY_ARTIFACTS_ROOT,
+    show_default=True,
+    help="Verified Taxa seed and execution artifacts used to dereference taxon_ref.",
+)
+@click.option(
     "--env-file",
     type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
     default=None,
@@ -433,6 +444,7 @@ def export_ms_metadata(
     watcher_tsv: tuple[Path, ...],
     export_view: str,
     require_col_id: bool,
+    taxa_artifacts_root: Path,
     env_file: Path | None,
 ) -> None:
     """Export one wide TSV row per collected sample lineage."""
@@ -452,10 +464,19 @@ def export_ms_metadata(
         }
         if require_col_id:
             export_kwargs["require_col_id"] = True
+            export_kwargs["stored_taxa_by_id"] = load_stored_taxa_index(
+                taxa_artifacts_root
+            )
         row_count = client.export_ms_metadata_csv(
             **export_kwargs,
         )
-    except (SettingsError, DirectusAuthError, DirectusError, DirectusResponseError) as exc:
+    except (
+        SettingsError,
+        DirectusAuthError,
+        DirectusError,
+        DirectusResponseError,
+        ValueError,
+    ) as exc:
         raise click.ClickException(str(exc)) from exc
 
     if project_group is not None:

@@ -95,6 +95,18 @@ TAXONOMY_METADATA_FIELDNAMES = (
     "resolved_taxon_genus",
 )
 
+STORED_TAXONOMY_METADATA_FIELDNAMES = (
+    "field_taxon_ref_id",
+    "field_taxon_ref_col_id",
+    "field_taxon_ref_scientific_name",
+    "field_taxon_ref_authorship",
+    "field_taxon_accepted_name",
+    "field_taxon_ref_rank",
+    "field_taxon_ref_backbone_version",
+    "field_taxon_ref_backbone_dataset_key",
+    "field_taxon_ref_backbone_doi",
+)
+
 
 class DirectusClient:
     """Small authenticated Directus client for read-only explorer queries."""
@@ -287,6 +299,7 @@ class DirectusClient:
         watcher_tsv_paths: tuple[Path, ...] = (),
         view: str = "full",
         require_col_id: bool = False,
+        stored_taxa_by_id: Mapping[str, dict[str, Any]] | None = None,
     ) -> int:
         """Write a flattened sample/MS metadata TSV and return the number of rows written."""
 
@@ -296,9 +309,12 @@ class DirectusClient:
             watcher_tsv_paths=watcher_tsv_paths,
         )
         if view == "sample-compact":
+            if require_col_id and stored_taxa_by_id is None:
+                raise ValueError("Stored Taxa metadata is required for COL-filtered exports")
             table = self._build_sample_compact_metadata_table(
                 table,
                 resolve_taxonomy=not require_col_id,
+                stored_taxa_by_id=stored_taxa_by_id,
             )
         else:
             table = select_table_view(table, view=view)
@@ -313,6 +329,18 @@ class DirectusClient:
                     if str(row.get("field_taxon_col_id") or "").strip()
                 ),
             )
+            incomplete = [
+                str(row.get("original_sample_id") or "")
+                for row in table.rows
+                if not str(row.get("field_taxon_accepted_name") or "").strip()
+                or str(row.get("field_taxon_col_id") or "").strip()
+                != str(row.get("field_taxon_ref_col_id") or "").strip()
+            ]
+            if incomplete:
+                raise DirectusResponseError(
+                    "Stored Taxa metadata is incomplete or inconsistent for samples: "
+                    + ", ".join(incomplete[:10])
+                )
         write_ms_metadata_csv(table, output_path, delimiter="\t")
         return len(table.rows)
 
@@ -557,6 +585,7 @@ class DirectusClient:
         table: MsMetadataTable,
         *,
         resolve_taxonomy: bool = True,
+        stored_taxa_by_id: Mapping[str, dict[str, Any]] | None = None,
     ) -> MsMetadataTable:
         """Return one compact metadata row per original collected sample."""
 
@@ -628,6 +657,13 @@ class DirectusClient:
                         resolution_by_name,
                     )
                 )
+            else:
+                collapsed_row.update(
+                    self._stored_taxonomy_metadata_for_sample(
+                        sample_rows,
+                        stored_taxa_by_id or {},
+                    )
+                )
             output_rows.append(collapsed_row)
 
         fieldnames = self._sample_compact_fieldnames(
@@ -635,6 +671,44 @@ class DirectusClient:
             include_resolved_taxonomy=resolve_taxonomy,
         )
         return MsMetadataTable(fieldnames=fieldnames, rows=tuple(output_rows))
+
+    @staticmethod
+    def _stored_taxonomy_metadata_for_sample(
+        sample_rows: list[dict[str, Any]],
+        taxa_by_id: Mapping[str, dict[str, Any]],
+    ) -> dict[str, Any]:
+        """Return accepted taxonomy metadata from the stored Directus relation."""
+
+        ref_ids = {
+            str(row["field_taxon_ref"])
+            for row in sample_rows
+            if row.get("field_taxon_ref") not in (None, "")
+        }
+        taxon = taxa_by_id.get(next(iter(ref_ids))) if len(ref_ids) == 1 else None
+        if taxon is None:
+            return {fieldname: "" for fieldname in STORED_TAXONOMY_METADATA_FIELDNAMES}
+
+        scientific_name = str(taxon.get("scientific_name") or "").strip()
+        authorship = str(taxon.get("authorship") or "").strip()
+        return {
+            "field_taxon_ref_id": str(taxon.get("id") or ""),
+            "field_taxon_ref_col_id": str(taxon.get("col_id") or "").strip(),
+            "field_taxon_ref_scientific_name": scientific_name,
+            "field_taxon_ref_authorship": authorship,
+            "field_taxon_accepted_name": " ".join(
+                value for value in (scientific_name, authorship) if value
+            ),
+            "field_taxon_ref_rank": str(taxon.get("rank") or "").strip(),
+            "field_taxon_ref_backbone_version": str(
+                taxon.get("backbone_version") or ""
+            ).strip(),
+            "field_taxon_ref_backbone_dataset_key": str(
+                taxon.get("backbone_dataset_key") or ""
+            ).strip(),
+            "field_taxon_ref_backbone_doi": str(
+                taxon.get("backbone_doi") or ""
+            ).strip(),
+        }
 
     def build_sample_locations_table(
         self,
@@ -1423,7 +1497,19 @@ class DirectusClient:
         taxonomy_fieldnames = (
             TAXONOMY_METADATA_FIELDNAMES if include_resolved_taxonomy else ()
         )
-        return base_fieldnames + profile_fieldnames + taxonomy_fieldnames
+        stored_taxonomy_fieldnames = (
+            () if include_resolved_taxonomy else STORED_TAXONOMY_METADATA_FIELDNAMES
+        )
+        extra_fieldnames = tuple(
+            fieldname
+            for fieldname in taxonomy_fieldnames + stored_taxonomy_fieldnames
+            if fieldname not in base_fieldnames and fieldname not in profile_fieldnames
+        )
+        return (
+            base_fieldnames
+            + profile_fieldnames
+            + extra_fieldnames
+        )
 
     def _index_rows_by_nested_string(
         self,

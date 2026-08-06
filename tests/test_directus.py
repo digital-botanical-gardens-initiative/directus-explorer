@@ -726,6 +726,57 @@ def test_export_ms_metadata_csv_compact_view_writes_curated_columns(
     ]
 
 
+def test_export_ms_metadata_csv_can_keep_only_rows_with_col_ids(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """COL-filtered sample exports should omit unresolved sample rows."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+    client = DirectusClient(settings)
+    source_table = MsMetadataTable(fieldnames=(), rows=())
+    compact_table = MsMetadataTable(
+        fieldnames=("original_sample_id", "field_taxon_col_id"),
+        rows=(
+            {"original_sample_id": "dbgi_001", "field_taxon_col_id": "97H4"},
+            {"original_sample_id": "dbgi_002", "field_taxon_col_id": ""},
+            {"original_sample_id": "dbgi_003", "field_taxon_col_id": None},
+        ),
+    )
+    monkeypatch.setattr(
+        client,
+        "build_ms_metadata_table_with_watcher",
+        lambda project=None, project_group=None, watcher_tsv_paths=(): source_table,
+    )
+    monkeypatch.setattr(
+        client,
+        "_build_sample_compact_metadata_table",
+        lambda table, resolve_taxonomy=True: (
+            compact_table
+            if not resolve_taxonomy
+            else pytest.fail("COL resolver must not run for stored-taxonomy exports")
+        ),
+    )
+
+    output_path = tmp_path / "dbgi-col.tsv"
+    row_count = client.export_ms_metadata_csv(
+        output_path=output_path,
+        project_group="dbgi",
+        view="sample-compact",
+        require_col_id=True,
+    )
+
+    assert row_count == 1
+    with output_path.open(newline="", encoding="utf-8") as handle:
+        assert list(csv.DictReader(handle, delimiter="\t")) == [
+            {"original_sample_id": "dbgi_001", "field_taxon_col_id": "97H4"}
+        ]
+
+
 def test_build_sample_locations_table_resolves_storage_hierarchy(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
@@ -1336,6 +1387,53 @@ def test_sample_compact_metadata_table_collapses_rows_and_adds_taxonomy() -> Non
     assert row["resolved_taxon_id"] == "97H4"
     assert row["resolved_taxon_family"] == "Asteraceae"
     assert row["resolved_taxon_order"] == "Asterales"
+
+
+def test_sample_compact_metadata_can_use_stored_taxonomy_without_col_request() -> None:
+    """Stored-taxonomy exports should not invoke the external resolver."""
+
+    settings = Settings(
+        directus_instance="https://example.test/directus",
+        directus_username="user@example.test",
+        directus_password="secret",
+    )
+
+    class FailingTaxonResolver:
+        def resolve_names(self, names: Iterable[str]) -> Mapping[str, TaxonResolution]:
+            pytest.fail("The external Catalogue of Life resolver was called")
+
+    client = DirectusClient(settings, taxon_resolver=FailingTaxonResolver())
+    table = MsMetadataTable(
+        fieldnames=(
+            "original_sample_id",
+            "qfield_project",
+            "profile_mode",
+            "field_taxon_name_unified",
+            "field_taxon_col_id",
+            "field_taxon_resolution_status",
+            "field_taxon_backbone_version",
+        ),
+        rows=(
+            {
+                "original_sample_id": "dbgi_001",
+                "qfield_project": "jbuf",
+                "profile_mode": "positive",
+                "field_taxon_name_unified": "Achillea millefolium",
+                "field_taxon_col_id": "97H4",
+                "field_taxon_resolution_status": "resolved",
+                "field_taxon_backbone_version": "2026-07-17 XR",
+            },
+        ),
+    )
+
+    compact = client._build_sample_compact_metadata_table(
+        table,
+        resolve_taxonomy=False,
+    )
+
+    assert compact.rows[0]["field_taxon_col_id"] == "97H4"
+    assert compact.rows[0]["field_taxon_name_unified"] == "Achillea millefolium"
+    assert "resolved_taxon_id" not in compact.fieldnames
 
 
 def test_summarize_species_by_project_group_unions_resolved_taxa(

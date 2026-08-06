@@ -416,6 +416,11 @@ def sample_locations(
     help="Choose between rich, compact, or one-row-per-sample compact metadata.",
 )
 @click.option(
+    "--require-col-id",
+    is_flag=True,
+    help="Keep only sample-compact rows with a stored Directus Catalogue of Life ID.",
+)
+@click.option(
     "--env-file",
     type=click.Path(path_type=Path, dir_okay=False, resolve_path=False),
     default=None,
@@ -427,19 +432,28 @@ def export_ms_metadata(
     project_group: str | None,
     watcher_tsv: tuple[Path, ...],
     export_view: str,
+    require_col_id: bool,
     env_file: Path | None,
 ) -> None:
     """Export one wide TSV row per collected sample lineage."""
 
+    if require_col_id and export_view != "sample-compact":
+        raise click.UsageError("--require-col-id requires --view sample-compact")
+
     try:
         settings = load_settings(env_file=env_file)
         client = DirectusClient(settings)
+        export_kwargs: dict[str, Any] = {
+            "output_path": output_path,
+            "project": qfield_project,
+            "project_group": project_group,
+            "watcher_tsv_paths": watcher_tsv,
+            "view": export_view,
+        }
+        if require_col_id:
+            export_kwargs["require_col_id"] = True
         row_count = client.export_ms_metadata_csv(
-            output_path=output_path,
-            project=qfield_project,
-            project_group=project_group,
-            watcher_tsv_paths=watcher_tsv,
-            view=export_view,
+            **export_kwargs,
         )
     except (SettingsError, DirectusAuthError, DirectusError, DirectusResponseError) as exc:
         raise click.ClickException(str(exc)) from exc

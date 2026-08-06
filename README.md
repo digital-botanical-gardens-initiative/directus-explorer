@@ -289,6 +289,27 @@ uv run directus-explorer ms export-metadata \
   --view sample-compact
 ```
 
+To prepare a timestamped DBGI-only export containing only samples whose curated
+Catalogue of Life ID is already stored in Directus, use the canonical `dbgi` project group defined in
+`src/directus_explorer/samples.py`. The timestamp is UTC and makes each export
+artefact traceable to its preparation time:
+
+```bash
+export DBGI_EXPORT_TIMESTAMP="$(date -u +%Y%m%dT%H%M%SZ)"
+uv run directus-explorer ms export-metadata \
+  --output "data/output/sample_metadata_dbgi_col_${DBGI_EXPORT_TIMESTAMP}.tsv" \
+  --project-group dbgi \
+  --view sample-compact \
+  --require-col-id
+```
+
+This produces one row per `original_sample_id`, limits the source projects to the
+repository-maintained DBGI list, and excludes rows whose stored
+`field_taxon_col_id` is empty. It does not query Catalogue of Life: the export
+uses the taxonomic resolution previously curated and applied to `Field_Data` in
+Directus. The export retains those stored taxonomic fields, collection metadata,
+and positive/negative profiling flags.
+
 Export one wide TSV row per collected sample lineage. Samples without any MS records are still included; samples with MS rows are enriched with the linked lineage metadata:
 
 ```bash

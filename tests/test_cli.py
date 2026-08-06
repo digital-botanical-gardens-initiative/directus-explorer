@@ -257,6 +257,64 @@ def test_export_ms_metadata_passes_project_group_sample_compact_view(
     assert result.output.strip() == "Wrote 6644 metadata rows for project group dbgi to dbgi.tsv"
 
 
+def test_export_ms_metadata_requires_col_ids(monkeypatch: pytest.MonkeyPatch) -> None:
+    """The export command should forward COL filtering for sample rows."""
+
+    runner = CliRunner()
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            self.settings = settings
+
+        def export_ms_metadata_csv(self, **kwargs: object) -> int:
+            assert kwargs["project_group"] == "dbgi"
+            assert kwargs["view"] == "sample-compact"
+            assert kwargs["require_col_id"] is True
+            return 123
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+    result = runner.invoke(
+        cli_module.cli,
+        [
+            "ms",
+            "export-metadata",
+            "--output",
+            "dbgi-col.tsv",
+            "--project-group",
+            "dbgi",
+            "--view",
+            "sample-compact",
+            "--require-col-id",
+        ],
+    )
+
+    assert result.exit_code == 0
+    assert result.output.strip() == (
+        "Wrote 123 metadata rows for project group dbgi to dbgi-col.tsv"
+    )
+
+
+def test_export_ms_metadata_rejects_col_filter_for_full_view() -> None:
+    """COL filtering should require one-row-per-sample output."""
+
+    result = CliRunner().invoke(
+        cli_module.cli,
+        ["ms", "export-metadata", "--output", "out.tsv", "--require-col-id"],
+    )
+
+    assert result.exit_code == 2
+    assert "--require-col-id requires --view sample-compact" in result.output
+
+
 def test_audit_injection_list_writes_report_and_summary(
     monkeypatch: pytest.MonkeyPatch,
     tmp_path: Path,

@@ -286,6 +286,7 @@ class DirectusClient:
         project_group: str | None = None,
         watcher_tsv_paths: tuple[Path, ...] = (),
         view: str = "full",
+        require_col_id: bool = False,
     ) -> int:
         """Write a flattened sample/MS metadata TSV and return the number of rows written."""
 
@@ -295,9 +296,23 @@ class DirectusClient:
             watcher_tsv_paths=watcher_tsv_paths,
         )
         if view == "sample-compact":
-            table = self._build_sample_compact_metadata_table(table)
+            table = self._build_sample_compact_metadata_table(
+                table,
+                resolve_taxonomy=not require_col_id,
+            )
         else:
             table = select_table_view(table, view=view)
+        if require_col_id:
+            if view != "sample-compact":
+                raise ValueError("COL ID filtering requires the sample-compact view")
+            table = MsMetadataTable(
+                fieldnames=table.fieldnames,
+                rows=tuple(
+                    row
+                    for row in table.rows
+                    if str(row.get("field_taxon_col_id") or "").strip()
+                ),
+            )
         write_ms_metadata_csv(table, output_path, delimiter="\t")
         return len(table.rows)
 
@@ -537,7 +552,12 @@ class DirectusClient:
             "updated_rows": updated_rows,
         }
 
-    def _build_sample_compact_metadata_table(self, table: MsMetadataTable) -> MsMetadataTable:
+    def _build_sample_compact_metadata_table(
+        self,
+        table: MsMetadataTable,
+        *,
+        resolve_taxonomy: bool = True,
+    ) -> MsMetadataTable:
         """Return one compact metadata row per original collected sample."""
 
         compact = select_table_view(table, view="compact")
@@ -564,12 +584,16 @@ class DirectusClient:
                     names.append(name)
             names_by_sample_id[sample_id] = tuple(names)
 
-        resolution_by_name = self._resolve_taxon_names(
-            {
-                name
-                for names in names_by_sample_id.values()
-                for name in names
-            }
+        resolution_by_name = (
+            self._resolve_taxon_names(
+                {
+                    name
+                    for names in names_by_sample_id.values()
+                    for name in names
+                }
+            )
+            if resolve_taxonomy
+            else {}
         )
 
         output_rows: list[dict[str, Any]] = []
@@ -597,15 +621,19 @@ class DirectusClient:
             collapsed_row["profiled_negative"] = str(has_negative).lower()
             collapsed_row["profiled_any"] = str(has_positive or has_negative).lower()
             collapsed_row["metadata_lineage_row_count"] = str(len(sample_rows))
-            collapsed_row.update(
-                self._taxonomy_metadata_for_sample(
-                    names_by_sample_id[sample_id],
-                    resolution_by_name,
+            if resolve_taxonomy:
+                collapsed_row.update(
+                    self._taxonomy_metadata_for_sample(
+                        names_by_sample_id[sample_id],
+                        resolution_by_name,
+                    )
                 )
-            )
             output_rows.append(collapsed_row)
 
-        fieldnames = self._sample_compact_fieldnames(compact.fieldnames)
+        fieldnames = self._sample_compact_fieldnames(
+            compact.fieldnames,
+            include_resolved_taxonomy=resolve_taxonomy,
+        )
         return MsMetadataTable(fieldnames=fieldnames, rows=tuple(output_rows))
 
     def build_sample_locations_table(
@@ -1373,7 +1401,11 @@ class DirectusClient:
         return next((part for part in parts if part.endswith(suffix)), "")
 
     @staticmethod
-    def _sample_compact_fieldnames(compact_fieldnames: tuple[str, ...]) -> tuple[str, ...]:
+    def _sample_compact_fieldnames(
+        compact_fieldnames: tuple[str, ...],
+        *,
+        include_resolved_taxonomy: bool = True,
+    ) -> tuple[str, ...]:
         """Return ordered fieldnames for the one-row-per-sample compact export."""
 
         profile_fieldnames = (
@@ -1388,7 +1420,10 @@ class DirectusClient:
             for fieldname in compact_fieldnames
             if fieldname != "profile_mode"
         )
-        return base_fieldnames + profile_fieldnames + TAXONOMY_METADATA_FIELDNAMES
+        taxonomy_fieldnames = (
+            TAXONOMY_METADATA_FIELDNAMES if include_resolved_taxonomy else ()
+        )
+        return base_fieldnames + profile_fieldnames + taxonomy_fieldnames
 
     def _index_rows_by_nested_string(
         self,

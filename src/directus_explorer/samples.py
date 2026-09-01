@@ -17,6 +17,25 @@ PROJECT_GROUPS = {
         "jbuf",
         "kew-botanical-gardens",
     ),
+    "emi": (
+        "artemisia_absinthium",
+        "bioblitz_vinesch",
+        "champex_gradient",
+        "chemical_ecology",
+        "droguier_jbn",
+        "emi",
+        "heloise_bachelor_FiBL",
+        "jbc",
+        "jbn",
+        "jbn-new",
+        "jbp",
+        "jbp-new",
+        "jbuf",
+        "kew-botanical-gardens",
+        "medicin_alps",
+        "sandbox",
+        "sbl_20004",
+    ),
 }
 
 

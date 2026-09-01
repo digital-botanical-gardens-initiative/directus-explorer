@@ -5,6 +5,7 @@ from __future__ import annotations
 import pytest
 
 from directus_explorer.samples import (
+    PROJECT_GROUPS,
     ProfiledSample,
     classify_profile_mode,
     collapse_profile_modes,
@@ -12,6 +13,30 @@ from directus_explorer.samples import (
     parse_sample_count_response,
     resolve_original_sample_container_id,
 )
+
+
+def test_emi_project_group_contains_expected_projects() -> None:
+    """The EMI project group should expose all of its configured projects."""
+
+    assert PROJECT_GROUPS["emi"] == (
+        "artemisia_absinthium",
+        "bioblitz_vinesch",
+        "champex_gradient",
+        "chemical_ecology",
+        "droguier_jbn",
+        "emi",
+        "heloise_bachelor_FiBL",
+        "jbc",
+        "jbn",
+        "jbn-new",
+        "jbp",
+        "jbp-new",
+        "jbuf",
+        "kew-botanical-gardens",
+        "medicin_alps",
+        "sandbox",
+        "sbl_20004",
+    )
 
 
 def test_parse_sample_count_response_returns_int() -> None:

@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-10-23T12:30:25.840791+00:00",
+  "mode": "directus_get_only_preflight",
+  "backfill": "data/working/taxonomy_curation/bg-unifr_backbone/col_2026_07_17_xr/field_data_safe_backfill.tsv",
+  "requested_count": 24,
+  "ready_count": 13,
+  "already_exact_count": 0,
+  "conflict_count": 11,
+  "backup": "data/working/taxonomy_curation/bg-unifr_backbone/col_2026_07_17_xr/field_data_backfill_backup_20261023T123025Z.tsv",
+  "preview": "data/working/taxonomy_curation/bg-unifr_backbone/col_2026_07_17_xr/field_data_backfill_preview_20261023T123025Z.tsv",
+  "conflicts": "data/working/taxonomy_curation/bg-unifr_backbone/col_2026_07_17_xr/field_data_backfill_conflicts_20261023T123025Z.tsv",
+  "taxon_name_unified_changes": 0
+}

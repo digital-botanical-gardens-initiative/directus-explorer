@@ -1,0 +1,27 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+bg-unifr	77261	dbgi_007883	Brugmansia	3DFL	accepted_variant	2026-07-17 XR					3DFL	accepted_variant	2026-07-17 XR	3986
+bg-unifr	77262	dbgi_007870	Passiflora	6JGB	accepted_variant	2026-07-17 XR					6JGB	accepted_variant	2026-07-17 XR	2089
+bg-unifr	77263	dbgi_007887	Salvia oxyphora	6XGSC	accepted_variant	2026-07-17 XR					6XGSC	accepted_variant	2026-07-17 XR	3988
+bg-unifr	77264	dbgi_007892	Salvia oxyphora	6XGSC	accepted_variant	2026-07-17 XR					6XGSC	accepted_variant	2026-07-17 XR	3988
+bg-unifr	77265	dbgi_007860	Salvia jamensis	79H9Q	accepted_variant	2026-07-17 XR					79H9Q	accepted_variant	2026-07-17 XR	3992
+bg-unifr	77266	dbgi_007880	Passiflora	6JGB	accepted_variant	2026-07-17 XR					6JGB	accepted_variant	2026-07-17 XR	2089
+bg-unifr	77267	dbgi_007894	X Passiflora 'Anastasia'	6JGB	reviewed_cultivar_genus	2026-07-17 XR					6JGB	reviewed_cultivar_genus	2026-07-17 XR	2089
+bg-unifr	77268	dbgi_007895	Passiflora	6JGB	accepted_variant	2026-07-17 XR					6JGB	accepted_variant	2026-07-17 XR	2089
+bg-unifr	77269	dbgi_007878	Salvia involucrata	79GXM	accepted_variant	2026-07-17 XR					79GXM	accepted_variant	2026-07-17 XR	2691
+bg-unifr	77270	dbgi_007879	Salvia jamensis	79H9Q	accepted_variant	2026-07-17 XR					79H9Q	accepted_variant	2026-07-17 XR	3992
+bg-unifr	77271	dbgi_007868	Lepechinia hastata	3T8YK	accepted_variant	2026-07-17 XR					3T8YK	accepted_variant	2026-07-17 XR	3987
+bg-unifr	77272	dbgi_007881	Lepechiria hastata	3T8YK	reviewed_spelling	2026-07-17 XR					3T8YK	reviewed_spelling	2026-07-17 XR	3987
+bg-unifr	77273	dbgi_007873	Salvia involucrata	79GXM	accepted_variant	2026-07-17 XR					79GXM	accepted_variant	2026-07-17 XR	2691
+bg-unifr	77274	dbgi_007857	Salvia leucantha	79GNS	accepted_variant	2026-07-17 XR					79GNS	accepted_variant	2026-07-17 XR	2681
+bg-unifr	77275	dbgi_007863	Salvia mellifera	79GQ5	accepted_variant	2026-07-17 XR					79GQ5	accepted_variant	2026-07-17 XR	2683
+bg-unifr	77276	dbgi_007884	Salvia congestiflora	79FC4	accepted_variant	2026-07-17 XR					79FC4	accepted_variant	2026-07-17 XR	3990
+bg-unifr	77277	dbgi_007861	Salvia congestiflora	79FC4	accepted_variant	2026-07-17 XR					79FC4	accepted_variant	2026-07-17 XR	3990
+bg-unifr	77278	dbgi_007864	Thunbergia erecta	56NXQ	accepted_variant	2026-07-17 XR					56NXQ	accepted_variant	2026-07-17 XR	1296
+bg-unifr	77279	dbgi_007874	Thunbergia erecta	56NXQ	accepted_variant	2026-07-17 XR					56NXQ	accepted_variant	2026-07-17 XR	1296
+bg-unifr	77280	dbgi_007869	Salvia dorisiana	79H8C	accepted_variant	2026-07-17 XR					79H8C	accepted_variant	2026-07-17 XR	3991
+bg-unifr	77281	dbgi_000133	Salvia reptans	6XGT2	accepted_variant	2026-07-17 XR					6XGT2	accepted_variant	2026-07-17 XR	3989
+bg-unifr	77282	dbgi_000134	Salvia reptans	6XGT2	accepted_variant	2026-07-17 XR					6XGT2	accepted_variant	2026-07-17 XR	3989
+bg-unifr	77283	dbgi_000132	Drosera capensis	37QPF	accepted_variant	2026-07-17 XR					37QPF	accepted_variant	2026-07-17 XR	115
+bg-unifr	77284	dbgi_000130	Salvia	8W39F	accepted_variant	2026-07-17 XR					8W39F	accepted_variant	2026-07-17 XR	2985
+bg-unifr	77285	dbgi_000135	Salvia	8W39F	accepted_variant	2026-07-17 XR					8W39F	accepted_variant	2026-07-17 XR	2985
+bg-unifr	77286	dbgi_000131	Salvia cacaliifolia	79FGK	accepted_variant	2026-07-17 XR					79FGK	accepted_variant	2026-07-17 XR	2671

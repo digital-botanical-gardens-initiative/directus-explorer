@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-05T08:53:11.290560+00:00",
-  "row_count": 9755,
-  "rows_with_any_issue": 631,
+  "generated_at": "2026-10-23T13:54:41.248363+00:00",
+  "row_count": 10552,
+  "rows_with_any_issue": 1415,
   "issue_counts": {
-    "stored_unified_differs_from_expected": 52,
-    "source_taxon_field_conflict": 191,
-    "missing_unified_taxon_name": 390,
-    "stored_unified_missing_but_expected_available": 3
+    "stored_unified_differs_from_expected": 56,
+    "source_taxon_field_conflict": 200,
+    "missing_unified_taxon_name": 1161,
+    "stored_unified_missing_but_expected_available": 774
   },
   "stored_unified_present_without_source_taxon_fields_count": 0,
   "placeholder_values": [
@@ -41,6 +41,17 @@
       "placeholder_unified_taxon_name": 0,
       "stored_unified_missing_but_expected_available": 0,
       "source_taxon_field_conflict": 31,
+      "stored_unified_differs_from_expected": 0,
+      "stored_unified_present_without_source_taxon_fields": 0
+    },
+    {
+      "project": "bg-unifr",
+      "field_data_rows": 26,
+      "rows_with_any_issue": 9,
+      "missing_unified_taxon_name": 0,
+      "placeholder_unified_taxon_name": 0,
+      "stored_unified_missing_but_expected_available": 0,
+      "source_taxon_field_conflict": 9,
       "stored_unified_differs_from_expected": 0,
       "stored_unified_present_without_source_taxon_fields": 0
     },
@@ -100,6 +111,17 @@
       "stored_unified_present_without_source_taxon_fields": 0
     },
     {
+      "project": "fung",
+      "field_data_rows": 499,
+      "rows_with_any_issue": 499,
+      "missing_unified_taxon_name": 499,
+      "placeholder_unified_taxon_name": 0,
+      "stored_unified_missing_but_expected_available": 499,
+      "source_taxon_field_conflict": 0,
+      "stored_unified_differs_from_expected": 0,
+      "stored_unified_present_without_source_taxon_fields": 0
+    },
+    {
       "project": "heloise_bachelor_FiBL",
       "field_data_rows": 109,
       "rows_with_any_issue": 24,
@@ -113,12 +135,12 @@
     {
       "project": "jbc",
       "field_data_rows": 1621,
-      "rows_with_any_issue": 0,
+      "rows_with_any_issue": 4,
       "missing_unified_taxon_name": 0,
       "placeholder_unified_taxon_name": 0,
       "stored_unified_missing_but_expected_available": 0,
       "source_taxon_field_conflict": 0,
-      "stored_unified_differs_from_expected": 0,
+      "stored_unified_differs_from_expected": 4,
       "stored_unified_present_without_source_taxon_fields": 0
     },
     {
@@ -183,6 +205,28 @@
       "missing_unified_taxon_name": 0,
       "placeholder_unified_taxon_name": 0,
       "stored_unified_missing_but_expected_available": 0,
+      "source_taxon_field_conflict": 0,
+      "stored_unified_differs_from_expected": 0,
+      "stored_unified_present_without_source_taxon_fields": 0
+    },
+    {
+      "project": "macedonia",
+      "field_data_rows": 188,
+      "rows_with_any_issue": 188,
+      "missing_unified_taxon_name": 188,
+      "placeholder_unified_taxon_name": 0,
+      "stored_unified_missing_but_expected_available": 188,
+      "source_taxon_field_conflict": 0,
+      "stored_unified_differs_from_expected": 0,
+      "stored_unified_present_without_source_taxon_fields": 0
+    },
+    {
+      "project": "manaslu",
+      "field_data_rows": 84,
+      "rows_with_any_issue": 84,
+      "missing_unified_taxon_name": 84,
+      "placeholder_unified_taxon_name": 0,
+      "stored_unified_missing_but_expected_available": 84,
       "source_taxon_field_conflict": 0,
       "stored_unified_differs_from_expected": 0,
       "stored_unified_present_without_source_taxon_fields": 0

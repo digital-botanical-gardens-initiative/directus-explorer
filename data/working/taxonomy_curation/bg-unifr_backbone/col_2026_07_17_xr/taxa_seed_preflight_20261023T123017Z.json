@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-10-23T12:30:17.969414+00:00",
+  "mode": "directus_get_only_preflight",
+  "seed": "data/working/taxonomy_curation/bg-unifr_backbone/col_2026_07_17_xr/safe_taxa_seed.tsv",
+  "seed_count": 15,
+  "existing_exact_count": 8,
+  "missing_count": 7,
+  "conflict_count": 0,
+  "preview": "data/working/taxonomy_curation/bg-unifr_backbone/col_2026_07_17_xr/taxa_seed_preview_20261023T123017Z.tsv",
+  "conflicts": "data/working/taxonomy_curation/bg-unifr_backbone/col_2026_07_17_xr/taxa_seed_conflicts_20261023T123017Z.tsv"
+}

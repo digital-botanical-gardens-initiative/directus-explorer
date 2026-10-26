@@ -1,0 +1,10 @@
+review_id	project	round	field_data_id	sample_id	current_taxon_name_unified	authoritative_source_field	authoritative_verbatim_name	new_taxon_name_unified	update_action	col_accepted_usage_id	col_accepted_rank	decision	confidence	reviewed_at	review_note	preflight_status	patch_payload_json
+44c62e0e86f9	bg-unifr	1	77274	dbgi_007857		taxon_name_final	Salvia leucantha Cav.	Salvia leucantha	set_value	79GNS	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Salvia leucantha""}"
+44e5054db98b	bg-unifr	1	77283	dbgi_000132		taxon_name_final	Drosera capensis L.	Drosera capensis	set_value	37QPF	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Drosera capensis""}"
+8ec3a2c9caa6	bg-unifr	1	77281	dbgi_000133		taxon_name_final	Salvia reptans Jacq.	Salvia reptans	set_value	6XGT2	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Salvia reptans""}"
+8ec3a2c9caa6	bg-unifr	1	77282	dbgi_000134		taxon_name_final	Salvia reptans Jacq.	Salvia reptans	set_value	6XGT2	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Salvia reptans""}"
+95eb079e2981	bg-unifr	1	77275	dbgi_007863		taxon_name_final	Salvia mellifera Greene	Salvia mellifera	set_value	79GQ5	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Salvia mellifera""}"
+a4dab7bf4498	bg-unifr	1	77280	dbgi_007869		taxon_name_final	Salvia dorisiana Standl.	Salvia dorisiana	set_value	79H8C	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Salvia dorisiana""}"
+c3c888cb5550	bg-unifr	1	77269	dbgi_007878		taxon_name_final	Salvia involucrata Cav.	Salvia involucrata	set_value	79GXM	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Salvia involucrata""}"
+c3c888cb5550	bg-unifr	1	77273	dbgi_007873		taxon_name_final	Salvia involucrata Cav.	Salvia involucrata	set_value	79GXM	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Salvia involucrata""}"
+fdd4e0faf273	bg-unifr	1	77286	dbgi_000131		taxon_name_final	Salvia cacaliifolia Benth.	Salvia cacaliifolia	set_value	79FGK	species	accept_proposal		2026-10-23		ready	"{""taxon_name_unified"":""Salvia cacaliifolia""}"

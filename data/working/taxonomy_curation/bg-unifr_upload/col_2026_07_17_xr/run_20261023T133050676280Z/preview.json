@@ -1,0 +1,15 @@
+{
+  "project": "bg-unifr",
+  "source_digest": "3ba40f838c9c2e36e64a4f87afc1c3c1a85b07419fab7d4aac1c7327931d6267",
+  "seed_sha256": "c65fa6c126b3753db451243d2ef592ee0eeeff05b1bfd54fe487efbce0279a78",
+  "backfill_sha256": "d522d7a4f9f97701b8db2c130dda3c095170b040a174894daf42f985b08b3e86",
+  "choices": {
+    "Lepechiria hastata": "3T8YK",
+    "X Passiflora 'Anastasia'": "6JGB"
+  },
+  "taxa_missing": 7,
+  "ready_count": 26,
+  "exact_count": 0,
+  "total": 26,
+  "linked_count": 26
+}

@@ -1,0 +1,14 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref
+bg-unifr	77262	dbgi_007870	Passiflora	6JGB	accepted_variant	2026-07-17 XR					6JGB	accepted_variant	2026-07-17 XR	2089
+bg-unifr	77266	dbgi_007880	Passiflora	6JGB	accepted_variant	2026-07-17 XR					6JGB	accepted_variant	2026-07-17 XR	2089
+bg-unifr	77268	dbgi_007895	Passiflora	6JGB	accepted_variant	2026-07-17 XR					6JGB	accepted_variant	2026-07-17 XR	2089
+bg-unifr	77269	dbgi_007878	Salvia involucrata	79GXM	accepted_variant	2026-07-17 XR					79GXM	accepted_variant	2026-07-17 XR	2691
+bg-unifr	77273	dbgi_007873	Salvia involucrata	79GXM	accepted_variant	2026-07-17 XR					79GXM	accepted_variant	2026-07-17 XR	2691
+bg-unifr	77274	dbgi_007857	Salvia leucantha	79GNS	accepted_variant	2026-07-17 XR					79GNS	accepted_variant	2026-07-17 XR	2681
+bg-unifr	77275	dbgi_007863	Salvia mellifera	79GQ5	accepted_variant	2026-07-17 XR					79GQ5	accepted_variant	2026-07-17 XR	2683
+bg-unifr	77278	dbgi_007864	Thunbergia erecta	56NXQ	accepted_variant	2026-07-17 XR					56NXQ	accepted_variant	2026-07-17 XR	1296
+bg-unifr	77279	dbgi_007874	Thunbergia erecta	56NXQ	accepted_variant	2026-07-17 XR					56NXQ	accepted_variant	2026-07-17 XR	1296
+bg-unifr	77283	dbgi_000132	Drosera capensis	37QPF	accepted_variant	2026-07-17 XR					37QPF	accepted_variant	2026-07-17 XR	115
+bg-unifr	77284	dbgi_000130	Salvia	8W39F	accepted_variant	2026-07-17 XR					8W39F	accepted_variant	2026-07-17 XR	2985
+bg-unifr	77285	dbgi_000135	Salvia	8W39F	accepted_variant	2026-07-17 XR					8W39F	accepted_variant	2026-07-17 XR	2985
+bg-unifr	77286	dbgi_000131	Salvia cacaliifolia	79FGK	accepted_variant	2026-07-17 XR					79FGK	accepted_variant	2026-07-17 XR	2671

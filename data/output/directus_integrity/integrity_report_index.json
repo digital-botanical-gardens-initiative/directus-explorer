@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-21T12:50:51.205693+00:00",
+  "generated_at": "2026-10-23T12:28:47.678724+00:00",
   "collection_counts": {
-    "Field_Data": 9520,
-    "Dried_Samples_Data": 10468,
-    "Extraction_Data": 7486,
-    "Aliquoting_Data": 2811,
-    "MS_Data": 4245
+    "Field_Data": 10552,
+    "Dried_Samples_Data": 10746,
+    "Extraction_Data": 8705,
+    "Aliquoting_Data": 4536,
+    "MS_Data": 6475
   },
   "reports": [
     "coordinates_missing_or_invalid.tsv",

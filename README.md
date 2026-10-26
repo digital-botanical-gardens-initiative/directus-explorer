@@ -106,6 +106,72 @@ Species summaries first collect distinct non-empty values from both
 resolved Catalogue of Life taxon ids. Unresolved names are not counted in the
 species-level summary.
 
+### Interactive taxon curation
+
+Run the loopback-only dashboard. `--project` selects the initial QField project;
+the project selector and **Refresh from Directus** load the selected project.
+**Filter** also loads a project the first time it is selected:
+
+```bash
+uv run python scripts/serve_taxon_curation.py \
+  --project bg-unifr --port 8766 \
+  --env-file .env --admin-env-file .env.admin
+```
+
+Run this from the repository directory, where `.env` and `.env.admin` are real
+credential files. If you use a different authorized account, pass the **actual
+file path** with `--admin-env-file`; `/path/to/...` is only a placeholder, not
+a working credential file. The dashboard checks both credential sources at
+startup and reports which one is missing or incomplete without printing secrets.
+
+Open `http://127.0.0.1:8766/`. On a remote server, forward the same port over
+SSH (`ssh -L 8766:127.0.0.1:8766 commons-server`) and open the URL locally.
+The server listens only on loopback. Stop it with Ctrl-C.
+
+1. Press **Refresh from Directus**. This reads the live project and Taxa, updates
+   the local audit, and prepares any missing CoL lookups. It does **not** write
+   to Directus. A source-field disagreement is not pending if its unified name
+   was already approved. If there are no pending records, the worklist says
+   **No entries require taxonomic resolution** and stays empty on refresh.
+2. Select a **QField project** and press **Refresh from Directus**, or use
+   **Filter** to load it the first time. Enter a **taxon or sample** to filter the
+   worklist. Open a grouped taxon to see its records; open a record to inspect
+   every live Field_Data field and its audit interpretation. **Show all records**
+   includes completed rows; the default view contains pending rows only.
+3. For pending links, select an outcome for any exceptional name and press
+   **Preview finalized batch**. The resulting table shows *every* project name,
+   its approved CoL target and affected sample IDs. Display filters never
+   narrow the batch to be written. For `bg-unifr`, the pinned options include
+   `Lepechiria hastata` → *Lepechinia hastata* and
+   `X Passiflora 'Anastasia'` → *Passiflora* **genus**, or explicit unresolved
+   choices. No exception is selected automatically. After reviewing the
+   read-only preview, type the project key and press **Push finalized batch**.
+   This creates missing Taxa first, links the project records, verifies all
+   writes, and refreshes the worklist. Only this confirmed push writes CoL
+   taxonomic metadata to Directus. Existing recorded names remain intact.
+
+If a newly selected project still has missing unified names, the page shows
+only those names and their name-review controls first. Preview and push those
+name updates, then refresh for its CoL batch. No new conflict-review round is
+generated when the audit has zero missing conflicting names. Previous backups
+remain under `data/working/taxonomy_curation/`. The Taxa schema must already
+exist, and the Directus account in `.env.admin` needs Taxa **read and create**,
+Field_Data **read and update**, and permission to read the Taxa field schema
+(`GET /fields/Taxa`) for seed preflight. OS `sudo` cannot grant these Directus
+permissions: assign the account the appropriate policy in Directus, or supply
+a different credentials file with `--admin-env-file`.
+The file contains `DIRECTUS_INSTANCE`, `DIRECTUS_USERNAME`, and
+`DIRECTUS_PASSWORD`; exported shell values for these keys override the file.
+If Taxa access is denied (403), Refresh still displays live observations and
+source evidence but does not claim their CoL links are verified or offer a Push.
+Correct the account permissions and Refresh again. `--env-file` supplies the
+read-only audit account; `--admin-env-file` supplies Taxa verification and
+approved writes.
+
+The commands below remain available for scripted or advanced curation. The
+standalone `generate_taxon_curation_dashboard.py` further below is a *read-only
+progress report*, not this interactive local server.
+
 Generate a read-only, human-review queue for conflicting taxon fields:
 
 ```bash

@@ -1,0 +1,11 @@
+{
+  "target_field": "taxon_name_unified",
+  "update_count": 0,
+  "skipped_count": 26,
+  "update_projects": {},
+  "skipped_reasons": {
+    "target_field_already_populated": 17,
+    "taxon_unified_conflict": 9
+  },
+  "update_sources": {}
+}

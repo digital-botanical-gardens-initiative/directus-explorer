@@ -1,0 +1,12 @@
+project	field_data_id	sample_id	current_taxon_name_unified	taxon_col_id	taxon_resolution_status	taxon_backbone_version	current_taxon_col_id	current_taxon_resolution_status	current_taxon_backbone_version	current_taxon_ref	new_taxon_col_id	new_taxon_resolution_status	new_taxon_backbone_version	new_taxon_ref	conflict_reason
+bg-unifr	77261	dbgi_007883	Brugmansia	3DFL	accepted_variant	2026-07-17 XR					3DFL	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77263	dbgi_007887	Salvia oxyphora	6XGSC	accepted_variant	2026-07-17 XR					6XGSC	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77264	dbgi_007892	Salvia oxyphora	6XGSC	accepted_variant	2026-07-17 XR					6XGSC	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77265	dbgi_007860	Salvia jamensis	79H9Q	accepted_variant	2026-07-17 XR					79H9Q	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77270	dbgi_007879	Salvia jamensis	79H9Q	accepted_variant	2026-07-17 XR					79H9Q	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77271	dbgi_007868	Lepechinia hastata	3T8YK	accepted_variant	2026-07-17 XR					3T8YK	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77276	dbgi_007884	Salvia congestiflora	79FC4	accepted_variant	2026-07-17 XR					79FC4	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77277	dbgi_007861	Salvia congestiflora	79FC4	accepted_variant	2026-07-17 XR					79FC4	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77280	dbgi_007869	Salvia dorisiana	79H8C	accepted_variant	2026-07-17 XR					79H8C	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77281	dbgi_000133	Salvia reptans	6XGT2	accepted_variant	2026-07-17 XR					6XGT2	accepted_variant	2026-07-17 XR		taxa_col_id_missing
+bg-unifr	77282	dbgi_000134	Salvia reptans	6XGT2	accepted_variant	2026-07-17 XR					6XGT2	accepted_variant	2026-07-17 XR		taxa_col_id_missing

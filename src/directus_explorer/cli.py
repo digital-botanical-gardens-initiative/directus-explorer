@@ -25,6 +25,7 @@ from .ms_converted_check import (
 )
 from .samples import (
     PROJECT_GROUPS,
+    CollectorSampleSummary,
     ProfiledSample,
     ProjectSampleSummary,
     ProjectSpeciesSummary,
@@ -177,7 +178,7 @@ def profiled_samples(
 @samples.command("summary")
 @click.option(
     "--group-by",
-    type=click.Choice(("project",), case_sensitive=False),
+    type=click.Choice(("project", "collector"), case_sensitive=False),
     default="project",
     show_default=True,
 )
@@ -216,13 +217,21 @@ def summarize_samples(
     output_format: str,
     env_file: Path | None,
 ) -> None:
-    """Summarize collected and profiled samples grouped by project."""
+    """Summarize collected and profiled samples grouped by project or collector."""
+
+    if group_by == "collector":
+        if count_by == "species":
+            raise click.ClickException("--group-by collector does not support --count species")
+        if project_group is not None:
+            raise click.ClickException("--group-by collector does not support --project-group")
 
     try:
         settings = load_settings(env_file=env_file)
         client = DirectusClient(settings)
-        summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary]
-        if count_by == "species":
+        summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary | CollectorSampleSummary]
+        if group_by == "collector":
+            summaries = client.summarize_samples_by_collector()
+        elif count_by == "species":
             if project_group is None:
                 summaries = client.summarize_species_by_project()
             else:
@@ -252,13 +261,12 @@ def summarize_samples(
                 "both_count",
             )
         )
+        label_key = _summary_label_key(group_by=group_by, project_group=project_group)
         payload: dict[str, Any] = {
             "group_by": "project_group" if project_group is not None else group_by,
             "projects": [
                 {
-                    (
-                        "project_group" if project_group is not None else "qfield_project"
-                    ): summary.qfield_project,
+                    label_key: _summary_group_value(summary),
                     count_keys[0]: summary.collected_count,
                     count_keys[1]: summary.profiled_count,
                     count_keys[2]: summary.positive_count,
@@ -277,6 +285,7 @@ def summarize_samples(
         _render_summary_tsv(
             summaries,
             count_by=count_by,
+            group_by=group_by,
             project_group=project_group,
         )
         return
@@ -284,6 +293,7 @@ def summarize_samples(
     _render_summary_table(
         summaries,
         count_by=count_by,
+        group_by=group_by,
         project_group=project_group,
     )
 
@@ -902,46 +912,68 @@ def _render_profiled_sample(sample: ProfiledSample) -> str:
     return f"{sample.sample_id}\t{sample.qfield_project}\t{sample.mode}"
 
 
-def _render_project_summary(summary: ProjectSampleSummary | ProjectSpeciesSummary) -> str:
-    """Render a project summary in plain text."""
+def _render_project_summary(
+    summary: ProjectSampleSummary | ProjectSpeciesSummary | CollectorSampleSummary,
+) -> str:
+    """Render a project or collector summary in plain text."""
 
     return (
-        f"{summary.qfield_project}\t{summary.collected_count}\t{summary.profiled_count}\t"
+        f"{_summary_group_value(summary)}\t{summary.collected_count}\t{summary.profiled_count}\t"
         f"{summary.positive_count}\t{summary.negative_count}\t{summary.both_count}"
     )
 
 
+def _summary_group_value(
+    summary: ProjectSampleSummary | ProjectSpeciesSummary | CollectorSampleSummary,
+) -> str:
+    """Return the group label value for a project or collector summary row."""
+
+    if isinstance(summary, CollectorSampleSummary):
+        return summary.collector_fullname
+    return summary.qfield_project
+
+
+def _summary_label_key(*, group_by: str, project_group: str | None) -> str:
+    """Return the JSON payload key used for a summary row's group label."""
+
+    if project_group is not None:
+        return "project_group"
+    if group_by == "collector":
+        return "collector_fullname"
+    return "qfield_project"
+
+
 def _render_summary_tsv(
-    summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary],
+    summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary | CollectorSampleSummary],
     *,
     count_by: str,
+    group_by: str,
     project_group: str | None,
 ) -> None:
-    """Render project summaries as tab-separated values."""
+    """Render project or collector summaries as tab-separated values."""
 
+    label = _summary_label_header(group_by=group_by, project_group=project_group)
     if count_by == "species":
         click.echo(
-            f"{_summary_label_header(project_group)}\tcollected_species\tprofiled_species\t"
+            f"{label}\tcollected_species\tprofiled_species\t"
             "positive_species\tnegative_species\tboth_species"
         )
     else:
-        click.echo(
-            f"{_summary_label_header(project_group)}\tcollected\tprofiled\t"
-            "positive\tnegative\tboth"
-        )
+        click.echo(f"{label}\tcollected\tprofiled\tpositive\tnegative\tboth")
     for summary in summaries:
         click.echo(_render_project_summary(summary))
 
 
 def _render_summary_table(
-    summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary],
+    summaries: Sequence[ProjectSampleSummary | ProjectSpeciesSummary | CollectorSampleSummary],
     *,
     count_by: str,
+    group_by: str,
     project_group: str | None,
 ) -> None:
-    """Render project summaries as an aligned terminal table."""
+    """Render project or collector summaries as an aligned terminal table."""
 
-    label = _summary_label_header(project_group)
+    label = _summary_label_header(group_by=group_by, project_group=project_group)
     noun = "species" if count_by == "species" else "samples"
     table = Table(
         title=f"Directus {noun} summary",
@@ -962,7 +994,7 @@ def _render_summary_table(
     for summary in summaries:
         percent = _percentage(summary.profiled_count, summary.collected_count)
         table.add_row(
-            summary.qfield_project,
+            _summary_group_value(summary),
             str(summary.collected_count),
             str(summary.profiled_count),
             f"{percent:.1f}%",
@@ -1007,10 +1039,12 @@ def _summary_progress_style(percent: float) -> str:
     return "green"
 
 
-def _summary_label_header(project_group: str | None) -> str:
+def _summary_label_header(*, group_by: str, project_group: str | None) -> str:
     """Return the label column for summary output."""
 
-    return "project_group" if project_group is not None else "qfield_project"
+    if project_group is not None:
+        return "project_group"
+    return "collector_fullname" if group_by == "collector" else "qfield_project"
 
 
 def _render_converted_match_summary(summary: ConvertedMatchSummary) -> str:

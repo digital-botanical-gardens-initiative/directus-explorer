@@ -9,6 +9,7 @@ from typing import Any
 
 import pytest
 
+from directus_explorer.cli import _render_sample_location_pretty
 from directus_explorer.config import Settings
 from directus_explorer.directus import DirectusAuthError, DirectusClient, DirectusResponseError
 from directus_explorer.ms_metadata import MsMetadataTable
@@ -938,6 +939,139 @@ def test_build_sample_locations_table_resolves_storage_hierarchy(
     assert row["extraction_container_id"] == "dbgi_001195_01"
     assert row["original_sample_container_id"] == "dbgi_001195"
 
+    # A storage lookup finds samples at the selected container and below it,
+    # regardless of which stage of the sample lineage is stored there.
+    for storage_id in ("box_001", "shelf_01", "fridge_a", "rack_001"):
+        stored = client.build_sample_locations_table(container_id=storage_id)
+        assert [item["original_sample_id"] for item in stored.rows] == ["dbgi_001195"]
+    assert client.build_sample_locations_table(container_id="box_00").rows == ()
+    assert client.build_sample_locations_table(container_id="missing").rows == ()
+
+
+def test_sample_locations_use_current_container_parents_without_dried_rows(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Current Containers ancestry must be visible even without processing records."""
+
+    client = DirectusClient(
+        Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        )
+    )
+    responses = {
+        "Containers": {
+            "data": [
+                {
+                    "id": 1,
+                    "container_id": "sample_a",
+                    "container_model": {"container_type": "Conical Centrifugal Tube"},
+                    "parent_container": {"id": 10, "container_id": "rack"},
+                },
+                {"id": 2, "container_id": "sample_b"},
+                {"id": 10, "container_id": "rack", "parent_container": {"id": 11}},
+                {"id": 11, "container_id": "shelf"},
+                {"id": 12, "container_id": "old_rack"},
+            ]
+        },
+        "Field_Data": {
+            "data": [
+                {"sample_id": "sample_a", "qfield_project": "bg-unifr"},
+                {"sample_id": "sample_b", "qfield_project": "other"},
+            ]
+        },
+        "MS_Data": {"data": []},
+        "Aliquoting_Data": {"data": []},
+        "Extraction_Data": {"data": []},
+        "Dried_Samples_Data": {"data": []},
+    }
+
+    def fake_get(url: str, *args: Any, **kwargs: Any) -> FakeResponse:
+        for collection, payload in responses.items():
+            if f"/items/{collection}" in url:
+                return FakeResponse(200, payload)
+        raise AssertionError(f"Unexpected URL: {url}")
+
+    monkeypatch.setattr(
+        client._session,
+        "post",
+        lambda *args, **kwargs: FakeResponse(200, {"data": {"access_token": "token"}}),
+    )
+    monkeypatch.setattr(client._session, "get", fake_get)
+
+    for storage_id in ("rack", "shelf"):
+        table = client.build_sample_locations_table(container_id=storage_id)
+        assert len(table.rows) == 1
+        row = table.rows[0]
+        assert row["original_sample_id"] == "sample_a"
+        assert row["original_sample_container_id"] == "sample_a"
+        assert row["original_sample_container_type"] == "Conical Centrifugal Tube"
+        assert row["original_storage_level_1_container_id"] == "rack"
+        assert row["original_storage_level_2_container_id"] == "shelf"
+
+    # A processing record can retain an obsolete parent; current storage wins.
+    responses["Dried_Samples_Data"]["data"] = [
+        {
+            "field_data": {"sample_id": "sample_a"},
+            "sample_container": {"container_id": "sample_a"},
+            "parent_container": {"id": 12, "container_id": "old_rack"},
+        }
+    ]
+    assert len(client.build_sample_locations_table(container_id="rack").rows) == 1
+    assert client.build_sample_locations_table(container_id="old_rack").rows == ()
+    # Derived containers may exist without a dried-sample or MS analysis row.
+    responses["Dried_Samples_Data"]["data"] = []
+    responses["Containers"]["data"].extend(
+        [
+            {"id": 20, "container_id": "extract_box"},
+            {"id": 21, "container_id": "aliquot_box"},
+            {
+                "id": 3,
+                "container_id": "sample_a_01",
+                "container_model": {"container_type": "Glass Vial"},
+                "parent_container": {"id": 20},
+            },
+            {
+                "id": 4,
+                "container_id": "sample_a_01_01",
+                "container_model": {"container_type": "Glass Vial"},
+                "parent_container": {"id": 21},
+            },
+        ]
+    )
+    responses["Extraction_Data"]["data"] = [
+        {
+            "sample_container": {"container_id": "sample_a_01"},
+            "parent_sample_container": {"container_id": "sample_a"},
+            "parent_container": {"id": 12},
+        }
+    ]
+    responses["Aliquoting_Data"]["data"] = [
+        {
+            "sample_container": {"container_id": "sample_a_01_01"},
+            "parent_sample_container": {"container_id": "sample_a_01"},
+            "parent_container": {"id": 12},
+        }
+    ]
+    for sample_id in ("sample_a", "sample_a_01", "sample_a_01_01"):
+        table = client.build_sample_locations_table(sample_id=sample_id)
+        assert len(table.rows) == 1
+        row = table.rows[0]
+        assert row["extraction_container_id"] == "sample_a_01"
+        assert row["extraction_storage_level_1_container_id"] == "extract_box"
+        assert row["ms_container_id"] == "sample_a_01_01"
+        assert row["ms_container_type"] == "Glass Vial"
+        assert row["ms_storage_level_1_container_id"] == "aliquot_box"
+        if sample_id == "sample_a_01_01":
+            pretty = _render_sample_location_pretty(row)
+            assert (
+                "MS aliquot:\n- Find aliquot_box.\n- Retrieve Glass Vial sample_a_01_01."
+                in pretty
+            )
+            assert "Extract:\n- Find extract_box.\n- Retrieve Glass Vial sample_a_01." in pretty
+    assert client.build_sample_locations_table(container_id="old_rack").rows == ()
+
 
 def test_build_sample_locations_table_requires_exactly_one_filter(
     monkeypatch: pytest.MonkeyPatch,
@@ -951,8 +1085,10 @@ def test_build_sample_locations_table_requires_exactly_one_filter(
     )
     client = DirectusClient(settings)
 
-    with pytest.raises(ValueError, match="Exactly one of sample_id or project"):
+    with pytest.raises(ValueError, match="Exactly one of sample_id, container_id or project"):
         client.build_sample_locations_table()
+    with pytest.raises(ValueError, match="Exactly one of sample_id, container_id or project"):
+        client.build_sample_locations_table(sample_id="dbgi_001195", container_id="box_001")
 
 
 def test_build_sample_locations_table_handles_samples_without_ms_or_extraction(

@@ -295,6 +295,11 @@ def summarize_samples(
     help="Resolve locations for one original/extraction/MS sample container identifier.",
 )
 @click.option(
+    "--container-id",
+    default=None,
+    help="Find samples stored directly or indirectly in a physical storage container.",
+)
+@click.option(
     "--project",
     "qfield_project",
     default=None,
@@ -322,6 +327,7 @@ def summarize_samples(
 )
 def sample_locations(
     sample_id: str | None,
+    container_id: str | None,
     qfield_project: str | None,
     output_path: Path | None,
     output_format: str,
@@ -329,15 +335,19 @@ def sample_locations(
 ) -> None:
     """Resolve sample containers and physical storage hierarchy."""
 
-    if (sample_id is None) == (qfield_project is None):
-        raise click.ClickException("Exactly one of --sample-id or --project must be provided")
+    if sum(value is not None for value in (sample_id, container_id, qfield_project)) != 1:
+        raise click.ClickException(
+            "Exactly one of --sample-id, --container-id or --project must be provided"
+        )
     if output_format == "tsv" and output_path is None:
         raise click.ClickException("--output is required when --format tsv")
 
     try:
         settings = load_settings(env_file=env_file)
         client = DirectusClient(settings)
-        table = client.build_sample_locations_table(sample_id=sample_id, project=qfield_project)
+        table = client.build_sample_locations_table(
+            sample_id=sample_id, container_id=container_id, project=qfield_project
+        )
         if output_format == "tsv":
             assert output_path is not None
             from .ms_metadata import write_ms_metadata_csv
@@ -357,6 +367,7 @@ def sample_locations(
             json.dumps(
                 {
                     "sample_id": sample_id,
+                    "container_id": container_id,
                     "qfield_project": qfield_project,
                     "row_count": len(table.rows),
                     "rows": list(table.rows),
@@ -370,6 +381,8 @@ def sample_locations(
         return
 
     if not table.rows:
+        if container_id is not None:
+            click.echo(f"No samples found in container {container_id}.")
         return
     if output_format == "pretty":
         click.echo(_render_sample_locations_pretty(table.rows))

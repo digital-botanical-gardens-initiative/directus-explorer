@@ -1,0 +1,370 @@
+{
+  "project": "bg-unifr",
+  "saved_at": "2026-10-29T14:00:34.669952+00:00",
+  "rows": [
+    {
+      "sample_id": "dbgi_000130",
+      "container_id": "dbgi_000130",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 821,
+      "before": {
+        "container_model": 1,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_000131",
+      "container_id": "dbgi_000131",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 822,
+      "before": {
+        "container_model": 1,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_000132",
+      "container_id": "dbgi_000132",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 823,
+      "before": {
+        "container_model": 1,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_000133",
+      "container_id": "dbgi_000133",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 824,
+      "before": {
+        "container_model": 1,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_000134",
+      "container_id": "dbgi_000134",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 825,
+      "before": {
+        "container_model": 1,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_000135",
+      "container_id": "dbgi_000135",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 826,
+      "before": {
+        "container_model": 1,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007857",
+      "container_id": "dbgi_007857",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17648,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007860",
+      "container_id": "dbgi_007860",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17651,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007861",
+      "container_id": "dbgi_007861",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17652,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007863",
+      "container_id": "dbgi_007863",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17654,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007864",
+      "container_id": "dbgi_007864",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17655,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007868",
+      "container_id": "dbgi_007868",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17659,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007869",
+      "container_id": "dbgi_007869",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17660,
+      "before": {
+        "container_model": 1,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007870",
+      "container_id": "dbgi_007870",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17661,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007873",
+      "container_id": "dbgi_007873",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17664,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007874",
+      "container_id": "dbgi_007874",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17665,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007878",
+      "container_id": "dbgi_007878",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17669,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007879",
+      "container_id": "dbgi_007879",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17670,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007880",
+      "container_id": "dbgi_007880",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17671,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007881",
+      "container_id": "dbgi_007881",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17672,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007883",
+      "container_id": "dbgi_007883",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17674,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007884",
+      "container_id": "dbgi_007884",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17675,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007887",
+      "container_id": "dbgi_007887",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17678,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007892",
+      "container_id": "dbgi_007892",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17683,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007894",
+      "container_id": "dbgi_007894",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17685,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    },
+    {
+      "sample_id": "dbgi_007895",
+      "container_id": "dbgi_007895",
+      "selection_source": "sample_id_exact_container_id",
+      "directus_id": 17686,
+      "before": {
+        "container_model": null,
+        "used": false
+      },
+      "after": {
+        "container_model": 1,
+        "used": true
+      }
+    }
+  ]
+}

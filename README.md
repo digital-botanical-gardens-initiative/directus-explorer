@@ -450,7 +450,32 @@ Resolve the physical sample containers and storage hierarchy for one sample or c
 uv run directus-explorer samples locations --sample-id dbgi_003187_01_01
 ```
 
-Render the same result as top-down retrieval instructions:
+Find sample lineages stored in a physical container, including nested storage
+containers (for example, a box on a shelf). Matching is by exact container ID
+in the original, extraction, or MS aliquot storage chain:
+
+```bash
+uv run directus-explorer samples locations --container-id container_8x3_000110 --format json
+```
+
+Current physical ancestry comes from each sample's `Containers.parent_container`
+relation. For original samples without a `Dried_Samples_Data` row, an exact
+`Field_Data.sample_id` = `Containers.container_id` match identifies the sample
+container. Processing-record storage is used only when the sample container
+record itself is unavailable; it may describe an older location.
+
+Extraction_Data links extracts to the original container, and Aliquoting_Data
+links aliquots to extracts, even if there is no Dried_Samples_Data or MS_Data
+row. The `MS aliquot` label refers to the aliquot container, not proof that
+an MS analysis exists. A storage box with no `parent_container` has no higher
+storage location recorded; retrieval guidance stops at that box.
+
+The JSON result includes `row_count` and the matching location rows. A zero
+count means no linked sample location was found; it does not establish whether
+the container itself exists. Use `--format pretty` for retrieval instructions
+or `--format tsv --output locations.tsv` to export the rows.
+
+Render a sample ID result as top-down retrieval instructions:
 
 ```bash
 uv run directus-explorer samples locations --sample-id dbgi_003187_01_01 --format pretty
@@ -464,6 +489,45 @@ uv run directus-explorer samples locations \
   --format tsv \
   --output sample_locations_jbuf.tsv
 ```
+
+Curate the **original sample containers** for a whole Field_Data project without
+manually selecting them in Directus. Use the exact `qfield_project` key:
+the 26-sample project here is `bg-unifr`, not `bg`. Preview the sample IDs,
+container codes, selection source, current values, and proposed shared values
+(this command only reads):
+
+```bash
+uv run python scripts/curate_project_containers.py \
+  --project bg-unifr --expect-count 26 --set container_model=1 \
+  --env-file .env.admin
+```
+
+Here `container_model=1` refers to the 50 ml greiner BIO-ONE Conical
+Centrifugal Tube model on this Directus instance; check that this specific
+model is intended. `--set` accepts `FIELD=JSON_VALUE` and may be repeated,
+for example `--set used=true --set reserved=false`; quote strings as
+`--set 'status="published"'`. The tool requires the expected number of
+Field_Data samples, each mapped to a **distinct** original container. It
+prefers an explicit Dried_Samples_Data `sample_container` link and falls
+back to an exact match of `Field_Data.sample_id` with
+`Containers.container_id` when that link is absent. Each preview row shows
+`selection_source`; ambiguous, conflicting, or missing matches block
+updates. Identity fields including `container_id` cannot be batch-updated.
+
+After reviewing the preview, use an account with Containers update permission
+and supply a **new** backup path:
+
+```bash
+uv run python scripts/curate_project_containers.py \
+  --project bg-unifr --expect-count 26 --set container_model=1 \
+  --env-file .env.admin --commit --backup bg-unifr_containers_before.json
+```
+
+The backup records the original values before any PATCH. Each row is checked
+again before updating and verified afterward. If a later update fails, earlier
+ones may already have been changed; retain the backup and inspect the printed
+verification progress. The command does not change storage `parent_container`
+links unless that field is explicitly requested.
 
 Compare an exported MS metadata CSV against the mzML watcher inventory and write per-row CSV results:
 

@@ -714,12 +714,13 @@ class DirectusClient:
         self,
         *,
         sample_id: str | None = None,
+        container_id: str | None = None,
         project: str | None = None,
     ) -> MsMetadataTable:
-        """Return container and physical storage rows for one sample or one project."""
+        """Return sample locations selected by sample, storage container, or project."""
 
-        if (sample_id is None) == (project is None):
-            raise ValueError("Exactly one of sample_id or project must be provided")
+        if sum(value is not None for value in (sample_id, container_id, project)) != 1:
+            raise ValueError("Exactly one of sample_id, container_id or project must be provided")
 
         self._authenticate()
 
@@ -758,6 +759,11 @@ class DirectusClient:
             rows=container_rows,
             key_field="id",
         )
+        containers_by_code = self._index_rows_by_scalar_key(
+            collection="Containers",
+            rows=container_rows,
+            key_field="container_id",
+        )
 
         rows: list[dict[str, Any]] = []
         seen: set[tuple[tuple[str, Any], ...]] = set()
@@ -777,6 +783,8 @@ class DirectusClient:
                     "sample_container",
                     "container_id",
                 )
+                if dried_container_id is None and original_sample_id in containers_by_code:
+                    dried_container_id = original_sample_id
                 sample_extraction_rows = (
                     extraction_by_parent_container_id.get(dried_container_id, [None])
                     if dried_container_id is not None
@@ -812,10 +820,15 @@ class DirectusClient:
                                 extraction_row=extraction_row,
                                 dried_row=dried_row,
                                 containers_by_id=containers_by_id,
+                                containers_by_code=containers_by_code,
                             )
                             if sample_id is not None and not self._row_matches_sample_identifier(
                                 row=row,
                                 sample_id=sample_id,
+                            ):
+                                continue
+                            if container_id is not None and not self._row_matches_storage_container(
+                                row=row, container_id=container_id
                             ):
                                 continue
 
@@ -1782,51 +1795,69 @@ class DirectusClient:
         extraction_row: dict[str, Any] | None,
         dried_row: dict[str, Any] | None,
         containers_by_id: dict[str, dict[str, Any]],
+        containers_by_code: dict[str, dict[str, Any]],
     ) -> dict[str, Any]:
         """Build one physical location row for a sample lineage."""
+
+        original_code = self._read_nested_string(dried_row, "sample_container", "container_id")
+        field_code = self._read_nested_string(field_row, "sample_id")
+        if original_code is None and field_code in containers_by_code:
+            original_code = field_code
 
         row: dict[str, Any] = {
             "original_sample_id": field_row.get("sample_id"),
             "qfield_project": field_row.get("qfield_project"),
-            "ms_container_id": self._read_nested_string(ms_row, "parent_sample_container", "container_id"),
+            "ms_container_id": self._read_nested_string(
+                ms_row, "parent_sample_container", "container_id"
+            ) or self._read_nested_string(aliquot_row, "sample_container", "container_id"),
             "ms_container_type": self._resolve_container_type(
-                self._read_nested_mapping(ms_row, "parent_sample_container", "container_model")
+                self._read_nested_mapping(
+                    ms_row if ms_row is not None else aliquot_row,
+                    "parent_sample_container" if ms_row is not None else "sample_container",
+                    "container_model",
+                )
             ),
             "extraction_container_id": self._read_nested_string(
-                extraction_row,
-                "sample_container",
-                "container_id",
+                extraction_row, "sample_container", "container_id"
             ),
             "extraction_container_type": self._resolve_container_type(
                 self._read_nested_mapping(extraction_row, "sample_container", "container_model")
             ),
-            "original_sample_container_id": self._read_nested_string(
-                dried_row,
-                "sample_container",
-                "container_id",
-            ),
+            "original_sample_container_id": original_code,
             "original_sample_container_type": self._resolve_container_type(
                 self._read_nested_mapping(dried_row, "sample_container", "container_model")
             ),
         }
-        self._enrich_row_with_storage_chain(
-            row=row,
-            prefix="ms_storage",
-            start_container=self._read_mapping(aliquot_row, "parent_container"),
-            containers_by_id=containers_by_id,
-        )
-        self._enrich_row_with_storage_chain(
-            row=row,
-            prefix="extraction_storage",
-            start_container=self._read_mapping(extraction_row, "parent_container"),
-            containers_by_id=containers_by_id,
-        )
-        self._enrich_row_with_storage_chain(
-            row=row,
-            prefix="original_storage",
-            start_container=self._read_mapping(dried_row, "parent_container"),
-            containers_by_id=containers_by_id,
-        )
+        for prefix, code_key, type_key, processing_row in (
+            ("ms_storage", "ms_container_id", "ms_container_type", aliquot_row),
+            (
+                "extraction_storage",
+                "extraction_container_id",
+                "extraction_container_type",
+                extraction_row,
+            ),
+            (
+                "original_storage",
+                "original_sample_container_id",
+                "original_sample_container_type",
+                dried_row,
+            ),
+        ):
+            container_code = row[code_key]
+            sample_container = (
+                containers_by_code.get(container_code) if container_code is not None else None
+            )
+            if sample_container is not None:
+                row[type_key] = self._resolve_container_type(sample_container) or row[type_key]
+            self._enrich_row_with_storage_chain(
+                row=row,
+                prefix=prefix,
+                start_container=self._read_mapping(
+                    sample_container if sample_container is not None else processing_row,
+                    "parent_container",
+                ),
+                containers_by_id=containers_by_id,
+            )
         return row
 
     @staticmethod
@@ -1839,6 +1870,19 @@ class DirectusClient:
             row.get("extraction_container_id"),
             row.get("ms_container_id"),
         }
+
+    @staticmethod
+    def _row_matches_storage_container(*, row: dict[str, Any], container_id: str) -> bool:
+        """Match a physical container anywhere in a sample's storage ancestry."""
+
+        return any(
+            value == container_id
+            for key, value in row.items()
+            if key.startswith(
+                ("ms_storage_level_", "extraction_storage_level_", "original_storage_level_")
+            )
+            and key.endswith("_container_id")
+        )
 
     @staticmethod
     def _read_nested_string(row: dict[str, Any] | None, *path: str) -> str | None:

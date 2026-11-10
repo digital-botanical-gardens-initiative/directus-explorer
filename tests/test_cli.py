@@ -477,9 +477,11 @@ def test_sample_locations_text_output(monkeypatch: pytest.MonkeyPatch) -> None:
             self,
             *,
             sample_id: str | None = None,
+            container_id: str | None = None,
             project: str | None = None,
         ):
             assert sample_id == "dbgi_001195_01_01"
+            assert container_id is None
             assert project is None
             from directus_explorer.ms_metadata import MsMetadataTable
 
@@ -536,9 +538,11 @@ def test_sample_locations_tsv_output(monkeypatch: pytest.MonkeyPatch) -> None:
             *,
             sample_id: str | None = None,
             project: str | None = None,
+            container_id: str | None = None,
         ):
             assert sample_id is None
             assert project == "jbuf"
+            assert container_id is None
             from directus_explorer.ms_metadata import MsMetadataTable
 
             return MsMetadataTable(
@@ -595,9 +599,11 @@ def test_sample_locations_pretty_output(monkeypatch: pytest.MonkeyPatch) -> None
             *,
             sample_id: str | None = None,
             project: str | None = None,
+            container_id: str | None = None,
         ):
             assert sample_id == "dbgi_003088_01_01"
             assert project is None
+            assert container_id is None
             from directus_explorer.ms_metadata import MsMetadataTable
 
             return MsMetadataTable(
@@ -674,6 +680,66 @@ def test_sample_locations_pretty_output(monkeypatch: pytest.MonkeyPatch) -> None
     ]
 
 
+def test_sample_locations_storage_container_output(monkeypatch: pytest.MonkeyPatch) -> None:
+    """A physical container selector reports sample lineages and an explicit empty result."""
+
+    monkeypatch.setattr(
+        cli_module,
+        "load_settings",
+        lambda env_file=None: Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        ),
+    )
+
+    class FakeClient:
+        def __init__(self, settings: Settings) -> None:
+            pass
+
+        def build_sample_locations_table(
+            self,
+            *,
+            sample_id: str | None = None,
+            container_id: str | None = None,
+            project: str | None = None,
+        ) -> MsMetadataTable:
+            assert sample_id is None and project is None
+            if container_id == "shelf_01":
+                return MsMetadataTable(
+                    fieldnames=("original_sample_id", "ms_storage_level_2_container_id"),
+                    rows=(
+                        {
+                            "original_sample_id": "dbgi_001195",
+                            "ms_storage_level_2_container_id": "shelf_01",
+                        },
+                    ),
+                )
+            return MsMetadataTable(fieldnames=(), rows=())
+
+    monkeypatch.setattr(cli_module, "DirectusClient", FakeClient)
+    runner = CliRunner()
+    result = runner.invoke(
+        cli_module.cli, ["samples", "locations", "--container-id", "shelf_01", "--format", "json"]
+    )
+    assert result.exit_code == 0
+    assert json.loads(result.output) == {
+        "sample_id": None,
+        "container_id": "shelf_01",
+        "qfield_project": None,
+        "row_count": 1,
+        "rows": [
+            {"original_sample_id": "dbgi_001195", "ms_storage_level_2_container_id": "shelf_01"}
+        ],
+    }
+
+    result = runner.invoke(
+        cli_module.cli, ["samples", "locations", "--container-id", "missing"]
+    )
+    assert result.exit_code == 0
+    assert result.output.strip() == "No samples found in container missing."
+
+
 def test_sample_locations_requires_one_filter(monkeypatch: pytest.MonkeyPatch) -> None:
     """The locations command should require exactly one selector."""
 
@@ -682,7 +748,14 @@ def test_sample_locations_requires_one_filter(monkeypatch: pytest.MonkeyPatch) -
     result = runner.invoke(cli_module.cli, ["samples", "locations"])
 
     assert result.exit_code != 0
-    assert "Exactly one of --sample-id or --project must be provided" in result.output
+    assert "Exactly one of --sample-id, --container-id or --project" in result.output
+
+    result = runner.invoke(
+        cli_module.cli,
+        ["samples", "locations", "--sample-id", "dbgi_001", "--container-id", "box_001"],
+    )
+    assert result.exit_code != 0
+    assert "Exactly one of --sample-id, --container-id or --project" in result.output
 
 
 def test_check_converted_text_output(tmp_path) -> None:

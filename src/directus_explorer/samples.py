@@ -82,6 +82,24 @@ class ProjectSpeciesSummary:
     both_count: int
 
 
+@dataclass(frozen=True, slots=True)
+class CollectorSampleSummary:
+    """Per-collector summary of collected samples.
+
+    Profiled/positive/negative/both counts are not derivable per collector: collector
+    identity (Field_Data.field_collector_fullname) does not survive the sample ->
+    extraction -> MS-injection container chain that profiled-sample lookups rely on, so
+    those counts are always zero here rather than fabricated.
+    """
+
+    collector_fullname: str
+    collected_count: int
+    profiled_count: int
+    positive_count: int
+    negative_count: int
+    both_count: int
+
+
 def build_sample_count_params(qfield_project: str) -> dict[str, str]:
     """Build Directus query parameters for counting samples in a project."""
 

@@ -189,6 +189,33 @@ COMPACT_FIELDNAMES = (
 )
 
 
+FILE_COMPACT_FIELDNAMES = (
+    "ms_filename",
+    "ms_data_id",
+    "original_sample_id",
+    "field_observation_subject",
+    "field_collector_fullname",
+    "field_date",
+    "latitude",
+    "longitude",
+    "field_taxon_name_unified",
+    "field_taxon_resolution_status",
+    "field_taxon_col_id",
+    "col_scientific_name",
+    "col_rank",
+    "col_backbone_version",
+)
+
+COL_CORE_RANKS = (
+    "domain", "kingdom", "phylum", "class", "order", "family", "genus", "species",
+)
+
+
+def _col_rank_fields(rank: str) -> tuple[str, str]:
+    name = f"col_{sanitize_column_name(rank.casefold())}"
+    return name, f"{name}_id"
+
+
 def build_sample_metadata_row(
     *,
     field_row: dict[str, Any] | None,
@@ -470,6 +497,119 @@ def select_table_view(table: MsMetadataTable, *, view: str) -> MsMetadataTable:
     )
     rows = tuple({fieldname: row.get(fieldname) for fieldname in fieldnames} for row in cleaned.rows)
     return MsMetadataTable(fieldnames=fieldnames, rows=rows)
+
+
+def file_compact_table(
+    table: MsMetadataTable, taxa_by_id: dict[str, dict[str, Any]]
+) -> MsMetadataTable:
+    """Select file-level metadata and dereference stored Catalogue of Life taxa."""
+
+    rows: list[CsvRow] = []
+    lineage_by_ref: dict[str, dict[str, tuple[str, str]]] = {}
+    ranks: set[str] = set(COL_CORE_RANKS)
+    for source in table.rows:
+        coordinates = source.get("field_geometry_coordinates")
+        latitude: CsvScalar = None
+        longitude: CsvScalar = None
+        if isinstance(coordinates, str):
+            try:
+                point = json.loads(coordinates)
+                if (
+                    isinstance(point, list)
+                    and len(point) == 2
+                    and all(
+                        isinstance(value, int | float) and not isinstance(value, bool)
+                        for value in point
+                    )
+                    and -180 <= point[0] <= 180
+                    and -90 <= point[1] <= 90
+                ):
+                    longitude, latitude = point
+            except ValueError:
+                pass
+
+        col_id = source.get("field_taxon_col_id")
+        taxon_ref = source.get("field_taxon_ref_id") or source.get("field_taxon_ref")
+        taxon = taxa_by_id.get(str(taxon_ref)) if taxon_ref not in (None, "") else None
+        if taxon is not None and str(taxon.get("col_id") or "") != str(col_id or ""):
+            taxon = None
+        scientific_name = (
+            str(taxon.get("scientific_name") or "").strip() if taxon is not None else ""
+        )
+        lineage: dict[str, tuple[str, str]] = {}
+        if taxon is not None:
+            ref_id = str(taxon_ref)
+            if ref_id not in lineage_by_ref:
+                lineage_by_ref[ref_id] = _build_col_lineage(ref_id, taxa_by_id)
+            lineage = lineage_by_ref[ref_id]
+            ranks.update(lineage)
+
+        row: CsvRow = {
+            "ms_filename": source.get("ms_filename"),
+            "ms_data_id": source.get("ms_data_id"),
+            "original_sample_id": source.get("original_sample_id"),
+            "field_observation_subject": source.get("field_observation_subject"),
+            "field_collector_fullname": source.get("field_collector_fullname"),
+            "field_date": source.get("field_date"),
+            "latitude": latitude,
+            "longitude": longitude,
+            "field_taxon_name_unified": source.get("field_taxon_name_unified"),
+            "field_taxon_resolution_status": source.get("field_taxon_resolution_status"),
+            "field_taxon_col_id": col_id,
+            "col_scientific_name": scientific_name,
+            "col_rank": taxon.get("rank") if taxon is not None else "",
+            "col_backbone_version": taxon.get("backbone_version") if taxon is not None else "",
+        }
+        for rank, (name, code) in lineage.items():
+            name_field, code_field = _col_rank_fields(rank)
+            row[name_field] = name
+            row[code_field] = code
+        rows.append(row)
+    rank_fields = tuple(
+        field
+        for rank in (*COL_CORE_RANKS, *sorted(ranks - set(COL_CORE_RANKS)))
+        for field in _col_rank_fields(rank)
+    )
+    return MsMetadataTable(
+        fieldnames=(*FILE_COMPACT_FIELDNAMES, *rank_fields), rows=tuple(rows)
+    )
+
+
+def _build_col_lineage(
+    ref_id: str, taxa_by_id: dict[str, dict[str, Any]]
+) -> dict[str, tuple[str, str]]:
+    """Dereference all ancestors, retaining each rank's name and CoL usage ID."""
+
+    lineage: dict[str, tuple[str, str]] = {}
+    seen: set[str] = set()
+    current_id = ref_id
+    while current_id:
+        if current_id in seen:
+            raise ValueError(f"Cycle in Taxa.parent_ref at Taxa ID {current_id}")
+        seen.add(current_id)
+        node = taxa_by_id.get(current_id)
+        if node is None:
+            raise ValueError(f"Missing Taxa.parent_ref target {current_id} for Taxa ID {ref_id}")
+        if "parent_ref" not in node:
+            raise ValueError(f"Taxa ID {current_id} lacks parent_ref")
+        part = {
+            key: str(node.get(key) or "").strip()
+            for key in ("col_id", "rank", "scientific_name")
+        }
+        if not all(part.values()):
+            raise ValueError(f"Taxa ID {current_id} has incomplete lineage metadata")
+        rank = part["rank"].casefold()
+        if rank in lineage:
+            raise ValueError(f"Duplicate CoL rank {rank} in lineage of Taxa ID {ref_id}")
+        lineage[rank] = (part["scientific_name"], part["col_id"])
+        parent = node["parent_ref"]
+        if isinstance(parent, dict):
+            parent = parent.get("id")
+            if parent in (None, ""):
+                raise ValueError(f"Taxa ID {current_id} has an invalid parent_ref")
+        current_id = str(parent) if parent not in (None, "") else ""
+
+    return lineage
 
 
 def order_fieldnames(fieldnames: tuple[str, ...]) -> tuple[str, ...]:

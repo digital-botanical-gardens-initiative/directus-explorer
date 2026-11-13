@@ -425,12 +425,25 @@ def sample_locations(
     help="Optional mzmlwatcher TSV export(s) used to enrich exact-matching MS rows.",
 )
 @click.option(
+    "--filename-prefix",
+    default=None,
+    help="Export MS_Data filenames starting with this prefix, including unlinked rows.",
+)
+@click.option(
+    "--mode",
+    type=click.Choice(("positive", "negative"), case_sensitive=False),
+    default=None,
+    help="Keep MS records with this injection-method polarity; requires --filename-prefix.",
+)
+@click.option(
     "--view",
     "export_view",
     type=click.Choice(("full", "compact", "sample-compact"), case_sensitive=False),
-    default="full",
-    show_default=True,
-    help="Choose between rich, compact, or one-row-per-sample compact metadata.",
+    default=None,
+    help=(
+        "Filename exports default to focused compact metadata; other exports default "
+        "to full. --view full retains all available fields."
+    ),
 )
 @click.option(
     "--require-col-id",
@@ -454,6 +467,8 @@ def export_ms_metadata(
     output_path: Path,
     qfield_project: str | None,
     project_group: str | None,
+    filename_prefix: str | None,
+    mode: str | None,
     watcher_tsv: tuple[Path, ...],
     export_view: str,
     require_col_id: bool,
@@ -464,6 +479,14 @@ def export_ms_metadata(
 
     if require_col_id and export_view != "sample-compact":
         raise click.UsageError("--require-col-id requires --view sample-compact")
+    if filename_prefix is not None and not filename_prefix:
+        raise click.UsageError("--filename-prefix must not be empty")
+    if filename_prefix is not None and export_view == "sample-compact":
+        raise click.UsageError("--filename-prefix requires --view full or compact")
+    if filename_prefix is not None and (qfield_project or project_group):
+        raise click.UsageError("--filename-prefix cannot be combined with project filters")
+    if mode is not None and filename_prefix is None:
+        raise click.UsageError("--mode requires --filename-prefix")
 
     try:
         settings = load_settings(env_file=env_file)
@@ -473,8 +496,12 @@ def export_ms_metadata(
             "project": qfield_project,
             "project_group": project_group,
             "watcher_tsv_paths": watcher_tsv,
-            "view": export_view,
+            "view": export_view or ("compact" if filename_prefix is not None else "full"),
         }
+        if filename_prefix is not None:
+            export_kwargs["filename_prefix"] = filename_prefix
+        if mode is not None:
+            export_kwargs["mode"] = mode
         if require_col_id:
             export_kwargs["require_col_id"] = True
             export_kwargs["stored_taxa_by_id"] = load_stored_taxa_index(
@@ -491,6 +518,14 @@ def export_ms_metadata(
         ValueError,
     ) as exc:
         raise click.ClickException(str(exc)) from exc
+
+    if filename_prefix is not None:
+        mode_label = f" and {mode} mode" if mode is not None else ""
+        click.echo(
+            f"Wrote {row_count} MS metadata rows with filename prefix "
+            f"{filename_prefix}{mode_label} to {output_path}"
+        )
+        return
 
     if project_group is not None:
         click.echo(

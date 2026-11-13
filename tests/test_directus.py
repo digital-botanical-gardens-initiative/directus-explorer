@@ -12,7 +12,7 @@ import pytest
 from directus_explorer.cli import _render_sample_location_pretty
 from directus_explorer.config import Settings
 from directus_explorer.directus import DirectusAuthError, DirectusClient, DirectusResponseError
-from directus_explorer.ms_metadata import MsMetadataTable
+from directus_explorer.ms_metadata import MsMetadataTable, file_compact_table
 from directus_explorer.samples import ProfiledSample, ProjectSampleSummary
 from directus_explorer.taxonomy import TaxonResolution
 
@@ -647,6 +647,223 @@ def test_export_ms_metadata_csv_writes_flat_csv(
     with output_path.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
     assert rows == [{"ms_data_id": "1", "qfield_project": "jbuf"}]
+
+
+def test_filename_prefix_export_includes_every_matching_ms_record(
+    monkeypatch: pytest.MonkeyPatch, tmp_path: Path
+) -> None:
+    client = DirectusClient(
+        Settings(
+            directus_instance="https://example.test/directus",
+            directus_username="user@example.test",
+            directus_password="secret",
+        )
+    )
+    collections = {
+        "Field_Data": [{
+            "id": 1,
+            "sample_id": "sample_1",
+            "observation_subject": "Leaf",
+            "qfield_project": "jbuf",
+            "collector_fullname": "David Stanley Adrien",
+            "date": "20261021134029",
+            "geometry": {"type": "Point", "coordinates": [7.1, 46.7]},
+            "latitude": 7.1,
+            "longitude": 46.7,
+            "taxon_name_unified": "Brugmansia",
+            "taxon_resolution_status": "accepted_variant",
+            "taxon_col_id": "3DFL",
+            "taxon_ref": 3986,
+        }],
+        "Containers": [],
+        "Dried_Samples_Data": [{
+            "id": 2,
+            "field_data": None,
+            "sample_container": {"container_id": "sample_1"},
+        }],
+        "Extraction_Data": [{
+            "id": 3,
+            "parent_sample_container": {"container_id": "sample_1"},
+            "sample_container": {"container_id": "extract"},
+        }],
+        "Aliquoting_Data": [{
+            "id": 4,
+            "parent_sample_container": {"container_id": "extract"},
+            "sample_container": {"container_id": "aliquot"},
+        }],
+        "MS_Data": [
+            {
+                "id": 10, "filename": "20261029_aliquot",
+                "parent_sample_container": {"container_id": "aliquot"},
+                "injection_method": {"method_name": "C18_DDA_pos"},
+            },
+            {
+                "id": 11, "filename": "20261029_extract",
+                "parent_sample_container": {"container_id": "extract"},
+                "injection_method": {"method_name": "C18_DDA_neg"},
+            },
+            {
+                "id": 12, "filename": "20261029_unlinked_pos",
+                "parent_sample_container": None,
+                "injection_method": None,
+            },
+            {
+                "id": 13, "filename": "20261028_other",
+                "parent_sample_container": None,
+                "injection_method": {"method_name": "C18_DDA_pos"},
+            },
+        ],
+        "Taxa": [
+            {
+                "id": 3986, "col_id": "3DFL", "scientific_name": "Brugmansia",
+                "rank": "genus", "backbone_version": "2026-07-17 XR",
+                "parent_ref": {"id": 4},
+            },
+            {"id": 4, "col_id": "S", "scientific_name": "Solanoideae",
+             "rank": "subfamily", "parent_ref": 3},
+            {"id": 3, "col_id": "F", "scientific_name": "Solanaceae",
+             "rank": "family", "parent_ref": 2},
+            {"id": 2, "col_id": "P", "scientific_name": "Plantae",
+             "rank": "kingdom", "parent_ref": 1},
+            {"id": 1, "col_id": "E", "scientific_name": "Eukaryota",
+             "rank": "domain", "parent_ref": None},
+        ],
+    }
+    monkeypatch.setattr(client, "_authenticate", lambda: None)
+    monkeypatch.setattr(
+        client, "_get_items", lambda *, collection, fields: collections[collection]
+    )
+    output_path = tmp_path / "metadata.tsv"
+    count = client.export_ms_metadata_csv(
+        output_path, filename_prefix="20261029", view="full"
+    )
+    with output_path.open(newline="", encoding="utf-8") as handle:
+        rows = {row["ms_data_id"]: row for row in csv.DictReader(handle, delimiter="\t")}
+
+    assert count == 3
+    assert set(rows) == {"10", "11", "12"}
+    assert rows["10"]["original_sample_id"] == "sample_1"
+    assert rows["10"]["aliquoting_data_id"] == "4"
+    assert rows["11"]["original_sample_id"] == "sample_1"
+    assert rows["11"]["extraction_data_id"] == "3"
+    assert rows["11"]["aliquoting_data_id"] == ""
+    assert rows["12"]["ms_filename"] == "20261029_unlinked_pos"
+    assert rows["12"]["original_sample_id"] == ""
+
+    focused_path = tmp_path / "focused.tsv"
+    assert client.export_ms_metadata_csv(
+        focused_path, filename_prefix="20261029"
+    ) == 3
+    with focused_path.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        focused_rows = {row["ms_data_id"]: row for row in reader}
+        assert reader.fieldnames is not None
+        assert "col_lineage" not in reader.fieldnames
+        for rank in ("domain", "kingdom", "phylum", "class", "order",
+                     "family", "subfamily", "genus", "species"):
+            assert f"col_{rank}" in reader.fieldnames
+            assert f"col_{rank}_id" in reader.fieldnames
+    assert focused_rows["10"]["ms_filename"] == "20261029_aliquot"
+    assert focused_rows["10"]["field_taxon_name_unified"] == "Brugmansia"
+    assert focused_rows["10"]["field_taxon_col_id"] == "3DFL"
+    assert focused_rows["10"]["col_scientific_name"] == "Brugmansia"
+    assert focused_rows["10"]["col_rank"] == "genus"
+    assert focused_rows["10"]["col_backbone_version"] == "2026-07-17 XR"
+    assert [
+        (focused_rows["10"][f"col_{rank}"], focused_rows["10"][f"col_{rank}_id"])
+        for rank in ("domain", "kingdom", "family", "subfamily", "genus")
+    ] == [
+        ("Eukaryota", "E"), ("Plantae", "P"), ("Solanaceae", "F"),
+        ("Solanoideae", "S"), ("Brugmansia", "3DFL"),
+    ]
+    assert focused_rows["10"]["col_species"] == ""
+    assert focused_rows["10"]["col_species_id"] == ""
+    assert rows["10"]["col_subfamily_id"] == focused_rows["10"]["col_subfamily_id"]
+    assert rows["12"]["col_kingdom"] == ""
+    assert focused_rows["12"]["original_sample_id"] == ""
+    assert focused_rows["12"]["field_observation_subject"] == ""
+    assert focused_rows["12"]["field_collector_fullname"] == ""
+    assert focused_rows["12"]["col_scientific_name"] == ""
+    assert focused_rows["12"]["col_genus_id"] == ""
+
+    positive_path = tmp_path / "positive.tsv"
+    assert client.export_ms_metadata_csv(
+        positive_path, filename_prefix="20261029", mode="positive", view="full"
+    ) == 1
+    with positive_path.open(newline="", encoding="utf-8") as handle:
+        positive_rows = list(csv.DictReader(handle, delimiter="\t"))
+    assert [(row["ms_data_id"], row["profile_mode"]) for row in positive_rows] == [
+        ("10", "positive")
+    ]
+    assert positive_rows[0]["col_family"] == "Solanaceae"
+    assert positive_rows[0]["col_genus_id"] == "3DFL"
+
+    negative_path = tmp_path / "negative.tsv"
+    assert client.export_ms_metadata_csv(
+        negative_path, filename_prefix="20261029", mode="negative"
+    ) == 1
+    with negative_path.open(newline="", encoding="utf-8") as handle:
+        negative_rows = list(csv.DictReader(handle, delimiter="\t"))
+    assert [(row["ms_data_id"], row["col_scientific_name"]) for row in negative_rows] == [
+        ("11", "Brugmansia")
+    ]
+
+    with pytest.raises(ValueError, match="requires a filename prefix"):
+        client.export_ms_metadata_csv(tmp_path / "invalid.tsv", mode="positive")
+
+    collections["Taxa"][0]["col_id"] = "different_col_id"
+    mismatch_path = tmp_path / "mismatch.tsv"
+    client.export_ms_metadata_csv(mismatch_path, filename_prefix="20261029")
+    with mismatch_path.open(newline="", encoding="utf-8") as handle:
+        mismatch_rows = {row["ms_data_id"]: row for row in csv.DictReader(handle, delimiter="\t")}
+    assert mismatch_rows["10"]["field_taxon_col_id"] == "3DFL"
+    assert mismatch_rows["10"]["col_scientific_name"] == ""
+    assert mismatch_rows["10"]["col_genus_id"] == ""
+
+    empty_focused_path = tmp_path / "empty-focused.tsv"
+    assert client.export_ms_metadata_csv(
+        empty_focused_path, filename_prefix="no_match"
+    ) == 0
+    assert empty_focused_path.read_text(encoding="utf-8").startswith(
+        "ms_filename\tms_data_id\toriginal_sample_id\t"
+    )
+    empty_path = tmp_path / "empty.tsv"
+    assert client.export_ms_metadata_csv(
+        empty_path, filename_prefix="no_match", view="full"
+    ) == 0
+    assert empty_path.read_text(encoding="utf-8").startswith(
+        "ms_filename\tms_data_id\tcol_domain\tcol_domain_id\t"
+    )
+
+
+@pytest.mark.parametrize(
+    ("parent_ref", "extra_parent", "error"),
+    [
+        (99, None, "Missing Taxa.parent_ref target"),
+        (11, {"id": 11, "col_id": "P", "rank": "kingdom",
+              "scientific_name": "Plantae", "parent_ref": 10}, "Cycle in Taxa.parent_ref"),
+        (11, {"id": 11, "col_id": "Q", "rank": "species",
+              "scientific_name": "Another species", "parent_ref": None},
+         "Duplicate CoL rank"),
+    ],
+)
+def test_file_lineage_rejects_broken_parent_graph(
+    parent_ref: int, extra_parent: dict[str, Any] | None, error: str
+) -> None:
+    taxa = {
+        "10": {
+            "id": 10, "col_id": "L", "rank": "species",
+            "scientific_name": "Test species", "parent_ref": parent_ref,
+        }
+    }
+    if extra_parent is not None:
+        taxa["11"] = extra_parent
+    table = MsMetadataTable(
+        fieldnames=("field_taxon_col_id", "field_taxon_ref"),
+        rows=({"field_taxon_col_id": "L", "field_taxon_ref": "10"},),
+    )
+    with pytest.raises(ValueError, match=error):
+        file_compact_table(table, taxa)
 
 
 def test_export_ms_metadata_csv_compact_view_writes_curated_columns(

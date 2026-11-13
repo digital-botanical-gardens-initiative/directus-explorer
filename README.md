@@ -168,6 +168,48 @@ Correct the account permissions and Refresh again. `--env-file` supplies the
 read-only audit account; `--admin-env-file` supplies Taxa verification and
 approved writes.
 
+### Sparse CoL ancestry for observed taxa
+
+After curating and linking observations, populate the accepted CoL parent tree
+without changing `Field_Data` or recorded names. `Taxa.parent_ref` points to
+another `Taxa.id`; CoL usages with no `parentId` are roots (`parent_ref = NULL`).
+There is no synthetic Life node, no fixed-rank columns, and no import of
+unobserved CoL branches. Intermediate ranks are retained.
+
+First add the nullable self-relation (the migration defaults to a read-only
+schema plan; use `--commit` only after reviewing its actions):
+
+```bash
+uv run python scripts/migrate_taxon_backbone_directus_schema.py --env-file .env.admin
+uv run python scripts/migrate_taxon_backbone_directus_schema.py --env-file .env.admin --commit
+```
+
+Prepare a **read-only** snapshot of distinct Taxa referenced by observations
+and their complete ancestry from the pinned CoL release. The admin account
+needs `Field_Data` and `Taxa` read plus Taxa create/update permissions for the
+later commit. The generated JSON lists new rows, existing links to set, and
+blocking metadata or parent conflicts. Review the entire proposal:
+
+```bash
+uv run python scripts/enrich_taxa_lineage.py --env-file .env.admin
+uv run python scripts/enrich_taxa_lineage.py --env-file .env.admin \
+  --preview data/working/taxonomy_backbone/lineage/lineage_preview_TIMESTAMP.json \
+  --commit
+```
+
+Replace `TIMESTAMP` with the actual generated filename. CoL's
+`provisionally accepted` usages are included and flagged by `col_status` in
+the preview; synonyms and other non-accepted usages block the run. A local
+SQLite cache of validated pinned usages avoids repeated lookups and allows
+an interrupted preview to resume. Commit rechecks live observations, Taxa,
+and the pinned release against the exact preview before writing; it records
+creates/links in a JSONL execution journal and verifies the completed tree.
+A changed proposal cannot be committed from an older preview.
+The routine does not run automatically when the curation dashboard pushes a
+project: run it again after new observations are approved. A future CoL
+release requires a separate reviewed tree migration, not mixing releases in
+this single current tree.
+
 The commands below remain available for scripted or advanced curation. The
 standalone `generate_taxon_curation_dashboard.py` further below is a *read-only
 progress report*, not this interactive local server.
@@ -419,6 +461,74 @@ Export one wide TSV row per collected sample lineage. Samples without any MS rec
 ```bash
 uv run directus-explorer ms export-metadata --output sample_metadata.tsv
 ```
+
+Export one compact metadata row for **every Directus `MS_Data` record** whose
+`filename` starts with `20261029`. The compact view needs a Directus account
+with `Taxa` read permission to resolve the stored Catalogue of Life relation;
+the local `.env.admin` account has that permission:
+
+```bash
+uv run directus-explorer ms export-metadata \
+  --filename-prefix 20261029 \
+  --env-file .env.admin \
+  --output data/output/ms_metadata_20261029.tsv
+```
+
+To export only one polarity, add `--mode positive` or `--mode negative`:
+
+```bash
+uv run directus-explorer ms export-metadata \
+  --filename-prefix 20261029 --mode positive --env-file .env.admin \
+  --output data/output/ms_metadata_20261029_positive.tsv
+uv run directus-explorer ms export-metadata \
+  --filename-prefix 20261029 --mode negative --env-file .env.admin \
+  --output data/output/ms_metadata_20261029_negative.tsv
+```
+
+Mode is determined from `MS_Data.injection_method.method_name` using its
+`_pos`/`_neg` marker, not the filename. Records without a recognizable
+injection method are excluded when a mode is selected; without `--mode`,
+both polarities and unclassified records are retained. `--mode` requires
+`--filename-prefix` and also works with `--view full`.
+
+`ms_filename` is the first column, followed by `ms_data_id`, sample ID,
+observation subject (`field_observation_subject`, e.g. leaf or flower),
+collector name (`field_collector_fullname` from `Field_Data`),
+collection date/time (`field_date`, as stored in Directus), latitude/longitude,
+the sample taxon and its resolution status, COL ID, scientific name
+(`Taxa.scientific_name`, without authorship), rank, and backbone version.
+Taxonomy is added as ordinary TSV columns: `col_kingdom` holds the scientific
+name, `col_kingdom_id` its CoL usage ID; likewise `col_domain`, `col_phylum`,
+`col_class`, `col_order`, `col_family`, `col_genus`, and `col_species` with
+their corresponding `_id` columns. Any intermediate ranks present in the
+selected observations, such as `col_subfamily` or `col_tribe`, get paired
+columns as well. Missing ranks stay blank (e.g. genus-level identifications
+have blank species fields). No lineage JSON column is written. Every
+`Taxa.parent_ref` is checked; a cycle, missing parent, duplicate rank, or
+incomplete ancestor stops the export rather than writing a partial lineage.
+Coordinates come from GeoJSON `field_geometry.coordinates`
+(`longitude`, `latitude`); missing or invalid geometry yields blank coordinates
+rather than guessing from the separately stored latitude/longitude fields.
+COL metadata is included only when `Field_Data.taxon_col_id` agrees with
+the referenced `Taxa.col_id`. Missing or inconsistent relations retain the
+sample taxon and ID but leave the COL scientific name and rank columns blank.
+Unlinked MS rows retain their filename and ID with blank sample fields.
+
+For the verbose filename export, specify `--view full`. It includes the same
+rank columns and needs the same `Taxa` read permission:
+
+```bash
+uv run directus-explorer ms export-metadata \
+  --filename-prefix 20261029 \
+  --view full \
+  --env-file .env.admin \
+  --output data/output/ms_metadata_20261029_full.tsv
+```
+
+The filename match is literal and case-sensitive; it uses `MS_Data.filename`,
+not files on disk or Directus's file library. Filename filtering cannot be
+combined with project filters. Without a filename filter, the default remains
+the full sample-lineage view.
 
 Export a curated compact metadata view instead of the full rich table:
 

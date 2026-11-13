@@ -32,10 +32,12 @@ from .ms_metadata import (
     ALIQUOTING_DATA_FIELDS,
     DRIED_SAMPLES_DATA_FIELDS,
     EXTRACTION_DATA_FIELDS,
+    FILE_COMPACT_FIELDNAMES,
     MS_DATA_FIELDS,
     MsMetadataTable,
     build_sample_metadata_row,
     compact_table,
+    file_compact_table,
     flatten_row_fieldnames,
     select_table_view,
     write_ms_metadata_csv,
@@ -153,9 +155,15 @@ class DirectusClient:
         project: str | None = None,
         project_group: str | None = None,
         watcher_tsv_paths: tuple[Path, ...] = (),
+        filename_prefix: str | None = None,
+        mode: str | None = None,
     ) -> MsMetadataTable:
         """Return a flattened metadata table enriched from optional watcher TSV exports."""
 
+        if mode not in (None, "positive", "negative"):
+            raise ValueError("Mode must be positive or negative")
+        if mode is not None and filename_prefix is None:
+            raise ValueError("Mode filtering requires a filename prefix")
         project_keys = self._resolve_project_filter(project=project, project_group=project_group)
         self._authenticate()
 
@@ -169,6 +177,21 @@ class DirectusClient:
             ),
         )
         ms_rows = self._get_items(collection="MS_Data", fields=MS_DATA_FIELDS)
+        if filename_prefix is not None:
+            if not filename_prefix:
+                raise ValueError("Filename prefix must not be empty")
+            ms_rows = [
+                row
+                for row in ms_rows
+                if isinstance(row.get("filename"), str)
+                and row["filename"].startswith(filename_prefix)
+                and (
+                    mode is None
+                    or classify_profile_mode(
+                        self._read_nested_string(row, "injection_method", "method_name") or ""
+                    ) == mode
+                )
+            ]
         aliquot_rows = self._get_items(
             collection="Aliquoting_Data",
             fields=ALIQUOTING_DATA_FIELDS,
@@ -207,6 +230,18 @@ class DirectusClient:
             rows=dried_rows,
             path=("field_data", "sample_id"),
         )
+        if filename_prefix is not None:
+            field_sample_ids = {
+                row["sample_id"] for row in field_rows if isinstance(row.get("sample_id"), str)
+            }
+            for unlinked_dried_row in dried_rows:
+                if unlinked_dried_row.get("field_data") is not None:
+                    continue
+                container_id = self._read_nested_string(
+                    unlinked_dried_row, "sample_container", "container_id"
+                )
+                if container_id is not None and container_id in field_sample_ids:
+                    dried_by_sample_id.setdefault(container_id, []).append(unlinked_dried_row)
         extraction_by_parent_container_id = self._group_rows_by_nested_string(
             rows=extraction_rows,
             path=("parent_sample_container", "container_id"),
@@ -227,6 +262,7 @@ class DirectusClient:
         watcher_by_stem = self._build_watcher_index(watcher_tsv_paths)
 
         rows: list[dict[str, Any]] = []
+        matched_ms_ids: set[int | str] = set()
         for field_row in field_rows:
             qfield_project = field_row.get("qfield_project")
             if project_keys is not None and qfield_project not in project_keys:
@@ -270,11 +306,28 @@ class DirectusClient:
                             if aliquot_container_id is not None
                             else [None]
                         )
+                        if filename_prefix is not None and extraction_container_id is not None:
+                            sample_ms_rows = [
+                                *sample_ms_rows,
+                                *ms_by_parent_container_id.get(extraction_container_id, ()),
+                            ]
                         for ms_row in sample_ms_rows:
+                            if filename_prefix is not None:
+                                if ms_row is None or ms_row["id"] in matched_ms_ids:
+                                    continue
+                                matched_ms_ids.add(ms_row["id"])
                             row = build_sample_metadata_row(
                                 field_row=field_row,
                                 ms_row=ms_row,
-                                aliquot_row=aliquot_row,
+                                aliquot_row=(
+                                    None
+                                    if filename_prefix is not None
+                                    and extraction_container_id is not None
+                                    and self._read_nested_string(
+                                        ms_row, "parent_sample_container", "container_id"
+                                    ) == extraction_container_id
+                                    else aliquot_row
+                                ),
                                 extraction_row=extraction_row,
                                 dried_row=dried_row,
                             )
@@ -284,10 +337,25 @@ class DirectusClient:
                             )
                             rows.append(row)
 
+        if filename_prefix is not None:
+            for ms_row in ms_rows:
+                if ms_row["id"] not in matched_ms_ids:
+                    row = build_sample_metadata_row(
+                        field_row=None,
+                        ms_row=ms_row,
+                        aliquot_row=None,
+                        extraction_row=None,
+                        dried_row=None,
+                    )
+                    self._enrich_row_with_watcher_metadata(
+                        row=row, watcher_by_stem=watcher_by_stem
+                    )
+                    rows.append(row)
+
         return compact_table(
             MsMetadataTable(
-            fieldnames=flatten_row_fieldnames(rows),
-            rows=tuple(rows),
+                fieldnames=flatten_row_fieldnames(rows),
+                rows=tuple(rows),
             )
         )
 
@@ -297,17 +365,49 @@ class DirectusClient:
         project: str | None = None,
         project_group: str | None = None,
         watcher_tsv_paths: tuple[Path, ...] = (),
-        view: str = "full",
+        view: str | None = None,
         require_col_id: bool = False,
         stored_taxa_by_id: Mapping[str, dict[str, Any]] | None = None,
+        filename_prefix: str | None = None,
+        mode: str | None = None,
     ) -> int:
         """Write a flattened sample/MS metadata TSV and return the number of rows written."""
 
-        table = self.build_ms_metadata_table_with_watcher(
-            project=project,
-            project_group=project_group,
-            watcher_tsv_paths=watcher_tsv_paths,
-        )
+        if mode not in (None, "positive", "negative"):
+            raise ValueError("Mode must be positive or negative")
+        if mode is not None and filename_prefix is None:
+            raise ValueError("Mode filtering requires a filename prefix")
+        if view is None:
+            view = "compact" if filename_prefix is not None else "full"
+        if filename_prefix is not None and (project is not None or project_group is not None):
+            raise ValueError("Filename filtering cannot be combined with project filters")
+        if filename_prefix is not None and view == "sample-compact":
+            raise ValueError("Filename filtering requires the full or compact view")
+        build_kwargs: dict[str, Any] = {
+            "project": project,
+            "project_group": project_group,
+            "watcher_tsv_paths": watcher_tsv_paths,
+        }
+        if filename_prefix is not None:
+            build_kwargs["filename_prefix"] = filename_prefix
+        if mode is not None:
+            build_kwargs["mode"] = mode
+        table = self.build_ms_metadata_table_with_watcher(**build_kwargs)
+        file_table: MsMetadataTable | None = None
+        if filename_prefix is not None:
+            taxa_by_id: dict[str, dict[str, Any]] = {}
+            if any(
+                row.get("field_taxon_ref") or row.get("field_taxon_ref_id")
+                for row in table.rows
+            ):
+                taxa_by_id = {
+                    str(row["id"]): row
+                    for row in self._get_items(
+                        collection="Taxa",
+                        fields="id,col_id,scientific_name,rank,backbone_version,parent_ref",
+                    )
+                }
+            file_table = file_compact_table(table, taxa_by_id)
         if view == "sample-compact":
             if require_col_id and stored_taxa_by_id is None:
                 raise ValueError("Stored Taxa metadata is required for COL-filtered exports")
@@ -316,8 +416,19 @@ class DirectusClient:
                 resolve_taxonomy=not require_col_id,
                 stored_taxa_by_id=stored_taxa_by_id,
             )
+        elif file_table is not None and view == "compact":
+            table = file_table
         else:
             table = select_table_view(table, view=view)
+            if file_table is not None:
+                rank_fields = file_table.fieldnames[len(FILE_COMPACT_FIELDNAMES):]
+                table = MsMetadataTable(
+                    fieldnames=(*table.fieldnames, *rank_fields),
+                    rows=tuple(
+                        {**row, **{name: file_row.get(name) for name in rank_fields}}
+                        for row, file_row in zip(table.rows, file_table.rows, strict=True)
+                    ),
+                )
         if require_col_id:
             if view != "sample-compact":
                 raise ValueError("COL ID filtering requires the sample-compact view")
@@ -341,6 +452,10 @@ class DirectusClient:
                     "Stored Taxa metadata is incomplete or inconsistent for samples: "
                     + ", ".join(incomplete[:10])
                 )
+        if filename_prefix is not None and not table.rows and view == "full":
+            table = MsMetadataTable(
+                fieldnames=("ms_filename", "ms_data_id", *rank_fields), rows=()
+            )
         write_ms_metadata_csv(table, output_path, delimiter="\t")
         return len(table.rows)
 

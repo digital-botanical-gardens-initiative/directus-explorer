@@ -7,7 +7,6 @@ from collections.abc import Iterable
 from pathlib import Path
 from typing import Any
 
-
 DEFAULT_TAXONOMY_ARTIFACTS_ROOT = Path(
     "data/working/taxonomy_backbone/col_2026_07_17_xr"
 )
@@ -130,6 +129,7 @@ def expected_schema() -> dict[str, Any]:
             "backbone_version": {"type": "string", "required": True},
             "backbone_dataset_key": {"type": "integer", "required": True},
             "backbone_doi": {"type": "string", "required": True},
+            "parent_ref": {"type": "integer", "required": False},
         },
         "field_data_fields": {
             "taxon_col_id": {"type": "string", "required": False},
@@ -141,6 +141,11 @@ def expected_schema() -> dict[str, Any]:
         "relation": {
             "many_collection": "Field_Data",
             "many_field": "taxon_ref",
+            "one_collection": "Taxa",
+        },
+        "parent_relation": {
+            "many_collection": "Taxa",
+            "many_field": "parent_ref",
             "one_collection": "Taxa",
         },
     }

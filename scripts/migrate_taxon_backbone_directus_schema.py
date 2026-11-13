@@ -63,6 +63,18 @@ TAXA_FIELD_PAYLOADS: dict[str, dict[str, Any]] = {
         "schema": {"is_nullable": False},
     },
 }
+TAXA_FIELD_PAYLOADS["parent_ref"] = {
+    "field": "parent_ref",
+    "type": "integer",
+    "schema": {"is_nullable": True},
+    "meta": {
+        "interface": "select-dropdown-m2o",
+        "display": "related-values",
+        "display_options": {"template": "{{scientific_name}}"},
+        "note": "Immediate accepted parent in the same pinned CoL release.",
+    },
+}
+
 
 FIELD_DATA_FIELD_PAYLOADS: dict[str, dict[str, Any]] = {
     "taxon_col_id": {
@@ -160,11 +172,22 @@ def _inspect(client: DirectusClient) -> dict[str, Any]:
         and row.get("related_collection") == "Taxa"
         for row in relations
     )
+    taxa_relations = (
+        client._get("/relations/Taxa", {"limit": "-1"}).get("data") or []
+        if "Taxa" in collection_names else []
+    )
+    has_parent_relation = any(
+        isinstance(row, dict)
+        and row.get("field") == "parent_ref"
+        and row.get("related_collection") == "Taxa"
+        for row in taxa_relations
+    )
     return {
         "taxa_collection_exists": "Taxa" in collection_names,
         "taxa_fields": taxa_fields,
         "field_data_fields": field_data_fields,
         "taxon_ref_relation_exists": has_relation,
+        "taxa_parent_relation_exists": has_parent_relation,
     }
 
 
@@ -189,6 +212,8 @@ def _planned_actions(state: dict[str, Any]) -> list[str]:
             actions.append(f"create_field:Field_Data.{field}")
     if not state["taxon_ref_relation_exists"]:
         actions.append("create_relation:Field_Data.taxon_ref->Taxa.id")
+    if not state["taxa_parent_relation_exists"]:
+        actions.append("create_relation:Taxa.parent_ref->Taxa.id")
     return actions
 
 
@@ -231,6 +256,27 @@ def _apply(client: DirectusClient, actions: list[str]) -> None:
                     "meta": {
                         "many_collection": "Field_Data",
                         "many_field": "taxon_ref",
+                        "one_collection": "Taxa",
+                        "one_field": None,
+                        "one_deselect_action": "nullify",
+                    },
+                },
+            )
+        elif (
+            action == "create_relation:Taxa.parent_ref->Taxa.id"
+            and not _inspect(client)["taxa_parent_relation_exists"]
+        ):
+            _post(
+                client,
+                "/relations",
+                {
+                    "collection": "Taxa",
+                    "field": "parent_ref",
+                    "related_collection": "Taxa",
+                    "schema": {"on_delete": "RESTRICT"},
+                    "meta": {
+                        "many_collection": "Taxa",
+                        "many_field": "parent_ref",
                         "one_collection": "Taxa",
                         "one_field": None,
                         "one_deselect_action": "nullify",

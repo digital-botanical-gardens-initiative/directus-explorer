@@ -1,0 +1,17 @@
+[Unit]
+Description=Private sample photo gallery over SSH
+
+[Service]
+Type=simple
+RuntimeDirectory=sample-photo-gallery
+RuntimeDirectoryMode=0700
+WorkingDirectory=%t/sample-photo-gallery
+UMask=0077
+ExecStart=/usr/sbin/nginx -p %h/.local/share/sample-photo-gallery/ -c %h/.local/share/sample-photo-gallery/nginx.conf -g "daemon off;"
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+RestrictAddressFamilies=AF_UNIX
+
+[Install]
+WantedBy=default.target

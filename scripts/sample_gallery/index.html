@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample photo gallery</title>
+  <style>
+    :root { color-scheme: light; font: 100%/1.5 system-ui, sans-serif; color: #182e2b; background: #f2f5f2; --ink: #154f43; --muted: #526561; --line: #ccd7d0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { background: #163f36; color: white; }
+    .wrap { max-width: 86rem; margin: auto; padding: 1.5rem clamp(1rem, 4vw, 3.5rem); }
+    .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; font-weight: 700; margin: 0 0 .25rem; }
+    h1, h2, h3, p, figure, dl, dd { margin: 0; }
+    h1, h2 { line-height: 1.2; overflow-wrap: anywhere; }
+    h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.1rem; margin-bottom: .65rem; }
+    main { display: grid; grid-template-columns: minmax(16rem, 21rem) minmax(0, 1fr); align-items: start; gap: 1.25rem; }
+    aside, article { min-width: 0; background: white; border: 1px solid var(--line); border-radius: .75rem; padding: clamp(1rem, 2vw, 1.5rem); }
+    label { display: block; font-weight: 700; margin-bottom: .4rem; }
+    input, button { font: inherit; }
+    input { width: 100%; padding: .6rem .75rem; border: 1px solid #83978d; border-radius: .35rem; }
+    .hint, .summary, .project, .empty { color: var(--muted); }
+    .hint, .summary, .pager { font-size: .875rem; }
+    .hint { margin-top: .4rem; }
+    .summary { margin: 1rem 0 .4rem; }
+    .results { list-style: none; padding: 0; margin: 0; }
+    button { cursor: pointer; color: var(--ink); background: white; border: 1px solid var(--line); border-radius: .35rem; padding: .4rem .7rem; }
+    button:enabled:hover { background: #edf4ef; }
+    button:disabled { cursor: default; color: #687570; background: #f3f5f3; }
+    .results button { width: 100%; text-align: left; border-color: transparent; border-inline-start: .25rem solid transparent; overflow-wrap: anywhere; }
+    .results [aria-current="true"] { border-inline-start-color: var(--ink); background: #e2efe7; font-weight: 700; }
+    .pager { display: flex; align-items: center; justify-content: space-between; gap: .35rem; margin-top: 1rem; }
+    [hidden] { display: none !important; }
+    a { color: var(--ink); text-underline-offset: .15em; }
+    :focus-visible { outline: 3px solid #ac5200; outline-offset: 2px; }
+    .skip { position: absolute; left: -100vw; }
+    .skip:focus { position: static; }
+    article section { margin-top: 1.5rem; }
+    .project { margin-top: .25rem; overflow-wrap: anywhere; }
+    .photos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr)); gap: 1rem; }
+    figure { border: 1px solid var(--line); border-radius: .5rem; overflow: hidden; min-width: 0; }
+    .preview { display: grid; place-items: center; background: #e8eeea; aspect-ratio: 4 / 3; }
+    img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+    figcaption { padding: .65rem .8rem; overflow-wrap: anywhere; }
+    figcaption a { display: inline-block; margin-top: .2rem; }
+    dt { font-weight: 650; }
+    dd { white-space: pre-line; }
+    dl > div { display: grid; grid-template-columns: minmax(7rem, 1fr) minmax(0, 2fr); gap: .5rem; padding: .5rem 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+    .missing { padding-left: 1.25rem; overflow-wrap: anywhere; }
+    @media (max-width: 47rem) { main { grid-template-columns: minmax(0, 1fr); } .results { max-height: 12rem; overflow-y: auto; } }
+    @media (max-width: 28rem) { dl > div { grid-template-columns: minmax(0, 1fr); gap: .15rem; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><p class="eyebrow">Field collections</p><h1>Sample photo gallery</h1><p id="snapshot"></p></div></header>
+  <main class="wrap">
+    <aside aria-label="Sample browser">
+      <label for="search">Search by sample code</label>
+      <input id="search" type="search" autocomplete="off" spellcheck="false" aria-describedby="hint" disabled>
+      <p id="hint" class="hint">Enter a full code or part of one.</p>
+      <p id="summary" class="summary" role="status">Loading catalog…</p>
+      <a class="skip" href="#detail">Skip to sample details</a>
+      <ul id="results" class="results" aria-label="Matching sample codes"></ul>
+      <nav id="pager" class="pager" aria-label="Result pages" hidden>
+        <button id="previous" type="button">Previous</button><span id="page"></span><button id="next" type="button">Next</button>
+      </nav>
+    </aside>
+    <article id="detail" aria-label="Sample details" tabindex="-1"><noscript>Enable JavaScript to browse the sample catalog.</noscript></article>
+  </main>
+  <script>
+    'use strict';
+    const byId = (identifier) => document.getElementById(identifier);
+    const search = byId('search');
+    const results = byId('results');
+    const detail = byId('detail');
+    const pageSize = 12;
+    let catalog = [];
+    let matches = [];
+    let pageStart = 0;
+    let selected = null;
+
+    function element(tag, text) {
+      const node = document.createElement(tag);
+      if (text !== undefined) node.textContent = text;
+      return node;
+    }
+
+    function fieldName(key) {
+      const words = key.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[_-]+/g, ' ').trim();
+      return words.charAt(0).toUpperCase() + words.slice(1);
+    }
+
+    function fieldValue(value) {
+      if (value === null) return '';
+      if (Array.isArray(value)) return value.map(fieldValue).filter(Boolean).join('\n');
+      if (typeof value === 'object') {
+        return Object.entries(value).map(([key, child]) => {
+          const text = fieldValue(child);
+          return text ? `${fieldName(key)}: ${text}` : '';
+        }).filter(Boolean).join('\n');
+      }
+      return String(value).trim();
+    }
+
+    function section(title) {
+      const container = element('section');
+      container.append(element('h3', title));
+      return container;
+    }
+
+    function mediaUrl(source) {
+      const parts = source.split('/');
+      if (parts.length < 2 || !['pictures', 'pictures_raw'].includes(parts[0]) ||
+          parts.some(part => !part || part === '.' || part === '..')) return null;
+      return './media/' + parts.map(encodeURIComponent).join('/');
+    }
+
+    function showSample(sample) {
+      if (sample === selected && detail.childElementCount && sample !== null) return;
+      selected = sample;
+      detail.replaceChildren();
+      if (!sample) {
+        detail.append(element('h2', catalog.length ? 'No matching samples' : 'No samples available'));
+        if (catalog.length) detail.append(element('p', 'Try a shorter code or clear the search.'));
+        return;
+      }
+      detail.append(element('p', 'Selected sample'), element('h2', sample.code));
+      detail.firstChild.className = 'eyebrow';
+      if (sample.project) {
+        const project = element('p', sample.project);
+        project.className = 'project';
+        detail.append(project);
+      }
+      const photos = section(`Photos (${sample.photos.length})`);
+      const grid = element('div');
+      grid.className = 'photos';
+      for (const photo of sample.photos) {
+        const label = photo.label || photo.source;
+        const url = mediaUrl(photo.source);
+        const figure = element('figure');
+        const caption = element('figcaption');
+        caption.append(element('strong', label));
+        if (url) {
+          const preview = element('div');
+          preview.className = 'preview';
+          const image = element('img');
+          image.alt = `${sample.code}, ${label}`;
+          image.loading = 'lazy';
+          image.decoding = 'async';
+          image.addEventListener('error', () => preview.replaceChildren(element('span', 'Preview unavailable')), {once: true});
+          image.src = url.replace('./media/', './preview/');
+          preview.append(image);
+          const link = element('a', 'Open full size');
+          link.href = url;
+          link.setAttribute('aria-label', `Open full size, ${label}`);
+          link.target = '_blank';
+          link.rel = 'noopener';
+          caption.append(element('br'), link);
+          figure.append(preview);
+        } else {
+          caption.append(element('p', 'Image path unavailable.'));
+        }
+        figure.append(caption);
+        grid.append(figure);
+      }
+      photos.append(sample.photos.length ? grid : element('p', 'No photos available for this sample.'));
+      detail.append(photos);
+      if (sample.missing.length) {
+        const missing = section(`Missing photo references (${sample.missing.length})`);
+        const list = element('ul');
+        list.className = 'missing';
+        for (const reference of sample.missing) list.append(element('li', reference));
+        missing.append(list);
+        detail.append(missing);
+      }
+      const metadata = section('Metadata');
+      const fields = element('dl');
+      for (const [key, value] of Object.entries(sample.metadata || {})) {
+        const text = fieldValue(value);
+        if (!text) continue;
+        const field = element('div');
+        field.append(element('dt', fieldName(key)), element('dd', text));
+        fields.append(field);
+      }
+      metadata.append(fields.childElementCount ? fields : element('p', 'No metadata available for this sample.'));
+      detail.append(metadata);
+    }
+
+    function renderPage(position) {
+      pageStart = Math.floor(position / pageSize) * pageSize;
+      const end = Math.min(pageStart + pageSize, matches.length);
+      results.replaceChildren();
+      for (let index = pageStart; index < end; index++) {
+        const sample = matches[index].sample;
+        const button = element('button', sample.code);
+        button.type = 'button';
+        button.setAttribute('aria-current', String(index === position));
+        button.addEventListener('click', () => {
+          results.querySelector('[aria-current="true"]').setAttribute('aria-current', 'false');
+          button.setAttribute('aria-current', 'true');
+          showSample(sample);
+        });
+        const item = element('li');
+        item.append(button);
+        results.append(item);
+      }
+      byId('summary').textContent = matches.length ? `Showing ${pageStart + 1}–${end} of ${matches.length} ${matches.length === 1 ? 'sample' : 'samples'}` : '0 samples';
+      byId('pager').hidden = matches.length <= pageSize;
+      byId('previous').disabled = pageStart === 0;
+      byId('next').disabled = end === matches.length;
+      byId('page').textContent = `Page ${1 + pageStart / pageSize} of ${Math.ceil(matches.length / pageSize)}`;
+      showSample(matches[position]?.sample ?? null);
+    }
+
+    function filterSamples() {
+      const query = search.value.trim().toLowerCase();
+      matches = query ? catalog.filter(entry => entry.key.includes(query)) : catalog;
+      const exact = query ? matches.findIndex(entry => entry.key === query) : 0;
+      renderPage(Math.max(0, exact));
+    }
+
+    search.addEventListener('input', filterSamples);
+    byId('previous').addEventListener('click', () => renderPage(pageStart - pageSize));
+    byId('next').addEventListener('click', () => renderPage(pageStart + pageSize));
+
+    async function loadCatalog() {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 60000);
+      try {
+        const response = await fetch('./catalog.json', {signal: controller.signal});
+        if (!response.ok) throw new Error(`Catalog request failed (${response.status})`);
+        const data = await response.json();
+        if (data.generated_at) byId('snapshot').textContent = `Snapshot · ${data.generated_at.slice(0, 10)} UTC`;
+        catalog = data.samples.map(sample => ({sample, key: sample.code.toLowerCase()}));
+        filterSamples();
+        search.disabled = false;
+      } catch {
+        byId('summary').textContent = 'Could not load the sample catalog.';
+        detail.replaceChildren(element('h2', 'Catalog unavailable'), element('p', 'Check the gallery connection and reload the page.'));
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+    loadCatalog();
+  </script>
+</body>
+</html>

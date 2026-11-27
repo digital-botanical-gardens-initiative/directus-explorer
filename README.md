@@ -2,6 +2,8 @@
 
 Fetch and summarize data from a Directus instance.
 
+[Browse sample photos and field metadata from a laptop](scripts/sample_gallery/README.md).
+
 ## Setup
 
 1. Copy the example environment file:
